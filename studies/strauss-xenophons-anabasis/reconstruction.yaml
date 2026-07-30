@@ -1,0 +1,297 @@
+schema_version: 1.0
+record_type: source_specific_reconstruction
+
+identity:
+  study_id: XEN-STUDY-STRAUSS-ANABASIS-001
+  title: Leo Strauss, Xenophon's Anabasis - Provisional Secondary Reconstruction
+  version: 1.0.0
+
+status:
+  lifecycle: PROVISIONAL_SECONDARY_RECONSTRUCTION
+  sequential_reading: COMPLETE
+  primary_text_comparison: NOT_STARTED
+  certification: NOT_CERTIFIED
+  activation: ACTIVE_AS_QUESTION_GENERATING_SECONDARY_STUDY
+
+source:
+  source_status: studies/strauss-xenophons-anabasis/source-status.yaml
+  author: Leo Strauss
+  title: Xenophon's Anabasis
+  printed_pages: 105-136
+  source_class: QUALIFIED_SECONDARY_INTERPRETIVE
+
+scope_statement: >
+  This record reconstructs Strauss's essay from the reviewed 1983 container.
+  It does not reconstruct Xenophon's Anabasis and does not adopt Strauss's
+  interpretation as the repository's judgment.
+
+central_reconstruction: >
+  Strauss reads the Anabasis as a deliberately perplexing account in which title,
+  pseudonymous authorship, third-person self-presentation, formula, omission,
+  reported speech, structural order, speech, and deed disclose Xenophon's practical
+  rank. Xenophon rises from an unofficial participant to the indispensable leader
+  of a stranded army, repeatedly correcting errors and resisting concrete openings
+  toward tyranny. His deeds establish exceptional practical intelligence and a
+  qualified attachment to Greece, while leaving unresolved whether practical
+  superiority amounts to complete justice, wisdom, piety, or primary loyalty to Athens.
+
+argument_sequence:
+  - unit_id: XEN-SA-01
+    title: Title, corpus, and the problem of Xenophon's ascent
+    locator: printed_pages_105-106
+    reconstruction: >
+      Strauss begins from the modern judgment that the Anabasis is Xenophon's most
+      beautiful book and asks whether Xenophon shared it. The authentic title,
+      Cyrus' Ascent, names an expedition completed in Book I although the work has
+      seven books. This mismatch opens the possibility that the work's fuller ascent
+      is Xenophon's own and that its meaning depends on its place within the Corpus Xenophonteum.
+    classifications:
+      - documented_source_statement
+      - supported_interpretive_inference
+    limits:
+      - The authentic title and corpus relation require primary and bibliographic verification.
+      - The shift from Cyrus' ascent to Xenophon's ascent is Strauss's interpretive proposal.
+
+  - unit_id: XEN-SA-02
+    title: Themistogenes, anonymity, and self-presentation
+    locator: printed_page_106
+    reconstruction: >
+      The Hellenica attributes the expedition's account to Themistogenes of Syracuse.
+      Strauss treats Themistogenes as a likely pseudonym and reads Xenophon's third-person
+      narration of his own speeches and deeds as a form of becoming anonymity. The proposed
+      contrast between Xenophon of Athens and Themistogenes of Syracuse raises questions
+      about idealization, right, foreignness, and authorship.
+    classifications:
+      - documented_source_statement
+      - working_hypothesis
+    limits:
+      - Pseudonymity is not independently established in this repository.
+      - Etymological suggestions remain conjectural until checked philologically.
+
+  - unit_id: XEN-SA-03
+    title: Gentle praise, omission, and legetai
+    locator: printed_pages_107-109
+    reconstruction: >
+      Strauss identifies two literary devices. First, Xenophon can praise a person or
+      city by listing present excellences while allowing omitted excellences to disclose
+      defect without explicit blame. Second, legetai and related report formulas distinguish
+      what is said from what is affirmed as fact. These devices allow the narrative to
+      adorn the world while preserving access to a harsher underlying account.
+    key_examples:
+      - inhabited_prosperous_and_large_city_formula
+      - silence_on_Cyrus_piety_in_the_eulogy
+      - parallel_report_of_Apollon_and_Marsyas_with_Xerxes
+      - report_of_Menons_punishment
+    classifications:
+      - documented_source_statement
+      - supported_interpretive_inference
+    limits:
+      - Counts, Greek wording, and omission patterns require primary-text verification.
+      - Silence may have more than one cause.
+
+  - unit_id: XEN-SA-04
+    title: Menon, Proxenos, and the entrance of Xenophon
+    locator: printed_pages_109-113
+    reconstruction: >
+      The transition from Book II to Book III juxtaposes Menon's extreme wickedness
+      with Xenophon's emergence as the narrative's central actor. Proxenos occupies a
+      mediating position because he invited Xenophon and embodies noble ambition without
+      sufficient capacity to command. Strauss resists making Menon Xenophon's sole foil;
+      the deeper contrast is between Xenophon and Socrates.
+    findings:
+      - Proxenos seeks great name, power, and wealth through just and noble means.
+      - Proxenos can rule gentlemen but cannot inspire fear in soldiers.
+      - Xenophon is tougher, wilier, and wittier than Proxenos in Strauss's account.
+      - Xenophon's practical and economic activity distinguishes him from Socrates.
+    classifications:
+      - documented_source_statement
+      - supported_interpretive_inference
+
+  - unit_id: XEN-SA-05
+    title: Socrates, Delphi, decision, and responsibility
+    locator: printed_pages_111-113
+    reconstruction: >
+      Xenophon consults Socrates about Proxenos' invitation. Socrates fears political
+      danger from friendship with Cyrus and directs Xenophon to Delphi. Xenophon asks
+      not whether he should go but how to complete the chosen journey nobly and safely.
+      Strauss treats the form of the question as evidence of prior decision and possible
+      rashness, while preserving Socrates' limited response after the oracle has been consulted.
+    distinctions:
+      - human_decision_vs_divine_consultation
+      - whether_to_go_vs_how_to_go
+      - private_judgment_vs_civic_consequence
+      - Socratic_caution_vs_Xenophontic_action
+    unresolved_question: >
+      Does the Anabasis as a whole vindicate Socrates' apprehension about Xenophon's relation to Athens?
+
+  - unit_id: XEN-SA-06
+    title: Crisis, dream, initiative, and practical correction
+    locator: printed_pages_113-120
+    reconstruction: >
+      After the generals are murdered, Xenophon alone rises from despair to action.
+      A disturbing dream becomes the occasion for initiative rather than a self-interpreting
+      divine command. Xenophon convenes officers, reframes Persian treachery as the release
+      of Greek obligations, accepts election, devises tactics, makes errors, recognizes them,
+      and corrects them. Practical superiority appears through timely action and revision,
+      not infallibility.
+    strongest_findings:
+      - Practical intelligence includes recognition and correction of error.
+      - Speech is judged together with the institutional and military deed it enables.
+      - Election, persuasion, tactical invention, and coercion are distinct instruments of command.
+      - Omen and dream require interpretation and do not certify wisdom.
+    classifications:
+      - documented_source_statement
+      - supported_interpretive_inference
+
+  - unit_id: XEN-SA-07
+    title: Book IV and the center of the return
+    locator: printed_pages_119-124
+    reconstruction: >
+      Strauss treats Book IV as doubly central: it is the numerical middle of seven books
+      and the middle among books supplied with introductions. The book contains the most
+      difficult march, the sight of the sea, and important tests of leadership, discipline,
+      Greek-barbarian comparison, and piety. Structural centrality guides attention but does
+      not by itself prove final authorial intention.
+    classifications:
+      - supported_interpretive_inference
+      - primary_text_verification_question
+    required_checks:
+      - introduction_length_and_distribution
+      - Book_IV_structural_position
+      - narrative_weight_of_the_sea_episode
+      - distribution_of_sacrifices_oaths_and_divine_references
+
+  - unit_id: XEN-SA-08
+    title: Wealth, settlement, city-founding, and monarchy
+    locator: printed_pages_124-132
+    reconstruction: >
+      Once immediate survival is secured, the army and Xenophon confront choices about
+      return, wealth, settlement, city-founding, unified command, and relations with Greek
+      and barbarian powers. Strauss reads Xenophon's proposals and withdrawals as tests of
+      ambition under political constraints. Xenophon imagines great projects but repeatedly
+      refuses or abandons concrete openings that would make him monarch or tyrant without
+      adequate consent and prescription.
+    strongest_findings:
+      - A proposal can reveal ambition without proving an intention to seize power.
+      - Refusal of an available tyrannical opportunity is stronger evidence than verbal modesty.
+      - Effective command does not by itself establish lawful or legitimate authority.
+      - Prescription, consent, office, and prevailing hegemonic circumstances matter to non-tyrannical rule.
+    classifications:
+      - documented_source_statement
+      - supported_interpretive_inference
+
+  - unit_id: XEN-SA-09
+    title: Sparta, submission, resistance, and the protection of the army
+    locator: printed_pages_130-135
+    reconstruction: >
+      Spartan hegemony creates situations in which any Spartan can endanger the mercenaries.
+      Xenophon sometimes submits, sometimes resists, and sometimes withdraws, depending on
+      the relation between justice, survival, Greek political order, and the army's rights.
+      His leadership prevents conflicts with Kleandros and at Byzantion from becoming ruinous,
+      while showing that fidelity to Greece under Spartan rule is politically difficult.
+    strongest_findings:
+      - Xenophon knows both when to resist and when to yield.
+      - Protection of comrades can require submission to an imperfect but effective authority.
+      - Revenge against some Spartans cannot justify attacking an innocent Greek city.
+      - Spartan power, Greek unity, and justice are related but not identical.
+    classifications:
+      - documented_source_statement
+      - supported_interpretive_inference
+
+  - unit_id: XEN-SA-10
+    title: Seuthes, accusation, apology, and the final reconciliation
+    locator: printed_pages_134-136
+    reconstruction: >
+      The alliance with Seuthes produces military success, withheld pay, faction, and accusations
+      against Xenophon. At Xenophon's lowest political point, his defense can appeal to publicly
+      known speeches and deeds in a way Socrates' defense could not. Reconciliation with the army
+      and Spartans permits renewed war against Persia and closes the account without settling all
+      questions about Xenophon's attachments or piety.
+    strongest_findings:
+      - Xenophon's apology is grounded in verifiable public action.
+      - The army's anger and later reconciliation prevent a simple triumphal reading.
+      - Book VII contains, according to Strauss, the greatest density of references to gods and formal oaths by Xenophon.
+    classifications:
+      - documented_source_statement
+      - primary_text_verification_question
+
+integrated_findings:
+  - finding_id: XEN-SA-F001
+    proposition_kind: supported_interpretive_inference
+    statement: Strauss's Xenophon is a superior practical ruler because he initiates action, persuades, commands, deceives when necessary, corrects mistakes, and restrains ambition.
+    qualification: This is Strauss's reconstruction and awaits independent primary-text testing.
+
+  - finding_id: XEN-SA-F002
+    proposition_kind: supported_interpretive_inference
+    statement: Xenophon's practical errors do not negate his superiority because correction is part of practical intelligence.
+    qualification: The relevant episodes and their sequence require direct verification.
+
+  - finding_id: XEN-SA-F003
+    proposition_kind: documented_source_statement
+    statement: Strauss distinguishes Xenophon's successful economic and political activity from Socrates' way of life.
+    qualification: The comparison is internal to Strauss's interpretation.
+
+  - finding_id: XEN-SA-F004
+    proposition_kind: supported_interpretive_inference
+    statement: Repeated refusal of concrete opportunities for monarchy or tyranny is stronger evidence of restraint than self-praising speech would be.
+    qualification: The availability and character of each opportunity must be reconstructed from Xenophon.
+
+  - finding_id: XEN-SA-F005
+    proposition_kind: supported_interpretive_inference
+    statement: Effective authority, elected office, lawful command, justice, and wisdom remain distinct throughout the essay.
+    qualification: Strauss does not provide a single formula that resolves their relation.
+
+  - finding_id: XEN-SA-F006
+    proposition_kind: documented_source_statement
+    statement: Xenophon eventually shows by deed that he esteems Greece more highly than Cyrus and other barbarians.
+    qualification: Strauss leaves Xenophon's relation to Athens unresolved because Xenophon reports exile without giving its reasons.
+
+  - finding_id: XEN-SA-F007
+    proposition_kind: unresolved_uncertainty
+    statement: The essay does not establish that loyalty to Greece is the sole or highest ingredient of justice.
+    qualification: Strauss explicitly raises the problem rather than closing it.
+
+  - finding_id: XEN-SA-F008
+    proposition_kind: unresolved_uncertainty
+    statement: Sacrifice, oath, omen, dream, and increasing divine reference do not by themselves establish Xenophon's piety or divine endorsement.
+    qualification: Primary textual distribution and narrative framing remain to be checked.
+
+  - finding_id: XEN-SA-F009
+    proposition_kind: supported_interpretive_inference
+    statement: Xenophon's use of omission and report formulas may permit praise without suppressing defects or uncertainty.
+    qualification: Greek vocabulary, counts, and alternative literary explanations remain open.
+
+  - finding_id: XEN-SA-F010
+    proposition_kind: unresolved_uncertainty
+    statement: Strauss's opening question about the full beauty and corpus function of the Anabasis remains unanswered by the essay in a final doctrinal form.
+    qualification: The essay points toward Xenophon's ascent but preserves perplexity.
+
+primary_text_verification_queue:
+  - verify the ancient and modern evidence for the title Cyrus' Ascent
+  - verify Hellenica III.1.1-2 and the attribution to Themistogenes of Syracuse
+  - map every change among author, narrator, Xenophon-character, and first-person statement
+  - verify the city-description formula and all stated variations
+  - verify virtue lists and the claimed omission of Cyrus' piety
+  - verify every legetai example used by Strauss and compare translation choices
+  - reconstruct the Menon-Proxenos-Xenophon sequence at the end of Book II and start of Book III
+  - verify Socrates' advice, Xenophon's Delphic question, and the narrative's account of exile
+  - catalogue Xenophon's errors, acknowledgments, and corrections
+  - test the claim that Book IV is doubly central and unusually introduced
+  - reconstruct all proposals involving settlement, city-founding, unified command, monarchy, and withdrawal
+  - distinguish election, acclamation, formal office, coercion, prescription, and Spartan hegemony
+  - catalogue sacrifices, dreams, omens, oaths, gods, and Xenophon's formal oaths by book
+  - verify the final reconciliation sequence and the transition to renewed war against Persia
+  - compare the 1975 journal printing with the 1983 posthumous collection
+
+non_absorption:
+  rule: >
+    No finding in this study may enter a Xenophon primary-text synthesis as a
+    documented Xenophontic finding unless the cited evidence has been independently
+    reconstructed from a registered primary witness. Later comparison must preserve
+    both this secondary study and the predecessor primary reconstruction.
+
+termination:
+  study_state: COMPLETE_FOR_CURRENT_SECONDARY_SOURCE
+  primary_reconstruction: REQUIRED
+  comparison: BLOCKED_PENDING_PRIMARY_WITNESS
+  next_production_unit: ADMIT_PRIMARY_ANABASIS_WITNESS
