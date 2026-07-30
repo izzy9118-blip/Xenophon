@@ -1,0 +1,621 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-024
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis IV.3
+  pdf_pages_one_based: 75-79
+  opening_anchor: During this day they bivouacked in the villages which lie above the plain
+    of the river Centrites
+  closing_anchor: and of these too a few were wounded.
+jurisdiction: Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis IV.3 plus one-based PDF page
+  chapter_boundary_control: IV.3 begins beneath heading III on PDF page 75 and ends at
+    the top of PDF page 79 immediately before heading IV. The previously anticipated
+    range 75-78 was corrected after exact visual and textual inspection showed the final
+    sentences on page 79.
+  source_boundary: Narratorial summary, enemy identification, reported ethnography,
+    dream report, editorial explanation, sacrificial procedure, scout testimony, direct
+    commands, formation orders, collective song, tactical feint, capture report, close-combat
+    judgment, and editorial variants remain distinct. The Centrites identification, the
+    double-meaning note on diabainein, the wreath/cloak note, the comrade-women gloss,
+    and the alternative reading of the soldiers' shout are witness paratext.
+narrative_person_and_authorial_attribution:
+  narrative_mode: Third-person historical narration presenting Xenophon as a named commander
+    and dreamer, with reported interior experience, direct speech, and detailed tactical
+    orders.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: Xenophon appears as the recipient and interpreter of a dream, as an accessible
+    commander, as planner of the rear-crossing deception, and as the speaker of detailed
+    battle orders. First-person forms belong to attributed speech and are not unframed
+    narratorial self-identification.
+  uncertainty: This witness does not settle the Greek force of dream, omen, heaven, sacrifice,
+    freedom, bravery, mercenary, comrade-women, attack signal, or the relation between
+    narrator and historical author.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis IV.3; PDF p. 76
+  speech_form: dream_report_and_hope
+  speaker: Xenophon
+  audience: Cheirisophus
+  occasion: first light after a day and night of perplexity at the Centrites
+  content: He reports dreaming that fetters fell away of their own accord and says he
+    hopes affairs will go well.
+  uncertainty: The dream's divine source is Xenophon's interpretation, not independently
+    adjudicated.
+- id: SAO-002
+  locator: Anabasis IV.3; PDF p. 76
+  speech_form: scout_discovery_report
+  speaker: two unnamed young men
+  audience: Xenophon
+  occasion: while he breakfasts after the favorable sacrifice
+  content: They report discovering a ford while collecting brushwood, crossing with little
+    water, taking clothes from a rock shelter, and returning safely.
+  uncertainty: Their names, units, and exact route are not supplied.
+- id: SAO-003
+  locator: Anabasis IV.3; PDF p. 77
+  speech_form: prayer_instruction
+  speaker: Xenophon
+  audience: the two young men
+  occasion: after hearing their report
+  content: He orders them to fill the cup and pray to the gods who showed him the vision
+    and them the crossing to complete the remaining blessings.
+  uncertainty: The exact prayer and divine recipients beyond the general formulation are
+    not given.
+- id: SAO-004
+  locator: Anabasis IV.3; PDF p. 77
+  speech_form: collective_crossing_plan
+  speaker: Greek generals collectively
+  audience: army
+  occasion: council after libations
+  content: Cheirisophus is to cross first with half the army, Xenophon is to hold the other
+    half, and baggage animals and sutlers are to cross between the two divisions.
+  uncertainty: The formal voting procedure is not recorded.
+- id: SAO-005
+  locator: Anabasis IV.3; PDF p. 77
+  speech_form: ritual_and_formation_orders
+  speaker: Cheirisophus
+  audience: captains and first crossing division
+  occasion: at the ford after grounding arms
+  content: He wreathes himself, removes his cloak or possibly the wreath, resumes arms,
+    orders the rest to imitate him, and directs companies into open-order deep columns.
+  uncertainty: The editorial note preserves uncertainty over what exactly was removed.
+- id: SAO-006
+  locator: Anabasis IV.3; PDF p. 77
+  speech_form: feint_order
+  speaker: Xenophon
+  audience: most active rearguard soldiers
+  occasion: as Cheirisophus begins crossing
+  content: He runs them back toward the first attempted passage to simulate an interception
+    of enemy cavalry.
+  uncertainty: The order is narrated rather than quoted.
+- id: SAO-007
+  locator: Anabasis IV.3; PDF p. 78
+  speech_form: countermarch_and_support_order
+  speaker: Xenophon through a messenger
+  audience: returning peltasts, slingers, and archers
+  occasion: when support troops begin recrossing toward him
+  content: They are to wait at the river edge, form two flanking divisions as if crossing,
+    prepare missiles, and avoid advancing far into the stream.
+  uncertainty: The size and exact composition of each flank are not given.
+- id: SAO-008
+  locator: Anabasis IV.3; PDF p. 78
+  speech_form: rear_guard_charge_and_withdrawal_order
+  speaker: Xenophon
+  audience: his remaining rearguard
+  occasion: Carduchians advance on the reduced rear
+  content: They are to wait until close range, sound the paean and charge; on the river
+    bugle signal they must turn right, reverse rank order, preserve formation, and cross
+    rapidly.
+  uncertainty: The translated formula identifying the bravest as first across is tactical
+    exhortation, not a general ethical definition.
+- id: SAO-009
+  locator: Anabasis IV.3; PDF p. 78
+  speech_form: collective_battle_song
+  speaker: Greek soldiers
+  audience: one another and the enemy
+  occasion: first the main crossing and later the rear-guard charge
+  content: The army sings the battle hymn and paean in conjunction with sacrificial success
+    and attack.
+  uncertainty: No words of the songs are preserved.
+- id: SAO-010
+  locator: Anabasis IV.3; PDF pp. 78-79
+  speech_form: signal_coordination
+  speaker: bugler or command signal system
+  audience: rear guard and supporting troops
+  occasion: planned final withdrawal
+  content: The bugle marks the moment for attack and then coordinated reversal and crossing.
+  uncertainty: The Greek terminology and precise signal sequence require original-language
+    review.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis IV.3; PDF pp. 75-76
+  actor: Greek army
+  deed: After seven days of continuous fighting in Carduchian country, the army bivouacs
+    above the Centrites with provisions and assumes the Carduchian ordeal is over.
+  outcome: Relief and sleep precede discovery of a new blocked frontier.
+  uncertainty: The comparative claim that Carduchian suffering exceeded all previous royal
+    troubles is narratorial evaluation.
+- id: SDO-002
+  locator: Anabasis IV.3; PDF p. 76
+  actor: Armenian, Mardian, and Chaldaean troops under Orontas and Artuchas
+  deed: Cavalry and infantry occupy the far bank and heights above the only visible road.
+  outcome: The Greeks cannot debouch into Armenia by the obvious crossing.
+  uncertainty: Enemy numbers are not stated.
+- id: SDO-003
+  locator: Anabasis IV.3; PDF p. 76
+  actor: Greek crossing party
+  deed: They test the visible ford and find breast-deep current, slippery stones, and inability
+    to carry arms without exposure or loss.
+  outcome: They withdraw and camp by the river while Carduchians gather behind.
+  uncertainty: Casualties during this failed attempt are not reported.
+- id: SDO-004
+  locator: Anabasis IV.3; PDF p. 76
+  actor: Xenophon and Greek command
+  deed: Xenophon reports his fetter-release dream; the generals sacrifice at dawn and obtain
+    favorable victims on the first attempt.
+  outcome: Hope, ritual approval, and renewed planning replace the night's perplexity.
+  uncertainty: The causal relation between dream, sacrifice, and success remains interpretive.
+- id: SDO-005
+  locator: Anabasis IV.3; PDF pp. 76-77
+  actor: two unnamed young men
+  deed: They discover a shallow crossing near rocks, test it nearly naked with knives,
+    seize clothing, return, and report.
+  outcome: The command gains a practicable ford outside the visible road.
+  uncertainty: The seizure of clothing and treatment of the old man, women, and girls
+    are not further explained.
+- id: SDO-006
+  locator: Anabasis IV.3; PDF p. 77
+  actor: Cheirisophus, soothsayers, first half of army, and camp women
+  deed: After libations and favorable sacrifice, Cheirisophus organizes a ceremonial crossing
+    while soldiers and women sing and shout.
+  outcome: The first division crosses successfully and enemy cavalry begins to withdraw.
+  uncertainty: The women's number, status, and participation beyond the chant are not specified.
+- id: SDO-007
+  locator: Anabasis IV.3; PDF p. 77
+  actor: Xenophon and active rearguard
+  deed: They run back toward the former crossing to feign an attempt to cut off enemy cavalry.
+  outcome: The enemy fears interception and abandons the riverbank and heights.
+  uncertainty: The relative contribution of feint, main crossing, and heavy infantry advance
+    is not separable.
+- id: SDO-008
+  locator: Anabasis IV.3; PDF pp. 77-78
+  actor: Lycius, Aeschines, Cheirisophus, cavalry, light infantry, and heavy infantry
+  deed: Lycius and Aeschines pursue fleeing cavalry while Cheirisophus forgoes pursuit and
+    attacks the infantry on the heights.
+  outcome: Enemy cavalry and infantry abandon their positions; Lycius captures baggage-bearers
+    and luxury goods.
+  uncertainty: The tactical authorization and distribution of captures are not stated.
+- id: SDO-009
+  locator: Anabasis IV.3; PDF p. 78
+  actor: Xenophon, rear guard, Carduchians, and supporting missile troops
+  deed: Xenophon faces the Carduchian rear threat, forms companies and sections, coordinates
+    distant support, charges at close range, and withdraws on signal.
+  outcome: The Carduchians flee and the rearguard crosses with only a few reported wounds.
+  uncertainty: The total wounded and whether any were lost are not given.
+- id: SDO-010
+  locator: Anabasis IV.3; PDF pp. 78-79
+  actor: supporting detachment
+  deed: Carried away by valor, it advances farther than ordered and must recross behind
+    Xenophon's men.
+  outcome: Some of the overextended troops are wounded despite the successful passage.
+  uncertainty: The responsible officers and disciplinary consequences are not recorded.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Temporary relief after seven days in Carduchian territory
+  - Discovery of a blocked river frontier and enemy on both banks
+  - Failed crossing at the visible road
+  - Night of despair and Xenophon's fetter-release dream
+  - Favorable sacrifice and report of an alternative ford
+  - Libations, council, and divided crossing plan
+  - Cheirisophus's ceremonial main crossing
+  - Xenophon's diversion against enemy cavalry
+  - Enemy abandonment of far-bank positions
+  - Carduchian descent against the exposed Greek rear
+  - Xenophon's close-range charge and signal-controlled retreat
+  - Completion of the crossing with several wounds
+  repetitions:
+  - High ground, riverbanks, and route visibility determine tactical possibility.
+  - Divine signs, sacrifices, libations, songs, and military planning are repeatedly joined.
+  - Cheirisophus and Xenophon divide van and rear responsibilities while coordinating
+    through signals.
+  - Apparent escape from one enemy immediately exposes the army to another.
+  - Success depends on deception, timing, and disciplined reversal rather than simple
+    frontal force.
+  omissions:
+  - The two young scouts remain unnamed.
+  - Enemy numbers and Greek casualty totals are absent.
+  - The exact wording of prayers, vows, and battle songs is not preserved.
+  - The old man, women, girls, and seized clothing disappear from the narrative after
+    the ford report.
+  - No formal account of the commanders' vote is given.
+  - No explanation is supplied for soldiers leaving assigned rear positions to protect
+    animals, possessions, or women.
+  - No punishment is recorded for the support detachment that overextends.
+  tensions:
+  - The army believes the Carduchian ordeal finished while Carduchians still threaten
+    its rear.
+  - A dream is treated as hopeful before scouts provide practical route intelligence.
+  - Sacrificial authorization coexists with reconnaissance, deception, and engineering
+    constraints.
+  - The main crossing succeeds partly because the rear guard remains exposed.
+  - The order praises the first man across, yet premature advance by supporting troops
+    causes additional wounds.
+  - The Chaldaeans are reported as free and brave while serving as mercenaries in a force
+    blocking Greek passage.
+  - Women participate audibly in the army's ritual moment but remain otherwise institutionally
+    undefined.
+documentary_observations:
+- id: OBS-001
+  locator: Anabasis IV.3; PDF p. 75
+  evidence_type: NARRATORIAL_SUMMARY_OBSERVATION
+  observation: The last seven days in Carduchian territory are described as one continuous
+    battle causing more suffering than all earlier troubles under Artaxerxes and Tissaphernes.
+  uncertainty: This is comparative narratorial evaluation, not a quantified loss table.
+- id: OBS-002
+  locator: Anabasis IV.3; PDF p. 75
+  evidence_type: RELIEF_STATE_OBSERVATION
+  observation: The Greeks bivouac happily with provisions and memories of completed labors,
+    believing themselves rid of the Carduchians.
+  uncertainty: The belief is immediately disproved by later events.
+- id: OBS-003
+  locator: Anabasis IV.3; PDF pp. 75-76
+  evidence_type: GEOGRAPHIC_OBSERVATION
+  observation: The Centrites is described as about two hundred feet broad and as the frontier
+    between Armenia and Carduchian country.
+  uncertainty: The note identifying it as the Eastern Tigris is witness paratext.
+- id: OBS-004
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: ENEMY_IDENTIFICATION_OBSERVATION
+  observation: The far-bank force is identified as Armenian, Mardian, and Chaldaean mercenaries
+    belonging to Orontas and Artuchas.
+  uncertainty: The source of this identification is not supplied.
+- id: OBS-005
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: REPORTED_ETHNOGRAPHIC_OBSERVATION
+  observation: The Chaldaeans are said to be free and brave and are described with long
+    wicker shields and lances.
+  uncertainty: The report is not independently verified and is mediated by translation.
+- id: OBS-006
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: TERRAIN_OBSERVATION
+  observation: The visible route rises from the river like an artificially constructed
+    highway beneath enemy infantry.
+  uncertainty: No dimensions or builder are given.
+- id: OBS-007
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: FAILED_CROSSING_OBSERVATION
+  observation: The first attempted ford is more than breast-deep, has large slippery stones,
+    and prevents safe carriage of weapons.
+  uncertainty: No casualty count is reported.
+- id: OBS-008
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: TACTICAL_DILEMMA_OBSERVATION
+  observation: The army faces a difficult river, a new enemy in front, and Carduchians
+    behind.
+  uncertainty: The chapter gives no additional escape option before the dream and scout
+    report.
+- id: OBS-009
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: DESPAIR_OBSERVATION
+  observation: A deep shadow of despair descends on the Greeks, and they halt for a day
+    and night in perplexity.
+  uncertainty: The distribution of this emotional state among individuals is not described.
+- id: OBS-010
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: DREAM_REPORT_OBSERVATION
+  observation: Xenophon dreams that self-falling fetters release his legs for free movement.
+  uncertainty: The dream's wording and symbolic force require Greek-text review.
+- id: OBS-011
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: EDITORIAL_PARATEXT_OBSERVATION
+  observation: A note explains an untranslatable double meaning of diabainein and explicitly
+    interprets the dream as sent from Heaven.
+  uncertainty: The explanation is editorial witness paratext, not silently ancient narration.
+- id: OBS-012
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: DREAM_INTERPRETATION_OBSERVATION
+  observation: Xenophon tells Cheirisophus that the dream gives him hope that affairs will
+    go well.
+  uncertainty: The chapter does not present an independent divine confirmation at this
+    moment.
+- id: OBS-013
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: SACRIFICIAL_DECISION_OBSERVATION
+  observation: All generals attend a dawn sacrifice, and the victims are favorable on the
+    first attempt.
+  uncertainty: Species, ritual officiants, and precise question are not stated.
+- id: OBS-014
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: ACCESSIBILITY_OBSERVATION
+  observation: The narrator says everyone knows Xenophon is accessible during meals and
+    may be awakened for war business.
+  uncertainty: The generality and evidentiary basis of this reputation are not supplied.
+- id: OBS-015
+  locator: Anabasis IV.3; PDF pp. 76-77
+  evidence_type: SCOUT_DISCOVERY_OBSERVATION
+  observation: Two unnamed young men discover and test a ford while gathering brushwood.
+  uncertainty: Their prior orders and status as scouts are unstated.
+- id: OBS-016
+  locator: Anabasis IV.3; PDF p. 76
+  evidence_type: SEIZURE_OBSERVATION
+  observation: The young men seize bags of clothing deposited near a rock shelter by an
+    old man, women, and girls.
+  uncertainty: Ownership, resistance, and later disposition are absent.
+- id: OBS-017
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: LIBATION_OBSERVATION
+  observation: Xenophon pours a libation and orders the discoverers to pray; Cheirisophus
+    also offers libations after hearing the report.
+  uncertainty: The ritual wording and recipients are not fully specified.
+- id: OBS-018
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: COMMAND_PLAN_OBSERVATION
+  observation: 'The army is divided for crossing: Cheirisophus leads half, Xenophon holds
+    half, and animals and sutlers pass between.'
+  uncertainty: The sequence of units inside each half is unstated.
+- id: OBS-019
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: CEREMONIAL_LEADERSHIP_OBSERVATION
+  observation: Cheirisophus puts on a wreath, removes his cloak or possibly the wreath,
+    resumes arms, and orders imitation.
+  uncertainty: The note preserves an unresolved reading of the gesture.
+- id: OBS-020
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: FORMATION_ORDER_OBSERVATION
+  observation: Captains form companies in open order and deep columns to either side of
+    Cheirisophus.
+  uncertainty: Exact depth and intervals are not given.
+- id: OBS-021
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: COLLECTIVE_RITUAL_OBSERVATION
+  observation: After favorable sacrifice the soldiers sing the battle hymn, while men shout
+    and women add a shriller chant.
+  uncertainty: The note's comrade-women gloss is editorial paratext.
+- id: OBS-022
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: TACTICAL_FEINT_OBSERVATION
+  observation: Xenophon races back with active rear guards to simulate a crossing that
+    would intercept enemy cavalry.
+  uncertainty: The enemy's fear is inferred from its response.
+- id: OBS-023
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: ENEMY_WITHDRAWAL_OBSERVATION
+  observation: The opposing cavalry flees toward the road and mountains when Cheirisophus
+    crosses and Xenophon feints.
+  uncertainty: Relative causal weight of each Greek action is not measured.
+- id: OBS-024
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: PURSUIT_OBSERVATION
+  observation: Lycius and Aeschines pursue fleeing cavalry while soldiers urge continued
+    pursuit.
+  uncertainty: The witness note preserves alternative understandings of the shouted phrase.
+- id: OBS-025
+  locator: Anabasis IV.3; PDF p. 77
+  evidence_type: COMMAND_RESTRAINT_OBSERVATION
+  observation: Cheirisophus does not pursue the cavalry but attacks enemy infantry on the
+    heights.
+  uncertainty: His reasoning is inferred from the tactical situation rather than quoted.
+- id: OBS-026
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: CAPTURE_OBSERVATION
+  observation: Lycius captures some straggling baggage-bearers, handsome clothing, and
+    drinking cups.
+  uncertainty: Ownership and distribution of captured goods are not stated.
+- id: OBS-027
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: REAR_THREAT_OBSERVATION
+  observation: Carduchians descend into the plain as Greek animals and noncombatants are
+    about to cross.
+  uncertainty: Their exact strength remains unknown.
+- id: OBS-028
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: FORMATION_ADAPTATION_OBSERVATION
+  observation: Xenophon turns the rear guard to face the Carduchians and orders companies
+    subdivided and deployed into line.
+  uncertainty: The translated technical vocabulary requires Greek review.
+- id: OBS-029
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: DISCIPLINE_FAILURE_OBSERVATION
+  observation: Many men assigned to remain leave to protect animals, personal equipment,
+    or women.
+  uncertainty: The text reports no permission or punishment.
+- id: OBS-030
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: ENEMY_SONG_OBSERVATION
+  observation: Carduchians advance singing certain songs while attacking the reduced Greek
+    rear.
+  uncertainty: No content or ritual function of the songs is given.
+- id: OBS-031
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: SIGNAL_COORDINATION_OBSERVATION
+  observation: Xenophon coordinates peltasts, slingers, archers, rear ranks, paean, and
+    bugle through staged orders.
+  uncertainty: The exact acoustic signals and command relay remain uncertain.
+- id: OBS-032
+  locator: Anabasis IV.3; PDF p. 78
+  evidence_type: CLOSE_COMBAT_JUDGMENT_OBSERVATION
+  observation: The narrator judges Carduchian equipment suitable for mountain raids and
+    flight but insufficient for close combat.
+  uncertainty: This is a tactical generalization within the narrative.
+- id: OBS-033
+  locator: Anabasis IV.3; PDF pp. 78-79
+  evidence_type: SUCCESSFUL_WITHDRAWAL_OBSERVATION
+  observation: The rear guard charges, reverses on signal, crosses in rank, and suffers
+    only a few reported wounds.
+  uncertainty: The chapter does not provide names or total numbers.
+- id: OBS-034
+  locator: Anabasis IV.3; PDF p. 79
+  evidence_type: OVEREXTENSION_OBSERVATION
+  observation: A supporting detachment advances farther than ordered, must recross behind
+    Xenophon's force, and suffers additional wounds.
+  uncertainty: The actors and command consequences are omitted.
+provisional_findings:
+- id: FIND-001
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: IV.3 transforms a three-sided trap into a successful crossing through the combination
+    of dream interpretation, reconnaissance, sacrifice, deception, divided command, and
+    signal discipline.
+  basis: Dream, scouts, sacrifice, feint, and rear-guard orders.
+  uncertainty: The chapter does not rank causal importance.
+- id: FIND-002
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: 'The army''s emotional movement is cyclical: relief after Carduchia gives way
+    to despair at the Centrites and then to renewed confidence after ritual and discovery.'
+  basis: Opening bivouac, dilemma, dream, sacrifice, ford report.
+  uncertainty: Collective emotion is narratively generalized.
+- id: FIND-003
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Xenophon's leadership is presented as accessible to low-ranking information
+    and capable of turning accidental discovery into operational design.
+  basis: Breakfast access, unnamed young men, libation, council, crossing plan.
+  uncertainty: The formal relation between Xenophon and the discoverers is unstated.
+- id: FIND-004
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: 'Cheirisophus and Xenophon exercise complementary command: one leads the ceremonial
+    frontal crossing while the other preserves and extracts the rear.'
+  basis: Division of army and coordinated actions.
+  uncertainty: The chapter does not describe rivalry or formal hierarchy between them.
+- id: FIND-005
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The crossing succeeds by inducing enemy misperception rather than by defeating
+    all forces in a single engagement.
+  basis: Alternative ford, feint, false interception threat, support display.
+  uncertainty: Enemy intention is reconstructed from behavior.
+- id: FIND-006
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Ritual action is embedded within military procedure rather than presented as
+    separate from intelligence and tactics.
+  basis: Dream, sacrifice, libation, paean, formation and signal orders.
+  uncertainty: No causal conclusion about divine action is licensed.
+- id: FIND-007
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: 'Noncombatants are operationally central: animals and sutlers shape the crossing
+    order, while women participate in collective chant and motivate some soldiers to abandon
+    assigned positions.'
+  basis: Crossing plan, ritual chant, discipline failure.
+  uncertainty: The identities and legal status of the women remain unknown.
+- id: FIND-008
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Bravery is distinguished from disciplined obedience by showing that valorous
+    overextension produces avoidable wounds after the strategic objective has already been
+    achieved.
+  basis: Final supporting-detachment overextension.
+  uncertainty: No explicit moral judgment beyond carried away by valour is supplied.
+- id: FIND-009
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The Greeks' successful passage rests on a fragile sequence in which the exposed
+    rear guard absorbs risk created by the protected movement of baggage and noncombatants.
+  basis: Rear remains while center crosses.
+  uncertainty: The distribution of casualties among groups is not given.
+- id: FIND-010
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The chapter closes not with complete victory but with successful passage accompanied
+    by residual wounds and unresolved enemy presence.
+  basis: Final crossing and wounds.
+  uncertainty: Later security belongs to IV.4.
+standing_unresolved_questions:
+- id: Q-001
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek terms underlie the chapter's vocabulary for dream, omen, sacrifice,
+    libation, paean, attack signal, and bravery?
+- id: Q-002
+  evidence_type: UNRESOLVED_QUESTION
+  question: Does the Greek text present the fetter dream as self-interpreting, humorous,
+    divinely sent, or only hopeful?
+- id: Q-003
+  evidence_type: UNRESOLVED_QUESTION
+  question: What is the textual status and source of the editorial diabainein explanation?
+- id: Q-004
+  evidence_type: UNRESOLVED_QUESTION
+  question: Who were the two young men, and what was their military standing?
+- id: Q-005
+  evidence_type: UNRESOLVED_QUESTION
+  question: What became of the old man, women, girls, and seized clothing?
+- id: Q-006
+  evidence_type: UNRESOLVED_QUESTION
+  question: What exact ritual question did the generals put to the sacrifice?
+- id: Q-007
+  evidence_type: UNRESOLVED_QUESTION
+  question: 'What did Cheirisophus remove after wreathing himself: cloak, wreath, or another
+    object?'
+- id: Q-008
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek phrase underlies the description of the women as comrade-women?
+- id: Q-009
+  evidence_type: UNRESOLVED_QUESTION
+  question: What command relationship existed among Cheirisophus, Xenophon, Lycius, and
+    Aeschines?
+- id: Q-010
+  evidence_type: UNRESOLVED_QUESTION
+  question: How many enemy troops and Greek casualties were involved?
+- id: Q-011
+  evidence_type: UNRESOLVED_QUESTION
+  question: What exact words and signals governed the rear-guard charge and reversal?
+- id: Q-012
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why did soldiers leave their assigned positions to protect baggage, possessions,
+    or women, and were they disciplined?
+- id: Q-013
+  evidence_type: UNRESOLVED_QUESTION
+  question: What is the Greek tactical vocabulary for company sections, rear leaders, and
+    deployment by the left?
+- id: Q-014
+  evidence_type: UNRESOLVED_QUESTION
+  question: Does the narrator's close-combat judgment apply to all Carduchians or only
+    this force?
+- id: Q-015
+  evidence_type: UNRESOLVED_QUESTION
+  question: How were captured baggage-bearers and luxury goods treated?
+- id: Q-016
+  evidence_type: UNRESOLVED_QUESTION
+  question: Did the army understand the crossing as fulfillment of the dream, sacrifice,
+    scout discovery, or all three?
+- id: Q-017
+  evidence_type: UNRESOLVED_QUESTION
+  question: How does the praise of the first man across relate to maintaining ranks and
+    avoiding trampling?
+- id: Q-018
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why is the supporting detachment's overextension narrated without named responsibility
+    or punishment?
+downstream_textual_checks:
+- id: CHECK-001
+  check: Compare the Centrites, Orontas, Artuchas, and Chaldaean identifications against
+    a reviewed Greek text and critical apparatus.
+- id: CHECK-002
+  check: Verify the precise chapter boundary and page 79 continuation in another rendering.
+- id: CHECK-003
+  check: Review the Greek of the fetter dream and diabainein wordplay.
+- id: CHECK-004
+  check: Separate ancient narration from Dakyns's Heaven interpretation and other notes.
+- id: CHECK-005
+  check: Map the crossing order and tactical geometry without inventing unreported distances.
+- id: CHECK-006
+  check: Check the terminology of wreath, cloak, open order, deep columns, sections, and
+    rear rank.
+- id: CHECK-007
+  check: Review the textual variants behind the soldiers' pursuit shout.
+- id: CHECK-008
+  check: Track Lycius and Aeschines in later command and capture records.
+- id: CHECK-009
+  check: Track references to women, sutlers, baggage animals, and personal mistresses without
+    collapsing their statuses.
+- id: CHECK-010
+  check: Compare later Xenophontic dream and sacrificial scenes only after independent
+    source reconstruction.
+- id: CHECK-011
+  check: Preserve the distinction between narratorial tactical judgment and direct observation.
+- id: CHECK-012
+  check: Do not derive operational doctrine, a speech register, or ministerial capacity
+    before owner review and completion gates.
+secondary_comparison_status: DEFERRED
