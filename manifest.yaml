@@ -1,0 +1,87 @@
+schema_version: 1.0
+record_type: xenophon_operational_manifest
+
+identity:
+  id: XENOPHON-MANIFEST-001
+  repository: izzy9118-blip/Xenophon
+  subject: Xenophon
+  title: Xenophon Documentary and Interpretive Repository
+  version: 0.1.0
+
+status:
+  lifecycle: FOUNDATIONAL_OPERATIONAL_INTERFACE
+  structural_validation: REQUIRED_ON_EACH_CHANGE
+  semantic_completion: INITIAL_SECONDARY_WITNESS_ONLY
+  primary_source_completion: NOT_STARTED
+  certification: NOT_CERTIFIED
+  activation: FOUNDATION_ACTIVE_PENDING_PRIMARY_WITNESS
+  governing_notice: >
+    The repository structure is active for documentary production. No final
+    interpretation of Xenophon is certified, and no secondary source may stand
+    in place of an independently reviewed Xenophontic primary witness.
+
+purpose: >
+  Provide a compact machine-readable entry point for reconstructing Xenophon's
+  works through explicit source hierarchy, work-specific reading, speech-and-deed
+  analysis, preserved uncertainty, and non-destructive documentary history.
+
+load_order:
+  - method
+  - corpus
+  - studies
+  - audits
+
+method:
+  source_hierarchy: method/source-hierarchy.yaml
+  reading_protocol: method/reading-protocol.yaml
+
+corpus:
+  index: corpus/index.yaml
+  current_scope: ONE_REVIEWED_SECONDARY_CONTAINER_AND_ONE_SECONDARY_ITEM
+  primary_xenophon_witnesses: 0
+  secondary_interpretive_witnesses: 1
+
+studies:
+  - study_id: XEN-STUDY-STRAUSS-ANABASIS-001
+    path: studies/strauss-xenophons-anabasis/reconstruction.yaml
+    source_status: studies/strauss-xenophons-anabasis/source-status.yaml
+    source_class: QUALIFIED_SECONDARY_INTERPRETIVE
+    status: PROVISIONAL_SECONDARY_RECONSTRUCTION
+
+work_program:
+  - work_key: anabasis
+    canonical_title: Anabasis
+    status: PRIMARY_WITNESS_REQUIRED
+    next_unit: ADMIT_PRIMARY_TEXT_WITNESS
+  - work_key: other-xenophontic-works
+    status: DEFERRED_UNTIL_WORK_SPECIFIC_WITNESSES_ARE_AVAILABLE
+
+proposition_kinds:
+  - documented_source_statement
+  - supported_interpretive_inference
+  - working_hypothesis
+  - primary_text_verification_question
+  - unresolved_uncertainty
+
+safeguards:
+  - PRIMARY_XENOPHON_TEXTS_GOVERN_SECONDARY_INTERPRETATION
+  - RECONSTRUCT_EACH_WORK_INDEPENDENTLY_BEFORE_CROSS_WORK_SYNTHESIS
+  - DISTINGUISH_AUTHOR_NARRATOR_CHARACTER_SPEAKER_AND_INTERPRETER
+  - READ_SPEECH_WITH_DEED_AUDIENCE_SEQUENCE_AND_OUTCOME
+  - PRESERVE_EDITION_TRANSLATION_AND_LOCATOR_UNCERTAINTY
+  - DO_NOT_TREAT_SUCCESS_OFFICE_PIETY_OR_REPUTATION_AS_SELF_INTERPRETING_PROOF
+  - NEVER_SILENTLY_REVISE_COMPLETED_RECORDS
+  - PRESERVE_RIVAL_EXPLANATIONS_AND_OPEN_QUESTIONS
+
+validation:
+  script: scripts/validate_repository.py
+  workflow: .github/workflows/validate.yml
+
+audit:
+  path: audits/foundation-status.yaml
+
+next_production_unit:
+  action: >
+    Register and review at least one primary witness of Xenophon's Anabasis,
+    recording edition, language, translation, pagination, file identity, and
+    documentary limits before beginning book-by-book reconstruction.
