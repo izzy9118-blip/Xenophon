@@ -1,0 +1,378 @@
+schema_version: 1.0
+unit_id: XEN-RU-008
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 133-136
+  pdf_pages_one_based: 137-140
+  opening_anchor: >-
+    and turned to him with questions on this subject but he wisely remained in the background
+  closing_anchor: >-
+    The density of references to god, of oaths and in particular of formal oaths pronounced by Xenophon himself is greater in Book VII than in all preceding Books
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 133; PDF p. 137
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon remains in the background when enemies seek friendly relations with the alleged city and direct questions to him, preserving distance from a foundation that exists only as rumor.
+    uncertainty: >-
+      The reason for his reserve is not stated; it may reflect prudence, rejection of the plan, political timing, or deliberate preservation of ambiguity.
+  - id: OBS-002
+    locator: printed p. 133; PDF p. 137
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Kleandros arrives with two triremes but no merchant ship and in the company of Dexippus, whose earlier conduct at Trapezus had been discreditable.
+    uncertainty: >-
+      The arrival supplies Spartan authority rather than the material transport the army had hoped to receive.
+  - id: OBS-003
+    locator: printed p. 133; PDF p. 137
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      After conflict between Kleandros and Agasias, Kleandros supports Dexippus, threatens to bar the mercenaries from Greek cities, and demands Agasias' extradition on the explicit ground that the Spartans then ruled all Greeks.
+    uncertainty: >-
+      The passage displays the reach of Spartan power but does not establish that Kleandros's initial judgment was just.
+  - id: OBS-004
+    locator: printed p. 133; PDF p. 137
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Dexippus attacks Xenophon because Xenophon and Agasias are friends, turning a dispute over Agasias into a wider accusation against Xenophon's authority.
+    uncertainty: >-
+      Strauss identifies friendship as the reason for the slander, but the precise content and evidentiary basis of Dexippus's charge remain to be checked in the primary narrative.
+  - id: OBS-005
+    locator: printed p. 133; PDF p. 137
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon tells the army that conflict with Kleandros would close both Thrace and the sea route home because even one Spartan can exercise decisive power in Greek cities.
+    uncertainty: >-
+      The speech states the political necessity of submission in this crisis; it does not present Spartan rule as intrinsically just or permanent.
+  - id: OBS-006
+    locator: printed p. 133; PDF p. 137
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon surrenders himself to Kleandros for adjudication and advises every accused man to do the same; Agasias swears that he acted independently and follows Xenophon's example.
+    uncertainty: >-
+      Voluntary submission may be prudence, confidence in innocence, loyalty to comrades, or all three; the episode does not isolate one motive.
+  - id: OBS-007
+    locator: printed p. 133; PDF p. 137
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss credits Xenophon's intervention with peacefully resolving the crisis and with saving the army not only from Persians and other barbarians but from Spartan power as well.
+    uncertainty: >-
+      The rescue is political and rhetorical rather than military, and its dependence on Kleandros's receptivity remains open.
+  - id: OBS-008
+    locator: printed p. 133; PDF p. 137
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Pharnabazus induces the Spartan admiral Anaxibios to remove the army from Asia, and Anaxibios promises employment in Europe if the mercenaries cross the strait.
+    uncertainty: >-
+      The promise is immediately entangled with Persian interest and later proves unreliable.
+  - id: OBS-009
+    locator: printed p. 133; PDF p. 137
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon alone resists considering Anaxibios's proposal but agrees to postpone leaving the army until after the crossing.
+    uncertainty: >-
+      The grounds of his initial reluctance are not supplied in this passage and must not be inferred solely from the later deception.
+  - id: OBS-010
+    locator: printed pp. 133-134; PDF pp. 137-138
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      After Anaxibios fails to provide the promised pay and tries to move the mercenaries out of Byzantion for service against Seuthes, the soldiers re-enter the city by force and offer Xenophon a city, triremes, money, and an army.
+    uncertainty: >-
+      The offer creates an opportunity for seizure but does not show that the army possessed a lawful title to Byzantion or the means to retain it.
+  - id: OBS-011
+    locator: printed pp. 133-134; PDF pp. 137-138
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon first calms the soldiers and then redirects their anger through an assembly speech rather than accepting the chance for rule and foundation presented by the occupation of Byzantion.
+    uncertainty: >-
+      His refusal may reflect justice, prudence, attachment to Greece, fear of Spartan power, or a combination that the passage does not fully disentangle.
+  - id: OBS-012
+    locator: printed p. 134; PDF p. 138
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon's speech argues that revenge against all Spartans for the deception of a few would unjustly expose an innocent Greek city to plunder and make the small army an enemy of Sparta, its allies, and therefore nearly all Greece.
+    uncertainty: >-
+      Strauss reports the speech's conclusion that justice favors the Spartans in the immediate dispute; this does not vindicate Anaxibios's deception.
+  - id: OBS-013
+    locator: printed p. 134; PDF p. 138
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon warns that the mercenaries would become exiles from their fatherlands and enemies even to their kin, and urges them as Greeks to obey those who rule the Greeks while seeking their rights through submission.
+    uncertainty: >-
+      The argument treats continued access to Greece as a decisive good but leaves unresolved the justice of obedience when Greek rulers act deceitfully.
+  - id: OBS-014
+    locator: printed p. 134; PDF p. 138
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss concludes that Xenophon knew both when to resist and when to yield and that Persian treachery compelled men once willing to prefer Cyrus to Greece to restore Greece to its rightful place.
+    uncertainty: >-
+      The phrase identifies a political correction produced through hostile circumstances; it does not yet settle Xenophon's relation to Athens, Sparta, or Cyrus.
+  - id: OBS-015
+    locator: printed p. 134; PDF p. 138
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Anaxibios's ungracious reply, a Theban attempt at sabotage, and dissension among the generals produce partial disintegration of the army after Xenophon leaves Byzantion with Kleandros.
+    uncertainty: >-
+      The sequence suggests Xenophon's practical indispensability but does not prove that his continued presence alone would have prevented disintegration.
+  - id: OBS-016
+    locator: printed p. 134; PDF p. 138
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      When Anaxibios is about to lose command and Pharnabazus no longer courts him, he asks Xenophon to return and bring most of the mercenaries back to Asia; the soldiers welcome Xenophon and the prospect of leaving Thrace.
+    uncertainty: >-
+      The reversal exposes unstable alliances and intra-Spartan rivalry rather than a coherent Spartan policy toward the army.
+  - id: OBS-017
+    locator: printed p. 134; PDF p. 138
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss says that intra-Spartan jealousies make fidelity to Sparta, and therefore fidelity to Greece under Spartan hegemony, difficult or perhaps impossible.
+    uncertainty: >-
+      The claim concerns the political conditions of this episode and does not establish that fidelity to Greece is impossible under every hegemonic arrangement.
+  - id: OBS-018
+    locator: printed pp. 134-135; PDF pp. 138-139
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Aristarchos forbids the army's return to Asia, Xenophon fears betrayal by Spartan and Persian authorities, and favorable sacrifices lead him to judge that joining Seuthes is safe for himself and the army.
+    uncertainty: >-
+      The consultation concerns whether to adopt the Seuthes option under manifest danger; it does not make Seuthes trustworthy.
+  - id: OBS-019
+    locator: printed p. 135; PDF p. 139
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon presents the competing promises of Aristarchos and Seuthes before the soldiers decide, and the majority chooses Seuthes, converting Cyrus's mercenaries into Seuthes' mercenaries by collective judgment rather than unilateral command.
+    uncertainty: >-
+      Majority choice establishes authorization under the circumstances, not the wisdom or justice of Seuthes' later conduct.
+  - id: OBS-020
+    locator: printed p. 135; PDF p. 139
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      At Seuthes' banquet the commanders are expected to give gifts, placing the nearly penniless Xenophon in an awkward position that he escapes through an improvised and graceful response after drinking.
+    uncertainty: >-
+      The episode displays wit under social pressure but its exact pedagogical or political significance is not explained by Strauss.
+  - id: OBS-021
+    locator: printed p. 135; PDF p. 139
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon and the Greeks keep their bargain and help Seuthes subdue Thracian enemies, while Herakleides attempts to withhold pay, alienate Seuthes from Xenophon, and induce the generals to defect.
+    uncertainty: >-
+      The Greeks' fidelity contrasts with Seuthes' agents, but the degree of Seuthes' own responsibility for the fraud remains to be established from the primary text.
+  - id: OBS-022
+    locator: printed p. 135; PDF p. 139
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Nonpayment turns the soldiers' anger against Xenophon even though he had not received the wages owed to them and had begun to question the alliance himself.
+    uncertainty: >-
+      Xenophon's intermediary position makes him answerable in the soldiers' eyes without proving that he controlled Seuthes' treasury or deception.
+  - id: OBS-023
+    locator: printed p. 135; PDF p. 139
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Spartan emissaries announce a campaign against Tissaphernes and seek Cyrus's former army, allowing Seuthes to dismiss the mercenaries while avoiding his debts; an Arcadian then accuses Xenophon of profiting from the soldiers' labor and demands capital punishment.
+    uncertainty: >-
+      The accusation identifies the lowest point of Xenophon's standing but remains an accusation rather than an adjudicated account of his conduct.
+  - id: OBS-024
+    locator: printed p. 135; PDF p. 139
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss describes the episode as Xenophon's lowest descent after his ascent and contrasts Xenophon's apology, grounded in deeds and speeches known to many witnesses, with Socrates' more difficult defense.
+    uncertainty: >-
+      The comparison concerns evidentiary and rhetorical circumstances; it does not imply that Xenophon and Socrates face identical charges or standards of justice.
+  - id: OBS-025
+    locator: printed pp. 135-136; PDF pp. 139-140
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Seuthes tries to obstruct Xenophon's reconciliation with the Spartans by slandering them, but consultation of Zeus the King dispels Xenophon's suspicions.
+    uncertainty: >-
+      Strauss reports the divine consultation as decisive for Xenophon's judgment; the exact signs and reasoning require primary-text review.
+  - id: OBS-026
+    locator: printed p. 136; PDF p. 140
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      An ambiguous reconciliation with Seuthes produces payment of the army's debt, followed by an unambiguous reconciliation between Xenophon, the mercenaries, and the Spartans.
+    uncertainty: >-
+      The distinction between the two reconciliations suggests different degrees of trust, but Strauss does not define the terms of the remaining ambiguity with Seuthes.
+  - id: OBS-027
+    locator: printed p. 136; PDF p. 140
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss concludes that Xenophon proves by deed that he esteems Greece above Cyrus and other barbarians.
+    uncertainty: >-
+      The conclusion concerns Greece generally and does not establish that Xenophon places Athens above Cyrus or Sparta.
+  - id: OBS-028
+    locator: printed p. 136; PDF p. 140
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon cannot show that he values his own fatherland above Cyrus or Sparta because Athens had exiled him for reasons he mentions but does not disclose.
+    uncertainty: >-
+      The omission prevents the repository from determining whether exile excuses, explains, or deepens the unresolved fatherland problem.
+  - id: OBS-029
+    locator: printed p. 136; PDF p. 140
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss ends the central argument by asking whether the Anabasis as a whole vindicates Socrates' apprehension when he learned of Proxenos' invitation to Xenophon.
+    uncertainty: >-
+      The question is left standing and is not answered by the final two observations concerning war, booty, and piety.
+  - id: OBS-030
+    locator: printed p. 136; PDF p. 140
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon immediately wages war against the Persians with the aim of capturing booty and achieves considerable success.
+    uncertainty: >-
+      The final movement toward Persian war does not by itself settle the justice of the campaign or Xenophon's relation to the Spartan project.
+  - id: OBS-031
+    locator: printed p. 136; PDF p. 140
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Strauss closes by noting that Book Seven has a greater density of references to god, oaths, and especially formal oaths spoken by Xenophon than all preceding books.
+    uncertainty: >-
+      The numerical and distributional claim awaits independent verification across the primary text and does not alone determine whether heightened piety is sincere, political, defensive, or pedagogical.
+argument_reconstruction:
+  - step: 1
+    claim: >-
+      The final unit shifts the unresolved city rumor into a confrontation with Spartan hegemony, where Xenophon preserves the army by submitting himself and his friends to adjudication rather than contesting the power that controls access to Greece.
+    locator: printed p. 133; PDF p. 137
+  - step: 2
+    claim: >-
+      At Byzantion Xenophon refuses the most concrete opportunity yet offered for city, fleet, money, and soldiers because seizure would convert resistance to a few deceivers into unjust war against an innocent Greek city and the Greek order as a whole.
+    locator: printed pp. 133-134; PDF pp. 137-138
+  - step: 3
+    claim: >-
+      Greece regains priority through political necessity and justice, yet Spartan faction and deception immediately reveal that obedience to the ruler of Greece cannot supply a simple or stable standard of fidelity.
+    locator: printed p. 134; PDF p. 138
+  - step: 4
+    claim: >-
+      The alliance with Seuthes arises from constrained choice among dangerous alternatives and favorable sacrifices, not from trust in barbarian rule, and the army authorizes the arrangement after Xenophon presents the available terms.
+    locator: printed pp. 134-135; PDF pp. 138-139
+  - step: 5
+    claim: >-
+      Greek fidelity to Seuthes is answered by nonpayment, intrigue, and slander, placing Xenophon between an untrustworthy ruler and soldiers who hold him responsible for the failed bargain.
+    locator: printed p. 135; PDF p. 139
+  - step: 6
+    claim: >-
+      Xenophon's lowest descent produces a second apology whose force rests on public deeds and numerous witnesses, allowing him to recover authority more effectively than Socrates could under radically different circumstances.
+    locator: printed p. 135; PDF p. 139
+  - step: 7
+    claim: >-
+      Payment, reconciliation, and return to Spartan service establish by deed Xenophon's preference for Greece over Cyrus and other barbarians while leaving his preference for Athens unresolved because exile has broken the ordinary relation to fatherland.
+    locator: printed pp. 135-136; PDF pp. 139-140
+  - step: 8
+    claim: >-
+      The essay closes without resolving Socrates' original apprehension: Xenophon returns to war against Persia amid the highest concentration of divine references and formal oaths, leaving piety, ambition, justice, booty, and fatherland in unresolved conjunction.
+    locator: printed p. 136; PDF p. 140
+provisional_inferences:
+  - id: INF-001
+    locator: printed p. 133; PDF p. 137
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Submission to adjudication can function as active statesmanship when open resistance would destroy the community's access to every available political refuge.
+    confidence: provisional_pending_primary_comparison
+  - id: INF-002
+    locator: printed pp. 133-134; PDF pp. 137-138
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's refusal of Byzantion distinguishes possession of the instruments of rule from a just title to found or command.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-003
+    locator: printed p. 134; PDF p. 138
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Fidelity to Greece is politically necessary yet institutionally unstable when Greece is represented by a hegemon divided by personal and factional rivalries.
+    confidence: provisional
+  - id: INF-004
+    locator: printed pp. 134-135; PDF pp. 138-139
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's recurring practice is to present constrained alternatives openly to the army while using sacrifice to judge the safety or timing of his own participation.
+    confidence: provisional_pending_primary_comparison
+  - id: INF-005
+    locator: printed p. 135; PDF p. 139
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      A leader may become the target of collective anger precisely because he mediates a bargain whose fulfillment depends on another ruler he cannot control.
+    confidence: high_for_unit_structure
+  - id: INF-006
+    locator: printed pp. 135-136; PDF pp. 139-140
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's recoverable public record gives his apology a documentary advantage over Socrates' defense, but easier vindication before an army does not establish superior justice.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-007
+    locator: printed p. 136; PDF p. 140
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      The essay's final distinction between Greece and Athens preserves fatherland as the unresolved limit of Xenophon's practical reconciliation with Greek political authority.
+    confidence: high_for_strauss_argument_in_this_unit
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 133; PDF p. 137
+    question: >-
+      Why does Xenophon remain in the background when the alleged city attracts questions and foreign friendship?
+  - id: Q-002
+    locator: printed p. 133; PDF p. 137
+    question: >-
+      Does Xenophon's submission to Kleandros express confidence in justice, accommodation to power, protection of Agasias, or an inseparable combination?
+  - id: Q-003
+    locator: printed pp. 133-134; PDF pp. 137-138
+    question: >-
+      Is the offer of Byzantion the strongest practical opportunity for foundation in the Anabasis, and why does Xenophon reject it more decisively than the earlier city proposal?
+  - id: Q-004
+    locator: printed p. 134; PDF p. 138
+    question: >-
+      How can justice be on the Spartan side in the Byzantion crisis when Anaxibios's own deception produced the soldiers' anger?
+  - id: Q-005
+    locator: printed p. 134; PDF p. 138
+    question: >-
+      What remains of fidelity to Greece when Spartan faction makes fidelity to Sparta unstable or impossible?
+  - id: Q-006
+    locator: printed pp. 134-135; PDF pp. 138-139
+    question: >-
+      What exactly do favorable sacrifices establish about joining Seuthes: safety, prudence, divine approval, or only permission under necessity?
+  - id: Q-007
+    locator: printed p. 135; PDF p. 139
+    question: >-
+      Why does the army hold Xenophon responsible for Seuthes' nonpayment, and what does that expectation disclose about his practical authority?
+  - id: Q-008
+    locator: printed p. 135; PDF p. 139
+    question: >-
+      In what precise respects is Xenophon's apology easier and more effective than Socrates', and what morally relevant differences does that comparison leave untouched?
+  - id: Q-009
+    locator: printed pp. 135-136; PDF pp. 139-140
+    question: >-
+      Why is reconciliation with Seuthes ambiguous while reconciliation with the soldiers and Spartans is unambiguous?
+  - id: Q-010
+    locator: printed p. 136; PDF p. 140
+    question: >-
+      Does Xenophon's return to Spartan service prove preference for Greece, or only rejection of the immediate barbarian alternatives available to him?
+  - id: Q-011
+    locator: printed p. 136; PDF p. 140
+    question: >-
+      What were the reasons for Xenophon's exile, and how does the narrative omission govern the unresolved comparison among Athens, Sparta, Cyrus, and Greece?
+  - id: Q-012
+    locator: printed p. 136; PDF p. 140
+    question: >-
+      Does the Anabasis as a whole vindicate Socrates' apprehension about Proxenos' invitation, or does Xenophon's return and reconciliation answer that apprehension only partially?
+  - id: Q-013
+    locator: printed p. 136; PDF p. 140
+    question: >-
+      How should the immediate campaign for Persian booty be judged in relation to Xenophon's restored allegiance to Greece and Sparta?
+  - id: Q-014
+    locator: printed p. 136; PDF p. 140
+    question: >-
+      Why does Book Seven culminate in the highest density of divine references and formal oaths, and does that density clarify or complicate Xenophon's piety?
+downstream_primary_text_checks:
+  - Anabasis VI.6.1-38 on Kleandros, Dexippus, Agasias, Spartan authority, surrender for judgment, and peaceful settlement
+  - Anabasis VII.1.1-32 on Anaxibios's promise, the crossing to Byzantion, unpaid wages, forced re-entry, and the offer of city and command to Xenophon
+  - Anabasis VII.1.33-41 on Xenophon's speech concerning innocent Byzantion, Spartan power, Greece, exile, kin, obedience, and rights
+  - Anabasis VII.2.1-24 on Xenophon's departure, army disintegration, Anaxibios's reversal, Pharnabazus, and intra-Spartan rivalry
+  - Anabasis VII.2.25-38 on Aristarchos, Seuthes, sacrifice, competing proposals, and the army's collective decision
+  - Anabasis VII.3.14-33 on Seuthes' banquet, expected gifts, Xenophon's poverty, and his improvised response
+  - Anabasis VII.4.1-24 and VII.5.1-13 on the Thracian campaign, winter, Herakleides, and withholding of pay
+  - Anabasis VII.6.1-43 on Spartan recruitment, the accusation against Xenophon, his apology, and Seuthes' attempt to prevent reconciliation
+  - Anabasis VII.6.44-47 on consultation of Zeus the King and the dispelling of suspicions about the Spartans
+  - Anabasis VII.7.1-56 on payment of the debt, reconciliation with Seuthes, the soldiers, and the Spartans
+  - Anabasis III.1.4, V.3.7, V.6.22, and VII.7.57 on Proxenos' invitation, Xenophon's exile, and the unresolved relation to Athens
+  - Anabasis VII.8.1-25 and full-book concordance review on war against Persia, booty, references to god, oaths, and formal oaths pronounced by Xenophon
