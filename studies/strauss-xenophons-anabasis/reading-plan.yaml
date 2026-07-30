@@ -38,11 +38,12 @@ reading_units:
   - id: XEN-RU-007
     printed_pages: 129-132
     pdf_pages_one_based: 133-136
-    status: NEXT
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-007.yaml
   - id: XEN-RU-008
     printed_pages: 133-136
     pdf_pages_one_based: 137-140
-    status: QUEUED
+    status: NEXT
 required_outputs_per_unit:
   - documentary_observations
   - argument_reconstruction
