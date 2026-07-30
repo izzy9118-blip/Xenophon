@@ -19,6 +19,7 @@ REQUIRED = [
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-003.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-004.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-005.yaml",
+    ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-006.yaml",
     ROOT / "adapter/report-contract.yaml",
     ROOT / "audits/founding-state.yaml",
 ]
@@ -66,6 +67,7 @@ def main() -> int:
         "XEN-RU-003",
         "XEN-RU-004",
         "XEN-RU-005",
+        "XEN-RU-006",
     }
     if set(drafted) != expected_drafted:
         print("Reading plan drafted-unit set mismatch")
@@ -95,8 +97,8 @@ def main() -> int:
                 return 1
 
     next_units = [unit["id"] for unit in reading_plan["reading_units"] if unit.get("status") == "NEXT"]
-    if next_units != ["XEN-RU-006"]:
-        print("Reading plan must identify XEN-RU-006 as the sole next unit")
+    if next_units != ["XEN-RU-007"]:
+        print("Reading plan must identify XEN-RU-007 as the sole next unit")
         return 1
 
     expected_manifest_units = [
@@ -105,16 +107,17 @@ def main() -> int:
         "XEN-RU-003",
         "XEN-RU-004",
         "XEN-RU-005",
+        "XEN-RU-006",
     ]
     if manifest["secondary_study"]["drafted_units"] != expected_manifest_units:
         print("Manifest drafted-unit order mismatch")
         return 1
-    if manifest["next_required_unit"]["id"] != "XEN-RU-006":
+    if manifest["next_required_unit"]["id"] != "XEN-RU-007":
         print("Manifest next-unit mismatch")
         return 1
 
     audit = documents[ROOT / "audits/founding-state.yaml"]
-    if audit["repository_state"]["drafted_secondary_units"] != 5:
+    if audit["repository_state"]["drafted_secondary_units"] != 6:
         print("Founding audit drafted-unit count mismatch")
         return 1
 
