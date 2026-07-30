@@ -13,7 +13,7 @@ repository_state:
   primary_translation_witness_admitted: true
   primary_witness_count: 1
   primary_study_started: true
-  drafted_primary_units: 24
+  drafted_primary_units: 25
   drafted_secondary_units: 8
   book_one_primary_draft_complete: true
   book_two_primary_draft_complete: true
@@ -36,6 +36,7 @@ repository_state:
   - IV.1
   - IV.2
   - IV.3
+  - IV.4
   minister_adapter_derived: false
   sanctum_registration_present: false
 resolved_items:
@@ -62,7 +63,7 @@ documented_gaps:
   - translation adjudication
   - final textual certification
 - id: GAP-005
-  description: The primary Anabasis reconstruction remains incomplete; Books I through III are drafted pending owner review, and Book IV has drafted coverage through IV.3.
+  description: The primary Anabasis reconstruction remains incomplete; Books I through III are drafted pending owner review, and Book IV has drafted coverage through IV.4.
   blocks:
   - complete primary argument map
   - systematic deed extraction
@@ -72,4 +73,4 @@ documented_gaps:
   description: No owner-approved Xenophon adapter exists.
   blocks:
   - Assembly dispatch
-next_required_action: Complete XEN-PRI-RU-025 for Anabasis IV.4 without importing Strauss or treating translated wording as unmediated Greek evidence.
+next_required_action: Complete XEN-PRI-RU-026 for Anabasis IV.5 without importing Strauss or treating translated wording as unmediated Greek evidence.
