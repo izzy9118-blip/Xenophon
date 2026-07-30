@@ -2,8 +2,11 @@ schema_version: 1.0
 study_id: XEN-STUDY-SEC-001
 source_id: XEN-SRC-SEC-001
 witness_id: XEN-WIT-SEC-001
-status: SEQUENTIAL_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+status: OWNER_ADOPTED_SECONDARY_RECONSTRUCTION
 purpose: Reconstruct Strauss's argument and evidentiary moves without adopting them as Xenophon's teaching.
+owner_review:
+  record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+  effect: The completed unit records remain immutable production drafts and are adopted collectively within secondary-source jurisdiction.
 reading_units:
   - id: XEN-RU-001
     printed_pages: 105-108
@@ -45,10 +48,6 @@ reading_units:
     pdf_pages_one_based: 137-140
     status: DRAFTED_PENDING_OWNER_REVIEW
     record: studies/strauss-xenophons-anabasis/units/XEN-RU-008.yaml
-coverage:
-  printed_pages: 105-136
-  pdf_pages_one_based: 109-140
-  status: COMPLETE_FOR_REGISTERED_WITNESS_PENDING_OWNER_REVIEW
 required_outputs_per_unit:
   - documentary_observations
   - argument_reconstruction
