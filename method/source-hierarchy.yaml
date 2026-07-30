@@ -1,0 +1,30 @@
+schema_version: 1.0
+status: ACTIVE_METHOD_PENDING_OWNER_REVIEW
+hierarchy:
+  - level: 1
+    class: PRIMARY_XENOPHONTIC_WITNESS
+    authority: Highest documentary authority for reconstructing Xenophon
+    requirements:
+      - work identity established
+      - edition or translation identified
+      - witness provenance recorded
+      - locators stable enough for audit
+  - level: 2
+    class: ANCIENT_EXTERNAL_WITNESS
+    authority: Contextual or comparative evidence that cannot override Xenophon's text
+    examples:
+      - contemporary or near-contemporary historical evidence
+      - ancient reception or testimony
+  - level: 3
+    class: STRAUSSIAN_INTERPRETIVE_WITNESS
+    authority: May disclose questions, textual features, and hypotheses; never substitutes for primary reconstruction
+    active_record: XEN-SRC-SEC-001
+  - level: 4
+    class: MODERN_SECONDARY_SCHOLARSHIP
+    authority: Comparative and corrective aid only
+non_absorption_rules:
+  - Do not convert Strauss's interpretation into a claim by Xenophon without primary-text support.
+  - Do not merge Xenophon the author, Xenophon the narrator, and Xenophon as a character.
+  - Do not treat a translator's wording as unmediated Greek evidence.
+  - Do not resolve textual or historical uncertainty by silent preference.
+  - Do not infer doctrine from isolated quotation without sequence, audience, deed, and outcome.
