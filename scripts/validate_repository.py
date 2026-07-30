@@ -2,10 +2,10 @@ from pathlib import Path
 import sys, yaml
 ROOT=Path(__file__).resolve().parents[1]
 SID=[f'XEN-RU-{n:03d}' for n in range(1,9)]
-PID=[f'XEN-PRI-RU-{n:03d}' for n in range(1,30)]
+PID=[f'XEN-PRI-RU-{n:03d}' for n in range(1,31)]
 UP=lambda n: ROOT/f'studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-{n:03d}.yaml'
 PLAN=ROOT/'studies/xenophon-anabasis-dakyns/reading-plan.yaml'
-REQ=[ROOT/'manifest.yaml',ROOT/'corpus/index.yaml',ROOT/'corpus/sources/xenophon-anabasis.yaml',ROOT/'corpus/witnesses/gutenberg-1170-dakyns-pdf.yaml',PLAN,ROOT/'audits/founding-state.yaml',ROOT/'governance/owner-reviews/2026-07-30-strauss-witness-review.yaml',ROOT/'governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml',ROOT/'history/2026-07-30-primary-anabasis-witness-record.md',ROOT/'history/2026-07-30-anabasis-book-iv-draft-completion.md',*[UP(n) for n in range(1,30)]]
+REQ=[ROOT/'manifest.yaml',ROOT/'corpus/index.yaml',ROOT/'corpus/sources/xenophon-anabasis.yaml',ROOT/'corpus/witnesses/gutenberg-1170-dakyns-pdf.yaml',PLAN,ROOT/'audits/founding-state.yaml',ROOT/'governance/owner-reviews/2026-07-30-strauss-witness-review.yaml',ROOT/'governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml',ROOT/'history/2026-07-30-primary-anabasis-witness-record.md',ROOT/'history/2026-07-30-anabasis-book-iv-draft-completion.md',ROOT/'history/2026-07-30-anabasis-book-v-draft-start.md',*[UP(n) for n in range(1,31)]]
 def load(p):
  with p.open(encoding='utf-8') as f:return yaml.safe_load(f)
 def fail(x):print(x);return 1
@@ -15,28 +15,30 @@ def main():
  missing=[str(p.relative_to(ROOT)) for p in REQ if not p.exists()]
  if missing:return fail('Missing required files: '+', '.join(missing))
  m=load(ROOT/'manifest.yaml'); a=load(ROOT/'audits/founding-state.yaml'); p=load(PLAN)
- if m.get('version')!='1.29.0' or m.get('state')!='PRIMARY_RECONSTRUCTION_IN_PROGRESS':return fail('Manifest state mismatch')
+ if m.get('version')!='1.30.0' or m.get('state')!='PRIMARY_RECONSTRUCTION_IN_PROGRESS':return fail('Manifest state mismatch')
  if m.get('artificial_intelligence_self_certification_prohibited') is not True:return fail('AI self-certification safeguard missing')
  if m.get('minister',{}).get('registration_status')!='NOT_YET_REGISTERED_IN_SANCTUM':return fail('Premature Sanctum registration')
  ps=m.get('primary_study',{})
  chapters=['IV.1','IV.2','IV.3','IV.4','IV.5','IV.6','IV.7','IV.8']
  if ps.get('drafted_units')!=PID or ps.get('book_four_drafted_chapters')!=chapters:return fail('Manifest primary coverage mismatch')
  if ps.get('book_four_draft_complete_pending_owner_review') is not True:return fail('Book IV draft-complete marker missing')
- if m.get('next_required_unit',{}).get('id')!='XEN-PRI-RU-030':return fail('Manifest next unit mismatch')
+ if ps.get('book_five_drafted_chapters')!=['V.1']:return fail('Manifest Book V coverage mismatch')
+ if m.get('next_required_unit',{}).get('id')!='XEN-PRI-RU-031':return fail('Manifest next unit mismatch')
  units=p.get('reading_units',[])
- if [u.get('id') for u in units]!=PID+['XEN-PRI-RU-030']:return fail('Reading plan order mismatch')
+ if [u.get('id') for u in units]!=PID+['XEN-PRI-RU-031']:return fail('Reading plan order mismatch')
  if [u.get('id') for u in units if u.get('status')=='DRAFTED_PENDING_OWNER_REVIEW']!=PID:return fail('Drafted status mismatch')
- if units[-1].get('work_locator')!='Anabasis V.1' or units[-1].get('pdf_pages_one_based')!='94-95' or units[-1].get('status')!='NEXT':return fail('Next unit control mismatch')
- if units[-2].get('work_locator')!='Anabasis IV.8' or units[-2].get('pdf_pages_one_based')!='90-93':return fail('IV.8 range missing')
+ if units[-1].get('work_locator')!='Anabasis V.2' or units[-1].get('pdf_pages_one_based')!='96-98' or units[-1].get('status')!='NEXT':return fail('Next unit control mismatch')
+ if units[-2].get('work_locator')!='Anabasis V.1' or units[-2].get('pdf_pages_one_based')!='94-95':return fail('V.1 range missing')
  if p.get('comparison_gate',{}).get('strauss_comparison')!='DEFERRED':return fail('Strauss comparison gate missing')
  rs=a.get('repository_state',{})
- if rs.get('drafted_primary_units')!=29:return fail('Audit count mismatch')
+ if rs.get('drafted_primary_units')!=30:return fail('Audit count mismatch')
  if rs.get('book_four_drafted_chapters')!=chapters or rs.get('book_four_primary_draft_complete') is not True:return fail('Audit Book IV mismatch')
+ if rs.get('book_five_drafted_chapters')!=['V.1']:return fail('Audit Book V mismatch')
  if rs.get('minister_adapter_derived') is not False or rs.get('sanctum_registration_present') is not False:return fail('Premature derivation or registration')
  w=load(ROOT/'corpus/witnesses/gutenberg-1170-dakyns-pdf.yaml')
  if w.get('status')!='OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS' or w.get('witness',{}).get('page_count')!=168:return fail('Witness control mismatch')
  if w.get('file_control',{}).get('sha256')!='6a7534d8d80153afc1623803ef129185aa8d3d41be692091f4e105375c65901e':return fail('Witness digest mismatch')
- docs={n:load(UP(n)) for n in range(1,30)}
+ docs={n:load(UP(n)) for n in range(1,31)}
  required=['bibliographic_and_witness_control','narrative_person_and_authorial_attribution','speakers_audiences_and_occasions','speeches_deeds_and_outcomes','sequence_repetition_omission_and_contradiction','documentary_observations','provisional_findings','standing_unresolved_questions','downstream_textual_checks']
  for n,r in docs.items():
   uid=f'XEN-PRI-RU-{n:03d}'
@@ -62,5 +64,13 @@ def main():
  for x in ['slave at Athens','recognizes Macrone speech','exchange different lances','cut trees, build the road','columns with intervals','prayer and battle hymn','mistakes enemy redeployment for flight','Honeycomb causes vomiting','no death is reported','thirty-day base for ravaging Colchis','Zeus the Saviour','captive lads','More than sixty Cretans','Male and female companions','more than half tumbling','Book V synopsis']:
   if x not in t:return fail(f'IV.8 phrase safeguard missing: {x}')
  if len(u.get('documentary_observations',[]))!=28 or len(u.get('speeches_deeds_and_outcomes',[]))!=12:return fail('IV.8 record counts mismatch')
+ v=docs[30]; b=v.get('bibliographic_and_witness_control',{}).get('chapter_boundary_control','')
+ if 'Book V retrospective synopsis' not in b or 'V.1 begins beneath heading I on PDF page 94' not in b or 'V.2 begins on page 96' not in b:return fail('V.1 boundary and paratext control missing')
+ need={'BOOK_TRANSITION_PARATEXT_OBSERVATION','MARCH_WEARINESS_OBSERVATION','SEA_RETURN_PREFERENCE_OBSERVATION','ODYSSEAN_ALLUSION_PARATEXT_OBSERVATION','PERSONAL_CONNECTION_PROCUREMENT_OBSERVATION','INSUFFICIENT_MARKET_OBSERVATION','ORGANIZED_FORAGING_OBSERVATION','PILLAGE_REGISTRATION_OBSERVATION','EXPERIENCE_OVERSIGHT_OBSERVATION','APPROPRIATION_ACKNOWLEDGMENT_OBSERVATION','ROTATING_OUTPOST_OBSERVATION','DUAL_TRANSPORT_STRATEGY_OBSERVATION','VESSEL_DETENTION_OBSERVATION','COMMON_FUND_OBSERVATION','FARE_COMPENSATION_OBSERVATION','LAND_ROUTE_REJECTION_OBSERVATION','WITHHELD_VOTE_OBSERVATION','COERCIVE_VOLUNTARINESS_OBSERVATION','TRAPEZUNTINE_GALLEY_OBSERVATION','PERIOECUS_PARATEXT_OBSERVATION','ENTRUSTED_COMMAND_DESERTION_OBSERVATION','PROLEPTIC_PUNISHMENT_REPORT_OBSERVATION','CARGO_REMOVAL_AND_CUSTODY_OBSERVATION','FORAY_FAILURE_AND_COMMAND_DEATH_OBSERVATION'}
+ if need-types(v):return fail('V.1 evidence types missing: '+', '.join(sorted(need-types(v))))
+ t=' '.join(texts(v))
+ for x in ['packing, marching, carrying arms','returning by sea','friendship with Anaxibius','market is insufficient','organized parties to capture provisions','report their intent and direction','appropriated what belongs to them','Regular outposts','guarded with rudders removed','general fund','agreeing a fare','loud protest','voluntarily after pressure','fifty-oared galley','perioecus','leaves Pontus with the entrusted galley','later killing by Nicander','freight is removed and guarded','Cleanetus is killed']:
+  if x not in t:return fail(f'V.1 phrase safeguard missing: {x}')
+ if len(v.get('documentary_observations',[]))!=24 or len(v.get('speeches_deeds_and_outcomes',[]))!=10:return fail('V.1 record counts mismatch')
  print('Xenophon repository validation passed');return 0
 if __name__=='__main__':sys.exit(main())
