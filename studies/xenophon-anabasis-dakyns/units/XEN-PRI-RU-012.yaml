@@ -1,0 +1,309 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-012
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis II.2
+  pdf_pages_one_based: 34-36
+  opening_anchor: "Phalinus and those that were with him turned and went."
+  closing_anchor: "At break of day Clearchus gave the order to the Hellenes to get under arms in line of battle, and take up exactly the same position as they held on the day of the battle."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis II.2 plus one-based PDF page
+  source_boundary: >-
+    Direct translated speeches, narrator-reported intention, sacrifice and omen reports,
+    oath ritual, editorial notes on manuscript additions and the possible word "wolf,"
+    strategic judgment, false alarm, inferred royal reaction, and comic proclamation remain distinct.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration with explicit evaluative and inferential interventions
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon does not enter as a named character. The narrator nevertheless judges Ariaeus's
+    proposal as equivalent to a stampede, says fortune proved a better general, and marks the
+    king's alarm through the qualified phrase "as it would appear."
+  uncertainty: >-
+    This witness does not settle the Greek wording of leadership, wisdom, experience, sacrifice,
+    alliance, treachery, oath, fortune, flight, panic, or the textual status of the route-distance
+    note and the sacrificial "wolf."
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis II.2; PDF p. 34
+    speech_form: message_reported
+    speaker: Ariaeus through Procles and Cheirisophus
+    audience: Clearchus and the Greek commanders
+    occasion: answer to the proposal that Ariaeus take the Persian throne
+    content: >-
+      Ariaeus says many Persians better than he would not permit him to become king; if the
+      Greeks intend to return with him they must join that night, otherwise he will depart the next day.
+    uncertainty: >-
+      Ariaeus's political ranking, the identity of the superior Persians, and the basis of their power are not supplied.
+  - id: SAO-002
+    locator: Anabasis II.2; PDF p. 34
+    speech_form: deliberately_noncommittal_reply
+    speaker: Clearchus
+    audience: Procles and Cheirisophus for transmission to Ariaeus
+    occasion: response to the nighttime deadline
+    content: >-
+      Clearchus says that if the Greeks come, matters should stand as Ariaeus proposes; if they do not,
+      Ariaeus should do whatever best serves his interests.
+    uncertainty: >-
+      The narrator explicitly says Clearchus keeps the messengers ignorant of his real intention.
+  - id: SAO-003
+    locator: Anabasis II.2; PDF p. 34
+    speech_form: council_address_and_orders
+    speaker: Clearchus
+    audience: Greek generals and officers
+    occasion: sunset deliberation after sacrifice
+    content: >-
+      He reports unfavorable victims for advancing against the king, the Tigris as an uncrossable obstacle
+      without boats, impossibility of remaining without provisions, favorable victims for joining Cyrus's friends,
+      and a three-signal nighttime departure with baggage protected between river and troops.
+    uncertainty: >-
+      The signs themselves, the identity of the sacrificer, and the evidentiary relation between geography and divination are not shown.
+  - id: SAO-004
+    locator: Anabasis II.2; PDF p. 35
+    speech_form: direct_route_question
+    speaker: Clearchus
+    audience: Ariaeus
+    occasion: after the mutual oath of alliance
+    content: >-
+      Clearchus asks whether they should return by the outward route or follow a better route devised by Ariaeus.
+    uncertainty: >-
+      No independent route alternatives are presented before Ariaeus answers.
+  - id: SAO-005
+    locator: Anabasis II.2; PDF p. 35
+    speech_form: strategic_route_advice
+    speaker: Ariaeus
+    audience: Clearchus and the allied commanders
+    occasion: planning the withdrawal
+    content: >-
+      Ariaeus says the outward route means universal starvation because seventeen stages have been exhausted.
+      He proposes a longer provisioned route, very long opening stages, and rapid separation from the royal army,
+      which he says cannot pursue effectively with either a small or a large force.
+    uncertainty: >-
+      The route, its guides, supply sources, distances, and assumptions about royal pursuit are not independently verified.
+  - id: SAO-006
+    locator: Anabasis II.2; PDF pp. 35-36
+    speech_form: command_and_deliberative_choice_reported
+    speaker: Clearchus
+    audience: the marching army
+    occasion: approach to villages near signs of the royal encampment
+    content: >-
+      Clearchus neither attacks the nearby enemy nor swerves from the route; he keeps the column moving straight
+      to avoid an appearance of flight while the troops are tired, hungry, and late.
+    uncertainty: >-
+      The choice is narrated as action and calculation rather than preserved as a public speech.
+  - id: SAO-007
+    locator: Anabasis II.2; PDF p. 36
+    speech_form: comic_emergency_proclamation
+    speaker: Tolmides under Clearchus's order
+    audience: the panicked Greek camp
+    occasion: unexplained nighttime alarm
+    content: >-
+      After proclaiming silence, Tolmides announces a reward of one talent for information identifying
+      whoever let an ass into the camp.
+    uncertainty: >-
+      The actual cause of the panic and whether any ass was present remain unstated.
+  - id: SAO-008
+    locator: Anabasis II.2; PDF p. 36
+    speech_form: dawn_battle_order
+    speaker: Clearchus
+    audience: the Greek army
+    occasion: morning after the panic and enemy withdrawal
+    content: >-
+      Clearchus orders the Greeks to arm and occupy exactly the formation used on the day of battle.
+    uncertainty: >-
+      The immediate intended use of the formation is deferred to II.3.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis II.2; PDF p. 34
+    actor: Ariaeus, Procles, Cheirisophus, Menon, and Clearchus
+    deed: >-
+      Ariaeus rejects the kingship proposal through messengers, imposes a nighttime rendezvous,
+      Menon remains with him, and Clearchus answers without revealing whether the Greeks will come.
+    outcome: >-
+      The possible substitution of Ariaeus for Cyrus ends, while Clearchus preserves freedom of movement.
+    uncertainty: >-
+      Menon's reason for remaining and his role in Ariaeus's decision are not stated.
+  - id: SDO-002
+    locator: Anabasis II.2; PDF p. 34
+    actor: Clearchus, the Greek generals, and officers
+    deed: >-
+      Clearchus combines sacrificial findings, geographic intelligence, lack of provisions, and timed bugle signals
+      into a concealed nighttime withdrawal plan.
+    outcome: >-
+      The commanders obey, and Clearchus becomes the practical leader without formal election.
+    uncertainty: >-
+      The source of the Tigris intelligence and the exact constitutional status of his command remain open.
+  - id: SDO-003
+    locator: Anabasis II.2; PDF pp. 34-35
+    actor: Miltocythes and the remaining expedition
+    deed: >-
+      Miltocythes deserts with forty horsemen and three hundred Thracian infantry, while the rest march under Clearchus
+      and join Ariaeus around midnight.
+    outcome: >-
+      The alliance forms after a measurable loss of cavalry and infantry.
+    uncertainty: >-
+      Miltocythes's motive, destination, and later fate are not supplied.
+  - id: SDO-004
+    locator: Anabasis II.2; PDF p. 35
+    actor: Greek commanders, Ariaeus, and his principal officers
+    deed: >-
+      They exchange reciprocal oaths against betrayal and for faithful alliance; the Asiatics add a pledge to guide
+      without treachery, ratified through animal sacrifice and weapons dipped in blood.
+    outcome: >-
+      A mixed Greek-Asian alliance receives ritual form before route planning.
+    uncertainty: >-
+      The possible interpolation of "wolf," the oath wording, and enforcement mechanism remain unresolved.
+  - id: SDO-005
+    locator: Anabasis II.2; PDF p. 35
+    actor: Ariaeus and the allied commanders
+    deed: >-
+      Ariaeus proposes a longer route with provisions and a rapid initial flight beyond practical royal pursuit.
+    outcome: >-
+      The alliance begins a retreat under a plan the narrator characterizes as a stampede.
+    uncertainty: >-
+      The narrator's judgment and Ariaeus's military assumptions are not independently verified.
+  - id: SDO-006
+    locator: Anabasis II.2; PDF p. 35
+    actor: the allied army, scouts, and Ariaeus
+    deed: >-
+      The army marches with the sun on its right, reaches the expected region, mistakes grazing baggage animals for cavalry,
+      reforms, and sees smoke from nearby villages.
+    outcome: >-
+      A false alarm reveals readiness to reform and the proximity of the royal encampment.
+    uncertainty: >-
+      The source of the smoke and exact distance to royal forces are inferred rather than measured.
+  - id: SDO-007
+    locator: Anabasis II.2; PDF pp. 35-36
+    actor: Clearchus, the vanguard, rear division, and nearby royal troops
+    deed: >-
+      Clearchus marches straight into already plundered villages; the vanguard quarters, the rear bivouacs noisily in darkness,
+      and nearby enemy troops abandon their quarters.
+    outcome: >-
+      Refusal to display flight unexpectedly produces local enemy withdrawal.
+    uncertainty: >-
+      The enemy's identity, number, and direct perception of the Greeks are not fully described.
+  - id: SDO-008
+    locator: Anabasis II.2; PDF p. 36
+    actor: the Greek camp, Clearchus, and Tolmides
+    deed: >-
+      A nighttime panic breaks out; Clearchus restores silence through Tolmides's absurd reward proclamation and orders
+      the battle formation at dawn.
+    outcome: >-
+      Humor and authoritative procedure convert unexplained terror into renewed order.
+    uncertainty: >-
+      The panic's cause and the soldiers' exact reasoning are not disclosed.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Ariaeus rejects the throne and gives a nighttime deadline
+    - Clearchus preserves ambiguity with the returning messengers
+    - Sacrifice, geography, and provisions produce a concealed departure plan
+    - Clearchus becomes practical leader without formal election
+    - Miltocythes deserts during the night march
+    - Greeks and Asiatics swear alliance and non-betrayal
+    - Ariaeus proposes a longer provisioned route and rapid separation
+    - The narrator calls the plan a stampede and credits fortune as better general
+    - A false cavalry alarm tests formation
+    - Clearchus advances straight into plundered villages
+    - Noise drives nearby enemies away
+    - A Greek nighttime panic is dissolved by comic proclamation
+    - Dawn restores the battle formation
+  repetitions:
+    - Clearchus repeatedly conceals intention while issuing precise operational orders.
+    - Lack of provisions governs strategy as strongly as victory or defeat.
+    - Alliance is defined through oaths against betrayal before betrayal has occurred.
+    - Fear is generated by incomplete information and corrected through scouts, visible signs, or speech.
+    - Leadership appears through recognized competence rather than formal election.
+  omissions:
+    - Menon's activity while remaining with Ariaeus is not narrated.
+    - The sacrificial signs and officiants are not described.
+    - The source of Clearchus's new Tigris knowledge is omitted.
+    - No formal vote appointing Clearchus is recorded.
+    - Miltocythes's motive and later fate are omitted.
+    - The exact route and provision sources proposed by Ariaeus are not identified.
+    - The king's nearby force and intentions are not directly observed.
+    - The cause of the nighttime Greek panic is not disclosed.
+  tensions:
+    - Clearchus becomes leader without election while the army remains formally divided among generals.
+    - A solemn alliance against treachery begins under a plan described as flight.
+    - Sacrificial guidance and practical constraints point to the same course, but their causal relation is unclear.
+    - Ariaeus predicts safety through speed, while fortune rather than his plan is credited with superior generalship.
+    - The army fears harmless baggage animals and later frightens real enemies through accidental noise.
+    - Comic speech restores order in a situation of genuine strategic danger.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis II.2; PDF p. 34", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Ariaeus says many Persians better than he would prevent his accession.", uncertainty: "Their identities, ranking, and power are not supplied."}
+  - {id: OBS-002, locator: "Anabasis II.2; PDF p. 34", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Menon remains with Ariaeus while Procles and Cheirisophus return.", uncertainty: "His purpose and conduct are not narrated."}
+  - {id: OBS-003, locator: "Anabasis II.2; PDF p. 34", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus answers Ariaeus conditionally and again withholds his real intention.", uncertainty: "The intended plan is disclosed only later to the commanders."}
+  - {id: OBS-004, locator: "Anabasis II.2; PDF p. 34", evidence_type: DIVINATORY_REPORT_OBSERVATION, observation: "Clearchus reports unfavorable victims for advancing against Artaxerxes.", uncertainty: "The signs, officiant, and procedure are absent."}
+  - {id: OBS-005, locator: "Anabasis II.2; PDF p. 34", evidence_type: GEOGRAPHIC_AND_LOGISTICAL_OBSERVATION, observation: "Clearchus says the navigable Tigris lies between the Greeks and the king and cannot be crossed without boats.", uncertainty: "His information source and exact location are unstated."}
+  - {id: OBS-006, locator: "Anabasis II.2; PDF p. 34", evidence_type: DIVINATORY_REPORT_OBSERVATION, observation: "The victims are reported favorable for joining Cyrus's surviving friends.", uncertainty: "The result is reported by Clearchus rather than independently described."}
+  - {id: OBS-007, locator: "Anabasis II.2; PDF p. 34", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Three bugle signals organize packing, loading, and movement.", uncertainty: "The messenger network and timing interval are not specified."}
+  - {id: OBS-008, locator: "Anabasis II.2; PDF p. 34", evidence_type: STRUCTURAL_OBSERVATION, observation: "Baggage is placed on the river side and troops on the exposed side.", uncertainty: "The exact marching formation and riverbank conditions are not given."}
+  - {id: OBS-009, locator: "Anabasis II.2; PDF p. 34", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus leads without express election because others recognize his sense and generalship.", uncertainty: "The Greek terms and constitutional force require review."}
+  - {id: OBS-010, locator: "Anabasis II.2; PDF p. 34", evidence_type: EDITORIAL_OR_TEXTUAL_FRAME_OBSERVATION, observation: "Dakyns notes a manuscript addition giving total route distances and treats it as possibly marginal.", uncertainty: "The critical apparatus is not available in this witness."}
+  - {id: OBS-011, locator: "Anabasis II.2; PDF p. 35", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Miltocythes deserts with forty horsemen and three hundred Thracian infantry.", uncertainty: "His motive and reception by Artaxerxes are unknown."}
+  - {id: OBS-012, locator: "Anabasis II.2; PDF p. 35", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The remaining army reaches Ariaeus around midnight under Clearchus's lead.", uncertainty: "The distance and pace are not stated."}
+  - {id: OBS-013, locator: "Anabasis II.2; PDF p. 35", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The troops ground arms while still standing in rank.", uncertainty: "The formation's purpose during the commanders' meeting is unstated."}
+  - {id: OBS-014, locator: "Anabasis II.2; PDF p. 35", evidence_type: OATH_AND_RITUAL_OBSERVATION, observation: "Greeks and Asiatics swear not to betray one another and to remain faithful allies.", uncertainty: "The precise oath wording and divine witnesses are not given."}
+  - {id: OBS-015, locator: "Anabasis II.2; PDF p. 35", evidence_type: OATH_AND_RITUAL_OBSERVATION, observation: "The Asiatics separately swear to lead without treachery.", uncertainty: "Why this additional pledge falls only on the guides is not explained."}
+  - {id: OBS-016, locator: "Anabasis II.2; PDF p. 35", evidence_type: TEXTUAL_VARIANT_OBSERVATION, observation: "The oath sacrifice lists a bull, wolf, boar, and ram, while Dakyns notes that wolf may be omitted.", uncertainty: "The original reading remains unsettled."}
+  - {id: OBS-017, locator: "Anabasis II.2; PDF p. 35", evidence_type: RITUAL_DIFFERENTIATION_OBSERVATION, observation: "Greeks dip a sword and barbarians a lance into the victims' blood.", uncertainty: "The ritual meaning of the differentiated weapons is not explained."}
+  - {id: OBS-018, locator: "Anabasis II.2; PDF p. 35", evidence_type: LOGISTICAL_OBSERVATION, observation: "Ariaeus says the previous seventeen stages were exhausted of provisions.", uncertainty: "The count and remaining regional supplies are not independently checked."}
+  - {id: OBS-019, locator: "Anabasis II.2; PDF p. 35", evidence_type: STRATEGIC_CLAIM_OBSERVATION, observation: "Ariaeus argues that a small royal force will not pursue and a large one cannot move quickly.", uncertainty: "The assumptions about royal courage, speed, and supply are untested."}
+  - {id: OBS-020, locator: "Anabasis II.2; PDF p. 35", evidence_type: NARRATORIAL_EVALUATION_OBSERVATION, observation: "The narrator calls Ariaeus's plan equivalent to a stampede and says fortune proved a better general.", uncertainty: "The Greek wording and scope of the judgment require review."}
+  - {id: OBS-021, locator: "Anabasis II.2; PDF p. 35", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The army marches with the sun on its right and reaches the expected Babylonian villages by afternoon.", uncertainty: "The exact compass direction and route are not stated."}
+  - {id: OBS-022, locator: "Anabasis II.2; PDF p. 35", evidence_type: PERCEPTION_AND_CORRECTION_OBSERVATION, observation: "Apparent enemy cavalry proves to be grazing baggage animals after scouts return.", uncertainty: "The initial observers and distance are unspecified."}
+  - {id: OBS-023, locator: "Anabasis II.2; PDF p. 35", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Ariaeus leaves his wagon and puts on armor despite nursing a wound.", uncertainty: "The wound's severity and source are not given here."}
+  - {id: OBS-024, locator: "Anabasis II.2; PDF pp. 35-36", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus marches straight to avoid an appearance of flight despite fatigue, hunger, and nearby enemy signs.", uncertainty: "Whether appearance or safety governs the choice cannot be isolated."}
+  - {id: OBS-025, locator: "Anabasis II.2; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The royal army has stripped the villages down to house woodwork and furniture.", uncertainty: "The timing and purpose of the devastation are not stated."}
+  - {id: OBS-026, locator: "Anabasis II.2; PDF p. 36", evidence_type: CAUSAL_INFERENCE_OBSERVATION, observation: "Nearby enemies abandon their quarters after hearing the Greeks' nighttime noise.", uncertainty: "The enemy identity and causal link are inferred from the next morning."}
+  - {id: OBS-027, locator: "Anabasis II.2; PDF p. 36", evidence_type: QUALIFIED_NARRATORIAL_INFERENCE, observation: "The king is said, as it would appear, to have been taken aback by the army's arrival.", uncertainty: "The proof is deferred to the next day's conduct."}
+  - {id: OBS-028, locator: "Anabasis II.2; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "An unexplained panic seizes the Greek camp during the night.", uncertainty: "No cause is identified."}
+  - {id: OBS-029, locator: "Anabasis II.2; PDF p. 36", evidence_type: SPEECH_EFFECT_OBSERVATION, observation: "Tolmides's proclamation about an ass and a one-talent reward persuades the soldiers that the fear is baseless.", uncertainty: "The logic and any actual animal incident are unstated."}
+  - {id: OBS-030, locator: "Anabasis II.2; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "At dawn Clearchus restores the battle-day formation.", uncertainty: "The intended diplomatic or military use is deferred."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis II.2; PDF p. 34", evidence_type: PROVISIONAL_INFERENCE, finding: "Ariaeus's rejection ends the attempt to preserve Cyrus's political project through a substitute claimant.", confidence: high_for_sequence}
+  - {id: INF-002, locator: "Anabasis II.2; PDF pp. 34-36", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus converts concealed intention into recognized leadership through precise orders, logistical judgment, and visible steadiness.", confidence: high_for_chapter_structure}
+  - {id: INF-003, locator: "Anabasis II.2; PDF p. 34", evidence_type: PROVISIONAL_INFERENCE, finding: "Divination and practical necessity converge on withdrawal without allowing their relative authority to be isolated.", confidence: moderate_pending_cross_chapter_comparison}
+  - {id: INF-004, locator: "Anabasis II.2; PDF p. 35", evidence_type: PROVISIONAL_INFERENCE, finding: "The alliance's oath against betrayal marks betrayal as the danger most urgently anticipated within the coalition.", confidence: high_for_ritual_content}
+  - {id: INF-005, locator: "Anabasis II.2; PDF p. 35", evidence_type: PROVISIONAL_INFERENCE, finding: "Ariaeus treats distance as safety, but the narrator denies that his flight plan deserves the name of good generalship.", confidence: high_for_narratorial_contrast}
+  - {id: INF-006, locator: "Anabasis II.2; PDF pp. 35-36", evidence_type: PROVISIONAL_INFERENCE, finding: "Perception repeatedly misleads: baggage animals look like cavalry, noise looks like strength, and unexplained sound becomes panic.", confidence: high_for_sequence}
+  - {id: INF-007, locator: "Anabasis II.2; PDF pp. 35-36", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus protects the army's reputation for firmness because visible flight can produce strategic danger beyond immediate physical risk.", confidence: moderate_for_narrated_motive}
+  - {id: INF-008, locator: "Anabasis II.2; PDF p. 36", evidence_type: PROVISIONAL_INFERENCE, finding: "Comic proclamation can function as command by giving formless fear an absurd and therefore dismissible object.", confidence: high_for_reported_effect}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis II.2; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "Which Persians were judged better than Ariaeus, and why could they block his accession?"}
+  - {id: Q-002, locator: "Anabasis II.2; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "Why did Menon remain with Ariaeus, and what did he do there?"}
+  - {id: Q-003, locator: "Anabasis II.2; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "What signs made the sacrifice unfavorable against the king and favorable toward Ariaeus?"}
+  - {id: Q-004, locator: "Anabasis II.2; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "How and when did Clearchus learn that the Tigris blocked an advance?"}
+  - {id: Q-005, locator: "Anabasis II.2; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "What is the formal status of Clearchus's unelected leadership?"}
+  - {id: Q-006, locator: "Anabasis II.2; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "Is the manuscript route-distance note original, interpolated, or marginal commentary?"}
+  - {id: Q-007, locator: "Anabasis II.2; PDF p. 35", evidence_type: UNRESOLVED_QUESTION, question: "Why did Miltocythes desert, and what became of his force?"}
+  - {id: Q-008, locator: "Anabasis II.2; PDF p. 35", evidence_type: UNRESOLVED_QUESTION, question: "What divine witnesses, formulas, and enforcement were attached to the alliance oath?"}
+  - {id: Q-009, locator: "Anabasis II.2; PDF p. 35", evidence_type: UNRESOLVED_QUESTION, question: "Does the sacrificial list include a wolf, and what difference would that reading make?"}
+  - {id: Q-010, locator: "Anabasis II.2; PDF p. 35", evidence_type: UNRESOLVED_QUESTION, question: "How reliable was Ariaeus's alternate route and prediction about royal pursuit?"}
+  - {id: Q-011, locator: "Anabasis II.2; PDF p. 35", evidence_type: UNRESOLVED_QUESTION, question: "What Greek wording underlies the claim that fortune was a better general?"}
+  - {id: Q-012, locator: "Anabasis II.2; PDF pp. 35-36", evidence_type: UNRESOLVED_QUESTION, question: "Was Clearchus right to prioritize the appearance of not fleeing over rest or concealment?"}
+  - {id: Q-013, locator: "Anabasis II.2; PDF p. 36", evidence_type: UNRESOLVED_QUESTION, question: "What caused the nighttime panic among the Greeks?"}
+  - {id: Q-014, locator: "Anabasis II.2; PDF p. 36", evidence_type: UNRESOLVED_QUESTION, question: "Why did the ass proclamation restore confidence, and was it improvised by Clearchus or Tolmides?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text for leadership, prudence, experience, alliance, betrayal, oath, fortune, flight, and panic.
+  - Check a critical apparatus for the route-distance passage and the possible omission of "wolf."
+  - Compare modern translations of Clearchus's reported sacrificial findings and Ariaeus's route speech.
+  - Map the Tigris, Euphrates, villages, and claimed alternative route without forcing uncertain identifications.
+  - Track Clearchus's unelected leadership and later obedience by generals and soldiers.
+  - Track Menon's relation with Ariaeus through the remainder of Book II.
+  - Track all oaths, handshakes, and later betrayals involving Greeks, Ariaeus, and Persian leaders.
+  - Track Miltocythes and any later account of his desertion.
+  - Compare the false cavalry alarm, royal retreat, and Greek panic as episodes of perception under uncertainty.
+  - Defer comparison with Strauss until the relevant primary sequence is complete.
+secondary_comparison_status: DEFERRED
