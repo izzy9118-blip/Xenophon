@@ -84,8 +84,8 @@ def main() -> int:
         return fail("Manifest primary reconstruction state mismatch")
     if manifest.get("next_required_unit", {}).get("id") != NEXT_PRIMARY_UNIT_ID:
         return fail("Manifest next primary unit mismatch")
-    if manifest.get("primary_study", {}).get("book_two_draft_complete") is not True:
-        return fail("Manifest must record complete Book II draft coverage")
+    if manifest.get("primary_study", {}).get("book_two_draft_complete_pending_owner_review") is not True:
+        return fail("Manifest must record complete Book II draft coverage pending owner review")
 
     corpus = documents[ROOT / "corpus/index.yaml"]
     if corpus.get("counts") != {"primary_sources": 1, "secondary_sources": 1, "registered_witnesses": 2}:
