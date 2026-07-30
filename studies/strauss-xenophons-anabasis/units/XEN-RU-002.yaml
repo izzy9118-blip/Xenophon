@@ -1,0 +1,202 @@
+schema_version: 1.0
+unit_id: XEN-RU-002
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 109-112
+  pdf_pages_one_based: 113-116
+  opening_anchor: Klearchos responsible while claiming that Menon and Proxenos, having denounced Klearchos' plotting, are greatly honored by the king.
+  closing_anchor: In this respect he resembles Ischomachos who taught Socrates the economic art,
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 109; PDF p. 113
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss interprets Menon's reported punishment as human retaliation by the beneficiary of Menon's impiety rather than as demonstrated divine punishment.
+    uncertainty: The underlying report is itself marked by "is said," and Strauss does not establish the historical truth of the punishment in this passage.
+  - id: OBS-002
+    locator: printed p. 109; PDF p. 113
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon's silence about Menon's age is set against the ages supplied for the other murdered generals, continuing the prior unit's inquiry into praise, blame, and omission.
+    uncertainty: The silence is significant within Strauss's reading, but its authorial intention remains unverified without the primary sequence.
+  - id: OBS-003
+    locator: printed p. 109; PDF p. 113
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The phrase "he is said" permits the world to appear grander and better while preserving a boundary between naked truth and adornment.
+    uncertainty: The repository has not yet tested the Greek wording or the consistency of this device across the Anabasis.
+  - id: OBS-004
+    locator: printed p. 109; PDF p. 113
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The end of Book Two and beginning of Book Three initially stage Menon and Xenophon as villain and hero, but Strauss explicitly leaves open whether Menon is Xenophon's true foil.
+    uncertainty: The passage suspends the apparent contrast rather than resolving it.
+  - id: OBS-005
+    locator: printed pp. 109-110; PDF pp. 113-114
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Proxenos occupies the middle position in the initial enumeration of contingents, the center among the three extensively described generals, and the central one of Xenophon's three appearances before Book Three.
+    uncertainty: Numerical and positional centrality are documented by Strauss, but the compositional intention and weight of each center remain open.
+  - id: OBS-006
+    locator: printed p. 110; PDF p. 114
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss insists that the first-person narrator cannot simply be identified with Xenophon and assigns the narrating "I" to Themistogenes of Syracuse under the adopted attribution hypothesis.
+    uncertainty: Themistogenes has not been independently established as a pseudonym in this repository.
+  - id: OBS-007
+    locator: printed p. 110; PDF p. 114
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The only recorded exchange between Xenophon and Cyrus concerns favorable sacrifices, while the only exchange between Xenophon and Socrates in the Memorabilia concerns the danger of kissing handsome boys.
+    uncertainty: The significance of pairing these two unique exchanges is suggested by placement but not fully explained within this unit.
+  - id: OBS-008
+    locator: printed p. 110; PDF p. 114
+    evidence_type: PROVISIONAL_INFERENCE
+    observation: The Athenian speaker Theopompos may be a temporary guise for Xenophon; his argument that arms and virtue are mutually necessary receives the response that he resembles a philosopher and speaks gracefully.
+    uncertainty: Strauss presents the identification as a possibility and postpones its explanation.
+  - id: OBS-009
+    locator: printed pp. 110-111; PDF pp. 114-115
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon first enters Book Three as a private Athenian with no military office or status, summoned from home by his longstanding guest-friend Proxenos.
+    uncertainty: This repository has not yet checked the wording and sequence against a primary Xenophontic witness.
+  - id: OBS-010
+    locator: printed p. 111; PDF p. 115
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Proxenos' promise that Cyrus would be better for Xenophon than his fatherland leads Strauss to describe both Proxenos and Xenophon as at least partly uprooted.
+    uncertainty: Xenophon's degree of attachment to Athens or Greece is not explained here and remains a governing question.
+  - id: OBS-011
+    locator: printed p. 111; PDF p. 115
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Proxenos seeks a great name, great power, and much money through just and noble means, can rule gentlemen, but cannot inspire ordinary soldiers with fear or awe.
+    uncertainty: These traits are reported through Strauss's reconstruction of Xenophon's character sketch and await primary-text verification.
+  - id: OBS-012
+    locator: printed p. 111; PDF p. 115
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon is distinguished from Proxenos as tougher, wilier, and wittier, and Strauss connects the difference cautiously to Xenophon's familiarity with Socrates rather than simply to a philosopher-sophist opposition.
+    uncertainty: Gorgias also taught Menon, and Strauss explicitly refuses to assume without proof that Xenophon or Xenophon's Socrates classifies Gorgias as a sophist.
+  - id: OBS-013
+    locator: printed pp. 111-112; PDF pp. 115-116
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon consults Socrates before joining Cyrus; Socrates suspects civic danger because Cyrus had supported Sparta against Athens but does not claim knowledge.
+    uncertainty: The passage does not disclose whether Socrates' suspicion was based on political judgment alone or any further evidence.
+  - id: OBS-014
+    locator: printed p. 112; PDF p. 116
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Socrates' daimonion supplies no publicly authoritative decision, so Socrates directs Xenophon to consult Apollo at Delphi.
+    uncertainty: Strauss allows that the daimonion may have given guidance while denying that such guidance would bind the city and noting that its verdict could be disputed.
+  - id: OBS-015
+    locator: printed p. 112; PDF p. 116
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon asks Apollo to which god he should sacrifice and pray so that the already contemplated journey proceeds nobly and successfully and he returns safely; Apollo names gods for sacrifice but gives no recorded guidance concerning prayer.
+    uncertainty: The distinction between sacrifice and prayer may be compositional, ritual, textual, or accidental; the unit does not decide.
+  - id: OBS-016
+    locator: printed p. 112; PDF p. 116
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Socrates is taken aback because Xenophon asked how to make the journey rather than whether to go, thereby reserving the primary political decision to his own judgment.
+    uncertainty: Strauss infers Xenophon's reasoning; Xenophon's own explicit explanation is not supplied here.
+  - id: OBS-017
+    locator: printed p. 112; PDF p. 116
+    evidence_type: PROVISIONAL_INFERENCE
+    observation: Strauss raises the possibility that Xenophon rashly underestimated Athens' hostile reaction to friendship with Cyrus, while preserving uncertainty about the later exile and its cause.
+    uncertainty: The wording is explicitly tentative and cannot establish that the journey caused Xenophon's exile.
+  - id: OBS-018
+    locator: printed p. 112; PDF p. 116
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: After Xenophon has framed and received the secondary oracle, Socrates tells him to obey it; Xenophon sacrifices and departs, while both Apollo and Xenophon's account remain silent about prayers.
+    uncertainty: The silence is documented, but its meaning is not settled.
+  - id: OBS-019
+    locator: printed p. 112; PDF p. 116
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss begins defining Xenophon against Socrates as a man of political action who desires nobly acquired moderate wealth, whereas Socrates teaches political things yet remains content with poverty.
+    uncertainty: The comparison continues onto printed p. 113 and is incomplete at this unit boundary.
+argument_reconstruction:
+  - step: 1
+    claim: The apparent Menon-Xenophon opposition is introduced and then suspended so that the inquiry can turn to the more consequential mediating figure, Proxenos.
+    locator: printed p. 109; PDF p. 113
+  - step: 2
+    claim: Proxenos' repeated structural centrality is explained by his role in bringing Xenophon into Cyrus' expedition and exposing the question of attachment to fatherland.
+    locator: printed pp. 109-111; PDF pp. 113-115
+  - step: 3
+    claim: Xenophon must be distinguished both from the narrating "I" and from the nearby figures through his few appearances, possible disguises, teachers, friendships, and practical traits.
+    locator: printed pp. 110-111; PDF pp. 114-115
+  - step: 4
+    claim: The deepest interpretive contrast begins to shift from Menon or Proxenos to Socrates, whose counsel brings civic obligation, private divine signs, and public religious authority into view.
+    locator: printed pp. 111-112; PDF pp. 115-116
+  - step: 5
+    claim: Xenophon's Delphic question separates the humanly reserved decision whether to go from the divinely consulted means of successful action.
+    locator: printed p. 112; PDF p. 116
+  - step: 6
+    claim: Socrates neither cancels the oracle nor enlarges it; once the secondary question has been asked and answered, he advises obedience within the answer's actual scope.
+    locator: printed p. 112; PDF p. 116
+  - step: 7
+    claim: The Socrates-Xenophon comparison opens a broader inquiry into action, political knowledge, wealth, and the economic art that continues beyond this unit.
+    locator: printed p. 112; PDF p. 116
+provisional_inferences:
+  - id: INF-001
+    locator: printed pp. 109-111; PDF pp. 113-115
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Repeated structural centrality may identify the indispensable mediator of an action without making that mediator the ultimate standard of comparison.
+    confidence: provisional
+  - id: INF-002
+    locator: printed pp. 110-111; PDF pp. 114-115
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon's self-presentation may distribute his identity among third-person character, pseudonymous narrator, and suggestive names such as Theopompos, but the repository cannot yet admit a stable speech mechanism from this secondary witness alone.
+    confidence: provisional
+  - id: INF-003
+    locator: printed p. 112; PDF p. 116
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: An oracle's jurisdiction is partly determined by the human question that summons it; divine speech does not answer the unasked primary political question merely because it answers a secondary ritual one.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-004
+    locator: printed p. 112; PDF p. 116
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Private religious guidance, public civic judgment, and institutional religious consultation occupy distinct jurisdictions and cannot be treated as interchangeable.
+    confidence: provisional
+  - id: INF-005
+    locator: printed pp. 111-112; PDF pp. 115-116
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The unresolved question of fatherland enters before Xenophon's ascent and may govern later judgments about his practical excellence.
+    confidence: provisional
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 109; PDF p. 113
+    question: Is Menon truly Xenophon's foil, or does the work use the initial contrast only to redirect attention toward Proxenos and Socrates?
+  - id: Q-002
+    locator: printed pp. 109-111; PDF pp. 113-115
+    question: What weight should be assigned to Proxenos' repeated structural centrality beyond his causal role in bringing Xenophon to Cyrus?
+  - id: Q-003
+    locator: printed p. 110; PDF p. 114
+    question: Is Theopompos a textual mask for Xenophon, a thematic analogue, or an independent speaker whose name only prepares a later argument?
+  - id: Q-004
+    locator: printed p. 111; PDF p. 115
+    question: In what sense are Proxenos and Xenophon uprooted, and does their pursuit of transpolitical excellence conflict with duties to Boiotia, Athens, or Greece?
+  - id: Q-005
+    locator: printed p. 111; PDF p. 115
+    question: Which differences between Proxenos and Xenophon can responsibly be connected to Gorgias and Socrates without presupposing Xenophon's classification of either teacher?
+  - id: Q-006
+    locator: printed pp. 111-112; PDF pp. 115-116
+    question: What did Socrates know, suspect, or merely fear about Xenophon's friendship with Cyrus and Athens' likely response?
+  - id: Q-007
+    locator: printed p. 112; PDF p. 116
+    question: Why does Apollo's recorded answer concern sacrifice but not prayer, and why does Xenophon's departure account preserve the same silence?
+  - id: Q-008
+    locator: printed p. 112; PDF p. 116
+    question: Does Xenophon's framing of the Delphic question display prudence, rashness, piety, self-direction, or a combination that the later action must test?
+  - id: Q-009
+    locator: printed p. 112; PDF p. 116
+    question: Can the cause of Xenophon's exile be connected to the expedition, or must that relation remain wholly unresolved?
+  - id: Q-010
+    locator: printed p. 112; PDF p. 116
+    question: How will the emerging contrast between Xenophon's political action and Socrates' teaching alter the meaning of practical wisdom, wealth, and the economic art?
+downstream_primary_text_checks:
+  - Anabasis II.6.16-30 on Proxenos, Menon, reported punishment, age notices, and "is said"
+  - Anabasis I.1.9-11 and II.6 on the ordering and character sketches of the generals
+  - Anabasis I.8.15-17, II.4.15, and II.5.37,41 on Xenophon's three appearances before Book Three
+  - Anabasis II.1.13-14 on Theopompos, arms, virtue, and Phalinus' response
+  - Anabasis III.1.1-8 on Proxenos' invitation, Cyrus and fatherland, Socrates' counsel, Delphi, sacrifice, prayer, and departure
+  - Memorabilia I.1.6-8 on divination and the limits of human knowledge
+  - Memorabilia I.2.16-17, I.6.15, and III.1 on Socrates' teaching of political and military matters
+  - Memorabilia I.3.8-15 on Xenophon and Socrates concerning kissing handsome boys
+  - Hellenica VII.1.27 on consultation, decision, and divine guidance
+  - Plato, Theages 128d8-e6 on the daimonion and disputable guidance
+  - Oeconomicus II.1-4 and the Ischomachus comparison continued on printed p. 113
+termination:
+  reason: scope boundary reached at printed p. 112 while the Socrates-Xenophon comparison remains in progress
+  next_unit: XEN-RU-003
