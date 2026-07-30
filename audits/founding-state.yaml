@@ -13,42 +13,39 @@ repository_state:
   primary_translation_witness_admitted: true
   primary_witness_count: 1
   primary_study_started: true
-  drafted_primary_units: 10
+  drafted_primary_units: 11
   drafted_secondary_units: 8
   book_one_primary_draft_complete: true
+  book_two_primary_units_drafted: 1
   minister_adapter_derived: false
   sanctum_registration_present: false
 resolved_items:
-- id: RES-001
-  description: The eight-unit reconstruction of Strauss's essay received owner adoption within secondary-source
-    jurisdiction.
-  record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
-- id: RES-002
-  description: An owner-supplied Dakyns Project Gutenberg translation of Xenophon's Anabasis was admitted as the
-    first primary translation witness.
-  record: governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
-- id: RES-003
-  description: Anabasis Book I received complete sequential draft coverage in XEN-PRI-RU-001 through XEN-PRI-RU-010,
-    pending owner review.
-  record: studies/xenophon-anabasis-dakyns/reading-plan.yaml
+  - id: RES-001
+    description: The eight-unit reconstruction of Strauss's essay received owner adoption within secondary-source jurisdiction.
+    record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+  - id: RES-002
+    description: An owner-supplied Dakyns Project Gutenberg translation of Xenophon's Anabasis was admitted as the first primary translation witness.
+    record: governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
+  - id: RES-003
+    description: Anabasis Book I received complete sequential draft coverage in XEN-PRI-RU-001 through XEN-PRI-RU-010, pending owner review.
+    record: studies/xenophon-anabasis-dakyns/reading-plan.yaml
 documented_gaps:
-- id: GAP-004
-  description: No reviewed original-language Greek witness or critical edition is registered.
-  blocks:
-  - Greek philological conclusions
-  - translation adjudication
-  - final textual certification
-- id: GAP-005
-  description: The primary Anabasis reconstruction remains incomplete; Book I is drafted, while Books II through
-    VII remain.
-  blocks:
-  - complete primary argument map
-  - systematic deed extraction
-  - speech-register derivation
-  - operational capacity derivation
-- id: GAP-003
-  description: No owner-approved Xenophon adapter exists.
-  blocks:
-  - Assembly dispatch
-next_required_action: Complete XEN-PRI-RU-011 for Anabasis II.1 without importing Strauss or treating translated
-  wording as unmediated Greek evidence.
+  - id: GAP-004
+    description: No reviewed original-language Greek witness or critical edition is registered.
+    blocks:
+      - Greek philological conclusions
+      - translation adjudication
+      - final textual certification
+  - id: GAP-005
+    description: The primary Anabasis reconstruction remains incomplete; Book I and Anabasis II.1 are drafted, while II.2 through VII.8 remain.
+    blocks:
+      - complete primary argument map
+      - systematic deed extraction
+      - speech-register derivation
+      - operational capacity derivation
+  - id: GAP-003
+    description: No owner-approved Xenophon adapter exists.
+    blocks:
+      - Assembly dispatch
+next_required_action: >-
+  Complete XEN-PRI-RU-012 for Anabasis II.2 without importing Strauss or treating translated wording as unmediated Greek evidence.
