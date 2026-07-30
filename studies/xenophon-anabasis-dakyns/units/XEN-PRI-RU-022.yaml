@@ -1,0 +1,334 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-022
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis IV.1
+  pdf_pages_one_based: 70-72
+  opening_anchor: >-
+    It was now about the last watch, and enough of the night remained to allow them to cross
+    the valley under cover of darkness; when, at the word of command, they rose and set off on
+    their march, reaching the mountains at daybreak.
+  closing_anchor: >-
+    Aristeas, a Chian, who on several occasions proved his usefulness to the army on such service,
+    volunteered.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis IV.1 plus one-based PDF page
+  chapter_boundary_control: >-
+    PDF page 70 begins with the closing portion of the parenthetical Book IV retrospective synopsis.
+    IV.1 begins beneath heading I on page 70 and ends on page 72 with Aristeas volunteering.
+    IV.2 begins beneath heading II later on page 72.
+  source_boundary: >-
+    The Book IV synopsis, historical narration, narratorial counterfactual, council resolutions,
+    heralded proclamation, attributed direct speech, prisoner replies, coercive interrogation,
+    execution, route testimony, volunteer declarations, and tactical outcomes remain distinct.
+    The retrospective synopsis above heading I is witness paratext and is not silently used to
+    expand the narrative claims of IV.1.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration presenting Cheirisophus and Xenophon as named commanders,
+    recording their direct disagreement after the march, and embedding prisoner testimony and
+    volunteer declarations. The narrator also supplies a counterfactual judgment about the danger
+    posed by a larger Carduchian force.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon commands the rearguard, sends repeated pace orders, rebukes Cheirisophus, reports his
+    own ambush and prisoners, and participates in the route inquiry. First-person forms occur inside
+    attributed speeches rather than as unframed narratorial self-identification.
+  uncertainty: >-
+    This witness does not settle the Greek force of necessity, friendly passage, common enemy,
+    slave, prisoner, property, confiscation, terror, guide, distinction, annihilation, rout,
+    burial, volunteer, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis IV.1; PDF p. 71
+    speech_form: council_resolution_reported
+    speaker: Greek generals and officers collectively
+    audience: the army
+    occasion: dawn after the first night in Carduchian villages
+    content: >-
+      They resolve to retain only the necessary number of strong baggage animals, leave weak animals
+      behind, and release the recently captured slaves because animals, prisoners, and attendants slow
+      the march and double the burden of provisioning.
+    uncertainty: The vote, dissent, criteria, and number of animals and captives are not stated.
+  - id: SAO-002
+    locator: Anabasis IV.1; PDF p. 71
+    speech_form: heralded_proclamation_reported
+    speaker: Greek command through a herald
+    audience: the soldiers
+    occasion: enforcement of the baggage and captive resolutions
+    content: The adopted reductions and releases are publicly proclaimed for enforcement.
+    uncertainty: The exact wording, sanctions, and response to the proclamation are absent.
+  - id: SAO-003
+    locator: Anabasis IV.1; PDF p. 71
+    speech_form: command_rebuke
+    speaker: Xenophon
+    audience: Cheirisophus
+    occasion: arrival at a halting place after the storm march and two named deaths
+    content: >-
+      Xenophon charges that Cheirisophus failed to wait, forcing the rearguard to fight and flee at
+      the same time, costing the lives of Cleonymus and Basias and preventing recovery and burial.
+    uncertainty: The full command setting and whether others heard the rebuke are not stated.
+  - id: SAO-004
+    locator: Anabasis IV.1; PDF pp. 71-72
+    speech_form: tactical_justification
+    speaker: Cheirisophus
+    audience: Xenophon
+    occasion: response to the rebuke
+    content: >-
+      He points to an inaccessible mountain with a single visible road and an enemy force guarding
+      the only exit, and says he hurried in hope of occupying the pass first because the guides claimed
+      no other road existed.
+    uncertainty: The guides' identities, reliability, and exact prior report remain unstated.
+  - id: SAO-005
+    locator: Anabasis IV.1; PDF pp. 71-72
+    speech_form: intelligence_reply
+    speaker: Xenophon
+    audience: Cheirisophus and the command
+    occasion: response to the claim that no alternative road exists
+    content: >-
+      Xenophon reports that an ambush against the pursuing enemy allowed the Greeks to rest, kill some
+      attackers, and capture two prisoners specifically to obtain local guides.
+    uncertainty: The ambush's formation, casualties, and capture procedure are not supplied.
+  - id: SAO-006
+    locator: Anabasis IV.1; PDF p. 72
+    speech_form: coerced_prisoner_reply
+    speaker: first unnamed Carduchian prisoner
+    audience: Greek interrogators
+    occasion: separate questioning about another road
+    content: He repeatedly denies knowing any route other than the visible one despite unspecified terrors.
+    uncertainty: The translation's term for the coercion and the prisoner's knowledge cannot be independently verified.
+  - id: SAO-007
+    locator: Anabasis IV.1; PDF p. 72
+    speech_form: coerced_route_testimony
+    speaker: second unnamed Carduchian prisoner
+    audience: Greek generals and officers
+    occasion: after the first prisoner is killed before him
+    content: >-
+      He says the first prisoner denied knowledge because his daughter was married in that district,
+      then offers to lead the Greeks by a good road passable even for animals and warns that one col
+      cannot be passed unless occupied in advance.
+    uncertainty: Fear, self-preservation, local knowledge, and truth cannot be separated from the coercive setting.
+  - id: SAO-008
+    locator: Anabasis IV.1; PDF p. 72
+    speech_form: volunteer_solicitation_reported
+    speaker: Greek command
+    audience: selected light- and heavy-infantry officers and soldiers
+    occasion: decision to seize the difficult col in advance
+    content: >-
+      The command asks whether any are willing to distinguish themselves by volunteering for a special expedition.
+    uncertainty: The legal status, expected mission, reward, and selection procedure are not fully narrated until IV.2.
+  - id: SAO-009
+    locator: Anabasis IV.1; PDF p. 72
+    speech_form: volunteer_declaration
+    speaker: Callimachus of Parrhasia
+    audience: Greek command and prospective volunteers
+    occasion: after Aristonymus and Agasias step forward
+    content: He declares himself ready and predicts that young men from the entire army will follow where he leads.
+    uncertainty: The number he recruits and the basis of his confidence are not stated in IV.1.
+  - id: SAO-010
+    locator: Anabasis IV.1; PDF p. 72
+    speech_form: volunteer_response_reported
+    speaker: Aristeas the Chian
+    audience: Greek command
+    occasion: call for a light-infantry captain to accompany the expedition
+    content: Aristeas volunteers, with the narrator noting his repeated usefulness to the army on similar service.
+    uncertainty: The earlier occasions and evidentiary basis of the narrator's assessment are not itemized here.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis IV.1; PDF p. 70
+    actor: Cheirisophus, Xenophon, and the Greek army
+    deed: >-
+      During the last watch the army crosses the valley in darkness; Cheirisophus leads his division
+      and all light troops in front, while Xenophon follows with the heavy rearguard and no light troops.
+    outcome: Cheirisophus reaches the summit unseen and the army descends into Carduchian villages.
+    uncertainty: The route length, signal, and basis for assuming no rear attack are not supplied.
+  - id: SDO-002
+    locator: Anabasis IV.1; PDF p. 70
+    actor: Carduchian inhabitants and Greek soldiers
+    deed: >-
+      The Carduchians flee with wives and children; the Greeks take provisions but abstain from bronze
+      vessels, pursuit, and harsher treatment in hope of friendly passage from a people also hostile to the king.
+    outcome: Limited restraint and necessary provisioning fail to produce communication or alliance.
+    uncertainty: The quantity taken, household impact, and terms shouted to the Carduchians are absent.
+  - id: SDO-003
+    locator: Anabasis IV.1; PDF pp. 70-71
+    actor: a small Carduchian force and the Greek rearguard
+    deed: At dusk the Carduchians attack the hindmost Greeks with stones and arrows, killing and wounding some.
+    outcome: The army reaches the villages, but the narrator judges that a larger force might have annihilated a large part of it.
+    uncertainty: Casualties and the basis of the counterfactual assessment are not stated.
+  - id: SDO-004
+    locator: Anabasis IV.1; PDF p. 71
+    actor: Greek army and Carduchian watchers
+    deed: The Greeks bivouac in the villages while Carduchians maintain many watchfires in a circle on the mountains.
+    outcome: Both sides remain visually connected through the night without reported negotiation.
+    uncertainty: Guard dispositions and nighttime incidents are not narrated.
+  - id: SDO-005
+    locator: Anabasis IV.1; PDF p. 71
+    actor: Greek command, herald, soldiers, captives, and baggage train
+    deed: >-
+      The command reduces weak baggage animals, releases recently captured slaves, proclaims the decision,
+      and stations generals at a narrow place to confiscate retained captives and other forbidden property.
+    outcome: Most soldiers obey, but some secretly retain a desired boy or woman and evade enforcement.
+    uncertainty: Ownership, consent, numbers, confiscated destinations, and penalties are unrecorded.
+  - id: SDO-006
+    locator: Anabasis IV.1; PDF p. 71
+    actor: Greek army, Carduchian attackers, Cheirisophus, and Xenophon
+    deed: >-
+      Under a great storm and food pressure the army marches through successive narrows, repeatedly sallying
+      and recoiling while Xenophon asks for slower movement and Cheirisophus sometimes orders greater speed.
+    outcome: The rear makes little progress and the march becomes like a rout.
+    uncertainty: Order-transmission times and the exact location of each force are absent.
+  - id: SDO-007
+    locator: Anabasis IV.1; PDF p. 71
+    actor: Cleonymus the Laconian, Basias the Arcadian, and Carduchian missile troops
+    deed: Cleonymus is shot through shield, corselet, and ribs; Basias is shot through the head.
+    outcome: Both die and the Greeks cannot recover or bury their bodies at that time.
+    uncertainty: Other casualties and later recovery of the bodies are not stated in IV.1.
+  - id: SDO-008
+    locator: Anabasis IV.1; PDF pp. 71-72
+    actor: Xenophon and Cheirisophus
+    deed: Xenophon rebukes the leading commander; Cheirisophus explains his haste by the need to seize the only reported exit.
+    outcome: The apparent command failure is reframed as a conflict between rear protection and pass seizure under incomplete information.
+    uncertainty: No superior adjudication or formal command ruling follows.
+  - id: SDO-009
+    locator: Anabasis IV.1; PDF p. 72
+    actor: Greek interrogators and two Carduchian prisoners
+    deed: >-
+      The prisoners are questioned separately; the first persists in denial under terrors and is killed
+      before the second, who then reveals a beast-passable alternative road and a col requiring advance occupation.
+    outcome: Coercive interrogation produces the route intelligence on which the special expedition is based.
+    uncertainty: The accuracy, voluntariness, and moral or legal authority of the process remain unresolved.
+  - id: SDO-010
+    locator: Anabasis IV.1; PDF p. 72
+    actor: Greek command, Aristonymus, Agasias, Callimachus, and Aristeas
+    deed: >-
+      The command seeks volunteers; three named Arcadian heavy infantrymen and the Chian light-infantry captain Aristeas step forward.
+    outcome: A mixed volunteer force begins to form for advance seizure of the critical col.
+    uncertainty: The final size, command structure, and operational instructions belong to IV.2.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Parenthetical Book IV synopsis closes above the heading for IV.1
+    - Night crossing of the valley and undetected seizure of the first summit
+    - Entry into abandoned villages with selective taking and selective restraint
+    - Failed hope for friendly passage and dusk attack on the rearguard
+    - Circular Carduchian watchfires around the Greek bivouac
+    - Reduction of weak baggage animals and release of recently captured slaves
+    - Heralded enforcement, confiscation, and clandestine evasion
+    - Storm march under sustained missile attack through narrows
+    - Conflicting pace orders, rout-like movement, and deaths of Cleonymus and Basias
+    - Xenophon-Cheirisophus confrontation over waiting and pass seizure
+    - Ambush and capture of two prisoners for route intelligence
+    - Coercive separate interrogation, execution, and disclosure of another road
+    - Call for distinction through a volunteer expedition
+    - Aristonymus, Agasias, Callimachus, and Aristeas volunteer
+  repetitions:
+    - Narrow terrain repeatedly converts movement into vulnerability and information delay.
+    - Necessity is invoked for provisioning, baggage reduction, and continued movement.
+    - Leadership is exercised through council, proclamation, confiscation, direct orders, rebuke, and voluntary service.
+    - Local knowledge becomes indispensable precisely because prior guides prove incomplete.
+    - Restraint and violence appear side by side in Greek conduct toward inhabitants and prisoners.
+  omissions:
+    - Carduchian voices are absent except through two coerced prisoners.
+    - The numbers of inhabitants, captives, baggage animals, casualties, and confiscated items are not supplied.
+    - The exact content of Greek appeals for friendly passage is not recorded.
+    - The methods called terrors are not described.
+    - No formal authority for killing the first prisoner is stated.
+    - The command and final composition of the volunteer expedition are deferred to IV.2.
+  tensions:
+    - The Greeks abstain from bronze vessels and pursuit while taking provisions from abandoned homes.
+    - Shared hostility toward Artaxerxes does not produce Carduchian cooperation.
+    - A decree releasing captives is enforced through confiscation while some soldiers conceal a desired boy or woman.
+    - Cheirisophus's attempt to secure the pass exposes the rear; Xenophon's need to protect the rear risks losing the pass.
+    - The first prisoner dies for maintaining denial; the second speaks after seeing the killing.
+    - Voluntary distinction grows out of intelligence acquired through coercion.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis IV synopsis-IV.1 boundary; PDF p. 70", evidence_type: EDITORIAL_PARATEXT_OBSERVATION, observation: "PDF page 70 opens with the closing lines of the parenthetical Book IV retrospective synopsis before heading I begins IV.1.", uncertainty: "The synopsis's textual status requires review and it is not silently used to expand IV.1."}
+  - {id: OBS-002, locator: "Anabasis IV.1; PDF p. 70", evidence_type: NIGHT_MOVEMENT_OBSERVATION, observation: "The army begins moving during the last watch and crosses the valley under cover of darkness.", uncertainty: "The exact time and route length are unstated."}
+  - {id: OBS-003, locator: "Anabasis IV.1; PDF p. 70", evidence_type: COMMAND_FORMATION_OBSERVATION, observation: "Cheirisophus leads his own division and all light troops in the van, while Xenophon follows with the heavy infantry of the rearguard.", uncertainty: "The intervening formations are not detailed."}
+  - {id: OBS-004, locator: "Anabasis IV.1; PDF p. 70", evidence_type: THREAT_ASSESSMENT_OBSERVATION, observation: "The rearguard has no light troops because no rear pursuit or attack is expected during the uphill movement.", uncertainty: "The basis of the assessment is not given and later events undermine it."}
+  - {id: OBS-005, locator: "Anabasis IV.1; PDF p. 70", evidence_type: SURPRISE_OCCUPATION_OBSERVATION, observation: "Cheirisophus reaches the summit without being perceived and leads onward slowly.", uncertainty: "No Carduchian guard strength is stated."}
+  - {id: OBS-006, locator: "Anabasis IV.1; PDF p. 70", evidence_type: CIVILIAN_FLIGHT_OBSERVATION, observation: "Carduchian inhabitants flee their homes with wives and children for the mountains.", uncertainty: "Their number and destinations are absent."}
+  - {id: OBS-007, locator: "Anabasis IV.1; PDF p. 70", evidence_type: NECESSITY_PROVISIONING_OBSERVATION, observation: "The Greeks take provisions from the abandoned villages and the narrator calls this sheer necessity.", uncertainty: "Quantities and distribution are not described."}
+  - {id: OBS-008, locator: "Anabasis IV.1; PDF p. 70", evidence_type: SELECTIVE_RESTRAINT_OBSERVATION, observation: "The Greeks leave bronze vessels and utensils untouched and refrain from pursuing the fleeing inhabitants.", uncertainty: "The enforcement and completeness of the restraint are not shown."}
+  - {id: OBS-009, locator: "Anabasis IV.1; PDF p. 70", evidence_type: ALLIANCE_EXPECTATION_OBSERVATION, observation: "Greek restraint is linked to hope for friendly passage from Carduchians who are also enemies of the king.", uncertainty: "No Carduchian agreement or shared political program is established."}
+  - {id: OBS-010, locator: "Anabasis IV.1; PDF p. 70", evidence_type: FAILED_COMMUNICATION_OBSERVATION, observation: "The Carduchians neither answer Greek calls nor show another friendly sign.", uncertainty: "The language, distance, and content of the calls are absent."}
+  - {id: OBS-011, locator: "Anabasis IV.1; PDF p. 70", evidence_type: TERRAIN_DELAY_OBSERVATION, observation: "The narrow road consumes the entire day in ascent and descent, leaving the last Greeks to enter the villages in darkness.", uncertainty: "The column length and pace are not quantified."}
+  - {id: OBS-012, locator: "Anabasis IV.1; PDF pp. 70-71", evidence_type: REARGUARD_ATTACK_OBSERVATION, observation: "A small Carduchian party attacks the hindmost Greeks with stones and arrows, killing and wounding some.", uncertainty: "Casualty totals are not supplied."}
+  - {id: OBS-013, locator: "Anabasis IV.1; PDF pp. 70-71", evidence_type: NARRATORIAL_COUNTERFACTUAL_OBSERVATION, observation: "The narrator judges that a larger Carduchian force might have annihilated a large portion of the army.", uncertainty: "The counterfactual basis is not itemized."}
+  - {id: OBS-014, locator: "Anabasis IV.1; PDF p. 71", evidence_type: WATCHFIRE_OBSERVATION, observation: "Carduchians keep numerous watchfires in a circle on the mountains and maintain mutual visual contact.", uncertainty: "Their organization and command are unstated."}
+  - {id: OBS-015, locator: "Anabasis IV.1; PDF p. 71", evidence_type: BAGGAGE_REDUCTION_OBSERVATION, observation: "The command resolves to retain only the necessary number of strong baggage animals and leave weak animals behind.", uncertainty: "Necessary and weak are not defined."}
+  - {id: OBS-016, locator: "Anabasis IV.1; PDF p. 71", evidence_type: CAPTIVE_RELEASE_OBSERVATION, observation: "The command resolves to release all recently captured slaves because prisoners and attendants impede movement and provisioning.", uncertainty: "The number, origins, and subsequent safety of the released people are unknown."}
+  - {id: OBS-017, locator: "Anabasis IV.1; PDF p. 71", evidence_type: LOGISTICAL_RATIONALE_OBSERVATION, observation: "Animals, prisoners, and attendant noncombatants are said to slow the march and require twice the provisions.", uncertainty: "The doubling is not supported by a stated calculation."}
+  - {id: OBS-018, locator: "Anabasis IV.1; PDF p. 71", evidence_type: PROCLAMATION_OBSERVATION, observation: "A herald publicly proclaims the adopted resolutions.", uncertainty: "The text and response are absent."}
+  - {id: OBS-019, locator: "Anabasis IV.1; PDF p. 71", evidence_type: CONFISCATION_ENFORCEMENT_OBSERVATION, observation: "Generals stand at a narrow point and confiscate retained slaves and other prohibited property.", uncertainty: "Disposition, compensation, and procedural safeguards are not stated."}
+  - {id: OBS-020, locator: "Anabasis IV.1; PDF p. 71", evidence_type: CLANDESTINE_RETENTION_OBSERVATION, observation: "Some soldiers evade the order to retain a desired good-looking boy or woman.", uncertainty: "The persons' status, consent, and later fate are not narrated."}
+  - {id: OBS-021, locator: "Anabasis IV.1; PDF p. 71", evidence_type: WEATHER_NECESSITY_OBSERVATION, observation: "A great storm does not stop the march because provisions are insufficient.", uncertainty: "Storm severity and losses are not quantified."}
+  - {id: OBS-022, locator: "Anabasis IV.1; PDF p. 71", evidence_type: SUSTAINED_HARASSMENT_OBSERVATION, observation: "Carduchians attack violently at successive narrows with arrows and slingstones, forcing repeated sallies and recoils.", uncertainty: "Enemy numbers and Greek casualties beyond the named dead are absent."}
+  - {id: OBS-023, locator: "Anabasis IV.1; PDF p. 71", evidence_type: COMMAND_COMMUNICATION_OBSERVATION, observation: "Xenophon repeatedly orders the front to slow; Cheirisophus sometimes slows and sometimes sends a counter-order to move faster.", uncertainty: "Transmission delay and exact reasons are not initially known to the rear."}
+  - {id: OBS-024, locator: "Anabasis IV.1; PDF p. 71", evidence_type: ROUT_LIKE_MOVEMENT_OBSERVATION, observation: "The rearward march is described as becoming very like a rout.", uncertainty: "The formation's degree of breakdown is not specified."}
+  - {id: OBS-025, locator: "Anabasis IV.1; PDF p. 71", evidence_type: NAMED_CASUALTY_OBSERVATION, observation: "Cleonymus the Laconian is shot through shield, corselet, and ribs, while Basias the Arcadian is shot through the head.", uncertainty: "Other dead and wounded are not counted."}
+  - {id: OBS-026, locator: "Anabasis IV.1; PDF p. 71", evidence_type: BURIAL_FAILURE_OBSERVATION, observation: "Xenophon says the two bodies could neither be recovered nor buried.", uncertainty: "Later recovery is not addressed in IV.1."}
+  - {id: OBS-027, locator: "Anabasis IV.1; PDF pp. 71-72", evidence_type: COMMAND_DISAGREEMENT_OBSERVATION, observation: "Xenophon blames Cheirisophus for not waiting; Cheirisophus answers that speed was required to seize the sole reported exit.", uncertainty: "No formal adjudication follows."}
+  - {id: OBS-028, locator: "Anabasis IV.1; PDF pp. 71-72", evidence_type: GUIDE_REPORT_OBSERVATION, observation: "Cheirisophus says existing guides reported no alternative road.", uncertainty: "Their identities and method of knowledge are not stated."}
+  - {id: OBS-029, locator: "Anabasis IV.1; PDF p. 72", evidence_type: AMBUSH_INTELLIGENCE_OBSERVATION, observation: "Xenophon says the rearguard laid an ambush, killed some attackers, and captured two prisoners to obtain guides.", uncertainty: "The ambush and prisoner treatment before questioning are not detailed."}
+  - {id: OBS-030, locator: "Anabasis IV.1; PDF p. 72", evidence_type: COERCIVE_INTERROGATION_OBSERVATION, observation: "The first prisoner maintains that he knows no other road despite unspecified terrors.", uncertainty: "The methods and voluntariness are unknown."}
+  - {id: OBS-031, locator: "Anabasis IV.1; PDF p. 72", evidence_type: PRISONER_EXECUTION_OBSERVATION, observation: "The first prisoner is killed before the second when no different answer can be obtained.", uncertainty: "Authority, procedure, and necessity are not stated."}
+  - {id: OBS-032, locator: "Anabasis IV.1; PDF p. 72", evidence_type: ROUTE_DISCLOSURE_OBSERVATION, observation: "The second prisoner offers a road suitable for baggage animals and identifies a col that must be occupied in advance.", uncertainty: "His testimony arises under lethal coercion and remains unverified within IV.1."}
+  - {id: OBS-033, locator: "Anabasis IV.1; PDF p. 72", evidence_type: VOLUNTEER_FORMATION_OBSERVATION, observation: "Aristonymus, Agasias, Callimachus, and Aristeas volunteer for the special expedition.", uncertainty: "Final strength and command instructions belong to IV.2."}
+provisional_findings:
+  - {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: "The first entry into Carduchian territory succeeds through secrecy but immediately exposes the mismatch between the initial threat assessment and the rearward danger created by narrow terrain.", basis: "Undetected summit occupation followed by dusk and storm attacks on the rearguard.", uncertainty: "The original intelligence basis is absent."}
+  - {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: "Greek restraint toward Carduchian property is selective and instrumental rather than a refusal to take local resources.", basis: "Provisions are seized as necessary while bronze and pursuit are renounced in hope of passage.", uncertainty: "Individual conduct may have varied."}
+  - {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: "Common opposition to the king is insufficient to generate political cooperation between Greeks and Carduchians.", basis: "Greek expectation of friendly passage and Carduchian silence and attack.", uncertainty: "Carduchian motives are not directly voiced."}
+  - {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: "The release of captives is driven by mobility and provisioning rather than an articulated rejection of enslavement.", basis: "Council rationale and continued clandestine retention of a boy or woman.", uncertainty: "No normative debate is recorded."}
+  - {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: "Narrow terrain turns divided command into an information problem in which rear protection and seizure of the forward exit become competing necessities.", basis: "Conflicting pace orders and the Xenophon-Cheirisophus exchange.", uncertainty: "A unified alternative may not have been available."}
+  - {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: "The deaths of Cleonymus and Basias trigger explicit accountability between commanders rather than silence about failure.", basis: "Xenophon's immediate rebuke and Cheirisophus's tactical defense.", uncertainty: "No institutional sanction follows."}
+  - {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: "The route decision for the next operation rests on intelligence produced by coercive interrogation and exemplary killing.", basis: "Separate questioning, terrors, execution, and the second prisoner's disclosure.", uncertainty: "The truth of the resulting intelligence is not yet tested in IV.1."}
+  - {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: "Personal ties shape the content of geographic testimony because the second prisoner attributes the first prisoner's denial to a daughter's marriage in the threatened district.", basis: "The second prisoner's explanation.", uncertainty: "The explanation may itself be self-protective."}
+  - {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: "Volunteer distinction supplements formal command when terrain requires a high-risk advance operation by selected heavy and light troops.", basis: "The command's solicitation and four named volunteers.", uncertainty: "The expedition's actual conduct belongs to IV.2."}
+standing_unresolved_questions:
+  - {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: "What is the textual and editorial status of the parenthetical Book IV synopsis above heading I?", importance: "It controls whether retrospective material is primary narration or witness paratext."}
+  - {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: "What intelligence led the command to expect no attack on the rearguard during the ascent?", importance: "The decision left Xenophon's rear without light troops."}
+  - {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: "How many Carduchian inhabitants fled, and what losses did abandoned households sustain?", importance: "The source records provisions and restraint without social scale."}
+  - {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: "What did the Greeks call out when seeking friendly passage, and could the Carduchians understand them?", importance: "Silence may reflect refusal, distance, or failed communication."}
+  - {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: "How many Greeks were killed or wounded in the first dusk attack?", importance: "The narrator's annihilation counterfactual cannot be measured without losses."}
+  - {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: "What criteria distinguished necessary strong baggage animals from weak animals to be abandoned?", importance: "The decree redistributed survival burdens across the baggage train."}
+  - {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: "Who were the recently captured slaves, and what happened to them after release?", importance: "The logistical act should not be mistaken for a complete account of emancipation or safety."}
+  - {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: "What property was confiscated, and who controlled it afterward?", importance: "Enforcement consequences and material authority are not narrated."}
+  - {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: "What were the status, consent, and later fate of the boy or woman clandestinely retained by soldiers?", importance: "The passage concerns persons treated as prizes but supplies no voice or outcome."}
+  - {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: "How were pace orders transmitted through the column, and how long did messages take?", importance: "Command conflict is inseparable from the communications architecture of the narrow road."}
+  - {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: "Were Cleonymus and Basias later recovered or buried?", importance: "IV.1 records the immediate failure but not final treatment of the dead."}
+  - {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: "Who were the existing guides who told Cheirisophus there was no other road?", importance: "Their report directly shaped the forward commander's decision."}
+  - {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: "What acts are covered by Dakyns's wording 'all sorts of terrors'?", importance: "The nature and degree of coercion cannot be reconstructed from the translation alone."}
+  - {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: "Who authorized the killing of the first prisoner and under what military or customary rule?", importance: "The execution is decisive for the subsequent testimony but procedurally unexplained."}
+  - {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: "Was the second prisoner's route testimony accurate, and how did coercion affect it?", importance: "The next operation depends on the answer."}
+  - {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: "What does the translated phrase 'distinguish themselves' imply about honor, reward, and command?", importance: "It frames the volunteer solicitation."}
+  - {id: Q-017, evidence_type: UNRESOLVED_QUESTION, question: "How were Aristonymus, Agasias, Callimachus, and Aristeas selected and ranked within the expedition?", importance: "The relation between volunteer initiative and formal command is incomplete."}
+  - {id: Q-018, evidence_type: UNRESOLVED_QUESTION, question: "How do the Greek terms behind slave, prisoner, property, terror, guide, and volunteer alter the political and ethical description?", importance: "The admitted witness is an English translation and cannot settle these terms."}
+downstream_textual_checks:
+  - {id: CHECK-001, check: "Inspect a reviewed Greek witness for the Book IV synopsis, heading, and IV.1 opening boundary.", reason: "Paratext and ancient narrative must remain separated."}
+  - {id: CHECK-002, check: "Verify the Greek wording behind sheer necessity, friendly passage, and enemies of the king.", reason: "These phrases structure the initial property and alliance claims."}
+  - {id: CHECK-003, check: "Verify the Greek terms translated as slaves, prisoners, property, confiscated, good-looking boy or woman, and terrors.", reason: "Translation choices bear directly on status, coercion, and enforcement."}
+  - {id: CHECK-004, check: "Track Carduchian and Greek casualties and any later recovery or burial of Cleonymus and Basias.", reason: "IV.1 records named deaths and immediate burial failure."}
+  - {id: CHECK-005, check: "Compare Cheirisophus's and Xenophon's orders with the route and pass operations in IV.2.", reason: "The command disagreement is tested by the next chapter's assault."}
+  - {id: CHECK-006, check: "Track the two prisoners, the disclosed alternative road, and the guide's treatment in IV.2.", reason: "The intelligence must be checked against subsequent events."}
+  - {id: CHECK-007, check: "Track Aristonymus, Agasias, Callimachus, and Aristeas through the volunteer expedition and later narrative.", reason: "IV.1 names the initial volunteer leadership."}
+  - {id: CHECK-008, check: "Preserve the narrator's annihilation counterfactual as judgment rather than measured outcome.", reason: "It must not be converted into a factual casualty claim."}
+  - {id: CHECK-009, check: "Preserve the distinction between captive release for logistics and any broader claim about slavery.", reason: "The source supplies a practical rationale, not a complete normative doctrine."}
+  - {id: CHECK-010, check: "Do not normalize or excuse the coercive interrogation and execution; record uncertainty and source limits.", reason: "The violence is explicit and procedurally unexplained."}
+  - {id: CHECK-011, check: "Do not import Strauss or later Carduchian history into the primary unit.", reason: "Primary reconstruction remains independent and paratext-controlled."}
+  - {id: CHECK-012, check: "Do not derive deeds, speech registers, guards, adapters, or ministerial capacities from this unit before the authorized gate.", reason: "The unit remains a draft pending owner review."}
+secondary_comparison_status: DEFERRED
+secondary_comparison_note: >-
+  Strauss's reconstruction is not used to organize or decide this primary reading unit. Comparison remains
+  deferred until the relevant primary sequence is complete and owner review authorizes it.
