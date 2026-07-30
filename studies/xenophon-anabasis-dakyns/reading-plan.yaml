@@ -1,0 +1,42 @@
+schema_version: 1.0
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
+purpose: Reconstruct Xenophon's Anabasis independently from the admitted Dakyns translation before comparison with Strauss
+  or derivation of deeds, registers, guards, or ministerial capacities.
+segmentation:
+  rule: One reading unit per numbered chapter unless a documented exception is approved.
+  book_chapter_counts:
+    I: 10
+    II: 6
+    III: 5
+    IV: 8
+    V: 8
+    VI: 6
+    VII: 8
+  total_planned_units: 51
+reading_units:
+- id: XEN-PRI-RU-001
+  work_locator: Anabasis I.1
+  pdf_pages_one_based: 5-7
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-001.yaml
+- id: XEN-PRI-RU-002
+  work_locator: Anabasis I.2
+  pdf_pages_one_based: 7-11
+  status: NEXT
+remaining_sequence: Anabasis I.3 through VII.8, strictly in chapter order.
+required_outputs_per_unit:
+- bibliographic_and_witness_control
+- narrative_person_and_authorial_attribution
+- speakers_audiences_and_occasions
+- speeches_deeds_and_outcomes
+- sequence_repetition_omission_and_contradiction
+- documentary_observations
+- provisional_findings
+- standing_unresolved_questions
+- downstream_textual_checks
+comparison_gate:
+  strauss_comparison: DEFERRED
+  rule: Do not import Strauss's reconstruction into a primary unit; compare only after the relevant primary sequence is complete.
