@@ -14,6 +14,8 @@ REQUIRED = [
     ROOT / "corpus/sources/strauss-xenophons-anabasis.yaml",
     ROOT / "corpus/witnesses/strauss-spp-1983.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml",
+    ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-001.yaml",
+    ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-002.yaml",
     ROOT / "adapter/report-contract.yaml",
     ROOT / "audits/founding-state.yaml",
 ]
@@ -47,6 +49,35 @@ def main() -> int:
     witness = documents[ROOT / "corpus/witnesses/strauss-spp-1983.yaml"]
     if witness["source_id"] != "XEN-SRC-SEC-001":
         print("Witness/source linkage mismatch")
+        return 1
+
+    reading_plan = documents[ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml"]
+    drafted = {
+        unit["id"]: unit
+        for unit in reading_plan["reading_units"]
+        if unit.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"
+    }
+    expected_drafted = {"XEN-RU-001", "XEN-RU-002"}
+    if set(drafted) != expected_drafted:
+        print("Reading plan drafted-unit set mismatch")
+        return 1
+
+    for unit_id in sorted(expected_drafted):
+        record_path = ROOT / drafted[unit_id]["record"]
+        record = documents[record_path]
+        if record["unit_id"] != unit_id:
+            print(f"Reading unit identifier mismatch for {unit_id}")
+            return 1
+        if record["status"] != "DRAFTED_PENDING_OWNER_REVIEW":
+            print(f"Reading unit status mismatch for {unit_id}")
+            return 1
+        if "no claim is promoted to Xenophon's teaching" not in record["jurisdiction"]:
+            print(f"Secondary-source jurisdiction missing for {unit_id}")
+            return 1
+
+    next_units = [unit["id"] for unit in reading_plan["reading_units"] if unit.get("status") == "NEXT"]
+    if next_units != ["XEN-RU-003"]:
+        print("Reading plan must identify XEN-RU-003 as the sole next unit")
         return 1
 
     print("Xenophon repository validation passed")
