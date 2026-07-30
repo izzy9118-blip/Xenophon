@@ -9,9 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_OWNER_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_UNIT_IDS = [f"XEN-RU-{number:03d}" for number in range(1, 9)]
-PRIMARY_UNIT_ID = "XEN-PRI-RU-001"
-PRIMARY_UNIT_PATH = ROOT / "studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-001.yaml"
+PRIMARY_UNIT_IDS = ["XEN-PRI-RU-001", "XEN-PRI-RU-002"]
+PRIMARY_UNIT_PATHS = {
+    unit_id: ROOT / f"studies/xenophon-anabasis-dakyns/units/{unit_id}.yaml"
+    for unit_id in PRIMARY_UNIT_IDS
+}
 PRIMARY_READING_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
+NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-003"
 
 REQUIRED = [
     ROOT / "manifest.yaml",
@@ -28,7 +32,7 @@ REQUIRED = [
         for unit_id in SECONDARY_UNIT_IDS
     ],
     PRIMARY_READING_PLAN,
-    PRIMARY_UNIT_PATH,
+    *PRIMARY_UNIT_PATHS.values(),
     ROOT / "adapter/report-contract.yaml",
     ROOT / "audits/founding-state.yaml",
     SECONDARY_OWNER_REVIEW,
@@ -40,6 +44,42 @@ REQUIRED = [
 def load_yaml(path: Path) -> object:
     with path.open("r", encoding="utf-8") as handle:
         return yaml.safe_load(handle)
+
+
+def validate_reading_unit(record: dict, unit_id: str) -> str | None:
+    if record.get("unit_id") != unit_id:
+        return f"Primary unit identifier mismatch for {unit_id}"
+    if record.get("status") != "DRAFTED_PENDING_OWNER_REVIEW":
+        return f"Primary unit status mismatch for {unit_id}"
+    jurisdiction = record.get("jurisdiction", "")
+    if "Translator wording is not unmediated Greek evidence" not in jurisdiction:
+        return f"Primary translation jurisdiction missing for {unit_id}"
+    if record.get("secondary_comparison_status") != "DEFERRED":
+        return f"Primary unit secondary comparison must remain deferred for {unit_id}"
+    required_sections = [
+        "bibliographic_and_witness_control",
+        "narrative_person_and_authorial_attribution",
+        "speakers_audiences_and_occasions",
+        "speeches_deeds_and_outcomes",
+        "sequence_repetition_omission_and_contradiction",
+        "documentary_observations",
+        "provisional_findings",
+        "standing_unresolved_questions",
+        "downstream_textual_checks",
+    ]
+    for section in required_sections:
+        if not record.get(section):
+            return f"Required primary section {section} missing for {unit_id}"
+    for observation in record["documentary_observations"]:
+        if not observation.get("locator") or not observation.get("evidence_type"):
+            return f"Untyped or unlocated primary observation in {unit_id}"
+    for finding in record["provisional_findings"]:
+        if finding.get("evidence_type") != "PROVISIONAL_INFERENCE":
+            return f"Primary provisional finding must be typed in {unit_id}"
+    for question in record["standing_unresolved_questions"]:
+        if question.get("evidence_type") != "UNRESOLVED_QUESTION":
+            return f"Primary unresolved question must be typed in {unit_id}"
+    return None
 
 
 def main() -> int:
@@ -58,13 +98,13 @@ def main() -> int:
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True:
         print("AI self-certification safeguard must remain true")
         return 1
-    if manifest.get("version") != "1.1.0":
-        print("Manifest version must be 1.1.0 after primary witness admission")
+    if manifest.get("version") != "1.2.0":
+        print("Manifest version must be 1.2.0 after drafting Anabasis I.2")
         return 1
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS":
         print("Manifest primary reconstruction state mismatch")
         return 1
-    if manifest.get("next_required_unit", {}).get("id") != "XEN-PRI-RU-002":
+    if manifest.get("next_required_unit", {}).get("id") != NEXT_PRIMARY_UNIT_ID:
         print("Manifest next primary unit mismatch")
         return 1
 
@@ -128,7 +168,7 @@ def main() -> int:
     if primary_admission.get("status") != "OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS":
         print("Primary admission record status mismatch")
         return 1
-    if primary_admission.get("scope", {}).get("initial_unit") != PRIMARY_UNIT_ID:
+    if primary_admission.get("scope", {}).get("initial_unit") != PRIMARY_UNIT_IDS[0]:
         print("Primary admission initial-unit mismatch")
         return 1
     if primary_admission.get("limits", [])[-1:] != ["Artificial-intelligence self-certification remains prohibited."]:
@@ -153,49 +193,37 @@ def main() -> int:
         print("Primary reading plan status mismatch")
         return 1
     primary_units = primary_reading_plan.get("reading_units", [])
-    if [unit.get("id") for unit in primary_units] != ["XEN-PRI-RU-001", "XEN-PRI-RU-002"]:
+    expected_plan_ids = [*PRIMARY_UNIT_IDS, NEXT_PRIMARY_UNIT_ID]
+    if [unit.get("id") for unit in primary_units] != expected_plan_ids:
         print("Primary reading plan unit order mismatch")
         return 1
-    if primary_units[0].get("status") != "DRAFTED_PENDING_OWNER_REVIEW":
-        print("Primary first-unit status mismatch")
+    drafted_plan_ids = [
+        unit.get("id")
+        for unit in primary_units
+        if unit.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"
+    ]
+    if drafted_plan_ids != PRIMARY_UNIT_IDS:
+        print("Primary drafted-unit order mismatch")
         return 1
-    if primary_units[1].get("status") != "NEXT":
+    next_plan_ids = [unit.get("id") for unit in primary_units if unit.get("status") == "NEXT"]
+    if next_plan_ids != [NEXT_PRIMARY_UNIT_ID]:
         print("Primary next-unit status mismatch")
         return 1
     if primary_reading_plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED":
         print("Strauss comparison must remain deferred")
         return 1
 
-    primary_unit = documents[PRIMARY_UNIT_PATH]
-    if primary_unit.get("unit_id") != PRIMARY_UNIT_ID:
-        print("Primary unit identifier mismatch")
-        return 1
-    if primary_unit.get("status") != "DRAFTED_PENDING_OWNER_REVIEW":
-        print("Primary unit status mismatch")
-        return 1
-    jurisdiction = primary_unit.get("jurisdiction", "")
-    if "Translator wording is not unmediated Greek evidence" not in jurisdiction:
-        print("Primary translation jurisdiction missing")
-        return 1
-    if primary_unit.get("secondary_comparison_status") != "DEFERRED":
-        print("Primary unit secondary comparison must remain deferred")
-        return 1
-    if not primary_unit.get("documentary_observations"):
-        print("Primary documentary observations missing")
-        return 1
-    if not primary_unit.get("standing_unresolved_questions"):
-        print("Primary unresolved questions missing")
-        return 1
-    for observation in primary_unit["documentary_observations"]:
-        if not observation.get("locator") or not observation.get("evidence_type"):
-            print("Untyped or unlocated primary observation")
+    for unit_id, unit_path in PRIMARY_UNIT_PATHS.items():
+        record = documents[unit_path]
+        if not isinstance(record, dict):
+            print(f"Primary unit {unit_id} must contain a mapping")
             return 1
-    for question in primary_unit["standing_unresolved_questions"]:
-        if question.get("evidence_type") != "UNRESOLVED_QUESTION":
-            print("Primary unresolved question must be typed")
+        error = validate_reading_unit(record, unit_id)
+        if error:
+            print(error)
             return 1
 
-    if manifest.get("primary_study", {}).get("drafted_units") != [PRIMARY_UNIT_ID]:
+    if manifest.get("primary_study", {}).get("drafted_units") != PRIMARY_UNIT_IDS:
         print("Manifest primary drafted-unit list mismatch")
         return 1
     if manifest.get("secondary_study", {}).get("drafted_units") != SECONDARY_UNIT_IDS:
@@ -207,7 +235,7 @@ def main() -> int:
     if state.get("primary_witness_count") != 1:
         print("Founding audit primary witness count mismatch")
         return 1
-    if state.get("drafted_primary_units") != 1:
+    if state.get("drafted_primary_units") != len(PRIMARY_UNIT_IDS):
         print("Founding audit primary unit count mismatch")
         return 1
     if state.get("drafted_secondary_units") != 8:
