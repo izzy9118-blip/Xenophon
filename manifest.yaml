@@ -5,11 +5,11 @@ minister:
   name: Xenophon
   status: FOUNDING_IN_PROGRESS
   registration_status: NOT_YET_REGISTERED_IN_SANCTUM
-version: 1.9.0
+version: 1.10.0
 state: PRIMARY_RECONSTRUCTION_IN_PROGRESS
 owner_reviews:
-  - governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
-  - governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
+- governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+- governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
 governing_hub:
   repository: izzy9118-blip/Sanctum
   briefing_standard: standards/briefing-standard.md
@@ -29,14 +29,14 @@ secondary_study:
   immutable_unit_records: true
   adoption_record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
   drafted_units:
-    - XEN-RU-001
-    - XEN-RU-002
-    - XEN-RU-003
-    - XEN-RU-004
-    - XEN-RU-005
-    - XEN-RU-006
-    - XEN-RU-007
-    - XEN-RU-008
+  - XEN-RU-001
+  - XEN-RU-002
+  - XEN-RU-003
+  - XEN-RU-004
+  - XEN-RU-005
+  - XEN-RU-006
+  - XEN-RU-007
+  - XEN-RU-008
 primary_study:
   id: XEN-STUDY-PRI-001
   status: SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
@@ -44,16 +44,18 @@ primary_study:
   source_id: XEN-SRC-PRI-001
   witness_id: XEN-WIT-PRI-001
   drafted_units:
-    - XEN-PRI-RU-001
-    - XEN-PRI-RU-002
-    - XEN-PRI-RU-003
-    - XEN-PRI-RU-004
-    - XEN-PRI-RU-005
-    - XEN-PRI-RU-006
-    - XEN-PRI-RU-007
-    - XEN-PRI-RU-008
-    - XEN-PRI-RU-009
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-004
+  - XEN-PRI-RU-005
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-007
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-010
 next_required_unit:
-  id: XEN-PRI-RU-010
-  description: Continue the independent primary reconstruction with Anabasis I.10 using the Dakyns Project Gutenberg witness.
+  id: XEN-PRI-RU-011
+  description: Continue the independent primary reconstruction with Anabasis II.1 using the Dakyns Project Gutenberg
+    witness.
 artificial_intelligence_self_certification_prohibited: true
