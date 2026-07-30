@@ -5,7 +5,7 @@ minister:
   name: Xenophon
   status: FOUNDING_IN_PROGRESS
   registration_status: NOT_YET_REGISTERED_IN_SANCTUM
-version: 0.7.0
+version: 0.8.0
 state: FOUNDING_FRAMEWORK_PENDING_OWNER_REVIEW
 governing_hub:
   repository: izzy9118-blip/Sanctum
@@ -21,7 +21,7 @@ current_phase:
   completion_status: IN_PROGRESS
 secondary_study:
   id: XEN-STUDY-SEC-001
-  status: SEQUENTIAL_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
+  status: SEQUENTIAL_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
   drafted_units:
     - XEN-RU-001
     - XEN-RU-002
@@ -30,7 +30,8 @@ secondary_study:
     - XEN-RU-005
     - XEN-RU-006
     - XEN-RU-007
-next_required_unit:
-  id: XEN-RU-008
-  description: Continue Strauss's "Xenophon's Anabasis" at printed pages 133-136 without promoting secondary claims to Xenophon's teaching
+    - XEN-RU-008
+next_required_action:
+  id: XEN-ACTION-001
+  description: Owner review of XEN-RU-001 through XEN-RU-008 and admission of a reviewed primary Xenophontic witness before primary reconstruction, deed extraction, or adapter derivation
 artificial_intelligence_self_certification_prohibited: true
