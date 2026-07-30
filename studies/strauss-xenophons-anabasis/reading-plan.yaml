@@ -2,17 +2,18 @@ schema_version: 1.0
 study_id: XEN-STUDY-SEC-001
 source_id: XEN-SRC-SEC-001
 witness_id: XEN-WIT-SEC-001
-status: SEQUENTIAL_READING_NOT_YET_BEGUN
+status: SEQUENTIAL_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
 purpose: Reconstruct Strauss's argument and evidentiary moves without adopting them as Xenophon's teaching.
 reading_units:
   - id: XEN-RU-001
     printed_pages: 105-108
     pdf_pages_one_based: 109-112
-    status: NEXT
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-001.yaml
   - id: XEN-RU-002
     printed_pages: 109-112
     pdf_pages_one_based: 113-116
-    status: QUEUED
+    status: NEXT
   - id: XEN-RU-003
     printed_pages: 113-116
     pdf_pages_one_based: 117-120
