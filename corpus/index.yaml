@@ -1,0 +1,77 @@
+schema_version: 1.0
+record_type: xenophon_corpus_index
+
+identity:
+  id: XEN-CORPUS-INDEX-001
+  version: 0.1.0
+  scope: CURRENT_COMMITTED_WITNESSES_ONLY
+
+status:
+  lifecycle: OPEN_CORPUS
+  primary_xenophon_witness_count: 0
+  secondary_interpretive_witness_count: 1
+  completion: FOUNDATIONAL_SECONDARY_REGISTRATION_ONLY
+  certification: NOT_CERTIFIED
+
+containers:
+  - witness_id: XEN-WIT-SEC-001
+    title: Studies in Platonic Political Philosophy
+    author: Leo Strauss
+    publication_year: 1983
+    publisher: University of Chicago Press
+    source_class: POSTHUMOUS_STRAUSS_COLLECTION
+    local_review_filename: studies-in-platonic-political-philosophy_compress(1).pdf
+    format: PDF
+    page_count: 263
+    file_size_bytes: 12551057
+    sha256: 8479ed41fe951b8ebc5a2a5b6557a482a60de0d13032785a68f11d51ea8b4fb6
+    metadata_title: Studies in Platonic political philosophy
+    metadata_author: Strauss, Leo
+    metadata_creator: Internet Archive
+    metadata_producer: Recoded by LuraDocument PDF v2.68
+    source_condition: SEARCHABLE_TEXT_WITH_LAYOUT_AND_PAGE_IMAGES
+    repository_copy_rule: >
+      The repository records identity, locators, classifications, and findings
+      but does not reproduce or distribute the source PDF.
+
+items:
+  - item_id: XEN-ITEM-SEC-001
+    container_witness_id: XEN-WIT-SEC-001
+    author: Leo Strauss
+    title: Xenophon's Anabasis
+    source_class: QUALIFIED_SECONDARY_INTERPRETIVE
+    printed_pages: 105-136
+    pdf_pages_one_based: 109-140
+    original_publication:
+      journal: Interpretation - A Journal of Political Philosophy
+      volume: 4
+      number: 3
+      year: 1975
+    documentary_condition: >
+      Strauss left the essay in handwritten manuscript. Joseph Cropsey transcribed
+      it with assistance from Jenny and Diskin Clay. The 1983 printing is posthumous.
+    source_status: studies/strauss-xenophons-anabasis/source-status.yaml
+    reconstruction: studies/strauss-xenophons-anabasis/reconstruction.yaml
+    status: REVIEWED_AND_PROVISIONALLY_RECONSTRUCTED
+
+primary_work_registry:
+  - work_key: anabasis
+    canonical_title: Anabasis
+    conventional_alternate_title: Cyrus' Ascent
+    primary_witnesses: []
+    status: PRIMARY_WITNESS_REQUIRED
+    required_metadata:
+      - edition
+      - language
+      - editor_or_translator
+      - publication_data
+      - pagination_or_sectioning
+      - file_identity
+      - textual_and_translation_limits
+
+non_absorption_rule: >
+  The registered Strauss item may generate questions and later comparative
+  findings. It may not be treated as a witness of Xenophon's wording, sequence,
+  or intention until those points are checked against a registered primary text.
+
+next_action: ADMIT_PRIMARY_ANABASIS_WITNESS
