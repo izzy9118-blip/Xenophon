@@ -13,11 +13,12 @@ reading_units:
   - id: XEN-RU-002
     printed_pages: 109-112
     pdf_pages_one_based: 113-116
-    status: NEXT
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-002.yaml
   - id: XEN-RU-003
     printed_pages: 113-116
     pdf_pages_one_based: 117-120
-    status: QUEUED
+    status: NEXT
   - id: XEN-RU-004
     printed_pages: 117-120
     pdf_pages_one_based: 121-124
