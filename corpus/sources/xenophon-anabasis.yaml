@@ -1,0 +1,33 @@
+schema_version: 1.0
+id: XEN-SRC-PRI-001
+status: OWNER_ADMITTED_PRIMARY_TRANSLATION_SOURCE
+work:
+  author: Xenophon
+  title: Anabasis
+  source_type: ancient_work_in_translation
+  original_language: Ancient Greek
+  book_count: 7
+edition:
+  translator: H. G. Dakyns
+  digital_publisher: Project Gutenberg
+  ebook_number: 1170
+  digital_title: Anabasis, by Xenophon
+  source_url_recorded_in_witness: https://www.gutenberg.org/files/1170/1170-h/1170-h.htm
+  edition_lineage: Typed from Dakyns' series The Works of Xenophon, a four-volume set.
+  translation_publication_year: not_stated_in_witness
+repository_jurisdiction:
+  role: primary Xenophontic witness in English translation
+  authority: Primary for sequence, speakers, deeds, outcomes, and translated wording; not unmediated evidence for the Greek
+    text.
+  permitted_uses:
+  - begin independent sequential reconstruction of Xenophon's Anabasis
+  - record translated speeches, deeds, narrative sequence, omissions, and outcomes
+  - form questions for later Greek-text and translation comparison
+  - compare with Strauss only after the relevant primary sequence has been reconstructed
+  prohibited_uses:
+  - treat Dakyns' English wording as direct Greek philological evidence
+  - silently resolve a translation or textual uncertainty
+  - derive a deed corpus, speech register, guard, or ministerial capacity from an isolated passage
+  - replace this witness with Strauss's interpretation
+witness_ids:
+- XEN-WIT-PRI-001
