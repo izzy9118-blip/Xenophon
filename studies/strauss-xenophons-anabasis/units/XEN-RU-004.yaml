@@ -1,0 +1,292 @@
+schema_version: 1.0
+unit_id: XEN-RU-004
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 117-120
+  pdf_pages_one_based: 121-124
+  opening_anchor: Books Two to Five and Seven begin with summaries which state very briefly what had been narrated before.
+  closing_anchor: Here Xenophon seems to disclose the identity of the gods to whom the god in Delphi had advised him
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 117; PDF p. 121
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Strauss notes that the summaries introducing Books Two through Five and Seven never name Xenophon, although the narrative repeatedly displays his speeches and deeds.
+    uncertainty: Strauss offers counteraction to unavoidable self-praise as a possibility rather than a demonstrated authorial explanation.
+  - id: OBS-002
+    locator: printed p. 117; PDF p. 121
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The introduction to Book Four is approximately as long as the introductions to Books Two, Three, Five, and Seven together; because Book Six lacks an introduction, Book Four is central both in the seven-book sequence and among introduced books.
+    uncertainty: Structural centrality is established, but whether it determines doctrinal priority remains open.
+  - id: OBS-003
+    locator: printed p. 117; PDF p. 121
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The Karduchians are independent of and hostile to the Persian king, yet they also resist the Greeks and inflict severe losses during seven days of continuous fighting.
+    uncertainty: Political independence from Persia does not by itself establish friendship, justice, or a common Greek-barbarian alignment.
+  - id: OBS-004
+    locator: printed p. 117; PDF p. 121
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss emphasizes that the Greeks suffer more evils in Karduchia than the king and Tissaphernes had inflicted during the Persian march.
+    uncertainty: The comparative statement measures hardship and loss, not the justice of either enemy.
+  - id: OBS-005
+    locator: printed p. 117; PDF p. 121
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Cheirisophos commands the van and Xenophon the rear; snow, enemy pressure, and broken communication cause the rearward advance to resemble flight.
+    uncertainty: The division of command clarifies responsibility but does not by itself explain whether either commander erred.
+  - id: OBS-006
+    locator: printed p. 117; PDF p. 121
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon secures a guide by having one Karduchian prisoner slaughtered within sight of another, thereby compelling the survivor to assist the Greeks.
+    uncertainty: The deed is effective, but the source passage does not establish that necessity, military utility, or survival makes it just.
+  - id: OBS-007
+    locator: printed p. 117; PDF p. 121
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: After savage fighting, Xenophon concludes a treaty that recovers the Greek dead and permits their fitting burial.
+    uncertainty: The sequence places coercive brutality beside treaty, recovery, and burial without resolving their moral relation.
+  - id: OBS-008
+    locator: printed pp. 117-118; PDF pp. 121-122
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Armenia initially appears as a climatic and geographic relief from Karduchia, yet the Greeks are trapped between a defended river crossing in front and renewed Karduchian pressure from the rear.
+    uncertainty: The contrast between the two regions begins as opposition but does not eliminate danger from either side.
+  - id: OBS-009
+    locator: printed p. 118; PDF p. 122
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon's second dream resembles the post-Kunaxa dream but is less frightening; Xenophon reports it with his own favorable interpretation, and sacrifices before all the generals are favorable from the beginning.
+    uncertainty: The dream, Xenophon's interpretation, and the sacrificial result are distinct evidentiary acts and cannot be collapsed into transparent divine instruction.
+  - id: OBS-010
+    locator: printed p. 118; PDF p. 122
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Two young soldiers accidentally discover a ford and report it to Xenophon because he is readily approachable when soldiers possess war-relevant information.
+    uncertainty: Xenophon does not discover the ford himself; the passage tests command partly by receptivity to subordinate knowledge.
+  - id: OBS-011
+    locator: printed p. 118; PDF p. 122
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon gives thanks to the gods, immediately informs Cheirisophos, and the crossing proceeds amid wreath, sacrifice to the river, and favorable signs.
+    uncertainty: The successful crossing may be narrated as divine favor, prudent coordination, accidental discovery, or their conjunction.
+  - id: OBS-012
+    locator: printed p. 118; PDF p. 122
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss qualifies Theopompos' earlier assertion that weapons and virtue alone are within Greek power by introducing divine favor and the possibility that oath-keeping attracts that favor with a kind of necessity.
+    uncertainty: Strauss presents alternatives with conditional language and does not reduce success to a single causal account.
+  - id: OBS-013
+    locator: printed p. 118; PDF p. 122
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon's piety may be counted among his virtues only if it is acknowledged as difficult to separate from toughness, wit, and wiliness; Strauss says it differs completely from the piety of Nikias.
+    uncertainty: The passage distinguishes modes of piety but does not provide a complete definition of Xenophontic piety.
+  - id: OBS-014
+    locator: printed p. 118; PDF p. 122
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The Greek generals accept a treaty proposed by Tiribazos despite two prior Persian betrayals, but this time take precautions against renewed treachery.
+    uncertainty: The record supports corrigibility and caution, not proof that the new treaty partner is trustworthy.
+  - id: OBS-015
+    locator: printed p. 118; PDF p. 122
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Greek soldiers who wantonly burn the houses in which they were quartered violate the treaty and are punished by assignment to poor quarters.
+    uncertainty: The passage records internal discipline but does not fully state the legal procedure or proportionality of punishment.
+  - id: OBS-016
+    locator: printed p. 118; PDF p. 122
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: After sacrifice to the north wind, its violence seems clearly to abate to everyone; Strauss ranks this collective seeming as more trustworthy than a bare report marked by "it is said."
+    uncertainty: Greater testimonial reliability does not establish divine causation or exclude coincidence.
+  - id: OBS-017
+    locator: printed p. 118; PDF p. 122
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon initially does not know why people are suffering from ravenous hunger in the snow; after an experienced man explains the condition, Xenophon takes effective measures.
+    uncertainty: The deed demonstrates learning and response rather than prior expertise or omniscience.
+  - id: OBS-018
+    locator: printed p. 119; PDF p. 123
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Armenia is marked by kind reception, abundant provisions, excellent wine, feasting, cheerfulness, and hospitality, largely through Xenophon's rapidly established relation with a village chief.
+    uncertainty: The cordiality concerns a local arrangement and cannot automatically characterize all Armenia.
+  - id: OBS-019
+    locator: printed p. 119; PDF p. 123
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon takes one royal tribute colt, gives his old horse to the village chief for fattening and sacrifice because it is sacred to Helios, and distributes colts to other senior commanders.
+    uncertainty: Acquisition, exchange, gift, tribute, and sacred use overlap here; the passage does not settle the full property or religious status of the horses.
+  - id: OBS-020
+    locator: printed p. 119; PDF p. 123
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Strauss juxtaposes seventeen horses, a marriage nine days earlier with nine as the center of seventeen, and seventeen divine references in Xenophon's first three ascendancy speeches.
+    uncertainty: The numerical pattern is explicit in Strauss's presentation, but its intended weight and relation to the argument remain uncertain.
+  - id: OBS-021
+    locator: printed p. 119; PDF p. 123
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Book Four alone contains no formal oaths, while Karduchian hardship and Armenian gaiety form opposed poles within the doubly central book.
+    uncertainty: Absence of formal oath language may be compositional evidence, but its meaning is not self-interpreting.
+  - id: OBS-022
+    locator: printed p. 119; PDF p. 123
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss turns to the Education of Cyrus to explain Armenia's distinction through a teacher accused of corrupting an Armenian prince because the king envied his son's admiration; Armenia thereby becomes a barbarian analogue of Athens.
+    uncertainty: The cross-work analogy is interpretive and requires independent reconstruction of the cited Education of Cyrus passage.
+  - id: OBS-023
+    locator: printed p. 119; PDF p. 123
+    evidence_type: PROVISIONAL_INFERENCE
+    observation: Because Armenia can mirror Athens through a Socratic persecution, Strauss retracts any simple claim that the Persian-Greek antagonism is wholly unimportant or merely subordinate.
+    uncertainty: The analogy complicates the antagonism but does not equate Persian and Greek political orders in every respect.
+  - id: OBS-024
+    locator: printed pp. 119-120; PDF pp. 123-124
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The Armenian analogue to Socrates is free of revenge against his pupil's father and rejects the gentlemanly virtue of surpassing friends in benefit and enemies in harm.
+    uncertainty: The passage distinguishes this figure from Cyrus and gentlemanly justice but does not yet complete the comparison with Xenophon.
+  - id: OBS-025
+    locator: printed p. 120; PDF p. 124
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss notes that courage is absent from Xenophon's two formal lists of Socratic virtues and that Socratic justice is identified with never harming anyone in the slightest.
+    uncertainty: Absence from a list does not by itself prove Socrates lacked courage; it marks a problem in the formal presentation of virtue.
+  - id: OBS-026
+    locator: printed p. 120; PDF p. 124
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: In the village-chief incident Strauss places Xenophon between Proxenos' gentleness and Cheirisophos' Spartan harshness: Xenophon would use force if necessary but would bind the guide to prevent escape.
+    uncertainty: The proposed right mean is Strauss's counterfactual characterization and does not establish the justice of beating or binding.
+  - id: OBS-027
+    locator: printed p. 120; PDF p. 124
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon replaces Kleanor's frontal attack with a feint described as stealing, wins Cheirisophos' cooperation through comic praise of Spartan theft, accepts a minor modification, and succeeds.
+    uncertainty: Tactical success demonstrates shrewd calculation but does not convert deception into a universally valid rule.
+  - id: OBS-028
+    locator: printed p. 120; PDF p. 124
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: A subsequent obstacle is again overcome chiefly through Xenophon's calculation rather than Cheirisophos' simple aggressiveness.
+    uncertainty: Strauss's contrast is comparative and local; it does not establish Xenophon as infallible or Cheirisophos as generally incompetent.
+  - id: OBS-029
+    locator: printed p. 120; PDF p. 124
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon is nearly the last Greek to see the sea because he commands the rear, yet this delayed sight does not diminish the achievement Strauss attributes to his prudent counsel.
+    uncertainty: The sight marks a major goal but not the completion of the army's return or Xenophon's political ascent.
+  - id: OBS-030
+    locator: printed p. 120; PDF p. 124
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: At Trapezus the Greeks celebrate, remain about thirty days, secure provisions by both plunder and purchase, and prepare fulfillment of vows to Zeus the Savior, Heracles the Leader, and other gods.
+    uncertainty: The sentence concerning the identity of the Delphic gods continues beyond this unit and must not be completed from memory.
+argument_reconstruction:
+  - step: 1
+    claim: Strauss establishes Book Four's formal centrality through the exceptional length of its introduction and the distribution of introductions across the seven books.
+    locator: printed p. 117; PDF p. 121
+  - step: 2
+    claim: The Karduchian passage places Xenophon's resourcefulness beside an act of severe coercion and then beside treaty and burial, preventing practical success from functioning as moral self-certification.
+    locator: printed p. 117; PDF p. 121
+  - step: 3
+    claim: The Armenian crossing joins dream, interpretation, sacrifice, accidental discovery, accessibility, information sharing, and coordinated command without reducing success to any one cause.
+    locator: printed pp. 117-118; PDF pp. 121-122
+  - step: 4
+    claim: Strauss defines Xenophon's piety as inseparable from practical traits and therefore unlike a purely passive or self-effacing model of piety.
+    locator: printed p. 118; PDF p. 122
+  - step: 5
+    claim: Armenia supplies a structured opposite to Karduchia through hospitality, abundance, gaiety, and local friendship, while remaining politically connected to Persia and thematically connected to Athens.
+    locator: printed pp. 118-119; PDF pp. 122-123
+  - step: 6
+    claim: The center of the work opens the Socratic problem by contrasting gentlemanly justice, which harms enemies, with justice that never harms.
+    locator: printed pp. 119-120; PDF pp. 123-124
+  - step: 7
+    claim: Xenophon's practical ascendancy appears as a mean between softness and blunt force, expressed through precaution, humor, feint, calculation, and willingness to share danger.
+    locator: printed p. 120; PDF p. 124
+  - step: 8
+    claim: The delayed sight of the sea and the fulfillment of vows prepare a transition from survival to the still-unfinished political and religious consequences of the return.
+    locator: printed p. 120; PDF p. 124
+provisional_inferences:
+  - id: INF-001
+    locator: printed pp. 117-120; PDF pp. 121-124
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The doubly central book teaches through opposed regions, opposed modes of rule, and opposed notions of justice rather than through a single explicit doctrinal statement.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-002
+    locator: printed p. 117; PDF p. 121
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: A deed can be indispensable to collective survival while remaining morally unvindicated; effectiveness is evidence of capacity, not justice.
+    confidence: high_for_methodological_boundary
+  - id: INF-003
+    locator: printed p. 118; PDF p. 122
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Command includes institutional accessibility to information that the commander does not possess and rapid conversion of subordinate discovery into common action.
+    confidence: provisional
+  - id: INF-004
+    locator: printed pp. 118-119; PDF pp. 122-123
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon's piety appears operationally entangled with judgment, interpretation, gratitude, discipline, and calculation rather than isolated as a separate devotional disposition.
+    confidence: provisional
+  - id: INF-005
+    locator: printed p. 119; PDF p. 123
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The absence of formal oaths in the central book may heighten the importance of enacted trust, sacrifice, treaty, punishment, hospitality, and burial, but the source does not settle this explanation.
+    confidence: low_to_moderate
+  - id: INF-006
+    locator: printed pp. 119-120; PDF pp. 123-124
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The Armenian analogy relocates the Greek political problem inside the barbarian world and thereby prevents geography or ethnicity from carrying the full distinction between philosophy and persecution.
+    confidence: provisional
+  - id: INF-007
+    locator: printed p. 120; PDF p. 124
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon's practical mean is not moderation understood as inaction; it combines force with precaution and eagerness with minimization of avoidable loss.
+    confidence: provisional
+  - id: INF-008
+    locator: printed p. 120; PDF p. 124
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The leader may reach the common object last because command requires remaining with those most exposed; delayed personal enjoyment can be part of the deed of leadership.
+    confidence: provisional
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 117; PDF p. 121
+    question: Does the omission of Xenophon's name from book summaries chiefly restrain self-praise, preserve narrator-character distance, or serve another compositional purpose?
+  - id: Q-002
+    locator: printed pp. 117-120; PDF pp. 121-124
+    question: What precisely justifies Book Four's double centrality, and how much weight should be placed on formal position rather than narrated action?
+  - id: Q-003
+    locator: printed p. 117; PDF p. 121
+    question: Was the killing of the Karduchian prisoner necessary, prudent, unjust, or deliberately presented so that effectiveness and justice remain divided?
+  - id: Q-004
+    locator: printed p. 117; PDF p. 121
+    question: How should the treaty and fitting burial of the Greek dead be related to the preceding coercive act against the prisoners?
+  - id: Q-005
+    locator: printed p. 118; PDF p. 122
+    question: What evidentiary status belongs separately to the dream, Xenophon's favorable interpretation, favorable sacrifices, accidental discovery of the ford, and successful crossing?
+  - id: Q-006
+    locator: printed p. 118; PDF p. 122
+    question: Does Xenophon's accessibility to ordinary soldiers constitute a stable form of command, or only a circumstance of this emergency?
+  - id: Q-007
+    locator: printed p. 118; PDF p. 122
+    question: Where does piety end and toughness, wit, wiliness, or political use of religious opinion begin in Xenophon's conduct?
+  - id: Q-008
+    locator: printed p. 118; PDF p. 122
+    question: Why is collective seeming after sacrifice more trustworthy than "what is said," and what remains unproved about the wind's abatement?
+  - id: Q-009
+    locator: printed p. 119; PDF p. 123
+    question: What is the argumentative force of the numbers seventeen and nine, and can the numerical pattern be independently verified in the primary text?
+  - id: Q-010
+    locator: printed p. 119; PDF p. 123
+    question: Why does the central book contain no formal oaths despite its density of treaties, sacrifices, sacred property, hospitality, and divine references?
+  - id: Q-011
+    locator: printed pp. 119-120; PDF pp. 123-124
+    question: Does the Armenian analogue of Athens explain Armenia's central position, or does it open a broader cross-work inquiry that this essay does not complete?
+  - id: Q-012
+    locator: printed pp. 119-120; PDF pp. 123-124
+    question: How can Socratic justice that never harms be reconciled with Xenophon's military practice and with the gentlemanly duty to harm enemies?
+  - id: Q-013
+    locator: printed p. 120; PDF p. 124
+    question: Is Xenophon's counterfactual willingness to beat and bind the guide a defensible right mean or only a more competent form of coercion?
+  - id: Q-014
+    locator: printed p. 120; PDF p. 124
+    question: What distinguishes legitimate tactical deception from the deception for which Cyrus and Persian leaders were criticized earlier?
+  - id: Q-015
+    locator: printed p. 120; PDF p. 124
+    question: What is achieved by Xenophon being nearly last to see the sea, and why is the common sight not yet the completion of return?
+  - id: Q-016
+    locator: printed p. 120; PDF p. 124
+    question: Which gods were disclosed by the Trapezus sacrifices as the gods named by Apollo, and how does the continuation on printed p. 121 qualify that disclosure?
+downstream_primary_text_checks:
+  - Anabasis book introductions at II.1.1, III.1.1, IV.1.1, V.1.1, VI.3.1, and VII.1.1, including the presence or absence of Xenophon's name
+  - Anabasis IV.1-IV.3 on Karduchian resistance, command of van and rear, the two prisoners, the guide, recovery of the dead, and burial
+  - Anabasis IV.3 on the river crossing, Xenophon's dream, sacrifices, the two young men, and discovery of the ford
+  - Anabasis IV.4-IV.5 on Tiribazos, treaty precautions, Greek violations, punishment, sacrifice to the wind, snow hunger, and corrective action
+  - Anabasis IV.5 on the Armenian village chief, hospitality, wine, royal horses, Helios, seventeen horses, and the nine-day marriage
+  - Complete count of formal oath expressions in Book Four compared with the other six books
+  - Education of Cyrus III.1.14 and III.1.38-39 on the Armenian prince, his teacher, the corruption accusation, and revenge
+  - Memorabilia II.3.14, II.6.35, IV.8.11 and Apology of Socrates 15-18 on friends, enemies, courage, and justice as never harming
+  - Anabasis IV.6.3 and IV.7.1-14 on the village chief, Cheirisophos, binding, the council, the feint, tactical humor, and the subsequent obstacle
+  - Anabasis IV.7.21-IV.8 and the beginning of V.1 on the sight of the sea, Trapezus, provisions, vows, and the gods named at Delphi
+termination:
+  reason: scope boundary reached at printed p. 120 in the middle of the Trapezus vow discussion
+  next_unit: XEN-RU-005
