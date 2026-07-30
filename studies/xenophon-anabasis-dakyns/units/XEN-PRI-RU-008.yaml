@@ -1,0 +1,582 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-008
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.8
+  pdf_pages_one_based: 23-25
+  opening_anchor: It was already about full market time and the halting-place at which the army
+    was to take up quarters was nearly reached
+  closing_anchor: for his kindliness and fidelity had won him honours at the hands of Cyrus.
+jurisdiction: Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses a deed
+  corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.8 plus one-based PDF page
+  source_boundary: Narrative description, direct translated speech, anonymous battlefield reports,
+    Ctesias's attributed testimony, alternative accounts, and Dakyns's editorial notes remain distinct.
+    Tactical success, motive, casualty, divine-sign, and death claims are not silently upgraded beyond
+    their stated evidentiary form.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration in the English translation
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  observation: 'Xenophon enters the narrated action for the first time as ''Xenophon the Athenian'':
+    he rides from the Hellenic quarter to Cyrus, asks whether there are orders, and is asked to circulate
+    the report that the sacrificial omens are favorable. The narration continues in the third person
+    and does not identify narrator and named character explicitly.'
+  uncertainty: This witness does not settle the Greek wording of Xenophon's designation, the exact
+    report formulas, or the relation among author, narrator, named participant, source testimony,
+    and later editorial material.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis I.8; PDF p. 23
+  speech_form: bilingual_alarm_direct_speech
+  speaker: Pategyas
+  audience: everyone he encountered in Cyrus's army
+  occasion: sudden report of the royal army near the intended halting-place
+  content: He shouts in Greek and Persian that the king is advancing with a large army ready for
+    battle.
+  uncertainty: The source of his intelligence and the distance of the enemy at the moment of warning
+    are not given.
+- id: SAO-002
+  locator: Anabasis I.8; PDF p. 23
+  speech_form: command_reported
+  speaker: Cyrus
+  audience: the assembled expedition
+  occasion: wild confusion after Pategyas's warning
+  content: Cyrus orders the troops to arm themselves and take their assigned places.
+  uncertainty: The chain of transmission from Cyrus to each contingent is not narrated.
+- id: SAO-003
+  locator: Anabasis I.8; PDF p. 24
+  speech_form: direct_battle_order
+  speaker: Cyrus
+  audience: Clearchus
+  occasion: the royal line approaches and the king is identified at the center
+  content: Cyrus orders Clearchus to attack the enemy center, saying that striking there will finish
+    the work.
+  uncertainty: The scope of the command and whether Cyrus expected the whole Greek line or only
+    Clearchus's wing to move are not explicit.
+- id: SAO-004
+  locator: Anabasis I.8; PDF p. 24
+  speech_form: direct_reply
+  speaker: Clearchus
+  audience: Cyrus
+  occasion: response to the order to leave the river and strike the center
+  content: Clearchus assures Cyrus that he will take care that all goes well while retaining the
+    right wing by the Euphrates.
+  uncertainty: The reply does not state open refusal, but the narrated hesitation and continued
+    position show that the requested maneuver is not executed.
+- id: SAO-005
+  locator: Anabasis I.8; PDF p. 24
+  speech_form: direct_question
+  speaker: Xenophon the Athenian
+  audience: Cyrus
+  occasion: Xenophon rides from the Hellenic quarter while Cyrus surveys both armies
+  content: Xenophon asks whether Cyrus has any orders to give.
+  uncertainty: The text does not explain Xenophon's office, authority, route to Cyrus, or reason
+    for approaching him.
+- id: SAO-006
+  locator: Anabasis I.8; PDF p. 24
+  speech_form: message_request_reported
+  speaker: Cyrus
+  audience: Xenophon for transmission to the Greeks
+  occasion: immediately before battle
+  content: Cyrus asks Xenophon to announce generally that both internal and external omens from
+    the victims are favorable.
+  uncertainty: The chapter records the request but does not separately narrate Xenophon's delivery
+    or the army's reception of the message.
+- id: SAO-007
+  locator: Anabasis I.8; PDF p. 24
+  speech_form: watchword_and_acceptance
+  speaker: an unidentified originator, reported by Xenophon, then Cyrus
+  audience: the Greek ranks and Cyrus
+  occasion: the watchword passes for a second time during final formation
+  content: The watchword is 'Zeus our Saviour and Victory'; Cyrus says that he accepts it and lets
+    it stand.
+  uncertainty: Cyrus explicitly wonders who issued it, and the chapter never identifies the originator.
+- id: SAO-008
+  locator: Anabasis I.8; PDF p. 25
+  speech_form: direct_battle_cry
+  speaker: Cyrus
+  audience: his remaining companions and the king's nearby force
+  occasion: Cyrus sees Artaxerxes after his cavalry has dispersed in pursuit
+  content: Cyrus cries that he sees the man and rushes directly at the king.
+  uncertainty: The translated cry and the narrator's statement that Cyrus could no longer contain
+    himself require Greek review.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis I.8; PDF p. 23
+  actor: Pategyas, Cyrus, and the expedition
+  deed: Pategyas delivers a sudden alarm; Cyrus arms and orders formation; the contingents rapidly
+    take their places.
+  outcome: The disordered march described at the end of I.7 is converted into a battle line before
+    the enemy reaches it.
+  uncertainty: The elapsed time and the degree of residual disorder are not measured.
+- id: SDO-002
+  locator: Anabasis I.8; PDF p. 23
+  actor: Cyrus and the commanders
+  deed: They deploy Greeks on the Euphrates-facing right and center, Menon on the Greek left,
+    allied cavalry and peltasts on the right, Ariaeus and the remaining Asian force on the left,
+    and Cyrus with six hundred cavalry.
+  outcome: A mixed army forms a differentiated line under several commanders.
+  uncertainty: The depth, intervals, reserves, and exact relation of Cyrus's cavalry to the line
+    are not fully supplied.
+- id: SDO-003
+  locator: Anabasis I.8; PDF pp. 23-24
+  actor: Artaxerxes's army
+  deed: It approaches in national squares with cavalry, missile troops, heavy infantry, and scythe-chariots,
+    advancing quietly rather than with the expected shouting.
+  outcome: The royal army's visible order contradicts Cyrus's prior forecast about Asian noise.
+  uncertainty: Several troop identifications are attributed to unnamed observers.
+- id: SDO-004
+  locator: Anabasis I.8; PDF p. 24
+  actor: Cyrus and Clearchus
+  deed: Cyrus orders an attack on the royal center; Clearchus keeps the Greek right anchored to
+    the river from fear of encirclement.
+  outcome: The Greek line does not execute Cyrus's requested center strike.
+  uncertainty: The chapter does not adjudicate whether Clearchus's tactical caution or Cyrus's
+    strategic priority was correct.
+- id: SDO-005
+  locator: Anabasis I.8; PDF p. 24
+  actor: Xenophon, Cyrus, and the Greek ranks
+  deed: Xenophon asks for orders; Cyrus assigns him the favorable-omen message; an unidentified
+    watchword circulates and Cyrus accepts it.
+  outcome: Sacrificial assurance and a sacred victory formula enter the line immediately before
+    the Greek advance.
+  uncertainty: The source and authority of the watchword and completion of Xenophon's message
+    task are not narrated.
+- id: SDO-006
+  locator: Anabasis I.8; PDF pp. 24-25
+  actor: the Greek army
+  deed: The Greeks chant the paean, accelerate into a run and battle cry, rout the opposing troops
+    before arrow range, pursue, preserve some order through mutual warnings, and open gaps for
+    driverless chariots.
+  outcome: The Greek sector wins with only minimal casualties reported.
+  uncertainty: The causal role of shield-clashing, the casualty count, and the enemy's reason for
+    flight are source-qualified.
+- id: SDO-007
+  locator: Anabasis I.8; PDF p. 25
+  actor: Cyrus and his six hundred cavalry
+  deed: Cyrus remains in order while the Greeks pursue, watches Artaxerxes's encircling movement,
+    and charges the royal front to protect the Greek rear.
+  outcome: He routs the troops before the king and is said to kill Artagerses, but his own cavalry
+    disperses in pursuit.
+  uncertainty: The figures of six hundred and six thousand and Cyrus's personal kill are not independently
+    established.
+- id: SDO-008
+  locator: Anabasis I.8; PDF p. 25
+  actor: Cyrus, Artaxerxes, their companions, and Artapates
+  deed: With only a few companions remaining, Cyrus charges the king, wounds him according to
+    Ctesias, receives a severe wound under the eye, and falls; eight companions die over him,
+    and Artapates dies by one of two conflicting accounts.
+  outcome: Cyrus's attempt at kingship ends in his death despite the Greek tactical victory.
+  uncertainty: The identity of Cyrus's killer, the exact sequence, Ctesias's reliability, and Artapates's
+    manner of death remain unresolved.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Sudden bilingual alarm interrupts the relaxed and disordered march
+  - Cyrus arms and the mixed army rapidly forms
+  - The royal army emerges through dust, bronze, national squares, and scythe-chariots
+  - Cyrus orders a center strike; Clearchus remains anchored to the Euphrates
+  - Xenophon enters as a named participant and receives the favorable-omen message task
+  - An unidentified sacred watchword is circulated and accepted by Cyrus
+  - The Greeks advance, rout their opponents, and pursue with almost no losses reported
+  - Artaxerxes begins an encircling movement beyond Cyrus's left
+  - Cyrus charges to protect the Greek rear and breaks the force before the king
+  - Cyrus's cavalry disperses in pursuit
+  - Cyrus rushes personally at Artaxerxes, wounds him, and is killed
+  - Conflicting reports close the chapter around Artapates's death
+  repetitions:
+  - Information continues to arrive through trusted messengers, visual signs, anonymous identifications,
+    sacrifice, and attributed testimony.
+  - Formation and pursuit repeatedly test whether military order can survive excitement.
+  - Friendship and fidelity remain decisive in the small circle around Cyrus even as the larger
+    force disperses.
+  - The narration marks uncertain claims through 'they said,' 'some say,' attributed testimony,
+    and alternative accounts.
+  omissions:
+  - The source of Pategyas's intelligence is not given.
+  - The originator of the watchword is never identified.
+  - Xenophon's delivery of the omen report is not separately narrated.
+  - The chapter gives no explicit judgment on Clearchus's decision not to strike the center.
+  - The reason for Cyrus's unhelmeted appearance is supplied only in a disputed editorial note.
+  - The enemy's rapid flight before arrow range is not fully explained.
+  - The exact killer and manner of Cyrus's death are not securely identified.
+  - The fate of most of Cyrus's six hundred after their dispersal is not stated here.
+  - Xenophon's actions after the omen exchange are omitted.
+  tensions:
+  - The army recovers formal order from confusion, yet pursuit soon dissolves the order of Cyrus's
+    cavalry.
+  - Clearchus may protect the Greek flank while failing Cyrus's central strategic objective.
+  - The Greeks win their immediate battle while Cyrus loses the war for kingship.
+  - Cyrus first restrains himself from pursuit to watch the king, then becomes unable to restrain
+    himself when he sees Artaxerxes.
+  - Sacrificial omens are reported as favorable immediately before the death of the claimant whose
+    army receives them.
+  - Cyrus is saluted as king before the decisive encounter and killed before kingship is secured.
+documentary_observations:
+- id: OBS-001
+  locator: Anabasis I.7-I.8; PDF pp. 22-23
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: The chapter opens immediately after the army has relaxed formation and consigned
+    heavy arms to transport.
+  uncertainty: The exact interval between the end of I.7 and Pategyas's arrival is not stated.
+- id: OBS-002
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Pategyas is identified as a trusted Persian member of Cyrus's personal staff.
+  uncertainty: His formal office and source of intelligence are omitted.
+- id: OBS-003
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Pategyas arrives at full speed on a sweating horse and shouts the warning in both
+    Greek and Persian.
+  uncertainty: The audience distribution and transmission speed are not quantified.
+- id: OBS-004
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The warning produces wild confusion because the troops expect immediate attack
+    before they can form.
+  uncertainty: The scale and duration of the confusion are not measured.
+- id: OBS-005
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus leaves his carriage, puts on his corselet, mounts, takes his javelins, and
+    orders the army to arm and rank.
+  uncertainty: The reason he was traveling by carriage at that moment belongs to the preceding
+    sequence.
+- id: OBS-006
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: The orders are obeyed rapidly enough for the ranks to take shape before contact.
+  uncertainty: Residual disorder is not described.
+- id: OBS-007
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Clearchus holds the Greek right with the Euphrates as its support.
+  uncertainty: The exact terrain and distance from the river are not given.
+- id: OBS-008
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Proxenus stands next to Clearchus, the remaining Greek contingents follow, and
+    Menon holds the Greek left.
+  uncertainty: The order of every intermediate contingent is not enumerated.
+- id: OBS-009
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: One thousand Paphlagonian cavalry and the Greek peltasts are placed beside Clearchus
+    on the right.
+  uncertainty: The coordination of cavalry, peltasts, and hoplites is not explained.
+- id: OBS-010
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Ariaeus and the remaining Asian force occupy the left, while Cyrus remains with
+    about six hundred cavalry.
+  uncertainty: The depth and reserve function of these troops are not supplied.
+- id: OBS-011
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus's cavalrymen and horses are armored, but Cyrus himself is unhelmeted.
+  uncertainty: The explanatory manuscript note is editorially disputed.
+- id: OBS-012
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: The enemy becomes knowable gradually through dust, a dark cloud, reflected bronze,
+    spear-points, and visible ranks.
+  uncertainty: The narrative does not identify the observer for each perception.
+- id: OBS-013
+  locator: Anabasis I.8; PDF pp. 23-24
+  evidence_type: REPORT_STATUS_OBSERVATION
+  observation: Tissaphernes, Egyptians, and other national contingents are identified through
+    reported battlefield recognition.
+  uncertainty: The identifications are not independently verified within the chapter.
+- id: OBS-014
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Scythe-chariots are deployed at intervals before the royal line with blades designed
+    to cut infantry formations.
+  uncertainty: The chapter describes intended function, not demonstrated effectiveness.
+- id: OBS-015
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Cyrus's earlier warning about Asian shouting is explicitly said not to be fulfilled;
+    the enemy advances quietly and evenly.
+  uncertainty: The cause and command purpose of the silence are not stated.
+- id: OBS-016
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus identifies the king at the royal center and tells Clearchus that a successful
+    center strike will finish the campaign.
+  uncertainty: The king's exact position is mediated by Cyrus's intelligence and the narrative.
+- id: OBS-017
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Clearchus knows that the royal line overlaps Cyrus's left but fears exposing the
+    Greek right to attack on both flanks.
+  uncertainty: Whether the fear was tactically sound cannot be settled from the chapter alone.
+- id: OBS-018
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Clearchus's reassuring reply is paired with narrated hesitation and nonexecution
+    of Cyrus's requested maneuver.
+  uncertainty: The text preserves ambiguity between disobedience and tactical discretion.
+- id: OBS-019
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Xenophon is named as an Athenian participant and rides from the Greek quarter to
+    Cyrus.
+  uncertainty: His official status and prior location in the campaign are not explained here.
+- id: OBS-020
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Xenophon asks for orders, and Cyrus asks him to spread the report that both classes
+    of sacrificial omen are favorable.
+  uncertainty: The text does not separately confirm performance of the assignment.
+- id: OBS-021
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: A watchword is being passed for the second time when Cyrus asks who ordered it.
+  uncertainty: The originator is never named.
+- id: OBS-022
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The watchword invokes Zeus as savior together with victory, and Cyrus accepts it.
+  uncertainty: The exact Greek syntax and force of acceptance require review.
+- id: OBS-023
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The Greeks chant the paean and begin their advance when the armies are only a few
+    furlongs apart.
+  uncertainty: The distance is approximate.
+- id: OBS-024
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Uneven forward movement develops into a general run and collective war cry.
+  uncertainty: Whether the acceleration was commanded or emergent is not stated.
+- id: OBS-025
+  locator: Anabasis I.8; PDF pp. 24-25
+  evidence_type: REPORT_STATUS_OBSERVATION
+  observation: Some say shield and spear clashing frightened the enemy horses, but the sentence
+    itself is editorially questioned.
+  uncertainty: Causation and textual authenticity remain unresolved.
+- id: OBS-026
+  locator: Anabasis I.8; PDF pp. 24-25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The troops opposite the Greeks turn and flee before the Greeks reach arrow range.
+  uncertainty: The immediate reason for flight is not established.
+- id: OBS-027
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The Greeks pursue while shouting to one another not to race and to preserve their
+    ranks.
+  uncertainty: The degree to which the warning succeeds is not measured.
+- id: OBS-028
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Driverless chariots pass through their own side or through gaps opened by the Greeks.
+  uncertainty: The total number destroyed, captured, or escaped is not given.
+- id: OBS-029
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: REPORT_STATUS_OBSERVATION
+  observation: Only one Greek arrow wound and no other Greek injury are reported in this phase
+    of the battle.
+  uncertainty: The casualty claim is exceptionally low and source-qualified.
+- id: OBS-030
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Cyrus is saluted as though already king but initially keeps his six hundred together
+    and watches Artaxerxes rather than joining the Greek pursuit.
+  uncertainty: The political meaning of the salutations and their speakers are not specified.
+- id: OBS-031
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Artaxerxes holds the customary central position and wheels toward Cyrus's rear when
+    no force opposes him directly.
+  uncertainty: The full geometry of the maneuver is not supplied.
+- id: OBS-032
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus charges because he fears the king will reach and destroy the Greek rear.
+  uncertainty: Whether this was the only available response is not stated.
+- id: OBS-033
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: REPORT_STATUS_OBSERVATION
+  observation: Cyrus is said to rout six thousand and kill Artagerses personally.
+  uncertainty: The figures and personal kill are reported rather than independently demonstrated.
+- id: OBS-034
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus's six hundred disperse in pursuit, leaving him with only a small group of
+    table companions.
+  uncertainty: The commanders' efforts to restrain or recall them are omitted.
+- id: OBS-035
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: After strategically waiting for the king, Cyrus is described as unable to contain
+    himself once he sees Artaxerxes.
+  uncertainty: The Greek wording and relation of passion to judgment require review.
+- id: OBS-036
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: REPORT_STATUS_OBSERVATION
+  observation: Ctesias is cited for Cyrus's wound to Artaxerxes and for losses near the king.
+  uncertainty: His position as royal surgeon gives access but does not remove source questions.
+- id: OBS-037
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus is struck beneath the eye, falls, and eight of his bravest companions lie
+    over him.
+  uncertainty: The assailant and exact sequence of blows are not identified.
+- id: OBS-038
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: REPORT_STATUS_OBSERVATION
+  observation: Artapates either is killed on the king's order or kills himself, according to competing
+    accounts.
+  uncertainty: The chapter refuses to resolve the alternatives.
+- id: OBS-039
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Artapates's final fidelity is connected to honors earlier received from Cyrus for
+    kindliness and loyalty.
+  uncertainty: The account does not establish how widely this reciprocity characterized the remaining
+    army.
+provisional_findings:
+- id: INF-001
+  locator: Anabasis I.7-I.8; PDF pp. 22-23
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The opening converts the overconfidence and disorder of I.7 into an emergency test of
+    whether command can rapidly recreate order.
+  confidence: high_for_sequence
+- id: INF-002
+  locator: Anabasis I.8; PDF pp. 24-25
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Greek tactical superiority is insufficient for Cyrus's political objective because victory
+    on one sector does not secure the enemy center or the claimant's survival.
+  confidence: high_for_chapter_outcome
+- id: INF-003
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The Cyrus-Clearchus exchange preserves a conflict between central strategic aim and local
+    tactical security without supplying a final adjudication.
+  confidence: high_for_textual_tension
+- id: INF-004
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Sacred assurance is not monopolized by a single commander; sacrifice is reported by
+    Cyrus, the watchword arises from an unknown source, and Cyrus accepts rather than originates
+    it.
+  confidence: moderate_pending_greek_review
+- id: INF-005
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Xenophon's first named appearance is intermediary and responsive; he seeks orders and
+    is assigned transmission of religious-military information.
+  confidence: high_for_narrated_role
+- id: INF-006
+  locator: Anabasis I.8; PDF pp. 24-25
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The chapter distinguishes disciplined aggression from destructive pursuit; Greeks warn
+    one another to keep ranks, while Cyrus's cavalry disperses and leaves him exposed.
+  confidence: high_for_sequence
+- id: INF-007
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The narration presents Cyrus's final movement as a shift from strategic protection of
+    the Greeks to a personally uncontained attack on his brother.
+  confidence: moderate_pending_greek_and_contextual_review
+- id: INF-008
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The climactic account is deliberately source-layered and incomplete, preserving rival
+    testimony rather than manufacturing a single certain death narrative.
+  confidence: high_for_documentary_structure
+standing_unresolved_questions:
+- id: Q-001
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek terms underlie wild confusion, alacrity, and the order to take assigned ranks?
+- id: Q-002
+  locator: Anabasis I.8; PDF p. 23
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why does Cyrus fight unhelmeted, and what is the textual status of the explanatory
+    manuscript note?
+- id: Q-003
+  locator: Anabasis I.8; PDF pp. 23-24
+  evidence_type: UNRESOLVED_QUESTION
+  question: How accurate are the troop identifications, formations, and chariot descriptions attributed
+    to observers?
+- id: Q-004
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why does the royal army advance silently when Cyrus predicted shouting?
+- id: Q-005
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: UNRESOLVED_QUESTION
+  question: What exactly did Cyrus command Clearchus to do, and was Clearchus's retention of the
+    river flank tactically justified?
+- id: Q-006
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: UNRESOLVED_QUESTION
+  question: How did Clearchus's decision affect the failure to defeat Artaxerxes at the center?
+- id: Q-007
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: UNRESOLVED_QUESTION
+  question: What office or standing allowed Xenophon to ride to Cyrus and receive an army-wide
+    message task?
+- id: Q-008
+  locator: Anabasis I.8; PDF p. 24
+  evidence_type: UNRESOLVED_QUESTION
+  question: Who originated the watchword, why was it already being passed a second time, and did
+    Cyrus's acceptance confer authority?
+- id: Q-009
+  locator: Anabasis I.8; PDF pp. 24-25
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why did the troops opposite the Greeks flee before arrow range, and what role, if any,
+    did shield-clashing play?
+- id: Q-010
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: UNRESOLVED_QUESTION
+  question: How reliable is the report that only one Greek was wounded in the battle?
+- id: Q-011
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: UNRESOLVED_QUESTION
+  question: Was Cyrus's first cavalry charge necessary to protect the Greek rear, and were alternatives
+    available?
+- id: Q-012
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why did Cyrus's six hundred disperse in pursuit, and what does the dispersal show about
+    his command?
+- id: Q-013
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: UNRESOLVED_QUESTION
+  question: How should the statement that Cyrus could no longer contain himself be related to strategic
+    judgment, ambition, anger, and brotherly rivalry?
+- id: Q-014
+  locator: Anabasis I.8; PDF p. 25
+  evidence_type: UNRESOLVED_QUESTION
+  question: What can be established about the wounds and deaths of Cyrus and Artapates from Ctesias
+    and the competing accounts?
+downstream_textual_checks:
+- Consult a reviewed Greek text of Anabasis I.8 for alarm, formation, silence, hesitation, favorable
+  omens, acceptance, pursuit, and inability to contain oneself.
+- Compare modern English translations of the Cyrus-Clearchus exchange, Xenophon's first named
+  appearance, the watchword, and Cyrus's final charge.
+- Review the manuscript and editorial status of the notes concerning Cyrus's bare head and the
+  alleged shield-clashing.
+- Map the Euphrates, Greek right, royal center, Cyrus's left, and the encircling movement without
+  inventing precision the text does not supply.
+- Read I.7 and I.8 together to document the transition from predicted no-battle confidence to sudden
+  alarm and rapid reformation.
+- Track Clearchus's placement and later explanations before evaluating his refusal to strike the
+  center.
+- Track Xenophon's named appearances and functions through the remaining Book I sequence.
+- Reconcile the battlefield force and casualty figures with earlier Book I counts while preserving
+  source qualification.
+- Compare Ctesias's attributed testimony and other ancient accounts of Cunaxa without forcing harmonization.
+- Defer comparison with Strauss until the complete Book I primary sequence is drafted.
+secondary_comparison_status: DEFERRED
