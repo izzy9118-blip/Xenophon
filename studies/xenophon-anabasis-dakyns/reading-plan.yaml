@@ -6,14 +6,7 @@ status: SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
 purpose: Reconstruct Xenophon's Anabasis independently from the admitted Dakyns translation before comparison with Strauss or derivation of deeds, registers, guards, or ministerial capacities.
 segmentation:
   rule: One reading unit per numbered chapter unless a documented exception is approved.
-  book_chapter_counts:
-    I: 10
-    II: 6
-    III: 5
-    IV: 8
-    V: 8
-    VI: 6
-    VII: 8
+  book_chapter_counts: {I: 10, II: 6, III: 5, IV: 8, V: 8, VI: 6, VII: 8}
   total_planned_units: 51
 reading_units:
 - {id: XEN-PRI-RU-001, work_locator: Anabasis I.1, pdf_pages_one_based: '5-7', status: DRAFTED_PENDING_OWNER_REVIEW, record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-001.yaml}
