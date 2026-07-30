@@ -16,6 +16,7 @@ REQUIRED = [
     ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-001.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-002.yaml",
+    ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-003.yaml",
     ROOT / "adapter/report-contract.yaml",
     ROOT / "audits/founding-state.yaml",
 ]
@@ -57,7 +58,7 @@ def main() -> int:
         for unit in reading_plan["reading_units"]
         if unit.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"
     }
-    expected_drafted = {"XEN-RU-001", "XEN-RU-002"}
+    expected_drafted = {"XEN-RU-001", "XEN-RU-002", "XEN-RU-003"}
     if set(drafted) != expected_drafted:
         print("Reading plan drafted-unit set mismatch")
         return 1
@@ -74,10 +75,32 @@ def main() -> int:
         if "no claim is promoted to Xenophon's teaching" not in record["jurisdiction"]:
             print(f"Secondary-source jurisdiction missing for {unit_id}")
             return 1
+        if not record.get("documentary_observations"):
+            print(f"Documentary observations missing for {unit_id}")
+            return 1
+        if not record.get("standing_unresolved_questions"):
+            print(f"Standing unresolved questions missing for {unit_id}")
+            return 1
+        for observation in record["documentary_observations"]:
+            if not observation.get("locator") or not observation.get("evidence_type"):
+                print(f"Untyped or unlocated observation in {unit_id}")
+                return 1
 
     next_units = [unit["id"] for unit in reading_plan["reading_units"] if unit.get("status") == "NEXT"]
-    if next_units != ["XEN-RU-003"]:
-        print("Reading plan must identify XEN-RU-003 as the sole next unit")
+    if next_units != ["XEN-RU-004"]:
+        print("Reading plan must identify XEN-RU-004 as the sole next unit")
+        return 1
+
+    if manifest["secondary_study"]["drafted_units"] != ["XEN-RU-001", "XEN-RU-002", "XEN-RU-003"]:
+        print("Manifest drafted-unit order mismatch")
+        return 1
+    if manifest["next_required_unit"]["id"] != "XEN-RU-004":
+        print("Manifest next-unit mismatch")
+        return 1
+
+    audit = documents[ROOT / "audits/founding-state.yaml"]
+    if audit["repository_state"]["drafted_secondary_units"] != 3:
+        print("Founding audit drafted-unit count mismatch")
         return 1
 
     print("Xenophon repository validation passed")
