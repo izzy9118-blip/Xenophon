@@ -213,6 +213,8 @@ def main() -> int:
         return fail("Founding audit must record complete Book I draft coverage")
     if state.get("book_two_primary_draft_complete") is not True:
         return fail("Founding audit must record complete Book II draft coverage")
+    if state.get("book_milestones_pending_owner_review") is not True:
+        return fail("Founding audit must preserve pending owner review for drafted book milestones")
     if state.get("book_two_drafted_chapters") != [f"II.{n}" for n in range(1, 7)]:
         return fail("Founding audit Book II coverage mismatch")
     if state.get("minister_adapter_derived") is not False or state.get("sanctum_registration_present") is not False:
