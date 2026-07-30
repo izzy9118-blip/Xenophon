@@ -1,0 +1,32 @@
+schema_version: 1.0
+status: PROPOSED_PENDING_OWNER_APPROVAL
+constitutional_source:
+  repository: izzy9118-blip/Sanctum
+  report_standard: standards/report-format.md
+  version: 1.0.0
+requirements:
+  committed_judgment:
+    required: true
+    implementation_status: NOT_YET_DERIVED
+  standing_unresolved_questions:
+    required: true
+    implementation_status: STRUCTURALLY_RESERVED
+  candor_of_fact_and_judgment:
+    required: true
+    protective_indirection_prohibited: true
+    implementation_status: STRUCTURALLY_RESERVED
+  self_reference_prohibited:
+    required: true
+    implementation_status: STRUCTURALLY_RESERVED
+  evidence_typing:
+    required: true
+    ai_self_certification_prohibited: true
+    implementation_status: DEFINED_IN_METHOD
+  mind_not_mouth:
+    required: true
+    implementation_status: NOT_YET_DERIVED
+  pedagogy:
+    jurisdiction: adapter_level
+    expected_native_basis: Socratic pole
+    implementation_status: NOT_YET_DERIVED_FROM_PRIMARY_DEEDS
+non_invention_guard: No speech register, guard, or pedagogical mechanism may be created until licensed by the primary Xenophontic corpus.
