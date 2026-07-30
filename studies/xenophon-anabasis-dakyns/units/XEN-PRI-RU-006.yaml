@@ -1,0 +1,408 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-006
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.6
+  pdf_pages_one_based: 19-20
+  opening_anchor: "As they advanced from this point (opposite Charmande), they came upon the hoof-prints and dung of horses at frequent intervals."
+  closing_anchor: "No tomb to mark his resting-place, either then or since, was ever seen."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.6 plus one-based PDF page
+  source_boundary: >-
+    The chapter is reported partly through Clearchus's later account of a Persian court proceeding.
+    The narrative, Clearchus's report, direct translated dialogue, ritual gestures, conjecture, and
+    absence of knowledge are kept distinct.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration in the English translation
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  observation: >-
+    The narrator reports Orontas's plot and arrest, then relies on Clearchus's account for the internal
+    proceedings while explicitly preserving ignorance concerning the manner of Orontas's death.
+  uncertainty: >-
+    This witness does not settle the Greek terms for report, right, fidelity, treason, solemn pledge,
+    or the legal and ritual status of the proceeding.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis I.6; PDF p. 19
+    speech_form: proposal_reported
+    speaker: Orontas
+    audience: Cyrus
+    occasion: response to enemy cavalry burning forage ahead of the expedition
+    content: >-
+      Orontas offers to take one thousand horsemen, ambush or capture the hostile cavalry, stop the
+      burnings, and prevent them from observing Cyrus's army or reporting to the king.
+    uncertainty: >-
+      The proposal is summarized by the narrator rather than preserved as direct speech.
+  - id: SAO-002
+    locator: Anabasis I.6; PDF p. 19
+    speech_form: letter_reported
+    speaker: Orontas
+    audience: Artaxerxes and the royal cavalry
+    occasion: secret attempt to defect with Cyrus's horsemen
+    content: >-
+      Orontas announces that he will soon join the king with as many horsemen as he can bring and asks
+      that the royal cavalry receive him as a friend, invoking earlier friendship and fidelity.
+    uncertainty: >-
+      The letter's wording is not quoted, and its complete contents are unavailable.
+  - id: SAO-003
+    locator: Anabasis I.6; PDF pp. 19-20
+    speech_form: direct_speech_reported_by_clearchus
+    speaker: Cyrus
+    audience: seven Persian attendants, Clearchus, and Orontas
+    occasion: opening of the court proceeding
+    content: >-
+      Cyrus asks for counsel so that he may do what is right in the sight of god and man concerning Orontas.
+    uncertainty: >-
+      The proceeding is reconstructed through Clearchus's later report, and the translated singular "God"
+      requires original-language review.
+  - id: SAO-004
+    locator: Anabasis I.6; PDF p. 20
+    speech_form: judicial_questioning
+    speaker: Cyrus
+    audience: Orontas and the assembled court
+    occasion: examination of repeated hostility and broken pledges
+    content: >-
+      Cyrus establishes that Orontas had twice been reconciled by handshakes and solemn pledges, had
+      received no injury from Cyrus, and had nevertheless renewed hostility for a third time.
+    uncertainty: >-
+      The exact legal force of the questions and admissions depends on Greek wording and Persian context.
+  - id: SAO-005
+    locator: Anabasis I.6; PDF p. 20
+    speech_form: direct_reply
+    speaker: Orontas
+    audience: Cyrus and the court
+    occasion: response to the possibility of future loyalty
+    content: >-
+      Orontas says that even if he later became hostile to Artaxerxes and faithful to Cyrus, Cyrus could
+      never be brought to believe him.
+    uncertainty: >-
+      The reply may acknowledge destroyed credibility without clarifying motive, necessity, or repentance.
+  - id: SAO-006
+    locator: Anabasis I.6; PDF p. 20
+    speech_form: judicial_opinion
+    speaker: Clearchus
+    audience: Cyrus and the court
+    occasion: Cyrus's request for judgment
+    content: >-
+      Clearchus advises removing Orontas quickly so that no one must watch him and more attention can be
+      given to rewarding those whose friendship is sincere.
+    uncertainty: >-
+      The translated phrase "put this man out of the way" requires Greek verification, as does the relation
+      between judgment, expediency, and punishment.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis I.6; PDF p. 19
+    actor: enemy cavalry ahead of Cyrus's army
+    deed: Burned grass and other useful material while leaving the trail of about two thousand horses.
+    outcome: The threat created a plausible occasion for a detached cavalry mission.
+    uncertainty: The identity, exact number, and command of these cavalry are not established.
+  - id: SDO-002
+    locator: Anabasis I.6; PDF p. 19
+    actor: Orontas
+    deed: Proposed a mission against the cavalry while secretly planning to defect with troops supplied by Cyrus.
+    outcome: Cyrus authorized the mission and Orontas attempted to send a letter to Artaxerxes.
+    uncertainty: The chapter does not state when Orontas formed the plot or whether any proposed military action was genuine.
+  - id: SDO-003
+    locator: Anabasis I.6; PDF p. 19
+    actor: Orontas's chosen messenger
+    deed: Delivered the secret letter to Cyrus rather than to the king.
+    outcome: Cyrus learned of the plot and arrested Orontas.
+    uncertainty: The messenger's identity, motive, and prior loyalty are not supplied.
+  - id: SDO-004
+    locator: Anabasis I.6; PDF p. 19
+    actor: Cyrus
+    deed: Convened seven noble Persian attendants, summoned Greek generals, and placed about three thousand hoplites around his tent.
+    outcome: A mixed Persian-Greek court proceeding occurred under military security.
+    uncertainty: The constitutional or customary basis of the court and the reason for the large guard are not explained.
+  - id: SDO-005
+    locator: Anabasis I.6; PDF pp. 19-20
+    actor: Cyrus and Orontas
+    deed: Conducted a question-and-answer examination of prior wars, injuries, repentance, sacred refuge, pledges, and renewed treason.
+    outcome: Orontas admitted the narrated acts and did not offer a future loyalty Cyrus could trust.
+    uncertainty: The record does not present an independent defense, witnesses, or a statement of motive beyond necessity.
+  - id: SDO-006
+    locator: Anabasis I.6; PDF p. 20
+    actor: Clearchus and the assembled court
+    deed: Advised death and unanimously adhered to that opinion.
+    outcome: Each participant, including Orontas's kinsmen, took him by the girdle as a death judgment.
+    uncertainty: Whether unanimity was freely reached, compelled, or ritualized cannot be determined from this witness.
+  - id: SDO-007
+    locator: Anabasis I.6; PDF p. 20
+    actor: appointed attendants
+    deed: Led Orontas to the tent of Artapates, after which he disappeared from the record.
+    outcome: No one is said to have seen him again alive or dead, and no tomb was known.
+    uncertainty: The manner, place, agents, and even directly witnessed fact of death are not supplied.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Evidence of hostile cavalry and destroyed forage
+    - Orontas's plausible proposal for a detached command
+    - Secret letter to Artaxerxes and betrayal by the messenger
+    - Arrest and guarded court assembly
+    - Cyrus's historical examination of repeated broken reconciliations
+    - Clearchus's advice and unanimous judgment
+    - Ritual taking by the girdle and removal
+    - Complete obscurity concerning execution and burial
+  repetitions:
+    - Friendship and fidelity again appear as political and military currencies vulnerable to deception.
+    - Handshakes and solemn pledges recur, but their repetition does not restore trust.
+    - Cyrus combines Persian attendants with Greek military support and Clearchus's counsel.
+    - Report formulas and explicit ignorance limit what can be claimed about motive, procedure, and death.
+  omissions:
+    - Orontas's reason for saying he "must needs" betray Cyrus is not explained.
+    - No independent defense speech, witness testimony, or alternative penalty is recorded.
+    - The messenger's identity and motive are omitted.
+    - The legal authority and procedural rules of the court are not stated.
+    - The actual manner of Orontas's death is withheld.
+    - No body, grave, or tomb is produced.
+    - Xenophon remains absent as a named participant.
+  tensions:
+    - Cyrus invokes what is right before god and man within a proceeding whose ultimate execution remains concealed.
+    - Orontas's military excellence and noble birth coexist with repeated disloyalty.
+    - Sacred refuge and solemn pledges once secured reconciliation but no longer suffice after repetition.
+    - Clearchus's judgment links execution not only to punishment but to freedom from surveillance and greater leisure for rewarding friends.
+    - Orontas's kinsmen participate in the judgment yet continue to bow to him as he is led away.
+documentary_observations:
+  - id: OBS-001
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The army encounters repeated hoofprints and dung interpreted as the trail of about two thousand horses.
+    uncertainty: The number is an estimate derived from traces rather than a counted force.
+  - id: OBS-002
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The cavalry ahead burns grass and other useful material.
+    uncertainty: Their command and strategic instructions are not identified.
+  - id: OBS-003
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas is described as closely related to the king and counted among the best Persian warriors.
+    uncertainty: The kinship degree and criteria of military excellence are not stated.
+  - id: OBS-004
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Orontas's earlier war and reconciliation with Cyrus are introduced before the present plot.
+    uncertainty: The earlier conflicts are summarized and not independently narrated here.
+  - id: OBS-005
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas requests one thousand horsemen and promises to neutralize the cavalry ahead.
+    uncertainty: The chapter does not show whether Cyrus tested the proposal before authorizing it.
+  - id: OBS-006
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: A real logistical threat supplies the cover for a treasonous proposal.
+    uncertainty: Whether the proposal included any sincere military component remains open.
+  - id: OBS-007
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus authorizes Orontas to draw cavalry detachments from each general.
+    uncertainty: The distribution and command arrangements are omitted.
+  - id: OBS-008
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas writes to Artaxerxes that he will join him with as many horsemen as possible.
+    uncertainty: The letter is paraphrased, not reproduced.
+  - id: OBS-009
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The messenger whom Orontas trusts instead gives the letter to Cyrus.
+    uncertainty: The messenger's allegiance and motive are unknown.
+  - id: OBS-010
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus arrests Orontas only after reading the letter.
+    uncertainty: The arrest procedure and any corroborating evidence are not described.
+  - id: OBS-011
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Seven noble Persian attendants are summoned to Cyrus's tent.
+    uncertainty: Their official roles are not specified.
+  - id: OBS-012
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Approximately three thousand Greek hoplites are placed around the tent.
+    uncertainty: The reason for this scale of military security is unstated.
+  - id: OBS-013
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Clearchus alone among the Greek generals is admitted to the internal proceeding.
+    uncertainty: The chapter attributes this to his standing but does not define the institutional consequence.
+  - id: OBS-014
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Knowledge of the court's interior reaches the narrative through Clearchus's report to friends.
+    uncertainty: The report is described as no mystery, but no second internal account is supplied.
+  - id: OBS-015
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus frames the decision as what is right in the sight of god and man.
+    uncertainty: Dakyns's theological phrasing and the underlying Greek require verification.
+  - id: OBS-016
+    locator: Anabasis I.6; PDF pp. 19-20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus's examination proceeds through Orontas's own admissions regarding prior hostility, lack of injury, repentance, and renewed betrayal.
+    uncertainty: No defense beyond the answers is recorded.
+  - id: OBS-017
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas had once fled to the altar of Artemis before a second reconciliation.
+    uncertainty: The sanctuary's legal force and Cyrus's obligations toward it are not explained.
+  - id: OBS-018
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Repeated solemn pledges are central evidence in the judgment.
+    uncertainty: The ritual terms and parties to the pledges are translator-mediated.
+  - id: OBS-019
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas admits that Cyrus had done him no wrong before his later revolts.
+    uncertainty: The admission does not settle whether Orontas believed another duty overrode personal injury.
+  - id: OBS-020
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas says Cyrus could never believe a future return to loyalty.
+    uncertainty: The statement may be practical recognition rather than moral confession.
+  - id: OBS-021
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Clearchus recommends death partly to eliminate the need for watching Orontas.
+    uncertainty: The balance between justice, security, and expediency is not resolved.
+  - id: OBS-022
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The entire court adheres to Clearchus's opinion.
+    uncertainty: The account does not disclose deliberation after his statement.
+  - id: OBS-023
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas's own kinsmen join the ritual gesture signifying death.
+    uncertainty: Their degree of consent or constraint is unknown.
+  - id: OBS-024
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Those who formerly bowed to Orontas continue bowing as he is led to death.
+    uncertainty: The gesture may reflect rank, habit, reverence, pity, or ritual convention.
+  - id: OBS-025
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Orontas disappears after being taken to Artapates's tent.
+    uncertainty: No direct witness to execution is presented.
+  - id: OBS-026
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The chapter closes by denying knowledge of the death's manner and noting the absence of any tomb.
+    uncertainty: Absence of reported evidence is not proof of any particular method or location.
+provisional_findings:
+  - id: INF-001
+    locator: Anabasis I.6; PDF pp. 19-20
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The chapter presents destroyed trust, rather than a single hostile act, as the decisive political fact in Orontas's case.
+    confidence: provisional_pending_greek_and_book_one_sequence
+  - id: INF-002
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Cyrus's rule depends on intelligence moving through personal loyalty, and the same personal network that enables conspiracy also exposes it.
+    confidence: high_for_translated_chapter_structure
+  - id: INF-003
+    locator: Anabasis I.6; PDF pp. 19-20
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The court combines Persian nobility, Greek military force, and Clearchus's judgment without revealing a stable constitutional form shared by them.
+    confidence: provisional
+  - id: INF-004
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Sacred refuge and solemn pledges can restore political relations temporarily but cannot compel belief after repeated betrayal.
+    confidence: provisional_pending_oath_sequence
+  - id: INF-005
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Clearchus treats punishment as a reallocation of attention from surveillance of the false friend toward requital of sincere friends.
+    confidence: moderate_for_translated_speech
+  - id: INF-006
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The chapter sharply separates a publicly narrated judgment from an execution deliberately left outside direct knowledge.
+    confidence: high_for_narrative_structure
+  - id: INF-007
+    locator: Anabasis I.6; PDF pp. 19-20
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Orontas's retained dignity in ritual gesture complicates any simple reduction of the episode to criminal degradation.
+    confidence: low_to_moderate_pending_comparative_ritual_evidence
+standing_unresolved_questions:
+  - id: Q-001
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: UNRESOLVED_QUESTION
+    question: Who commanded the cavalry burning forage ahead of Cyrus, and how reliable is the estimate of two thousand horses?
+  - id: Q-002
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: UNRESOLVED_QUESTION
+    question: When did Orontas form the present plot, and was any part of his proposed ambush sincere?
+  - id: Q-003
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why did Orontas believe the messenger trustworthy, and why did the messenger give the letter to Cyrus?
+  - id: Q-004
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why did Cyrus surround the proceeding with approximately three thousand Greek hoplites?
+  - id: Q-005
+    locator: Anabasis I.6; PDF p. 19
+    evidence_type: UNRESOLVED_QUESTION
+    question: What offices or customary authority belonged to the seven Persian attendants?
+  - id: Q-006
+    locator: Anabasis I.6; PDF pp. 19-20
+    evidence_type: UNRESOLVED_QUESTION
+    question: What Greek terms underlie Dakyns's right, God and man, faithful subject, solemn pledges, treasonous plot, and sincere friendship?
+  - id: Q-007
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: What does Orontas mean by saying that he must needs betray Cyrus?
+  - id: Q-008
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: What legal or sacred protection did the altar of Artemis afford, and how was that protection terminated?
+  - id: Q-009
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: Does Cyrus's questioning establish justice, political necessity, procedural legitimacy, or only Orontas's untrustworthiness?
+  - id: Q-010
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why is Clearchus asked first for judgment, and how much does his opinion shape the court's unanimity?
+  - id: Q-011
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: What exactly does the gesture of taking Orontas by the girdle signify in Persian custom?
+  - id: Q-012
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why do Orontas's former inferiors continue bowing as he is led away?
+  - id: Q-013
+    locator: Anabasis I.6; PDF p. 20
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why does the narrative preserve complete uncertainty about the manner of death and the absence of a tomb?
+  - id: Q-014
+    locator: Anabasis I.6; PDF pp. 19-20
+    evidence_type: UNRESOLVED_QUESTION
+    question: How will the later encomium of Cyrus's friendship, justice, and fidelity incorporate or qualify the Orontas proceeding?
+downstream_textual_checks:
+  - Consult a reviewed Greek text of Anabasis I.6 for the vocabulary of fidelity, friendship, treason, necessity, belief, right, god, man, and solemn pledge.
+  - Compare at least one modern English translation for Cyrus's opening formula and Clearchus's recommendation.
+  - Identify Persian or Greek evidence for taking a condemned person by the girdle and continuing obeisance before death.
+  - Track Orontas's earlier appearances and later references to determine what the reader is expected to know beyond this chapter.
+  - Compare Cyrus's treatment of Orontas with the earlier execution of Megaphernes and the later treatment of defeated or disloyal associates.
+  - Track Artemis, altars, handshakes, and sworn pledges across the Anabasis before drawing theological or legal conclusions.
+  - Distinguish what the narrator asserts from what Clearchus reports and what unnamed observers conjecture.
+  - Preserve the unknown manner of death and absence of a tomb as positive documentary limits.
+  - Defer comparison with Strauss's reconstruction until the relevant Book I primary sequence is complete.
+secondary_comparison_status: DEFERRED
