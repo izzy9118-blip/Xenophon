@@ -43,8 +43,8 @@ primary_study:
   admission_record: governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
   source_id: XEN-SRC-PRI-001
   witness_id: XEN-WIT-PRI-001
-  book_one_draft_complete: true
-  book_two_draft_complete: true
+  book_one_draft_complete_pending_owner_review: true
+  book_two_draft_complete_pending_owner_review: true
   drafted_units:
   - XEN-PRI-RU-001
   - XEN-PRI-RU-002
