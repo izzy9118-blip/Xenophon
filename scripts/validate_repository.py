@@ -253,8 +253,8 @@ def main() -> int:
         print("Anabasis II.2 wolf textual variant must remain documented")
         return 1
     if not any(
-        "fortune proved a better general" in finding.get("finding", "")
-        for finding in unit_012.get("provisional_findings", [])
+        "fortune proved a better general" in observation.get("observation", "")
+        for observation in unit_012.get("documentary_observations", [])
     ):
         print("Anabasis II.2 narratorial judgment must remain represented")
         return 1
