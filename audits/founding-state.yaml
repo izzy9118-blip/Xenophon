@@ -10,7 +10,7 @@ repository_state:
   secondary_witness_documented: true
   primary_witness_count: 0
   sequential_study_started: true
-  drafted_secondary_units: 4
+  drafted_secondary_units: 5
   minister_adapter_derived: false
   sanctum_registration_present: false
 documented_gaps:
@@ -21,11 +21,11 @@ documented_gaps:
       - deed extraction
       - operational capacity derivation
   - id: GAP-002
-    description: Strauss's essay remains only partially reconstructed; XEN-RU-001 through XEN-RU-004 are drafted and await owner review.
+    description: Strauss's essay remains only partially reconstructed; XEN-RU-001 through XEN-RU-005 are drafted and await owner review.
     blocks:
       - complete secondary argument map
   - id: GAP-003
     description: No owner-approved Xenophon adapter exists.
     blocks:
       - Assembly dispatch
-next_required_action: Complete XEN-RU-005 from the registered secondary witness.
+next_required_action: Complete XEN-RU-006 from the registered secondary witness.
