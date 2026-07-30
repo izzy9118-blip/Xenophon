@@ -14,8 +14,10 @@ The Book II sequence preserves the victory dispute, the demand for disarmament, 
 
 `XEN-PRI-RU-016` closes Book II through comparative portraits of Clearchus, Proxenus, Menon, Agias, and Socrates. It preserves first-person narratorial judgment, collective testimony, recorded saying, possible fabrication, reported death, the contrast among command through fear, honorable friendship, and complicity in wrongdoing, and the tension between the opening collective statement of decapitation and the later distinct account of Menon's punishment.
 
-The sequential reconstruction now crosses into Book III. The next unit is `XEN-PRI-RU-017`, covering III.1 and the army's despair, Xenophon's account of joining the expedition, his dream, his first leadership deliberation, and the replacement of the lost generals.
+`XEN-PRI-RU-017` begins Book III with the army's despair, Xenophon's retrospective account of joining the expedition, consultation with Socrates and Delphi, the omitted oracle gods, the Pisidian pretext, the dream of Zeus's lightning and the burning paternal house, waking self-interrogation, two leadership speeches, Apollonides's interrupted dissent and exclusion, the midnight officer council, and replacement of the five lost generals. Xenophon is introduced as a non-officer, appears in the witness through a first-person reference to "my friendship with Cyrus," acts before formal office, and is then elected to replace Proxenus. The unit preserves the Book III synopsis and Grote note as witness paratext, not primary Xenophontic narration.
+
+Book III draft coverage now extends through III.1. The next unit is `XEN-PRI-RU-018`, covering III.2 and the dawn assembly following the nighttime restoration of command.
 
 The prior Strauss reconstruction remains preserved and owner-adopted only within secondary-source jurisdiction. It is not imported into the primary reading units.
 
-No deed corpus, speech register, guard, adapter, ministerial capacity, Sanctum registration, or artificial-intelligence certification is created by this admission.
+No deed corpus, speech register, guard, adapter, ministerial capacity, Sanctum registration, final textual certification, or artificial-intelligence certification is created by this admission.
