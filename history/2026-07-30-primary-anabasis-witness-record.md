@@ -8,7 +8,7 @@ The witness is admitted as the repository's first primary translation witness. I
 
 The PDF is a 168-page Safari/iOS capture of Project Gutenberg HTML. The repository records its metadata, one-based PDF locator map, owner-supplied filename, byte size, and SHA-256 digest. The binary file is not deposited in the repository.
 
-`XEN-PRI-RU-001` through `XEN-PRI-RU-010` reconstruct *Anabasis* Book I in full as a sequential draft pending owner review. `XEN-PRI-RU-011` through `XEN-PRI-RU-013` reconstruct Book II.1 through II.3, preserving the Theopompus/Xenophon attribution dispute, the II.2 wolf variant and narratorial judgment, and the II.3 first-person proof, truce, market, and reciprocal-oath sequence. The next unit is `XEN-PRI-RU-014`, covering II.4.
+`XEN-PRI-RU-001` through `XEN-PRI-RU-010` reconstruct *Anabasis* Book I in full as a sequential draft pending owner review. `XEN-PRI-RU-011` through `XEN-PRI-RU-014` continue Book II through II.4. The Book II units preserve the victory dispute, the disarmament demand, the Theopompus/Xenophon variant, Clearchus's unelected practical leadership, Greek-Asian oaths, the possible omission of the sacrificial wolf, the narrator's judgment that fortune proved a better general, the truce-and-market compact, the long delay and political detachment of Ariaeus, the false bridge warnings, the possible second Xenophon appearance, the Opis display, and the controlled plunder of Parysatis's villages. The next unit is `XEN-PRI-RU-015`, covering II.5.
 
 The prior Strauss reconstruction remains preserved and owner-adopted only within secondary-source jurisdiction. It is not imported into the primary reading units.
 
