@@ -2,7 +2,7 @@
 
 Date: 2026-07-30
 
-The repository was founded to reconstruct Xenophon independently within the Sanctum project. The first registered material is not a work by Xenophon but an owner-supplied witness of Leo Strauss's essay "Xenophon's Anabasis" in *Studies in Platonic Political Philosophy*.
+The repository was founded to reconstruct Xenophon independently within the Sanctum project. The first admitted material is not a work by Xenophon but an owner-supplied witness of Leo Strauss's essay "Xenophon's Anabasis" in *Studies in Platonic Political Philosophy*.
 
 The founding distinction is jurisdictional:
 
@@ -10,8 +10,8 @@ The founding distinction is jurisdictional:
 - Strauss may guide questions and disclose textual features.
 - Strauss may not replace Xenophon, and the repository may not attribute Strauss's conclusions to Xenophon without primary evidence.
 
-The first production phase established the manifest, source hierarchy, reading protocol, corpus registration, witness control, and an eight-unit sequential reconstruction of Strauss's essay covering printed pages 105-136. The eight units are drafted pending owner review; their completion records coverage of the registered witness, not adoption of Strauss's interpretation and not completion of a primary Xenophontic reconstruction.
+The first production phase establishes the manifest, source hierarchy, reading protocol, corpus registration, witness control, and a complete eight-unit sequential reconstruction of Strauss's essay. No primary reconstruction, deed set, speech mechanism, ministerial adapter, or Sanctum registration is claimed complete.
 
-No primary reconstruction, deed set, speech mechanism, ministerial adapter, or Sanctum registration is claimed complete. A reviewed primary witness of Xenophon's *Anabasis* remains necessary before those stages may begin.
+On 2026-07-30, the owner adopted the eight-unit study as the repository's reviewed reconstruction of Strauss's essay within secondary-source jurisdiction. The controlling record is `governance/owner-reviews/2026-07-30-strauss-witness-review.yaml`. The individual unit records remain preserved as immutable production drafts; the owner-review record supplies the adoption decision without silently rewriting them.
 
-Artificial-intelligence self-certification remains prohibited. Owner review is required before any founding state is treated as authoritative.
+Artificial-intelligence self-certification remains prohibited. The next production phase requires admission and review of a primary Xenophontic witness.
