@@ -9,13 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_OWNER_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_UNIT_IDS = [f"XEN-RU-{number:03d}" for number in range(1, 9)]
-PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 11)]
+PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 12)]
 PRIMARY_UNIT_PATHS = {
     unit_id: ROOT / f"studies/xenophon-anabasis-dakyns/units/{unit_id}.yaml"
     for unit_id in PRIMARY_UNIT_IDS
 }
 PRIMARY_READING_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
-NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-011"
+NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-012"
 
 REQUIRED = [
     ROOT / "manifest.yaml",
@@ -46,13 +46,17 @@ def load_yaml(path: Path) -> object:
         return yaml.safe_load(handle)
 
 
+def fail(message: str) -> int:
+    print(message)
+    return 1
+
+
 def validate_reading_unit(record: dict, unit_id: str) -> str | None:
     if record.get("unit_id") != unit_id:
         return f"Primary unit identifier mismatch for {unit_id}"
     if record.get("status") != "DRAFTED_PENDING_OWNER_REVIEW":
         return f"Primary unit status mismatch for {unit_id}"
-    jurisdiction = record.get("jurisdiction", "")
-    if "Translator wording is not unmediated Greek evidence" not in jurisdiction:
+    if "Translator wording is not unmediated Greek evidence" not in record.get("jurisdiction", ""):
         return f"Primary translation jurisdiction missing for {unit_id}"
     if record.get("secondary_comparison_status") != "DEFERRED":
         return f"Primary unit secondary comparison must remain deferred for {unit_id}"
@@ -93,168 +97,128 @@ def main() -> int:
 
     manifest = documents[ROOT / "manifest.yaml"]
     if not isinstance(manifest, dict):
-        print("manifest.yaml must contain a mapping")
-        return 1
+        return fail("manifest.yaml must contain a mapping")
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True:
-        print("AI self-certification safeguard must remain true")
-        return 1
-    if manifest.get("version") != "1.10.0":
-        print("Manifest version must be 1.10.0 after completing the Book I draft")
-        return 1
+        return fail("AI self-certification safeguard must remain true")
+    if manifest.get("version") != "1.11.0":
+        return fail("Manifest version must be 1.11.0 after drafting Anabasis II.1")
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS":
-        print("Manifest primary reconstruction state mismatch")
-        return 1
+        return fail("Manifest primary reconstruction state mismatch")
     if manifest.get("next_required_unit", {}).get("id") != NEXT_PRIMARY_UNIT_ID:
-        print("Manifest next primary unit mismatch")
-        return 1
+        return fail("Manifest next primary unit mismatch")
+    if manifest.get("primary_study", {}).get("book_one_draft_complete") is not True:
+        return fail("Manifest must preserve the Book I draft milestone")
 
     corpus = documents[ROOT / "corpus/index.yaml"]
-    expected_counts = {
+    if corpus.get("counts") != {
         "primary_sources": 1,
         "secondary_sources": 1,
         "registered_witnesses": 2,
-    }
-    if corpus.get("counts") != expected_counts:
-        print("Corpus counts mismatch")
-        return 1
+    }:
+        return fail("Corpus counts mismatch")
     if corpus.get("primary_original_language_gap", {}).get("status") != "DOCUMENTED_GAP":
-        print("Original-language witness gap must remain documented")
-        return 1
+        return fail("Original-language witness gap must remain documented")
 
     secondary_source = documents[ROOT / "corpus/sources/strauss-xenophons-anabasis.yaml"]
-    if secondary_source.get("status") != "OWNER_ADOPTED_SECONDARY_SOURCE":
-        print("Secondary source owner-adoption status mismatch")
-        return 1
-
     secondary_witness = documents[ROOT / "corpus/witnesses/strauss-spp-1983.yaml"]
+    if secondary_source.get("status") != "OWNER_ADOPTED_SECONDARY_SOURCE":
+        return fail("Secondary source owner-adoption status mismatch")
     if secondary_witness.get("status") != "OWNER_ADOPTED_SECONDARY_WITNESS":
-        print("Secondary witness owner-adoption status mismatch")
-        return 1
+        return fail("Secondary witness owner-adoption status mismatch")
 
     primary_source = documents[ROOT / "corpus/sources/xenophon-anabasis.yaml"]
-    if primary_source.get("status") != "OWNER_ADMITTED_PRIMARY_TRANSLATION_SOURCE":
-        print("Primary source admission status mismatch")
-        return 1
-    if primary_source.get("work", {}).get("author") != "Xenophon":
-        print("Primary source author mismatch")
-        return 1
-    if primary_source.get("edition", {}).get("translator") != "H. G. Dakyns":
-        print("Primary source translator mismatch")
-        return 1
-
     primary_witness = documents[ROOT / "corpus/witnesses/gutenberg-1170-dakyns-pdf.yaml"]
+    if primary_source.get("status") != "OWNER_ADMITTED_PRIMARY_TRANSLATION_SOURCE":
+        return fail("Primary source admission status mismatch")
+    if primary_source.get("work", {}).get("author") != "Xenophon":
+        return fail("Primary source author mismatch")
+    if primary_source.get("edition", {}).get("translator") != "H. G. Dakyns":
+        return fail("Primary source translator mismatch")
     if primary_witness.get("status") != "OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS":
-        print("Primary witness admission status mismatch")
-        return 1
+        return fail("Primary witness admission status mismatch")
     if primary_witness.get("source_id") != "XEN-SRC-PRI-001":
-        print("Primary witness/source linkage mismatch")
-        return 1
+        return fail("Primary witness/source linkage mismatch")
     if primary_witness.get("witness", {}).get("page_count") != 168:
-        print("Primary witness page count mismatch")
-        return 1
+        return fail("Primary witness page count mismatch")
     if primary_witness.get("file_control", {}).get("sha256") != "6a7534d8d80153afc1623803ef129185aa8d3d41be692091f4e105375c65901e":
-        print("Primary witness SHA-256 mismatch")
-        return 1
+        return fail("Primary witness SHA-256 mismatch")
 
     secondary_owner_review = documents[SECONDARY_OWNER_REVIEW]
-    if secondary_owner_review.get("status") != "OWNER_ADOPTED_SECONDARY_RECONSTRUCTION":
-        print("Secondary owner review status mismatch")
-        return 1
-    if secondary_owner_review.get("scope", {}).get("units") != SECONDARY_UNIT_IDS:
-        print("Secondary owner review unit scope mismatch")
-        return 1
-
     primary_admission = documents[PRIMARY_ADMISSION]
+    if secondary_owner_review.get("status") != "OWNER_ADOPTED_SECONDARY_RECONSTRUCTION":
+        return fail("Secondary owner review status mismatch")
+    if secondary_owner_review.get("scope", {}).get("units") != SECONDARY_UNIT_IDS:
+        return fail("Secondary owner review unit scope mismatch")
     if primary_admission.get("status") != "OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS":
-        print("Primary admission record status mismatch")
-        return 1
+        return fail("Primary admission record status mismatch")
     if primary_admission.get("scope", {}).get("initial_unit") != PRIMARY_UNIT_IDS[0]:
-        print("Primary admission initial-unit mismatch")
-        return 1
+        return fail("Primary admission initial-unit mismatch")
     if primary_admission.get("limits", [])[-1:] != ["Artificial-intelligence self-certification remains prohibited."]:
-        print("Primary admission safeguard missing")
-        return 1
+        return fail("Primary admission safeguard missing")
 
-    secondary_reading_plan = documents[ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml"]
-    if secondary_reading_plan.get("status") != "OWNER_ADOPTED_SECONDARY_RECONSTRUCTION":
-        print("Secondary reading plan owner-adoption status mismatch")
-        return 1
+    secondary_plan = documents[ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml"]
+    if secondary_plan.get("status") != "OWNER_ADOPTED_SECONDARY_RECONSTRUCTION":
+        return fail("Secondary reading plan owner-adoption status mismatch")
     drafted_secondary = [
-        unit["id"]
-        for unit in secondary_reading_plan["reading_units"]
+        unit["id"] for unit in secondary_plan["reading_units"]
         if unit.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"
     ]
     if drafted_secondary != SECONDARY_UNIT_IDS:
-        print("Secondary drafted-unit order mismatch")
-        return 1
+        return fail("Secondary drafted-unit order mismatch")
 
-    primary_reading_plan = documents[PRIMARY_READING_PLAN]
-    if primary_reading_plan.get("status") != "SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW":
-        print("Primary reading plan status mismatch")
-        return 1
-    primary_units = primary_reading_plan.get("reading_units", [])
-    expected_plan_ids = [*PRIMARY_UNIT_IDS, NEXT_PRIMARY_UNIT_ID]
-    if [unit.get("id") for unit in primary_units] != expected_plan_ids:
-        print("Primary reading plan unit order mismatch")
-        return 1
-    expected_book_one_locators = [f"Anabasis I.{number}" for number in range(1, 11)]
-    drafted_book_one_locators = [unit.get("work_locator") for unit in primary_units[:10]]
-    if drafted_book_one_locators != expected_book_one_locators:
-        print("Primary Book I locator sequence mismatch")
-        return 1
-    if primary_units[-1].get("work_locator") != "Anabasis II.1":
-        print("Next primary locator must begin Book II")
-        return 1
-    drafted_plan_ids = [
-        unit.get("id")
-        for unit in primary_units
+    primary_plan = documents[PRIMARY_READING_PLAN]
+    if primary_plan.get("status") != "SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW":
+        return fail("Primary reading plan status mismatch")
+    primary_units = primary_plan.get("reading_units", [])
+    expected_ids = [*PRIMARY_UNIT_IDS, NEXT_PRIMARY_UNIT_ID]
+    if [unit.get("id") for unit in primary_units] != expected_ids:
+        return fail("Primary reading plan unit order mismatch")
+    if [unit.get("work_locator") for unit in primary_units[:10]] != [f"Anabasis I.{n}" for n in range(1, 11)]:
+        return fail("Primary Book I locator sequence mismatch")
+    if primary_units[10].get("work_locator") != "Anabasis II.1":
+        return fail("Drafted Book II opening locator mismatch")
+    if primary_units[10].get("pdf_pages_one_based") != "31-34":
+        return fail("Anabasis II.1 page range mismatch")
+    if primary_units[-1].get("work_locator") != "Anabasis II.2":
+        return fail("Next primary locator mismatch")
+    drafted_ids = [
+        unit.get("id") for unit in primary_units
         if unit.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"
     ]
-    if drafted_plan_ids != PRIMARY_UNIT_IDS:
-        print("Primary drafted-unit order mismatch")
-        return 1
-    next_plan_ids = [unit.get("id") for unit in primary_units if unit.get("status") == "NEXT"]
-    if next_plan_ids != [NEXT_PRIMARY_UNIT_ID]:
-        print("Primary next-unit status mismatch")
-        return 1
-    if primary_reading_plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED":
-        print("Strauss comparison must remain deferred")
-        return 1
+    if drafted_ids != PRIMARY_UNIT_IDS:
+        return fail("Primary drafted-unit order mismatch")
+    if [unit.get("id") for unit in primary_units if unit.get("status") == "NEXT"] != [NEXT_PRIMARY_UNIT_ID]:
+        return fail("Primary next-unit status mismatch")
+    if primary_plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED":
+        return fail("Strauss comparison must remain deferred")
 
     for unit_id, unit_path in PRIMARY_UNIT_PATHS.items():
         record = documents[unit_path]
         if not isinstance(record, dict):
-            print(f"Primary unit {unit_id} must contain a mapping")
-            return 1
+            return fail(f"Primary unit {unit_id} must contain a mapping")
         error = validate_reading_unit(record, unit_id)
         if error:
-            print(error)
-            return 1
+            return fail(error)
 
     if manifest.get("primary_study", {}).get("drafted_units") != PRIMARY_UNIT_IDS:
-        print("Manifest primary drafted-unit list mismatch")
-        return 1
+        return fail("Manifest primary drafted-unit list mismatch")
     if manifest.get("secondary_study", {}).get("drafted_units") != SECONDARY_UNIT_IDS:
-        print("Manifest secondary drafted-unit order mismatch")
-        return 1
+        return fail("Manifest secondary drafted-unit order mismatch")
 
     audit = documents[ROOT / "audits/founding-state.yaml"]
     state = audit.get("repository_state", {})
     if state.get("primary_witness_count") != 1:
-        print("Founding audit primary witness count mismatch")
-        return 1
+        return fail("Founding audit primary witness count mismatch")
     if state.get("drafted_primary_units") != len(PRIMARY_UNIT_IDS):
-        print("Founding audit primary unit count mismatch")
-        return 1
+        return fail("Founding audit primary unit count mismatch")
     if state.get("drafted_secondary_units") != 8:
-        print("Founding audit secondary unit count mismatch")
-        return 1
+        return fail("Founding audit secondary unit count mismatch")
     if state.get("book_one_primary_draft_complete") is not True:
-        print("Founding audit must record complete Book I draft coverage")
-        return 1
+        return fail("Founding audit must preserve complete Book I draft coverage")
+    if state.get("book_two_primary_units_drafted") != 1:
+        return fail("Founding audit Book II unit count mismatch")
     if state.get("minister_adapter_derived") is not False:
-        print("Adapter must remain underived")
-        return 1
+        return fail("Adapter must remain underived")
 
     print("Xenophon repository validation passed")
     return 0
