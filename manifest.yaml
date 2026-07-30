@@ -5,7 +5,7 @@ minister:
   name: Xenophon
   status: FOUNDING_IN_PROGRESS
   registration_status: NOT_YET_REGISTERED_IN_SANCTUM
-version: 0.3.0
+version: 0.4.0
 state: FOUNDING_FRAMEWORK_PENDING_OWNER_REVIEW
 governing_hub:
   repository: izzy9118-blip/Sanctum
@@ -26,7 +26,8 @@ secondary_study:
     - XEN-RU-001
     - XEN-RU-002
     - XEN-RU-003
+    - XEN-RU-004
 next_required_unit:
-  id: XEN-RU-004
-  description: Continue Strauss's "Xenophon's Anabasis" at printed pages 117-120 without promoting secondary claims to Xenophon's teaching
+  id: XEN-RU-005
+  description: Continue Strauss's "Xenophon's Anabasis" at printed pages 121-124 without promoting secondary claims to Xenophon's teaching
 artificial_intelligence_self_certification_prohibited: true
