@@ -1,0 +1,17 @@
+schema_version: 1.0
+status: FOUNDING_CORPUS_PENDING_OWNER_REVIEW
+counts:
+  primary_sources: 0
+  secondary_sources: 1
+  registered_witnesses: 1
+sources:
+  - id: XEN-SRC-SEC-001
+    title: Xenophon's Anabasis
+    author: Leo Strauss
+    source_class: STRAUSSIAN_INTERPRETIVE_WITNESS
+    record: corpus/sources/strauss-xenophons-anabasis.yaml
+    witness_ids:
+      - XEN-WIT-SEC-001
+primary_corpus_gap:
+  status: DOCUMENTED_GAP
+  description: No independently reviewed witness of a work by Xenophon has yet been admitted.
