@@ -9,13 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_OWNER_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_UNIT_IDS = [f"XEN-RU-{number:03d}" for number in range(1, 9)]
-PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 6)]
+PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 7)]
 PRIMARY_UNIT_PATHS = {
     unit_id: ROOT / f"studies/xenophon-anabasis-dakyns/units/{unit_id}.yaml"
     for unit_id in PRIMARY_UNIT_IDS
 }
 PRIMARY_READING_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
-NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-006"
+NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-007"
 
 REQUIRED = [
     ROOT / "manifest.yaml",
@@ -98,8 +98,8 @@ def main() -> int:
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True:
         print("AI self-certification safeguard must remain true")
         return 1
-    if manifest.get("version") != "1.5.0":
-        print("Manifest version must be 1.5.0 after drafting Anabasis I.5")
+    if manifest.get("version") != "1.6.0":
+        print("Manifest version must be 1.6.0 after drafting Anabasis I.6")
         return 1
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS":
         print("Manifest primary reconstruction state mismatch")
