@@ -1,0 +1,47 @@
+schema_version: 1.0
+id: XEN-WIT-PRI-001
+status: OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS
+source_id: XEN-SRC-PRI-001
+witness:
+  title: Anabasis, by Xenophon | Project Gutenberg
+  author: Xenophon
+  translator: H. G. Dakyns
+  digital_publisher: Project Gutenberg
+  ebook_number: 1170
+  format: owner-supplied searchable PDF captured from Project Gutenberg HTML
+  language: English
+  page_count: 168
+pdf_metadata:
+  creator: Safari
+  producer: iOS Version 26.5 (Build 23F77) Quartz PDFContext
+  creation_date_utc: '2026-07-26T03:52:11Z'
+  page_size: 612 x 792 points
+  pdf_version: '1.3'
+  encrypted: false
+  tagged: false
+file_control:
+  repository_deposition: not_deposited
+  owner_supplied_filename: Anabasis, by Xenophon | Project Gutenberg.pdf
+  sha256: 6a7534d8d80153afc1623803ef129185aa8d3d41be692091f4e105375c65901e
+  byte_size: 1157313
+locator_map:
+  front_matter_pdf_pages_one_based: 1-4
+  work_text_pdf_pages_one_based: 5-168
+  opening: Book I.1 begins on PDF page 5
+  ending: Book VII.8 ends on PDF page 168
+  stable_locator_rule: Use Anabasis book.chapter plus one-based PDF page; do not rely on PDF page alone.
+inspection:
+  title_page_checked: true
+  contents_checked: true
+  preparers_note_checked: true
+  book_one_opening_checked: true
+  book_seven_ending_checked: true
+  text_searchable: true
+  chapter_headings_present: true
+limitations:
+- This is an English translation and not an original-language Greek witness.
+- The PDF is a Safari/iOS capture of Project Gutenberg HTML rather than a publisher's facsimile.
+- The witness has no stable line numbering; audit locators must combine book.chapter with PDF page.
+- The preparer's note states that Greek transliterations in braces lost their diacritical marks.
+- Translator, preparer, and editorial notes occur within the witness and must be distinguished from Xenophon's narrative.
+- The physical copy and full edition lineage behind the Project Gutenberg transcription have not been independently authenticated.
