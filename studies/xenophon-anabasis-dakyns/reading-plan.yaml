@@ -29,8 +29,9 @@ reading_units:
   - {id: XEN-PRI-RU-018, work_locator: Anabasis III.2, pdf_pages_one_based: 54-59, status: DRAFTED_PENDING_OWNER_REVIEW, record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-018.yaml}
   - {id: XEN-PRI-RU-019, work_locator: Anabasis III.3, pdf_pages_one_based: 59-61, status: DRAFTED_PENDING_OWNER_REVIEW, record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-019.yaml}
   - {id: XEN-PRI-RU-020, work_locator: Anabasis III.4, pdf_pages_one_based: 61-66, status: DRAFTED_PENDING_OWNER_REVIEW, record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-020.yaml}
-  - {id: XEN-PRI-RU-021, work_locator: Anabasis III.5, pdf_pages_one_based: 67-69, status: NEXT}
-remaining_sequence: Anabasis IV.1 through VII.8, strictly in chapter order.
+  - {id: XEN-PRI-RU-021, work_locator: Anabasis III.5, pdf_pages_one_based: 67-69, status: DRAFTED_PENDING_OWNER_REVIEW, record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-021.yaml}
+  - {id: XEN-PRI-RU-022, work_locator: Anabasis IV.1, pdf_pages_one_based: 70-72, status: NEXT}
+remaining_sequence: Anabasis IV.2 through VII.8, strictly in chapter order.
 required_outputs_per_unit:
   - bibliographic_and_witness_control
   - narrative_person_and_authorial_attribution
