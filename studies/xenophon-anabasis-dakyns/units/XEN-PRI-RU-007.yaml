@@ -1,0 +1,250 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-007
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.7
+  pdf_pages_one_based: 20-22
+  opening_anchor: "From this place Cyrus marched through Babylonia three stages—twelve parasangs."
+  closing_anchor: "The mass of the army was moving on in no kind of order: the soldiers having consigned their heavy arms to be carried in the wagons or on the backs of beasts."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.7 plus one-based PDF page
+  source_boundary: >-
+    Direct translated speeches, deserter intelligence, prisoner corroboration, force totals,
+    geographical description, prophecy, reward, and collective conclusions remain distinct.
+    Reported numbers and causal judgments are not silently converted into certified fact.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration in the English translation
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  observation: >-
+    The narrator orders the chapter through review, council, speeches, enumerated forces,
+    a fortified passage, a rewarded prediction, and declining military caution; Xenophon
+    does not enter as a named participant.
+  uncertainty: >-
+    This witness does not settle the Greek wording of liberty, manliness, promise, friend,
+    prophecy, report, corroboration, or the relation between narrator and editorial material.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis I.7; PDF p. 21
+    speech_form: direct_speech
+    speaker: Cyrus
+    audience: Greek generals and captains
+    occasion: council of war after deserters report the royal army
+    content: >-
+      Cyrus says he chose the Greeks because he judges them better and stronger than many
+      barbarians; he asks them to prove worthy of their liberty, warns them about enemy
+      numbers and noise, and promises either an enviable return or rewards in Asia.
+    uncertainty: The Greek terms for superiority, liberty, manhood, bravery, envy, and persuasion require review.
+  - id: SAO-002
+    locator: Anabasis I.7; PDF p. 21
+    speech_form: direct_challenge
+    speaker: Gaulites the Samian exile
+    audience: Cyrus and the council
+    occasion: testing Cyrus's promises before battle
+    content: >-
+      Gaulites reports that some doubt whether Cyrus will remember his promises after danger
+      passes or possess the means to fulfill them.
+    uncertainty: His representative status and the source of the reported doubts are not supplied.
+  - id: SAO-003
+    locator: Anabasis I.7; PDF p. 21
+    speech_form: direct_reply
+    speaker: Cyrus
+    audience: Gaulites and the Greek commanders
+    occasion: answering doubts about post-victory rewards
+    content: >-
+      Cyrus describes the empire, proposes replacing his brother's friends with his own,
+      says he fears a shortage of friends rather than rewards, and promises each Greek a golden crown.
+    uncertainty: Offices, territories, eligibility, and enforceability are not defined.
+  - id: SAO-004
+    locator: Anabasis I.7; PDF p. 21
+    speech_form: reported_claims
+    speaker: Greek generals and other Greeks admitted to Cyrus
+    audience: Cyrus
+    occasion: individual inquiries after the council
+    content: They ask what each should receive after victory, and Cyrus satisfies their expectations.
+    uncertainty: The specific claims, promises, and recipients are omitted.
+  - id: SAO-005
+    locator: Anabasis I.7; PDF p. 21
+    speech_form: direct_question
+    speaker: Clearchus
+    audience: Cyrus
+    occasion: after advisers urge Cyrus not to enter battle personally
+    content: Clearchus asks whether Cyrus believes Artaxerxes will offer battle.
+    uncertainty: The strategic purpose of the question is not explained.
+  - id: SAO-006
+    locator: Anabasis I.7; PDF p. 21
+    speech_form: direct_reply
+    speaker: Cyrus
+    audience: Clearchus and those present
+    occasion: answering whether Artaxerxes will fight
+    content: >-
+      Cyrus says the royal prize will not be won without battle if Artaxerxes is truly the son
+      of Darius and Parysatis and Cyrus's brother.
+    uncertainty: The dynastic reasoning requires interpretation and Greek review.
+  - id: SAO-007
+    locator: Anabasis I.7; PDF p. 22
+    speech_form: reported_prior_exchange
+    speaker: Silanus and Cyrus
+    audience: each other
+    occasion: sacrifice eleven days before the trench passage
+    content: >-
+      Silanus predicted that the king would not fight within ten days; Cyrus replied that if no
+      battle occurred within that period the king would not fight at all and promised ten talents.
+    uncertainty: >-
+      The sacrificial basis, wording, reckoning, and relation between ten talents and the later
+      payment of three thousand darics require checking.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis I.7; PDF pp. 20-21
+    actor: Cyrus
+    deed: Held a midnight review, assigned Clearchus to the right and Menon to the left, and arranged his own forces.
+    outcome: The army entered a formal battle posture before the expected arrival of Artaxerxes.
+    uncertainty: The complete disposition of the non-Greek forces is not given.
+  - id: SDO-002
+    locator: Anabasis I.7; PDF p. 21
+    actor: royal deserters and Cyrus
+    deed: Deserters supplied intelligence at dawn, and Cyrus convened a Greek council of war.
+    outcome: Planning was joined to appeals concerning liberty, danger, return, and reward.
+    uncertainty: The deserters' identities, access, motives, and detailed intelligence are omitted.
+  - id: SDO-003
+    locator: Anabasis I.7; PDF p. 21
+    actor: Cyrus, Gaulites, and the assembled Greeks
+    deed: >-
+      Cyrus praised the Greeks and promised rewards; Gaulites voiced doubts; Cyrus answered
+      with a program of redistributing satrapies and wealth to friends.
+    outcome: The Greeks became more elated, spread the message, and sought individual assurances.
+    uncertainty: The relative force of liberty, contempt, reward, and trust cannot be isolated.
+  - id: SDO-004
+    locator: Anabasis I.7; PDF p. 21
+    actor: Cyrus and his advisers
+    deed: Advisers urged Cyrus to remain behind the line, but Cyrus continued to expect a dynastic battle.
+    outcome: The advice is preserved without a direct record of Cyrus's acceptance.
+    uncertainty: The advisers' reasons and Cyrus's intended position are unresolved here.
+  - id: SDO-005
+    locator: Anabasis I.7; PDF pp. 21-22
+    actor: deserters, prisoners, and the narrator
+    deed: Reported large force totals, four royal commanders, scythe-chariots, and Abrocomas's late arrival.
+    outcome: The expected battle is scaled while the information remains source-marked.
+    uncertainty: The totals require textual, historical, and manuscript comparison.
+  - id: SDO-006
+    locator: Anabasis I.7; PDF p. 22
+    actor: Cyrus and the army
+    deed: Advanced in battle order through the narrow opening beside the royal trench.
+    outcome: The army passed safely inside the defensive line without battle.
+    uncertainty: Why the passage was undefended and whether the trench's purpose is correctly understood remain open.
+  - id: SDO-007
+    locator: Anabasis I.7; PDF p. 22
+    actor: Cyrus, Silanus, and the army
+    deed: >-
+      Cyrus rewarded Silanus after the prediction appeared fulfilled; Cyrus and the army then
+      concluded that Artaxerxes had abandoned battle and relaxed their precautions.
+    outcome: >-
+      By the third day Cyrus rode in a carriage, only a small force was ordered ahead, the army
+      moved without formation, and heavy arms were carried on wagons or pack animals.
+    uncertainty: The inference and disorder are recorded, but their prudence is not established.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Midnight review and formal assignment of the Greek wings
+    - Dawn intelligence from royal deserters
+    - Council and praise of Greek liberty and superiority
+    - Gaulites's challenge and Cyrus's territorial-reward answer
+    - Individual expectation-setting and advice that Cyrus remain behind the line
+    - Force totals and corroborated enemy intelligence
+    - Advance in battle order toward the trench
+    - Safe passage through the undefended opening
+    - Reward of Silanus for the ten-day prediction
+    - Collective inference that battle has been abandoned
+    - Progressive relaxation into an unarmed and disordered march
+  repetitions:
+    - Friendship and reward again organize Cyrus's projected political order.
+    - Information arrives through deserters, prisoners, sacrifice, and visible traces.
+    - Physical passages continue to become tests of political and military judgment.
+    - Numbers, promises, and causal conclusions remain qualified by source and circumstance.
+  omissions:
+    - The deserters' identities and exact reports are not preserved.
+    - Individual rewards promised to Greeks are not listed.
+    - The advisers urging Cyrus to remain behind the line are unnamed.
+    - The basis for the immense army totals is not demonstrated.
+    - The king's reason for leaving the trench undefended is not given.
+    - The move from an undefended passage to confidence that no battle will occur is unexplained.
+    - Xenophon remains absent as a named participant.
+  tensions:
+    - Cyrus praises and envies Greek liberty while seeking monarchical rule.
+    - Greeks are praised as superior allies but are also moved by offices and rewards.
+    - Cyrus joins conquest to replacement of his brother's friends with his own.
+    - Careful review and battle order give way to relaxed caution and disorder.
+    - A limited ten-day prediction is enlarged into a broader conclusion that the king will not fight.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis I.7; PDF p. 20", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus conducts a review at about midnight on the third stage through Babylonia.", uncertainty: "The reason for the nocturnal timing is not stated."}
+  - {id: OBS-002, locator: "Anabasis I.7; PDF p. 20", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus is assigned the Greek right wing.", uncertainty: "The relation to his prior standing requires Book I sequence."}
+  - {id: OBS-003, locator: "Anabasis I.7; PDF p. 20", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Menon is assigned the Greek left wing.", uncertainty: "The reason for the assignment is not explained."}
+  - {id: OBS-004, locator: "Anabasis I.7; PDF p. 20", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus personally arranges his own forces.", uncertainty: "The full arrangement is not supplied."}
+  - {id: OBS-005, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Deserters from Artaxerxes arrive at first light with military information.", uncertainty: "Their identities and access are omitted."}
+  - {id: OBS-006, locator: "Anabasis I.7; PDF p. 21", evidence_type: STRUCTURAL_OBSERVATION, observation: "Military planning is joined to appeals concerning liberty, manhood, enemy psychology, return, and reward.", uncertainty: "No single motive is established as governing."}
+  - {id: OBS-007, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus says the Greeks are better and stronger than many barbarians.", uncertainty: "The criteria and scope of superiority are undefined."}
+  - {id: OBS-008, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus calls Greek liberty enviable and preferable to his possessions multiplied many times.", uncertainty: "Its compatibility with his pursuit of kingship remains unresolved."}
+  - {id: OBS-009, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Enemy numbers and noise are presented as the principal things the Greeks must withstand.", uncertainty: "The forecast of enemy conduct is not yet tested."}
+  - {id: OBS-010, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus promises either an enviable return or attractive rewards in Asia.", uncertainty: "Terms and feasibility are not specified."}
+  - {id: OBS-011, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Gaulites voices doubts about Cyrus's memory and ability to fulfill promises.", uncertainty: "The doubters are unnamed."}
+  - {id: OBS-012, locator: "Anabasis I.7; PDF p. 21", evidence_type: STRUCTURAL_OBSERVATION, observation: "Cyrus answers by presenting satrapies held by his brother's friends as distributable after victory.", uncertainty: "Legal title and local populations are not discussed."}
+  - {id: OBS-013, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus fears lacking friends rather than rewards.", uncertainty: "Its rhetorical and fiscal realism cannot be settled here."}
+  - {id: OBS-014, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Each Greek is promised a golden crown.", uncertainty: "Value, conditions, and later fulfillment are unstated."}
+  - {id: OBS-015, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The Greeks become more elated and spread Cyrus's promises outside the council.", uncertainty: "The effect on discipline is not measured."}
+  - {id: OBS-016, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Generals and other Greeks seek individualized assurances from Cyrus.", uncertainty: "The promises themselves are omitted."}
+  - {id: OBS-017, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Advisers urge Cyrus not to enter battle personally.", uncertainty: "They are unnamed and his direct answer is absent."}
+  - {id: OBS-018, locator: "Anabasis I.7; PDF p. 21", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus grounds his expectation of battle in shared dynastic descent and rivalry over the prize.", uncertainty: "The political logic requires comparison with the outcome."}
+  - {id: OBS-019, locator: "Anabasis I.7; PDF pp. 21-22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The Greeks are counted as 10,400 hoplites and 2,500 peltasts.", uncertainty: "The figures require reconciliation with earlier counts and losses."}
+  - {id: OBS-020, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus's barbarian force is stated as 100,000 with about twenty scythe-chariots.", uncertainty: "The count is not independently demonstrated."}
+  - {id: OBS-021, locator: "Anabasis I.7; PDF p. 22", evidence_type: REPORT_STATUS_OBSERVATION, observation: "The royal army is reported as 1,200,000 with two hundred chariots and 6,000 vanguard cavalry.", uncertainty: "The figures require manuscript and historical scrutiny."}
+  - {id: OBS-022, locator: "Anabasis I.7; PDF p. 22", evidence_type: REPORT_STATUS_OBSERVATION, observation: "The deserter reports are said to have been corroborated after battle by prisoners.", uncertainty: "The interrogations and verification method are not reproduced."}
+  - {id: OBS-023, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Abrocomas is said to have arrived five days too late for battle.", uncertainty: "His delay and route remain to be tested."}
+  - {id: OBS-024, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus advances in battle order toward a deep trench built as a defensive line.", uncertainty: "Its identification and purpose require confirmation."}
+  - {id: OBS-025, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The army passes safely through a narrow opening between the Euphrates and the trench.", uncertainty: "The failure to defend the chokepoint is unexplained."}
+  - {id: OBS-026, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Silanus predicted from sacrifice that the king would not fight within ten days.", uncertainty: "The signs and Greek wording are not supplied."}
+  - {id: OBS-027, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus gives Silanus three thousand darics after the ten-day interval.", uncertainty: "The relation to the promised ten talents requires checking."}
+  - {id: OBS-028, locator: "Anabasis I.7; PDF p. 22", evidence_type: STRUCTURAL_OBSERVATION, observation: "Cyrus and the army infer from the undefended trench that Artaxerxes has abandoned battle.", uncertainty: "The conclusion exceeds the observed fact."}
+  - {id: OBS-029, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus advances with less caution after the inference.", uncertainty: "No renewed intelligence is cited."}
+  - {id: OBS-030, locator: "Anabasis I.7; PDF p. 22", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "By the third day the army is disordered and heavy arms are carried rather than worn.", uncertainty: "The chapter ends immediately before the next alarm."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis I.7; PDF p. 21", evidence_type: PROVISIONAL_INFERENCE, finding: "Cyrus presents Greek liberty as military superiority while treating victory as a means to distribute empire monarchically.", confidence: provisional_pending_book_one_outcome}
+  - {id: INF-002, locator: "Anabasis I.7; PDF p. 21", evidence_type: PROVISIONAL_INFERENCE, finding: "The projected postwar order is organized through personal friendship and replacement of the reigning king's friends.", confidence: moderate_for_chapter_structure}
+  - {id: INF-003, locator: "Anabasis I.7; PDF p. 21", evidence_type: PROVISIONAL_INFERENCE, finding: "Gaulites converts praise into an accountability test concerning memory and means.", confidence: high_for_translated_speech_sequence}
+  - {id: INF-004, locator: "Anabasis I.7; PDF pp. 21-22", evidence_type: PROVISIONAL_INFERENCE, finding: "The chapter distinguishes intelligence from certainty by marking extraordinary numbers through sources.", confidence: high_for_documentary_structure}
+  - {id: INF-005, locator: "Anabasis I.7; PDF p. 22", evidence_type: PROVISIONAL_INFERENCE, finding: "An undefended fortification misleads when absence of resistance is treated as absence of hostile intention.", confidence: provisional_pending_battle_sequence}
+  - {id: INF-006, locator: "Anabasis I.7; PDF p. 22", evidence_type: PROVISIONAL_INFERENCE, finding: "Silanus's limited prediction is materially rewarded, but it does not license the broader conclusion that no battle will occur.", confidence: high_for_sequence_low_for_divine_causation}
+  - {id: INF-007, locator: "Anabasis I.7; PDF p. 22", evidence_type: PROVISIONAL_INFERENCE, finding: "The chapter converts disciplined preparation into vulnerability through overconfident judgment about an absent enemy.", confidence: high_for_chapter_ending}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis I.7; PDF p. 21", evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie better, stronger, liberty, envy, man, and brave?"}
+  - {id: Q-002, locator: "Anabasis I.7; PDF p. 21", evidence_type: UNRESOLVED_QUESTION, question: "How can Cyrus envy Greek liberty above possessions while seeking kingship?"}
+  - {id: Q-003, locator: "Anabasis I.7; PDF p. 21", evidence_type: UNRESOLVED_QUESTION, question: "Does Gaulites speak spontaneously or as a recognized representative of wider doubts?"}
+  - {id: Q-004, locator: "Anabasis I.7; PDF p. 21", evidence_type: UNRESOLVED_QUESTION, question: "What specific rewards did Cyrus promise to individual Greeks, and were they fulfilled?"}
+  - {id: Q-005, locator: "Anabasis I.7; PDF p. 21", evidence_type: UNRESOLVED_QUESTION, question: "Why do advisers urge Cyrus to remain behind the line, and does he accept?"}
+  - {id: Q-006, locator: "Anabasis I.7; PDF p. 21", evidence_type: UNRESOLVED_QUESTION, question: "Why does shared descent from Darius and Parysatis make battle necessary?"}
+  - {id: Q-007, locator: "Anabasis I.7; PDF pp. 21-22", evidence_type: UNRESOLVED_QUESTION, question: "How reliable are the Greek, Cyran, and royal army totals?"}
+  - {id: Q-008, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "What did the deserters know, and how could prisoners corroborate army-wide totals?"}
+  - {id: Q-009, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "Why did Abrocomas arrive late, and how did his absence affect royal preparation?"}
+  - {id: Q-010, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "Who constructed the trench, when, and for what exact purpose?"}
+  - {id: Q-011, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "Why did Artaxerxes leave the narrow trench passage uncontested?"}
+  - {id: Q-012, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "What signs supported Silanus, and how do ten talents relate to three thousand darics?"}
+  - {id: Q-013, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "Why is one uncontested passage treated as proof that battle is abandoned?"}
+  - {id: Q-014, locator: "Anabasis I.7; PDF p. 22", evidence_type: UNRESOLVED_QUESTION, question: "Who authorized the arms to be carried, and what does the disorder reveal about command?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text of Anabasis I.7 for liberty, manhood, superiority, friendship, promise, prophecy, and corroboration.
+  - Compare a modern English translation for Cyrus's council speech, Gaulites's challenge, the dynastic answer, and the Silanus episode.
+  - Reconcile Book I contingent totals through I.7 and document additions, departures, losses, and variants.
+  - Compare the royal army totals and chariot figures with manuscript notes and other ancient accounts without forcing agreement.
+  - Map the trench, canals, Euphrates passage, and wall of Media while preserving uncertainty.
+  - Track all pre-battle promises and test their later fulfillment.
+  - Track Gaulites and Silanus elsewhere in the Anabasis.
+  - Read I.7 with I.8 to test how relaxed discipline conditions the sudden battle alarm.
+  - Defer comparison with Strauss until the complete Book I primary sequence is drafted.
+secondary_comparison_status: DEFERRED
