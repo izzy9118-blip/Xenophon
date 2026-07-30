@@ -61,6 +61,5 @@ primary_study:
   - XEN-PRI-RU-015
 next_required_unit:
   id: XEN-PRI-RU-016
-  description: Continue the independent primary reconstruction with Anabasis II.6 using the Dakyns Project Gutenberg
-    witness.
+  description: Continue the independent primary reconstruction with Anabasis II.6 using the Dakyns Project Gutenberg witness.
 artificial_intelligence_self_certification_prohibited: true
