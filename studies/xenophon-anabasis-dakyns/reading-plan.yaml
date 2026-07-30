@@ -54,9 +54,14 @@ reading_units:
     record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-007.yaml
   - id: XEN-PRI-RU-008
     work_locator: Anabasis I.8
-    pdf_pages_one_based: 23-26
+    pdf_pages_one_based: 23-25
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-008.yaml
+  - id: XEN-PRI-RU-009
+    work_locator: Anabasis I.9
+    pdf_pages_one_based: 26-29
     status: NEXT
-remaining_sequence: Anabasis I.9 through VII.8, strictly in chapter order.
+remaining_sequence: Anabasis I.10 through VII.8, strictly in chapter order.
 required_outputs_per_unit:
   - bibliographic_and_witness_control
   - narrative_person_and_authorial_attribution
