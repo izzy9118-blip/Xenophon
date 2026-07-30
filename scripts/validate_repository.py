@@ -9,13 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_OWNER_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_UNIT_IDS = [f"XEN-RU-{number:03d}" for number in range(1, 9)]
-PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 10)]
+PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 11)]
 PRIMARY_UNIT_PATHS = {
     unit_id: ROOT / f"studies/xenophon-anabasis-dakyns/units/{unit_id}.yaml"
     for unit_id in PRIMARY_UNIT_IDS
 }
 PRIMARY_READING_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
-NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-010"
+NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-011"
 
 REQUIRED = [
     ROOT / "manifest.yaml",
@@ -98,8 +98,8 @@ def main() -> int:
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True:
         print("AI self-certification safeguard must remain true")
         return 1
-    if manifest.get("version") != "1.9.0":
-        print("Manifest version must be 1.9.0 after drafting Anabasis I.9")
+    if manifest.get("version") != "1.10.0":
+        print("Manifest version must be 1.10.0 after completing the Book I draft")
         return 1
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS":
         print("Manifest primary reconstruction state mismatch")
@@ -197,6 +197,14 @@ def main() -> int:
     if [unit.get("id") for unit in primary_units] != expected_plan_ids:
         print("Primary reading plan unit order mismatch")
         return 1
+    expected_book_one_locators = [f"Anabasis I.{number}" for number in range(1, 11)]
+    drafted_book_one_locators = [unit.get("work_locator") for unit in primary_units[:10]]
+    if drafted_book_one_locators != expected_book_one_locators:
+        print("Primary Book I locator sequence mismatch")
+        return 1
+    if primary_units[-1].get("work_locator") != "Anabasis II.1":
+        print("Next primary locator must begin Book II")
+        return 1
     drafted_plan_ids = [
         unit.get("id")
         for unit in primary_units
@@ -240,6 +248,9 @@ def main() -> int:
         return 1
     if state.get("drafted_secondary_units") != 8:
         print("Founding audit secondary unit count mismatch")
+        return 1
+    if state.get("book_one_primary_draft_complete") is not True:
+        print("Founding audit must record complete Book I draft coverage")
         return 1
     if state.get("minister_adapter_derived") is not False:
         print("Adapter must remain underived")
