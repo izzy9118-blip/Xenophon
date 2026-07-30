@@ -1,0 +1,26 @@
+schema_version: 1.0
+review_id: XEN-OWNER-REVIEW-002
+status: OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS
+reviewed_on: '2026-07-30'
+repository: izzy9118-blip/Xenophon
+owner_action: The owner supplied the requested primary Anabasis witness for repository admission and sequential reconstruction.
+scope:
+  source_id: XEN-SRC-PRI-001
+  witness_id: XEN-WIT-PRI-001
+  study_id: XEN-STUDY-PRI-001
+  initial_unit: XEN-PRI-RU-001
+owner_ruling:
+  source_status: OWNER_ADMITTED_PRIMARY_TRANSLATION_SOURCE
+  witness_status: OWNER_ADMITTED_PRIMARY_TRANSLATION_WITNESS
+  study_authorization: SEQUENTIAL_PRIMARY_RECONSTRUCTION_AUTHORIZED
+  effect: The Dakyns Project Gutenberg witness may serve as the first primary Xenophontic witness for independent sequential
+    reconstruction of the Anabasis within the limits of an English translation.
+limits:
+- Admission does not authenticate Dakyns' English as the Greek text.
+- No Greek philological conclusion may rest on this witness alone.
+- The initial and later reading units remain pending owner review unless separately adopted.
+- No deed corpus, speech register, guard, adapter, ministerial capacity, or Sanctum registration is approved by this admission.
+- The source PDF is not deposited in the repository; its filename, metadata, locator map, and SHA-256 digest are recorded.
+- Artificial-intelligence self-certification remains prohibited.
+next_required_action: Continue sequential primary reconstruction with Anabasis I.2 after owner review of XEN-PRI-RU-001 or
+  an explicit instruction to continue.
