@@ -1,0 +1,334 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-023
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis IV.2
+  pdf_pages_one_based: 72-75
+  opening_anchor: >-
+    It was already late afternoon, when they ordered the storming party to take a snatch of food and set off;
+  closing_anchor: >-
+    They were under the command of Stratocles, a Cretan.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis IV.2 plus one-based PDF page
+  chapter_boundary_control: >-
+    IV.2 begins beneath heading II on PDF page 72 and ends on PDF page 75 immediately
+    before heading III. IV.3 begins on page 75 and continues through page 78.
+  source_boundary: >-
+    Orders, battle plans, guide custody, direct and indirect speech, tactical action,
+    narratorial inference, named casualties, truce terms, burial acts, weapon descriptions,
+    and editorial notes remain distinct. Notes explaining a wagon-load boulder, the word
+    mamelon, the phrase ground arms, and the location Lusia are witness paratext and are
+    not silently assigned to Xenophon.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration presenting Xenophon as a named commander and actor,
+    with reported orders, colloquy, and narratorial inference.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon directs the visible-pass diversion, commands the rearguard and baggage route,
+    orders pauses and ridge occupation, negotiates for the dead, and is protected by
+    Eurylochus during withdrawal. First-person forms do not appear as unframed narratorial
+    self-identification in this chapter.
+  uncertainty: >-
+    This witness does not settle the Greek force of summit, pass, storming party, truce,
+    agreement, houses, good men, mutual need, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis IV.2; PDF p. 72
+  speech_form: operational_orders_and_signal_plan
+  speaker: Greek command
+  audience: two-thousand-man volunteer storming party
+  occasion: late-afternoon departure
+  content: >-
+    The party is to eat, take the bound guide, seize and hold the summit through the night,
+    sound a bugle at dawn, then attack the visible-pass defenders while the main force advances.
+  uncertainty: The exact command body, vote, and subordinate chain are not stated.
+- id: SAO-002
+  locator: Anabasis IV.2; PDF pp. 72-73
+  speech_form: diversionary_command
+  speaker: Xenophon
+  audience: his rearguard
+  occasion: the volunteer party attempts a concealed circuit
+  content: >-
+    He advances toward the visible pass so the Carduchians will fix their attention there
+    and fail to observe the flanking party.
+  uncertainty: The chapter reports the intention but not a quoted order.
+- id: SAO-003
+  locator: Anabasis IV.2; PDF p. 73
+  speech_form: collective_encouragement
+  speaker: Greek storming columns
+  audience: one another
+  occasion: assault on the first ridge controlling the baggage path
+  content: >-
+    The soldiers shout encouragement while advancing by multiple routes and deliberately
+    leave the defenders an avenue of escape.
+  uncertainty: No exact words are preserved.
+- id: SAO-004
+  locator: Anabasis IV.2; PDF p. 74
+  speech_form: march_control_order
+  speaker: Xenophon
+  audience: rearguard and hindmost companies
+  occasion: after he occupies the highest knoll with the youngest men
+  content: >-
+    The rest are to march slowly, allow the hindmost companies to unite, follow the road,
+    and ground arms upon reaching level ground.
+  uncertainty: The note glossing ground arms is editorial paratext.
+- id: SAO-005
+  locator: Anabasis IV.2; PDF p. 74
+  speech_form: casualty_and_position_report
+  speaker: Archagoras the Argive exile
+  audience: Xenophon
+  occasion: flight from the first ridge
+  content: >-
+    He reports that the enemy retook the first ridge, killed Cephisodorus and Amphicrates
+    with others, and drove off those who did not escape down the crags.
+  uncertainty: The total number killed is not given.
+- id: SAO-006
+  locator: Anabasis IV.2; PDF p. 74
+  speech_form: truce_demand
+  speaker: Xenophon through an interpreter
+  audience: Carduchian force on the opposing crest
+  occasion: after the first-ridge losses
+  content: He demands the return of the Greek dead.
+  uncertainty: The precise ritual or diplomatic formula is not preserved.
+- id: SAO-007
+  locator: Anabasis IV.2; PDF p. 74
+  speech_form: conditional_truce_offer
+  speaker: Carduchian interlocutors
+  audience: Xenophon
+  occasion: response to the demand for bodies
+  content: They agree to restore the dead if the Greeks refrain from burning their houses.
+  uncertainty: The agreement's duration and scope beyond body recovery are not stated.
+- id: SAO-008
+  locator: Anabasis IV.2; PDF p. 74
+  speech_form: acceptance_of_terms
+  speaker: Xenophon
+  audience: Carduchian interlocutors
+  occasion: conclusion of the colloquy
+  content: He accepts the condition not to burn their houses.
+  uncertainty: No oath, witness list, or enforcement mechanism is reported.
+- id: SAO-009
+  locator: Anabasis IV.2; PDF p. 74
+  speech_form: recovery_and_exchange_arrangement
+  speaker: Xenophon and Cheirisophus
+  audience: Carduchians and Greek burial parties
+  occasion: after the army reaches provisioned dwellings
+  content: They arrange recovery of the dead and return the guide in exchange.
+  uncertainty: The exact sequence and terms are summarized rather than quoted.
+- id: SAO-010
+  locator: Anabasis IV.2; PDF pp. 74-75
+  speech_form: reciprocal_tactical_coordination
+  speaker: Xenophon and Cheirisophus through deeds and commands
+  audience: their respective formations
+  occasion: successive obstruction of van and rear
+  content: >-
+    Each commander detours uphill to outflank defenders threatening the other end of the column,
+    rescuing the opposite formation in turn.
+  uncertainty: Most orders are inferred from coordinated action rather than quoted.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis IV.2; PDF p. 72
+  actor: Greek command and volunteer storming party
+  deed: >-
+    The command binds the guide, sends a two-thousand-man force on a circuit, and establishes
+    a night-hold, dawn-bugle, and converging-attack plan.
+  outcome: A coordinated diversion and summit seizure is attempted under heavy rain.
+  uncertainty: The guide's consent, treatment, and freedom of movement are absent.
+- id: SDO-002
+  locator: Anabasis IV.2; PDF pp. 72-73
+  actor: Xenophon, rearguard, and Carduchian defenders
+  deed: >-
+    Xenophon advances toward the visible pass as a diversion, but defenders roll wagon-load
+    boulders down the ravine and block every direct approach through nightfall.
+  outcome: The diversion holds attention but cannot itself force the pass.
+  uncertainty: Casualties from the boulders are not quantified.
+- id: SDO-003
+  locator: Anabasis IV.2; PDF p. 73
+  actor: volunteer storming party and Carduchian outpost
+  deed: >-
+    The circuiting Greeks surprise guards around a fire, kill some, drive away the rest,
+    and occupy the outpost.
+  outcome: They believe they possess the height but actually hold a lower position beneath a breast-like hill.
+  uncertainty: The number killed and the guide's precise contribution are unrecorded.
+- id: SDO-004
+  locator: Anabasis IV.2; PDF p. 73
+  actor: storming party, Cheirisophus, and other Greek divisions
+  deed: >-
+    At dawn under mist the flanking party attacks after the trumpet, the pass defenders flee,
+    and the main body climbs by the marked road and pathless routes.
+  outcome: The advance force and main divisions unite on the captured position.
+  uncertainty: The trumpet and bugle terminology requires Greek-text review.
+- id: SDO-005
+  locator: Anabasis IV.2; PDF pp. 73-74
+  actor: Xenophon and rearguard
+  deed: >-
+    Because baggage animals can use only the guide's road, Xenophon assaults successive occupied ridges,
+    leaves named officers guarding the first, and takes the second and third heights.
+  outcome: The baggage route is opened, but the dispersed ridge system creates a rear-security failure.
+  uncertainty: The strength assigned to each ridge is not supplied.
+- id: SDO-006
+  locator: Anabasis IV.2; PDF p. 74
+  actor: Carduchians, Cephisodorus, Amphicrates, Archagoras, and first-ridge defenders
+  deed: >-
+    The Carduchians leave the third knoll, attack the Greek rear, retake the first ridge,
+    and kill Cephisodorus, Amphicrates, and others; Archagoras escapes to report.
+  outcome: The Greeks lose men and control of the earlier ridge while still advancing.
+  uncertainty: The narrator's explanation of Carduchian intent is inferential.
+- id: SDO-007
+  locator: Anabasis IV.2; PDF p. 74
+  actor: Xenophon and Carduchian interlocutors
+  deed: >-
+    Xenophon negotiates for the dead; the Carduchians condition return on non-burning of houses,
+    and Xenophon agrees.
+  outcome: A limited agreement for body recovery is formed.
+  uncertainty: Whether the later attack violates this agreement depends on its unstated scope and timing.
+- id: SDO-008
+  locator: Anabasis IV.2; PDF p. 74
+  actor: Carduchian mass, Xenophon, his shield-bearer, and Eurylochus
+  deed: >-
+    As the Greeks descend, the gathered Carduchians attack and roll rocks; Xenophon's shield-bearer
+    carries off his shield, while Eurylochus shares his own shield and escorts him to the main body.
+  outcome: One man's leg is crushed, Xenophon is exposed, and the rearguard rejoins the formed troops.
+  uncertainty: The shield-bearer's identity and motive are not given.
+- id: SDO-009
+  locator: Anabasis IV.2; PDF p. 74
+  actor: united Greek army, Xenophon, Cheirisophus, and Carduchians
+  deed: >-
+    The Greeks occupy provisioned dwellings, recover the dead, return the guide,
+    and perform customary honors according to available means.
+  outcome: The named and unnamed dead are incorporated into funeral practice rather than abandoned.
+  uncertainty: The rites and burial locations are not described.
+- id: SDO-010
+  locator: Anabasis IV.2; PDF pp. 74-75
+  actor: Xenophon, Cheirisophus, Greek formations, Carduchians, and Cretan archers
+  deed: >-
+    Without a guide, the army advances under continuous obstruction; van and rear alternately
+    outflank attackers, Greeks reuse captured arrows as javelins, and Cretans under Stratocles
+    provide useful missile support.
+  outcome: Mutual relief and tactical adaptation enable passage through repeated narrows.
+  uncertainty: Losses and each specialist arm's contribution are not quantified.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Deployment of a bound guide and two-thousand-man storming party
+  - Xenophon's diversion at the visible pass under heavy rain
+  - Carduchian boulder defense blocks the ravine through nightfall
+  - Flanking party captures an outpost but mistakes it for the summit
+  - Mist-covered dawn attack clears the pass
+  - Main divisions ascend by marked and pathless routes
+  - Xenophon protects the baggage route through successive ridge assaults
+  - Enemy counterstroke retakes the first ridge and kills named officers
+  - Negotiation for dead bodies conditioned on non-burning of houses
+  - Carduchian mass attack during Greek descent and Eurylochus's rescue of Xenophon
+  - Recovery of the dead, return of the guide, and customary honors
+  - Guide-less advance with reciprocal relief by van and rear
+  - Description of Carduchian bows, arrows, mobility, and Cretan utility
+  repetitions:
+  - High ground repeatedly determines movement, security, and initiative.
+  - Every apparent summit reveals another height or threat.
+  - Xenophon and Cheirisophus repeatedly divide and reconnect responsibilities.
+  - Attack, withdrawal, recovery, and renewed obstruction recur.
+  - Route knowledge remains necessary even after guide custody ends.
+  omissions:
+  - The bound guide's voice, treatment, and consent are absent.
+  - The full command process authorizing the storming party is not described.
+  - Casualty totals are incomplete.
+  - The exact scope of the agreement over the dead and houses is unstated.
+  - Xenophon's shield-bearer is unnamed.
+  - Funeral rites are summarized without detail.
+  tensions:
+  - The storming party succeeds while initially misidentifying the terrain secured.
+  - Leaving an escape route speeds withdrawal but does not prevent counterattack.
+  - A non-burning agreement coexists with coercive passage through inhabited territory.
+  - A body-recovery agreement coexists with renewed attack during the same movement.
+  - Distributed ridge security proves insufficient, but forward attack remains necessary for baggage passage.
+  - The guide is first a route instrument and later part of an exchange.
+  - Carduchian light equipment aids escape while Greek heavy arms aid protection but hinder pursuit.
+documentary_observations:
+- {id: OBS-001, locator: 'Anabasis IV.2; PDF p. 72', evidence_type: BOUND_GUIDE_OBSERVATION, observation: 'The command binds the local guide and hands him to the volunteer storming party.', uncertainty: 'The guide''s consent, custody conditions, and treatment are not narrated.'}
+- {id: OBS-002, locator: 'Anabasis IV.2; PDF p. 72', evidence_type: SIGNAL_PLAN_OBSERVATION, observation: 'The summit party is ordered to hold through the night, sound a bugle at daybreak, and coordinate a converging attack.', uncertainty: 'The signal terminology and command chain require Greek-text review.'}
+- {id: OBS-003, locator: 'Anabasis IV.2; PDF p. 72', evidence_type: FORCE_SIZE_OBSERVATION, observation: 'The storming party is reported as two thousand strong.', uncertainty: 'Its contingent composition beyond the earlier volunteers is not given.'}
+- {id: OBS-004, locator: 'Anabasis IV.2; PDF p. 72', evidence_type: DIVERSION_OPERATION_OBSERVATION, observation: 'Xenophon advances the rearguard toward the visible pass to fix Carduchian attention away from the circuiting force.', uncertainty: 'The degree of deception is inferred from plan and outcome.'}
+- {id: OBS-005, locator: 'Anabasis IV.2; PDF pp. 72-73', evidence_type: HEAVY_BOULDER_DEFENSE_OBSERVATION, observation: 'Carduchians roll great boulders down the ravine, splintering them against rocks and making direct approach impossible.', uncertainty: 'Casualties and dimensions are not reported.'}
+- {id: OBS-006, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: PARATEXT_OBSERVATION, observation: 'A note glosses each wagon-load boulder as weighing several tons.', uncertainty: 'The conversion is editorial paratext.'}
+- {id: OBS-007, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: NIGHT_SURPRISE_OBSERVATION, observation: 'The flanking party surprises guards around a fire, kills some, and drives away the rest.', uncertainty: 'The number killed is absent.'}
+- {id: OBS-008, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: FALSE_SUMMIT_OBSERVATION, observation: 'The Greeks think they possess the height but actually occupy a lower outpost beneath a breast-like hill.', uncertainty: 'The terrain terminology is translation-mediated.'}
+- {id: OBS-009, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: EDITORIAL_PARATEXT_OBSERVATION, observation: 'A note offers mamelon as an alternative designation for the breast-like hill.', uncertainty: 'The gloss is witness paratext.'}
+- {id: OBS-010, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: MIST_ASSAULT_OBSERVATION, observation: 'Mist permits the storming party to approach closely before trumpet and cheer initiate the dawn attack.', uncertainty: 'Visibility and distance are not measured.'}
+- {id: OBS-011, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: ENEMY_WITHDRAWAL_OBSERVATION, observation: 'The pass defenders flee before close contact and lose only a few men because of their agility.', uncertainty: 'The few casualties are not enumerated.'}
+- {id: OBS-012, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: MULTI_ROUTE_ASCENT_OBSERVATION, observation: 'Cheirisophus advances by the marked road while other divisions climb pathless routes and haul one another upward with spears.', uncertainty: 'The divisions and costs are not listed.'}
+- {id: OBS-013, locator: 'Anabasis IV.2; PDF pp. 73-74', evidence_type: BAGGAGE_ROUTE_CONSTRAINT_OBSERVATION, observation: 'The soldiers could use other routes, but baggage animals can ascend only by the guide''s road.', uncertainty: 'Alternative baggage dispositions are not considered.'}
+- {id: OBS-014, locator: 'Anabasis IV.2; PDF p. 73', evidence_type: CONTROLLED_ESCAPE_OBSERVATION, observation: 'Greek storming columns deliberately leave the ridge defenders an avenue of escape.', uncertainty: 'The tactical rationale is not explicitly explained.'}
+- {id: OBS-015, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: REARGUARD_SECURITY_OBSERVATION, observation: 'Xenophon leaves Cephisodorus, Amphicrates, and Archagoras to secure the first ridge while he attacks the second.', uncertainty: 'The holding force''s size is not given.'}
+- {id: OBS-016, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: NARRATORIAL_INFERENCE_OBSERVATION, observation: 'The narrator explains that the Carduchians abandon the highest knoll after observing events in the Greek rear and deciding to attack there.', uncertainty: 'The Carduchians do not state this motive.'}
+- {id: OBS-017, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: NAMED_CASUALTY_OBSERVATION, observation: 'Cephisodorus and Amphicrates are killed when the first ridge is retaken; Archagoras escapes in flight.', uncertainty: 'Additional dead are unspecified.'}
+- {id: OBS-018, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: MARCH_CONTROL_OBSERVATION, observation: 'Xenophon orders a slow advance so the hindmost companies can unite before taking position on level ground.', uncertainty: 'Compliance and timing are not detailed.'}
+- {id: OBS-019, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: PARATEXT_OBSERVATION, observation: 'A note glosses ground arms as taking up position.', uncertainty: 'The gloss may simplify the Greek expression.'}
+- {id: OBS-020, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: TRUCE_NEGOTIATION_OBSERVATION, observation: 'Xenophon uses an interpreter to demand the return of the Greek dead.', uncertainty: 'No herald status or ritual protection is specified.'}
+- {id: OBS-021, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: DEAD_RECOVERY_CONDITION_OBSERVATION, observation: 'The Carduchians agree to restore the bodies if Xenophon agrees not to burn their houses.', uncertainty: 'The condition''s scope and duration are unstated.'}
+- {id: OBS-022, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: TRUCE_AMBIGUITY_OBSERVATION, observation: 'Carduchian forces attack as the Greeks descend while the colloquy and troop passage are still unfolding.', uncertainty: 'The limited agreement''s effective time and scope are unclear.'}
+- {id: OBS-023, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: BODY_INJURY_OBSERVATION, observation: 'A rolled rock crushes one Greek man''s leg during the descent.', uncertainty: 'The man''s identity and survival are not given.'}
+- {id: OBS-024, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: ABANDONMENT_OBSERVATION, observation: 'Xenophon''s shield-bearer leaves him and carries away his shield during the attack.', uncertainty: 'The shield-bearer''s identity and motive are omitted.'}
+- {id: OBS-025, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: RESCUE_OBSERVATION, observation: 'Eurylochus of Lusia places his shield before both himself and Xenophon and withdraws with him to the main body.', uncertainty: 'The rescue''s duration and formation are not described.'}
+- {id: OBS-026, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: PARATEXT_OBSERVATION, observation: 'A note identifies Lusia as a town or district in northern Arcadia.', uncertainty: 'The geographical gloss is editorial paratext.'}
+- {id: OBS-027, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: RESOURCE_OBSERVATION, observation: 'The united Greek force quarters in dwellings with abundant provisions and wine stored in cemented cisterns.', uncertainty: 'Ownership and distribution are not described.'}
+- {id: OBS-028, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: GUIDE_EXCHANGE_OBSERVATION, observation: 'Xenophon and Cheirisophus recover the dead and return the guide in exchange.', uncertainty: 'The guide''s subsequent fate is not recorded.'}
+- {id: OBS-029, locator: 'Anabasis IV.2; PDF p. 74', evidence_type: FUNERARY_RITES_OBSERVATION, observation: 'The Greeks perform for the dead what their means allow, with customary honors paid to good men.', uncertainty: 'Rites and burial sites are absent.'}
+- {id: OBS-030, locator: 'Anabasis IV.2; PDF pp. 74-75', evidence_type: MUTUAL_SUPPORT_OBSERVATION, observation: 'Xenophon relieves an obstructed van and Cheirisophus an attacked rear; the commanders rescue each other in turn.', uncertainty: 'Frequency and losses are not quantified.'}
+- {id: OBS-031, locator: 'Anabasis IV.2; PDF p. 75', evidence_type: ENEMY_MOBILITY_OBSERVATION, observation: 'Carduchian fighters allow relief parties to approach closely, then escape because they carry only bows and slings.', uncertainty: 'The causal explanation is partly inferential.'}
+- {id: OBS-032, locator: 'Anabasis IV.2; PDF p. 75', evidence_type: WEAPON_TECHNOLOGY_OBSERVATION, observation: 'Carduchian bows are nearly three cubits long, arrows more than two cubits, and can pierce shield and cuirass.', uncertainty: 'Measurements and penetration claims are witness-mediated.'}
+- {id: OBS-033, locator: 'Anabasis IV.2; PDF p. 75', evidence_type: ADAPTIVE_WEAPON_REUSE_OBSERVATION, observation: 'Greeks fit captured Carduchian arrows to thongs and reuse them as javelins.', uncertainty: 'Quantity and effectiveness are not stated.'}
+- {id: OBS-034, locator: 'Anabasis IV.2; PDF p. 75', evidence_type: SPECIALIST_UTILITY_OBSERVATION, observation: 'Cretan troops under Stratocles are described as highly useful in the Carduchian districts.', uncertainty: 'Their exact actions and effects are not isolated.'}
+provisional_findings:
+- {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: 'IV.2 tests the coerced route intelligence from IV.1 through deception, flanking, and converging assault rather than simple reliance on the guide.', basis: 'Bound guide, visible-pass diversion, circuit, night hold, and dawn signal.', uncertainty: 'The guide''s truthfulness and exact contribution remain incomplete.'}
+- {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: 'High ground is a sequence of nested positions whose occupation can expose the rear.', basis: 'Outpost mistaken for summit; three ridges and counterattack.', uncertainty: 'Full topography requires external mapping and Greek-text review.'}
+- {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: 'The baggage train determines Xenophon''s route and forces repeated assaults that infantry alone might avoid.', basis: 'Men could take other paths, baggage animals could not.', uncertainty: 'The retained baggage''s value is not quantified.'}
+- {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: 'The Greeks combine tactical restraint with lethal coercion and territorial penetration.', basis: 'Escape avenue, bound guide, killings, and non-burning agreement.', uncertainty: 'No general policy resolves these practices.'}
+- {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: 'Xenophon and Cheirisophus function as complementary commanders whose alternating relief compensates for the column''s exposure.', basis: 'Turn-and-turn-about uphill outflanking.', uncertainty: 'The chapter does not formalize a rank relationship.'}
+- {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: 'The body-recovery agreement creates a narrow diplomatic space inside continuous hostilities without general peace.', basis: 'Conditional restoration followed by attack and exchange.', uncertainty: 'The agreement''s scope is unstated.'}
+- {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: 'Eurylochus''s rescue contrasts individual loyalty under danger with the unnamed shield-bearer''s abandonment.', basis: 'Shared shield versus removal of Xenophon''s shield.', uncertainty: 'The shield-bearer''s reason is unknown.'}
+- {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: 'Greek survival depends on adaptation to Carduchian light-infantry technology.', basis: 'Reused arrows and Cretan specialist utility.', uncertainty: 'Comparative effectiveness is not measured.'}
+- {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: 'Recovery and customary honors preserve collective identity despite terrain-driven failures of protection.', basis: 'Named losses, body negotiation, exchange, and rites.', uncertainty: 'The narrator does not explicitly interpret the significance.'}
+standing_unresolved_questions:
+- {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: 'What Greek terms stand behind storming party, summit, pass, trumpet, and bugle?'}
+- {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: 'How was the two-thousand-man force selected, organized, and commanded?'}
+- {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: 'What treatment and constraints were imposed on the bound guide?'}
+- {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: 'Did the diversion deceive the Carduchians or merely occupy part of their attention?'}
+- {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: 'How did the outpost, mamelon, three ridges, visible pass, baggage road, and crags relate topographically?'}
+- {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: 'Why did the storming party initially believe it possessed the height?'}
+- {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: 'How many Greeks and Carduchians died in the several assaults and counterattacks?'}
+- {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: 'Was the force left on the first ridge adequate, and why were those officers selected?'}
+- {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: 'What authority and protections governed Xenophon''s negotiation through an interpreter?'}
+- {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: 'Did the attack during descent violate, precede, or fall outside the agreement?'}
+- {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: 'Who was Xenophon''s shield-bearer, and why did he leave with the shield?'}
+- {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: 'What later record exists for Eurylochus of Lusia?'}
+- {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: 'What customary honors were performed for the dead?'}
+- {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: 'Was the guide returned freely or treated as an exchanged captive?'}
+- {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: 'How did Xenophon and Cheirisophus coordinate reciprocal relief across the stretched column?'}
+- {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: 'What Greek measurements and bow-drawing technique underlie the weapon description?'}
+- {id: Q-017, evidence_type: UNRESOLVED_QUESTION, question: 'How effective was the conversion of captured arrows into javelins?'}
+- {id: Q-018, evidence_type: UNRESOLVED_QUESTION, question: 'What specific actions made Stratocles''s Cretans highly useful?'}
+downstream_textual_checks:
+- Compare the opening and closing anchors against a reviewed Greek text.
+- Verify whether bugle and trumpet translate identical or distinct Greek terms.
+- Map the outpost, mamelon, ridges, pass, and baggage route without converting editorial glosses into ancient wording.
+- Check manuscript evidence for the narrator's explanation of the Carduchian move against the rear.
+- Review the Greek terms and diplomatic scope of the agreement over bodies and houses.
+- Trace Cephisodorus, Amphicrates, Archagoras, Eurylochus, and Stratocles across the work.
+- Check whether the shield-bearer episode varies across witnesses.
+- Separate Carduchian weapon measurements from modern conversions.
+- Review the phrase rendered customary honours paid to good men.
+- Compare reciprocal relief with later van-rear coordination without importing later conclusions backward.
+- Keep notes on wagon weight, mamelon, ground arms, and Lusia outside the narrator's voice.
+- Preserve Strauss comparison as deferred until the authorized comparison gate.
+secondary_comparison_status: DEFERRED
