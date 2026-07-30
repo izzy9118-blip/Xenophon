@@ -1,0 +1,326 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-025
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis IV.4
+  pdf_pages_one_based: 79-81
+  opening_anchor: >-
+    The passage effected, they fell into line about mid-day, and marched through Armenian territory,
+  closing_anchor: >-
+    The recall was sounded and the retreat commenced; the camp was reached the same day.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis IV.4 plus one-based PDF page
+  chapter_boundary_control: >-
+    IV.4 begins beneath heading IV on PDF page 79 and ends on PDF page 81 immediately
+    before heading V. IV.5 begins on page 81 and continues through page 84.
+  source_boundary: >-
+    Route summary, office description, interpreter-mediated diplomacy, treaty terms,
+    billeting decisions, straggler report, command inference, weather effects, exemplary deed,
+    collective imitation, scout characterization, prisoner testimony, operational resolution,
+    attack, capture, and recall remain distinct. The explanatory note concerning Xenophon's
+    clothing and the competing readings of Democrates's ethnicon remain witness paratext.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration presenting Xenophon as a named commander whose personal
+    example initiates collective action, together with narrator-characterization of Democrates
+    and reported testimony from stragglers and a prisoner.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon appears when he rises without his cloak and begins splitting wood, prompting other
+    soldiers to rise, work, make fires, and oil themselves. No first-person form identifies the
+    narrator with Xenophon in this chapter.
+  uncertainty: >-
+    This witness does not settle the Greek force of king's friend, treaty, abstain from injury,
+    prudent, blind folly, fact and fiction, butlers and bakers, or the relation between narrator
+    and historical author.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis IV.4; PDF p. 79
+  speech_form: interpreter_mediated_request_for_colloquy
+  speaker: Tiribazus through an interpreter
+  audience: Greek leaders
+  occasion: approach by cavalry in Western Armenia
+  content: He states that he desires a colloquy with the leaders.
+  uncertainty: The interpreter's identity and exact words are not preserved.
+- id: SAO-002
+  locator: Anabasis IV.4; PDF p. 79
+  speech_form: diplomatic_question
+  speaker: Greek generals
+  audience: Tiribazus
+  occasion: meeting within speaking distance
+  content: They demand to know what he wants.
+  uncertainty: The witness does not provide the individual speaker or formula.
+- id: SAO-003
+  locator: Anabasis IV.4; PDF p. 79
+  speech_form: treaty_proposal
+  speaker: Tiribazus
+  audience: Greek generals
+  occasion: formal response to their demand
+  content: >-
+    He offers to abstain from injuring the Greeks if they refrain from burning his houses
+    and take only the provisions they need.
+  uncertainty: No oath, duration, sanction, or geographic scope is recorded.
+- id: SAO-004
+  locator: Anabasis IV.4; PDF p. 79
+  speech_form: collective_acceptance
+  speaker: Greek generals
+  audience: Tiribazus and the army
+  occasion: consideration of the proposed terms
+  content: They accept the proposal and make a treaty on those terms.
+  uncertainty: The decision procedure and ritual are absent.
+- id: SAO-005
+  locator: Anabasis IV.4; PDF p. 79
+  speech_form: straggler_intelligence_report
+  speaker: unnamed stragglers
+  audience: Greek command
+  occasion: after the regiments have been billeted throughout the villages
+  content: They report seeing an army and the blaze of many watchfires during the night.
+  uncertainty: Their number, vantage point, and confidence are not stated.
+- id: SAO-006
+  locator: Anabasis IV.4; PDF p. 80
+  speech_form: reconnaissance_report
+  speaker: Democrates
+  audience: Greek generals
+  occasion: return from a night mission toward the reported watchfires
+  content: >-
+    He reports that he saw no watchfires, but captured and brought back a man carrying
+    a Persian bow, quiver, and sagaris.
+  uncertainty: The conditions of capture and reconnaissance route are not given.
+- id: SAO-007
+  locator: Anabasis IV.4; PDF p. 80
+  speech_form: prisoner_identity_report
+  speaker: captured man
+  audience: Greek interrogators
+  occasion: question concerning his country and movement
+  content: He says that he is Persian and was going from Tiribazus's army to obtain provisions.
+  uncertainty: The answer's voluntariness and accuracy are unverified.
+- id: SAO-008
+  locator: Anabasis IV.4; PDF p. 80
+  speech_form: prisoner_force_report
+  speaker: captured man
+  audience: Greek interrogators
+  occasion: question concerning the army's size and purpose
+  content: >-
+    He identifies Tiribazus, his own forces, and Chalybian and Taochian mercenaries,
+    and says the army was assembled to attack the Greeks at the sole high-pass defile.
+  uncertainty: He gives no number, and the sole-passage claim is not independently established.
+- id: SAO-009
+  locator: Anabasis IV.4; PDF pp. 80-81
+  speech_form: collective_operational_resolution
+  speaker: Greek generals
+  audience: Greek army
+  occasion: receipt of the prisoner's intelligence
+  content: >-
+    They resolve to collect the troops, depart immediately, take the prisoner as guide,
+    and leave Sophaenetus with a garrison guarding the camp.
+  uncertainty: The resolution's debate, vote, and guide restraints are unrecorded.
+- id: SAO-010
+  locator: Anabasis IV.4; PDF p. 81
+  speech_form: recall_order
+  speaker: generals of the heavy infantry division
+  audience: attacking Greek force
+  occasion: learning that the light infantry has taken the enemy camp
+  content: They sound the recall and order a rapid return to protect the remnant left behind.
+  uncertainty: The individual commander and signal sequence are not identified.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis IV.4; PDF p. 79
+  actor: Greek army
+  deed: >-
+    After crossing the Centrites, the Greeks form line, march at least five parasangs through
+    an Armenian plain without riverside villages, and reach a large provisioned village with a satrapal palace.
+  outcome: The army moves from the contested crossing into settled Armenian territory with supplies.
+  uncertainty: The route and distance remain mediated by the translation and witness geography.
+- id: SDO-002
+  locator: Anabasis IV.4; PDF p. 79
+  actor: Greek army
+  deed: >-
+    They march two stages to the sources of the Tigris and three stages to the Teleboas in Western Armenia.
+  outcome: The narrative locates the army within Tiribazus's jurisdiction.
+  uncertainty: Ancient and modern river identifications are not adjudicated here.
+- id: SDO-003
+  locator: Anabasis IV.4; PDF p. 79
+  actor: Tiribazus and Greek generals
+  deed: >-
+    Tiribazus approaches through an interpreter and concludes a treaty: he will not injure the Greeks,
+    while they will not burn his houses and will take only needed provisions.
+  outcome: A limited accommodation governs movement through his territory.
+  uncertainty: The treaty's legal form, duration, and enforcement are unstated.
+- id: SDO-004
+  locator: Anabasis IV.4; PDF p. 79
+  actor: Tiribazus and Greek army
+  deed: Tiribazus follows the Greeks with his force at a distance greater than one mile.
+  outcome: Formal accommodation coexists with continued armed observation.
+  uncertainty: His intention is not directly stated.
+- id: SDO-005
+  locator: Anabasis IV.4; PDF pp. 79-80
+  actor: Greek generals and regiments
+  deed: >-
+    Heavy snow prompts billeting throughout provisioned villages; a straggler report of an army and watchfires
+    then prompts reunification in open quarters, where a still heavier snowfall covers men and weapons.
+  outcome: Command repeatedly reverses quartering arrangements under changing weather and intelligence.
+  uncertainty: The reports' reliability and the exact sequence of resolutions are only narratively summarized.
+- id: SDO-006
+  locator: Anabasis IV.4; PDF p. 80
+  actor: Xenophon and Greek soldiers
+  deed: >-
+    Xenophon rises without his cloak and begins splitting wood; other soldiers take over the task,
+    rise, kindle fires, and oil their bodies with locally available unguents.
+  outcome: Personal example overcomes reluctance and initiates collective cold-weather preparation.
+  uncertainty: The clothing note is editorial paratext, and no direct command is quoted.
+- id: SDO-007
+  locator: Anabasis IV.4; PDF p. 80
+  actor: Greek command and soldiers
+  deed: >-
+    The army resolves to return under village cover; soldiers rush joyfully to houses and provisions,
+    while men who had earlier burned houses receive poorer quarters.
+  outcome: Earlier destruction produces a later material penalty for its perpetrators.
+  uncertainty: The assignment procedure and scale of prior burning are not supplied.
+- id: SDO-008
+  locator: Anabasis IV.4; PDF p. 80
+  actor: Democrates and captured Persian
+  deed: >-
+    Democrates conducts a verification mission, reports no watchfires, and returns with a prisoner carrying Persian weapons.
+  outcome: The immediate watchfire report is contradicted, but a hostile force is evidenced through the captive.
+  uncertainty: The prisoner's capture and the narrator's praise of Democrates require separate evidentiary treatment.
+- id: SDO-009
+  locator: Anabasis IV.4; PDF pp. 80-81
+  actor: Greek generals, prisoner-guide, Sophaenetus, and Greek troops
+  deed: >-
+    On learning of a planned ambush at the high pass, the generals collect the army, take the prisoner as guide,
+    leave a garrison under Sophaenetus, and advance immediately.
+  outcome: Prisoner intelligence is converted into a preemptive operation.
+  uncertainty: The guide's custody and the report's independent verification are unstated.
+- id: SDO-010
+  locator: Anabasis IV.4; PDF p. 81
+  actor: Greek light infantry, Tiribazus's force, and heavy-infantry generals
+  deed: >-
+    The light infantry rushes the enemy entrenchment without waiting, kills some fugitives, captures twenty horses,
+    Tiribazus's tent, silver-footed couches, goblets, and persons calling themselves butlers and bakers;
+    the heavy-infantry generals then recall the force to protect the camp remnant.
+  outcome: Tactical surprise yields spoils, but the command terminates exploitation to restore security.
+  uncertainty: Casualty totals, captives' status, ownership of goods, and the narrator's distancing phrase are unresolved.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Midday formation and movement into the Armenian plain
+  - Arrival at a satrapal village with provisions
+  - March past the Tigris sources to the Teleboas in Western Armenia
+  - Tiribazus's interpreter-mediated approach and treaty
+  - Armed following at a distance
+  - Snow, dispersed billeting, and abundant provisions
+  - Straggler report of army and watchfires
+  - Reunification in open quarters and heavier snowfall
+  - Xenophon's wood-splitting example and collective fire-making
+  - Return to covered villages and penalty for earlier house burning
+  - Democrates's verification mission and prisoner capture
+  - Prisoner report of Tiribazus's ambush force
+  - Immediate Greek advance with prisoner-guide and Sophaenetus garrison
+  - Light-infantry assault, capture of camp and luxury goods
+  - Recall and same-day return to protect the remnant
+  repetitions:
+  - House burning and non-burning recur as terms of survival, treaty, and later consequence.
+  - Intelligence repeatedly moves from report to verification to operational decision.
+  - Division for shelter or attack repeatedly creates concern for an exposed remnant.
+  - Material abundance alternates with severe exposure to weather.
+  omissions:
+  - No oath, sacrifice, witness list, or sanction for the treaty is recorded.
+  - No force numbers for Tiribazus's army are supplied.
+  - No account identifies the prisoner interrogation conditions or guide restraints.
+  - No casualty total, captive disposition, or distribution of spoils is given.
+  tensions:
+  - Tiribazus promises non-injury while following the Greeks with troops and preparing a reported ambush.
+  - The stragglers' watchfire report is denied by Democrates, yet his prisoner confirms an enemy army.
+  - Dispersal secures shelter but threatens security; concentration secures control but exposes the army to snow.
+  - The successful light-infantry initiative is also an advance made without waiting for the heavy infantry.
+documentary_observations:
+- {id: OBS-001, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: GEOGRAPHIC_ROUTE_OBSERVATION, observation: 'After the Centrites crossing, the army forms line about midday and marches through an Armenian plain with smooth hillocks for at least five parasangs.'}
+- {id: OBS-002, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: WAR_EFFECT_ON_SETTLEMENT_OBSERVATION, observation: 'No villages lie near the river because of Armenian wars with the Carduchians.'}
+- {id: OBS-003, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: SETTLEMENT_AND_PROVISION_OBSERVATION, observation: 'The first large village has a satrapal palace, turreted houses, and plentiful provisions.'}
+- {id: OBS-004, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: DISTANCE_REPORT_OBSERVATION, observation: 'The Greeks march two stages and ten parasangs to the sources of the Tigris, then three stages and fifteen parasangs to the Teleboas.'}
+- {id: OBS-005, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: REGIONAL_IDENTIFICATION_OBSERVATION, observation: 'The Teleboas district is identified as Western Armenia and contains many villages.'}
+- {id: OBS-006, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: OFFICE_AND_PRIVILEGE_OBSERVATION, observation: "Tiribazus is described as lieutenant-governor, the king's friend, and the sole person privileged to mount the visiting king upon his horse."}
+- {id: OBS-007, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: DIPLOMATIC_CONTACT_OBSERVATION, observation: 'Tiribazus approaches with cavalry and sends an interpreter to request a colloquy with the leaders.'}
+- {id: OBS-008, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: TREATY_TERMS_OBSERVATION, observation: 'Tiribazus proposes non-injury in exchange for non-burning of houses and limited taking of needed provisions.'}
+- {id: OBS-009, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: TREATY_OUTCOME_OBSERVATION, observation: 'The generals accept the proposal and a treaty is made on the suggested terms.'}
+- {id: OBS-010, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: SURVEILLANCE_OBSERVATION, observation: 'Tiribazus follows the Greeks with his forces at a distance greater than one mile.'}
+- {id: OBS-011, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: BILLETING_DECISION_OBSERVATION, observation: 'Heavy snow, abundant villages, and no visible enemy lead the generals to billet regiments and generals separately.'}
+- {id: OBS-012, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: PROVISION_LIST_OBSERVATION, observation: 'The villages provide sacrificial animals, grain, old fragrant wine, dried grapes, and vegetables.'}
+- {id: OBS-013, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: STRAGGLER_REPORT_OBSERVATION, observation: 'Stragglers report seeing an army and many watchfires at night.'}
+- {id: OBS-014, locator: 'Anabasis IV.4; PDF p. 79', evidence_type: COMMAND_INFERENCE_OBSERVATION, observation: 'The generals infer that dispersed quarters are unsafe and resolve to reunite the troops.'}
+- {id: OBS-015, locator: 'Anabasis IV.4; PDF pp. 79-80', evidence_type: WEATHER_OBSERVATION, observation: 'Despite an expectation of clear weather, a thick nighttime snowfall covers weapons and sleeping soldiers.'}
+- {id: OBS-016, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: SNOW_EFFECT_OBSERVATION, observation: 'The snow cramps and cripples baggage animals and contributes to reluctance to rise.'}
+- {id: OBS-017, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: MORALE_AND_READINESS_OBSERVATION, observation: 'The gently fallen snow acts as a warm blanket except where it slips from the shoulders, producing great unreadiness to get up.'}
+- {id: OBS-018, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: EXEMPLARY_LEADERSHIP_DEED_OBSERVATION, observation: 'Xenophon gets up without his cloak and begins splitting wood.'}
+- {id: OBS-019, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: COLLECTIVE_IMITATION_OBSERVATION, observation: 'Other soldiers take the wood from Xenophon, split it, kindle fires, and oil their bodies.'}
+- {id: OBS-020, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: MATERIAL_CULTURE_OBSERVATION, observation: "The local scented unguent is described as made from pig fat, sesame, bitter almonds, and turpentine, with a sweet oil from the same ingredients."}
+- {id: OBS-021, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: EDITORIAL_PARATEXT_OBSERVATION, observation: "A witness note explains 'without his cloak' through imation and khiton and paraphrases the scene as working in shirt sleeves."}
+- {id: OBS-022, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: RE_BILLETING_DECISION_OBSERVATION, observation: 'The army resolves again to separate and take covered village quarters.'}
+- {id: OBS-023, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: COLLECTIVE_REACTION_OBSERVATION, observation: 'The soldiers receive the decision with joy and shouting and rush toward houses and provisions.'}
+- {id: OBS-024, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: RETRIBUTIVE_OUTCOME_OBSERVATION, observation: 'Men who had earlier burned houses receive poorer quarters and are said to pay the penalty for their folly.'}
+- {id: OBS-025, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: SCOUT_SELECTION_OBSERVATION, observation: 'Democrates is chosen because the narrator says his judgment reliably distinguishes fact from fiction.'}
+- {id: OBS-026, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: SCOUT_REPORT_OBSERVATION, observation: 'Democrates reports seeing no watchfires but returns with a captured man.'}
+- {id: OBS-027, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: WEAPON_IDENTIFICATION_OBSERVATION, observation: 'The prisoner carries a Persian bow, quiver, and a sagaris compared with battleaxes worn by Amazons.'}
+- {id: OBS-028, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: TEXTUAL_VARIANT_OBSERVATION, observation: "A witness note records competing readings that would make Democrates a native of Temenus, Temnus, or Temenum."}
+- {id: OBS-029, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: PRISONER_IDENTITY_REPORT_OBSERVATION, observation: "The prisoner says he is Persian and was traveling from Tiribazus's army to obtain provisions."}
+- {id: OBS-030, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: FORCE_COMPOSITION_REPORT_OBSERVATION, observation: 'The prisoner reports Tiribazus with his own forces and Chalybian and Taochian mercenaries but gives no numerical total.'}
+- {id: OBS-031, locator: 'Anabasis IV.4; PDF p. 80', evidence_type: AMBUSH_PLAN_REPORT_OBSERVATION, observation: 'The prisoner says Tiribazus intends to attack at a high mountain defile described as the sole passage.'}
+- {id: OBS-032, locator: 'Anabasis IV.4; PDF pp. 80-81', evidence_type: INTELLIGENCE_TO_ACTION_OBSERVATION, observation: 'The generals immediately collect the troops, take the prisoner as guide, leave Sophaenetus with a garrison, and advance.'}
+- {id: OBS-033, locator: 'Anabasis IV.4; PDF pp. 80-81', evidence_type: IMPETUOUS_ASSAULT_OBSERVATION, observation: 'The light infantry sees the enemy camp and rushes the entrenchment with a shout without waiting for the heavy infantry.'}
+- {id: OBS-034, locator: 'Anabasis IV.4; PDF p. 81', evidence_type: CAPTURE_AND_RECALL_OBSERVATION, observation: "Some fleeing enemies are killed; twenty horses, Tiribazus's tent, silver-footed couches, goblets, and self-styled butlers and bakers are captured before the heavy-infantry generals recall the force to protect the remnant."}
+provisional_findings:
+- {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: 'IV.4 marks a transition from river-crossing crisis to negotiated movement through satrapal territory, but armed proximity prevents the treaty from becoming trust.'}
+- {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: 'The treaty regulates destruction and provisioning rather than creating a broad alliance: the Greeks may take necessities but must not burn houses.'}
+- {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: "Tiribazus's following force and the prisoner's ambush report place formal agreement beside surveillance and possible treachery without independently proving when or why policy changed."}
+- {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: 'The command repeatedly trades security against shelter: dispersal protects from snow, while concentration protects from a reported enemy.'}
+- {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: "Xenophon's wood-splitting deed presents exemplary action, rather than a recorded speech or punishment, as the immediate cause of restored readiness."}
+- {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: 'Earlier house burning becomes self-imposed logistical harm when the same soldiers later need covered quarters.'}
+- {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: "Democrates's mission distinguishes false particulars from a real threat: he sees no watchfires but captures a prisoner who reports Tiribazus's army."}
+- {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: 'The command treats prisoner testimony as actionable enough for immediate preemption, while the successful capture supplies partial but not complete retrospective confirmation.'}
+- {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: 'The light infantry gains tactical surprise through initiative, but the recall shows that success at the enemy camp remains subordinate to protection of the divided Greek force.'}
+standing_unresolved_questions:
+- {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: 'How should the Tigris-source and Teleboas route statements be reconciled with a reviewed ancient and modern geography?'}
+- {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie 'lieutenant-governor,' 'king's friend,' and the privilege of mounting the king?"}
+- {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: 'What exact oath, ritual, duration, sanction, and geographic scope governed the treaty?'}
+- {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: "Did Tiribazus's armed following accord with the treaty or signal an intended breach from the beginning?"}
+- {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: 'Who were the stragglers, from where did they observe the alleged watchfires, and how reliable was their report?'}
+- {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: 'Were the successive billeting and reunification decisions formal votes, general orders, or narrated consensus?'}
+- {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: 'What was the duration and depth of the snowfall and its measurable effect on casualties and animal strength?'}
+- {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: "What Greek wording underlies Xenophon's lack of cloak, and how much of the clothing reconstruction belongs only to Dakyns's note?"}
+- {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: 'Are the listed unguent ingredients textually secure, and what practices of oiling in cold conditions are implied?'}
+- {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: 'How many houses had previously been burned, by whom, and how were poorer quarters allocated?'}
+- {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: "Which reading of Democrates's ethnicon is best supported by the Greek manuscript tradition?"}
+- {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: "What evidentiary basis supports the narrator's praise of Democrates as a discriminator of fact and fiction?"}
+- {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: 'Under what conditions was the Persian captured and questioned, and was coercion used?'}
+- {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: "How large was Tiribazus's force, and what did 'his own forces' denote?"}
+- {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: 'How reliable are the identifications of Chalybian and Taochian mercenaries?'}
+- {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: 'Was the reported defile truly the sole passage, or only the route known to the prisoner?'}
+- {id: Q-017, evidence_type: UNRESOLVED_QUESTION, question: 'Who authorized the light infantry to attack without waiting for the heavy infantry?'}
+- {id: Q-018, evidence_type: UNRESOLVED_QUESTION, question: 'What were the casualty totals and the later status of the captured horses, personnel, tent, couches, and goblets?'}
+downstream_textual_checks:
+- {id: CHECK-001, check: 'Verify the IV.4 opening and closing anchors and the IV.5 heading against an original-language or critical witness.'}
+- {id: CHECK-002, check: 'Check the parasang totals and ancient river names against the Greek text without replacing the witness record.'}
+- {id: CHECK-003, check: "Examine the Greek terminology for Tiribazus's office, royal friendship, and horse-mounting privilege."}
+- {id: CHECK-004, check: 'Recover the Greek wording and diplomatic form of the treaty, including whether an oath or pledge is implied.'}
+- {id: CHECK-005, check: 'Distinguish the narrator, straggler report, Democrates report, and prisoner report at the clause level.'}
+- {id: CHECK-006, check: "Check the Greek and manuscript support for Xenophon's clothing description and keep Dakyns's imation-khiton explanation separate."}
+- {id: CHECK-007, check: 'Verify the unguent ingredient list and the distinction between scented unguent, oil substitute, and sweet oil.'}
+- {id: CHECK-008, check: "Adjudicate Democrates's ethnicon variants only after consulting a critical apparatus."}
+- {id: CHECK-009, check: 'Check the Greek terms for Persian bow, quiver, sagaris, and the Amazon comparison.'}
+- {id: CHECK-010, check: "Test the prisoner's force-composition and sole-pass claims against the subsequent capture without treating outcome as complete confirmation."}
+- {id: CHECK-011, check: 'Verify the wording that the light infantry did not wait for the heavy infantry and the sequence of assault, capture, recall, and return.'}
+- {id: CHECK-012, check: "Examine the narrator's distancing phrase for the captured persons styling themselves butlers and bakers."}
+secondary_comparison_status: DEFERRED
+secondary_comparison_rule: >-
+  Do not import Strauss's reconstruction into this primary unit. Compare only after the relevant
+  primary sequence is complete and owner review authorizes comparison.
