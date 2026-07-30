@@ -7,10 +7,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_IDS = [f"XEN-RU-{n:03d}" for n in range(1, 9)]
-PRIMARY_IDS = [f"XEN-PRI-RU-{n:03d}" for n in range(1, 22)]
+PRIMARY_IDS = [f"XEN-PRI-RU-{n:03d}" for n in range(1, 23)]
 PRIMARY_PATHS = {u: ROOT / f"studies/xenophon-anabasis-dakyns/units/{u}.yaml" for u in PRIMARY_IDS}
 PRIMARY_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
-NEXT_ID = "XEN-PRI-RU-022"
+NEXT_ID = "XEN-PRI-RU-023"
 
 REQUIRED = [
     ROOT / "manifest.yaml", ROOT / "method/source-hierarchy.yaml", ROOT / "method/reading-protocol.yaml",
@@ -89,7 +89,7 @@ def main() -> int:
     manifest = docs[ROOT / "manifest.yaml"]
     if not isinstance(manifest, dict): return fail("manifest.yaml must contain a mapping")
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True: return fail("AI self-certification safeguard must remain true")
-    if manifest.get("version") != "1.21.0": return fail("Manifest version must be 1.21.0 after drafting Anabasis III.5")
+    if manifest.get("version") != "1.22.0": return fail("Manifest version must be 1.22.0 after drafting Anabasis IV.1")
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS": return fail("Manifest state mismatch")
     if manifest.get("next_required_unit", {}).get("id") != NEXT_ID: return fail("Manifest next primary unit mismatch")
     pm = manifest.get("primary_study", {})
@@ -100,6 +100,7 @@ def main() -> int:
     ]:
         if pm.get(book_key) is not True: return fail(f"Manifest milestone safeguard missing: {book_key}")
     if pm.get("book_three_drafted_chapters") != [f"III.{n}" for n in range(1, 6)]: return fail("Manifest Book III coverage mismatch")
+    if pm.get("book_four_drafted_chapters") != ["IV.1"]: return fail("Manifest Book IV coverage mismatch")
     if pm.get("drafted_units") != PRIMARY_IDS: return fail("Manifest primary drafted-unit list mismatch")
     if manifest.get("secondary_study", {}).get("drafted_units") != SECONDARY_IDS: return fail("Manifest secondary drafted-unit order mismatch")
 
@@ -137,8 +138,9 @@ def main() -> int:
     if [u.get("work_locator") for u in units[:10]] != [f"Anabasis I.{n}" for n in range(1, 11)]: return fail("Book I locator sequence mismatch")
     if [u.get("work_locator") for u in units[10:16]] != [f"Anabasis II.{n}" for n in range(1, 7)]: return fail("Book II locator sequence mismatch")
     if [u.get("work_locator") for u in units[16:21]] != [f"Anabasis III.{n}" for n in range(1, 6)]: return fail("Book III locator sequence mismatch")
-    if units[-1].get("work_locator") != "Anabasis IV.1": return fail("Next primary locator must be Anabasis IV.1")
-    if units[-1].get("pdf_pages_one_based") != "70-72": return fail("Next primary page range must be 70-72")
+    if [u.get("work_locator") for u in units[21:22]] != ["Anabasis IV.1"]: return fail("Drafted Book IV locator sequence mismatch")
+    if units[-1].get("work_locator") != "Anabasis IV.2": return fail("Next primary locator must be Anabasis IV.2")
+    if units[-1].get("pdf_pages_one_based") != "72-75": return fail("Next primary page range must be 72-75")
     if [u.get("id") for u in units if u.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"] != PRIMARY_IDS: return fail("Primary drafted-unit order mismatch")
     if [u.get("id") for u in units if u.get("status") == "NEXT"] != [NEXT_ID]: return fail("Primary next-unit status mismatch")
     if plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED": return fail("Strauss comparison must remain deferred")
@@ -208,12 +210,37 @@ def main() -> int:
     ]:
         if not any(first in t and second in t for t in t21): return fail(f"III.5 {label} missing")
 
+    u22 = docs[PRIMARY_PATHS["XEN-PRI-RU-022"]]
+    if not (narrative(u22).get("xenophon_as_character_present") is True and narrative(u22).get("direct_authorial_self_identification_present") is False and narrative(u22).get("first_person_narrator_present") is False): return fail("IV.1 narrator-character distinction missing")
+    boundary22 = u22.get("bibliographic_and_witness_control", {}).get("chapter_boundary_control", "")
+    if "Book IV retrospective synopsis" not in boundary22 or "IV.2 begins" not in boundary22: return fail("IV.1 chapter boundary and paratext separation missing")
+    required22 = {
+        "EDITORIAL_PARATEXT_OBSERVATION", "THREAT_ASSESSMENT_OBSERVATION",
+        "SELECTIVE_RESTRAINT_OBSERVATION", "NARRATORIAL_COUNTERFACTUAL_OBSERVATION",
+        "CAPTIVE_RELEASE_OBSERVATION", "CONFISCATION_ENFORCEMENT_OBSERVATION",
+        "COMMAND_COMMUNICATION_OBSERVATION", "COMMAND_DISAGREEMENT_OBSERVATION",
+        "COERCIVE_INTERROGATION_OBSERVATION", "PRISONER_EXECUTION_OBSERVATION",
+        "ROUTE_DISCLOSURE_OBSERVATION", "VOLUNTEER_FORMATION_OBSERVATION",
+    }
+    if error := require_types(u22, "IV.1", required22): return fail(error)
+    t22 = texts(u22)
+    if not any("all light troops" in t for t in t22) or not any("no light troops" in t for t in t22): return fail("IV.1 initial formation missing")
+    for first, second, label in [
+        ("annihilated a large portion", "larger Carduchian force", "narratorial counterfactual"),
+        ("good-looking boy or woman", "evade the order", "clandestine captive retention"),
+        ("Cleonymus", "Basias", "named casualties"),
+        ("first prisoner is killed", "second", "coercive execution sequence"),
+        ("Aristonymus, Agasias, Callimachus, and Aristeas", "special expedition", "volunteer formation"),
+    ]:
+        if not any(first in t and second in t for t in t22): return fail(f"IV.1 {label} missing")
+
     audit = docs[ROOT / "audits/founding-state.yaml"]
     state = audit.get("repository_state", {})
     if state.get("primary_witness_count") != 1 or state.get("drafted_primary_units") != len(PRIMARY_IDS) or state.get("drafted_secondary_units") != 8: return fail("Founding audit counts mismatch")
     if not all(state.get(k) is True for k in ["book_one_primary_draft_complete", "book_two_primary_draft_complete", "book_three_primary_draft_complete", "book_milestones_pending_owner_review"]): return fail("Founding audit book milestone safeguards missing")
     if state.get("book_two_drafted_chapters") != [f"II.{n}" for n in range(1, 7)]: return fail("Founding audit Book II coverage mismatch")
     if state.get("book_three_drafted_chapters") != [f"III.{n}" for n in range(1, 6)]: return fail("Founding audit Book III coverage mismatch")
+    if state.get("book_four_drafted_chapters") != ["IV.1"]: return fail("Founding audit Book IV coverage mismatch")
     if state.get("minister_adapter_derived") is not False or state.get("sanctum_registration_present") is not False: return fail("Adapter and Sanctum registration must remain absent")
 
     print("Xenophon repository validation passed")
