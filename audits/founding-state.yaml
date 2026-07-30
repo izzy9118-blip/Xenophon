@@ -13,7 +13,7 @@ repository_state:
   primary_translation_witness_admitted: true
   primary_witness_count: 1
   primary_study_started: true
-  drafted_primary_units: 5
+  drafted_primary_units: 6
   drafted_secondary_units: 8
   minister_adapter_derived: false
   sanctum_registration_present: false
@@ -34,7 +34,7 @@ documented_gaps:
       - final textual certification
   - id: GAP-005
     description: >-
-      The primary Anabasis reconstruction is incomplete; Anabasis I.1 through I.5 have drafted units.
+      The primary Anabasis reconstruction is incomplete; Anabasis I.1 through I.6 have drafted units.
     blocks:
       - complete primary argument map
       - systematic deed extraction
@@ -45,4 +45,4 @@ documented_gaps:
     blocks:
       - Assembly dispatch
 next_required_action: >-
-  Complete XEN-PRI-RU-006 for Anabasis I.6 without importing Strauss or treating translated wording as unmediated Greek evidence.
+  Complete XEN-PRI-RU-007 for Anabasis I.7 without importing Strauss or treating translated wording as unmediated Greek evidence.
