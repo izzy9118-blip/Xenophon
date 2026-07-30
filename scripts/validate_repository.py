@@ -21,6 +21,7 @@ REQUIRED = [
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-005.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-006.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-007.yaml",
+    ROOT / "studies/strauss-xenophons-anabasis/units/XEN-RU-008.yaml",
     ROOT / "adapter/report-contract.yaml",
     ROOT / "audits/founding-state.yaml",
 ]
@@ -57,6 +58,13 @@ def main() -> int:
         return 1
 
     reading_plan = documents[ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml"]
+    if reading_plan.get("status") != "SEQUENTIAL_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
+        print("Reading plan completion status mismatch")
+        return 1
+    if reading_plan.get("coverage", {}).get("status") != "COMPLETE_FOR_REGISTERED_WITNESS_PENDING_OWNER_REVIEW":
+        print("Reading plan coverage status mismatch")
+        return 1
+
     drafted = {
         unit["id"]: unit
         for unit in reading_plan["reading_units"]
@@ -70,6 +78,7 @@ def main() -> int:
         "XEN-RU-005",
         "XEN-RU-006",
         "XEN-RU-007",
+        "XEN-RU-008",
     }
     if set(drafted) != expected_drafted:
         print("Reading plan drafted-unit set mismatch")
@@ -93,14 +102,17 @@ def main() -> int:
         if not record.get("standing_unresolved_questions"):
             print(f"Standing unresolved questions missing for {unit_id}")
             return 1
+        if not record.get("downstream_primary_text_checks"):
+            print(f"Primary-text checks missing for {unit_id}")
+            return 1
         for observation in record["documentary_observations"]:
             if not observation.get("locator") or not observation.get("evidence_type"):
                 print(f"Untyped or unlocated observation in {unit_id}")
                 return 1
 
     next_units = [unit["id"] for unit in reading_plan["reading_units"] if unit.get("status") == "NEXT"]
-    if next_units != ["XEN-RU-008"]:
-        print("Reading plan must identify XEN-RU-008 as the sole next unit")
+    if next_units:
+        print("No reading unit may remain NEXT after full registered-witness coverage")
         return 1
 
     expected_manifest_units = [
@@ -111,17 +123,27 @@ def main() -> int:
         "XEN-RU-005",
         "XEN-RU-006",
         "XEN-RU-007",
+        "XEN-RU-008",
     ]
     if manifest["secondary_study"]["drafted_units"] != expected_manifest_units:
         print("Manifest drafted-unit order mismatch")
         return 1
-    if manifest["next_required_unit"]["id"] != "XEN-RU-008":
-        print("Manifest next-unit mismatch")
+    if manifest["secondary_study"]["status"] != "SEQUENTIAL_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
+        print("Manifest secondary-study status mismatch")
+        return 1
+    if "next_required_unit" in manifest:
+        print("Manifest must not retain a next reading unit after full coverage")
+        return 1
+    if manifest.get("next_required_action", {}).get("id") != "XEN-ACTION-001":
+        print("Manifest next-action mismatch")
         return 1
 
     audit = documents[ROOT / "audits/founding-state.yaml"]
-    if audit["repository_state"]["drafted_secondary_units"] != 7:
+    if audit["repository_state"]["drafted_secondary_units"] != 8:
         print("Founding audit drafted-unit count mismatch")
+        return 1
+    if audit["repository_state"].get("sequential_secondary_coverage") != "DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
+        print("Founding audit secondary-coverage status mismatch")
         return 1
 
     print("Xenophon repository validation passed")
