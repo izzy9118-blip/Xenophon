@@ -1,0 +1,164 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-020
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis III.4
+  pdf_pages_one_based: 61-66
+  opening_anchor: "That day they remained inactive, but the next they rose earlier than usual, and set out betimes,"
+  closing_anchor: "and so they found themselves on the summit before the enemy."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis III.4 plus one-based PDF page
+  chapter_boundary_control: >-
+    III.4 begins on PDF page 62 under heading IV, after Lycius's appointment closes III.3,
+    and ends on PDF page 66 when Xenophon's detachment reaches the summit first.
+    III.5 begins immediately afterward under heading V.
+  source_boundary: >-
+    Narratorial reports, attributed motives, direct speech, tactical outcomes, ancient-city
+    traditions, divine-causation reports, editorial identifications, manuscript variants,
+    technical notes, coercive acts, and command decisions remain distinct. Notes concerning
+    Larissa, Mespila, Cyrus the Great, Medea, bow range, lochos terminology, the Persian lash,
+    the mountain spur, the picked three hundred, and the Soteridas variant remain paratext.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person narration presenting Xenophon as a named general and actor, with direct
+    dialogue among Xenophon, Cheirisophus, and Soteridas and with narratorial judgments
+    concerning motives, tactical defects, and Persian night weakness.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon appears as rearguard commander, tactical proposer, mounted exhorter,
+    shield-bearer, and climber. First-person forms belong to attributed speech.
+  uncertainty: >-
+    This witness does not settle the Greek force of mutilation, terror, empire, amazement,
+    necessity, confidence, surgeon, barbarian, younger, equality, shame, coercion, Hellas,
+    or the narrator-author relation.
+speakers_audiences_and_occasions:
+  - {id: SAO-001, locator: "Anabasis III.4; PDF p. 62", speech_form: reported_contract_and_motive, speaker: "Mithridates and narrator", audience: "Tissaphernes and reader", occasion: "renewed pursuit", content: "Mithridates receives one thousand cavalry and four thousand missile troops in return for undertaking to deliver the Greeks; his confidence is attributed to the earlier attack.", uncertainty: "Terms and motive are not independently supplied."}
+  - {id: SAO-002, locator: "Anabasis III.4; PDF p. 62", speech_form: prearranged_tactical_order, speaker: Greek generals, audience: "designated infantry and cavalry", occasion: "Mithridates closes after the ravine", content: "Assigned infantry are to pursue and the cavalry to follow confidently with support behind.", uncertainty: "Units and issuing procedure are unnamed."}
+  - {id: SAO-003, locator: "Anabasis III.4; PDF pp. 62-63", speech_form: historical_tradition_report, speaker: narrator, audience: reader, occasion: "Larissa and Mespila descriptions", content: "Larissa is said to fall after a cloud hides the sun and Mespila after Zeus sends amazement.", uncertainty: "Sources and historicity are unstated."}
+  - {id: SAO-004, locator: "Anabasis III.4; PDF p. 63", speech_form: missile_command_reported, speaker: Tissaphernes, audience: "his archers and slingers", occasion: "envelopment without close attack", content: "He orders ranged harassment while withholding a general assault.", uncertainty: "Exact wording and intention are absent."}
+  - {id: SAO-005, locator: "Anabasis III.4; PDF p. 64", speech_form: institutional_reorganisation_report, speaker: Greek generals, audience: army, occasion: "defects of the hollow square", content: "Six hundred-man lochoi with subordinate officers are created to clear wings, fill gaps, cross in turn, and form line.", uncertainty: "The exact number and placement remain editorially disputed."}
+  - {id: SAO-006, locator: "Anabasis III.4; PDF p. 65", speech_form: herald_order_reported, speaker: Greek herald, audience: army, occasion: "Persian evening withdrawal", content: "The cry to pack for departure is issued before the enemy is out of hearing.", uncertainty: "The authorizing commander is unnamed."}
+  - {id: SAO-007, locator: "Anabasis III.4; PDF pp. 65-66", speech_form: command_question_and_reply, speaker: "Cheirisophus and Xenophon", audience: "one another", occasion: "enemy occupation of the spur", content: "Cheirisophus asks for the peltasts; Xenophon says he would not leave the rear unprotected while Tissaphernes remained visible.", uncertainty: "The proper allocation of risk is unresolved."}
+  - {id: SAO-008, locator: "Anabasis III.4; PDF p. 66", speech_form: tactical_proposal_and_choice, speaker: "Xenophon and Cheirisophus", audience: "one another", occasion: "discovery of a higher route", content: "Xenophon proposes a dash to the summit and offers either to lead or remain; Cheirisophus leaves the choice to him.", uncertainty: "Formal authority is unstated."}
+  - {id: SAO-009, locator: "Anabasis III.4; PDF p. 66", speech_form: age_based_choice, speaker: Xenophon, audience: Cheirisophus, occasion: "selection of assault leader", content: "Xenophon chooses to lead because he is younger and requests troops from the front.", uncertainty: "The normative force of age is unclear."}
+  - {id: SAO-010, locator: "Anabasis III.4; PDF p. 66", speech_form: battle_exhortation, speaker: Xenophon, audience: "ascending detachment", occasion: "race for the summit", content: "He frames the race as being for Hellas, children, wives, and a peaceful remainder of the march.", uncertainty: "The promise is exhortative."}
+  - {id: SAO-011, locator: "Anabasis III.4; PDF p. 66", speech_form: complaint_and_embodied_reply, speaker: "Soteridas and Xenophon", audience: "ascending detachment", occasion: "mounted command during the climb", content: "Soteridas claims unequal conditions; Xenophon dismounts, takes his shield, and marches under the added burden.", uncertainty: "No formal adjudication follows."}
+speeches_deeds_and_outcomes:
+  - {id: SDO-001, locator: "Anabasis III.4; PDF p. 62", actor: Greek army, deed: "The army rises early and crosses a feared ravine before Mithridates closes.", outcome: "A terrain vulnerability is passed.", uncertainty: "The prior inactive day is unexplained."}
+  - {id: SDO-002, locator: "Anabasis III.4; PDF p. 62", actor: "Mithridates and Tissaphernes", deed: "Mithridates returns with one thousand cavalry and four thousand archers and slingers.", outcome: "The small harassment becomes a major interception attempt.", uncertainty: "Command terms are absent."}
+  - {id: SDO-003, locator: "Anabasis III.4; PDF p. 62", actor: "Greek infantry and cavalry", deed: "They wait for range, charge on the bugle, kill several infantry, and capture eighteen cavalry.", outcome: "The prepared combined-arms pursuit succeeds.", uncertainty: "Greek casualties are not stated."}
+  - {id: SDO-004, locator: "Anabasis III.4; PDF p. 62", actor: Greek soldiers, deed: "They mutilate the enemy dead to display a frightening image.", outcome: "Terror is added to tactical victory.", uncertainty: "Authorization and later effect are absent."}
+  - {id: SDO-005, locator: "Anabasis III.4; PDF pp. 62-63", actor: "Greek army and narrator", deed: "The march passes Larissa and Mespila while the narration records ruined Median cities, conquest traditions, monuments, and refugees.", outcome: "The retreat is placed among earlier imperial reversals.", uncertainty: "Traditions and identifications are not authenticated here."}
+  - {id: SDO-006, locator: "Anabasis III.4; PDF p. 63", actor: "Tissaphernes and Greek missile troops", deed: "Tissaphernes envelops and fires from range; Rhodian slingers and bowmen answer and drive his formations away.", outcome: "The new specialist forces neutralize ranged harassment on open ground.", uncertainty: "The separate contribution of each arm is unclear."}
+  - {id: SDO-007, locator: "Anabasis III.4; PDF p. 64", actor: "Greek generals and six new lochoi", deed: "They revise the hollow square through flexible subunits for changing frontage and passages.", outcome: "An adopted formation is corrected through experience.", uncertainty: "The note preserves a six-versus-twelve dispute."}
+  - {id: SDO-008, locator: "Anabasis III.4; PDF pp. 64-65", actor: "Persian missile troops and Greek army", deed: "Persians dominate successive hills until Greek light infantry takes parallel high ground.", outcome: "The pursuers stop for fear of being trapped between forces.", uncertainty: "Command names and casualties are absent."}
+  - {id: SDO-009, locator: "Anabasis III.4; PDF p. 65", actor: "Greek army and eight surgeons", deed: "The army reaches provisioned villages, appoints eight surgeons, and halts three days for the wounded.", outcome: "Medical care becomes a named command response.", uncertainty: "The surgeons and outcomes are unrecorded."}
+  - {id: SDO-010, locator: "Anabasis III.4; PDF pp. 65-66", actor: "Greek and Persian armies", deed: "The Greeks defend from a fixed base, exploit Persian evening withdrawal, and march after dark; the Persians later force-march at night to seize a spur.", outcome: "Each side adapts its use of time and terrain.", uncertainty: "The narrator generalizes broadly about Persian night weakness."}
+  - {id: SDO-011, locator: "Anabasis III.4; PDF p. 66", actor: "Cheirisophus, Xenophon, and selected troops", deed: "Xenophon identifies a higher route and leads front light infantry plus three hundred picked men in a race for the summit.", outcome: "Front and rear commands cooperate through delegated assault.", uncertainty: "The three hundred are editorially disputed."}
+  - {id: SDO-012, locator: "Anabasis III.4; PDF p. 66", actor: "Xenophon, Soteridas, and the troops", deed: "Xenophon carries Soteridas's shield; the soldiers beat and abuse Soteridas until he resumes his shield; Xenophon later climbs on foot and reaches the summit first.", outcome: "Personal example and collective coercion combine in enforcing the ascent.", uncertainty: "A manuscript variant changes the exhortation to the rear ranks."}
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Early ravine crossing and enlarged Mithridates attack
+    - Prepared Greek counterattack, prisoners, and mutilation
+    - Larissa and Mespila traditions
+    - Tissaphernes repelled by new missile forces
+    - Hollow-square defect and six-lochoi correction
+    - Hill fighting, high-ground countermeasure, and wounded halt
+    - Fixed-base defense and night-march separation
+    - Persian seizure of the spur
+    - Cheirisophus-Xenophon command exchange
+    - Summit race and Soteridas episode
+  repetitions:
+    - Failure is converted into tactical or institutional correction.
+    - Range, height, formation, and timing determine combat effectiveness.
+    - Xenophon's initiative is checked and supplemented by other commanders.
+    - Leadership joins exhortation, personal example, delegation, and coercion.
+  omissions:
+    - Greek casualty totals and the details of mutilation are absent.
+    - The ancient sources for Larissa and Mespila are unnamed.
+    - The six-lochoi and picked-three-hundred identities remain disputed.
+    - The eight surgeons are unnamed.
+    - Soteridas receives no formal hearing.
+  tensions:
+    - Minimal-damage policy coexists with mutilation intended to terrorize.
+    - The hollow square is adopted in III.2 and materially revised in III.4.
+    - New missile forces succeed on the plain and fail below high ground.
+    - Persian night avoidance is followed by a Persian forced night march.
+    - Soteridas's equality complaint produces shared burden and group violence.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis III.4; PDF p. 62", evidence_type: ATTRIBUTED_MOTIVE_OBSERVATION, observation: "Mithridates is said to grow contemptuous after his earlier attack.", uncertainty: "His inner state is narratorial attribution."}
+  - {id: OBS-002, locator: "Anabasis III.4; PDF p. 62", evidence_type: REPORTED_AGREEMENT_OBSERVATION, observation: "Tissaphernes supplies one thousand cavalry and four thousand missile troops for Mithridates's undertaking to deliver the Greeks.", uncertainty: "Exact terms are absent."}
+  - {id: OBS-003, locator: "Anabasis III.4; PDF p. 62", evidence_type: COMBINED_ARMS_OUTCOME_OBSERVATION, observation: "The planned pursuit captures eighteen cavalry and kills several infantry.", uncertainty: "No full casualty count is supplied."}
+  - {id: OBS-004, locator: "Anabasis III.4; PDF p. 62", evidence_type: MUTILATION_OBSERVATION, observation: "The Greeks mutilate enemy bodies to create a frightening image.", uncertainty: "Authorization and effect are unknown."}
+  - {id: OBS-005, locator: "Anabasis III.4; PDF pp. 62-63", evidence_type: GEOGRAPHIC_ARCHAEOLOGICAL_OBSERVATION, observation: "Larissa and Mespila are described as massive deserted Median cities.", uncertainty: "Modern identifications are paratext."}
+  - {id: OBS-006, locator: "Anabasis III.4; PDF pp. 62-63", evidence_type: DIVINE_CAUSATION_REPORT_OBSERVATION, observation: "Larissa falls after a cloud hides the sun and Mespila after Zeus sends amazement.", uncertainty: "The traditions are not independently adjudicated."}
+  - {id: OBS-007, locator: "Anabasis III.4; PDF pp. 62-66", evidence_type: PARATEXT_OBSERVATION, observation: "Notes identify places and rulers and discuss bows, lochoi, the lash, the spur, the picked corps, and manuscripts.", uncertainty: "These notes are not silently assigned to Xenophon."}
+  - {id: OBS-008, locator: "Anabasis III.4; PDF p. 63", evidence_type: RANGED_COMBAT_OUTCOME_OBSERVATION, observation: "Rhodian slingers and Greek bowmen force Tissaphernes out of range.", uncertainty: "The account does not separate their effects."}
+  - {id: OBS-009, locator: "Anabasis III.4; PDF p. 64", evidence_type: FORMATION_DEFECT_OBSERVATION, observation: "The hollow square compresses at narrow passages and stretches into dangerous gaps when reopened.", uncertainty: "The account generalizes from marching experience."}
+  - {id: OBS-010, locator: "Anabasis III.4; PDF p. 64", evidence_type: INSTITUTIONAL_ADAPTATION_OBSERVATION, observation: "Six hundred-man lochoi are created to fill gaps, clear wings, cross passages, and form line.", uncertainty: "The exact total and placement are disputed."}
+  - {id: OBS-011, locator: "Anabasis III.4; PDF pp. 64-65", evidence_type: LIGHT_INFANTRY_FAILURE_OBSERVATION, observation: "Greek slingers and archers are driven behind the hoplites and become useless among the sutlers.", uncertainty: "The failure is terrain-specific."}
+  - {id: OBS-012, locator: "Anabasis III.4; PDF p. 65", evidence_type: TACTICAL_ADAPTATION_OBSERVATION, observation: "A light detachment occupies parallel high ground and ends the attack on the main body.", uncertainty: "Its commander and size are unstated."}
+  - {id: OBS-013, locator: "Anabasis III.4; PDF p. 65", evidence_type: MEDICAL_INSTITUTION_OBSERVATION, observation: "Eight surgeons are appointed after many soldiers are wounded.", uncertainty: "Their identities and methods are absent."}
+  - {id: OBS-014, locator: "Anabasis III.4; PDF p. 65", evidence_type: NECESSITY_LEARNING_OBSERVATION, observation: "Necessity teaches the Greeks to camp rather than march and fight while burdened by wounded men and carriers.", uncertainty: "Necessity is narratorial interpretation."}
+  - {id: OBS-015, locator: "Anabasis III.4; PDF p. 65", evidence_type: NARRATORIAL_GENERALISATION_OBSERVATION, observation: "Persian forces are described as ineffective at night because horses and riders require lengthy preparation.", uncertainty: "The statement exceeds the immediate event."}
+  - {id: OBS-016, locator: "Anabasis III.4; PDF pp. 65-66", evidence_type: FORCED_MARCH_OBSERVATION, observation: "The Persians later use a forced night march to occupy a commanding spur.", uncertainty: "The route and cost are absent."}
+  - {id: OBS-017, locator: "Anabasis III.4; PDF p. 66", evidence_type: COMMAND_DISAGREEMENT_OBSERVATION, observation: "Xenophon refuses to strip the rear of peltasts while Tissaphernes remains visible.", uncertainty: "No formal allocation rule is stated."}
+  - {id: OBS-018, locator: "Anabasis III.4; PDF p. 66", evidence_type: TACTICAL_DISCOVERY_OBSERVATION, observation: "Xenophon detects a higher approach capable of turning the occupied crest.", uncertainty: "Reconnaissance time is brief."}
+  - {id: OBS-019, locator: "Anabasis III.4; PDF p. 66", evidence_type: AGE_AND_COMMAND_OBSERVATION, observation: "Xenophon chooses to lead the ascent because he is younger.", uncertainty: "The force of age as a command principle is unclear."}
+  - {id: OBS-020, locator: "Anabasis III.4; PDF p. 66", evidence_type: FORCE_SELECTION_OBSERVATION, observation: "Cheirisophus supplies front light infantry and three hundred picked troops.", uncertainty: "The note disputes the picked corps' identity."}
+  - {id: OBS-021, locator: "Anabasis III.4; PDF p. 66", evidence_type: EQUALITY_COMPLAINT_OBSERVATION, observation: "Soteridas says that mounted Xenophon and shield-bearing infantry do not face equal conditions.", uncertainty: "The complaint is not formally debated."}
+  - {id: OBS-022, locator: "Anabasis III.4; PDF p. 66", evidence_type: EMBODIED_LEADERSHIP_OBSERVATION, observation: "Xenophon dismounts and carries Soteridas's shield under his horseman's cuirass.", uncertainty: "The act does not settle the wider equality question."}
+  - {id: OBS-023, locator: "Anabasis III.4; PDF p. 66", evidence_type: COLLECTIVE_COERCION_OBSERVATION, observation: "The soldiers beat and abuse Soteridas until he resumes his shield and marches.", uncertainty: "No restraint or procedure is reported."}
+  - {id: OBS-024, locator: "Anabasis III.4; PDF p. 66", evidence_type: TEXTUAL_VARIANT_OBSERVATION, observation: "A manuscript note varies whether rearward troops were urged to follow Xenophon or pass him.", uncertainty: "Greek manuscript review is required."}
+  - {id: OBS-025, locator: "Anabasis III.4; PDF p. 66", evidence_type: TACTICAL_OUTCOME_OBSERVATION, observation: "Xenophon's detachment reaches the summit before the enemy.", uncertainty: "The enemy retreat occurs in III.5."}
+provisional_findings:
+  - {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: "III.4 makes correction the governing pattern of restored command.", basis: "Prepared pursuit, formation reform, high-ground maneuver, night movement, and summit race.", uncertainty: "Later chapters test durability."}
+  - {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: "The specialist arms created in III.3 immediately change the balance on open ground.", basis: "Captured cavalry and Tissaphernes's withdrawal.", uncertainty: "Their success varies by terrain."}
+  - {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: "The narration records terror through mutilation without supplying a clear moral verdict.", basis: "Impulsive mutilation after victory.", uncertainty: "Authorial judgment remains unstated."}
+  - {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: "Larissa and Mespila place the retreat among earlier imperial reversals.", basis: "Ruins and conquest traditions.", uncertainty: "The thematic relation is inferential."}
+  - {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: "The hollow square is a revisable institution rather than an immutable decree.", basis: "Observed defect and six-lochoi reform.", uncertainty: "The constitutional procedure is absent."}
+  - {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: "Troop type must be matched to terrain; no arm is simply superior in all conditions.", basis: "Missile success on the plain and failure below hills.", uncertainty: "The narration retains ethnic generalizations."}
+  - {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: "Medical care becomes part of command organization under sustained attrition.", basis: "Eight surgeons and a three-day halt.", uncertainty: "Prior medical organization is unknown."}
+  - {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: "The Greeks exploit Persian mounted logistics at night, while the Persians can adapt through forced marching.", basis: "Evening withdrawal and later spur occupation.", uncertainty: "The narrator may overgeneralize."}
+  - {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: "Cheirisophus and Xenophon cooperate through differentiated positional responsibilities.", basis: "Rear-security disagreement and delegated summit assault.", uncertainty: "Formal hierarchy remains incomplete."}
+  - {id: FIND-010, evidence_type: PROVISIONAL_INFERENCE, finding: "The Soteridas episode combines exemplary burden-sharing with coercive discipline.", basis: "Complaint, shield carrying, beating, and forced resumption.", uncertainty: "Its normative judgment remains unresolved."}
+standing_unresolved_questions:
+  - {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: "Why was the army inactive for one day?"}
+  - {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: "What exact agreement bound Mithridates to Tissaphernes?"}
+  - {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: "Who designed the combined-arms pursuit order?"}
+  - {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: "Was mutilation ordered, tolerated, or spontaneous?"}
+  - {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms describe mutilation and the frightening image?"}
+  - {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: "What sources underlie the Larissa and Mespila traditions?"}
+  - {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: "How do the cloud and Zeus-sent amazement function in the narrative?"}
+  - {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: "Were six lochoi created in total or on each flank?"}
+  - {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: "What are the exact Greek technical terms and command relationships?"}
+  - {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: "Who commanded the parallel high-ground detachment?"}
+  - {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: "Who were the eight surgeons and what treatment did they provide?"}
+  - {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: "How broad is the claim about Persian night incapacity?"}
+  - {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: "Who authorized the Greek night movement?"}
+  - {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: "What is the exact geography of the spur and higher route?"}
+  - {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: "Who were the three hundred picked troops?"}
+  - {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: "How should Soteridas's criticism, Xenophon's example, and collective violence be related?"}
+downstream_textual_checks:
+  - {id: CHECK-001, check: "Collate Greek text for Mithridates's agreement and attributed contempt."}
+  - {id: CHECK-002, check: "Check Greek terms and manuscripts for mutilation and terror."}
+  - {id: CHECK-003, check: "Compare ancient sources and critical notes for Larissa and Mespila."}
+  - {id: CHECK-004, check: "Verify the king and Medea identifications in critical editions."}
+  - {id: CHECK-005, check: "Collate missile-range and bow-note passages."}
+  - {id: CHECK-006, check: "Examine the six-lochoi vocabulary and manuscripts."}
+  - {id: CHECK-007, check: "Trace medical personnel and wounded-care references."}
+  - {id: CHECK-008, check: "Trace Persian and Greek night-operation claims."}
+  - {id: CHECK-009, check: "Reconstruct the spur and summit route without replacing the witness."}
+  - {id: CHECK-010, check: "Collate the picked-three-hundred and Soteridas manuscript variants."}
+secondary_comparison_status: DEFERRED
