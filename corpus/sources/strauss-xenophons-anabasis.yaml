@@ -1,6 +1,7 @@
 schema_version: 1.0
 id: XEN-SRC-SEC-001
-status: REGISTERED_SECONDARY_SOURCE_PENDING_OWNER_REVIEW
+status: OWNER_ADOPTED_SECONDARY_SOURCE
+owner_review: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
 work:
   author: Leo Strauss
   title: Xenophon's Anabasis
