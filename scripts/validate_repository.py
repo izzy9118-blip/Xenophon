@@ -8,10 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_OWNER_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_UNIT_IDS = [f"XEN-RU-{number:03d}" for number in range(1, 9)]
-PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 15)]
+PRIMARY_UNIT_IDS = [f"XEN-PRI-RU-{number:03d}" for number in range(1, 16)]
 PRIMARY_UNIT_PATHS = {unit_id: ROOT / f"studies/xenophon-anabasis-dakyns/units/{unit_id}.yaml" for unit_id in PRIMARY_UNIT_IDS}
 PRIMARY_READING_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
-NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-015"
+NEXT_PRIMARY_UNIT_ID = "XEN-PRI-RU-016"
 
 REQUIRED = [
     ROOT / "manifest.yaml", ROOT / "method/source-hierarchy.yaml", ROOT / "method/reading-protocol.yaml",
@@ -63,7 +63,7 @@ def main() -> int:
     manifest = documents[ROOT / "manifest.yaml"]
     if not isinstance(manifest, dict): return fail("manifest.yaml must contain a mapping")
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True: return fail("AI self-certification safeguard must remain true")
-    if manifest.get("version") != "1.14.0": return fail("Manifest version must be 1.14.0 after drafting Anabasis II.4")
+    if manifest.get("version") != "1.15.0": return fail("Manifest version must be 1.15.0 after drafting Anabasis II.5")
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS": return fail("Manifest primary reconstruction state mismatch")
     if manifest.get("next_required_unit", {}).get("id") != NEXT_PRIMARY_UNIT_ID: return fail("Manifest next primary unit mismatch")
 
@@ -96,8 +96,8 @@ def main() -> int:
     units = plan.get("reading_units", [])
     if [u.get("id") for u in units] != [*PRIMARY_UNIT_IDS, NEXT_PRIMARY_UNIT_ID]: return fail("Primary reading plan unit order mismatch")
     if [u.get("work_locator") for u in units[:10]] != [f"Anabasis I.{n}" for n in range(1, 11)]: return fail("Primary Book I locator sequence mismatch")
-    if [u.get("work_locator") for u in units[10:14]] != ["Anabasis II.1", "Anabasis II.2", "Anabasis II.3", "Anabasis II.4"]: return fail("Primary drafted Book II locator sequence mismatch")
-    if units[-1].get("work_locator") != "Anabasis II.5": return fail("Next primary locator must be Anabasis II.5")
+    if [u.get("work_locator") for u in units[10:15]] != ["Anabasis II.1", "Anabasis II.2", "Anabasis II.3", "Anabasis II.4", "Anabasis II.5"]: return fail("Primary drafted Book II locator sequence mismatch")
+    if units[-1].get("work_locator") != "Anabasis II.6": return fail("Next primary locator must be Anabasis II.6")
     if [u.get("id") for u in units if u.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"] != PRIMARY_UNIT_IDS: return fail("Primary drafted-unit order mismatch")
     if [u.get("id") for u in units if u.get("status") == "NEXT"] != [NEXT_PRIMARY_UNIT_ID]: return fail("Primary next-unit status mismatch")
     if plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED": return fail("Strauss comparison must remain deferred")
@@ -121,6 +121,14 @@ def main() -> int:
     types14 = {o.get("evidence_type") for o in unit14.get("documentary_observations", [])}
     for required in {"FALSE_REPORT_OBSERVATION", "NARRATORIAL_INFERENCE_OBSERVATION", "NARRATORIAL_JUDGMENT_OBSERVATION"}:
         if required not in types14: return fail(f"Anabasis II.4 evidence type missing: {required}")
+    unit15 = documents[PRIMARY_UNIT_PATHS["XEN-PRI-RU-015"]]
+    if unit15.get("narrative_person_and_authorial_attribution", {}).get("xenophon_as_character_present") is not True: return fail("Anabasis II.5 named Xenophon appearance must remain represented")
+    types15 = {o.get("evidence_type") for o in unit15.get("documentary_observations", [])}
+    for required in {"NARRATORIAL_STATUS_OBSERVATION", "WARNING_OBSERVATION", "VIOLENT_OUTCOME_OBSERVATION", "CONFLICTING_REPORT_OBSERVATION"}:
+        if required not in types15: return fail(f"Anabasis II.5 evidence type missing: {required}")
+    observations15 = [o.get("observation", "") for o in unit15.get("documentary_observations", [])]
+    if not any("tiara" in text and "heart" in text for text in observations15): return fail("Anabasis II.5 tiara-and-heart image must remain represented")
+    if not any("Proxenus and Menon" in text and "honor" in text for text in observations15): return fail("Anabasis II.5 conflicting report about Proxenus and Menon must remain represented")
 
     if manifest.get("primary_study", {}).get("drafted_units") != PRIMARY_UNIT_IDS: return fail("Manifest primary drafted-unit list mismatch")
     if manifest.get("secondary_study", {}).get("drafted_units") != SECONDARY_UNIT_IDS: return fail("Manifest secondary drafted-unit order mismatch")
@@ -128,7 +136,7 @@ def main() -> int:
     state = audit.get("repository_state", {})
     if state.get("primary_witness_count") != 1 or state.get("drafted_primary_units") != len(PRIMARY_UNIT_IDS) or state.get("drafted_secondary_units") != 8: return fail("Founding audit count mismatch")
     if state.get("book_one_primary_draft_complete") is not True: return fail("Founding audit must record complete Book I draft coverage")
-    if state.get("book_two_drafted_chapters") != ["II.1", "II.2", "II.3", "II.4"]: return fail("Founding audit Book II coverage mismatch")
+    if state.get("book_two_drafted_chapters") != ["II.1", "II.2", "II.3", "II.4", "II.5"]: return fail("Founding audit Book II coverage mismatch")
     if state.get("minister_adapter_derived") is not False or state.get("sanctum_registration_present") is not False: return fail("Adapter and Sanctum registration must remain absent")
 
     print("Xenophon repository validation passed")
