@@ -7,10 +7,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
 PRIMARY_ADMISSION = ROOT / "governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml"
 SECONDARY_IDS = [f"XEN-RU-{n:03d}" for n in range(1, 9)]
-PRIMARY_IDS = [f"XEN-PRI-RU-{n:03d}" for n in range(1, 21)]
+PRIMARY_IDS = [f"XEN-PRI-RU-{n:03d}" for n in range(1, 22)]
 PRIMARY_PATHS = {u: ROOT / f"studies/xenophon-anabasis-dakyns/units/{u}.yaml" for u in PRIMARY_IDS}
 PRIMARY_PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
-NEXT_ID = "XEN-PRI-RU-021"
+NEXT_ID = "XEN-PRI-RU-022"
 
 REQUIRED = [
     ROOT / "manifest.yaml", ROOT / "method/source-hierarchy.yaml", ROOT / "method/reading-protocol.yaml",
@@ -24,23 +24,29 @@ REQUIRED = [
     ROOT / "history/2026-07-30-primary-anabasis-witness-record.md",
 ]
 
+
 def load(path: Path) -> object:
     with path.open("r", encoding="utf-8") as handle:
         return yaml.safe_load(handle)
+
 
 def fail(message: str) -> int:
     print(message)
     return 1
 
+
 def types(record: dict) -> set[str]:
     return {o.get("evidence_type") for o in record.get("documentary_observations", [])}
+
 
 def texts(record: dict) -> list[str]:
     return [o.get("observation", "") for o in record.get("documentary_observations", [])]
 
+
 def require_types(record: dict, unit: str, required: set[str]) -> str | None:
     missing = sorted(required - types(record))
     return f"{unit} evidence types missing: {', '.join(missing)}" if missing else None
+
 
 def validate_unit(record: dict, unit_id: str) -> str | None:
     if record.get("unit_id") != unit_id:
@@ -68,6 +74,11 @@ def validate_unit(record: dict, unit_id: str) -> str | None:
         return f"Untyped unresolved question in {unit_id}"
     return None
 
+
+def narrative(record: dict) -> dict:
+    return record.get("narrative_person_and_authorial_attribution", {})
+
+
 def main() -> int:
     missing = [str(p.relative_to(ROOT)) for p in REQUIRED if not p.exists()]
     if missing:
@@ -78,13 +89,17 @@ def main() -> int:
     manifest = docs[ROOT / "manifest.yaml"]
     if not isinstance(manifest, dict): return fail("manifest.yaml must contain a mapping")
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True: return fail("AI self-certification safeguard must remain true")
-    if manifest.get("version") != "1.20.0": return fail("Manifest version must be 1.20.0 after drafting Anabasis III.4")
+    if manifest.get("version") != "1.21.0": return fail("Manifest version must be 1.21.0 after drafting Anabasis III.5")
     if manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS": return fail("Manifest state mismatch")
     if manifest.get("next_required_unit", {}).get("id") != NEXT_ID: return fail("Manifest next primary unit mismatch")
     pm = manifest.get("primary_study", {})
-    if pm.get("book_one_draft_complete_pending_owner_review") is not True: return fail("Book I milestone safeguard missing")
-    if pm.get("book_two_draft_complete_pending_owner_review") is not True: return fail("Book II milestone safeguard missing")
-    if pm.get("book_three_drafted_chapters") != ["III.1", "III.2", "III.3", "III.4"]: return fail("Manifest Book III coverage mismatch")
+    for book_key in [
+        "book_one_draft_complete_pending_owner_review",
+        "book_two_draft_complete_pending_owner_review",
+        "book_three_draft_complete_pending_owner_review",
+    ]:
+        if pm.get(book_key) is not True: return fail(f"Manifest milestone safeguard missing: {book_key}")
+    if pm.get("book_three_drafted_chapters") != [f"III.{n}" for n in range(1, 6)]: return fail("Manifest Book III coverage mismatch")
     if pm.get("drafted_units") != PRIMARY_IDS: return fail("Manifest primary drafted-unit list mismatch")
     if manifest.get("secondary_study", {}).get("drafted_units") != SECONDARY_IDS: return fail("Manifest secondary drafted-unit order mismatch")
 
@@ -121,9 +136,9 @@ def main() -> int:
     if [u.get("id") for u in units] != [*PRIMARY_IDS, NEXT_ID]: return fail("Primary reading plan unit order mismatch")
     if [u.get("work_locator") for u in units[:10]] != [f"Anabasis I.{n}" for n in range(1, 11)]: return fail("Book I locator sequence mismatch")
     if [u.get("work_locator") for u in units[10:16]] != [f"Anabasis II.{n}" for n in range(1, 7)]: return fail("Book II locator sequence mismatch")
-    if [u.get("work_locator") for u in units[16:20]] != ["Anabasis III.1", "Anabasis III.2", "Anabasis III.3", "Anabasis III.4"]: return fail("Book III locator sequence mismatch")
-    if units[-1].get("work_locator") != "Anabasis III.5": return fail("Next primary locator must be Anabasis III.5")
-    if units[-1].get("pdf_pages_one_based") != "67-69": return fail("Next primary page range must be 67-69")
+    if [u.get("work_locator") for u in units[16:21]] != [f"Anabasis III.{n}" for n in range(1, 6)]: return fail("Book III locator sequence mismatch")
+    if units[-1].get("work_locator") != "Anabasis IV.1": return fail("Next primary locator must be Anabasis IV.1")
+    if units[-1].get("pdf_pages_one_based") != "70-72": return fail("Next primary page range must be 70-72")
     if [u.get("id") for u in units if u.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"] != PRIMARY_IDS: return fail("Primary drafted-unit order mismatch")
     if [u.get("id") for u in units if u.get("status") == "NEXT"] != [NEXT_ID]: return fail("Primary next-unit status mismatch")
     if plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED": return fail("Strauss comparison must remain deferred")
@@ -135,64 +150,75 @@ def main() -> int:
         if error: return fail(error)
 
     u11 = docs[PRIMARY_PATHS["XEN-PRI-RU-011"]]
-    if u11.get("narrative_person_and_authorial_attribution", {}).get("xenophon_as_character_present") != "TEXTUALLY_DISPUTED": return fail("II.1 attribution uncertainty missing")
+    if narrative(u11).get("xenophon_as_character_present") != "TEXTUALLY_DISPUTED": return fail("II.1 attribution uncertainty missing")
     u12 = docs[PRIMARY_PATHS["XEN-PRI-RU-012"]]
     if "TEXTUAL_VARIANT_OBSERVATION" not in types(u12) or not any("fortune proved a better general" in t for t in texts(u12)): return fail("II.2 textual safeguards missing")
     u13 = docs[PRIMARY_PATHS["XEN-PRI-RU-013"]]
-    if u13.get("narrative_person_and_authorial_attribution", {}).get("first_person_narrator_present") is not True: return fail("II.3 first-person intervention missing")
+    if narrative(u13).get("first_person_narrator_present") is not True: return fail("II.3 first-person intervention missing")
 
-    u14 = docs[PRIMARY_PATHS["XEN-PRI-RU-014"]]; n14 = u14.get("narrative_person_and_authorial_attribution", {})
-    if n14.get("xenophon_as_character_present") is not True or "possibly Xenophon" not in n14.get("textually_disputed_or_conjectural_identification", ""): return fail("II.4 Xenophon distinction missing")
+    u14 = docs[PRIMARY_PATHS["XEN-PRI-RU-014"]]
+    if narrative(u14).get("xenophon_as_character_present") is not True or "possibly Xenophon" not in narrative(u14).get("textually_disputed_or_conjectural_identification", ""): return fail("II.4 Xenophon distinction missing")
     if error := require_types(u14, "II.4", {"FALSE_REPORT_OBSERVATION", "NARRATORIAL_INFERENCE_OBSERVATION", "NARRATORIAL_JUDGMENT_OBSERVATION"}): return fail(error)
 
     u15 = docs[PRIMARY_PATHS["XEN-PRI-RU-015"]]
-    if u15.get("narrative_person_and_authorial_attribution", {}).get("xenophon_as_character_present") is not True: return fail("II.5 Xenophon appearance missing")
+    if narrative(u15).get("xenophon_as_character_present") is not True: return fail("II.5 Xenophon appearance missing")
     if error := require_types(u15, "II.5", {"NARRATORIAL_STATUS_OBSERVATION", "WARNING_OBSERVATION", "VIOLENT_OUTCOME_OBSERVATION", "CONFLICTING_REPORT_OBSERVATION"}): return fail(error)
     if not any("tiara" in t and "heart" in t for t in texts(u15)): return fail("II.5 tiara-and-heart image missing")
 
-    u16 = docs[PRIMARY_PATHS["XEN-PRI-RU-016"]]; n16 = u16.get("narrative_person_and_authorial_attribution", {})
-    if n16.get("first_person_narrator_present") is not True or n16.get("xenophon_as_character_present") is not False: return fail("II.6 narrative distinction missing")
+    u16 = docs[PRIMARY_PATHS["XEN-PRI-RU-016"]]
+    if narrative(u16).get("first_person_narrator_present") is not True or narrative(u16).get("xenophon_as_character_present") is not False: return fail("II.6 narrative distinction missing")
     if error := require_types(u16, "II.6", {"FIRST_PERSON_JUDGMENT_OBSERVATION", "EVIDENTIARY_LIMITATION_OBSERVATION", "REPORT_STATUS_OBSERVATION"}): return fail(error)
 
-    u17 = docs[PRIMARY_PATHS["XEN-PRI-RU-017"]]; n17 = u17.get("narrative_person_and_authorial_attribution", {})
-    if not (n17.get("xenophon_as_character_present") is True and n17.get("direct_authorial_self_identification_present") is True and n17.get("first_person_narrator_present") is True): return fail("III.1 narrator-character distinction missing")
+    u17 = docs[PRIMARY_PATHS["XEN-PRI-RU-017"]]
+    if not (narrative(u17).get("xenophon_as_character_present") is True and narrative(u17).get("direct_authorial_self_identification_present") is True and narrative(u17).get("first_person_narrator_present") is True): return fail("III.1 narrator-character distinction missing")
     if error := require_types(u17, "III.1", {"EDITORIAL_PARATEXT_OBSERVATION", "FIRST_PERSON_SELF_REFERENCE_OBSERVATION", "DREAM_REPORT_OBSERVATION", "DREAM_INTERPRETATION_OBSERVATION", "ETHNIC_IDENTITY_CLAIM_OBSERVATION", "ELECTION_OUTCOME_OBSERVATION"}): return fail(error)
 
-    u18 = docs[PRIMARY_PATHS["XEN-PRI-RU-018"]]; n18 = u18.get("narrative_person_and_authorial_attribution", {})
-    if not (n18.get("xenophon_as_character_present") is True and n18.get("direct_authorial_self_identification_present") is False and n18.get("first_person_narrator_present") is False): return fail("III.2 narrator-character distinction missing")
+    u18 = docs[PRIMARY_PATHS["XEN-PRI-RU-018"]]
+    if not (narrative(u18).get("xenophon_as_character_present") is True and narrative(u18).get("direct_authorial_self_identification_present") is False and narrative(u18).get("first_person_narrator_present") is False): return fail("III.2 narrator-character distinction missing")
     if error := require_types(u18, "III.2", {"OMEN_INTERPRETATION_OBSERVATION", "COLLECTIVE_RITUAL_OBSERVATION", "PARATEXT_OBSERVATION", "COLONISATION_ARGUMENT_OBSERVATION", "VOTE_OBSERVATION", "EXPERIMENTAL_GOVERNANCE_OBSERVATION"}): return fail(error)
     if not any("ten thousand Clearchuses" in t for t in texts(u18)): return fail("III.2 Clearchuses metaphor missing")
 
-    u19 = docs[PRIMARY_PATHS["XEN-PRI-RU-019"]]; n19 = u19.get("narrative_person_and_authorial_attribution", {})
-    if not (n19.get("xenophon_as_character_present") is True and n19.get("direct_authorial_self_identification_present") is False and n19.get("first_person_narrator_present") is False): return fail("III.3 narrator-character distinction missing")
+    u19 = docs[PRIMARY_PATHS["XEN-PRI-RU-019"]]
+    if not (narrative(u19).get("xenophon_as_character_present") is True and narrative(u19).get("direct_authorial_self_identification_present") is False and narrative(u19).get("first_person_narrator_present") is False): return fail("III.3 narrator-character distinction missing")
     if error := require_types(u19, "III.3", {"EDITORIAL_PARATEXT_OBSERVATION", "NARRATORIAL_INFERENCE_OBSERVATION", "WAR_POLICY_OBSERVATION", "SELF_CORRECTION_OBSERVATION", "FORCE_CREATION_OBSERVATION", "COMMAND_APPOINTMENT_OBSERVATION"}): return fail(error)
 
-    u20 = docs[PRIMARY_PATHS["XEN-PRI-RU-020"]]; n20 = u20.get("narrative_person_and_authorial_attribution", {})
-    if not (n20.get("xenophon_as_character_present") is True and n20.get("direct_authorial_self_identification_present") is False and n20.get("first_person_narrator_present") is False): return fail("III.4 narrator-character distinction missing")
-    boundary = u20.get("bibliographic_and_witness_control", {}).get("chapter_boundary_control", "")
-    if "III.5 begins" not in boundary or "summit" not in boundary or "page 62" not in boundary: return fail("III.4 chapter boundary missing")
-    if u20.get("scope", {}).get("pdf_pages_one_based") != "61-66": return fail("III.4 shared-page witness span missing")
+    u20 = docs[PRIMARY_PATHS["XEN-PRI-RU-020"]]
+    if not (narrative(u20).get("xenophon_as_character_present") is True and narrative(u20).get("direct_authorial_self_identification_present") is False and narrative(u20).get("first_person_narrator_present") is False): return fail("III.4 narrator-character distinction missing")
     if error := require_types(u20, "III.4", {"MUTILATION_OBSERVATION", "DIVINE_CAUSATION_REPORT_OBSERVATION", "PARATEXT_OBSERVATION", "INSTITUTIONAL_ADAPTATION_OBSERVATION", "MEDICAL_INSTITUTION_OBSERVATION", "NARRATORIAL_GENERALISATION_OBSERVATION", "COLLECTIVE_COERCION_OBSERVATION", "TEXTUAL_VARIANT_OBSERVATION"}): return fail(error)
-    t20 = texts(u20)
-    for first, second, label in [
-        ("eighteen cavalry", "captures", "captured cavalry"),
-        ("mutilate", "frightening", "mutilation and terror"),
-        ("Six hundred-man lochoi", "gaps", "lochoi reform"),
-        ("Eight surgeons", "appointed", "surgeons"),
-        ("Soteridas", "equal conditions", "equality complaint"),
-        ("beat", "resumes his shield", "collective coercion"),
-    ]:
-        if not any(first in t and second in t for t in t20): return fail(f"III.4 {label} missing")
 
-    audit = docs[ROOT / "audits/founding-state.yaml"]; state = audit.get("repository_state", {})
+    u21 = docs[PRIMARY_PATHS["XEN-PRI-RU-021"]]
+    if not (narrative(u21).get("xenophon_as_character_present") is True and narrative(u21).get("direct_authorial_self_identification_present") is False and narrative(u21).get("first_person_narrator_present") is False): return fail("III.5 narrator-character distinction missing")
+    boundary21 = u21.get("bibliographic_and_witness_control", {}).get("chapter_boundary_control", "")
+    if "BOOK IV" not in boundary21 or "IV.1 begins on PDF page 70" not in boundary21: return fail("III.5 chapter boundary and paratext separation missing")
+    required21 = {
+        "POSSESSION_CLAIM_OBSERVATION", "COMMAND_DISAGREEMENT_OBSERVATION",
+        "ENGINEERING_PROPOSAL_OBSERVATION", "FEASIBILITY_JUDGMENT_OBSERVATION",
+        "COERCED_INTELLIGENCE_OBSERVATION", "AUTONOMY_REPORT_OBSERVATION",
+        "REPORTED_HISTORICAL_CLAIM_OBSERVATION", "PARATEXT_OBSERVATION",
+        "INTELLIGENCE_COMPARTMENTATION_OBSERVATION", "STRATEGIC_DECISION_OBSERVATION",
+        "SACRIFICIAL_DECISION_OBSERVATION", "EDITORIAL_PARATEXT_OBSERVATION",
+    }
+    if error := require_types(u21, "III.5", required21): return fail(error)
+    t21 = texts(u21)
+    for first, second, label in [
+        ("four thousand hoplites", "two thousand inflated skins", "Rhodian bridge proposal"),
+        ("one hundred twenty thousand", "without a survivor", "royal army report"),
+        ("Carduchian hills", "Armenia", "route decision"),
+        ("prepare equipment", "await the command", "readiness order"),
+    ]:
+        if not any(first in t and second in t for t in t21): return fail(f"III.5 {label} missing")
+
+    audit = docs[ROOT / "audits/founding-state.yaml"]
+    state = audit.get("repository_state", {})
     if state.get("primary_witness_count") != 1 or state.get("drafted_primary_units") != len(PRIMARY_IDS) or state.get("drafted_secondary_units") != 8: return fail("Founding audit counts mismatch")
-    if state.get("book_one_primary_draft_complete") is not True or state.get("book_two_primary_draft_complete") is not True or state.get("book_milestones_pending_owner_review") is not True: return fail("Founding audit book milestone safeguards missing")
+    if not all(state.get(k) is True for k in ["book_one_primary_draft_complete", "book_two_primary_draft_complete", "book_three_primary_draft_complete", "book_milestones_pending_owner_review"]): return fail("Founding audit book milestone safeguards missing")
     if state.get("book_two_drafted_chapters") != [f"II.{n}" for n in range(1, 7)]: return fail("Founding audit Book II coverage mismatch")
-    if state.get("book_three_drafted_chapters") != ["III.1", "III.2", "III.3", "III.4"]: return fail("Founding audit Book III coverage mismatch")
+    if state.get("book_three_drafted_chapters") != [f"III.{n}" for n in range(1, 6)]: return fail("Founding audit Book III coverage mismatch")
     if state.get("minister_adapter_derived") is not False or state.get("sanctum_registration_present") is not False: return fail("Adapter and Sanctum registration must remain absent")
 
     print("Xenophon repository validation passed")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
