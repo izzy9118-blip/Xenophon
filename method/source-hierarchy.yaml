@@ -1,0 +1,75 @@
+schema_version: 1.0
+record_type: source_hierarchy
+
+identity:
+  id: XEN-METHOD-SH-001
+  title: Xenophon Source Hierarchy
+  version: 1.0.0
+
+purpose: >
+  Prevent later interpretation, editorial convenience, translation fluency,
+  historical reputation, or repository inheritance from replacing the surviving
+  documentary evidence for Xenophon's works.
+
+tiers:
+  - rank: 1
+    key: primary_xenophon_original_language
+    description: >
+      Greek text witnesses and responsible critical editions of works attributed
+      to Xenophon, with apparatus and textual uncertainty preserved where available.
+    authority_rule: GOVERNING_FOR_WORDING_STRUCTURE_AND_TEXTUAL_VARIANTS
+
+  - rank: 2
+    key: primary_xenophon_translation
+    description: >
+      Complete translations of Xenophontic works, registered by translator,
+      edition, date, pagination, and relation to the Greek text.
+    authority_rule: >
+      DOCUMENTARY_ACCESS_WITNESS_SUBORDINATE_TO_GREEK_WHERE_WORDING_OR_VARIANT_MATTERS
+
+  - rank: 3
+    key: primary_external_and_contemporaneous
+    description: >
+      Ancient witnesses, historical records, inscriptions, papyri, and works by
+      other ancient authors relevant to Xenophon, his works, or their reception.
+    authority_rule: INDEPENDENT_CONTEXT_NOT_A_SUBSTITUTE_FOR_XENOPHON
+
+  - rank: 4
+    key: secondary_interpretive
+    description: >
+      Modern scholarship, philosophical commentary, biographies, introductions,
+      reviews, and interpretive essays, including Leo Strauss.
+    authority_rule: QUESTION_GENERATING_AND_COMPARATIVE_ONLY_UNTIL_PRIMARY_RECONSTRUCTION
+
+  - rank: 5
+    key: repository_synthesis
+    description: >
+      Repository findings, problem objects, comparisons, and generated summaries.
+    authority_rule: DERIVED_AND_ALWAYS_REVISABLE
+
+rules:
+  - rule_id: XEN-SH-001
+    rule: Primary Xenophontic witnesses govern secondary interpretations where the primary evidence is available.
+  - rule_id: XEN-SH-002
+    rule: A translation must not conceal a disputed Greek term, textual variant, supplied subject, or interpretive paraphrase when the point depends on it.
+  - rule_id: XEN-SH-003
+    rule: Ancient testimony about Xenophon remains independent evidence and must not be silently harmonized with Xenophon's self-presentation.
+  - rule_id: XEN-SH-004
+    rule: A later interpreter may identify a question or pattern but may not certify Xenophon's intention without primary-text support.
+  - rule_id: XEN-SH-005
+    rule: Agreement among secondary sources is not equivalent to primary evidence.
+  - rule_id: XEN-SH-006
+    rule: Absence from a source may be evidence only after scope, genre, completeness, and transmission are considered.
+  - rule_id: XEN-SH-007
+    rule: Repository synthesis may preserve tensions but may not erase them through an unrecorded harmonization.
+
+current_application:
+  highest_registered_tier: secondary_interpretive
+  limitation: >
+    The repository currently contains no admitted primary Xenophontic witness.
+    All substantive claims derived from Strauss's essay remain secondary and
+    await independent checking against Xenophon's Anabasis.
+
+termination:
+  status: ACTIVE_FOUNDATIONAL_METHOD
+  certification: NOT_CERTIFIED
