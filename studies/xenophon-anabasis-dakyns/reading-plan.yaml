@@ -3,8 +3,8 @@ study_id: XEN-STUDY-PRI-001
 source_id: XEN-SRC-PRI-001
 witness_id: XEN-WIT-PRI-001
 status: SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
-purpose: >-
-  Reconstruct Xenophon's Anabasis independently from the admitted Dakyns translation before comparison with Strauss or derivation of deeds, registers, guards, or ministerial capacities.
+purpose: Reconstruct Xenophon's Anabasis independently from the admitted Dakyns translation before comparison with
+  Strauss or derivation of deeds, registers, guards, or ministerial capacities.
 segmentation:
   rule: One reading unit per numbered chapter unless a documented exception is approved.
   book_chapter_counts:
@@ -17,66 +17,72 @@ segmentation:
     VII: 8
   total_planned_units: 51
 reading_units:
-  - id: XEN-PRI-RU-001
-    work_locator: Anabasis I.1
-    pdf_pages_one_based: 5-7
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-001.yaml
-  - id: XEN-PRI-RU-002
-    work_locator: Anabasis I.2
-    pdf_pages_one_based: 7-11
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-002.yaml
-  - id: XEN-PRI-RU-003
-    work_locator: Anabasis I.3
-    pdf_pages_one_based: 11-13
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-003.yaml
-  - id: XEN-PRI-RU-004
-    work_locator: Anabasis I.4
-    pdf_pages_one_based: 14-16
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-004.yaml
-  - id: XEN-PRI-RU-005
-    work_locator: Anabasis I.5
-    pdf_pages_one_based: 16-18
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-005.yaml
-  - id: XEN-PRI-RU-006
-    work_locator: Anabasis I.6
-    pdf_pages_one_based: 19-20
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-006.yaml
-  - id: XEN-PRI-RU-007
-    work_locator: Anabasis I.7
-    pdf_pages_one_based: 20-22
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-007.yaml
-  - id: XEN-PRI-RU-008
-    work_locator: Anabasis I.8
-    pdf_pages_one_based: 23-25
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-008.yaml
-  - id: XEN-PRI-RU-009
-    work_locator: Anabasis I.9
-    pdf_pages_one_based: 26-29
-    status: DRAFTED_PENDING_OWNER_REVIEW
-    record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-009.yaml
-  - id: XEN-PRI-RU-010
-    work_locator: Anabasis I.10
-    pdf_pages_one_based: 29-30
-    status: NEXT
-remaining_sequence: Anabasis II.1 through VII.8, strictly in chapter order.
+- id: XEN-PRI-RU-001
+  work_locator: Anabasis I.1
+  pdf_pages_one_based: 5-7
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-001.yaml
+- id: XEN-PRI-RU-002
+  work_locator: Anabasis I.2
+  pdf_pages_one_based: 7-11
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-002.yaml
+- id: XEN-PRI-RU-003
+  work_locator: Anabasis I.3
+  pdf_pages_one_based: 11-13
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-003.yaml
+- id: XEN-PRI-RU-004
+  work_locator: Anabasis I.4
+  pdf_pages_one_based: 14-16
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-004.yaml
+- id: XEN-PRI-RU-005
+  work_locator: Anabasis I.5
+  pdf_pages_one_based: 16-18
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-005.yaml
+- id: XEN-PRI-RU-006
+  work_locator: Anabasis I.6
+  pdf_pages_one_based: 19-20
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-006.yaml
+- id: XEN-PRI-RU-007
+  work_locator: Anabasis I.7
+  pdf_pages_one_based: 20-22
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-007.yaml
+- id: XEN-PRI-RU-008
+  work_locator: Anabasis I.8
+  pdf_pages_one_based: 23-25
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-008.yaml
+- id: XEN-PRI-RU-009
+  work_locator: Anabasis I.9
+  pdf_pages_one_based: 26-29
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-009.yaml
+- id: XEN-PRI-RU-010
+  work_locator: Anabasis I.10
+  pdf_pages_one_based: 29-30
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-010.yaml
+- id: XEN-PRI-RU-011
+  work_locator: Anabasis II.1
+  pdf_pages_one_based: 31-34
+  status: NEXT
+remaining_sequence: Anabasis II.2 through VII.8, strictly in chapter order.
 required_outputs_per_unit:
-  - bibliographic_and_witness_control
-  - narrative_person_and_authorial_attribution
-  - speakers_audiences_and_occasions
-  - speeches_deeds_and_outcomes
-  - sequence_repetition_omission_and_contradiction
-  - documentary_observations
-  - provisional_findings
-  - standing_unresolved_questions
-  - downstream_textual_checks
+- bibliographic_and_witness_control
+- narrative_person_and_authorial_attribution
+- speakers_audiences_and_occasions
+- speeches_deeds_and_outcomes
+- sequence_repetition_omission_and_contradiction
+- documentary_observations
+- provisional_findings
+- standing_unresolved_questions
+- downstream_textual_checks
 comparison_gate:
   strauss_comparison: DEFERRED
-  rule: Do not import Strauss's reconstruction into a primary unit; compare only after the relevant primary sequence is complete.
+  rule: Do not import Strauss's reconstruction into a primary unit; compare only after the relevant primary sequence
+    is complete.
