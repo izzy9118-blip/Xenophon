@@ -8,7 +8,7 @@ The witness is admitted as the repository's first primary translation witness. I
 
 The PDF is a 168-page Safari/iOS capture of Project Gutenberg HTML. The repository records its metadata, one-based PDF locator map, owner-supplied filename, byte size, and SHA-256 digest. The binary file is not deposited in the repository.
 
-`XEN-PRI-RU-001` through `XEN-PRI-RU-010` reconstruct *Anabasis* Book I in full as a sequential draft pending owner review. The next unit is `XEN-PRI-RU-011`, covering II.1.
+`XEN-PRI-RU-001` through `XEN-PRI-RU-010` reconstruct *Anabasis* Book I in full as a sequential draft pending owner review. `XEN-PRI-RU-011` begins Book II with chapter II.1, preserving the dispute over victory, the demand for Greek disarmament, the Theopompus/Xenophon textual variant, and Clearchus's concealed intention. The next unit is `XEN-PRI-RU-012`, covering II.2.
 
 The prior Strauss reconstruction remains preserved and owner-adopted only within secondary-source jurisdiction. It is not imported into the primary reading units.
 
