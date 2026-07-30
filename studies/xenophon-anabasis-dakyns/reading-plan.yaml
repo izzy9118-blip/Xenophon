@@ -3,7 +3,8 @@ study_id: XEN-STUDY-PRI-001
 source_id: XEN-SRC-PRI-001
 witness_id: XEN-WIT-PRI-001
 status: SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
-purpose: Reconstruct Xenophon's Anabasis independently from the admitted Dakyns translation before comparison with Strauss or derivation of deeds, registers, guards, or ministerial capacities.
+purpose: Reconstruct Xenophon's Anabasis independently from the admitted Dakyns translation before comparison with Strauss
+  or derivation of deeds, registers, guards, or ministerial capacities.
 segmentation:
   rule: One reading unit per numbered chapter unless a documented exception is approved.
   book_chapter_counts:
@@ -164,8 +165,13 @@ reading_units:
 - id: XEN-PRI-RU-030
   work_locator: Anabasis V.1
   pdf_pages_one_based: 94-95
+  status: DRAFTED_PENDING_OWNER_REVIEW
+  record: studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-030.yaml
+- id: XEN-PRI-RU-031
+  work_locator: Anabasis V.2
+  pdf_pages_one_based: 96-98
   status: NEXT
-remaining_sequence: Anabasis V.2 through VII.8, strictly in chapter order.
+remaining_sequence: Anabasis V.3 through VII.8, strictly in chapter order.
 required_outputs_per_unit:
 - bibliographic_and_witness_control
 - narrative_person_and_authorial_attribution
