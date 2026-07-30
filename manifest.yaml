@@ -5,8 +5,9 @@ minister:
   name: Xenophon
   status: FOUNDING_IN_PROGRESS
   registration_status: NOT_YET_REGISTERED_IN_SANCTUM
-version: 0.8.0
-state: FOUNDING_FRAMEWORK_PENDING_OWNER_REVIEW
+version: 1.0.0
+state: SECONDARY_FOUNDING_OWNER_ADOPTED
+owner_review: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
 governing_hub:
   repository: izzy9118-blip/Sanctum
   briefing_standard: standards/briefing-standard.md
@@ -18,10 +19,12 @@ source_policy:
 current_phase:
   id: XEN-PHASE-001
   name: Founding framework and Strauss witness registration
-  completion_status: IN_PROGRESS
+  completion_status: SECONDARY_FOUNDING_OWNER_ADOPTED
 secondary_study:
   id: XEN-STUDY-SEC-001
-  status: SEQUENTIAL_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+  status: OWNER_ADOPTED_SECONDARY_RECONSTRUCTION
+  immutable_unit_records: true
+  adoption_record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
   drafted_units:
     - XEN-RU-001
     - XEN-RU-002
@@ -32,6 +35,6 @@ secondary_study:
     - XEN-RU-007
     - XEN-RU-008
 next_required_action:
-  id: XEN-ACTION-001
-  description: Owner review of XEN-RU-001 through XEN-RU-008 and admission of a reviewed primary Xenophontic witness before primary reconstruction, deed extraction, or adapter derivation
+  id: XEN-ACTION-002
+  description: Admit and review a primary Xenophontic witness before primary reconstruction, deed extraction, speech-register derivation, or adapter construction
 artificial_intelligence_self_certification_prohibited: true
