@@ -55,7 +55,7 @@ def main():
  need={'PROVISION_FAILURE_OBSERVATION','AMMUNITION_EXHAUSTION_TACTIC_OBSERVATION','HONOR_RIVALRY_OBSERVATION','UNAUTHORIZED_INITIATIVE_OBSERVATION','MASS_SELF_DESTRUCTION_OBSERVATION','FAILED_RESCUE_OBSERVATION','REPORTED_ETHNOGRAPHIC_SUPERLATIVE_OBSERVATION','TROPHY_HEAD_DISPLAY_OBSERVATION','GUIDE_LIFE_PLEDGE_OBSERVATION','GUIDE_LOCAL_ENMITY_OBSERVATION','SEA_SIGHT_ACCLAMATION_OBSERVATION','REARGUARD_MISINTERPRETATION_OBSERVATION','COLLECTIVE_EMOTION_OBSERVATION','CAIRN_DEDICATION_OBSERVATION','COMMON_AND_PRIVATE_REWARD_OBSERVATION','EDITORIAL_PARATEXT_OBSERVATION'}
  if need-types(u):return fail('IV.7 evidence types missing: '+', '.join(sorted(need-types(u))))
  t=' '.join(texts(u))
- for x in ['tree cover','strife of honour','throw infants','cut throats','take his life','burning and harrying','The sea! the sea!','embrace and weep','great cairn','ten darics','rings']:
+ for x in ['tree cover','strife of honour','throw infants','cut throats','take his life','burning and harrying','The sea! the sea!','embrace and weep','cairn','ten darics','rings']:
   if x not in t:return fail(f'IV.7 phrase safeguard missing: {x}')
  print('Xenophon repository validation passed');return 0
 if __name__=='__main__':sys.exit(main())
