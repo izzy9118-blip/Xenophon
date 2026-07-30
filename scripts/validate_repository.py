@@ -171,6 +171,7 @@ def main() -> int:
     if not (n20.get("xenophon_as_character_present") is True and n20.get("direct_authorial_self_identification_present") is False and n20.get("first_person_narrator_present") is False): return fail("III.4 narrator-character distinction missing")
     boundary = u20.get("bibliographic_and_witness_control", {}).get("chapter_boundary_control", "")
     if "III.5 begins" not in boundary or "summit" not in boundary or "page 62" not in boundary: return fail("III.4 chapter boundary missing")
+    if u20.get("scope", {}).get("pdf_pages_one_based") != "61-66": return fail("III.4 shared-page witness span missing")
     if error := require_types(u20, "III.4", {"MUTILATION_OBSERVATION", "DIVINE_CAUSATION_REPORT_OBSERVATION", "PARATEXT_OBSERVATION", "INSTITUTIONAL_ADAPTATION_OBSERVATION", "MEDICAL_INSTITUTION_OBSERVATION", "NARRATORIAL_GENERALISATION_OBSERVATION", "COLLECTIVE_COERCION_OBSERVATION", "TEXTUAL_VARIANT_OBSERVATION"}): return fail(error)
     t20 = texts(u20)
     for first, second, label in [
