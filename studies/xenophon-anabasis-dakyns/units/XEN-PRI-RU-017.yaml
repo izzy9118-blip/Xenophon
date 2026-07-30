@@ -1,0 +1,575 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-017
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis III.1
+  pdf_pages_one_based: 49-54
+  opening_anchor: >-
+    After the generals had been seized, and the captains and soldiers who formed their escort had been killed,
+    the Hellenes lay in deep perplexity.
+  closing_anchor: >-
+    and in place of Proxenus, Xenophon the Athenian.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis III.1 plus one-based PDF page
+  source_boundary: >-
+    Narrative crisis description, translator or editor paratext, reported letters, direct speech,
+    interior monologue, dream report, dream interpretation, first-person self-reference, attributed
+    motives, collective response, identity claims, punitive proposals, and election outcomes remain
+    distinct. The Grote note and the parenthetical Book III synopsis are witness paratext and are not
+    silently assigned to Xenophon. The chapter's divine and political claims are recorded without
+    adjudicating their truth.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration that introduces Xenophon as a named character, shifts briefly
+    into explicit first-person self-reference, reports his interior monologue, and presents extended
+    direct speeches by him.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: true
+  first_person_narrator_present: true
+  observation: >-
+    Xenophon is introduced as a certain Athenian who held no military office. The account then says
+    Socrates feared Athens might look askance at "my friendship with Cyrus," linking the first-person
+    narrator to the named Xenophon within this witness. The chapter also renders Xenophon's waking
+    thoughts in first person and later records his public speeches.
+  uncertainty: >-
+    This witness does not settle the Greek textual form behind the shift from third person to "my," the
+    relation between narrator and historical author, the status of the Book III synopsis, or the Greek
+    force of fatherland, shame, dream, omen, Zeus the King, leadership, discipline, noble death, and election.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis III.1; PDF p. 50
+    speech_form: quoted_letter_report
+    speaker: Proxenus
+    audience: Xenophon
+    occasion: invitation from home to join Cyrus
+    content: Proxenus promises to introduce Xenophon to Cyrus, whom he considers worth more to him than his fatherland.
+    uncertainty: The original letter, exact wording, and force of the comparison with fatherland are not independently available.
+  - id: SAO-002
+    locator: Anabasis III.1; PDF p. 50
+    speech_form: reported_advice
+    speaker: Socrates the Athenian
+    audience: Xenophon
+    occasion: Xenophon asks whether to accept Proxenus's invitation
+    content: Socrates suspects Athens may resent association with Cyrus and advises Xenophon to consult the god at Delphi.
+    uncertainty: The basis and strength of Socrates's political suspicion are not supplied.
+  - id: SAO-003
+    locator: Anabasis III.1; PDF p. 50
+    speech_form: oracle_report
+    speaker: Apollo through the Delphic oracle
+    audience: Xenophon
+    occasion: Xenophon asks to which gods he should pray and sacrifice for a successful journey and safe return
+    content: Apollo names gods to whom Xenophon must sacrifice.
+    uncertainty: The gods named, the exact wording, and any instruction concerning prayer are omitted from this witness.
+  - id: SAO-004
+    locator: Anabasis III.1; PDF p. 50
+    speech_form: corrective_advice
+    speaker: Socrates
+    audience: Xenophon
+    occasion: Xenophon reports the oracle after returning from Delphi
+    content: Socrates blames him for asking how to make the journey rather than whether to go, but tells him to obey the answer he actually received.
+    uncertainty: The extent of blame and the relation between human decision and divine consultation remain open.
+  - id: SAO-005
+    locator: Anabasis III.1; PDF pp. 50-51
+    speech_form: reported_request_and_promise
+    speaker: Proxenus and Cyrus
+    audience: Xenophon
+    occasion: Xenophon reaches Sardis before the inland march
+    content: Both press Xenophon to remain; Cyrus promises to send him home when the campaign, understood as directed against the Pisidians, is finished.
+    uncertainty: The promise's precise terms and Cyrus's knowledge of Xenophon's misunderstanding are not stated.
+  - id: SAO-006
+    locator: Anabasis III.1; PDF pp. 51-52
+    speech_form: extended_direct_exhortation
+    speaker: Xenophon
+    audience: officers formerly under Proxenus
+    occasion: after the dream and Xenophon's decision that waiting is self-betrayal
+    content: >-
+      Xenophon predicts extreme punishment if the Greeks submit, reinterprets the truce as a condition more fearful than war,
+      presents Persian goods as prizes after the enemy's breach, invokes the gods as judges of oath keeping, claims comparative
+      bodily and spiritual advantages for the Greeks, and offers either to follow or to lead.
+    uncertainty: The speech combines tactical argument, moral claim, theology, ethnographic comparison, and material incentive.
+  - id: SAO-007
+    locator: Anabasis III.1; PDF p. 52
+    speech_form: dissenting_policy_claim
+    speaker: Apollonides
+    audience: Xenophon and Proxenus's officers
+    occasion: the officers ask Xenophon to lead
+    content: Apollonides argues that safety can be obtained only by appealing to the king and begins to emphasize the difficulties of resistance.
+    uncertainty: His full argument is interrupted and not preserved.
+  - id: SAO-008
+    locator: Anabasis III.1; PDF p. 52
+    speech_form: direct_rebuttal_and_punitive_proposal
+    speaker: Xenophon
+    audience: the officers and Apollonides
+    occasion: response to the appeal-for-mercy proposal
+    content: >-
+      Xenophon contrasts the king's retreat from his disarmament demand with the seizure of unarmed commanders under truce,
+      rejects renewed persuasion, proposes stripping Apollonides of his captaincy, and recommends assigning him baggage labor.
+    uncertainty: The procedural authority for demotion and punishment is not stated.
+  - id: SAO-009
+    locator: Anabasis III.1; PDF p. 53
+    speech_form: identity_claim_and_exclusionary_support
+    speaker: Agasias the Stymphalian
+    audience: assembled officers
+    occasion: Xenophon calls Apollonides a disgrace to Hellas
+    content: Agasias claims Apollonides is connected with neither Boeotia nor Hellas because his ears are pierced like a Lydian's.
+    uncertainty: The claim rests on appearance and is not independently verified; its ethnic and civic criteria remain unresolved.
+  - id: SAO-010
+    locator: Anabasis III.1; PDF p. 53
+    speech_form: procedural_request
+    speaker: Hieronymous the Eleian
+    audience: roughly one hundred assembled generals and officers
+    occasion: midnight council after vacancies are represented by surviving ranks
+    content: He states that the crisis required assembly and asks Xenophon to repeat his earlier argument.
+    uncertainty: No formal voting rule for convening the council is supplied.
+  - id: SAO-011
+    locator: Anabasis III.1; PDF pp. 53-54
+    speech_form: extended_direct_leadership_speech
+    speaker: Xenophon
+    audience: assembled generals and officers
+    occasion: midnight command council
+    content: >-
+      Xenophon urges the officers to prevent Persian domination, model courage for the soldiers, accept that rank requires thought
+      and toil for subordinates, replace the lost commanders, restore discipline, turn attention from anticipated suffering to action,
+      and seek noble conduct rather than life at any price.
+    uncertainty: Claims about morale, victory, noble death, longevity, and divine aid are exhortative and not independently demonstrated.
+  - id: SAO-012
+    locator: Anabasis III.1; PDF p. 54
+    speech_form: public_praise_and_executive_direction
+    speaker: Cheirisophus
+    audience: Xenophon and the assembled officers
+    occasion: conclusion of Xenophon's second speech
+    content: Cheirisophus praises Xenophon's words and conduct as a public blessing, orders immediate replacement elections, and calls for a later general assembly with Tolmides as herald.
+    uncertainty: The extent of Cheirisophus's formal authority over the election process is not stated.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis III.1; PDF pp. 49-50
+    actor: the Greek army
+    deed: >-
+      After the command seizure, the Greeks confront hostile cities, absent markets and guides, impassable rivers, no cavalry,
+      Asiatic betrayal, and extreme distance from home; many neither eat, light fires, enter camp, nor sleep.
+    outcome: Military dislocation becomes a collective crisis of morale, kinship, and political direction.
+    uncertainty: The chapter does not quantify how many soldiers behaved in each way.
+  - id: SDO-002
+    locator: Anabasis III.1; PDF pp. 50-51
+    actor: Xenophon, Proxenus, Socrates, Apollo, and Cyrus
+    deed: >-
+      Xenophon accepts Proxenus's invitation after consulting Socrates and Delphi, sacrifices as instructed, joins Cyrus at Sardis,
+      remains under the belief that the campaign concerns Pisidia, and continues despite apprehension and shame.
+    outcome: A non-officer enters the expedition through friendship, religious consultation, misunderstanding, and social pressure.
+    uncertainty: The omitted gods and complete deliberative process prevent full reconstruction.
+  - id: SDO-003
+    locator: Anabasis III.1; PDF p. 51
+    actor: Xenophon
+    deed: He dreams that Zeus's lightning strikes his father's house and sets it ablaze, then interprets the vision as partly favorable and partly threatening.
+    outcome: The dream precedes an abrupt transition from sleepless distress to deliberate initiative.
+    uncertainty: The narrator postpones the dream's full meaning to later events rather than resolving it here.
+  - id: SDO-004
+    locator: Anabasis III.1; PDF pp. 51-52
+    actor: Xenophon and Proxenus's officers
+    deed: Xenophon rises, summons the officers, diagnoses passive waiting as self-betrayal, and gives his first leadership speech.
+    outcome: All officers except Apollonides ask him to place himself at their head.
+    uncertainty: The exact office or authority implied by the request is not defined.
+  - id: SDO-005
+    locator: Anabasis III.1; PDF pp. 52-53
+    actor: Xenophon, Agasias, Apollonides, and the officers
+    deed: >-
+      Xenophon interrupts Apollonides, proposes his demotion and burden carrying, while Agasias denies his Greek identity from his pierced ears.
+    outcome: Apollonides is banished from the group before the broader command council is convened.
+    uncertainty: No hearing, vote, or recorded defense beyond his interrupted policy claim appears.
+  - id: SDO-006
+    locator: Anabasis III.1; PDF p. 53
+    actor: surviving generals, deputy commanders, captains, and Proxenus's officers
+    deed: They visit the ranks and summon the highest surviving officer from each affected command.
+    outcome: Roughly one hundred generals and officers assemble near midnight before the place of arms.
+    uncertainty: The chapter does not give a complete roster or formal representation rule.
+  - id: SDO-007
+    locator: Anabasis III.1; PDF pp. 53-54
+    actor: Hieronymous, Xenophon, and the command council
+    deed: Hieronymous asks Xenophon to repeat his argument; Xenophon links leadership, discipline, morale, action, and noble risk.
+    outcome: The crisis is reframed from passive suffering to the immediate restoration of command and example.
+    uncertainty: The degree of prior coordination among Xenophon, Hieronymous, and Cheirisophus is unstated.
+  - id: SDO-008
+    locator: Anabasis III.1; PDF p. 54
+    actor: Cheirisophus and the officers
+    deed: Cheirisophus endorses Xenophon, directs immediate elections, and schedules a general assembly.
+    outcome: Persuasive initiative is converted into an institutional sequence rather than remaining personal command.
+    uncertainty: The applicable military constitutional custom is not supplied.
+  - id: SDO-009
+    locator: Anabasis III.1; PDF p. 54
+    actor: the Greek command body
+    deed: >-
+      Timasion replaces Clearchus, Xanthicles replaces Socrates, Cleanor replaces Agias,
+      Philesius replaces Menon, and Xenophon replaces Proxenus.
+    outcome: Five command vacancies are filled before dawn, including Xenophon's first stated generalship.
+    uncertainty: The vote counts, electorate by contingent, and acceptance procedures are not narrated.
+  - id: SDO-010
+    locator: Anabasis III.1-III.2 boundary; PDF p. 54
+    actor: newly constituted Greek command
+    deed: The chapter closes with the elections, while III.2 opens at first light with plans for an advance guard and a general assembly.
+    outcome: Nighttime refounding of command precedes public military reorganization.
+    uncertainty: The boundary is clear in the witness, but the transition's constitutional significance remains interpretive.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Collective despair after the seizure of the command
+    - Retrospective introduction of Xenophon and Proxenus's invitation
+    - Consultation with Socrates and Delphi
+    - Joining Cyrus under the Pisidian pretext
+    - Dream of lightning, house, and encircling fire
+    - Waking self-interrogation and decision to act
+    - First speech to Proxenus's officers
+    - Apollonides's dissent, rebuttal, identity claim, and banishment
+    - Midnight assembly of surviving command ranks
+    - Xenophon's second speech on leadership, discipline, and morale
+    - Cheirisophus's endorsement and election directive
+    - Replacement of five generals, including Xenophon
+  repetitions:
+    - Waiting, passivity, and imagined suffering are repeatedly opposed to present action.
+    - Oaths and divine witnesses recur as both restraints under truce and warrants for war after breach.
+    - Fear appears as despair, royal terror, fear of submission, and a stimulus that leadership must redirect.
+    - Xenophon moves repeatedly from private reflection to small-group speech and then to institutional action.
+    - Leadership is linked to example, labor for subordinates, discipline, and willingness to follow as well as lead.
+  omissions:
+    - The gods named by Apollo are omitted.
+    - The exact contents of Proxenus's letter and Cyrus's promise are unavailable.
+    - Clearchus's prior knowledge of the true campaign is asserted but not explained here.
+    - The dream's full meaning is deferred to subsequent events.
+    - Apollonides's full case and the formal ground for banishment are absent.
+    - The names of most of the roughly one hundred officers are not given.
+    - Election procedures, vote counts, and contingent rules are not recorded.
+  tensions:
+    - Xenophon is introduced as holding no office yet becomes the central initiator before formal election.
+    - Socrates recommends consultation, but Xenophon has already settled the decisive question of going.
+    - The truce once restrains acquisition and later becomes more frightening than war in Xenophon's account.
+    - Xenophon offers to follow or lead, but his treatment of Apollonides sharply limits tolerated dissent.
+    - Greek identity is invoked as a moral standard and then denied to a dissenter through bodily appearance.
+    - Xenophon condemns royal terror while using fear of torture and dishonor to mobilize resistance.
+    - The speech praises divine judgment while also emphasizing Persian goods as prizes of victory.
+    - Leadership arises through extraordinary initiative but is regularized through replacement elections.
+documentary_observations:
+  - id: OBS-001
+    locator: Anabasis III.1; PDF p. 49
+    evidence_type: EDITORIAL_PARATEXT_OBSERVATION
+    observation: The Book III heading is followed by a parenthetical synopsis of Books I-II before chapter I begins.
+    uncertainty: The synopsis's authorship and relation to Xenophon's text are not established in this witness.
+  - id: OBS-002
+    locator: Anabasis III.1; PDF pp. 49-50
+    evidence_type: NARRATIVE_CRISIS_OBSERVATION
+    observation: The Greeks lack markets, guides, cavalry, a clear route, and confidence after the command seizure.
+    uncertainty: The route and enemy distribution are described from the army's perspective.
+  - id: OBS-003
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: COLLECTIVE_MORALE_OBSERVATION
+    observation: Few eat or light fires, many remain outside camp, and homesickness prevents sleep.
+    uncertainty: The proportions are qualitative rather than numerical.
+  - id: OBS-004
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: CHARACTER_ENTRY_OBSERVATION
+    observation: Xenophon is introduced as an Athenian who joined neither as general, officer, nor private soldier.
+    uncertainty: His exact legal or logistical status in the host is not stated.
+  - id: OBS-005
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: ATTRIBUTED_SPEECH_OBSERVATION
+    observation: Proxenus is quoted as valuing Cyrus above his fatherland.
+    uncertainty: The quotation is embedded in a reported letter rather than preserved independently.
+  - id: OBS-006
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: EDITORIAL_NOTE_OBSERVATION
+    observation: Dakyns inserts a note citing Grote and describing Xenophon's emergence as protagonist in Homeric terms.
+    uncertainty: This later commentary is not primary Xenophontic evidence.
+  - id: OBS-007
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: FIRST_PERSON_SELF_REFERENCE_OBSERVATION
+    observation: The narrative refers to Athenian concern about "my friendship with Cyrus" while discussing Xenophon in the third person.
+    uncertainty: The Greek text and manuscript basis for the person shift require checking.
+  - id: OBS-008
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: POLITICAL_CONTEXT_OBSERVATION
+    observation: Socrates's concern is tied to Cyrus's remembered cooperation with Sparta against Athens.
+    uncertainty: No Athenian decree, accusation, or contemporary response is cited here.
+  - id: OBS-009
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: DELPHIC_PROCEDURE_OBSERVATION
+    observation: Xenophon asks which gods to address for successful travel and safe return, not whether he should travel.
+    uncertainty: The full ritual formula and named gods are omitted.
+  - id: OBS-010
+    locator: Anabasis III.1; PDF p. 50
+    evidence_type: SOCRATIC_CORRECTION_OBSERVATION
+    observation: Socrates distinguishes the prior decision whether to go from the subsequent question how to go successfully.
+    uncertainty: The chapter does not state whether Xenophon accepted the criticism beyond obeying the oracle.
+  - id: OBS-011
+    locator: Anabasis III.1; PDF pp. 50-51
+    evidence_type: DECEPTION_STATUS_OBSERVATION
+    observation: Xenophon says he was deceived about the target, but not by Proxenus, who was also ignorant; Clearchus is excluded from that ignorance.
+    uncertainty: Cyrus's precise representations and Clearchus's knowledge source are unstated.
+  - id: OBS-012
+    locator: Anabasis III.1; PDF p. 51
+    evidence_type: COLLECTIVE_SHAME_OBSERVATION
+    observation: The majority continue despite apprehension through shame before one another and Cyrus.
+    uncertainty: The relation between shame, coercion, loyalty, and voluntary choice is unresolved.
+  - id: OBS-013
+    locator: Anabasis III.1; PDF p. 51
+    evidence_type: DREAM_REPORT_OBSERVATION
+    observation: Xenophon dreams of thunder, lightning, a bolt striking his father's house, and fire engulfing it.
+    uncertainty: The dream is available only through the narrator's report.
+  - id: OBS-014
+    locator: Anabasis III.1; PDF p. 51
+    evidence_type: DREAM_INTERPRETATION_OBSERVATION
+    observation: Xenophon reads the great light from Zeus as partly favorable and Zeus the King with encircling fire as threatening.
+    uncertainty: The interpretation is his own and remains ambiguous within the chapter.
+  - id: OBS-015
+    locator: Anabasis III.1; PDF p. 51
+    evidence_type: DEFERRED_MEANING_OBSERVATION
+    observation: The narrator says the dream's full meaning must be discovered from what happened afterward.
+    uncertainty: III.1 does not itself provide the promised full resolution.
+  - id: OBS-016
+    locator: Anabasis III.1; PDF p. 51
+    evidence_type: INTERIOR_MONOLOGUE_OBSERVATION
+    observation: Xenophon asks why he is lying still and whether he is waiting for a general, another city, or greater age.
+    uncertainty: The literary form and degree of verbatim preservation cannot be established from the translation.
+  - id: OBS-017
+    locator: Anabasis III.1; PDF p. 51
+    evidence_type: INITIATIVE_OBSERVATION
+    observation: Xenophon treats failure to act today as betrayal of himself to the enemy.
+    uncertainty: The principle is framed under extreme crisis and may not be general without further evidence.
+  - id: OBS-018
+    locator: Anabasis III.1; PDF pp. 51-52
+    evidence_type: THREAT_INFERENCE_OBSERVATION
+    observation: Xenophon infers from Artaxerxes's treatment of Cyrus that captured Greeks will suffer exemplary torture and dishonor.
+    uncertainty: The prediction concerns future royal conduct and is not direct observation.
+  - id: OBS-019
+    locator: Anabasis III.1; PDF p. 52
+    evidence_type: TRUCE_REVALUATION_OBSERVATION
+    observation: Xenophon says he sometimes feared the truce more than the present war because oaths restricted acquisition while funds diminished.
+    uncertainty: The claim is rhetorical and reflects his personal retrospective assessment.
+  - id: OBS-020
+    locator: Anabasis III.1; PDF p. 52
+    evidence_type: MATERIAL_INCENTIVE_OBSERVATION
+    observation: Persian provisions, dependants, livestock, gold, and clothing are presented as prizes for the better combatants.
+    uncertainty: Ownership, civilian status, and limits on seizure are not addressed in the speech.
+  - id: OBS-021
+    locator: Anabasis III.1; PDF p. 52
+    evidence_type: THEOLOGICAL_CLAIM_OBSERVATION
+    observation: Xenophon presents the gods as judges who should favor Greek oath keeping over Persian perjury.
+    uncertainty: Divine favor is asserted, not demonstrated.
+  - id: OBS-022
+    locator: Anabasis III.1; PDF p. 52
+    evidence_type: COMPARATIVE_CAPACITY_CLAIM_OBSERVATION
+    observation: Xenophon claims Greek bodies endure cold, heat, and labor better and Greek souls are braver.
+    uncertainty: The comparison is exhortative and lacks an evidentiary survey.
+  - id: OBS-023
+    locator: Anabasis III.1; PDF p. 52
+    evidence_type: LEADERSHIP_OFFER_OBSERVATION
+    observation: Xenophon offers to follow if others begin or to lead if ordered, denying age as an excuse.
+    uncertainty: The request does not yet confer a defined office.
+  - id: OBS-024
+    locator: Anabasis III.1; PDF p. 52
+    evidence_type: DISSENT_OBSERVATION
+    observation: Apollonides alone resists the call for Xenophon to lead and proposes an appeal to Artaxerxes.
+    uncertainty: His argument is cut short before completion.
+  - id: OBS-025
+    locator: Anabasis III.1; PDF pp. 52-53
+    evidence_type: HISTORICAL_ARGUMENT_OBSERVATION
+    observation: Xenophon uses the king's reaction to armed refusal and the seizure of unarmed leaders as opposed cases against renewed submission.
+    uncertainty: His description of the captured leaders' present suffering is not independently confirmed within III.1.
+  - id: OBS-026
+    locator: Anabasis III.1; PDF p. 53
+    evidence_type: PUNITIVE_PROPOSAL_OBSERVATION
+    observation: Xenophon proposes removal of Apollonides from captaincy and assignment to baggage labor.
+    uncertainty: No formal charge, trial, or vote is recorded.
+  - id: OBS-027
+    locator: Anabasis III.1; PDF p. 53
+    evidence_type: ETHNIC_IDENTITY_CLAIM_OBSERVATION
+    observation: Agasias denies Apollonides's connection to Boeotia or Hellas because his ears are pierced like a Lydian's.
+    uncertainty: The inference from bodily custom to civic identity is unsupported beyond Agasias's assertion.
+  - id: OBS-028
+    locator: Anabasis III.1; PDF p. 53
+    evidence_type: EXCLUSION_OUTCOME_OBSERVATION
+    observation: Apollonides is banished after the identity claim.
+    uncertainty: The decision maker, procedure, and scope of banishment are not described.
+  - id: OBS-029
+    locator: Anabasis III.1; PDF p. 53
+    evidence_type: REPRESENTATIVE_ASSEMBLY_OBSERVATION
+    observation: Each depleted command sends the highest surviving rank available, producing a council of about one hundred.
+    uncertainty: The representation principle is practical rather than formally stated.
+  - id: OBS-030
+    locator: Anabasis III.1; PDF pp. 53-54
+    evidence_type: LEADERSHIP_PRINCIPLE_OBSERVATION
+    observation: Xenophon states that rank requires leaders to think and toil for the soldiers and that no good or noble action occurs without leaders.
+    uncertainty: The universal formulation occurs in an emergency exhortation.
+  - id: OBS-031
+    locator: Anabasis III.1; PDF pp. 53-54
+    evidence_type: DISCIPLINE_CLAIM_OBSERVATION
+    observation: Discipline is called saving, while its absence is said to have destroyed many.
+    uncertainty: No examples are named in this passage.
+  - id: OBS-032
+    locator: Anabasis III.1; PDF p. 54
+    evidence_type: MORALE_CAUSATION_OBSERVATION
+    observation: Xenophon argues that victory depends less on numbers or strength than on divinely aided stoutness of heart.
+    uncertainty: The causal claim is exhortative and qualified by heaven.
+  - id: OBS-033
+    locator: Anabasis III.1; PDF p. 54
+    evidence_type: NOBLE_DEATH_CLAIM_OBSERVATION
+    observation: Xenophon says those who seek safety at all costs often die dishonorably, while those striving to die nobly more often live long or happily.
+    uncertainty: The generalization rests on the speaker's stated observation without a cited sample.
+  - id: OBS-034
+    locator: Anabasis III.1; PDF p. 54
+    evidence_type: PUBLIC_PRAISE_OBSERVATION
+    observation: Cheirisophus praises Xenophon's words and conduct and calls the multiplication of such men a public blessing.
+    uncertainty: Praise does not by itself define Xenophon's constitutional authority.
+  - id: OBS-035
+    locator: Anabasis III.1; PDF p. 54
+    evidence_type: ELECTION_OUTCOME_OBSERVATION
+    observation: Five replacement generals are chosen, and Xenophon the Athenian replaces Proxenus.
+    uncertainty: Voting details and contingent electorates are not recorded.
+  - id: OBS-036
+    locator: Anabasis III.1-III.2 boundary; PDF p. 54
+    evidence_type: CHAPTER_BOUNDARY_OBSERVATION
+    observation: III.1 ends with the elections; III.2 begins at dawn with an advance guard and general assembly.
+    uncertainty: The sequencing is textually clear, while its larger political meaning remains open.
+provisional_findings:
+  - id: PF-001
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Book III begins by moving from collective leaderlessness to the retrospective introduction and emergence of Xenophon.
+    basis: OBS-002, OBS-003, OBS-004, OBS-035
+    limitation: Narrative centrality does not establish prior formal supremacy.
+  - id: PF-002
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Xenophon's initiative precedes office; election regularizes rather than creates his practical leadership.
+    basis: OBS-016, OBS-017, OBS-023, OBS-034, OBS-035
+    limitation: The chapter does not define the legal relation between initiative and election.
+  - id: PF-003
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Socrates's correction distinguishes deciding whether to act from seeking divine guidance concerning how to act.
+    basis: OBS-009, OBS-010
+    limitation: The Greek wording and omitted oracle prevent a complete account of the theological distinction.
+  - id: PF-004
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The dream awakens and frames responsibility but does not supply the concrete military program that follows.
+    basis: OBS-013, OBS-014, OBS-015, OBS-016
+    limitation: Later chapters may alter the apparent fulfillment of the dream.
+  - id: PF-005
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Xenophon transforms the breached truce from lost protection into moral, theological, and material grounds for resistance.
+    basis: OBS-019, OBS-020, OBS-021, OBS-025
+    limitation: The transformation occurs in persuasive speech and does not settle ownership or divine favor.
+  - id: PF-006
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Leadership is presented as service through thought, toil, example, discipline, and readiness either to follow or lead.
+    basis: OBS-023, OBS-030, OBS-031, OBS-032
+    limitation: Xenophon's punitive treatment of dissent complicates this account.
+  - id: PF-007
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Apollonides's exclusion reveals a sharp boundary between emergency deliberation and policies treated as disloyal or un-Greek.
+    basis: OBS-024, OBS-026, OBS-027, OBS-028
+    limitation: The chapter supplies neither full defense nor formal adjudication.
+  - id: PF-008
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Xenophon treats morale as politically producible through the visible conduct and speech of officers.
+    basis: OBS-003, OBS-030, OBS-032, OBS-034
+    limitation: The later performance of the reorganized army remains to be tested.
+  - id: PF-009
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The command is restored through a layered process from private reflection to officer council, broader representation, endorsement, and election.
+    basis: OBS-016, OBS-023, OBS-029, OBS-034, OBS-035
+    limitation: The process is incompletely documented and occurs under extraordinary danger.
+  - id: PF-010
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The chapter binds political refounding to unresolved divine signs, inherited civic identities, and institutional action rather than to any single source of authority.
+    basis: OBS-007, OBS-013, OBS-021, OBS-027, OBS-035
+    limitation: No Greek witness has yet been admitted and later chapters may revise these relations.
+standing_unresolved_questions:
+  - id: UQ-001
+    evidence_type: UNRESOLVED_QUESTION
+    question: Is the parenthetical Book III synopsis part of Dakyns's editorial apparatus or translated ancient paratext?
+  - id: UQ-002
+    evidence_type: UNRESOLVED_QUESTION
+    question: What Greek expression underlies Proxenus's claim that Cyrus is worth more than his fatherland?
+  - id: UQ-003
+    evidence_type: UNRESOLVED_QUESTION
+    question: What is the textual and manuscript basis for the shift to "my friendship with Cyrus"?
+  - id: UQ-004
+    evidence_type: UNRESOLVED_QUESTION
+    question: How precisely did Cyrus's Spartan alliance affect the Athenian political risk Socrates perceived?
+  - id: UQ-005
+    evidence_type: UNRESOLVED_QUESTION
+    question: Which gods did Apollo name, and why does the witness omit them?
+  - id: UQ-006
+    evidence_type: UNRESOLVED_QUESTION
+    question: What distinction does the Greek text draw between asking whether to go and asking how to go nobly or safely?
+  - id: UQ-007
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why is Proxenus exonerated from deception while Clearchus is expressly separated from the ignorant Greeks?
+  - id: UQ-008
+    evidence_type: UNRESOLVED_QUESTION
+    question: What political and moral force does shame before one another and Cyrus have in continuing the march?
+  - id: UQ-009
+    evidence_type: UNRESOLVED_QUESTION
+    question: What Greek terms describe the dream, great light, Zeus the King, and the encircling fire?
+  - id: UQ-010
+    evidence_type: UNRESOLVED_QUESTION
+    question: Which later events are intended to disclose the dream's full meaning?
+  - id: UQ-011
+    evidence_type: UNRESOLVED_QUESTION
+    question: How does the literary rendering of Xenophon's interior monologue relate to historical recollection?
+  - id: UQ-012
+    evidence_type: UNRESOLVED_QUESTION
+    question: What evidence supports Xenophon's prediction of exemplary torture by Artaxerxes?
+  - id: UQ-013
+    evidence_type: UNRESOLVED_QUESTION
+    question: How should the claim that truce was more fearful than war be related to oath, scarcity, and intended plunder?
+  - id: UQ-014
+    evidence_type: UNRESOLVED_QUESTION
+    question: What Greek terms support the comparison of Greek bodies and souls with Persian vulnerability?
+  - id: UQ-015
+    evidence_type: UNRESOLVED_QUESTION
+    question: What was the full content of Apollonides's interrupted proposal for appeal to the king?
+  - id: UQ-016
+    evidence_type: UNRESOLVED_QUESTION
+    question: What office, jurisdiction, and procedure permitted Apollonides's demotion proposal and banishment?
+  - id: UQ-017
+    evidence_type: UNRESOLVED_QUESTION
+    question: What relation did pierced ears have to Lydian, Boeotian, or Greek identity in the chapter's context?
+  - id: UQ-018
+    evidence_type: UNRESOLVED_QUESTION
+    question: What formal election rules governed the five replacement commands and Xenophon's selection?
+  - id: UQ-019
+    evidence_type: UNRESOLVED_QUESTION
+    question: What is the Greek force of the claims that leaders must think and toil for soldiers and that discipline is saving?
+  - id: UQ-020
+    evidence_type: UNRESOLVED_QUESTION
+    question: How do the chapter's claims about noble death and longer life function as observation, paradox, and exhortation?
+downstream_textual_checks:
+  - id: CHECK-001
+    task: Consult an original-language Greek witness for III.1 before making philological claims.
+  - id: CHECK-002
+    task: Compare multiple translations for the fatherland statement, the first-person shift, the dream, and the election language.
+  - id: CHECK-003
+    task: Determine the textual status of the Book III synopsis and Dakyns's Grote note.
+  - id: CHECK-004
+    task: Identify the omitted Delphic gods and distinguish prayer from sacrifice in the Greek text.
+  - id: CHECK-005
+    task: Trace the later narrative events explicitly or implicitly connected with the dream.
+  - id: CHECK-006
+    task: Check the direct and indirect speech boundaries in Xenophon's waking reflections and two officer speeches.
+  - id: CHECK-007
+    task: Verify the wording and manuscript history of the phrase translated as "my friendship with Cyrus."
+  - id: CHECK-008
+    task: Investigate Apollonides's dialect, pierced ears, identity claim, and banishment without treating the chapter's polemic as settled ethnography.
+  - id: CHECK-009
+    task: Reconstruct the contingent and constitutional basis of the five replacement elections from later and parallel evidence.
+  - id: CHECK-010
+    task: Track whether Xenophon's service-centered account of leadership is confirmed or contradicted by later deeds.
+  - id: CHECK-011
+    task: Preserve the distinction between divine-sign report, human interpretation, persuasive theology, and narrated outcome.
+  - id: CHECK-012
+    task: Keep all comparison with Strauss deferred until the relevant primary sequence has been independently completed.
+secondary_comparison_status: DEFERRED
