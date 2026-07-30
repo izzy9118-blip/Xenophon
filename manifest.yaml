@@ -19,7 +19,12 @@ current_phase:
   id: XEN-PHASE-001
   name: Founding framework and Strauss witness registration
   completion_status: IN_PROGRESS
+secondary_study:
+  id: XEN-STUDY-SEC-001
+  status: SEQUENTIAL_READING_IN_PROGRESS_PENDING_OWNER_REVIEW
+  drafted_units:
+    - XEN-RU-001
 next_required_unit:
-  id: XEN-RU-001
-  description: Read and reconstruct Strauss's "Xenophon's Anabasis" in sequence without adopting it as repository doctrine
+  id: XEN-RU-002
+  description: Continue Strauss's "Xenophon's Anabasis" at printed pages 109-112 without promoting secondary claims to Xenophon's teaching
 artificial_intelligence_self_certification_prohibited: true
