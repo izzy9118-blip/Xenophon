@@ -1,0 +1,399 @@
+schema_version: 1.0
+unit_id: XEN-RU-007
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 129-132
+  pdf_pages_one_based: 133-136
+  opening_anchor: >-
+    thought that if they were to choose a single commander for the whole army, they would achieve their goal best because of the obvious advantages of monarchic rule
+  closing_anchor: >-
+    Even the enemies tried to establish friendly relations with the new city which was alleged to be founded by Xenophon
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 129; PDF p. 133
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The captains tell Xenophon that the army desires one commander for the whole force because monarchy promises greater secrecy, dispatch, and unity of purpose.
+    uncertainty: >-
+      The argument identifies advantages for a particular military crisis and does not establish monarchy as the best regime without qualification.
+  - id: OBS-002
+    locator: printed p. 129; PDF p. 133
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss presents Xenophon as not wholly averse to sole and absolute rule because it could enlarge his honor among friends, his name at Athens, and his ability to benefit the army.
+    uncertainty: >-
+      These motives are reconstructed by Strauss from Xenophon's account and must not be treated as a direct confession without primary-text verification.
+  - id: OBS-003
+    locator: printed p. 129; PDF p. 133
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon's attraction to monarchy is checked by uncertainty about the future and by fear that failure from an exalted position could destroy the reputation already gained.
+    uncertainty: >-
+      The passage establishes hesitation between honor and risk but does not disclose the relative weight of prudence, ambition, and concern for the army.
+  - id: OBS-004
+    locator: printed p. 129; PDF p. 133
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Unable to decide, Xenophon sacrifices two victims to Zeus the King and receives a clear indication not to seek the office or accept it if elected.
+    uncertainty: >-
+      Strauss reports the indication as distinct, while the underlying sacrificial signs and their interpretation remain unexamined in a primary witness.
+  - id: OBS-005
+    locator: printed p. 129; PDF p. 133
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss says the related oracle was less clearly unfavorable and emphasizes that Xenophon does not state the divine prohibition directly but first surveys earlier omens concerning his fate.
+    uncertainty: >-
+      The relation between oracle, sacrifice, and retrospective narration remains interpretively open.
+  - id: OBS-006
+    locator: printed p. 129; PDF p. 133
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The review of omens links the failed city plan and the accusation against Xenophon back to the ambiguous dream after the generals' murder and to the eagle omen at the beginning of his departure from Ephesus.
+    uncertainty: >-
+      Strauss says the later experiences may throw new light on the old signs; the signs are therefore reinterpreted through outcomes rather than presented as self-explanatory predictions.
+  - id: OBS-007
+    locator: printed p. 129; PDF p. 133
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The sitting eagle on Xenophon's right is interpreted as indicating great fame joined to great toil, while not promising great wealth because a sitting eagle is less able to seize what it wants.
+    uncertainty: >-
+      The meaning comes through a soothsayer's explanation and must be distinguished from the occurrence itself.
+  - id: OBS-008
+    locator: printed pp. 129-130; PDF pp. 133-134
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss asks whether election to the army's monarchy rather than foundation of a Greek city might be the true peak of Xenophon's ascent, then questions whether monarchy can equal foundation in grandeur and sacredness.
+    uncertainty: >-
+      The comparison remains interrogative and does not settle a final hierarchy between founding and commanding.
+  - id: OBS-009
+    locator: printed p. 130; PDF p. 134
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon initially keeps the divine prohibition private and begins his public speech politically because he must guide the army toward another choice for which he has no oracle.
+    uncertainty: >-
+      Strauss infers the reason for the sequence; the primary speech must be checked for the exact order and wording.
+  - id: OBS-010
+    locator: printed p. 130; PDF p. 134
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon decides that electing an Athenian while an available Spartan is present would be inexpedient for both army and candidate because Sparta will not permit leadership to pass to a non-Spartan.
+    uncertainty: >-
+      The judgment concerns the political circumstances of Spartan hegemony and does not amount to an endorsement of Spartan superiority.
+  - id: OBS-011
+    locator: printed p. 130; PDF p. 134
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon assures the soldiers that he will not rebel if another is elected because revolt against rulers during war is revolt against one's own safety.
+    uncertainty: >-
+      The maxim concerns command in wartime and does not by itself define the limits of obedience to unjust or incompetent rulers.
+  - id: OBS-012
+    locator: printed p. 130; PDF p. 134
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss treats Xenophon's observation about Spartan preponderance as essential for understanding the partly true and partly alleged pro-Spartan tendency of his writings.
+    uncertainty: >-
+      The phrase preserves both historical accommodation and the possibility that later readers overstate Xenophon's allegiance.
+  - id: OBS-013
+    locator: printed p. 130; PDF p. 134
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon's initially political argument provokes an anti-Spartan reaction that may also have warned the irascible Spartan candidate against abusing power.
+    uncertainty: >-
+      Strauss explicitly says it is impossible to determine whether Xenophon intended that warning.
+  - id: OBS-014
+    locator: printed p. 130; PDF p. 134
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      The reference to the Peloponnesian War is used to reopen the question whether fidelity to Greece can be the sole or highest ingredient of justice.
+    uncertainty: >-
+      The passage destabilizes a simple patriotic criterion without supplying a complete alternative account of justice.
+  - id: OBS-015
+    locator: printed p. 130; PDF p. 134
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      After the political argument, Xenophon swears by all gods and goddesses that the gods unmistakably required him to abstain from monarchy because acceptance would harm the army and especially himself.
+    uncertainty: >-
+      The speech joins public political reasoning to private divine guidance, but the exact relation of the two grounds remains open.
+  - id: OBS-016
+    locator: printed p. 130; PDF p. 134
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Cheirisophos is elected sole commander, accepts gladly, and confirms Xenophon's expectation that an Athenian claimant would have faced severe Spartan opposition.
+    uncertainty: >-
+      Acceptance confirms political rivalry but does not establish that Cheirisophos will rule successfully.
+  - id: OBS-017
+    locator: printed p. 130; PDF p. 134
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Because the choice lies only between Xenophon and Cheirisophos, Strauss reads the army's internal hegemony struggle as a continuation of the Spartan-Athenian contest and therefore as another challenge to identifying justice with fidelity to Greece.
+    uncertainty: >-
+      The inference depends on treating the two candidates as political representatives as well as individuals.
+  - id: OBS-018
+    locator: printed pp. 130-131; PDF pp. 134-135
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      At Herakleia both Cheirisophos and Xenophon oppose coercing a friendly Greek city to provide money, so the soldiers choose a special embassy instead.
+    uncertainty: >-
+      Their joint refusal concerns this demand and does not settle every later use of force against Greeks or allies.
+  - id: OBS-019
+    locator: printed p. 131; PDF p. 135
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Herakleian resistance contributes to mutiny among the Achaian and Arcadian majority, who reject direction by either Spartan or Athenian leaders, separate from the minority, and elect ten generals.
+    uncertainty: >-
+      The passage links material frustration and regional resentment but does not reduce the secession to one cause.
+  - id: OBS-020
+    locator: printed p. 131; PDF p. 135
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Cheirisophos' command ends after roughly one week, which Strauss treats as a sign of the impermanence of Spartan hegemony and as retrospective confirmation that the gods advised Xenophon well.
+    uncertainty: >-
+      The failed command supports the prudence of refusal but does not prove that every alternate Xenophontic monarchy would have failed in the same way.
+  - id: OBS-021
+    locator: printed p. 131; PDF p. 135
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon judges division of the army dangerous but is persuaded by Neon to join Cheirisophos' contingent and the force of Klearchos at Byzantion.
+    uncertainty: >-
+      Strauss records multiple possible grounds for Xenophon's choice and does not isolate a single decisive cause.
+  - id: OBS-022
+    locator: printed p. 131; PDF p. 135
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss asks whether Xenophon's choice followed the Delphic indication of Heracles the Leader, Neon's human persuasion, Xenophon's own calculation, or some combination.
+    uncertainty: >-
+      The text explicitly leaves the causal hierarchy impossible to determine.
+  - id: OBS-023
+    locator: printed p. 131; PDF p. 135
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The army divides into three forces under the Arcadian-Achaian generals, Cheirisophos, and Xenophon, each taking a different route toward Thrace.
+    uncertainty: >-
+      Formal division does not eliminate later cooperation or establish that all three groups possess equal command quality.
+  - id: OBS-024
+    locator: printed pp. 131-132; PDF pp. 135-136
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The Arcadian-Achaian force seizes abundant booty but is trapped after Thracian recovery, while Cheirisophos reaches Kalpe safely and Xenophon's cavalry brings him news of the endangered separatists.
+    uncertainty: >-
+      The contrast records divergent outcomes without proving that booty-seeking alone caused the Arcadian disaster.
+  - id: OBS-025
+    locator: printed p. 131; PDF p. 135
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon tells his soldiers that necessity requires rescuing the Arcadians and suggests that the god may be humbling the boastful while granting a more honorable fate to those who begin with the gods.
+    uncertainty: >-
+      Xenophon presents the divine interpretation as a possibility rather than as certain knowledge.
+  - id: OBS-026
+    locator: printed pp. 131-132; PDF pp. 135-136
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The rescue joins prayer, cavalry deployment, deceptive enlargement of apparent numbers, and practical arrangements, after which the three divisions reunite at Kalpe.
+    uncertainty: >-
+      Strauss leaves success attributable to divine wish, Xenophon's counsel, or both.
+  - id: OBS-027
+    locator: printed p. 132; PDF p. 136
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Kalpe's fertility revives suspicion that unnamed men have maneuvered the army there to found a city, although most soldiers had joined Cyrus to acquire wealth and return to Greece.
+    uncertainty: >-
+      Renewed suspicion does not prove an actual conspiracy or show that every soldier shared the same motive for joining the expedition.
+  - id: OBS-028
+    locator: printed p. 132; PDF p. 136
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      After the separatists' failure, the army makes future proposals to divide it a capital offense and restores the generals elected by the whole force.
+    uncertainty: >-
+      Institutional reunification addresses fragmentation but does not by itself settle the legitimacy or competence of every restored commander.
+  - id: OBS-029
+    locator: printed p. 132; PDF p. 136
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Cheirisophos dies after taking medicine for fever and Neon succeeds him, leaving Xenophon in practice as the army's monarch through an unforeseen sequence rather than through formal election.
+    uncertainty: >-
+      Strauss's use of monarchy describes practical supremacy; the precise constitutional powers held by Xenophon still require primary reconstruction.
+  - id: OBS-030
+    locator: printed p. 132; PDF p. 136
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss distinguishes Xenophon's unforeseen monarchy from the still-abortive city foundation and says the political obstacle to Athenian rule under Spartan hegemony is about to be resolved by an event interpretable as divine action or Xenophon's piety.
+    uncertainty: >-
+      The promised resolution continues beyond this unit and must not be supplied from later pages without sequential review.
+  - id: OBS-031
+    locator: printed p. 132; PDF p. 136
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon insists that the army march by land immediately for lack of ships and provisions but refuses to lead an expedition while repeated sacrifices remain unfavorable.
+    uncertainty: >-
+      The refusal displays obedience to ritual indications, while the validity of the soothsayers' reports remains contested by suspicious soldiers.
+  - id: OBS-032
+    locator: printed p. 132; PDF p. 136
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Neon's independent attempt to obtain provisions ends in disaster, provisions later arrive by ship, and a subsequent sacrifice and omen favor Xenophon's expedition, which ends in an unmistakable Greek victory.
+    uncertainty: >-
+      The sequence preserves several possible causal explanations and does not prove that earlier failure or later victory was produced solely by divine resistance or favor.
+  - id: OBS-033
+    locator: printed p. 132; PDF p. 136
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss says the gods had never before resisted an intended action of the army so continuously, yet the delay leaves further opportunities for Xenophon to display military and rhetorical excellence.
+    uncertainty: >-
+      The observation may indicate testing, restraint, or narrative preparation; the passage does not settle the divine purpose.
+  - id: OBS-034
+    locator: printed p. 132; PDF p. 136
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Abundant local goods, commercial supply from Greek cities, and renewed rumors of a city with a harbor culminate in enemies seeking friendship with the alleged foundation of Xenophon.
+    uncertainty: >-
+      The city remains rumor rather than an accomplished political act at the unit boundary.
+argument_reconstruction:
+  - step: 1
+    claim: >-
+      Strauss presents monarchy as a genuine temptation for Xenophon because it joins public benefit, honor, and Athenian fame, but also as a risk capable of destroying the reputation already won.
+    locator: printed p. 129; PDF p. 133
+  - step: 2
+    claim: >-
+      Xenophon's recourse to Zeus the King does not erase human judgment; the divine prohibition governs his own candidacy, while the choice of an alternative commander remains a political decision he must reason through himself.
+    locator: printed pp. 129-130; PDF pp. 133-134
+  - step: 3
+    claim: >-
+      The public speech therefore moves from political circumstance to divine disclosure, countering both an imprudent Athenian claim and a simplistic pro-Spartan reading.
+    locator: printed p. 130; PDF p. 134
+  - step: 4
+    claim: >-
+      Cheirisophos' brief command demonstrates the instability of Spartan hegemony and retrospectively makes Xenophon's refusal appear prudent without establishing that monarchy itself is always defective.
+    locator: printed pp. 130-131; PDF pp. 134-135
+  - step: 5
+    claim: >-
+      The Herakleian crisis converts the unresolved Spartan-Athenian rivalry into regional secession and exposes the danger of an army governed by competing identities and immediate material demands.
+    locator: printed p. 131; PDF p. 135
+  - step: 6
+    claim: >-
+      Xenophon's response to division combines piety, calculation, deceptive appearance, and concern for the safety of men who had rejected unified command.
+    locator: printed pp. 131-132; PDF pp. 135-136
+  - step: 7
+    claim: >-
+      Failure of the separatists, death of Cheirisophos, and restoration of common command produce Xenophon's practical monarchy by events rather than by the election he refused.
+    locator: printed p. 132; PDF p. 136
+  - step: 8
+    claim: >-
+      The closing sequence reopens the founding problem through Kalpe, repeated sacrifices, military victory, abundance, and rumor, leaving monarchy achieved in practice while foundation remains only suspected and unfulfilled.
+    locator: printed p. 132; PDF p. 136
+provisional_inferences:
+  - id: INF-001
+    locator: printed pp. 129-130; PDF pp. 133-134
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's pattern in this unit separates divine jurisdiction over whether he should accept a personal office from human jurisdiction over which political alternative the army should choose.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-002
+    locator: printed p. 129; PDF p. 133
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Omens acquire revised meaning through later political outcomes, so retrospective interpretation is part of the evidence rather than a neutral recovery of an original message.
+    confidence: provisional
+  - id: INF-003
+    locator: printed p. 130; PDF p. 134
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      A speech may begin from public expediency and only later disclose private pious grounds when the speaker must both guide collective choice and preserve candor about his own refusal.
+    confidence: high_for_unit_structure
+  - id: INF-004
+    locator: printed pp. 130-131; PDF pp. 134-135
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      The Spartan-Athenian contest functions less as a settled patriotic alignment than as a political condition that complicates rule, justice, and the possibility of unified command.
+    confidence: provisional
+  - id: INF-005
+    locator: printed pp. 131-132; PDF pp. 135-136
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's claim to superior command is displayed not by abandoning separatists to deserved punishment but by rescuing them through a combination of prayer, information, deception, and tactical order.
+    confidence: provisional_pending_primary_comparison
+  - id: INF-006
+    locator: printed p. 132; PDF p. 136
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Practical monarchy can emerge without formal constitutional title when rival commands collapse and one leader becomes indispensable to the survival and reunification of the whole.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-007
+    locator: printed p. 132; PDF p. 136
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      The repeated return of the city rumor suggests that foundation remains the unresolved rival to command as the measure of Xenophon's ascent.
+    confidence: provisional
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 129; PDF p. 133
+    question: >-
+      How should Xenophon's desire for honor, Athenian reputation, and public benefit be ordered when he considers sole command?
+  - id: Q-002
+    locator: printed p. 129; PDF p. 133
+    question: >-
+      Why does Xenophon retrospectively review earlier omens instead of reporting the prohibition of Zeus the King immediately?
+  - id: Q-003
+    locator: printed p. 129; PDF p. 133
+    question: >-
+      Does the sitting-eagle omen describe Xenophon's whole political life, only the expedition, or a narrative interpretation formed after later failures and honors?
+  - id: Q-004
+    locator: printed pp. 129-130; PDF pp. 133-134
+    question: >-
+      Is monarchy or city foundation the higher peak of Xenophon's ascent, and by what standard are grandeur and sacredness measured?
+  - id: Q-005
+    locator: printed p. 130; PDF p. 134
+    question: >-
+      Does Xenophon's political argument against his own election merely accommodate Spartan power, or does it also teach the army something about legitimate command?
+  - id: Q-006
+    locator: printed p. 130; PDF p. 134
+    question: >-
+      Was the anti-Spartan reaction intended by Xenophon as a warning to Cheirisophos, or was it an unintended cost of his argument?
+  - id: Q-007
+    locator: printed p. 130; PDF p. 134
+    question: >-
+      How does the Peloponnesian War alter the relation between fidelity to Greece, fidelity to one's city, and justice?
+  - id: Q-008
+    locator: printed pp. 130-131; PDF pp. 134-135
+    question: >-
+      Would Xenophon's monarchy have survived the same regional and material tensions that quickly dissolved the command of Cheirisophos?
+  - id: Q-009
+    locator: printed p. 131; PDF p. 135
+    question: >-
+      What proportion of Xenophon's decision to remain with the soldiers is attributable to Heracles, Neon, calculation, loyalty, or ambition?
+  - id: Q-010
+    locator: printed pp. 131-132; PDF pp. 135-136
+    question: >-
+      Why does Xenophon rescue the separatists: justice, necessity, concern for the whole, desire for renewed authority, piety, or an inseparable combination?
+  - id: Q-011
+    locator: printed p. 132; PDF p. 136
+    question: >-
+      What powers and responsibilities make Xenophon a monarch in practice after the army reunites, despite the absence of a formal election?
+  - id: Q-012
+    locator: printed p. 132; PDF p. 136
+    question: >-
+      How is the political obstacle to Athenian monarchy under Spartan hegemony resolved by an event that may be understood as divine action or Xenophon's piety?
+  - id: Q-013
+    locator: printed p. 132; PDF p. 136
+    question: >-
+      Why are the sacrifices against departure sustained so long, and what does their eventual reversal establish about action, timing, and authority?
+  - id: Q-014
+    locator: printed p. 132; PDF p. 136
+    question: >-
+      Does the renewed city rumor disclose a persistent Xenophontic intention, the soldiers' mistrust, the attractiveness of Kalpe, or an independent political possibility produced by circumstances?
+downstream_primary_text_checks:
+  - Anabasis VI.1.14-33 on the proposal for one commander, Xenophon's deliberation, sacrifice to Zeus the King, the eagle omen, and his refusal speech
+  - Anabasis III.1.11-13 on the ambiguous dream after the generals' murder
+  - Anabasis III.2.37 and VI.1.26-32 on Spartan leadership and Xenophon's political argument
+  - Anabasis VI.2.1-12 on Herakleia, the demand for money, and the separation of the Arcadians and Achaians
+  - Anabasis V.6.36 and VI.2.13-18 on Neon, Cheirisophos, Heracles the Leader, and Xenophon's decision to remain
+  - Anabasis VI.3.1-25 on the Arcadian disaster, Xenophon's rescue speech, prayer, tactical arrangements, and reunion at Kalpe
+  - Anabasis VI.4.1-7 on Kalpe's fertility and renewed suspicion of city-founding
+  - Anabasis VI.4.8-11 on restoration of the generals, prohibition on division, Cheirisophos' death, and Neon's succession
+  - Anabasis VI.4.12-26 on unfavorable sacrifices, Neon's failed provisioning attempt, arrival of supplies, favorable signs, and battle
+  - Anabasis VI.5.1-3 on provisioning, city rumor, harbor expectation, and enemy approaches
+  - Cyropaedia VIII.2.28 and Aristotle, Nicomachean Ethics III.6, 1115a32 on the comparison between monarchy, foundation, honor, and greatness
+  - Memorabilia I.1.8 on divine signs and harm to Xenophon

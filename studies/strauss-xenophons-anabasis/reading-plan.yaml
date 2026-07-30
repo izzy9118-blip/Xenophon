@@ -1,0 +1,57 @@
+schema_version: 1.0
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: OWNER_ADOPTED_SECONDARY_RECONSTRUCTION
+purpose: Reconstruct Strauss's argument and evidentiary moves without adopting them as Xenophon's teaching.
+owner_review:
+  record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+  effect: The completed unit records remain immutable production drafts and are adopted collectively within secondary-source jurisdiction.
+reading_units:
+  - id: XEN-RU-001
+    printed_pages: 105-108
+    pdf_pages_one_based: 109-112
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-001.yaml
+  - id: XEN-RU-002
+    printed_pages: 109-112
+    pdf_pages_one_based: 113-116
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-002.yaml
+  - id: XEN-RU-003
+    printed_pages: 113-116
+    pdf_pages_one_based: 117-120
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-003.yaml
+  - id: XEN-RU-004
+    printed_pages: 117-120
+    pdf_pages_one_based: 121-124
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-004.yaml
+  - id: XEN-RU-005
+    printed_pages: 121-124
+    pdf_pages_one_based: 125-128
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-005.yaml
+  - id: XEN-RU-006
+    printed_pages: 125-128
+    pdf_pages_one_based: 129-132
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-006.yaml
+  - id: XEN-RU-007
+    printed_pages: 129-132
+    pdf_pages_one_based: 133-136
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-007.yaml
+  - id: XEN-RU-008
+    printed_pages: 133-136
+    pdf_pages_one_based: 137-140
+    status: DRAFTED_PENDING_OWNER_REVIEW
+    record: studies/strauss-xenophons-anabasis/units/XEN-RU-008.yaml
+required_outputs_per_unit:
+  - documentary_observations
+  - argument_reconstruction
+  - evidence_locators
+  - provisional_inferences
+  - unresolved_questions
+  - downstream_primary_text_checks

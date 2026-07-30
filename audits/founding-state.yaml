@@ -1,0 +1,33 @@
+schema_version: 1.0
+audit_id: XEN-AUDIT-001
+status: OPEN_FOUNDING_AUDIT
+as_of: 2026-07-30
+repository_state:
+  manifest_present: true
+  source_hierarchy_present: true
+  reading_protocol_present: true
+  secondary_source_registered: true
+  secondary_witness_documented: true
+  secondary_study_owner_adopted: true
+  owner_review_record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+  primary_witness_count: 0
+  sequential_study_started: true
+  drafted_secondary_units: 8
+  minister_adapter_derived: false
+  sanctum_registration_present: false
+resolved_items:
+  - id: RES-001
+    description: The eight-unit reconstruction of Strauss's essay received owner adoption within secondary-source jurisdiction.
+    record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+documented_gaps:
+  - id: GAP-001
+    description: No reviewed primary witness of Xenophon's Anabasis is registered.
+    blocks:
+      - primary reconstruction
+      - deed extraction
+      - operational capacity derivation
+  - id: GAP-003
+    description: No owner-approved Xenophon adapter exists.
+    blocks:
+      - Assembly dispatch
+next_required_action: Admit and review a primary Xenophontic witness before primary reconstruction, deed extraction, speech-register derivation, or adapter construction.

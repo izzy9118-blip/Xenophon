@@ -1,0 +1,40 @@
+schema_version: 1.0
+repository: izzy9118-blip/Xenophon
+repository_role: sanctum_minister_repository
+minister:
+  name: Xenophon
+  status: FOUNDING_IN_PROGRESS
+  registration_status: NOT_YET_REGISTERED_IN_SANCTUM
+version: 1.0.0
+state: SECONDARY_FOUNDING_OWNER_ADOPTED
+owner_review: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+governing_hub:
+  repository: izzy9118-blip/Sanctum
+  briefing_standard: standards/briefing-standard.md
+  report_standard: standards/report-format.md
+source_policy:
+  primary_authority: Xenophon's surviving works in reviewed witnesses
+  secondary_authority: Later interpretation may guide questions but may not replace primary reconstruction
+  active_secondary_source: XEN-SRC-SEC-001
+current_phase:
+  id: XEN-PHASE-001
+  name: Founding framework and Strauss witness registration
+  completion_status: SECONDARY_FOUNDING_OWNER_ADOPTED
+secondary_study:
+  id: XEN-STUDY-SEC-001
+  status: OWNER_ADOPTED_SECONDARY_RECONSTRUCTION
+  immutable_unit_records: true
+  adoption_record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+  drafted_units:
+    - XEN-RU-001
+    - XEN-RU-002
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+next_required_action:
+  id: XEN-ACTION-002
+  description: Admit and review a primary Xenophontic witness before primary reconstruction, deed extraction, speech-register derivation, or adapter construction
+artificial_intelligence_self_certification_prohibited: true

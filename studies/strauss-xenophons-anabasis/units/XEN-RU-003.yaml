@@ -1,0 +1,251 @@
+schema_version: 1.0
+unit_id: XEN-RU-003
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 113-116
+  pdf_pages_one_based: 117-120
+  opening_anchor: We hardly go too far by saying that the principle which individualizes Xenophon in the Anabasis comes to sight by the contrast between him and Socrates.
+  closing_anchor: While the northern route was chosen by the generals, its seed had been planted by Xenophon's speech to the soldiers.
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 113; PDF p. 117
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss completes the prior comparison by saying that Xenophon is individualized principally through contrast with Socrates, not through contrast with Proxenos or Menon.
+    uncertainty: The claim governs Strauss's interpretation in this passage but remains a secondary reconstruction until the Xenophontic evidence is independently reviewed.
+  - id: OBS-002
+    locator: printed p. 113; PDF p. 117
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus concealed his plan from Xenophon and Proxenos as well as from nearly everyone except Klearchos; after the army reached Kilikia, the anti-royal purpose became evident.
+    uncertainty: The repository has not yet checked the primary wording, timing, or distribution of knowledge among the participants.
+  - id: OBS-003
+    locator: printed p. 113; PDF p. 117
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Most Greeks, including Xenophon, remained with Cyrus after his purpose became clear because of shame before one another or before Cyrus.
+    uncertainty: Strauss identifies shame as the operative reason in the narrated sequence, but the relative weight of loyalty, necessity, ambition, and peer pressure remains open.
+  - id: OBS-004
+    locator: printed p. 113; PDF p. 117
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon's dream of lightning striking and consuming his father's house is double-sided and may signify saving light from Zeus, yet Zeus as king may also warn those who attacked the Persian king.
+    uncertainty: Strauss presents rival meanings and does not certify a divine interpretation.
+  - id: OBS-005
+    locator: printed p. 113; PDF p. 117
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The dream awakens Xenophon alone to the need for immediate action, but the plan, speech, and institutional sequence that follow are supplied by Xenophon rather than by the dream.
+    uncertainty: The distinction between divine prompting, psychological awakening, and human judgment remains unresolved.
+  - id: OBS-006
+    locator: printed p. 113; PDF p. 117
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon's first full speech is addressed to Proxenos' captains and converts Persian treachery into release from treaty obligations, permission to seize enemy possessions, and an expectation that the gods will favor the oath-keeping Greeks.
+    uncertainty: The justice of unlimited seizure is asserted within the speech and not independently adjudicated by Strauss here.
+  - id: OBS-007
+    locator: printed p. 113; PDF p. 117
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Strauss counts five references to the gods in the first speech and notes that Xenophon ends by offering to lead without using youth as a pretext for refusal.
+    uncertainty: The interpretive significance of the count depends on comparison with the later speeches and awaits primary verification.
+  - id: OBS-008
+    locator: printed pp. 113-114; PDF pp. 117-118
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon is unanimously elected successor to Proxenos, and Strauss names this the beginning of Xenophon's ascent from nobody to general through a speech delivered at the right moment and in the right way.
+    uncertainty: The term "nobody" describes political standing in the crisis, not Xenophon's entire prior education, status, or experience.
+  - id: OBS-009
+    locator: printed p. 114; PDF p. 118
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Before the surviving generals and commanders, Xenophon does not repeat his first speech; he shifts the emphasis to the commanders' mood and conduct, their function as models, and the need for order, discipline, and replacement officers.
+    uncertainty: Whether the differentiated speech reflects audience adaptation, institutional rank, or another purpose requires primary reconstruction.
+  - id: OBS-010
+    locator: printed p. 114; PDF p. 118
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The second speech mentions the gods only once, after which the officers elect five new generals including Xenophon.
+    uncertainty: The numerical contrast with the first and third speeches is documented by Strauss but does not by itself disclose a doctrine.
+  - id: OBS-011
+    locator: printed p. 114; PDF p. 118
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: In the full-army assembly, Cheirisophos speaks briefly, Kleanor rehearses Persian treachery at greater length, and Xenophon appears in stately attire suitable either for victory or honorable death.
+    uncertainty: The political effect of attire and sequence must be judged within the primary dramatic setting.
+  - id: OBS-012
+    locator: printed p. 114; PDF p. 118
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: A sneeze during Xenophon's speech prompts collective obeisance; Xenophon immediately interprets it as an omen from Zeus the Savior and transforms it into proposed vows, a unanimous vote, collective vows, and chant.
+    uncertainty: The sneeze's divine cause is not established; the passage documents interpretation and institutional enactment.
+  - id: OBS-013
+    locator: printed p. 114; PDF p. 118
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon's third speech grounds hope first in Greek oath-keeping, Persian perjury, divine aid in the Persian wars, and the recent Greek victory for Cyrus; Strauss counts eleven references to the gods before Xenophon turns away from divine considerations.
+    uncertainty: The count is a compositional observation whose meaning remains dependent on the whole speech and work.
+  - id: OBS-014
+    locator: printed p. 115; PDF p. 119
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon next introduces the possibility that the Greeks might settle in wealthy Persia, leading Strauss to ask whether the vision of founding a barbarian city constitutes a second stage of Xenophon's ascent and renews the question of patriotism.
+    uncertainty: Strauss poses the founding and patriotism claims as questions rather than settled conclusions.
+  - id: OBS-015
+    locator: printed p. 115; PDF p. 119
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon proposes restoring and strengthening the commanders' punitive powers with active support from every soldier; Cheirisophos supports the measure and the army adopts it unanimously.
+    uncertainty: The scope, safeguards, and later use of these punitive powers require primary-text review.
+  - id: OBS-016
+    locator: printed p. 115; PDF p. 119
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The army unanimously assigns Cheirisophos the van and the younger Xenophon and Timasion the rear; Strauss therefore calls Xenophon, informally, at least the spiritus rector of the whole army.
+    uncertainty: Informal direction is not identical to formal supreme command, and the constitutional relation among the generals remains open.
+  - id: OBS-017
+    locator: printed p. 115; PDF p. 119
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon closes the urgent settlement by telling wealth-seekers that victory preserves one's own goods and transfers the enemy's goods, which Strauss links to the economic art exercised through military art.
+    uncertainty: The passage may disclose practical integration of arts without establishing the justice of acquisition.
+  - id: OBS-018
+    locator: printed p. 115; PDF p. 119
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: When Persian bowmen and slingers damage the rear, Xenophon's first tactical device fails completely; he accepts criticism, analyzes the failure, draws on prior military knowledge, and proposes a corrective arrangement that is adopted.
+    uncertainty: Strauss does not here identify where or how Xenophon acquired the relevant prior knowledge.
+  - id: OBS-019
+    locator: printed pp. 115-116; PDF pp. 119-120
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon's argument that rivers become passable near their sources truthfully answers one fear while omitting the mountain predicament produced by the necessary ascent.
+    uncertainty: The omission may be prudential, rhetorical, or merely limited to the immediate argument; the passage does not decide.
+  - id: OBS-020
+    locator: printed p. 116; PDF p. 120
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Stories of two Median cities connect Persian conquest to a cloud concealing the sun and to thunder from Zeus, while Strauss asks whether the nearby use of legetai marks divine causation as reported rather than known.
+    uncertainty: The exact grammatical reach of legetai and its relation to the thunder claim require Greek-text verification.
+  - id: OBS-021
+    locator: printed p. 116; PDF p. 120
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The Greeks fare better on hills and worse on plains; after a disagreement with Cheirisophos, Xenophon encourages a difficult uphill march from horseback with an exaggerated promise.
+    uncertainty: Strauss does not reduce the episode to either tactical necessity or rhetorical manipulation.
+  - id: OBS-022
+    locator: printed p. 116; PDF p. 120
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: When a burdened soldier contrasts his own march with Xenophon's mounted ease, Xenophon dismounts, takes the shield, and marches under both cavalry armor and infantry burden; the soldiers then force the complainant back into line, prompting Strauss's conclusion that Xenophon was not a Proxenos.
+    uncertainty: The deed demonstrates toughness and exemplary exposure, but the justice of the soldiers' striking and abuse is not adjudicated.
+  - id: OBS-023
+    locator: printed p. 116; PDF p. 120
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon and Cheirisophos differ over Persian burning of villages; Xenophon treats the burning as proof that the Persians no longer regard the country as securely the king's, whereas Cheirisophos favors reciprocal burning.
+    uncertainty: Xenophon's silence in reply may reflect disagreement, prudence, prior settlement thinking, or another motive.
+  - id: OBS-024
+    locator: printed p. 116; PDF p. 120
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: After prisoner interrogation, the generals choose the northern route through independent Karduchian mountain country; the decision saves the Greeks, while Strauss says its seed had already been planted in Xenophon's speech.
+    uncertainty: The formal decision belongs to the generals collectively, and Strauss's seed metaphor does not erase their deliberation or the prisoners' information.
+argument_reconstruction:
+  - step: 1
+    claim: The Socrates-Xenophon contrast establishes the interpretive standard through which Xenophon's political ascent will be judged.
+    locator: printed p. 113; PDF p. 117
+  - step: 2
+    claim: Crisis begins in deception, shame, treachery, and an ambiguous dream, but Xenophon's ascent begins only when he converts awakening into speech, leadership, and election.
+    locator: printed p. 113; PDF p. 117
+  - step: 3
+    claim: Xenophon differentiates his speeches by audience—oath, opportunity, and leadership before captains; discipline and exemplary command before officers; divine hope, common memory, and collective refounding before the full army.
+    locator: printed pp. 113-114; PDF pp. 117-118
+  - step: 4
+    claim: The sneeze becomes politically efficacious not as self-interpreting revelation but through interpretation, proposal, vote, vow, and common enactment.
+    locator: printed p. 114; PDF p. 118
+  - step: 5
+    claim: Once sacred confidence is established, Xenophon turns to human measures of punishment, command structure, wealth, route, and tactics.
+    locator: printed pp. 114-115; PDF pp. 118-119
+  - step: 6
+    claim: Xenophon's practical superiority includes fallibility, acceptance of blame, correction, and the capacity to make prior knowledge institutionally useful.
+    locator: printed p. 115; PDF p. 119
+  - step: 7
+    claim: Speech can guide collective judgment indirectly by making a route or possibility thinkable before the formal decision is taken.
+    locator: printed pp. 115-116; PDF pp. 119-120
+  - step: 8
+    claim: Command is vindicated through visible participation in hardship, yet the unit preserves unresolved questions about coercion, acquisition, punishment, and patriotism.
+    locator: printed pp. 115-116; PDF pp. 119-120
+provisional_inferences:
+  - id: INF-001
+    locator: printed pp. 113-114; PDF pp. 117-118
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon's speech mechanism in this crisis is audience-differentiated rather than simply repetitive; each assembly receives the considerations appropriate to its responsibility and capacity.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-002
+    locator: printed p. 114; PDF p. 118
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Public sacred authority can arise from an ambiguous event through a sequence of interpretation, consent, vow, and collective performance without the event's divine cause becoming demonstrable.
+    confidence: provisional
+  - id: INF-003
+    locator: printed pp. 114-115; PDF pp. 118-119
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon joins divine confidence to human institution rather than substituting one for the other; the gods frame hope, while discipline, punishment, office, and tactics organize action.
+    confidence: provisional
+  - id: INF-004
+    locator: printed p. 115; PDF p. 119
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Practical authority is strengthened when failure is admitted and corrected, not when the leader is represented as incapable of error.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-005
+    locator: printed pp. 115-116; PDF pp. 119-120
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon can shape a later collective decision by planting premises in prior speech while leaving formal deliberation and adoption to the responsible body.
+    confidence: provisional
+  - id: INF-006
+    locator: printed p. 116; PDF p. 120
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: A commander's visible deed functions as continuing speech by answering an accusation through shared exposure rather than verbal defense alone.
+    confidence: provisional
+  - id: INF-007
+    locator: printed pp. 113-116; PDF pp. 117-120
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The unit supplies candidate evidence for pedagogical and political speech registers, but no operational register may be admitted until the primary Xenophontic corpus licenses the pattern.
+    confidence: repository_guarded
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 113; PDF p. 117
+    question: Does the ambiguous dream disclose divine guidance, psychological awakening, political imagination, or a combination that cannot be separated?
+  - id: Q-002
+    locator: printed p. 113; PDF p. 117
+    question: How just is Xenophon's claim that Persian perjury releases the Greeks to take whatever and however much they can?
+  - id: Q-003
+    locator: printed pp. 113-114; PDF pp. 117-118
+    question: What precisely changes across Xenophon's three speeches, and which changes belong to audience, office, occasion, or rhetorical strategy?
+  - id: Q-004
+    locator: printed p. 114; PDF p. 118
+    question: Is the sneeze treated as a divine sign, a spontaneous civic convention, a political opportunity, or all three in distinct senses?
+  - id: Q-005
+    locator: printed p. 114; PDF p. 118
+    question: Why do references to the gods increase from five to eleven across the first and third speeches while falling to one in the central officers' speech?
+  - id: Q-006
+    locator: printed p. 115; PDF p. 119
+    question: Does the possibility of founding a city in Persia disclose weak patriotism, prudent contingency planning, political ambition, or a deliberately unresolved combination?
+  - id: Q-007
+    locator: printed p. 115; PDF p. 119
+    question: What limits, if any, govern the strengthened punitive powers granted to the commanders?
+  - id: Q-008
+    locator: printed p. 115; PDF p. 119
+    question: In what sense is Xenophon the army's spiritus rector without being its formal commander?
+  - id: Q-009
+    locator: printed p. 115; PDF p. 119
+    question: What prior military education or experience permits Xenophon to diagnose and correct the failed tactical device?
+  - id: Q-010
+    locator: printed pp. 115-116; PDF pp. 119-120
+    question: When does truthful omission in political speech become prudent guidance, and when does it become concealment of a material difficulty?
+  - id: Q-011
+    locator: printed p. 116; PDF p. 120
+    question: Does legetai distance the narrator from the claim that Zeus caused the thunder, and how stable is that device across the work?
+  - id: Q-012
+    locator: printed p. 116; PDF p. 120
+    question: Does Xenophon's dismounting answer the soldier by justice, courage, example, humiliation, or a mixture whose parts must remain distinct?
+  - id: Q-013
+    locator: printed p. 116; PDF p. 120
+    question: Why does Xenophon remain silent when Cheirisophos proposes reciprocal burning, and what does the silence imply about settlement, property, and enemy country?
+  - id: Q-014
+    locator: printed p. 116; PDF p. 120
+    question: How much causal weight belongs to Xenophon's earlier speech, the prisoners' information, the generals' deliberation, and the terrain itself in the saving northern-route decision?
+downstream_primary_text_checks:
+  - Anabasis III.1.9-26 on the dream, Proxenos' captains, the first speech, and Xenophon's election
+  - Anabasis III.1.32-47 on the second speech, exemplary command, discipline, and election of five generals
+  - Anabasis III.2 on Cheirisophos, Kleanor, Xenophon's attire, the sneeze, vows, divine references, Persian-war memory, punitive power, march order, and wealth
+  - The Greek terms and exact count of references to gods in Xenophon's three crisis speeches
+  - Anabasis III.3 on Persian missile superiority, Xenophon's failed device, accepted blame, and corrective arrangements
+  - Anabasis III.2.22 and III.4 on rivers, sources, mountains, tactical ascent, the mounted complaint, and Xenophon's shield-bearing response
+  - Anabasis III.4 on Larisa, the second Median city, legetai, cloud, sun, thunder, and Zeus
+  - Anabasis III.5 on village burning, the disagreement with Cheirisophos, prisoner interrogation, and the Karduchian route
+  - Oeconomicus I.15 on the relation between economic and military arts
+  - Primary evidence concerning Xenophon's prior military knowledge and experience
+termination:
+  reason: scope boundary reached at printed p. 116
+  next_unit: XEN-RU-004

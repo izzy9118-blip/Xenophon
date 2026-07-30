@@ -1,0 +1,130 @@
+schema_version: 1.0
+unit_id: XEN-RU-001
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 105-108
+  pdf_pages_one_based: 109-112
+  opening_anchor: Xenophon's Anabasis seems today to be regarded universally as his most beautiful book.
+  closing_anchor: the character sketches following the murder of the Greek generals begin
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 105; PDF p. 109
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Strauss begins from the modern judgment that the Anabasis is Xenophon's most beautiful work and contrasts it with an eighteenth-century preference for the Memorabilia.
+    uncertainty: Strauss does not identify the eighteenth-century judges in this passage.
+  - id: OBS-002
+    locator: printed p. 105; PDF p. 109
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The governing inquiry is the place and function of the Anabasis within the Corpus Xenophonteum, not merely whether the book is aesthetically pleasing.
+    uncertainty: The passage opens the inquiry but does not yet establish the corpus-wide relation.
+  - id: OBS-003
+    locator: printed p. 105; PDF p. 109
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Strauss treats the authentic title, Cyrus' Ascent, as misleading because Cyrus' expedition ends in Book One while six further books remain.
+    uncertainty: The primary title tradition has not yet been independently reviewed in this repository.
+  - id: OBS-004
+    locator: printed p. 105; PDF p. 109
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Strauss places the title beside the titles of the Education of Cyrus and the Memorabilia, suggesting that title-content disproportion may be a recurring Xenophontic problem.
+    uncertainty: No cross-work primary reconstruction has yet tested whether the three cases form a deliberate compositional pattern.
+  - id: OBS-005
+    locator: printed p. 106; PDF p. 110
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The opening foregrounds the Persian royal family and a practical dyarchy, although Strauss says the work is not principally about Persia or the Persian-Greek conflict.
+    uncertainty: The extent to which dynastic conflict governs the whole work remains open.
+  - id: OBS-006
+    locator: printed p. 106; PDF p. 110
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss treats the Hellenica's attribution to Themistogenes of Syracuse as an authorship problem and assumes that the name is a pseudonym for Xenophon.
+    uncertainty: The pseudonym claim is presented as an entitled assumption, not demonstrated in these pages.
+  - id: OBS-007
+    locator: printed p. 106; PDF p. 110
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon's third-person presentation of his own speeches and deeds is connected by Strauss to a form of becoming anonymity.
+    uncertainty: Alternative explanations for third-person narration are not excluded.
+  - id: OBS-008
+    locator: printed pp. 106-107; PDF pp. 110-111
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss reads variations in a standard formula for cities as a gentle mode of praise in which omitted positive predicates can disclose defects without explicit blame.
+    uncertainty: The distribution and Greek wording of the formula require primary-text checking.
+  - id: OBS-009
+    locator: printed p. 107; PDF p. 111
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss generalizes the praise-by-omission device from cities to virtue lists and notes the absence of piety from the eulogy of Cyrus.
+    uncertainty: Whether silence licenses a definite negative judgment must remain provisional until the relevant passages are reconstructed in sequence.
+  - id: OBS-010
+    locator: printed pp. 107-108; PDF pp. 111-112
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The use of legetai is treated as a device that marks reported claims and allows mythical and non-mythical stories to be presented with comparable epistemic distance.
+    uncertainty: The semantic force and frequency of legetai have not been checked against the Greek text.
+  - id: OBS-011
+    locator: printed p. 108; PDF p. 112
+    evidence_type: PROVISIONAL_INFERENCE
+    observation: The paired stories and subsequent examples open a broad theme of gods and men, shared oath practice, and the fallibility of signs and interpretations.
+    uncertainty: Strauss says the theme is broad but not all-comprehensive; its exact limits remain unresolved.
+argument_reconstruction:
+  - step: 1
+    claim: A ruling judgment about the Anabasis cannot be accepted before the work's place within Xenophon's corpus is known.
+    locator: printed p. 105; PDF p. 109
+  - step: 2
+    claim: The title, opening, and authorial attribution are deliberately treated as problems because each initially points toward an object that the work exceeds or complicates.
+    locator: printed pp. 105-106; PDF pp. 109-110
+  - step: 3
+    claim: Before Xenophon becomes the central character in Book Three, the first two books must be read through recurrent features of narration and diction.
+    locator: printed p. 106; PDF p. 110
+  - step: 4
+    claim: Praise, omission, and reported-speech markers allow Xenophon to disclose defects or uncertainties without constant explicit blame.
+    locator: printed pp. 107-108; PDF pp. 111-112
+  - step: 5
+    claim: These devices prepare inquiry into virtue, piety, gods, oaths, omens, and the relation between stated belief and actual outcome.
+    locator: printed pp. 107-108; PDF pp. 111-112
+provisional_inferences:
+  - id: INF-001
+    locator: printed pp. 105-108; PDF pp. 109-112
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Strauss's method begins with compositional surfaces—title, opening, authorship, narrative person, repeated formulae, and silence—before advancing to substantive teaching.
+    confidence: high_for_strauss_method_in_this_unit
+  - id: INF-002
+    locator: printed pp. 107-108; PDF pp. 111-112
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Praise-by-omission is a candidate Xenophontic speech mechanism, but it cannot yet be admitted as a repository capacity because it rests here on Strauss's secondary reading alone.
+    confidence: provisional
+  - id: INF-003
+    locator: printed p. 108; PDF p. 112
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Divine signs are not treated as self-interpreting evidence; their meaning must be tested against sequence and outcome.
+    confidence: provisional
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed pp. 105-106; PDF pp. 109-110
+    question: What is the primary manuscript and title evidence for Cyrus' Ascent, and how stable is that title across the tradition?
+  - id: Q-002
+    locator: printed p. 106; PDF p. 110
+    question: Is Themistogenes a pseudonym, a distinct author, or an attribution strategy whose function cannot be reduced to either alternative?
+  - id: Q-003
+    locator: printed p. 106; PDF p. 110
+    question: What does third-person narration accomplish beyond modesty or anonymity?
+  - id: Q-004
+    locator: printed p. 107; PDF p. 111
+    question: When does omission disclose blame, and when might it reflect scope, convention, or economy of narration?
+  - id: Q-005
+    locator: printed pp. 107-108; PDF pp. 111-112
+    question: Does legetai consistently mark epistemic distance, and is that distance the same in mythical, historical, and political reports?
+  - id: Q-006
+    locator: printed p. 108; PDF p. 112
+    question: What do shared sacrifices and oaths establish about Greek and Persian agreement concerning the gods, and what remains merely conventional?
+downstream_primary_text_checks:
+  - Xenophon's Anabasis title tradition and opening sentence
+  - Hellenica III.1.1-2 and the Themistogenes attribution
+  - Anabasis I.4.2 and the names Samios and Pythagoras
+  - Book One city-description formulae and their variations
+  - Anabasis I.9 eulogy of Cyrus, especially the presence or absence of piety
+  - occurrences of legetai in Anabasis I.2 and related contexts
+  - Anabasis I.4.9, I.4.18, I.7.18-19, I.8.16-17, II.2.9, and II.5.7,20-21,39
+termination:
+  reason: scope boundary reached at printed p. 108
+  next_unit: XEN-RU-002

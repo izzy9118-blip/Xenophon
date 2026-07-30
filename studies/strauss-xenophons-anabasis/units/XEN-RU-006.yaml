@@ -1,0 +1,352 @@
+schema_version: 1.0
+unit_id: XEN-RU-006
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 125-128
+  pdf_pages_one_based: 129-132
+  opening_anchor: him not by any divine ill-will but by a greedy soothsayer
+  closing_anchor: This increased the soldiers' hope for a speedy return to Greece and hence for possessions which they might take home. They
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 125; PDF p. 129
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss denies that divine hostility explains Xenophon's difficulty over the city-founding plan and attributes the immediate obstruction to a greedy soothsayer.
+    uncertainty: >-
+      The judgment concerns Strauss's reading of the episode; the primary narrative and the soothsayer's motives have not yet been independently reconstructed.
+  - id: OBS-002
+    locator: printed p. 125; PDF p. 129
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      When the soldiers learn of Xenophon's still-undivulged plan to found a city far from Greece, the majority disapprove and several men attack the proposal in assembly.
+    uncertainty: >-
+      The passage reports opposition but does not establish that every soldier rejected the plan for the same reason.
+  - id: OBS-003
+    locator: printed p. 125; PDF p. 129
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Timasion's declaration that nothing should be esteemed more highly than Greece implicitly opposes Proxenos' earlier premise that Cyrus might be better for Xenophon than his fatherland.
+    uncertainty: >-
+      Strauss says the opposition may have been tacit and unknowing; Timasion's conscious intention therefore remains unresolved.
+  - id: OBS-004
+    locator: printed p. 125; PDF p. 129
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon remains silent before the implicit charge that preferring a barbarian prince or king to one's fatherland may be a profound injustice and perhaps the root of his injustice.
+    uncertainty: >-
+      Silence marks an unanswered problem in Strauss's reconstruction but does not by itself settle Xenophon's judgment.
+  - id: OBS-005
+    locator: printed p. 125; PDF p. 129
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Xenophon speaks only after being reproached for private persuasion and private sacrifice rather than public presentation of the matter.
+    uncertainty: >-
+      The sequence explains the immediate occasion of the speech but not every reason for Xenophon's prior silence.
+  - id: OBS-006
+    locator: printed p. 125; PDF p. 129
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon answers the imputation of opposed interests by saying that his sacrifices concern both army and self and aim at what is most noble and best through speaking, thinking, and doing.
+    uncertainty: >-
+      The statement is part of Xenophon's defense and must still be tested against the consequences of the proposed founding.
+  - id: OBS-007
+    locator: printed pp. 125-126; PDF pp. 129-130
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The sacrifice does not ask whether thinking about a city is advisable; it asks whether Xenophon should speak and act on the thought or leave it untouched.
+    uncertainty: >-
+      Strauss's plain-English restatement clarifies jurisdiction but does not prove that Xenophon's prior thought was itself just.
+  - id: OBS-008
+    locator: printed p. 125; PDF p. 129
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss compares the city episode with the Delphic consultation before Cyrus' expedition: Xenophon reserves the primary decision for himself and consults sacrifice about secondary execution.
+    uncertainty: >-
+      The comparison also preserves a difference, because favorable sacrifices in the city episode came through the soothsayer before the question of public speech and action arose.
+  - id: OBS-009
+    locator: printed pp. 125-126; PDF pp. 129-130
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The soothsayer reports the sacrifices truthfully because Xenophon knows the field well, then adds a fabricated warning about fraud and conspiracy while himself preparing to slander Xenophon.
+    uncertainty: >-
+      Strauss distinguishes sacrificial report from the soothsayer's invention; the underlying primary wording remains to be checked.
+  - id: OBS-010
+    locator: printed p. 126; PDF p. 130
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon abandons the founding plan in response to majority opposition and successfully proposes that no one leave the army before the journey ends.
+    uncertainty: >-
+      Abandonment establishes political retreat from the proposal, not a demonstrated change in Xenophon's private judgment about founding.
+  - id: OBS-011
+    locator: printed p. 126; PDF p. 130
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The soothsayer alone protests because he wishes to return home immediately with his money, while more powerful conspirators spread a rumor that Xenophon has not truly abandoned the plan.
+    uncertainty: >-
+      The passage distinguishes motives and power but does not identify every participant in the conspiracy.
+  - id: OBS-012
+    locator: printed p. 126; PDF p. 130
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon treats the rumor as absurd because deceiving an army eager for Greece about a hidden Asian foundation would exceed even the meanest capacity.
+    uncertainty: >-
+      Refuting the feasibility of secret coercion does not answer the deeper charge about Xenophon's esteem for fatherland.
+  - id: OBS-013
+    locator: printed p. 126; PDF p. 130
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon explains hostility by envy arising from honors that arose from merit and says he never blocked others from earning equal or greater honor by speaking, fighting, or being awake.
+    uncertainty: >-
+      The causal chain from merit to honor to envy is part of Xenophon's defense and is not independently adjudicated in this unit.
+  - id: OBS-014
+    locator: printed p. 126; PDF p. 130
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss compares speaking, fighting, and being awake with the earlier speaking, thinking, and doing, interpreting wakefulness as worrying and therefore as a special form of thought.
+    uncertainty: >-
+      The substitution is an interpretive relation between two tripartitions and requires primary-text verification of wording and context.
+  - id: OBS-015
+    locator: printed pp. 126-127; PDF pp. 130-131
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon turns defense into attack by identifying indiscipline and unpunished crimes, not the city proposal, as the army's greatest danger.
+    uncertainty: >-
+      The turn is rhetorically successful, but success does not by itself prove that the founding controversy was morally irrelevant.
+  - id: OBS-016
+    locator: printed pp. 126-127; PDF pp. 130-131
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The soldiers resolve to punish past crimes, threaten future illegal proceedings with capital trial, assign generals to prosecute, captains to judge, and perform a purification on Xenophon's advice with the soothsayers' approval.
+    uncertainty: >-
+      The passage records institutional action but not the later results of every prosecution.
+  - id: OBS-017
+    locator: printed p. 127; PDF p. 131
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The generals themselves are subjected to prosecution, and Xenophon is accused of beating soldiers from hybris, meaning without necessity.
+    uncertainty: >-
+      The accusation opens the difference between Xenophon and Proxenos but does not yet determine whether every beating was necessary.
+  - id: OBS-018
+    locator: printed p. 127; PDF p. 131
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon asks the soldiers to remember compelled harshness together with beneficent acts and closes by joining the noble, just, pious, and pleasant in the preference for remembering good things.
+    uncertainty: >-
+      Strauss identifies a final harmony in the speech, but the harmony is a claim made within Xenophon's successful defense.
+  - id: OBS-019
+    locator: printed p. 127; PDF p. 131
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Xenophon's trial ends in complete acquittal, while Socrates' trial culminates in death; nevertheless Xenophon's city-founding plan fails.
+    uncertainty: >-
+      The contrast is sharp but does not reduce the difference between Xenophon and Socrates to courtroom outcome alone.
+  - id: OBS-020
+    locator: printed p. 127; PDF p. 131
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Book Five contains more oaths pronounced by Xenophon than all preceding books combined.
+    uncertainty: >-
+      The numerical claim is reported by Strauss and awaits independent verification in the primary sequence.
+  - id: OBS-021
+    locator: printed pp. 127-128; PDF pp. 131-132
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Strauss holds that Xenophon has vindicated his piety more fully than his justice and asks whether devotion to Greece is the sole or highest ingredient of justice.
+    uncertainty: >-
+      The questions are deliberately left open and prevent acquittal from functioning as final moral judgment.
+  - id: OBS-022
+    locator: printed pp. 127-128; PDF pp. 131-132
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      The preference for the best human beings rather than the merely indigenous introduces a cosmopolitan standard exemplified by the political society of the Education of Cyrus.
+    uncertainty: >-
+      The cross-work claim depends on Strauss's reading of the Cyropaedia and must later be tested by independent reconstruction.
+  - id: OBS-023
+    locator: printed p. 128; PDF p. 132
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      The older Cyrus possesses hereditary royal standing, whereas Xenophon lacks inherited authority; knowledge of ruling may therefore require an iron alloy of prescription or established legitimacy to become politically viable.
+    uncertainty: >-
+      Strauss frames the requirement as a question and does not provide a final theory of legitimate rule in this passage.
+  - id: OBS-024
+    locator: printed p. 128; PDF p. 132
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Justice is presented as ambiguous between the man's virtue of benefiting friends and harming enemies and Socratic justice that harms no one even slightly.
+    uncertainty: >-
+      The two senses are distinguished, but their exact hierarchy and possible reconciliation remain unresolved.
+  - id: OBS-025
+    locator: printed p. 128; PDF p. 132
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon stands between the older Cyrus and Socrates: cruelty is indispensable to military command in some degree, yet Cyrus' delight in slain enemies places him farther from Socratic justice than Xenophon.
+    uncertainty: >-
+      The intermediate placement is Strauss's comparative judgment and does not assign a precise moral measure to Xenophon's harsh deeds.
+  - id: OBS-026
+    locator: printed p. 128; PDF p. 132
+    evidence_type: PROVISIONAL_INFERENCE
+    observation: >-
+      Strauss formulates the problem of justice as mutual dependence without full coexistence: manly virtue points toward Socratic virtue, while Socratic virtue requires manly virtue as its foundation.
+    uncertainty: >-
+      The claimed impossibility of plenary coexistence in one human being is asserted in the essay but not independently established by this repository.
+  - id: OBS-027
+    locator: printed p. 128; PDF p. 132
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: >-
+      Xenophon may have regarded himself as the closest approximation known to him of the coexistence of manly and Socratic virtue and presents himself in his difference from Socrates.
+    uncertainty: >-
+      Strauss marks the self-estimation as a possibility, not a direct confession by Xenophon.
+  - id: OBS-028
+    locator: printed p. 128; PDF p. 132
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      After acquittal, restored discipline, and peace with the Paphlagonians, Cheirisophos returns without ships but with praise and a promise that Anaxibios will employ the army as mercenaries if it leaves the Pontos.
+    uncertainty: >-
+      The promise raises hope but its fulfillment and political consequences lie beyond this unit.
+argument_reconstruction:
+  - step: 1
+    claim: >-
+      The apparent divine obstruction of Xenophon's founding plan is displaced onto a human soothsayer whose truthful sacrificial report is joined to a self-interested fabrication.
+    locator: printed pp. 125-126; PDF pp. 129-130
+  - step: 2
+    claim: >-
+      Xenophon's defense distinguishes thinking from speaking and doing, preserving human judgment over the primary political question while limiting sacrifice to the conditions of execution.
+    locator: printed pp. 125-126; PDF pp. 129-130
+  - step: 3
+    claim: >-
+      Majority resistance compels abandonment of the city plan, but rumor and envy continue because Xenophon's practical supremacy has produced exceptional honors.
+    locator: printed p. 126; PDF p. 130
+  - step: 4
+    claim: >-
+      Xenophon escapes a defensive posture by converting the assembly into a constitutional response to indiscipline, crime, and illegal procedure.
+    locator: printed pp. 126-127; PDF pp. 130-131
+  - step: 5
+    claim: >-
+      His own prosecution tests the boundary between necessary harshness and hybris and places his practical justice in direct comparison with Proxenos.
+    locator: printed p. 127; PDF p. 131
+  - step: 6
+    claim: >-
+      Acquittal and the harmony of noble, just, pious, and pleasant vindicate Xenophon's public defense without vindicating the failed founding plan or answering the fatherland charge.
+    locator: printed p. 127; PDF p. 131
+  - step: 7
+    claim: >-
+      Strauss then moves from courtroom justice to the higher ambiguity between devotion to one's political community, selection of the best human beings, inherited legitimacy, and knowledge of rule.
+    locator: printed pp. 127-128; PDF pp. 131-132
+  - step: 8
+    claim: >-
+      Xenophon is situated between Cyrus and Socrates as the practical presentation of a justice problem whose two necessary virtues cannot fully coexist in one person.
+    locator: printed p. 128; PDF p. 132
+provisional_inferences:
+  - id: INF-001
+    locator: printed pp. 125-126; PDF pp. 129-130
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      A sacrifice can be accurately reported while its interpreter corrupts the political use of the report; evidentiary truth and advisory integrity are separate questions.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-002
+    locator: printed pp. 125-126; PDF pp. 129-130
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's recurring practice is to reserve the primary decision for human judgment and consult divination about whether or how to execute what has already been conceived.
+    confidence: provisional_pending_primary_comparison
+  - id: INF-003
+    locator: printed pp. 126-127; PDF pp. 130-131
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's political strength includes the ability to transform personal accusation into an institutional inquiry that binds leaders and soldiers alike.
+    confidence: provisional
+  - id: INF-004
+    locator: printed p. 127; PDF p. 131
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Successful self-defense may establish necessity and public trust without resolving the justice of the larger ambition that occasioned the crisis.
+    confidence: high_for_unit_structure
+  - id: INF-005
+    locator: printed pp. 127-128; PDF pp. 131-132
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Fatherland and cosmopolitan excellence are not simple alternatives in Strauss's reconstruction; each supplies a standard that exposes the incompleteness of the other.
+    confidence: provisional
+  - id: INF-006
+    locator: printed p. 128; PDF p. 132
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: >-
+      Xenophon's intermediate position is not treated as indecision but as an enacted approximation to the unresolved conjunction of political manliness and Socratic harmlessness.
+    confidence: high_for_strauss_argument_in_this_unit
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 125; PDF p. 129
+    question: >-
+      Does Xenophon's silence before Timasion's fatherland charge indicate assent, strategic restraint, inability to answer, or deliberate preservation of the problem?
+  - id: Q-002
+    locator: printed pp. 125-126; PDF pp. 129-130
+    question: >-
+      What exactly had the favorable sacrifices established about city-founding: permission to think, likelihood of success, divine approval, or only absence of an adverse sign?
+  - id: Q-003
+    locator: printed pp. 125-126; PDF pp. 129-130
+    question: >-
+      How consistently does Xenophon reserve primary political judgment from divine consultation across the expedition and the founding episode?
+  - id: Q-004
+    locator: printed p. 126; PDF p. 130
+    question: >-
+      Did Xenophon abandon only public execution of the founding plan, or did he also revise his private judgment about its desirability?
+  - id: Q-005
+    locator: printed p. 126; PDF p. 130
+    question: >-
+      How should merit, honor, envy, and constitutional authority be distinguished when Xenophon offers to cede power to anyone who shares even part of his deserts?
+  - id: Q-006
+    locator: printed pp. 126-127; PDF pp. 130-131
+    question: >-
+      Does the successful turn from defense to prosecution clarify the army's true danger or divert attention from the unresolved justice of Xenophon's ambition?
+  - id: Q-007
+    locator: printed p. 127; PDF p. 131
+    question: >-
+      Which beatings were necessary acts of command, and what documentary criterion separates necessity from hybris?
+  - id: Q-008
+    locator: printed p. 127; PDF p. 131
+    question: >-
+      Is the harmony of the noble, just, pious, and pleasant a general teaching, a forensic conclusion tailored to the army, or a qualified statement about memory?
+  - id: Q-009
+    locator: printed p. 127; PDF p. 131
+    question: >-
+      What does the contrast between Xenophon's acquittal and Socrates' death reveal beyond the immediate difference in defendants, cities, charges, and audiences?
+  - id: Q-010
+    locator: printed pp. 127-128; PDF pp. 131-132
+    question: >-
+      Is full devotion to Greece a sufficient or highest definition of justice, and how does it relate to choosing the best human beings regardless of origin?
+  - id: Q-011
+    locator: printed p. 128; PDF p. 132
+    question: >-
+      Can knowledge of how to rule legitimate rule without inheritance, prescription, or another politically visible title?
+  - id: Q-012
+    locator: printed p. 128; PDF p. 132
+    question: >-
+      Why can manly justice and Socratic justice not coexist in plenitude, and what degree of each does Strauss attribute to Xenophon?
+  - id: Q-013
+    locator: printed p. 128; PDF p. 132
+    question: >-
+      Does Xenophon's intermediate position represent the best available human synthesis, a permanent contradiction, or only his own self-presentation?
+  - id: Q-014
+    locator: printed p. 128; PDF p. 132
+    question: >-
+      What follows from Cheirisophos' return without ships, and how will the mercenary promise affect the army's unity, hope, and desire for gain?
+downstream_primary_text_checks:
+  - Anabasis V.6.22-37 on Timasion, the city plan, Xenophon's silence, sacrifices, and the soothsayer's accusation
+  - Anabasis III.1.4-7 on Proxenos' invitation, Socrates, and the Delphic consultation
+  - Anabasis V.7.1-35 on rumor, Xenophon's defense, indiscipline, judicial procedure, purification, and prosecution of the generals
+  - Anabasis V.8 on Xenophon's trial for beating soldiers and the closing appeal to remember good things
+  - The distribution of Xenophon's oaths in Book Five compared with Books One through Four
+  - Cyropaedia II.2.26 on choosing the best persons rather than the merely indigenous
+  - Memorabilia III.9.10 on knowledge of ruling and title to rule
+  - Memorabilia II.6.35 and IV.8.11 on the two senses of justice
+  - Cyropaedia I.4.24 on Cyrus' response to slain enemies
+  - Memorabilia III.1.6 on cruelty and military command
+  - Xenophon's Socrates, p. 144, as Strauss's cited comparative reference
+  - Anabasis V.8 and the following return of Cheirisophos with Anaxibios' mercenary promise
+termination:
+  reason: scope boundary reached at printed p. 128
+  next_unit: XEN-RU-007

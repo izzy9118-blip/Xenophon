@@ -1,0 +1,33 @@
+schema_version: 1.0
+id: XEN-WIT-SEC-001
+status: OWNER_ADOPTED_SECONDARY_WITNESS
+owner_review: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+source_id: XEN-SRC-SEC-001
+witness:
+  title: Studies in Platonic Political Philosophy
+  author: Leo Strauss
+  introduction_by: Thomas L. Pangle
+  publisher: The University of Chicago Press
+  publication_year: 1983
+  isbn: 0-226-77703-0
+  format: owner-supplied searchable PDF scan
+  page_count: 263
+file_control:
+  repository_deposition: not_deposited
+  local_filename: studies-in-platonic-political-philosophy_compress(1).pdf
+  sha256: 8479ed41fe951b8ebc5a2a5b6557a482a60de0d13032785a68f11d51ea8b4fb6
+locator_map:
+  essay_title: Xenophon's Anabasis
+  printed_pages: 105-136
+  pdf_pages_one_based: 109-140
+  page_offset_rule: pdf_page = printed_page + 4
+inspection:
+  title_page_checked: true
+  copyright_page_checked: true
+  contents_page_checked: true
+  essay_opening_checked: true
+  essay_ending_checked: true
+limitations:
+  - The PDF is a scan-derived witness and may contain recognition errors in extracted text.
+  - The physical source copy and scan lineage have not been independently authenticated.
+  - The witness records Strauss's interpretation, not a primary text by Xenophon.

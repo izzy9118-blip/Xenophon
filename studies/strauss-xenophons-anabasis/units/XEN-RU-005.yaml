@@ -1,0 +1,296 @@
+schema_version: 1.0
+unit_id: XEN-RU-005
+study_id: XEN-STUDY-SEC-001
+source_id: XEN-SRC-SEC-001
+witness_id: XEN-WIT-SEC-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  printed_pages: 121-124
+  pdf_pages_one_based: 125-128
+  opening_anchor: to sacrifice prior to his departure and which he had disclosed previously only to Socrates
+  closing_anchor: the honors awarded to the founder of a city, but then in the last moment that highest honor is snatched away
+jurisdiction: Reconstruction of Strauss's argument only; no claim is promoted to Xenophon's teaching without primary-text verification.
+documentary_observations:
+  - id: OBS-001
+    locator: printed p. 121; PDF p. 125
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The Trapezus vow sequence discloses the gods connected with Xenophon's earlier Delphic consultation, information he had previously reported only to Socrates.
+    uncertainty: The passage identifies the ritual recipients but does not settle whether the disclosure exhausts the meaning of the original consultation.
+  - id: OBS-002
+    locator: printed p. 121; PDF p. 125
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The army unanimously prefers the rest of the journey by sea and approves Cheirisophos' proposal to seek ships from the Spartan admiral.
+    uncertainty: Approval establishes a collective plan, not the likelihood that the naval mission will succeed.
+  - id: OBS-003
+    locator: printed p. 121; PDF p. 125
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon alone warns that Cheirisophos may fail and specifies the discipline required during his absence.
+    uncertainty: Strauss calls Xenophon the least sanguine, but the record does not show that every other commander dismissed the risk.
+  - id: OBS-004
+    locator: printed p. 121; PDF p. 125
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: When the soldiers loudly reject even discussing another land march, Xenophon declines to force a vote yet privately persuades the coastal cities to repair the roads.
+    uncertainty: The action preserves a prudent fallback, but the precise scope of Xenophon's authority to secure it without an army vote remains open.
+  - id: OBS-005
+    locator: printed p. 121; PDF p. 125
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Some detachments that disregard Xenophon's injunctions are destroyed by enemy action.
+    uncertainty: The outcome supports the prudence of the injunctions but does not prove that every loss resulted solely from disobedience.
+  - id: OBS-006
+    locator: printed p. 121; PDF p. 125
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: After Cheirisophos departs, Xenophon becomes the de facto chief commander of the whole Greek army without a new formal election recorded in this passage.
+    uncertainty: Practical supremacy and constitutional title are not identical.
+  - id: OBS-007
+    locator: printed p. 121; PDF p. 125
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The Trapezuntians redirect the Greek army against the Drilai because they do not wish to provoke the Kolchians while provisioning the Greeks.
+    uncertainty: The allies' local interest shapes the campaign, but the justice of attacking the Drilai is not independently established here.
+  - id: OBS-008
+    locator: printed p. 121; PDF p. 125
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: When light troops cannot take the Drilai stronghold and retreat is impossible, Xenophon accepts the captains' proposal for a hoplite assault because the sacrifices are favorable according to the soothsayers.
+    uncertainty: Human counsel and ritual interpretation agree, but Xenophon does not originate the tactical proposal.
+  - id: OBS-009
+    locator: printed p. 121; PDF p. 125
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss stresses that human prudence and divine hints agree in the successful assault, while also noting that the decisive human view belonged to the other commanders rather than to Xenophon uniquely.
+    uncertainty: Agreement of counsel and signs does not establish a transparent causal hierarchy.
+  - id: OBS-010
+    locator: printed pp. 121-122; PDF pp. 125-126
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: An enemy reserve restores the desperate situation; an unexpected fire is first attributed to some god, then treated as chance, and becomes saving only when Xenophon recognizes its use and orders the whole settlement burned.
+    uncertainty: The source preserves the ambiguity between divine action, accident, and prudent exploitation rather than resolving it.
+  - id: OBS-011
+    locator: printed pp. 121-122; PDF pp. 125-126
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss names the causal ambiguity deus sive casus and distinguishes the favorable contingency from human prudence while showing that prudence must grasp and extend it.
+    uncertainty: The formula marks an interpretive problem, not a demonstrated equivalence between god and chance.
+  - id: OBS-012
+    locator: printed p. 122; PDF p. 126
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon's reliance on the superhuman or daimonion is said to distinguish him especially after he becomes commander-in-chief in fact.
+    uncertainty: Distinctive reliance does not by itself certify the truth of Xenophon's interpretation or the justice of his command.
+  - id: OBS-013
+    locator: printed p. 122; PDF p. 126
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss places Xenophon's extraordinary piety beside his extraordinary wiliness and asks whether a human being may attempt to be wilier than the gods.
+    uncertainty: The questions are deliberately unresolved and must not be converted into an accusation of conscious impiety.
+  - id: OBS-014
+    locator: printed p. 122; PDF p. 126
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Divine omniscience is introduced as the limit of any human ruse, then itself questioned as possibly part of human flattering speech about the gods.
+    uncertainty: Strauss raises the possibility without deciding whether Xenophon or Socrates endorses, doubts, or strategically presents divine omniscience.
+  - id: OBS-015
+    locator: printed p. 122; PDF p. 126
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The pious man is described as one who knows the laws concerning the gods, yet Strauss notes that Xenophon or his Socrates does not ask what law is and still less resolves the question what a god is.
+    uncertainty: Strauss explicitly says the difficulty cannot be resolved within an interpretation of the Anabasis.
+  - id: OBS-016
+    locator: printed p. 122; PDF p. 126
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The Greeks are finally compelled to leave Trapezus by land; only the least strong, led by the two oldest generals, depart by boat.
+    uncertainty: The failed maritime expectation confirms Xenophon's prudence but does not show whether adequate ships were impossible in principle.
+  - id: OBS-017
+    locator: printed p. 122; PDF p. 126
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: At Kerasus the Greeks count 8,600 surviving hoplites out of roughly 10,000 and distribute proceeds from booty after assigning a tithe to Apollo and Artemis of Ephesus.
+    uncertainty: The figures concern hoplites and do not provide a complete accounting of all persons attached to the expedition.
+  - id: OBS-018
+    locator: printed p. 122; PDF p. 126
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon records how he applied Apollo's portion and, after exile from Athens, used Artemis' portion at Skillus to acquire land chosen by Apollo's oracle, establish hunting in the goddess's honor, and build a replica temple.
+    uncertainty: The passage displays sustained ritual fulfillment but does not disclose the precise chronology or legal circumstances of Xenophon's exile.
+  - id: OBS-019
+    locator: printed p. 122; PDF p. 126
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss treats the Skillus account as a fitting conclusion to Xenophon's supreme command after Cheirisophos' departure and as evidence that he did not abandon piety after his return.
+    uncertainty: Continued fulfillment supports practical piety but does not answer Strauss's more fundamental theological questions.
+  - id: OBS-020
+    locator: printed p. 123; PDF p. 127
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon allies with one faction of Mossynoikians against another; an improvised plundering attack suffers disgraceful defeat, while the whole army succeeds the next day after preparation and favorable sacrifices.
+    uncertainty: The sequence joins military organization and sacrifice, but it does not identify either as the exclusive cause of success.
+  - id: OBS-021
+    locator: printed p. 123; PDF p. 127
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: The Mossynoikians are presented as the people most remote from Greek laws because their public and private behavior reverses ordinary conventions.
+    uncertainty: Greek judgment of remoteness does not establish absence of order or inferiority by nature.
+  - id: OBS-022
+    locator: printed p. 123; PDF p. 127
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss insists that even the most extreme barbarians live under laws, so law belongs to human nature in one respect while the distinction between nature and law must nevertheless be preserved.
+    uncertainty: Universal dependence on law does not identify which laws are just, natural, or best.
+  - id: OBS-023
+    locator: printed p. 123; PDF p. 127
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Similarities between some Mossynoikian traits and Socratic behavior complicate any simple opposition between civilized Greek convention and barbarous eccentricity.
+    uncertainty: The cited similarity is thematic and does not equate Socrates with the Mossynoikians.
+  - id: OBS-024
+    locator: printed p. 123; PDF p. 127
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The generals are tempted to attack Tibarenian fortresses but abstain when sacrifices remain unfavorable and all soothsayers agree that the gods do not permit the war.
+    uncertainty: The episode records obedience to restraint, not independent proof of the gods' will or of the Tibarenians' justice.
+  - id: OBS-025
+    locator: printed p. 123; PDF p. 127
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: At Kotyora the army spends forty-five days sacrificing, holding tribal processions and contests, and taking provisions by force because no one will sell to them.
+    uncertainty: Ritual observance and coercive provisioning coexist; the source does not reconcile them into a simple judgment of justice.
+  - id: OBS-026
+    locator: printed pp. 123-124; PDF pp. 127-128
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Hekatonymos opens with friendly language and then threatens alliance against the army; Xenophon defeats the threat by comparing Sinopean conduct with that of Trapezuntians and barbarians and by issuing a stronger counter-threat.
+    uncertainty: Rhetorical victory and restored harmony do not settle the underlying dispute over provisioning.
+  - id: OBS-027
+    locator: printed p. 124; PDF p. 128
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss says Xenophon successfully defends the army against the charge of injustice by presenting possible war against Greeks allied with barbarians as sheer self-defense.
+    uncertainty: A successful forensic presentation does not independently certify the substantive justice of every contemplated use of force.
+  - id: OBS-028
+    locator: printed p. 124; PDF p. 128
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The next assembly reveals that harmony is incomplete; despite suspicion that Hekatonymos serves the Paphlagonian king, the soldiers accept his claim that only a sea route to Herakleia is feasible.
+    uncertainty: The vote reflects collective judgment under uncertainty rather than confidence in the speaker's character.
+  - id: OBS-029
+    locator: printed p. 124; PDF p. 128
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Xenophon accepts the sea resolution only on the condition that every soldier can embark and that the necessary number of ships is secured.
+    uncertainty: The condition guards against fragmentation but does not determine whether the Sinopeans can or will provide adequate transport.
+  - id: OBS-030
+    locator: printed p. 124; PDF p. 128
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Xenophon conceives founding a large Greek city because the army's size and the region's existing population could enlarge Greek territory and power.
+    uncertainty: The proposal is not presented publicly before the soothsayer discloses it, so the army never deliberates on Xenophon's own complete case in this unit.
+  - id: OBS-031
+    locator: printed p. 124; PDF p. 128
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Before speaking to anyone, Xenophon sacrifices and consults Cyrus' soothsayer, who wishes to return home with his wealth and therefore reveals the plan to the army as Xenophon's pursuit of name and power.
+    uncertainty: The seer's interested motive weakens his attribution, but it does not prove that Xenophon lacked ambition.
+  - id: OBS-032
+    locator: printed p. 124; PDF p. 128
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Strauss treats the founding plan as the apparent peak or overreaching peak of Xenophon's ascent and asks whether deserved name and power could coincide with benefit to Greece and humanity.
+    uncertainty: The passage poses the relation between ambition, merit, public benefit, and legitimacy without deciding it.
+  - id: OBS-033
+    locator: printed p. 124; PDF p. 128
+    evidence_type: SECONDARY_INTERPRETIVE_CLAIM
+    observation: Xenophon is described as supremely fit to command and to found a city, yet the highest honor of the founder is snatched away at the last moment.
+    uncertainty: The cause, justice, and consequences of the loss continue beyond this unit boundary.
+argument_reconstruction:
+  - step: 1
+    claim: Xenophon responds to the army's maritime enthusiasm by preserving a land-route fallback through indirect action rather than forcing a losing vote.
+    locator: printed p. 121; PDF p. 125
+  - step: 2
+    claim: De facto supreme command exposes Xenophon to a test in which human counsel, favorable sacrifices, accidental fire, and tactical recognition cooperate without yielding a transparent causal account.
+    locator: printed pp. 121-122; PDF pp. 125-126
+  - step: 3
+    claim: The formula deus sive casus protects the distinction between contingency and prudence while denying that the narrative can decisively identify divine causation.
+    locator: printed pp. 121-122; PDF pp. 125-126
+  - step: 4
+    claim: Strauss converts the military episode into a theological limit by placing piety, wiliness, omniscience, law, and the unanswered question of what a god is in one sequence.
+    locator: printed p. 122; PDF p. 126
+  - step: 5
+    claim: Xenophon's post-expedition fulfillment of sacred obligations supports the durability of his piety while the exile and Skillus settlement reopen the fatherland problem.
+    locator: printed p. 122; PDF p. 126
+  - step: 6
+    claim: The Mossynoikian episode establishes universal human dependence on law while preserving the difference between law and nature and destabilizing a simple Greek-barbarian hierarchy.
+    locator: printed p. 123; PDF p. 127
+  - step: 7
+    claim: Unfavorable sacrifice restrains aggression against the Tibarenians, whereas the Sinopean dispute is governed by rhetorical comparison, counter-threat, negotiation, and collective vote.
+    locator: printed pp. 123-124; PDF pp. 127-128
+  - step: 8
+    claim: Xenophon's founding thought joins practical capacity, Greek expansion, ambition, sacred consultation, and public legitimacy, thereby bringing his ascent to its most exposed political test.
+    locator: printed p. 124; PDF p. 128
+provisional_inferences:
+  - id: INF-001
+    locator: printed p. 121; PDF p. 125
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Indirect command can preserve a rejected but prudent option by preparing its conditions without misrepresenting the assembly's vote.
+    confidence: provisional
+  - id: INF-002
+    locator: printed pp. 121-122; PDF pp. 125-126
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Favorable contingency becomes politically effective only when a commander recognizes, enlarges, and coordinates it, but this does not disclose whether its source is divine or accidental.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-003
+    locator: printed p. 122; PDF p. 126
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Xenophon's active piety can be supported by sustained ritual conduct even while the truth, nature, and knowledge of the gods remain unresolved.
+    confidence: provisional
+  - id: INF-004
+    locator: printed p. 123; PDF p. 127
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Law may be universal to human life without every legal order possessing equal justice or without nomos becoming identical to physis.
+    confidence: high_for_strauss_argument_in_this_unit
+  - id: INF-005
+    locator: printed pp. 123-124; PDF pp. 127-128
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: A political leader may defeat an accusation of injustice by reframing threatened force as self-defense, yet the adequacy of the defense still depends on facts beyond rhetorical success.
+    confidence: provisional
+  - id: INF-006
+    locator: printed p. 124; PDF p. 128
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: The founding impulse cannot be reduced either to private ambition or to public benefit because the same act could plausibly serve name, power, Greece, and the surrounding population.
+    confidence: provisional
+  - id: INF-007
+    locator: printed p. 124; PDF p. 128
+    evidence_type: PROVISIONAL_INFERENCE
+    inference: Consultation of a religious specialist can expose a political project to capture by the specialist's private interest, even before public deliberation begins.
+    confidence: provisional
+standing_unresolved_questions:
+  - id: Q-001
+    locator: printed p. 121; PDF p. 125
+    question: What authority did Xenophon possess to secure road repairs after declining to submit the fallback plan to the army?
+  - id: Q-002
+    locator: printed pp. 121-122; PDF pp. 125-126
+    question: Does deus sive casus indicate equivalence, deliberate suspension, or the practical indistinguishability of divine aid and fortunate accident?
+  - id: Q-003
+    locator: printed p. 122; PDF p. 126
+    question: Where does Xenophon's piety end and politically useful interpretation of ambiguous events begin?
+  - id: Q-004
+    locator: printed p. 122; PDF p. 126
+    question: Is the attribution of omniscience to the gods affirmed doctrine, conventional speech, philosophical problem, or possible flattery?
+  - id: Q-005
+    locator: printed p. 122; PDF p. 126
+    question: Can the Anabasis support any answer to what a god is, or does it only document human laws and practices concerning gods?
+  - id: Q-006
+    locator: printed p. 122; PDF p. 126
+    question: What does the Skillus settlement disclose about Xenophon's obligations to Artemis, Apollo, Sparta, and Athens after exile?
+  - id: Q-007
+    locator: printed p. 123; PDF p. 127
+    question: What exactly makes the Mossynoikians remote from Greek law if their behavior also recalls traits associated with Socrates?
+  - id: Q-008
+    locator: printed p. 123; PDF p. 127
+    question: In what sense is law natural to man while nature and law must remain distinct?
+  - id: Q-009
+    locator: printed p. 123; PDF p. 127
+    question: Does abstention from attacking the Tibarenians display piety, prudence, justice, obedience to specialists, or an inseparable combination?
+  - id: Q-010
+    locator: printed pp. 123-124; PDF pp. 127-128
+    question: Was the army's coercive provisioning from Kotyora defensible, and does Xenophon's self-defense argument answer the underlying claim of injustice?
+  - id: Q-011
+    locator: printed p. 124; PDF p. 128
+    question: Why do the soldiers accept Hekatonymos' maritime recommendation despite suspecting his political loyalties?
+  - id: Q-012
+    locator: printed p. 124; PDF p. 128
+    question: Would Xenophon's proposed city have been a legitimate foundation, an unauthorized seizure, or a public good requiring consent not yet obtained?
+  - id: Q-013
+    locator: printed p. 124; PDF p. 128
+    question: How should Xenophon's desire for name and power be weighed against his demonstrated service and the possible benefit to Greece and humanity?
+  - id: Q-014
+    locator: printed p. 124; PDF p. 128
+    question: What role does the soothsayer's private interest play in destroying the founding project, and how does that interest bear on religious authority?
+downstream_primary_text_checks:
+  - Anabasis IV.8.24-28 and V.1.1-17 on vows at Trapezus, sea transport, road repair, and Xenophon's warnings
+  - Anabasis V.2.1-32 on the Drilai campaign, sacrifices, the unexpected fire, and burning the stronghold
+  - Memorabilia I.1.8, I.1.19, I.2.41-46, and IV.6.4 on divine knowledge, law, piety, and the daimonion
+  - Anabasis V.3.1-13 on Kerasus, the tithe, Apollo, Artemis, exile, Skillus, hunting, and the temple
+  - Anabasis V.4.1-34 on the Mossynoikians, defeat, favorable sacrifices, customs, and laws
+  - Oeconomicus VII.29-30 and Hiero 3.9 on the distinction between law and nature
+  - Symposium 2.18-19 and Plato, Symposium 175a-176d, 217b-c, and 220c-d on the proposed Socratic analogies
+  - Anabasis V.5.1-3 on the Tibarenians and unfavorable sacrifices
+  - Anabasis V.5.4-24 on Kotyora, provisions, Hekatonymos, self-defense, and maritime deliberation
+  - Anabasis V.6.1-15 on Xenophon's founding plan, sacrifice, the soothsayer, and the accusation of seeking name and power
+termination:
+  reason: scope boundary reached at printed p. 124
+  next_unit: XEN-RU-006

@@ -1,0 +1,32 @@
+schema_version: 1.0
+status: ACTIVE_METHOD_PENDING_OWNER_REVIEW
+unit_order:
+  - bibliographic_and_witness_control
+  - title_opening_and_ending
+  - narrative_person_and_authorial_attribution
+  - speakers_audiences_and_occasions
+  - speeches_deeds_and_outcomes
+  - sequence_repetition_omission_and_contradiction
+  - provisional_findings
+  - standing_unresolved_questions
+required_evidence_fields:
+  - source_id
+  - witness_id
+  - locator
+  - evidence_type
+  - observation
+  - uncertainty
+finding_types:
+  - DIRECT_TEXTUAL_OBSERVATION
+  - STRUCTURAL_OBSERVATION
+  - HISTORICAL_CONTEXT
+  - SECONDARY_INTERPRETIVE_CLAIM
+  - PROVISIONAL_INFERENCE
+  - UNRESOLVED_QUESTION
+rules:
+  - Read every registered work or essay in sequence unless a documented exception is approved.
+  - Separate observation from inference in every reading unit.
+  - Preserve rival explanations when the record does not decide.
+  - Compare primary reconstruction with Strauss only after the relevant primary reading is complete.
+  - Do not derive an operational capacity from a single isolated passage.
+  - Every capacity must be licensed by a documented pattern of deeds, judgments, or compositional practice.

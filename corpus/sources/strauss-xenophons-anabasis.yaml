@@ -1,0 +1,33 @@
+schema_version: 1.0
+id: XEN-SRC-SEC-001
+status: OWNER_ADOPTED_SECONDARY_SOURCE
+owner_review: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+work:
+  author: Leo Strauss
+  title: Xenophon's Anabasis
+  source_type: essay
+publication:
+  container_title: Studies in Platonic Political Philosophy
+  publisher: The University of Chicago Press
+  publication_year: 1983
+  printed_pages: 105-136
+editorial_history:
+  manuscript_state: left by Leo Strauss in handwritten form
+  transcription: Joseph Cropsey, with assistance from Jenny and Diskin Clay
+  first_publication:
+    journal: "Interpretation: A Journal of Political Philosophy"
+    volume: 4
+    issue: 3
+    year: 1975
+repository_jurisdiction:
+  role: secondary interpretive witness
+  permitted_uses:
+    - identify questions for primary-text investigation
+    - record Strauss's textual observations and argument
+    - compare with an independently completed primary reconstruction
+  prohibited_uses:
+    - substitute for Xenophon's Anabasis
+    - certify a claim as Xenophon's teaching without primary evidence
+    - license a ministerial capacity by itself
+witness_ids:
+  - XEN-WIT-SEC-001
