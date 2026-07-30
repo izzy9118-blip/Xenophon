@@ -1,0 +1,25 @@
+schema_version: 1.0
+repository: izzy9118-blip/Xenophon
+repository_role: sanctum_minister_repository
+minister:
+  name: Xenophon
+  status: FOUNDING_IN_PROGRESS
+  registration_status: NOT_YET_REGISTERED_IN_SANCTUM
+version: 0.1.0
+state: FOUNDING_FRAMEWORK_PENDING_OWNER_REVIEW
+governing_hub:
+  repository: izzy9118-blip/Sanctum
+  briefing_standard: standards/briefing-standard.md
+  report_standard: standards/report-format.md
+source_policy:
+  primary_authority: Xenophon's surviving works in reviewed witnesses
+  secondary_authority: Later interpretation may guide questions but may not replace primary reconstruction
+  active_secondary_source: XEN-SRC-SEC-001
+current_phase:
+  id: XEN-PHASE-001
+  name: Founding framework and Strauss witness registration
+  completion_status: IN_PROGRESS
+next_required_unit:
+  id: XEN-RU-001
+  description: Read and reconstruct Strauss's "Xenophon's Anabasis" in sequence without adopting it as repository doctrine
+artificial_intelligence_self_certification_prohibited: true
