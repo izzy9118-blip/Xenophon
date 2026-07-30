@@ -12,7 +12,9 @@ The PDF is a 168-page Safari/iOS capture of Project Gutenberg HTML. The reposito
 
 The Book II sequence preserves the victory dispute, the demand for disarmament, the Theopompus/Xenophon attribution variant, Clearchus's unelected practical leadership, the Greek-Asian oath, the possible omission of the sacrificial wolf, the narrator's judgment that fortune proved a better general, the truce-and-market compact, Ariaeus's political detachment, false bridge warnings, the conjectural second Xenophon appearance, the tiara-upon-the-heart image, the ignored warning against excessive trust, the seizure and killing of the Greek command, and the opposed accusations of perjury.
 
-`XEN-PRI-RU-016` closes Book II through comparative portraits of Clearchus, Proxenus, Menon, Agias, and Socrates. It preserves first-person narratorial judgment, collective testimony, recorded saying, possible fabrication, reported death, the contrast among command through fear, honorable friendship, and complicity in wrongdoing, and the tension between the opening collective statement of decapitation and the later distinct account of Menon's punishment. The next unit is `XEN-PRI-RU-017`, covering Book III.1.
+`XEN-PRI-RU-016` closes Book II through comparative portraits of Clearchus, Proxenus, Menon, Agias, and Socrates. It preserves first-person narratorial judgment, collective testimony, recorded saying, possible fabrication, reported death, the contrast among command through fear, honorable friendship, and complicity in wrongdoing, and the tension between the opening collective statement of decapitation and the later distinct account of Menon's punishment.
+
+The sequential reconstruction now crosses into Book III. The next unit is `XEN-PRI-RU-017`, covering III.1 and the army's despair, Xenophon's account of joining the expedition, his dream, his first leadership deliberation, and the replacement of the lost generals.
 
 The prior Strauss reconstruction remains preserved and owner-adopted only within secondary-source jurisdiction. It is not imported into the primary reading units.
 
