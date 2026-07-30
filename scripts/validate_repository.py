@@ -5,7 +5,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SECONDARY_IDS = [f"XEN-RU-{n:03d}" for n in range(1, 9)]
-PRIMARY_IDS = [f"XEN-PRI-RU-{n:03d}" for n in range(1, 24)]
+PRIMARY_IDS = [f"XEN-PRI-RU-{n:03d}" for n in range(1, 25)]
 UNIT = lambda n: ROOT / f"studies/xenophon-anabasis-dakyns/units/XEN-PRI-RU-{n:03d}.yaml"
 PLAN = ROOT / "studies/xenophon-anabasis-dakyns/reading-plan.yaml"
 SECONDARY_REVIEW = ROOT / "governance/owner-reviews/2026-07-30-strauss-witness-review.yaml"
@@ -17,7 +17,7 @@ REQUIRED = [
     ROOT / "corpus/witnesses/gutenberg-1170-dakyns-pdf.yaml",
     ROOT / "studies/strauss-xenophons-anabasis/reading-plan.yaml",
     *[ROOT / f"studies/strauss-xenophons-anabasis/units/{u}.yaml" for u in SECONDARY_IDS],
-    PLAN, *[UNIT(n) for n in range(1, 24)], ROOT / "adapter/report-contract.yaml",
+    PLAN, *[UNIT(n) for n in range(1, 25)], ROOT / "adapter/report-contract.yaml",
     ROOT / "audits/founding-state.yaml", SECONDARY_REVIEW, PRIMARY_ADMISSION,
     ROOT / "history/2026-07-30-primary-anabasis-witness-record.md",
 ]
@@ -76,11 +76,11 @@ def main():
     docs = {p: load(p) for p in REQUIRED if p.suffix in {".yaml", ".yml"}}
     manifest = docs[ROOT / "manifest.yaml"]
     pm = manifest.get("primary_study", {})
-    if manifest.get("version") != "1.23.0" or manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS":
+    if manifest.get("version") != "1.24.0" or manifest.get("state") != "PRIMARY_RECONSTRUCTION_IN_PROGRESS":
         return fail("Manifest version or state mismatch")
     if manifest.get("artificial_intelligence_self_certification_prohibited") is not True:
         return fail("AI self-certification safeguard missing")
-    if manifest.get("next_required_unit", {}).get("id") != "XEN-PRI-RU-024":
+    if manifest.get("next_required_unit", {}).get("id") != "XEN-PRI-RU-025":
         return fail("Manifest next unit mismatch")
     if not all(pm.get(k) is True for k in [
         "book_one_draft_complete_pending_owner_review",
@@ -90,7 +90,7 @@ def main():
         return fail("Manifest completed-book safeguards missing")
     if pm.get("book_three_drafted_chapters") != [f"III.{n}" for n in range(1, 6)]:
         return fail("Manifest Book III coverage mismatch")
-    if pm.get("book_four_drafted_chapters") != ["IV.1", "IV.2"] or pm.get("drafted_units") != PRIMARY_IDS:
+    if pm.get("book_four_drafted_chapters") != ["IV.1", "IV.2", "IV.3"] or pm.get("drafted_units") != PRIMARY_IDS:
         return fail("Manifest Book IV or unit coverage mismatch")
     if manifest.get("secondary_study", {}).get("drafted_units") != SECONDARY_IDS:
         return fail("Secondary unit order mismatch")
@@ -131,24 +131,26 @@ def main():
     units = plan.get("reading_units", [])
     if plan.get("status") != "SEQUENTIAL_PRIMARY_READING_IN_PROGRESS_PENDING_OWNER_REVIEW":
         return fail("Primary plan status mismatch")
-    if [u.get("id") for u in units] != [*PRIMARY_IDS, "XEN-PRI-RU-024"]:
+    if [u.get("id") for u in units] != [*PRIMARY_IDS, "XEN-PRI-RU-025"]:
         return fail("Primary plan order mismatch")
     expected = (
         [f"Anabasis I.{n}" for n in range(1, 11)]
         + [f"Anabasis II.{n}" for n in range(1, 7)]
         + [f"Anabasis III.{n}" for n in range(1, 6)]
-        + ["Anabasis IV.1", "Anabasis IV.2", "Anabasis IV.3"]
+        + ["Anabasis IV.1", "Anabasis IV.2", "Anabasis IV.3", "Anabasis IV.4"]
     )
     if [u.get("work_locator") for u in units] != expected:
         return fail("Primary locator sequence mismatch")
-    if units[-1].get("pdf_pages_one_based") != "75-78" or units[-1].get("status") != "NEXT":
+    if units[-1].get("pdf_pages_one_based") != "79-81" or units[-1].get("status") != "NEXT":
         return fail("Next unit page range or status mismatch")
+    if units[-2].get("pdf_pages_one_based") != "75-79":
+        return fail("IV.3 corrected page range missing")
     if [u.get("id") for u in units if u.get("status") == "DRAFTED_PENDING_OWNER_REVIEW"] != PRIMARY_IDS:
         return fail("Drafted primary order mismatch")
     if plan.get("comparison_gate", {}).get("strauss_comparison") != "DEFERRED":
         return fail("Strauss comparison must remain deferred")
 
-    unit_docs = {n: docs[UNIT(n)] for n in range(1, 24)}
+    unit_docs = {n: docs[UNIT(n)] for n in range(1, 25)}
     for n, r in unit_docs.items():
         if err := validate_unit(r, f"XEN-PRI-RU-{n:03d}"):
             return fail(err)
@@ -163,7 +165,7 @@ def main():
     narrative_expectations = {
         17: (True, True, True), 18: (True, False, False), 19: (True, False, False),
         20: (True, False, False), 21: (True, False, False), 22: (True, False, False),
-        23: (True, False, False),
+        23: (True, False, False), 24: (True, False, False),
     }
     for n, values in narrative_expectations.items():
         if not narrative_ok(unit_docs[n], values):
@@ -180,6 +182,7 @@ def main():
         21: {"POSSESSION_CLAIM_OBSERVATION", "COMMAND_DISAGREEMENT_OBSERVATION", "ENGINEERING_PROPOSAL_OBSERVATION", "FEASIBILITY_JUDGMENT_OBSERVATION", "COERCED_INTELLIGENCE_OBSERVATION", "AUTONOMY_REPORT_OBSERVATION", "REPORTED_HISTORICAL_CLAIM_OBSERVATION", "PARATEXT_OBSERVATION", "INTELLIGENCE_COMPARTMENTATION_OBSERVATION", "STRATEGIC_DECISION_OBSERVATION", "SACRIFICIAL_DECISION_OBSERVATION", "EDITORIAL_PARATEXT_OBSERVATION"},
         22: {"EDITORIAL_PARATEXT_OBSERVATION", "THREAT_ASSESSMENT_OBSERVATION", "SELECTIVE_RESTRAINT_OBSERVATION", "NARRATORIAL_COUNTERFACTUAL_OBSERVATION", "CAPTIVE_RELEASE_OBSERVATION", "CONFISCATION_ENFORCEMENT_OBSERVATION", "COMMAND_COMMUNICATION_OBSERVATION", "COMMAND_DISAGREEMENT_OBSERVATION", "COERCIVE_INTERROGATION_OBSERVATION", "PRISONER_EXECUTION_OBSERVATION", "ROUTE_DISCLOSURE_OBSERVATION", "VOLUNTEER_FORMATION_OBSERVATION"},
         23: {"BOUND_GUIDE_OBSERVATION", "SIGNAL_PLAN_OBSERVATION", "DIVERSION_OPERATION_OBSERVATION", "HEAVY_BOULDER_DEFENSE_OBSERVATION", "FALSE_SUMMIT_OBSERVATION", "MIST_ASSAULT_OBSERVATION", "BAGGAGE_ROUTE_CONSTRAINT_OBSERVATION", "NARRATORIAL_INFERENCE_OBSERVATION", "NAMED_CASUALTY_OBSERVATION", "TRUCE_NEGOTIATION_OBSERVATION", "DEAD_RECOVERY_CONDITION_OBSERVATION", "TRUCE_AMBIGUITY_OBSERVATION", "ABANDONMENT_OBSERVATION", "RESCUE_OBSERVATION", "GUIDE_EXCHANGE_OBSERVATION", "FUNERARY_RITES_OBSERVATION", "MUTUAL_SUPPORT_OBSERVATION", "WEAPON_TECHNOLOGY_OBSERVATION", "ADAPTIVE_WEAPON_REUSE_OBSERVATION", "SPECIALIST_UTILITY_OBSERVATION", "PARATEXT_OBSERVATION", "EDITORIAL_PARATEXT_OBSERVATION"},
+        24: {"NARRATORIAL_SUMMARY_OBSERVATION", "FAILED_CROSSING_OBSERVATION", "DREAM_REPORT_OBSERVATION", "EDITORIAL_PARATEXT_OBSERVATION", "DREAM_INTERPRETATION_OBSERVATION", "SACRIFICIAL_DECISION_OBSERVATION", "SCOUT_DISCOVERY_OBSERVATION", "LIBATION_OBSERVATION", "COLLECTIVE_RITUAL_OBSERVATION", "TACTICAL_FEINT_OBSERVATION", "DISCIPLINE_FAILURE_OBSERVATION", "SIGNAL_COORDINATION_OBSERVATION", "OVEREXTENSION_OBSERVATION"},
     }
     for n, wanted in required_types.items():
         if result := require_types(unit_docs[n], f"Unit {n}", wanted):
@@ -199,7 +202,7 @@ def main():
     if "ends on PDF page 75 immediately" not in boundary23 or "IV.3 begins on page 75" not in boundary23:
         return fail("IV.2 chapter boundary missing")
     t23 = texts(unit_docs[23])
-    phrase_checks = [
+    phrase_checks23 = [
         ("binds the local guide", "volunteer storming party"),
         ("two thousand strong", "storming party"),
         ("think they possess the height", "lower outpost"),
@@ -210,13 +213,37 @@ def main():
         ("captured Carduchian arrows", "javelins"),
         ("Cretan troops under Stratocles", "highly useful"),
     ]
-    if any(not any(a in t and b in t for t in t23) for a, b in phrase_checks):
+    if any(not any(a in t and b in t for t in t23) for a, b in phrase_checks23):
         return fail("IV.2 required documentary phrase missing")
     if not any("shield-bearer leaves" in t for t in t23) or not any("Eurylochus" in t for t in t23):
         return fail("IV.2 abandonment and rescue distinction missing")
 
+    u24 = unit_docs[24]
+    boundary24 = u24.get("bibliographic_and_witness_control", {}).get("chapter_boundary_control", "")
+    if "ends at the top of PDF page 79" not in boundary24 or "75-78 was corrected" not in boundary24:
+        return fail("IV.3 corrected chapter boundary missing")
+    t24 = texts(u24)
+    phrase_checks24 = [
+        ("last seven days", "more suffering"),
+        ("self-falling fetters", "free movement"),
+        ("Two unnamed young men", "ford"),
+        ("Cheirisophus leads half", "Xenophon holds half"),
+        ("men shout and women add", "chant"),
+        ("Xenophon races back", "enemy cavalry"),
+        ("Many men assigned to remain leave", "protect"),
+        ("supporting detachment advances farther", "additional wounds"),
+    ]
+    if any(not any(a in t and b in t for t in t24) for a, b in phrase_checks24):
+        return fail("IV.3 required documentary phrase missing")
+    if u24.get("scope", {}).get("pdf_pages_one_based") != "75-79":
+        return fail("IV.3 scope range mismatch")
+    if len(u24.get("documentary_observations", [])) != 34:
+        return fail("IV.3 observation count mismatch")
+    if len(u24.get("speeches_deeds_and_outcomes", [])) != 10:
+        return fail("IV.3 deed record count mismatch")
+
     state = docs[ROOT / "audits/founding-state.yaml"].get("repository_state", {})
-    if state.get("primary_witness_count") != 1 or state.get("drafted_primary_units") != 23 or state.get("drafted_secondary_units") != 8:
+    if state.get("primary_witness_count") != 1 or state.get("drafted_primary_units") != 24 or state.get("drafted_secondary_units") != 8:
         return fail("Founding audit counts mismatch")
     if not all(state.get(k) is True for k in [
         "book_one_primary_draft_complete", "book_two_primary_draft_complete",
@@ -227,7 +254,7 @@ def main():
         return fail("Audit Book II coverage mismatch")
     if state.get("book_three_drafted_chapters") != [f"III.{n}" for n in range(1, 6)]:
         return fail("Audit Book III coverage mismatch")
-    if state.get("book_four_drafted_chapters") != ["IV.1", "IV.2"]:
+    if state.get("book_four_drafted_chapters") != ["IV.1", "IV.2", "IV.3"]:
         return fail("Audit Book IV coverage mismatch")
     if state.get("minister_adapter_derived") is not False or state.get("sanctum_registration_present") is not False:
         return fail("Adapter or Sanctum registration safeguard missing")
