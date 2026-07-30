@@ -1,0 +1,93 @@
+schema_version: 1.0
+record_type: source_status_record
+
+identity:
+  source_id: XEN-STRAUSS-ANABASIS-SOURCE-001
+  canonical_title: Xenophon's Anabasis
+  author: Leo Strauss
+  container: Studies in Platonic Political Philosophy
+  container_publication_year: 1983
+  version: 1.0.0
+
+status:
+  lifecycle: REGISTERED_REVIEWED_SOURCE
+  source_class: QUALIFIED_SECONDARY_INTERPRETIVE
+  reconstruction: PROVISIONAL_COMPLETE_FOR_CURRENT_SECONDARY_SCOPE
+  certification: NOT_CERTIFIED
+  primary_text_authority: NONE
+
+publication_condition:
+  manuscript_state: HANDWRITTEN_MANUSCRIPT_LEFT_BY_AUTHOR
+  transcription:
+    principal: Joseph Cropsey
+    assistants:
+      - Jenny Clay
+      - Diskin Clay
+    qualification: TRANSCRIBED_AS_CAREFULLY_AS_POSSIBLE
+  first_publication:
+    venue: Interpretation - A Journal of Political Philosophy
+    volume: 4
+    number: 3
+    year: 1975
+  collected_publication:
+    publisher: University of Chicago Press
+    year: 1983
+    printed_pages: 105-136
+  authorial_limit: >
+    The reviewed text is a posthumously transcribed essay. The repository must
+    not silently treat uncertain punctuation, wording, paragraphing, or final
+    authorial revision as equivalent to an author-corrected publication.
+
+reviewed_witness:
+  container_witness_id: XEN-WIT-SEC-001
+  local_filename: studies-in-platonic-political-philosophy_compress(1).pdf
+  format: PDF
+  pdf_pages_one_based: 109-140
+  printed_pages: 105-136
+  container_page_count: 263
+  file_size_bytes: 12551057
+  sha256: 8479ed41fe951b8ebc5a2a5b6557a482a60de0d13032785a68f11d51ea8b4fb6
+  source_condition: SEARCHABLE_TEXT_WITH_LAYOUT_AND_PAGE_IMAGES
+
+permitted_use:
+  - reconstruct Strauss's interpretation of Xenophon's Anabasis
+  - generate primary-text verification questions
+  - identify passages, formal features, and cross-work comparisons for later checking
+  - compare against an independently completed primary reconstruction
+
+prohibited_use:
+  - substitute for Xenophon's Anabasis
+  - certify Xenophon's wording or intention
+  - import Strauss repository doctrine into Xenophon as settled truth
+  - resolve Greek textual or translation questions without a primary witness
+  - treat the essay's posthumous transcription as an author-corrected final edition
+
+independent_witness_rule: >
+  Xenophon's Anabasis must be reconstructed from one or more registered primary
+  witnesses before Strauss's interpretation may enter a comparative synthesis.
+  The independent reconstruction must remain preserved if later comparison changes
+  the repository's questions or conclusions.
+
+evidence_rules:
+  - rule_id: XEN-SA-SR-001
+    rule: Distinguish Strauss's explicit claims from his questions, conjectures, and structural inferences.
+  - rule_id: XEN-SA-SR-002
+    rule: Distinguish Strauss's paraphrase of Xenophon from Xenophon's own wording.
+  - rule_id: XEN-SA-SR-003
+    rule: Preserve the difference among Xenophon the author, Themistogenes, the narrator, and Xenophon as a character.
+  - rule_id: XEN-SA-SR-004
+    rule: Treat title, centrality, omission, repetition, legetai, and numerical structure as evidence requiring primary verification.
+  - rule_id: XEN-SA-SR-005
+    rule: Distinguish successful command, lawful command, just command, and wisdom.
+  - rule_id: XEN-SA-SR-006
+    rule: Distinguish sacrifice, omen, oath, dream, and divine interpretation from demonstrated divine causation.
+
+termination:
+  source_state: REVIEWED_FOR_SECONDARY_RECONSTRUCTION
+  study_completion: COMPLETE_WITHIN_REGISTERED_SECONDARY_SCOPE
+  primary_comparison: BLOCKED_PENDING_PRIMARY_WITNESS
+  remaining_requirements:
+    - register a Greek or responsible critical-edition witness of Anabasis
+    - register at least one complete translation with explicit translator metadata
+    - verify all cited sections and structural counts against the primary text
+    - compare the 1983 printing with the 1975 journal publication where precision requires it
