@@ -1,0 +1,287 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-016
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis II.6
+  pdf_pages_one_based: 46-49
+  opening_anchor: >-
+    The generals who were thus seized were taken up to the king and there decapitated.
+  closing_anchor: >-
+    They were both about thirty-five years of age.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis II.6 plus one-based PDF page
+  source_boundary: >-
+    Narratorial summary, first-person judgment, collective testimony, recorded saying,
+    reported opinion, character portrait, factual claim, rumor, translator note, and later
+    editorial comparison remain distinct. The opening collective statement about the
+    generals' decapitation is preserved alongside the later qualification that Menon was
+    initially spared and died later by a different reported punishment.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    third-person biographical narration with explicit first-person evaluative interventions
+    and embedded reports about the five dead generals
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: true
+  observation: >-
+    The narrator says "These, I take it" when identifying Clearchus's characteristic acts,
+    asks whether the good soldier was equally good as a commander, and later says "I
+    confine myself" to publicly known facts concerning Menon. These interventions mark
+    selection and judgment without identifying the narrator by name within the chapter.
+  uncertainty: >-
+    This witness does not settle the Greek force of soldier, commander, rule, obedience,
+    friendship, goodwill, necessity, gentleman, base, justice, piety, truth, education,
+    report, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis II.6; PDF p. 46
+    speech_form: collective_testimony_reported
+    speaker: all who knew Clearchus intimately
+    audience: narrator and readers
+    occasion: opening assessment of Clearchus after the generals' deaths
+    content: They testify that Clearchus was a thorough soldier and a true lover of fighting.
+    uncertainty: The witnesses are not named and the scope of intimate knowledge is unstated.
+  - id: SAO-002
+    locator: Anabasis II.6; PDF p. 46
+    speech_form: first_person_narratorial_judgment
+    speaker: narrator
+    audience: reader
+    occasion: interpreting Clearchus's prior actions
+    content: >-
+      The narrator says that Clearchus's preference for war, toil, danger, and expenditure
+      on soldiering reveals a man whose affections were set upon warfare.
+    uncertainty: The inference depends on the narrator's selection and arrangement of acts.
+  - id: SAO-003
+    locator: Anabasis II.6; PDF p. 47
+    speech_form: recorded_maxim
+    speaker: Clearchus
+    audience: unspecified soldiers or associates
+    occasion: explanation of his disciplinary theory
+    content: >-
+      A soldier who must keep guard, refrain from harming friends, and attack the enemy
+      without hesitation must fear his commander more than the enemy.
+    uncertainty: The original occasion, wording, and transmission of the saying are absent.
+  - id: SAO-004
+    locator: Anabasis II.6; PDF p. 47
+    speech_form: reported_opinion
+    speaker: unspecified observers
+    audience: narrator and readers
+    occasion: judgment of Clearchus's capacity for subordination
+    content: It was said that Clearchus had little taste for playing a subordinate part.
+    uncertainty: The speakers and evidentiary basis are not identified.
+  - id: SAO-005
+    locator: Anabasis II.6; PDF pp. 47-48
+    speech_form: narratorial_character_assessment
+    speaker: narrator
+    audience: reader
+    occasion: evaluation of Proxenus's education and command
+    content: >-
+      Proxenus sought great achievements, honorable acquisition of name, power, and wealth,
+      and leadership of gentlemen, but failed to inspire sufficient respect or fear among
+      those capable of exploiting him.
+    uncertainty: The portrait combines stated aims, attributed beliefs, and narrated outcomes.
+  - id: SAO-006
+    locator: Anabasis II.6; PDF p. 48
+    speech_form: narratorial_character_assessment
+    speaker: narrator
+    audience: reader
+    occasion: evaluation of Menon's dominant motive and methods
+    content: >-
+      Menon insatiably sought wealth, treated rule and honor as means to gain, and regarded
+      false oaths, lies, cheating, slander, and complicity in wrongdoing as the shortest road
+      to power and obedience.
+    uncertainty: The chapter distinguishes known public facts from obscure accusations only later.
+  - id: SAO-007
+    locator: Anabasis II.6; PDF p. 49
+    speech_form: first_person_evidentiary_limitation
+    speaker: narrator
+    audience: reader
+    occasion: transition from accusations about Menon to selected evidence
+    content: >-
+      The narrator concedes that some obscure charges may be fabrications and confines the
+      account to facts said to be known to all.
+    uncertainty: The criteria for public knowledge and the excluded accusations are not supplied.
+  - id: SAO-008
+    locator: Anabasis II.6; PDF p. 49
+    speech_form: report_of_death
+    speaker: unspecified report
+    audience: narrator and readers
+    occasion: account of Menon's punishment after the other generals' deaths
+    content: >-
+      Menon reportedly lived for a year in pain and disgrace before dying the death of a felon.
+    uncertainty: The source, legal process, precise punishment, and manner of death are unstated.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis II.6; PDF p. 46
+    actor: Artaxerxes's authority and the seized Greek generals
+    deed: The captured generals are taken to the king; the chapter opens by saying they were decapitated.
+    outcome: The Greek command lost in II.5 is presented as dead before individual portraits begin.
+    uncertainty: Menon's later treatment qualifies the opening collective formulation.
+  - id: SDO-002
+    locator: Anabasis II.6; PDF p. 46
+    actor: Clearchus, Sparta's ephors, and the Thracians
+    deed: >-
+      Clearchus obtains authority to fight in Thrace, refuses recall after the ephors change
+      course, sails to the Hellespont, and is condemned to death for disobedience.
+    outcome: He becomes an exile and joins Cyrus.
+    uncertainty: The reason for the ephors' reversal is expressly left unspecified.
+  - id: SDO-003
+    locator: Anabasis II.6; PDF p. 46
+    actor: Clearchus and Cyrus
+    deed: >-
+      Clearchus receives ten thousand darics, raises an army, defeats and continually raids
+      Thracians, and joins Cyrus when another field of war becomes available.
+    outcome: Wealth is converted into continuing military activity rather than private ease.
+    uncertainty: The referenced language by which he moved Cyrus is described elsewhere.
+  - id: SDO-004
+    locator: Anabasis II.6; PDF p. 47
+    actor: Clearchus and his soldiers
+    deed: >-
+      Clearchus obtains supplies, enforces discipline through severity and whipping, and
+      governs by making punishment more feared than the enemy.
+    outcome: Soldiers obey him eagerly in danger and become effective in battle, but many leave when danger passes.
+    uncertainty: The frequency, proportionality, and consequences of particular punishments are absent.
+  - id: SDO-005
+    locator: Anabasis II.6; PDF pp. 47-48
+    actor: Proxenus, Gorgias, Cyrus, and Proxenus's soldiers
+    deed: >-
+      Proxenus studies with Gorgias, seeks honorable fame, power, and wealth through Cyrus,
+      and tries to rule through praise of the virtuous and withholding praise from wrongdoers.
+    outcome: Good and noble men favor him, while base men exploit his insufficiently feared authority.
+    uncertainty: The precise relation between rhetorical education and military failure is not demonstrated.
+  - id: SDO-006
+    locator: Anabasis II.6; PDF p. 48
+    actor: Menon and his associates
+    deed: >-
+      Menon pursues wealth through office, falsehood, perjury, slander, betrayal of friends,
+      and complicity in his soldiers' wrongdoing.
+    outcome: He secures obedience and court among those who value or share his misconduct.
+    uncertainty: The portrait is strongly evaluative and not every allegation is independently evidenced.
+  - id: SDO-007
+    locator: Anabasis II.6; PDF p. 49
+    actor: Menon and Artaxerxes's authority
+    deed: >-
+      Menon is initially exempted when the other generals are executed, but royal vengeance
+      later reaches him and he reportedly endures a year of pain and disgrace before death.
+    outcome: His claimed informing does not secure lasting safety.
+    uncertainty: The cause, proceedings, and exact form of punishment remain unknown.
+  - id: SDO-008
+    locator: Anabasis II.6; PDF p. 49
+    actor: Agias the Arcadian and Socrates the Achaean
+    deed: They are executed with the other sufferers.
+    outcome: The chapter preserves only brief favorable testimony concerning courage in war and fidelity in friendship.
+    uncertainty: Their commands, conduct, and deaths receive no further detail.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Collective announcement that the seized generals were taken to the king and decapitated
+    - Extended portrait of Clearchus as soldier, commander, disciplinarian, and failed subordinate
+    - Contrasting portrait of Proxenus as honorable but insufficiently feared ruler
+    - Extended condemnation of Menon as wealth-seeking, deceptive, and corrupting
+    - Narratorial restriction from possible fabrication to publicly known facts
+    - Qualification of the opening death summary through Menon's delayed reported punishment
+    - Brief memorial judgments on Agias and Socrates
+    - Closure of Book II before the crisis of Book III
+  repetitions:
+    - Rule is repeatedly measured by the production of obedience.
+    - Fear, friendship, goodwill, necessity, honor, and complicity appear as rival foundations of command.
+    - Character is inferred from repeated choices involving war, wealth, danger, friends, and subordinates.
+    - The narrator alternates between testimony, judgment, public fact, and report.
+    - Death provides the occasion for comparison rather than eliminating unresolved questions.
+  omissions:
+    - The trial or royal procedure leading to the executions is absent.
+    - The sources for the intimate testimony about Clearchus are unnamed.
+    - The language by which Clearchus persuaded Cyrus is deferred elsewhere.
+    - No individual soldier describes Clearchus, Proxenus, or Menon directly by name.
+    - Proxenus's role in the expedition receives little narrative review beyond character and command.
+    - The evidence behind most of Menon's moral portrait is not itemized.
+    - The precise fate and manner of death of Menon remain report-dependent.
+    - Agias and Socrates receive no full biographies.
+  tensions:
+    - Clearchus is most desired in danger and most deserted in safety.
+    - He knows how to rule through fear but is said to dislike being ruled.
+    - Proxenus seeks noble and lawful achievement but cannot protect himself from base men.
+    - Menon obtains obedience by sharing wrongdoing, inverting the moral basis claimed by Proxenus.
+    - The opening says the seized generals were decapitated, while the later account separates Menon's fate.
+    - Friendship can mean loyalty, reciprocal service, a target for exploitation, or a mask for betrayal.
+    - The longest portraits are not proportionate to innocence, military success, or honorable reputation.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis II.6; PDF p. 46", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The chapter opens by stating that the seized generals were taken to Artaxerxes and decapitated.", uncertainty: "Menon's later account qualifies the collective statement."}
+  - {id: OBS-002, locator: "Anabasis II.6; PDF p. 46", evidence_type: TESTIMONY_STATUS_OBSERVATION, observation: "All who knew Clearchus intimately are said to agree that he was a thorough soldier and lover of fighting.", uncertainty: "The witnesses are not named."}
+  - {id: OBS-003, locator: "Anabasis II.6; PDF p. 46", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus found occupation during the Spartan-Athenian war and sought a Thracian command after peace.", uncertainty: "The chronology is narrated without documentary corroboration."}
+  - {id: OBS-004, locator: "Anabasis II.6; PDF p. 46", evidence_type: EXPLICIT_UNCERTAINTY_OBSERVATION, observation: "The ephors changed their minds for an unspecified reason and tried to recall Clearchus.", uncertainty: "The cause is expressly absent."}
+  - {id: OBS-005, locator: "Anabasis II.6; PDF p. 46", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus disobeyed recall and was condemned to death by Spartan authorities.", uncertainty: "The legal process is not described."}
+  - {id: OBS-006, locator: "Anabasis II.6; PDF p. 46", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus gave Clearchus ten thousand darics after being moved by language described elsewhere.", uncertainty: "The relevant speech is not reproduced here."}
+  - {id: OBS-007, locator: "Anabasis II.6; PDF p. 46", evidence_type: FIRST_PERSON_JUDGMENT_OBSERVATION, observation: "The narrator identifies Clearchus's choices as characteristic acts of a man devoted to warfare.", uncertainty: "The inference is narratorial."}
+  - {id: OBS-008, locator: "Anabasis II.6; PDF pp. 46-47", evidence_type: CONTRASTIVE_CHARACTERIZATION_OBSERVATION, observation: "Peace, home, ease, and secure wealth are contrasted with Clearchus's preference for war, toil, danger, and military expenditure.", uncertainty: "The formulation is highly rhetorical."}
+  - {id: OBS-009, locator: "Anabasis II.6; PDF p. 47", evidence_type: TESTIMONY_STATUS_OBSERVATION, observation: "Campaign companions are said unanimously to recognize Clearchus's composure in difficulty.", uncertainty: "No individual testimony is preserved."}
+  - {id: OBS-010, locator: "Anabasis II.6; PDF p. 47", evidence_type: FIRST_PERSON_QUESTION_OBSERVATION, observation: "The narrator asks whether the good soldier was equally good as a commander.", uncertainty: "The question structures the ensuing qualified answer."}
+  - {id: OBS-011, locator: "Anabasis II.6; PDF p. 47", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus is praised for devising and obtaining supplies.", uncertainty: "No particular supply operation is cited."}
+  - {id: OBS-012, locator: "Anabasis II.6; PDF p. 47", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "His severity included whipping and occasional fury followed by regret.", uncertainty: "No named incident is supplied."}
+  - {id: OBS-013, locator: "Anabasis II.6; PDF p. 47", evidence_type: REPORTED_SAYING_OBSERVATION, observation: "A saying attributes to Clearchus the principle that soldiers must fear their commander more than the enemy.", uncertainty: "The original context and wording are unknown."}
+  - {id: OBS-014, locator: "Anabasis II.6; PDF p. 47", evidence_type: STRUCTURAL_OBSERVATION, observation: "Soldiers prefer Clearchus in danger but many abandon him when danger passes.", uncertainty: "The scale and occasions of desertion are not quantified."}
+  - {id: OBS-015, locator: "Anabasis II.6; PDF p. 47", evidence_type: METAPHORICAL_OBSERVATION, observation: "His soldiers' feeling is compared to that of schoolboys toward a master.", uncertainty: "The Greek image and social force require review."}
+  - {id: OBS-016, locator: "Anabasis II.6; PDF p. 47", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus's followers obey through public appointment, want, or necessity rather than friendship or goodwill.", uncertainty: "The categories may overlap."}
+  - {id: OBS-017, locator: "Anabasis II.6; PDF p. 47", evidence_type: REPORTED_OPINION_OBSERVATION, observation: "It was said that Clearchus had little taste for subordinate service.", uncertainty: "The source of the saying is unspecified."}
+  - {id: OBS-018, locator: "Anabasis II.6; PDF p. 47", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus was about fifty at death.", uncertainty: "The age is approximate."}
+  - {id: OBS-019, locator: "Anabasis II.6; PDF pp. 47-48", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Proxenus studied with Gorgias because he desired capacity for great achievements and rule.", uncertainty: "The precise content of his education is not given."}
+  - {id: OBS-020, locator: "Anabasis II.6; PDF p. 48", evidence_type: CONTRASTIVE_CHARACTERIZATION_OBSERVATION, observation: "Proxenus sought fame, power, and wealth but would obtain them honorably or forgo them.", uncertainty: "The claim concerns attributed disposition."}
+  - {id: OBS-021, locator: "Anabasis II.6; PDF p. 48", evidence_type: STRUCTURAL_OBSERVATION, observation: "Proxenus could lead gentlemen but did not inspire adequate respect or fear in his soldiers.", uncertainty: "The terms gentleman, respect, and fear are translation-dependent."}
+  - {id: OBS-022, locator: "Anabasis II.6; PDF p. 48", evidence_type: STRUCTURAL_OBSERVATION, observation: "Good men favored Proxenus while base men treated him as exploitable.", uncertainty: "No individual examples are named."}
+  - {id: OBS-023, locator: "Anabasis II.6; PDF p. 48", evidence_type: EDITORIAL_NOTE_OBSERVATION, observation: "Dakyns's note links Proxenus and Cyrus to material later used in the Cyropaedia.", uncertainty: "This is an editorial interpretation, not Xenophon's narrative voice."}
+  - {id: OBS-024, locator: "Anabasis II.6; PDF p. 48", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Proxenus was about thirty at death.", uncertainty: "The age is approximate."}
+  - {id: OBS-025, locator: "Anabasis II.6; PDF p. 48", evidence_type: NARRATORIAL_CHARACTERIZATION_OBSERVATION, observation: "Menon's dominant motive is identified as insatiable pursuit of wealth.", uncertainty: "The portrait is strongly condemnatory."}
+  - {id: OBS-026, locator: "Anabasis II.6; PDF p. 48", evidence_type: STRUCTURAL_OBSERVATION, observation: "Menon treats rule, honor, and powerful friendships as instruments for gain and impunity.", uncertainty: "The account does not specify every underlying incident."}
+  - {id: OBS-027, locator: "Anabasis II.6; PDF p. 48", evidence_type: CONTRASTIVE_CHARACTERIZATION_OBSERVATION, observation: "Menon is said to regard simplicity and truth as folly and to pride himself on fraud as others pride themselves on piety and justice.", uncertainty: "The formulation may be rhetorically heightened."}
+  - {id: OBS-028, locator: "Anabasis II.6; PDF p. 48", evidence_type: STRUCTURAL_OBSERVATION, observation: "Menon secures soldiers' obedience by becoming an accomplice in their wrongdoing.", uncertainty: "No specific shared offense is named."}
+  - {id: OBS-029, locator: "Anabasis II.6; PDF p. 49", evidence_type: EVIDENTIARY_LIMITATION_OBSERVATION, observation: "The narrator concedes that obscure accusations against Menon may be fabrications and limits the account to publicly known facts.", uncertainty: "The boundary between accusation and public fact is not fully transparent."}
+  - {id: OBS-030, locator: "Anabasis II.6; PDF p. 49", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Menon alone was initially spared when the other generals were executed.", uncertainty: "The reason is not formally adjudicated here."}
+  - {id: OBS-031, locator: "Anabasis II.6; PDF p. 49", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Menon's year-long painful and disgraceful death is introduced as report.", uncertainty: "Source and manner remain unknown."}
+  - {id: OBS-032, locator: "Anabasis II.6; PDF p. 49", evidence_type: BRIEF_MEMORIAL_OBSERVATION, observation: "Agias and Socrates are remembered as neither cowardly in war nor blameworthy in friendship.", uncertainty: "Their lives and commands are otherwise omitted."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis II.6; PDF pp. 46-49", evidence_type: PROVISIONAL_INFERENCE, finding: "Book II closes by turning the destruction of command into a comparative inquiry concerning the foundations and limits of rule.", confidence: high_for_chapter_structure}
+  - {id: INF-002, locator: "Anabasis II.6; PDF pp. 46-47", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus's authority is strongest under danger because fear, confidence, necessity, and competence converge there.", confidence: high_for_portrait_structure}
+  - {id: INF-003, locator: "Anabasis II.6; PDF p. 47", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus can produce obedience without durable goodwill and can rule better than he can accept rule.", confidence: high_with_reported_qualification}
+  - {id: INF-004, locator: "Anabasis II.6; PDF pp. 47-48", evidence_type: PROVISIONAL_INFERENCE, finding: "Proxenus's honorable aims and education do not supply the fear or discernment required to govern base men.", confidence: moderate_pending_broader_comparison}
+  - {id: INF-005, locator: "Anabasis II.6; PDF p. 48", evidence_type: PROVISIONAL_INFERENCE, finding: "Menon represents an inverted political art in which complicity, fraud, and exploitation manufacture obedience.", confidence: high_for_narratorial_portrait}
+  - {id: INF-006, locator: "Anabasis II.6; PDF pp. 47-49", evidence_type: PROVISIONAL_INFERENCE, finding: "The portraits contrast command through fear, honorable friendship, and shared vice rather than offering a single model of leadership.", confidence: high_for_comparative_sequence}
+  - {id: INF-007, locator: "Anabasis II.6; PDF pp. 46-49", evidence_type: PROVISIONAL_INFERENCE, finding: "The narrator marks evidentiary levels more carefully in Menon's case by conceding possible fabrication and labeling the account of his death as report.", confidence: high_for_textual_markers}
+  - {id: INF-008, locator: "Anabasis II.6; PDF p. 49", evidence_type: PROVISIONAL_INFERENCE, finding: "The brief final notices of Agias and Socrates make courage and friendship the minimum virtues preserved when fuller political portraits are unavailable.", confidence: moderate_for_chapter_closure}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis II.6; PDF p. 46", evidence_type: UNRESOLVED_QUESTION, question: "How should the opening claim that the generals were decapitated be reconciled with the later distinct account of Menon's death?"}
+  - {id: Q-002, locator: "Anabasis II.6; PDF p. 46", evidence_type: UNRESOLVED_QUESTION, question: "Who supplied the intimate testimony concerning Clearchus?"}
+  - {id: Q-003, locator: "Anabasis II.6; PDF p. 46", evidence_type: UNRESOLVED_QUESTION, question: "Why did the ephors reverse their authorization and recall Clearchus?"}
+  - {id: Q-004, locator: "Anabasis II.6; PDF p. 46", evidence_type: UNRESOLVED_QUESTION, question: "What language did Clearchus use to obtain Cyrus's ten thousand darics?"}
+  - {id: Q-005, locator: "Anabasis II.6; PDF pp. 46-47", evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie love of war, mistress, pleasure, soldier, and commander?"}
+  - {id: Q-006, locator: "Anabasis II.6; PDF p. 47", evidence_type: UNRESOLVED_QUESTION, question: "How often and under what limits did Clearchus punish soldiers physically?"}
+  - {id: Q-007, locator: "Anabasis II.6; PDF p. 47", evidence_type: UNRESOLVED_QUESTION, question: "What is the source and exact Greek wording of Clearchus's maxim about fear?"}
+  - {id: Q-008, locator: "Anabasis II.6; PDF p. 47", evidence_type: UNRESOLVED_QUESTION, question: "Does Clearchus's refusal of subordinate status explain his final trust in Tissaphernes or only his earlier Spartan disobedience?"}
+  - {id: Q-009, locator: "Anabasis II.6; PDF pp. 47-48", evidence_type: UNRESOLVED_QUESTION, question: "What did Proxenus learn from Gorgias, and how does the chapter connect rhetorical education to command?"}
+  - {id: Q-010, locator: "Anabasis II.6; PDF p. 48", evidence_type: UNRESOLVED_QUESTION, question: "What Greek social and moral categories underlie gentlemen, virtuous, evildoer, good, noble, and base?"}
+  - {id: Q-011, locator: "Anabasis II.6; PDF p. 48", evidence_type: UNRESOLVED_QUESTION, question: "Which allegations against Menon are narratorial claims and which are inherited hostile reports?"}
+  - {id: Q-012, locator: "Anabasis II.6; PDF pp. 48-49", evidence_type: UNRESOLVED_QUESTION, question: "What evidentiary rule separates the obscure possible fabrications from the facts known to all?"}
+  - {id: Q-013, locator: "Anabasis II.6; PDF p. 49", evidence_type: UNRESOLVED_QUESTION, question: "Why was Menon initially spared, and did his alleged informing play a role?"}
+  - {id: Q-014, locator: "Anabasis II.6; PDF p. 49", evidence_type: UNRESOLVED_QUESTION, question: "What punishment produced Menon's reported year of pain and disgrace?"}
+  - {id: Q-015, locator: "Anabasis II.6; PDF p. 49", evidence_type: UNRESOLVED_QUESTION, question: "Why are Agias and Socrates given only brief notices while the other three receive extended portraits?"}
+  - {id: Q-016, locator: "Anabasis II.6; PDF pp. 46-49", evidence_type: UNRESOLVED_QUESTION, question: "How do these five portraits prepare the transfer of practical leadership in Book III?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text for soldier, commander, rule, obedience, fear, friendship, goodwill, necessity, gentleman, base, piety, truth, and report.
+  - Check a critical apparatus for the opening collective death statement and the later Menon qualification.
+  - Identify ancient or modern evidence concerning Clearchus's Spartan condemnation and Thracian campaign.
+  - Locate the elsewhere-described language by which Clearchus moved Cyrus.
+  - Compare translations of Clearchus's maxim that soldiers must fear the commander more than the enemy.
+  - Review the Greek syntax marking the narrator's first-person judgments and evidentiary limitations.
+  - Distinguish Dakyns's editorial notes on Gorgias, Cyropaedia, and Plato's Meno from the ancient narrative.
+  - Track the relation among fear, goodwill, necessity, praise, and complicity as foundations of obedience in later books.
+  - Compare Menon's portrait with his earlier narrated conduct without importing Plato as primary evidence for Xenophon.
+  - Track later references to the dead generals and the army's replacement command.
+  - Defer comparison with Strauss until the relevant primary sequence is complete.
+secondary_comparison_status: DEFERRED
