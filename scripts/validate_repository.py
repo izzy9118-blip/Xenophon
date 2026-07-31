@@ -52,7 +52,7 @@ def main():
  sec=m.get("secondary_study",{})
  if sec.get("status")!="OWNER_ADOPTED_SECONDARY_RECONSTRUCTION" or sec.get("immutable_unit_records") is not True:return fail("Secondary reconstruction independence mismatch")
  text=json.dumps(o,ensure_ascii=False,default=str).casefold()
- for x in ["owner-adopted primary cumulative reconstruction","immutable production records","controlled comparison","neither source may absorb","twenty unresolved work-level questions remain open","does not authenticate","artificial-intelligence self-certification remains prohibited"]:
+ for x in ["owner-adopted primary cumulative reconstruction","completed cumulative evidence record","controlled comparison","neither source may absorb","twenty unresolved work-level questions remain open","does not authenticate","artificial-intelligence self-certification remains prohibited"]:
   if x not in text:return fail("Owner-review safeguard missing: "+x)
  ctext=json.dumps(c,ensure_ascii=False,default=str).casefold()
  if "strauss" in ctext:return fail("Primary cumulative record imports secondary interpretation")
