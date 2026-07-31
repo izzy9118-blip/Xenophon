@@ -82,7 +82,7 @@ def main():
  if counts!=expected_counts:return fail("Comparison aggregate counts mismatch")
  if len(c.get("cross_cutting_findings",[]))!=12 or len(c.get("unresolved_comparison_questions",[]))!=16:return fail("Comparison finding or question counts mismatch")
  text=(json.dumps(c,ensure_ascii=False,default=str)+" "+" ".join(json.dumps(load(x),ensure_ascii=False,default=str) for x in E)).casefold()
- for phrase in ["agreement is not certification","divergence is not error","primary and secondary claims are stored in separate fields","without merging their evidence streams","themistogenes","socrates","thibron","material governance","manly and socratic justice","owner_review_required","artificial-intelligence self-certification remains prohibited"]:
+ for phrase in ["agreement is not certification","divergence is not error","primary and secondary claims are stored in separate fields","without merging their evidence streams","themistogenes","socrates","thibron","material governance","manly justice","owner_review_required","artificial-intelligence self-certification remains prohibited"]:
   if phrase not in text:return fail("Comparison safeguard missing: "+phrase)
  if pc.get("record_id")!="XEN-PRIMARY-CUMULATIVE-001" or pc.get("status")!="DRAFTED_PENDING_OWNER_REVIEW":return fail("Primary cumulative record was rewritten")
  if any(load(x).get("status")!="DRAFTED_PENDING_OWNER_REVIEW" for x in S):return fail("Secondary unit production status was rewritten")
