@@ -1,0 +1,1068 @@
+schema_version: 1.0
+record_id: XEN-PRIMARY-CUMULATIVE-001
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+title: Primary-only cumulative reconstruction of Xenophon's Anabasis
+jurisdiction: Derived only from the fifty-one owner-adopted chapter reconstructions of the admitted H. G. Dakyns
+  Project Gutenberg English translation witness. This record preserves translated sequence, speakers, deeds, outcomes,
+  repetitions, tensions, and unresolved questions. It does not authenticate the Greek text, adjudicate translations,
+  certify narrated events independently, or import any secondary interpretation.
+derivation_basis:
+  owner_adoption_record: governance/owner-reviews/2026-07-31-primary-anabasis-reconstruction-review.yaml
+  reading_plan: studies/xenophon-anabasis-dakyns/reading-plan.yaml
+  source_unit_count: 51
+  source_unit_coverage:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-004
+  - XEN-PRI-RU-005
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-007
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-012
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-014
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-016
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-019
+  - XEN-PRI-RU-020
+  - XEN-PRI-RU-021
+  - XEN-PRI-RU-022
+  - XEN-PRI-RU-023
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-025
+  - XEN-PRI-RU-026
+  - XEN-PRI-RU-027
+  - XEN-PRI-RU-028
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-030
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-032
+  - XEN-PRI-RU-033
+  - XEN-PRI-RU-034
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-042
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-047
+  - XEN-PRI-RU-048
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  coverage_rule: Every numbered chapter from Anabasis I.1 through VII.8 is represented exactly once in the source
+    unit sequence.
+  unit_status_rule: The fifty-one chapter files remain immutable production records with their original DRAFTED_PENDING_OWNER_REVIEW
+    statuses; collective adoption is supplied by the owner-review record.
+methodological_controls:
+- Observation and provisional inference remain distinct.
+- A work-level finding requires a pattern distributed across more than one chapter.
+- Speech is read with audience, occasion, deed, and outcome.
+- Practical success is not equated with justice, wisdom, piety, or legitimate authority.
+- Narrated sacrifice, omen, dream, or oracle is not treated as independently verified divine causation.
+- Narrator, Xenophon as character, quoted speaker, reported opinion, and translator wording remain distinct.
+- Contradictions and rival explanations are preserved where the admitted witness does not decide.
+- No deed corpus, speech register, teaching, guard, adapter, ministerial capacity, or Sanctum registration is derived
+  here.
+book_level_movements:
+- book: I
+  units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-004
+  - XEN-PRI-RU-005
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-007
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-010
+  movement: A dynastic project originating in the Persian royal household is converted into a concealed, distributed
+    military expedition through money, friendship, local causes, and unequal knowledge. Greek consent becomes unstable
+    before the true destination is fully disclosed. At Cunaxa the Greek force succeeds tactically while Cyrus dies,
+    separating battlefield success from the political end that made the expedition intelligible.
+  governing_tension: Successful preparation and tactical excellence do not secure a viable end when the patron and
+    claimant to rule is lost.
+- book: II
+  units:
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-012
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-014
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-016
+  movement: The Greeks become an army without the prince, purpose, paymaster, or protected route that gathered them.
+    They rely on negotiation, reciprocal oaths, and an uneasy alliance with Ariaeus while remaining dependent on Persian
+    guides and provisions. The seizure and killing of the generals destroys the inherited command structure and closes
+    the first phase with retrospective portraits of the dead commanders.
+  governing_tension: Formal assurances and personal reputation are politically indispensable yet unable by themselves
+    to prevent betrayal.
+- book: III
+  units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-019
+  - XEN-PRI-RU-020
+  - XEN-PRI-RU-021
+  movement: Leaderlessness becomes the occasion for renewed deliberation, election, discipline, and tactical invention.
+    Xenophon enters decisively as character and speaker, but authority is distributed among generals, captains, assemblies,
+    and specialized troops. The march is reconstituted as a collective project of survival and return.
+  governing_tension: Freedom from Persian command requires stronger internal obedience, organization, and adaptation
+    rather than the absence of rule.
+- book: IV
+  units:
+  - XEN-PRI-RU-022
+  - XEN-PRI-RU-023
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-025
+  - XEN-PRI-RU-026
+  - XEN-PRI-RU-027
+  - XEN-PRI-RU-028
+  - XEN-PRI-RU-029
+  movement: The army's political reconstitution is tested by mountains, rivers, snow, hunger, hostile populations,
+    and unfamiliar forms of warfare. Success depends on local intelligence, changing formations, rear and advance
+    guards, negotiation, deception, sacrifice, endurance, and coordinated rescue. The sight of the sea marks a real
+    achievement but not the completion of return.
+  governing_tension: The common goal becomes visible only after survival has required repeated departures from fixed
+    tactical habit.
+- book: V
+  units:
+  - XEN-PRI-RU-030
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-032
+  - XEN-PRI-RU-033
+  - XEN-PRI-RU-034
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  movement: Arrival among coastal Greek settlements does not dissolve the army's political problems. Provisioning,
+    raids, alliances, distribution, relations with Greek cities, a possible colonial settlement, and accusations against
+    Xenophon reopen questions of common purpose, law, and command. Xenophon must defend both proposals and disciplinary
+    acts.
+  governing_tension: Nearness to home increases rather than removes disagreement over whether the army is a temporary
+    return force, a potential city, or an available instrument.
+- book: VI
+  units:
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-042
+  - XEN-PRI-RU-043
+  movement: The army experiments with unified command, fragments into separate contingents, suffers the consequences
+    of division, and is reunited under pressure. Relations with Paphlagonians, Bithynians, Persian forces, Heraclea,
+    Calpe, and Spartan authority show that military competence, provisioning, legal accountability, and recognized
+    command do not coincide automatically.
+  governing_tension: The desire to escape dependence repeatedly produces new dependence on commanders, cities, markets,
+    allies, and external authorities.
+- book: VII
+  units:
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-047
+  - XEN-PRI-RU-048
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  movement: At Byzantium and in Thrace, Spartan officers, Seuthes, local envoys, unpaid soldiers, and shifting commanders
+    compete to use, dismiss, restrain, or transfer the army. Xenophon alternates between practical leadership, denial
+    of formal command, public accusation, self-defense, negotiation, and private poverty. The work ends with the troops
+    incorporated by Thibron, while Xenophon's personal homecoming remains outside the narrated completion.
+  governing_tension: Institutional transfer can end the army's independent march without resolving every debt, reputation,
+    private aim, or question of justice.
+major_transformations:
+- id: TR-001
+  from: Cyrus's concealed bid for kingship
+  to: The Greeks' openly deliberated project of survival and return
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  uncertainty: The soldiers' knowledge of the original project and the exact point at which return becomes their shared
+    end remain unevenly reported.
+- id: TR-002
+  from: A patron-centered coalition financed and directed by Cyrus
+  to: A mobile polity governed through assemblies, elected officers, informal influence, and temporary external commanders
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-007
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  uncertainty: The admitted translation does not settle the precise constitutional force of every office, vote, or
+    assembly action.
+- id: TR-003
+  from: Xenophon absent from the opening and subordinate within the expedition
+  to: Xenophon as initiator, general, defender, negotiator, contested leader, and finally recipient of collective reward
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+  uncertainty: The relation between narrated self-presentation, remembered speech, and historical authorship remains
+    outside the competence of this witness alone.
+- id: TR-004
+  from: A single imperial battlefield
+  to: A changing field of Persian, local, environmental, Greek civic, Spartan, and Thracian constraints
+  evidence_units:
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-014
+  - XEN-PRI-RU-022
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-050
+  uncertainty: The work's varied peoples and places are available here only through Dakyns's translated naming and
+    description.
+- id: TR-005
+  from: Concealed recruitment orders and private arrangements
+  to: Repeated public deliberation, accusation, legal defense, and negotiated transfer
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  uncertainty: Reported speeches may be selective, shaped, summarized, or translated; this reconstruction does not
+    claim verbatim recovery.
+- id: TR-006
+  from: Home as a distant or suppressed concern within Cyrus's march
+  to: Homecoming as the army's dominant but repeatedly deferred and internally contested horizon
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-051
+  uncertainty: The narrative ends with military incorporation under Thibron rather than an account of the soldiers'
+    or Xenophon's completed return home.
+- id: TR-007
+  from: Cyrus's ability to pay, promise, and reward
+  to: Chronic struggles over markets, provisions, booty, wages, sale proceeds, and partial settlement
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-030
+  - XEN-PRI-RU-034
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  uncertainty: Amounts and equivalences reported in translation do not constitute a complete audited economic account.
+- id: TR-008
+  from: A force assembled through separate friendships and pretexts
+  to: A force repeatedly threatened by faction yet capable of temporary reunification
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  uncertainty: The balance of persuasion, necessity, fear, interest, and formal vote in producing unity varies by episode.
+recurring_problem_patterns:
+- id: PAT-001
+  name: Concealment, disclosure, and consent
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  pattern: Major undertakings repeatedly begin with unequal knowledge, promises, or incomplete disclosure; consent
+    must later be repaired, renewed, or defended.
+  uncertainty: The record does not permit a single judgment that every concealment is equivalent in motive, legality,
+    or effect.
+- id: PAT-002
+  name: Pay, provisions, and the material basis of command
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-007
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-030
+  - XEN-PRI-RU-034
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  pattern: Command repeatedly depends on the ability to secure food, markets, wages, transport, booty, or compensation;
+    political promises lose force when material support fails.
+  uncertainty: Material provision is necessary for authority in these episodes but is not shown to be sufficient for
+    legitimate or wise rule.
+- id: PAT-003
+  name: Friendship as political infrastructure and vulnerability
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  pattern: Friends, guest-friends, associates, and trusted intermediaries recruit, finance, guide, accuse, rescue,
+    betray, and negotiate across the work.
+  uncertainty: The Greek vocabulary and the distinctions among friendship relations require original-language review.
+- id: PAT-004
+  name: Oaths, trust, and failed enforcement
+  evidence_units:
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-014
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-050
+  pattern: Oaths and assurances enable action where direct control is impossible, yet their force depends on character,
+    interest, witnesses, and the capacity to impose consequences.
+  uncertainty: The narrative supports neither the view that oaths are politically negligible nor the view that they
+    reliably prevent betrayal.
+- id: PAT-005
+  name: Assembly, office, and practical authority
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  pattern: Formal office, election, assembly approval, recognized command, and practical influence repeatedly diverge
+    and must be recombined in crisis.
+  uncertainty: No single episode establishes a complete constitutional model for the army.
+- id: PAT-006
+  name: Speech tested by deed and outcome
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  pattern: Speeches propose purposes, justify discipline, create confidence, answer accusations, and negotiate obligations;
+    their standing is repeatedly tested by subsequent action and material result.
+  uncertainty: Outcome does not by itself establish the truth, justice, or wisdom of the speech that preceded it.
+- id: PAT-007
+  name: Adaptation as a condition of survival
+  evidence_units:
+  - XEN-PRI-RU-019
+  - XEN-PRI-RU-020
+  - XEN-PRI-RU-021
+  - XEN-PRI-RU-022
+  - XEN-PRI-RU-023
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-027
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-042
+  pattern: The army survives by altering formations, weapons, marching order, guard structure, timing, routes, and relations
+    with local forces.
+  uncertainty: The translated narrative shows repeated adaptation but does not establish a timeless doctrine of strategy.
+- id: PAT-008
+  name: Piety, divination, and deliberation
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-025
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+  pattern: Sacrifices, dreams, signs, vows, and divine invocations occur within decisions about command, travel, battle,
+    settlement, and private fortune rather than in a separate religious sphere.
+  uncertainty: Narrated sequence and claimed fulfillment are not independently verified divine causation.
+- id: PAT-009
+  name: Unity, faction, and rescue
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  pattern: The army's unity is repeatedly lost, threatened, or staged anew; rescue of separated forces makes interdependence
+    visible after faction has promised greater freedom.
+  uncertainty: The record does not reduce every disagreement to selfish faction or every reunification to free consensus.
+- id: PAT-010
+  name: Greeks and non-Greeks in reciprocal dependence
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-033
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-050
+  pattern: The Greeks depend on Persian patrons, guides, local intelligence, markets, alliances, hostages, cavalry, interpreters,
+    and negotiated passage even while narrating themselves as a distinct armed community.
+  uncertainty: The categories and evaluations of peoples are translator-mediated and cannot be converted here into
+    a comprehensive ethnographic teaching.
+- id: PAT-011
+  name: Justice through promises, distribution, punishment, and testimony
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  pattern: Questions of justice arise concretely around conspiracy, loyalty, wages, booty, striking soldiers, accusation,
+    witness testimony, debt, and distribution.
+  uncertainty: The work presents competing claims and defenses more often than it supplies an uncontested rule resolving
+    every case.
+- id: PAT-012
+  name: Founding, settlement, and the limits of the return project
+  evidence_units:
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-047
+  pattern: The army repeatedly comes close to becoming a settled community or instrument of a new ruler; proposals
+    for colony, encampment, or Thracian service compete with the declared desire to return.
+  uncertainty: The sincerity, feasibility, and political meaning of each settlement possibility remain distinct and
+    partly unresolved.
+- id: PAT-013
+  name: External powers seek the army without assuming all its burdens
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  pattern: Cyrus, Ariaeus, Persian officials, Greek cities, Spartan officers, Seuthes, and Thibron value the army as
+    an instrument while responsibility for pay, supply, discipline, and safe transfer remains contested.
+  uncertainty: The episodes differ in formal authority and obligation and should not be collapsed into one legal category.
+- id: PAT-014
+  name: Narrative praise, blame, and self-defense
+  evidence_units:
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-016
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+  pattern: Extended character portraits, public accusations, defenses, testimony, and the ending's account of Xenophon's
+    poverty and reward shape how persons are judged.
+  uncertainty: The narrative's distribution of praise and blame is evidence requiring interpretation, not an independently
+    certified verdict.
+narrative_person_development:
+- phase: Opening concealment and dynastic preparation
+  units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  observation: The work opens in third-person narration centered on Cyrus and the Persian household; Xenophon is not
+    introduced as narrator or actor.
+  uncertainty: The witness does not settle authorship, narrator identity, or the Greek force of the opening.
+- phase: Cyrus and inherited commanders
+  units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-016
+  observation: The first two books organize judgment around Cyrus, named commanders, collective Greek action, and retrospective
+    portraits of the slain generals.
+  uncertainty: The relation between narrated character judgments and the narrator's own standards remains provisional.
+- phase: Xenophon's decisive entry
+  units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  observation: Xenophon becomes a central character through dream, private deliberation, initiative, speech, election,
+    and coordinated action.
+  uncertainty: Reported interior deliberation and direct speech remain literary-narrative evidence rather than independently
+    verified transcript.
+- phase: Contested leader and public defendant
+  units:
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+  observation: Xenophon's proposals, disciplinary acts, relations with external authorities, and private motives become
+    subjects of accusation, defense, witness testimony, and changing popular judgment.
+  uncertainty: The narrative gives Xenophon extensive defensive speech but does not thereby eliminate every rival account.
+- phase: Withdrawal, poverty, reward, and transfer
+  units:
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  observation: Xenophon denies formal command while still influencing settlement, prepares to go home, is presented
+    as poor, receives first choice from captured property, and hands the military body into Thibron's war.
+  uncertainty: The narrative does not close with Xenophon's arrival home or a complete account of his subsequent wealth
+    and motives.
+speech_deed_outcome_findings:
+- id: SDO-CUM-001
+  claim: Concealed or partial speech can assemble power rapidly but creates later crises of consent.
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-007
+  qualification: The reality of local grievances prevents reducing every announced cause to pure fabrication.
+- id: SDO-CUM-002
+  claim: A speech becomes politically effective only when hearers can connect it to a feasible deed, supply, route,
+    or institutional arrangement.
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-050
+  qualification: Effectiveness does not prove justice or truth.
+- id: SDO-CUM-003
+  claim: Public deliberation can reconstitute command after catastrophe, but the resulting order remains dependent on
+    repeated renewal.
+  evidence_units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-045
+  qualification: Votes and acclamations vary in form and are not a single stable constitution.
+- id: SDO-CUM-004
+  claim: Promises without material performance weaken both personal reputation and the political usefulness of future
+    speech.
+  evidence_units:
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  qualification: The record does not provide a complete legal adjudication of every promise.
+- id: SDO-CUM-005
+  claim: Accusation and defense repeatedly convert private suspicions into public tests of leadership.
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  qualification: Narrated rebuttal and favorable reception are not identical to independent exoneration.
+- id: SDO-CUM-006
+  claim: Tactical success can preserve the force while failing to secure the political aim that justified the action.
+  evidence_units:
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-051
+  qualification: Different episodes join success and failure in different proportions.
+- id: SDO-CUM-007
+  claim: Threats and coercive capacity often stand behind negotiation even when the settlement is expressed through
+    friendship, oath, or voluntary agreement.
+  evidence_units:
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-050
+  qualification: The presence of force does not by itself show that every agreement is void.
+- id: SDO-CUM-008
+  claim: Leaders are judged both by immediate rescue and by their treatment of the army after danger has passed.
+  evidence_units:
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+  qualification: Gratitude, memory, and faction can change the same audience's judgment over time.
+- id: SDO-CUM-009
+  claim: Narrated pious action accompanies rather than replaces planning, scouting, persuasion, and tactical preparation.
+  evidence_units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+  qualification: The causal relation between divine sign and human success remains unresolved.
+- id: SDO-CUM-010
+  claim: The final institutional act is transfer of the troops to another war, not the narrated fulfillment of every
+    individual's return.
+  evidence_units:
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  qualification: The ending does not prove that homecoming was abandoned by all or that later return did not occur.
+provisional_work_level_findings:
+- id: WF-001
+  finding: The work's governing action shifts from a prince's attempted ascent to the self-preservation and political
+    self-organization of the force that survives him.
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  confidence: high_for_translated_sequence
+  limits: This does not determine the final purpose of the work or reduce Cyrus to a mere prelude.
+- id: WF-002
+  finding: Military victory is repeatedly shown to be politically incomplete without a viable end, supply, authority,
+    and settlement.
+  evidence_units:
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-042
+  - XEN-PRI-RU-051
+  confidence: high_for_recurring_pattern
+  limits: The different victories must still be interpreted in their own circumstances.
+- id: WF-003
+  finding: 'Authority in the army is composite: competence, persuasion, office, consent, discipline, reputation, and
+    control of material resources reinforce and disrupt one another.'
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+  confidence: high_for_translated_sequence
+  limits: The record does not yield one formal constitutional formula.
+- id: WF-004
+  finding: Greek freedom is presented not as release from command but as a recurring achievement of organized obedience
+    under contestable leaders.
+  evidence_units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-020
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-045
+  confidence: moderate_to_high
+  limits: The meaning of freedom and obedience requires Greek lexical review.
+- id: WF-005
+  finding: Xenophon's practical authority often exceeds or survives the formal office he holds at a given moment.
+  evidence_units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  - XEN-PRI-RU-050
+  confidence: high_for_narrated_pattern
+  limits: Practical influence is not thereby legitimate, disinterested, or wise in every episode.
+- id: WF-006
+  finding: The army functions intermittently as a mobile political community because it must deliberate about ends,
+    elect or recognize leaders, punish, distribute, negotiate, worship, and preserve unity.
+  evidence_units:
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  confidence: moderate
+  limits: The army is not therefore established as a city, and the colony proposals remain contested.
+- id: WF-007
+  finding: Homecoming is a governing horizon but not a simple linear destination; the approach to Greek cities produces
+    new alternatives, dependencies, and divisions.
+  evidence_units:
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-051
+  confidence: high
+  limits: The work does not narrate the completed homecoming of the entire force.
+- id: WF-008
+  finding: Piety and prudence are narrated as intertwined practices of deliberation, morale, timing, and self-understanding.
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+  confidence: high_for_co-occurrence
+  limits: The witness does not independently establish divine causation or the precise Greek theological vocabulary.
+- id: WF-009
+  finding: Friendship is both a source of political power and a recurring avenue of dependence, deception, accusation,
+    and obligation.
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  confidence: moderate_to_high
+  limits: Distinct translated friendship terms may conceal important Greek differences.
+- id: WF-010
+  finding: Questions of justice remain attached to concrete disputes over promise, pay, booty, punishment, testimony,
+    and distribution rather than appearing as a detached definition.
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  confidence: high_for_translated_sequence
+  limits: The reconstruction does not infer that the work lacks a more comprehensive teaching about justice.
+- id: WF-011
+  finding: External rulers and cities repeatedly value the Greeks as an instrument while attempting to limit the obligations
+    incurred by using them.
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  confidence: moderate_to_high
+  limits: The legal and political standing of each relationship differs.
+- id: WF-012
+  finding: The ending resolves the army's independent institutional existence by transferring it to Thibron while leaving
+    Xenophon's private return, wealth, and ultimate relation to the expedition incompletely narrated.
+  evidence_units:
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+  confidence: high_for_ending_structure
+  limits: Later biographical events cannot be supplied from outside this admitted witness in this record.
+unresolved_work_level_questions:
+- id: WQ-001
+  question: What Greek terms underlie the recurring translated language of friend, guest-friend, comrade, ally, benefactor,
+    and soldiers' friend, and how do their distinctions alter the work-level pattern?
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-049
+- id: WQ-002
+  question: How much did each contingent know about Cyrus's destination and purpose at recruitment, departure, and the
+    moments of mutiny or disclosure?
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-007
+- id: WQ-003
+  question: How are Cyrus's ambition, claim to superior rule, generosity, secrecy, and justice related across the opening,
+    battle, and character portrait?
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-009
+- id: WQ-004
+  question: What is the precise status and reliability of the long direct and indirect speeches in the admitted translation?
+  evidence_units:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-049
+- id: WQ-005
+  question: How should the oaths with Tissaphernes be interpreted in relation to the subsequent seizure of the generals
+    and the narrative's allocation of blame?
+  evidence_units:
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-014
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-016
+- id: WQ-006
+  question: Why are the portraits of Cyrus and the five dead Greek commanders positioned where they are, and what standards
+    of leadership do their differences establish?
+  evidence_units:
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-016
+- id: WQ-007
+  question: What is the relation between Xenophon's dream, private deliberation, public initiative, election, and later
+    claim not to command?
+  evidence_units:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-050
+- id: WQ-008
+  question: How should the narrative's sacrifices, dreams, favorable signs, delays, and claimed fulfillments be related
+    to planning and causation?
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+- id: WQ-009
+  question: What standards govern the army's taking of provisions, captives, animals, and property from hostile, allied,
+    or ambiguously related communities?
+  evidence_units:
+  - XEN-PRI-RU-022
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-047
+  - XEN-PRI-RU-051
+- id: WQ-010
+  question: How does the work distinguish necessary discipline from anger, abuse, unlawful violence, or self-serving
+    punishment?
+  evidence_units:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+- id: WQ-011
+  question: Was the colonial proposal a serious political project, a prudential possibility, a test of the army, or
+    an accusation amplified by faction?
+  evidence_units:
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+- id: WQ-012
+  question: Why does the approach to the sea and Greek cities fail to produce a simple dissolution of the army?
+  evidence_units:
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-030
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-039
+- id: WQ-013
+  question: How do formal Spartan authority, practical military need, and the army's own decisions interact in Books
+    VI and VII?
+  evidence_units:
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+- id: WQ-014
+  question: What is the full economic record of Xenophon's gifts, promised rewards, alleged private benefits, poverty,
+    horse, and final booty share?
+  evidence_units:
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+- id: WQ-015
+  question: How should Seuthes's acquisition of territory and subjects be judged in relation to Greek military assistance,
+    promises, unpaid wages, and later attempts to remove the army?
+  evidence_units:
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-047
+  - XEN-PRI-RU-048
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+- id: WQ-016
+  question: Does the work present the army as a city-like community, and where does the analogy fail?
+  evidence_units:
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-044
+- id: WQ-017
+  question: Why does the work end with Thibron's incorporation of the troops rather than Xenophon's arrival home or
+    the dispersal of the soldiers?
+  evidence_units:
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+- id: WQ-018
+  question: What relation, if any, does the paratextual manuscript governor list after VII.8 bear to the narrative ending?
+  evidence_units:
+  - XEN-PRI-RU-051
+- id: WQ-019
+  question: Which apparent work-level patterns depend materially on Dakyns's lexical choices and must be retested against
+    an admitted Greek witness?
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-004
+  - XEN-PRI-RU-005
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-007
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-009
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-011
+  - XEN-PRI-RU-012
+  - XEN-PRI-RU-013
+  - XEN-PRI-RU-014
+  - XEN-PRI-RU-015
+  - XEN-PRI-RU-016
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-019
+  - XEN-PRI-RU-020
+  - XEN-PRI-RU-021
+  - XEN-PRI-RU-022
+  - XEN-PRI-RU-023
+  - XEN-PRI-RU-024
+  - XEN-PRI-RU-025
+  - XEN-PRI-RU-026
+  - XEN-PRI-RU-027
+  - XEN-PRI-RU-028
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-030
+  - XEN-PRI-RU-031
+  - XEN-PRI-RU-032
+  - XEN-PRI-RU-033
+  - XEN-PRI-RU-034
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-038
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-042
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
+  - XEN-PRI-RU-046
+  - XEN-PRI-RU-047
+  - XEN-PRI-RU-048
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+- id: WQ-020
+  question: What relation exists among narrator identity, historical authorship, remembered speech, and the self-presentation
+    of Xenophon as character?
+  evidence_units:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+secondary_comparison_prompts:
+- id: CP-001
+  prompt: Test any account of the work's beginning against the Persian household opening and Xenophon's initial absence.
+  primary_anchors:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-002
+- id: CP-002
+  prompt: Test any account of Cyrus against both the concealment sequence and the posthumous character portrait.
+  primary_anchors:
+  - XEN-PRI-RU-001
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-009
+- id: CP-003
+  prompt: Test any account of the expedition's purpose against the transformation from kingship project to survival
+    and return.
+  primary_anchors:
+  - XEN-PRI-RU-008
+  - XEN-PRI-RU-010
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-018
+- id: CP-004
+  prompt: Test any account of Xenophon's leadership against the divergence between formal office and practical authority.
+  primary_anchors:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-050
+- id: CP-005
+  prompt: Test any account of Greek freedom against the repeated need for discipline, obedience, and coordinated command.
+  primary_anchors:
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-020
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-045
+- id: CP-006
+  prompt: Test any account of piety against the full sequence of dream, sacrifice, sign, delay, planning, and claimed
+    fulfillment.
+  primary_anchors:
+  - XEN-PRI-RU-017
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-041
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+- id: CP-007
+  prompt: Test any account of justice against concrete disputes over pay, punishment, booty, testimony, and distribution.
+  primary_anchors:
+  - XEN-PRI-RU-006
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-043
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-050
+- id: CP-008
+  prompt: Test any account of homecoming against the new political alternatives that appear after the sea and among
+    Greek cities.
+  primary_anchors:
+  - XEN-PRI-RU-029
+  - XEN-PRI-RU-035
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-051
+- id: CP-009
+  prompt: Test any account of the army as a political community against its assemblies, divisions, rescues, trials,
+    and failed command experiments.
+  primary_anchors:
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-037
+  - XEN-PRI-RU-039
+  - XEN-PRI-RU-040
+  - XEN-PRI-RU-045
+- id: CP-010
+  prompt: Test any account of speech against subsequent deed and outcome rather than treating speeches as self-interpreting
+    doctrine.
+  primary_anchors:
+  - XEN-PRI-RU-003
+  - XEN-PRI-RU-018
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-044
+  - XEN-PRI-RU-049
+- id: CP-011
+  prompt: Test any account of Xenophon's motives against accusation, self-defense, private poverty, gifts, and collective
+    reward.
+  primary_anchors:
+  - XEN-PRI-RU-036
+  - XEN-PRI-RU-049
+  - XEN-PRI-RU-051
+- id: CP-012
+  prompt: Test any account of the ending against the distinction between transfer to Thibron and narrated homecoming.
+  primary_anchors:
+  - XEN-PRI-RU-050
+  - XEN-PRI-RU-051
+derivation_limits:
+- All work-level claims remain provisional pending owner review.
+- No original-language Greek witness or critical edition has been admitted.
+- No translation adjudication has been performed.
+- No external historical source has been used to certify narrated persons, dates, numbers, speeches, battles, or institutions.
+- No secondary interpretation has been imported into the cumulative findings.
+- The record does not authorize a final teaching, deed corpus, speech register, operational capacity, minister adapter,
+  or Sanctum registration.
+secondary_comparison_status: DEFERRED_PENDING_OWNER_REVIEW
+counts:
+  source_units: 51
+  book_level_movements: 7
+  major_transformations: 8
+  recurring_problem_patterns: 14
+  narrative_person_phases: 5
+  speech_deed_outcome_findings: 10
+  provisional_work_level_findings: 12
+  unresolved_work_level_questions: 20
+  secondary_comparison_prompts: 12
