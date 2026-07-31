@@ -10,7 +10,7 @@
 
 The unit reads *Anabasis* VI.4 in the admitted H. G. Dakyns Project Gutenberg witness, PDF pages 127–129. It begins beneath heading IV with the army bivouacking on the beach at Calpe Haven and ends immediately before heading V, after the Bithynian night attack and the Greek all-night armed watch.
 
-Heading V begins on PDF page 129. The next production unit is `XEN-PRI-RU-042`, *Anabasis* VI.5, beginning on PDF page 129.
+Heading V begins on PDF page 129. The next production unit is `XEN-PRI-RU-042`, *Anabasis* VI.5, PDF pages 129–132.
 
 ## Documentary movement
 
