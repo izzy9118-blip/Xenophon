@@ -33,7 +33,7 @@ def main():
  need={"RECIPROCAL_FRONTIER_VIOLENCE_OBSERVATION","CORYLAS_EMBASSY_OBSERVATION","CAPTIVE_ANIMAL_FEAST_OBSERVATION","DANCING_GIRL_PYRRHIC_OBSERVATION","MUTUAL_NON_INJURY_RESOLUTION_OBSERVATION","CHEIRISOPHUS_RETURN_OBSERVATION","SINGLE_COMMAND_ARGUMENT_OBSERVATION","XENOPHON_AMBITION_AND_RISK_OBSERVATION","DIVINE_REFUSAL_SIGN_OBSERVATION","SPARTAN_HEGEMONY_ARGUMENT_OBSERVATION","AGASIAS_DINING_JOKE_OBSERVATION","CHEIRISOPHUS_ELECTION_OBSERVATION","DEXIPPUS_SLANDER_REPORT_OBSERVATION"}
  if need-types:return fail("VI.1 evidence types missing: "+", ".join(sorted(need-types)))
  text=" ".join(o.get("observation","") for o in u["documentary_observations"]).casefold()
- for x in ["seize stragglers","mutual abstention","captive cattle","dancing girl","great king","three thousand measures","single commander","desire for honor","zeus the king","neither demand nor accept","lacedaemonian","dining companions","dexippus"]:
+ for x in ["seize stragglers","mutual abstention","captive cattle","dancing girl","great king","three thousand measures","one commander","desire for honor","zeus the king","neither demand nor accept","lacedaemonian","dining companions","dexippus"]:
   if x not in text:return fail("VI.1 phrase safeguard missing: "+x)
  if [len(u.get(k,[])) for k in ["documentary_observations","speeches_deeds_and_outcomes","provisional_findings","standing_unresolved_questions","downstream_textual_checks"]]!=[30,10,9,16,12]:return fail("VI.1 counts mismatch")
  print("Xenophon repository validation passed");return 0
