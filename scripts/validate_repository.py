@@ -1,260 +1,96 @@
 from pathlib import Path
 from collections import Counter
-import sys, yaml, tempfile, shutil, subprocess, json
-
-R = Path(__file__).resolve().parents[1]
-P = R / "scripts/validate_repository_v1_56.py"
-M = R / "manifest.yaml"
-A = R / "audits/founding-state.yaml"
-R1 = R / "studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R1.yaml"
-OR = R / "governance/owner-reviews/2026-07-31-controlled-comparison-r1-in-depth-review.yaml"
-DR = R / "studies/comparisons/anabasis-primary-strauss/reviews/XEN-CONTROLLED-COMPARISON-R1-IN-DEPTH-REVIEW-001.yaml"
-H = R / "history/2026-07-31-controlled-comparison-r1-in-depth-review.md"
-
-
-def load(path):
-    with path.open(encoding="utf-8") as f:
-        return yaml.safe_load(f)
-
-
-def dump(path, value):
-    with path.open("w", encoding="utf-8") as f:
-        yaml.safe_dump(value, f, sort_keys=False, allow_unicode=True)
-
-
-def fail(message):
-    print(message)
-    return 1
-
-
+import json, sys, yaml, tempfile, shutil, subprocess
+R=Path(__file__).resolve().parents[1]
+P=R/"scripts/validate_repository_v1_57.py"
+M=R/"manifest.yaml"
+A=R/"audits/founding-state.yaml"
+R2=R/"studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R2.yaml"
+SP=R/"studies/comparisons/anabasis-primary-strauss/r2/sequential-argument-spine.yaml"
+EI=R/"studies/comparisons/anabasis-primary-strauss/r2/entry-integrations.yaml"
+E1=R/"studies/comparisons/anabasis-primary-strauss/r2/entry-integrations-part-1.yaml"
+E2=R/"studies/comparisons/anabasis-primary-strauss/r2/entry-integrations-part-2.yaml"
+DE=R/"studies/comparisons/anabasis-primary-strauss/r2/deep-examinations.yaml"
+H=R/"history/2026-07-31-controlled-comparison-r2-draft-completion.md"
+R1=R/"studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R1.yaml"
+REV=R/"studies/comparisons/anabasis-primary-strauss/reviews/XEN-CONTROLLED-COMPARISON-R1-IN-DEPTH-REVIEW-001.yaml"
+def load(p):
+    with p.open(encoding="utf-8") as f:return yaml.safe_load(f)
+def dump(p,x):
+    p.write_text(json.dumps(x,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
+def fail(x):
+    print(x);return 1
 def predecessor():
-    if not P.exists():
-        return fail("Frozen v1.56 validator missing")
+    if not P.exists():return fail("Frozen v1.57 validator missing")
     with tempfile.TemporaryDirectory() as d:
-        t = Path(d) / "r"
-        shutil.copytree(R, t, ignore=shutil.ignore_patterns(".git", "__pycache__"))
-        for source in [OR, DR, H]:
-            target = t / source.relative_to(R)
-            if target.exists():
-                target.unlink()
-
-        m = load(t / "manifest.yaml")
-        m["version"] = "1.56.0"
-        m["state"] = "CONTROLLED_COMPARISON_CORRECTED_DRAFT_COMPLETE_PENDING_OWNER_REVIEW"
-        m["owner_reviews"] = m["owner_reviews"][:-1]
-        m["current_phase"] = {
-            "id": "XEN-PHASE-004",
-            "name": "Strauss-guided controlled examination of the owner-adopted primary Anabasis reconstruction",
-            "completion_status": "CORRECTED_DRAFT_COMPLETE_PENDING_OWNER_REVIEW",
-        }
-        m["primary_study"]["cumulative_reconstruction"]["secondary_comparison_status"] = "CORRECTED_DRAFT_COMPLETE_PENDING_OWNER_REVIEW"
-        m["next_required_action"] = {
-            "id": "XEN-CONTROLLED-COMPARISON-R1-OWNER-REVIEW-001",
-            "description": "Owner review of the corrected Strauss-guided comparison before interpretive adoption, minister derivation, or Sanctum registration.",
-        }
-        q = m["controlled_comparison"]
-        q["status"] = "CORRECTED_DRAFT_PENDING_OWNER_REVIEW"
-        q["owner_review_status"] = "PENDING"
-        for key in [
-            "owner_review_record",
-            "detailed_review_record",
-            "r1_not_adopted",
-            "review_disposition_counts",
-            "required_next_revision",
-        ]:
-            q.pop(key, None)
-        dump(t / "manifest.yaml", m)
-
-        a = load(t / "audits/founding-state.yaml")
-        r = a["repository_state"]
-        r["controlled_comparison_owner_reviewed"] = False
-        for key in [
-            "controlled_comparison_in_depth_review_complete",
-            "controlled_comparison_owner_adopted",
-            "controlled_comparison_review_disposition",
-            "controlled_comparison_owner_review_record",
-            "controlled_comparison_detailed_review_record",
-            "controlled_comparison_required_next_revision",
-        ]:
-            r.pop(key, None)
-        a["resolved_items"] = a["resolved_items"][:-1]
-        a["documented_gaps"][1] = {
-            "id": "GAP-010",
-            "description": "The corrected Strauss-guided controlled comparison is draft-complete but has not received owner review.",
-            "blocks": [
-                "owner-adopted comparative reconstruction",
-                "controlled interpretive synthesis",
-                "minister derivation",
-            ],
-        }
-        a["next_required_action"] = "Conduct owner review of XEN-CONTROLLED-COMPARISON-001-R1 before interpretive adoption, minister adapter construction, or Sanctum registration."
-        dump(t / "audits/founding-state.yaml", a)
-
-        run = subprocess.run(
-            [sys.executable, str(t / "scripts/validate_repository_v1_56.py")],
-            cwd=t,
-            text=True,
-            capture_output=True,
-        )
-        if run.returncode:
-            return fail("predecessor failed: " + (run.stdout + run.stderr).strip())
+        t=Path(d)/"r";shutil.copytree(R,t,ignore=shutil.ignore_patterns(".git","__pycache__"))
+        for p in [R2,SP,EI,E1,E2,DE,H]:
+            q=t/p.relative_to(R)
+            if q.exists():q.unlink()
+        m=load(t/"manifest.yaml")
+        m["version"]="1.57.0"
+        m["state"]="CONTROLLED_COMPARISON_R1_IN_DEPTH_REVIEWED_RETURNED_FOR_REVISION"
+        m["current_phase"]={"id":"XEN-PHASE-004","name":"In-depth owner review of the Strauss-guided Anabasis comparison","completion_status":"REVIEW_COMPLETE_SUBSTANTIVE_REVISION_REQUIRED"}
+        m["primary_study"]["cumulative_reconstruction"]["secondary_comparison_status"]="R1_RETURNED_FOR_SUBSTANTIVE_REVISION"
+        m["next_required_action"]={"id":"XEN-CONTROLLED-COMPARISON-001-R2","description":"Produce additive R2 before another owner review."}
+        m["controlled_comparison"]={"id":"XEN-CONTROLLED-COMPARISON-001","revision_id":"XEN-CONTROLLED-COMPARISON-001-R1","status":"IN_DEPTH_REVIEW_COMPLETE_RETURNED_FOR_SUBSTANTIVE_REVISION","record":"studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R1.yaml","owner_review_status":"RETURNED_FOR_REVISION","r1_not_adopted":True,"review_disposition_counts":{"PASS_AS_CLASSIFIED":11,"PASS_WITH_REQUIRED_REVISION":11,"RECLASSIFY":9}}
+        dump(t/"manifest.yaml",m)
+        a=load(t/"audits/founding-state.yaml");rs=a["repository_state"]
+        rs["controlled_comparison_in_depth_review_complete"]=True
+        rs["controlled_comparison_owner_adopted"]=False
+        rs["controlled_comparison_review_disposition"]="RETURNED_FOR_SUBSTANTIVE_REVISION"
+        rs["minister_adapter_derived"]=False
+        rs["sanctum_registration_present"]=False
+        dump(t/"audits/founding-state.yaml",a)
+        z=subprocess.run([sys.executable,str(t/"scripts/validate_repository_v1_57.py")],cwd=t,text=True,capture_output=True)
+        if z.returncode:return fail("v1.57 predecessor failed: "+(z.stdout+z.stderr).strip())
     return 0
-
-
 def main():
-    if predecessor():
-        return 1
-    required = [P, M, A, R1, OR, DR, H]
-    if any(not p.exists() for p in required):
-        return fail("Missing in-depth-review production file")
-
-    m = load(M)
-    a = load(A)
-    r1 = load(R1)
-    owner = load(OR)
-    detail = load(DR)
-    state = a.get("repository_state", {})
-    comparison = m.get("controlled_comparison", {})
-
-    if m.get("version") != "1.57.0" or m.get("state") != "CONTROLLED_COMPARISON_R1_IN_DEPTH_REVIEWED_RETURNED_FOR_REVISION":
-        return fail("Manifest in-depth-review state mismatch")
-    phase = m.get("current_phase", {})
-    if phase.get("id") != "XEN-PHASE-004" or phase.get("completion_status") != "REVIEW_COMPLETE_SUBSTANTIVE_REVISION_REQUIRED" or "In-depth owner review" not in phase.get("name", ""):
-        return fail("In-depth-review phase mismatch")
-    if m.get("owner_reviews", [])[-1] != str(OR.relative_to(R)):
-        return fail("In-depth owner-review registry mismatch")
-    if m.get("primary_study", {}).get("cumulative_reconstruction", {}).get("secondary_comparison_status") != "R1_RETURNED_FOR_SUBSTANTIVE_REVISION":
-        return fail("Primary comparison review gate mismatch")
-    if m.get("next_required_action", {}).get("id") != "XEN-CONTROLLED-COMPARISON-001-R2":
-        return fail("R2 next action mismatch")
-
-    if comparison.get("id") != "XEN-CONTROLLED-COMPARISON-001" or comparison.get("revision_id") != "XEN-CONTROLLED-COMPARISON-001-R1":
-        return fail("Reviewed comparison identity mismatch")
-    if comparison.get("status") != "IN_DEPTH_REVIEW_COMPLETE_RETURNED_FOR_SUBSTANTIVE_REVISION":
-        return fail("Reviewed comparison disposition mismatch")
-    if comparison.get("owner_review_status") != "RETURNED_FOR_REVISION" or comparison.get("r1_not_adopted") is not True:
-        return fail("Non-adoption control mismatch")
-    if comparison.get("owner_review_record") != str(OR.relative_to(R)) or comparison.get("detailed_review_record") != str(DR.relative_to(R)):
-        return fail("Review record path mismatch")
-    if comparison.get("review_disposition_counts") != {
-        "PASS_AS_CLASSIFIED": 11,
-        "PASS_WITH_REQUIRED_REVISION": 11,
-        "RECLASSIFY": 9,
-    }:
-        return fail("Review disposition count mismatch")
-    if comparison.get("required_next_revision") != "XEN-CONTROLLED-COMPARISON-001-R2":
-        return fail("Required revision mismatch")
-
-    if r1.get("comparison_id") != "XEN-CONTROLLED-COMPARISON-001" or r1.get("revision_id") != "XEN-CONTROLLED-COMPARISON-001-R1" or r1.get("status") != "CORRECTED_DRAFT_PENDING_OWNER_REVIEW":
-        return fail("R1 immutable production record was rewritten")
-
-    if owner.get("review_id") != "XEN-OWNER-REVIEW-005" or owner.get("status") != "OWNER_DIRECTED_IN_DEPTH_REVIEW_RETURNED_FOR_SUBSTANTIVE_REVISION":
-        return fail("Owner review identity mismatch")
-    ruling = owner.get("owner_review_ruling", {})
-    if ruling.get("comparison_status") != "RETURNED_FOR_SUBSTANTIVE_REVISION" or ruling.get("adoption_status") != "NOT_ADOPTED":
-        return fail("Owner review ruling mismatch")
-    results = owner.get("review_results", {})
-    if results != {
-        "pass_as_classified": 11,
-        "pass_with_required_revision": 11,
-        "reclassify": 9,
-        "blocking_global_findings": 9,
-        "major_global_findings": 2,
-    }:
-        return fail("Owner review result mismatch")
-    if owner.get("required_next_action", {}).get("id") != "XEN-CONTROLLED-COMPARISON-001-R2":
-        return fail("Owner ruling next action mismatch")
-
-    if detail.get("review_id") != "XEN-CMP-R1-REVIEW-001" or detail.get("status") != "IN_DEPTH_REVIEW_COMPLETE_RETURN_FOR_SUBSTANTIVE_REVISION":
-        return fail("Detailed review identity mismatch")
-    dispositions = detail.get("entry_dispositions", [])
-    if len(dispositions) != 31 or {x.get("entry_id") for x in dispositions} != {f"CMP-{i:03d}" for i in range(1, 32)}:
-        return fail("Detailed review entry coverage mismatch")
-    expected_dispositions = Counter({
-        "PASS_AS_CLASSIFIED": 11,
-        "PASS_WITH_REQUIRED_REVISION": 11,
-        "RECLASSIFY": 9,
-    })
-    if Counter(x.get("disposition") for x in dispositions) != expected_dispositions:
-        return fail("Detailed review disposition totals mismatch")
-    if detail.get("disposition_counts") != {
-        "entries_reviewed": 31,
-        "pass_as_classified": 11,
-        "pass_with_required_revision": 11,
-        "reclassify": 9,
-    }:
-        return fail("Detailed review aggregate mismatch")
-    required_reclasses = {
-        "CMP-001": "GOVERNING_EXAMINATION",
-        "CMP-006": "GOVERNING_ARCHITECTURE",
-        "CMP-007": "GOVERNING_EXAMINATION",
-        "CMP-008": "GOVERNING_EXAMINATION",
-        "CMP-016": "GOVERNING_EXAMINATION",
-        "CMP-018": "GOVERNING_EXAMINATION",
-        "CMP-025": "GOVERNING_EXAMINATION",
-        "CMP-026": "GOVERNING_EXAMINATION",
-        "CMP-028": "GOVERNING_EXAMINATION",
-    }
-    if detail.get("required_reclassifications") != required_reclasses:
-        return fail("Required reclassification map mismatch")
-    findings = detail.get("global_findings", [])
-    if len(findings) != 11 or Counter(x.get("severity") for x in findings) != Counter({"BLOCKING": 9, "MAJOR": 2}):
-        return fail("Global finding count or severity mismatch")
-    architecture = detail.get("required_r2_architecture", {})
-    if architecture.get("revision_id") != "XEN-CONTROLLED-COMPARISON-001-R2" or architecture.get("sequential_argument_spine_required") is not True or architecture.get("new_active_classification") != "GOVERNING_ARCHITECTURE" or len(architecture.get("required_movements", [])) != 8:
-        return fail("Required R2 architecture mismatch")
-    if detail.get("ruling", {}).get("adopted") is not False or detail.get("ruling", {}).get("decision") != "RETURN_FOR_SUBSTANTIVE_REVISION":
-        return fail("Detailed non-adoption ruling mismatch")
-
-    if state.get("controlled_comparison_in_depth_review_complete") is not True or state.get("controlled_comparison_owner_reviewed") is not True or state.get("controlled_comparison_owner_adopted") is not False:
-        return fail("Audit owner-review state mismatch")
-    if state.get("controlled_comparison_review_disposition") != "RETURNED_FOR_SUBSTANTIVE_REVISION":
-        return fail("Audit review disposition mismatch")
-    if state.get("controlled_comparison_owner_review_record") != str(OR.relative_to(R)) or state.get("controlled_comparison_detailed_review_record") != str(DR.relative_to(R)):
-        return fail("Audit review path mismatch")
-    if state.get("controlled_comparison_required_next_revision") != "XEN-CONTROLLED-COMPARISON-001-R2":
-        return fail("Audit next revision mismatch")
-    if a.get("resolved_items", [])[-1].get("id") != "RES-016" or a.get("documented_gaps", [None, {}])[1].get("id") != "GAP-011":
-        return fail("Audit in-depth-review transition mismatch")
-
-    text = (json.dumps(owner, ensure_ascii=False, default=str) + " " + json.dumps(detail, ensure_ascii=False, default=str)).casefold()
-    for phrase in [
-        "in-depth review",
-        "not_adopted",
-        "returned_for_substantive_revision",
-        "all thirty-one",
-        "nine required reclassifications",
-        "governing_architecture",
-        "proxenos",
-        "economic art",
-        "book four",
-        "manly and socratic justice",
-        "thibron",
-        "seuthes",
-        "artificial-intelligence self-certification remains prohibited",
-    ]:
-        if phrase not in text:
-            return fail("In-depth-review safeguard missing: " + phrase)
-
-    history = H.read_text(encoding="utf-8")
-    for phrase in [
-        "in-depth review",
-        "R1 is **not adopted**",
-        "31 entries reviewed",
-        "11 pass as classified",
-        "11 pass only with required revision",
-        "9 require reclassification",
-        "XEN-CONTROLLED-COMPARISON-001-R2",
-    ]:
-        if phrase not in history:
-            return fail("In-depth-review history safeguard missing: " + phrase)
-
-    if m.get("artificial_intelligence_self_certification_prohibited") is not True or state.get("minister_adapter_derived") is not False or state.get("sanctum_registration_present") is not False:
-        return fail("Governance gate mismatch")
-
-    print("Xenophon repository validation passed")
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+    if predecessor():return 1
+    required=[P,M,A,R2,SP,EI,E1,E2,DE,H,R1,REV]
+    if any(not p.exists() for p in required):return fail("R2 production file missing")
+    m=load(M);a=load(A);r2=load(R2);sp=load(SP);ei=load(EI);e1=load(E1);e2=load(E2);de=load(DE)
+    if m.get("version")!="1.58.0" or m.get("state")!="CONTROLLED_COMPARISON_R2_DRAFT_COMPLETE_PENDING_IN_DEPTH_OWNER_REVIEW":return fail("v1.58 manifest state mismatch")
+    phase=m.get("current_phase",{})
+    if phase.get("id")!="XEN-PHASE-005" or phase.get("completion_status")!="R2_DRAFT_COMPLETE_PENDING_IN_DEPTH_OWNER_REVIEW":return fail("R2 phase mismatch")
+    q=m.get("controlled_comparison",{})
+    if q.get("revision_id")!="XEN-CONTROLLED-COMPARISON-001-R2" or q.get("status")!="DRAFTED_PENDING_IN_DEPTH_OWNER_REVIEW":return fail("R2 manifest identity mismatch")
+    if q.get("record")!=str(R2.relative_to(R)) or q.get("predecessor_record")!=str(R1.relative_to(R)):return fail("R2 manifest path mismatch")
+    expected={"GOVERNING_ARCHITECTURE":1,"GOVERNING_EXAMINATION":10,"CYRUS_SIDE_ELABORATION":2,"AGREEMENT":9,"QUALIFIED_AGREEMENT":5,"PRIMARY_SILENCE":3,"UNRESOLVED_RELATION":1}
+    if q.get("classification_counts")!=expected:return fail("R2 manifest classification mismatch")
+    if q.get("review_application_counts")!={"RETAINED":11,"REVISED_IN_PLACE":11,"RECLASSIFIED":9}:return fail("R2 review application mismatch")
+    if q.get("comparison_entry_count")!=31 or q.get("sequential_movement_count")!=8 or q.get("deep_examination_count")!=7:return fail("R2 manifest counts mismatch")
+    for k in ["source_independence_preserved","strauss_guiding_architecture","sequential_argument_spine_present","proxenos_mediation_restored","economic_art_integrated","book_four_justice_transition_integrated","justice_examination_expanded","ending_examination_expanded","r1_preserved_not_adopted","historical_predecessors_preserved"]:
+        if q.get(k) is not True:return fail("R2 safeguard missing: "+k)
+    if m.get("next_required_action",{}).get("id")!="XEN-CONTROLLED-COMPARISON-R2-IN_DEPTH-OWNER-REVIEW-001":return fail("R2 next action mismatch")
+    if r2.get("revision_id")!="XEN-CONTROLLED-COMPARISON-001-R2" or r2.get("status")!="DRAFTED_PENDING_IN_DEPTH_OWNER_REVIEW":return fail("R2 record identity mismatch")
+    ga=r2.get("governing_architecture",{})
+    if ga.get("opposition")!="SOCRATES_VS_CYRUS" or ga.get("mediating_figure")!="XENOPHON":return fail("R2 architecture mismatch")
+    if r2.get("classification_counts")!=expected or r2.get("sequential_movements")!=8 or r2.get("comparison_entries")!=31 or r2.get("deep_examinations")!=7:return fail("R2 record counts mismatch")
+    moves=sp.get("movements",[])
+    if len(moves)!=8 or [x.get("id") for x in moves] != [f"R2-MOV-{i:03d}" for i in range(1,9)]:return fail("R2 movement spine mismatch")
+    titles=["Misleading surfaces","Menon, Proxenos","Delphi, political self-direction","Xenophon's ascent","Book Four as compositional center","Founding, trial, acquittal","Monarchy, Spartan hegemony","Seuthes, apology, reconciliation"]
+    if any(titles[i] not in moves[i].get("title","") for i in range(8)):return fail("R2 movement order mismatch")
+    if ei.get("entry_count")!=31 or len(ei.get("parts",[]))!=2:return fail("R2 entry index mismatch")
+    entries=e1.get("entries",[])+e2.get("entries",[])
+    if len(e1.get("entries",[]))!=16 or len(e2.get("entries",[]))!=15 or len(entries)!=31:return fail("R2 entry count mismatch")
+    if [x.get("entry_id") for x in entries] != [f"CMP-{i:03d}" for i in range(1,32)]:return fail("R2 entry ID order mismatch")
+    if Counter(x.get("r2_classification") for x in entries)!=Counter(expected):return fail("R2 entry classification mismatch")
+    if Counter(x.get("review_application") for x in entries)!=Counter({"RETAINED":11,"REVISED_IN_PLACE":11,"RECLASSIFIED":9}):return fail("R2 entry review counts mismatch")
+    byid={x.get("entry_id"):x for x in entries}
+    required_reclass={"CMP-001":"GOVERNING_EXAMINATION","CMP-006":"GOVERNING_ARCHITECTURE","CMP-007":"GOVERNING_EXAMINATION","CMP-008":"GOVERNING_EXAMINATION","CMP-016":"GOVERNING_EXAMINATION","CMP-018":"GOVERNING_EXAMINATION","CMP-025":"GOVERNING_EXAMINATION","CMP-026":"GOVERNING_EXAMINATION","CMP-028":"GOVERNING_EXAMINATION"}
+    if any(byid[k].get("r2_classification")!=v or byid[k].get("review_application")!="RECLASSIFIED" for k,v in required_reclass.items()):return fail("R2 required reclassification mismatch")
+    if de.get("examination_count")!=7 or len(de.get("examinations",[]))!=7:return fail("R2 deep examination mismatch")
+    text=" ".join(json.dumps(x,ensure_ascii=False) for x in [r2,sp,ei,e1,e2,de]).casefold()
+    for phrase in ["proxenos as indispensable mediator","economic art","deus sive casus","manly and socratic justice","closest approximation","practical supremacy","thibron","socrates' final question","independently disclosed","not two equal closures"]:
+        if phrase not in text:return fail("R2 substantive safeguard missing: "+phrase)
+    rs=a.get("repository_state",{})
+    if rs.get("controlled_comparison_r2_drafted") is not True or rs.get("controlled_comparison_r2_draft_complete") is not True:return fail("R2 audit production mismatch")
+    if rs.get("controlled_comparison_r2_owner_reviewed") is not False or rs.get("controlled_comparison_owner_adopted") is not False:return fail("R2 audit review gate mismatch")
+    if a.get("resolved_items",[])[-1].get("id")!="RES-017" or a.get("documented_gaps",[])[1].get("id")!="GAP-012":return fail("R2 audit transition mismatch")
+    if m.get("artificial_intelligence_self_certification_prohibited") is not True or rs.get("minister_adapter_derived") is not False or rs.get("sanctum_registration_present") is not False:return fail("R2 governance gate mismatch")
+    hist=H.read_text(encoding="utf-8")
+    for phrase in ["R2 is additive","eight movements","All nine required reclassifications","Proxenos has been restored","R2 is `DRAFTED_PENDING_IN_DEPTH_OWNER_REVIEW`"]:
+        if phrase not in hist:return fail("R2 history safeguard missing: "+phrase)
+    print("Xenophon repository validation passed");return 0
+if __name__=="__main__":sys.exit(main())
