@@ -190,9 +190,13 @@ reading_units:
   status: DRAFTED_PENDING_OWNER_REVIEW
 - id: XEN-PRI-RU-044
   work_locator: Anabasis VII.1
-  pdf_pages_one_based: 137-143
+  pdf_pages_one_based: 137-141
+  status: DRAFTED_PENDING_OWNER_REVIEW
+- id: XEN-PRI-RU-045
+  work_locator: Anabasis VII.2
+  pdf_pages_one_based: 141-145
   status: NEXT
-remaining_sequence: Anabasis VII.2 through VII.8, strictly in chapter order.
+remaining_sequence: Anabasis VII.3 through VII.8, strictly in chapter order.
 required_outputs_per_unit:
 - bibliographic_and_witness_control
 - narrative_person_and_authorial_attribution
