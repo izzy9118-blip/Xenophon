@@ -220,8 +220,8 @@ def main():
     text = (json.dumps(owner, ensure_ascii=False, default=str) + " " + json.dumps(detail, ensure_ascii=False, default=str)).casefold()
     for phrase in [
         "in-depth review",
-        "not adopted",
-        "returned for substantive revision",
+        "not_adopted",
+        "returned_for_substantive_revision",
         "all thirty-one",
         "nine required reclassifications",
         "governing_architecture",
