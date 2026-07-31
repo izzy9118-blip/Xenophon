@@ -92,7 +92,8 @@ cross_cutting_findings:
     entry_ids: [CMP-023]
     status: CYRUS_SIDE_FINDING
   - id: CCF-R1-004
-    finding: Thibron's incorporation of the army is the terminal institutional form of the Cyrus side: command, war, acquisition, and service under a renewed Greek campaign.
+    finding: >-
+      Thibron's incorporation of the army is the terminal institutional form of the Cyrus side: command, war, acquisition, and service under a renewed Greek campaign.
     entry_ids: [CMP-030]
     status: CYRUS_SIDE_FINDING
   - id: CCF-R1-005
@@ -120,7 +121,8 @@ cross_cutting_findings:
     entry_ids: [CMP-009, CMP-010, CMP-025]
     status: PROVISIONAL_COMPARATIVE_FINDING
   - id: CCF-R1-011
-    finding: The ending must be read as Strauss's final Socrates-Cyrus examination: reconciliation with Greece, renewed war and booty, Thibron's command, piety, and Socrates' apprehension belong to one question.
+    finding: >-
+      The ending must be read as Strauss's final Socrates-Cyrus examination: reconciliation with Greece, renewed war and booty, Thibron's command, piety, and Socrates' apprehension belong to one question.
     entry_ids: [CMP-029, CMP-030]
     status: GOVERNING_EXAMINATION_FINDING
   - id: CCF-R1-012
