@@ -1,0 +1,50 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+revision_id: XEN-CONTROLLED-COMPARISON-001-R1
+classification: GOVERNING_EXAMINATION
+status: CORRECTED_DRAFT_PENDING_OWNER_REVIEW
+entry_count: 2
+entries:
+  - id: CMP-019
+    topic: Justice as the heart of the Socrates-Cyrus examination
+    classification: GOVERNING_EXAMINATION
+    primary_stream:
+      position: >-
+        Justice appears through concrete disputes over promises, punishment, pay, booty, testimony, distribution, coercion, protection of Greek communities, and the treatment of enemies. These are the deeds and claims that require judgment.
+      cumulative_anchors: [PAT-011, WF-010, CP-007]
+      source_units:
+        - XEN-PRI-RU-006
+        - XEN-PRI-RU-031
+        - XEN-PRI-RU-037
+        - XEN-PRI-RU-043
+        - XEN-PRI-RU-050
+    secondary_stream:
+      position: >-
+        Strauss identifies the governing ambiguity between manly justice, which benefits friends and harms enemies, and Socratic justice, which harms no one. Xenophon is examined between Cyrus and Socrates as the possible closest coexistence of manly and Socratic virtue.
+      secondary_units: [XEN-RU-004, XEN-RU-006]
+      printed_pages: 117-120, 125-128
+    controlled_relation: >-
+      The concrete primary disputes are not an alternative account competing with Strauss's hierarchy. They are the phenomena through which the distinction between manly and Socratic justice must be tested. This relation is the heart of the examination.
+    preserved_uncertainty: >-
+      The examination remains open: the primary reconstruction alone does not prove that the two virtues can or cannot fully coexist, and the cited Socratic and Cyropaedia standards still require independent reconstruction.
+    comparison_effect: >-
+      Remove DIVERGENCE. Treat Strauss's justice distinction as the governing question and the primary disputes as its evidentiary field.
+  - id: CMP-029
+    topic: The ending as the final Socrates-Cyrus examination
+    classification: GOVERNING_EXAMINATION
+    primary_stream:
+      position: >-
+        The final sequence includes Xenophon's reconciliation with Greek and Spartan authority, unresolved wages and reputation, poverty and reward, renewed Persian war, the army's incorporation under Thibron, and the absence of a narrated private homecoming.
+      cumulative_anchors: [CP-012, WF-012, SDO-CUM-010, WQ-017]
+      source_units: [XEN-PRI-RU-049, XEN-PRI-RU-050, XEN-PRI-RU-051]
+    secondary_stream:
+      position: >-
+        Strauss guides the ending through Greece and fatherland, reconciliation with the Spartans, Socrates' original apprehension, Xenophon's renewed war for booty, and the intensified presence of gods and oaths in Book Seven. The final question is whether the whole Anabasis vindicates Socrates' apprehension concerning Xenophon's movement toward Cyrus.
+      secondary_units: [XEN-RU-008]
+      printed_pages: 133-136
+    controlled_relation: >-
+      There are not two equal closures. The institutional facts of Thibron, war, booty, incomplete homecoming, and renewed service are Cyrus-side deeds within the final examination governed by Strauss's Socrates-Cyrus question.
+    preserved_uncertainty: >-
+      Strauss's question remains a question rather than a completed verdict. The ending may show correction, reconciliation, limitation, or the persistent necessity of the Cyrus side, but it may not be detached from the Socratic standard that Strauss makes governing.
+    comparison_effect: >-
+      Remove DIVERGENCE and false symmetry. Read the primary ending through Strauss's guiding architecture while preserving every narrated fact.
