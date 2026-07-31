@@ -37,7 +37,7 @@ def main():
  if a.get("resolved_items",[])[-1].get("id")!="RES-011" or a.get("documented_gaps",[])[1].get("id")!="GAP-006":return fail("Audit transition mismatch")
  if m.get("next_required_action",{}).get("id")!="XEN-PRIMARY-CUMULATIVE-001":return fail("Next action mismatch")
  if m.get("artificial_intelligence_self_certification_prohibited") is not True or r.get("minister_adapter_derived") is not False or r.get("sanctum_registration_present") is not False:return fail("Governance gate mismatch")
- text=json.dumps(o,ensure_ascii=False).casefold()
+ text=json.dumps(o,ensure_ascii=False,default=str).casefold()
  for x in ["admitted h. g. dakyns english translation witness","does not authenticate","provisional findings remain provisional","strauss's interpretation remains a distinct secondary reconstruction","artificial-intelligence self-certification remains prohibited"]:
   if x not in text:return fail("Owner-review safeguard missing: "+x)
  h=H.read_text(encoding="utf-8")
