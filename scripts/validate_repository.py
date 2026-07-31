@@ -46,7 +46,8 @@ def predecessor():
         rs["controlled_comparison_required_next_revision"]="XEN-CONTROLLED-COMPARISON-001-R3"
         rs["controlled_comparison_active_revision"]="XEN-CONTROLLED-COMPARISON-001-R2"
         for k in list(rs):
-            if k.startswith("controlled_comparison_r3_"):rs.pop(k,None)
+            if k.startswith("controlled_comparison_r3_") and k!="controlled_comparison_r3_required":rs.pop(k,None)
+        rs["controlled_comparison_r3_required"]=True
         rs["controlled_comparison_required_next_action"]="XEN-CONTROLLED-COMPARISON-001-R3"
         a["resolved_items"]=[x for x in a.get("resolved_items",[]) if x.get("id")!="RES-019"]
         a["documented_gaps"][1]={"id":"GAP-013","description":"R2 completed exact-source in-depth review but was not adopted; targeted R3 correction is required for the younger/older Cyrus distinction, Byzantium, and Strauss's final post-question coda.","blocks":["owner-adopted comparative reconstruction","controlled interpretive synthesis","minister derivation"]}
