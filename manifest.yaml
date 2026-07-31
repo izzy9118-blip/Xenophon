@@ -5,7 +5,7 @@ minister:
   name: Xenophon
   status: FOUNDING_IN_PROGRESS
   registration_status: NOT_YET_REGISTERED_IN_SANCTUM
-version: 1.44.0
+version: 1.45.0
 state: PRIMARY_RECONSTRUCTION_IN_PROGRESS
 owner_reviews:
 - governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
@@ -109,6 +109,7 @@ primary_study:
   - XEN-PRI-RU-042
   - XEN-PRI-RU-043
   - XEN-PRI-RU-044
+  - XEN-PRI-RU-045
   book_five_drafted_chapters:
   - V.1
   - V.2
@@ -127,7 +128,9 @@ primary_study:
   - VI.6
   book_seven_drafted_chapters:
   - VII.1
+  - VII.2
 next_required_unit:
-  id: XEN-PRI-RU-045
-  description: Continue the independent primary reconstruction with Anabasis VII.2 using the Dakyns Project Gutenberg witness.
+  id: XEN-PRI-RU-046
+  description: Continue the independent primary reconstruction with Anabasis VII.3 using the Dakyns Project Gutenberg
+    witness.
 artificial_intelligence_self_certification_prohibited: true
