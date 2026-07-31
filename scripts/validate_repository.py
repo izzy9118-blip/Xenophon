@@ -1,11 +1,11 @@
 from pathlib import Path
 import sys,yaml,tempfile,shutil,subprocess,json
 R=Path(__file__).resolve().parents[1]
-P=R/"scripts/validate_repository_v1_51.py"
+P=R/"scripts/validate_repository_v1_52.py"
 M=R/"manifest.yaml"
 A=R/"audits/founding-state.yaml"
-O=R/"governance/owner-reviews/2026-07-31-primary-anabasis-reconstruction-review.yaml"
-H=R/"history/2026-07-31-anabasis-primary-owner-adoption.md"
+C=R/"studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml"
+H=R/"history/2026-07-31-anabasis-primary-cumulative-reconstruction.md"
 L=R/"studies/xenophon-anabasis-dakyns/reading-plan.yaml"
 def load(p):
  with p.open(encoding="utf-8") as f:return yaml.safe_load(f)
@@ -13,35 +13,50 @@ def dump(p,x):
  with p.open("w",encoding="utf-8") as f:yaml.safe_dump(x,f,sort_keys=False,allow_unicode=True)
 def fail(x):print(x);return 1
 def predecessor():
- if not P.exists():return fail("Frozen v1.51 validator missing")
+ if not P.exists():return fail("Frozen v1.52 validator missing")
  with tempfile.TemporaryDirectory() as d:
   t=Path(d)/"r";shutil.copytree(R,t,ignore=shutil.ignore_patterns(".git","__pycache__"))
-  for p in [t/O.relative_to(R),t/H.relative_to(R)]:
+  for p in [t/C.relative_to(R),t/H.relative_to(R)]:
    if p.exists():p.unlink()
-  m=load(t/"manifest.yaml");m["version"]="1.51.0";m["state"]="PRIMARY_RECONSTRUCTION_DRAFT_COMPLETE_PENDING_OWNER_REVIEW";m["owner_reviews"]=m["owner_reviews"][:-1];m["current_phase"]={"id":"XEN-PHASE-002","name":"Sequential primary reconstruction of Xenophon's Anabasis","completion_status":"DRAFT_COMPLETE_PENDING_OWNER_REVIEW"};s=m["primary_study"];s["status"]="SEQUENTIAL_PRIMARY_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW";s.pop("adoption_record",None);s.pop("immutable_unit_records",None);s.pop("collective_owner_adoption",None);m["next_required_action"]={"id":"XEN-PRIMARY-OWNER-REVIEW-001","description":"Owner review of the complete fifty-one-unit Dakyns Anabasis reconstruction before primary-only cumulative derivation or secondary comparison."};dump(t/"manifest.yaml",m)
-  a=load(t/"audits/founding-state.yaml");r=a["repository_state"];r.pop("primary_reconstruction_owner_adopted",None);r.pop("primary_adoption_record",None);r.pop("primary_only_cumulative_reconstruction_started",None);r["book_milestones_pending_owner_review"]=True;a["resolved_items"]=a["resolved_items"][:-1];a["documented_gaps"][1]={"id":"GAP-005","description":"The fifty-one-unit Dakyns Anabasis reconstruction is draft-complete but has not received owner review or cross-witness adjudication.","blocks":["owner-adopted primary reconstruction","primary-only cumulative derivation","secondary comparison","minister derivation"]};a["next_required_action"]="Conduct owner review of the complete fifty-one-unit primary reconstruction before cumulative derivation, secondary comparison, minister adapter construction, or Sanctum registration.";dump(t/"audits/founding-state.yaml",a)
-  z=subprocess.run([sys.executable,str(t/"scripts/validate_repository_v1_51.py")],cwd=t,text=True,capture_output=True)
+  m=load(t/"manifest.yaml");m["version"]="1.52.0";m["state"]="PRIMARY_RECONSTRUCTION_OWNER_ADOPTED";m["current_phase"]["completion_status"]="AUTHORIZED_NOT_STARTED";m["primary_study"].pop("cumulative_reconstruction",None);m["next_required_action"]={"id":"XEN-PRIMARY-CUMULATIVE-001","description":"Produce a primary-only cumulative reconstruction across the owner-adopted fifty-one-unit Dakyns Anabasis study before secondary comparison or minister derivation."};dump(t/"manifest.yaml",m)
+  a=load(t/"audits/founding-state.yaml");r=a["repository_state"];r["primary_only_cumulative_reconstruction_started"]=False;r.pop("primary_only_cumulative_reconstruction_draft_complete",None);r.pop("cumulative_reconstruction_record",None);a["resolved_items"]=a["resolved_items"][:-1];a["documented_gaps"][1]={"id":"GAP-006","description":"No primary-only cumulative reconstruction has yet been produced from the owner-adopted fifty-one-unit study.","blocks":["work-level primary synthesis","controlled comparison with Strauss","minister derivation"]};a["next_required_action"]="Produce the primary-only cumulative reconstruction from the owner-adopted fifty-one-unit study before secondary comparison, minister adapter construction, or Sanctum registration.";dump(t/"audits/founding-state.yaml",a)
+  z=subprocess.run([sys.executable,str(t/"scripts/validate_repository_v1_52.py")],cwd=t,text=True,capture_output=True)
   return fail("predecessor failed: "+(z.stdout+z.stderr).strip()) if z.returncode else 0
 def main():
  if predecessor():return 1
- if any(not p.exists() for p in [P,M,A,O,H,L]):return fail("Missing owner-adoption production file")
- m=load(M);a=load(A);o=load(O);p=load(L);s=m.get("primary_study",{});r=a.get("repository_state",{})
- if m.get("version")!="1.52.0" or m.get("state")!="PRIMARY_RECONSTRUCTION_OWNER_ADOPTED":return fail("Manifest adoption mismatch")
- if m.get("current_phase",{}).get("id")!="XEN-PHASE-003" or m.get("current_phase",{}).get("completion_status")!="AUTHORIZED_NOT_STARTED":return fail("Phase mismatch")
- if s.get("status")!="OWNER_ADOPTED_PRIMARY_TRANSLATION_RECONSTRUCTION" or s.get("collective_owner_adoption") is not True:return fail("Study adoption mismatch")
- if s.get("adoption_record")!=str(O.relative_to(R)) or len(s.get("drafted_units",[]))!=51:return fail("Adoption record or coverage mismatch")
- if o.get("review_id")!="XEN-OWNER-REVIEW-003" or o.get("status")!="OWNER_ADOPTED_PRIMARY_TRANSLATION_RECONSTRUCTION" or o.get("scope",{}).get("unit_count")!=51:return fail("Owner ruling mismatch")
- if o.get("owner_ruling",{}).get("immutable_draft_rule") is None:return fail("Immutable draft rule missing")
+ if any(not p.exists() for p in [P,M,A,C,H,L]):return fail("Missing cumulative-reconstruction production file")
+ m=load(M);a=load(A);c=load(C);p=load(L);s=m.get("primary_study",{});r=a.get("repository_state",{})
+ ids=[f"XEN-PRI-RU-{i:03d}" for i in range(1,52)]
+ if m.get("version")!="1.53.0" or m.get("state")!="PRIMARY_CUMULATIVE_RECONSTRUCTION_DRAFT_COMPLETE_PENDING_OWNER_REVIEW":return fail("Manifest cumulative state mismatch")
+ if m.get("current_phase",{}).get("id")!="XEN-PHASE-003" or m.get("current_phase",{}).get("completion_status")!="DRAFT_COMPLETE_PENDING_OWNER_REVIEW":return fail("Phase completion mismatch")
+ q=s.get("cumulative_reconstruction",{})
+ if q.get("id")!="XEN-PRIMARY-CUMULATIVE-001" or q.get("status")!="DRAFTED_PENDING_OWNER_REVIEW" or q.get("source_unit_count")!=51:return fail("Manifest cumulative record mismatch")
+ if q.get("record")!=str(C.relative_to(R)) or q.get("secondary_comparison_status")!="DEFERRED_PENDING_OWNER_REVIEW":return fail("Manifest cumulative gate mismatch")
+ if m.get("next_required_action",{}).get("id")!="XEN-PRIMARY-CUMULATIVE-OWNER-REVIEW-001":return fail("Next action mismatch")
  if any(x.get("status")!="DRAFTED_PENDING_OWNER_REVIEW" for x in p.get("reading_units",[])):return fail("Unit production statuses were rewritten")
- if r.get("primary_reconstruction_owner_adopted") is not True or r.get("primary_only_cumulative_reconstruction_started") is not False:return fail("Audit adoption mismatch")
- if a.get("resolved_items",[])[-1].get("id")!="RES-011" or a.get("documented_gaps",[])[1].get("id")!="GAP-006":return fail("Audit transition mismatch")
- if m.get("next_required_action",{}).get("id")!="XEN-PRIMARY-CUMULATIVE-001":return fail("Next action mismatch")
+ if r.get("primary_only_cumulative_reconstruction_started") is not True or r.get("primary_only_cumulative_reconstruction_draft_complete") is not True:return fail("Audit cumulative state mismatch")
+ if r.get("cumulative_reconstruction_record")!=str(C.relative_to(R)):return fail("Audit cumulative record mismatch")
+ if a.get("resolved_items",[])[-1].get("id")!="RES-012" or a.get("documented_gaps",[])[1].get("id")!="GAP-007":return fail("Audit transition mismatch")
+ if c.get("record_id")!="XEN-PRIMARY-CUMULATIVE-001" or c.get("status")!="DRAFTED_PENDING_OWNER_REVIEW":return fail("Cumulative identity mismatch")
+ b=c.get("derivation_basis",{})
+ if b.get("source_unit_count")!=51 or b.get("source_unit_coverage")!=ids:return fail("Cumulative source coverage mismatch")
+ counts=c.get("counts",{})
+ expected={"source_units":51,"book_level_movements":7,"major_transformations":8,"recurring_problem_patterns":14,"narrative_person_phases":5,"speech_deed_outcome_findings":10,"provisional_work_level_findings":12,"unresolved_work_level_questions":20,"secondary_comparison_prompts":12}
+ if counts!=expected:return fail("Cumulative counts mismatch")
+ if len(c.get("book_level_movements",[]))!=7 or [x.get("book") for x in c.get("book_level_movements",[])]!=["I","II","III","IV","V","VI","VII"]:return fail("Book movement mismatch")
+ all_anchors=set()
+ for section in ["major_transformations","recurring_problem_patterns","narrative_person_development","speech_deed_outcome_findings","provisional_work_level_findings","unresolved_work_level_questions"]:
+  for x in c.get(section,[]):
+   all_anchors.update(x.get("evidence_units",x.get("units",[])))
+ if not set(ids).issubset(all_anchors):return fail("Not all source units participate in cumulative evidence anchors")
+ text=json.dumps(c,ensure_ascii=False,default=str).casefold()
+ for x in ["cyrus's concealed bid for kingship","project of survival and return","mobile political community","speech tested by deed and outcome","piety, divination, and deliberation","founding, settlement, and the limits of the return project","transfer of the troops to another war","thibron","homecoming","translation adjudication"]:
+  if x not in text:return fail("Cumulative safeguard missing: "+x)
+ if "strauss" in text:return fail("Primary cumulative record imports secondary interpretation")
+ if c.get("secondary_comparison_status")!="DEFERRED_PENDING_OWNER_REVIEW":return fail("Secondary comparison gate mismatch")
  if m.get("artificial_intelligence_self_certification_prohibited") is not True or r.get("minister_adapter_derived") is not False or r.get("sanctum_registration_present") is not False:return fail("Governance gate mismatch")
- text=json.dumps(o,ensure_ascii=False,default=str).casefold()
- for x in ["admitted h. g. dakyns english translation witness","does not authenticate","provisional findings remain provisional","strauss's interpretation remains a distinct secondary reconstruction","artificial-intelligence self-certification remains prohibited"]:
-  if x not in text:return fail("Owner-review safeguard missing: "+x)
  h=H.read_text(encoding="utf-8")
- for x in ["fifty-one-unit sequential reconstruction","immutable production records","primary-only cumulative reconstruction"]:
+ for x in ["fifty-one owner-adopted chapter reconstructions","14 recurring problem-patterns","20 unresolved work-level questions","pending owner review","Secondary comparison remains deferred"]:
   if x not in h:return fail("History safeguard missing: "+x)
  print("Xenophon repository validation passed");return 0
 if __name__=="__main__":sys.exit(main())
