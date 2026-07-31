@@ -16,11 +16,11 @@ def predecessor():
  if not P.exists():return fail("Frozen v1.51 validator missing")
  with tempfile.TemporaryDirectory() as d:
   t=Path(d)/"r";shutil.copytree(R,t,ignore=shutil.ignore_patterns(".git","__pycache__"))
-  for p in [t/O.relative_to(R),t/H.relative_to(R),t/"scripts/validate_repository_v1_51.py"]:
+  for p in [t/O.relative_to(R),t/H.relative_to(R)]:
    if p.exists():p.unlink()
   m=load(t/"manifest.yaml");m["version"]="1.51.0";m["state"]="PRIMARY_RECONSTRUCTION_DRAFT_COMPLETE_PENDING_OWNER_REVIEW";m["owner_reviews"]=m["owner_reviews"][:-1];m["current_phase"]={"id":"XEN-PHASE-002","name":"Sequential primary reconstruction of Xenophon's Anabasis","completion_status":"DRAFT_COMPLETE_PENDING_OWNER_REVIEW"};s=m["primary_study"];s["status"]="SEQUENTIAL_PRIMARY_READING_DRAFT_COMPLETE_PENDING_OWNER_REVIEW";s.pop("adoption_record",None);s.pop("immutable_unit_records",None);s.pop("collective_owner_adoption",None);m["next_required_action"]={"id":"XEN-PRIMARY-OWNER-REVIEW-001","description":"Owner review of the complete fifty-one-unit Dakyns Anabasis reconstruction before primary-only cumulative derivation or secondary comparison."};dump(t/"manifest.yaml",m)
   a=load(t/"audits/founding-state.yaml");r=a["repository_state"];r.pop("primary_reconstruction_owner_adopted",None);r.pop("primary_adoption_record",None);r.pop("primary_only_cumulative_reconstruction_started",None);r["book_milestones_pending_owner_review"]=True;a["resolved_items"]=a["resolved_items"][:-1];a["documented_gaps"][1]={"id":"GAP-005","description":"The fifty-one-unit Dakyns Anabasis reconstruction is draft-complete but has not received owner review or cross-witness adjudication.","blocks":["owner-adopted primary reconstruction","primary-only cumulative derivation","secondary comparison","minister derivation"]};a["next_required_action"]="Conduct owner review of the complete fifty-one-unit primary reconstruction before cumulative derivation, secondary comparison, minister adapter construction, or Sanctum registration.";dump(t/"audits/founding-state.yaml",a)
-  z=subprocess.run([sys.executable,str(t/"scripts/validate_repository.py")],cwd=t,text=True,capture_output=True)
+  z=subprocess.run([sys.executable,str(t/"scripts/validate_repository_v1_51.py")],cwd=t,text=True,capture_output=True)
   return fail("predecessor failed: "+(z.stdout+z.stderr).strip()) if z.returncode else 0
 def main():
  if predecessor():return 1
