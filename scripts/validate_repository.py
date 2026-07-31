@@ -39,5 +39,8 @@ def main():
  if [len(u.get(k,[])) for k in ["documentary_observations","speeches_deeds_and_outcomes","provisional_findings","standing_unresolved_questions","downstream_textual_checks"]]!=[30,10,10,16,12]:return fail("VI.4 counts mismatch")
  if "Strauss" in json.dumps(u,ensure_ascii=False):return fail("Primary unit imports secondary interpretation")
  if "certif" in u.get("status","").casefold():return fail("Unit status improperly certifies")
+ h=H.read_text(encoding="utf-8")
+ for x in ["PDF pages 127–129","PDF pages 129–132","forty-one drafted primary units","Preserved validator v1.40"]:
+  if x not in h:return fail("History safeguard missing: "+x)
  print("Xenophon repository validation passed");return 0
 if __name__=="__main__":sys.exit(main())
