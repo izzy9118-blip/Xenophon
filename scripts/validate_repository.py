@@ -21,7 +21,7 @@ def main():
  if m.get("version")!="1.41.0" or m.get("state")!="PRIMARY_RECONSTRUCTION_IN_PROGRESS":return fail("Manifest VI.4 mismatch")
  if m.get("artificial_intelligence_self_certification_prohibited") is not True or m.get("minister",{}).get("registration_status")!="NOT_YET_REGISTERED_IN_SANCTUM":return fail("Governance mismatch")
  if s.get("drafted_units")!=ids or s.get("book_six_drafted_chapters")!=["VI.1","VI.2","VI.3","VI.4"] or m.get("next_required_unit",{}).get("id")!="XEN-PRI-RU-042":return fail("Coverage mismatch")
- if [x.get("id") for x in q]!=ids+["XEN-PRI-RU-042"] or q[-2].get("pdf_pages_one_based")!="127-129" or q[-2].get("status")!="DRAFTED_PENDING_OWNER_REVIEW" or q[-1].get("work_locator")!="Anabasis VI.5" or q[-1].get("status")!="NEXT":return fail("Plan mismatch")
+ if [x.get("id") for x in q]!=ids+["XEN-PRI-RU-042"] or q[-2].get("pdf_pages_one_based")!="127-129" or q[-2].get("status")!="DRAFTED_PENDING_OWNER_REVIEW" or q[-1].get("work_locator")!="Anabasis VI.5" or q[-1].get("pdf_pages_one_based")!="129-132" or q[-1].get("status")!="NEXT":return fail("Plan mismatch")
  if r.get("drafted_primary_units")!=41 or r.get("book_six_drafted_chapters")!=["VI.1","VI.2","VI.3","VI.4"] or r.get("minister_adapter_derived") is not False or r.get("sanctum_registration_present") is not False:return fail("Audit mismatch")
  if u.get("unit_id")!="XEN-PRI-RU-041" or u.get("status")!="DRAFTED_PENDING_OWNER_REVIEW" or u.get("scope",{}).get("pdf_pages_one_based")!="127-129" or u.get("secondary_comparison_status")!="DEFERRED":return fail("Unit mismatch")
  if "Translator wording is not unmediated Greek evidence" not in u.get("jurisdiction",""):return fail("Translation safeguard missing")
