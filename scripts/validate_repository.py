@@ -80,7 +80,7 @@ def main():
     g=rev.get("global_findings",[])
     if len(g)!=6 or Counter(x.get("severity") for x in g)!=Counter({"PASS":2,"BLOCKING":2,"MAJOR":1,"PASS_WITH_LIMIT":1}):return fail("R2 global finding counts mismatch")
     text=json.dumps(rev,ensure_ascii=False).casefold()
-    for phrase in ["younger cyrus","older cyrus","post_question_coda_booty","post_question_coda_gods_and_oaths","city, triremes, money, and army","thibron","not adopted","targeted not wholesale"]:
+    for phrase in ["younger cyrus","older cyrus","post_question_coda_booty","post_question_coda_gods_and_oaths","city, triremes, money, and army","thibron","not adopted","targeted_not_wholesale"]:
         if phrase not in text:return fail("R2 review substance missing: "+phrase)
     disp=rev.get("entry_dispositions",[])
     if len(disp)!=31 or [x.get("entry_id") for x in disp] != [f"CMP-{i:03d}" for i in range(1,32)]:return fail("R2 review entry coverage mismatch")
