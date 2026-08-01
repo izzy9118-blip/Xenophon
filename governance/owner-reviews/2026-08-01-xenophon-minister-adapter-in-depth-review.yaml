@@ -1,0 +1,47 @@
+schema_version: 1.0
+review_id: XEN-OWNER-REVIEW-011
+status: OWNER_REVIEWED_ADAPTER_RETURNED_FOR_TARGETED_R1
+reviewed_on: 2026-08-01
+repository: izzy9118-blip/Xenophon
+branch: primary/anabasis-dakyns-gutenberg
+owner_direction: Let's do it.
+scope:
+  adapter_id: XEN-MINISTER-ADAPTER-001
+  reviewed_head: 689e222ddf0debe24119769a6d9b15552f20c685
+  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-IN-DEPTH-REVIEW-001.yaml
+  readable_review: speech/reviews/XEN-MINISTER-ADAPTER-IN-DEPTH-REVIEW-001.md
+  registers_reviewed: 4
+  guards_reviewed: 3
+  federation_schema_reviewed: true
+  proving_fixture_reviewed: true
+owner_ruling:
+  adoption_status: NOT_ADOPTED
+  disposition: RETURN_FOR_TARGETED_R1_REVISION
+  operational_authorization: NOT_GRANTED
+  sanctum_registration: NOT_AUTHORIZED
+  assembly_dispatch: NOT_AUTHORIZED
+  reason: The Xenophontic architecture passes, but the current adapter does not yet conform to the live Sanctum report schema and does not establish true commit, envelope, briefing, witness, or authorization provenance.
+adopted_as_preserved_controls:
+  - The four-register architecture is approved for preservation in R1.
+  - The three-guard architecture is approved for preservation in R1.
+  - The direct proving judgment and ordered pedagogical path are substantively sound.
+  - All nineteen unresolved questions remain available and may not be erased.
+  - English-witness jurisdiction and deferred Greek review remain governing.
+  - No final teaching or artificial-intelligence self-certification is authorized.
+blocking_corrections:
+  - Conform generated reports to Sanctum ministerial-report schema 1.2.0 and validate them against that schema.
+  - Resolve the mismatch between the federation CORPUS-WIT identifier pattern and admitted witness XEN-WIT-PRI-001 through an explicit approved mechanism.
+  - Replace the false b71a repository pin with a commit that actually contains the declared adapter and manifest.
+  - Replace placeholder envelope and briefing hashes with calculated hashes and enforce path-to-hash validation.
+  - Separate synthesis derivation authority from adapter operational authority.
+prohibitions:
+  - Do not invent a CORPUS-WIT alias without registration or schema authority.
+  - Do not reopen the four registers, three guards, R1 synthesis, or Greek-language deferral.
+  - Do not register Xenophon in Sanctum or permit Assembly dispatch before R1 owner adoption.
+next_required_action:
+  id: XEN-MINISTER-ADAPTER-001-R1
+  description: Produce a targeted additive R1 correcting federation schema and provenance defects while preserving the approved Xenophontic architecture.
+external_dependency:
+  id: SANCTUM-XENOPHON-WITNESS-ID-COMPATIBILITY-001
+  status: REQUIRED_BEFORE_ADAPTER_ADOPTION
+  description: Sanctum must explicitly accept Xenophon's admitted witness identity through schema extension or a registered federation alias.
