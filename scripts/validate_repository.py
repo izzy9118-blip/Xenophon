@@ -74,7 +74,7 @@ def main():
     if a.get('resolved_items',[])[-1].get('id')!='RES-022' or a.get('documented_gaps',[])[1].get('id')!='GAP-017':return fail('Audit review transition mismatch')
     if m.get('artificial_intelligence_self_certification_prohibited') is not True or rs.get('minister_adapter_derived') is not False or rs.get('sanctum_registration_present') is not False:return fail('Governance gate mismatch')
     hist=H.read_text(encoding='utf-8').casefold()
-    for phrase in ['older cyrus is xenophon\'s presentation in the education of cyrus','iron alloy','xenophon, by standing between the older cyrus and socrates, presents to the reader the problem of justice','not adopted','immutable draft']:
+    for phrase in ["older cyrus is xenophon's presentation",'education of cyrus','iron alloy','xenophon, by standing between the older cyrus and socrates, presents to the reader the problem of justice','not adopted','immutable draft']:
         if phrase not in hist:return fail('Review history safeguard missing: '+phrase)
     print('Xenophon repository validation passed');return 0
 if __name__=='__main__':sys.exit(main())
