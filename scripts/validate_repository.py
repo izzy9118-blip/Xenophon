@@ -64,7 +64,7 @@ def main():
     if own.get('status')!='OWNER_REVIEWED_RETURNED_FOR_TARGETED_REVISION' or own.get('owner_ruling',{}).get('adoption_status')!='NOT_ADOPTED':return fail('Owner review ruling mismatch')
     if own.get('next_required_action',{}).get('id')!='XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1':return fail('Owner review next action mismatch')
     text=' '.join(json.dumps(x,ensure_ascii=False) for x in [rev,own]).casefold()
-    for phrase in ['education of cyrus','cross-work','iron alloy','prescription','interrogative','presents to the reader the problem of justice','older cyrus is material','not adopted','nineteen unresolved questions']:
+    for phrase in ['education of cyrus','cross-work','iron alloy','prescription','interrogative','presents to the reader the problem of justice','older cyrus is material','not_adopted','nineteen unresolved questions']:
         if phrase not in text:return fail('Synthesis review substance missing: '+phrase)
     rs=a.get('repository_state',{})
     if rs.get('controlled_synthesis_owner_reviewed') is not True or rs.get('controlled_synthesis_owner_adopted') is not False:return fail('Audit review gate mismatch')
