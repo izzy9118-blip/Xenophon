@@ -1,0 +1,297 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-014
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis II.4
+  pdf_pages_one_based: 39-42
+  opening_anchor: >-
+    After these things the Hellenes and Ariaeus waited for Tissaphernes, being encamped close to one another
+  closing_anchor: >-
+    from which the natives used to carry across loaves and cheeses and wine on rafts made of skins.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis II.4 plus one-based PDF page
+  source_boundary: >-
+    Direct translated speech, collective speech, messenger reports, royal pledges,
+    narratorial motive attribution, reported measurements, translator notes,
+    suspicions, tactical inferences, and explicitly false reports remain distinct.
+    The possible identification of the unnamed young man with Xenophon is preserved
+    only as Dakyns's note.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    third-person historical narration with Xenophon named as a character and an
+    editorially conjectured second possible appearance
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  textually_disputed_or_conjectural_identification: >-
+    The narrator names Xenophon walking with Proxenus at Sittace. Dakyns adds that
+    the unnamed young man who detects the contradiction in the warning was possibly
+    Xenophon himself; the unit does not merge the two appearances.
+  observation: >-
+    The narrator distinguishes visible signs, suspicions, reported warnings,
+    inferences, false reports, and outcomes. He also states that Tissaphernes
+    delivered Parysatis's villages for plunder in mockery of Cyrus.
+  uncertainty: >-
+    This witness does not settle the Greek force of truce, pledge, credit, friend,
+    enemy, fear, subtlety, asylum, mockery, or the identity of the unnamed young man.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis II.4; PDF p. 39
+    speech_form: royal_pledges_reported
+    speaker: Persian visitors bearing pledges from Artaxerxes
+    audience: Ariaeus and the Asiatic troops formerly under Cyrus
+    occasion: the more-than-twenty-day wait for Tissaphernes
+    content: >-
+      They encourage the Asiatics and promise that the king will bear no grudge
+      for their service with Cyrus or for past acts.
+    uncertainty: The wording, recipients, conditions, and enforcement are not given.
+  - id: SAO-002
+    locator: Anabasis II.4; PDF p. 39
+    speech_form: collective_direct_challenge
+    speaker: the majority of the Greek soldiers
+    audience: Clearchus and the other generals
+    occasion: Ariaeus and his friends become less attentive to the Greeks
+    content: >-
+      They ask why the army waits and argue that the king is buying time to regroup,
+      fortify the route, destroy them, and prevent their return with a humiliating
+      account of Greek success.
+    uncertainty: No named spokesman, vote, or formal assembly procedure is supplied.
+  - id: SAO-003
+    locator: Anabasis II.4; PDF pp. 39-40
+    speech_form: extended_strategic_reply
+    speaker: Clearchus
+    audience: the dissatisfied Greek soldiers and generals
+    occasion: answering the demand to depart
+    content: >-
+      He acknowledges the danger but argues that unilateral departure would breach
+      the truce, remove markets and guides, alienate Ariaeus and other friends,
+      expose unknown rivers, and leave infantry without cavalry against a superior
+      mounted enemy. A king already holding so many advantages has no need to ruin
+      his oath, word, and reputation through perjury.
+    uncertainty: Clearchus cannot establish Artaxerxes's intent.
+  - id: SAO-004
+    locator: Anabasis II.4; PDF pp. 40-41
+    speech_form: identification_and_warning
+    speaker: a messenger claiming to come from Ariaeus and Artaozus
+    audience: Proxenus, then Clearchus
+    occasion: after supper near Sittace
+    content: >-
+      He warns of a possible nighttime attack and says Tissaphernes intends to
+      destroy the bridge over the Tigris so the Greeks will be trapped between
+      river and canal.
+    uncertainty: His true sender, motive, and information source are unconfirmed.
+  - id: SAO-005
+    locator: Anabasis II.4; PDF p. 41
+    speech_form: tactical_reasoning
+    speaker: an unnamed young man, possibly Xenophon according to Dakyns
+    audience: Clearchus and those hearing the warning
+    occasion: Clearchus is disturbed by the messenger's report
+    content: >-
+      He argues that attack and bridge destruction are inconsistent: victory would
+      make demolition unnecessary, while defeat would prevent the attackers' flight
+      and reinforcement.
+    uncertainty: The speaker's identity is conjectural.
+  - id: SAO-006
+    locator: Anabasis II.4; PDF p. 41
+    speech_form: question_and_answer
+    speaker: Clearchus and the messenger
+    audience: the Greek commanders
+    occasion: testing the warning
+    content: >-
+      Clearchus asks the extent of the land between Tigris and canal; the messenger
+      says it is a large district containing many large villages and cities.
+    uncertainty: The geographic claim is not independently tested.
+  - id: SAO-007
+    locator: Anabasis II.4; PDF p. 41
+    speech_form: attack_report_reported
+    speaker: some Greeks accompanying Tissaphernes
+    audience: the crossing Greek army
+    occasion: the next morning at the thirty-seven-vessel bridge
+    content: They report that an attack will be attempted during the crossing.
+    uncertainty: The report proves false and its source is not given.
+  - id: SAO-008
+    locator: Anabasis II.4; PDF p. 40
+    speech_form: self_identification
+    speaker: Proxenus
+    audience: the messenger at Sittace
+    occasion: the messenger asks for Proxenus or Clearchus but not Menon
+    content: Proxenus identifies himself as the person sought.
+    uncertainty: The highlighted omission of Menon is unexplained.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis II.4; PDF p. 39
+    actor: Artaxerxes's agents, Ariaeus, and the Greeks
+    deed: >-
+      During the prolonged wait, royal visitors cultivate Ariaeus and his men,
+      who become visibly less attentive to the Greeks.
+    outcome: The earlier Greek-Asian oath alliance weakens without overt renunciation.
+    uncertainty: Causation is suggested by sequence but not directly confessed.
+  - id: SDO-002
+    locator: Anabasis II.4; PDF pp. 39-40
+    actor: Greek soldiers and Clearchus
+    deed: >-
+      The soldiers press for departure; Clearchus restrains them through an argument
+      from truce, supply, geography, cavalry, oath, and royal reputation.
+    outcome: The Greeks continue waiting rather than openly breaking the compact.
+    uncertainty: No vote or alternative policy is narrated.
+  - id: SDO-003
+    locator: Anabasis II.4; PDF p. 40
+    actor: Tissaphernes, Orontas, Ariaeus, and the Greeks
+    deed: >-
+      The return begins with a market, but Persians and Asiatics move and camp
+      together while the Greeks march separately under guides.
+    outcome: Formal cooperation proceeds under mutual surveillance and forage clashes.
+    uncertainty: Responsibility for particular blows is not assigned.
+  - id: SDO-004
+    locator: Anabasis II.4; PDF pp. 40-41
+    actor: the messenger, Proxenus, Xenophon, Clearchus, and the unnamed young man
+    deed: >-
+      A warning of attack and bridge destruction reaches the Greeks; the young man
+      exposes its internal contradiction and Clearchus tests the geography.
+    outcome: >-
+      The Greeks infer that the warning may be a device to prevent them from seizing
+      the bridge and island territory.
+    uncertainty: The actual sender and complete truth status remain unknown.
+  - id: SDO-005
+    locator: Anabasis II.4; PDF p. 41
+    actor: Clearchus and the Greek army
+    deed: >-
+      They guard the bridge and cross its thirty-seven vessels with maximum
+      precaution despite another reported attack.
+    outcome: No attack occurs; the reports are false, although Glus observes them.
+    uncertainty: Glus's purpose remains unknown.
+  - id: SDO-006
+    locator: Anabasis II.4; PDF p. 41
+    actor: Clearchus and the Greek column
+    deed: >-
+      At Opis, Clearchus marches two abreast and repeatedly halts the vanguard so
+      the delay reproduces itself through the line.
+    outcome: The army appears enormous and astonishes the observing Persian prince.
+    uncertainty: Deliberate deception is possible but not stated.
+  - id: SDO-007
+    locator: Anabasis II.4; PDF p. 42
+    actor: Tissaphernes and the Greeks
+    deed: >-
+      Tissaphernes gives Parysatis's villages to the Greeks for plunder while
+      forbidding enslavement of the inhabitants.
+    outcome: >-
+      The army obtains grain, cattle, and property; the narrator calls the act
+      mockery of Cyrus.
+    uncertainty: Legal authority, consent, and scale are unstated.
+  - id: SDO-008
+    locator: Anabasis II.4; PDF pp. 40-42
+    actor: the composite marching force and local communities
+    deed: >-
+      The route passes the Wall of Media, canals, Sittace, Tigris, Physcus, Opis,
+      desert stages, and villages along the river.
+    outcome: Infrastructure and provisioning govern the march more than open battle.
+    uncertainty: Many distances and dimensions are reported.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - More than twenty days of waiting
+    - Royal cultivation of Ariaeus and declining attention to the Greeks
+    - Greek pressure to depart and Clearchus's restraint
+    - Tissaphernes returns and the march begins
+    - Separate camps and mutual surveillance
+    - Passage through the Wall of Media and canals
+    - Warning at Sittace
+    - Logical exposure of the warning's contradiction
+    - Guarded crossing of the Tigris
+    - Demonstrative march past the royal brother
+    - Plunder of Parysatis's villages
+    - Desert march with Tigris trade
+  repetitions:
+    - Oaths and pledges remain central but are accompanied by suspicion.
+    - Markets and guides recur as conditions of survival.
+    - Reports repeatedly produce alarm without secure knowledge.
+    - Clearchus converts fear into guarded movement and visual order.
+    - Friend and enemy remain unstable categories under truce.
+  omissions:
+    - The exact royal pledges to Ariaeus's followers are absent.
+    - No named Greek spokesman represents the dissatisfied majority.
+    - Tissaphernes's activities during the delay are unstated.
+    - The sender and motive of the Sittace messenger are not established.
+    - The unnamed young man is not identified in the text.
+    - No authorization for plundering Parysatis's villages is quoted.
+  tensions:
+    - Clearchus distrusts the situation while defending the king's oath.
+    - The parties travel under truce while watching one another as enemies.
+    - A friendly warning is interpreted as hostile deception.
+    - The Greeks reject panic but still guard and carefully cross the bridge.
+    - Tissaphernes provides markets while permitting royal-family property to be plundered.
+    - Apparent army size is produced by formation and delay, not increased numbers.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis II.4; PDF p. 39", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The Greeks and Ariaeus wait more than twenty days for Tissaphernes.", uncertainty: "The exact duration and cause are unstated."}
+  - {id: OBS-002, locator: "Anabasis II.4; PDF p. 39", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Ariaeus receives kin and Persians bearing royal assurances.", uncertainty: "The assurances are reported, not quoted."}
+  - {id: OBS-003, locator: "Anabasis II.4; PDF p. 39", evidence_type: STRUCTURAL_OBSERVATION, observation: "Ariaeus and his friends become visibly less attentive to the Greeks.", uncertainty: "Causation is inferred from sequence."}
+  - {id: OBS-004, locator: "Anabasis II.4; PDF p. 39", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Most Greeks become displeased and press the generals to depart.", uncertainty: "No formal vote is described."}
+  - {id: OBS-005, locator: "Anabasis II.4; PDF p. 39", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "The soldiers fear royal regrouping, fortification, destruction, and suppression of their return narrative.", uncertainty: "The king's plan remains conjectural."}
+  - {id: OBS-006, locator: "Anabasis II.4; PDF pp. 39-40", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "Clearchus says unilateral movement would end markets, guidance, and remaining friendships.", uncertainty: "The legal force of the truce is not adjudicated."}
+  - {id: OBS-007, locator: "Anabasis II.4; PDF p. 40", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "Clearchus emphasizes unknown rivers and the impossibility of forcing the Euphrates against resistance.", uncertainty: "His geographic knowledge is incomplete."}
+  - {id: OBS-008, locator: "Anabasis II.4; PDF p. 40", evidence_type: STRUCTURAL_OBSERVATION, observation: "Greek lack of cavalry is contrasted with numerous superior enemy cavalry.", uncertainty: "Numbers are not supplied."}
+  - {id: OBS-009, locator: "Anabasis II.4; PDF p. 40", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "Clearchus argues that Artaxerxes has no need to perjure himself and ruin his credit.", uncertainty: "The argument assumes royal rationality and concern for reputation."}
+  - {id: OBS-010, locator: "Anabasis II.4; PDF p. 40", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Tissaphernes returns apparently prepared for the homeward march.", uncertainty: "The adverb preserves uncertainty."}
+  - {id: OBS-011, locator: "Anabasis II.4; PDF p. 40", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Orontas travels with his own force and his new bride, a daughter of the king.", uncertainty: "The marriage's significance is unexplained."}
+  - {id: OBS-012, locator: "Anabasis II.4; PDF p. 40", evidence_type: STRUCTURAL_OBSERVATION, observation: "Tissaphernes leads and provides a market while Ariaeus joins the Persian commanders.", uncertainty: "Assistance and realignment coexist."}
+  - {id: OBS-013, locator: "Anabasis II.4; PDF p. 40", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Greeks and Asiatics camp about a parasang apart and watch one another as enemies.", uncertainty: "The truce formally remains."}
+  - {id: OBS-014, locator: "Anabasis II.4; PDF p. 40", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Shared foraging produces blows and further bitterness.", uncertainty: "Actors and injuries are omitted."}
+  - {id: OBS-015, locator: "Anabasis II.4; PDF p. 40", evidence_type: REPORTED_MEASUREMENT_OBSERVATION, observation: "The Wall of Media is described by material and reported dimensions.", uncertainty: "Its length is expressly reported rather than measured."}
+  - {id: OBS-016, locator: "Anabasis II.4; PDF p. 40", evidence_type: GEOGRAPHIC_OBSERVATION, observation: "The route crosses canals and an irrigation hierarchy from trenches to runnels.", uncertainty: "Administration is not discussed."}
+  - {id: OBS-017, locator: "Anabasis II.4; PDF p. 40", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Xenophon and Proxenus are named walking together before the warning.", uncertainty: "Xenophon has no recorded speech here."}
+  - {id: OBS-018, locator: "Anabasis II.4; PDF p. 40", evidence_type: STRUCTURAL_OBSERVATION, observation: "The messenger asks for Proxenus or Clearchus but not Menon.", uncertainty: "The omission is highlighted but unexplained."}
+  - {id: OBS-019, locator: "Anabasis II.4; PDF pp. 40-41", evidence_type: REPORT_STATUS_OBSERVATION, observation: "The messenger warns of both nighttime attack and destruction of the bridge.", uncertainty: "The report is unconfirmed."}
+  - {id: OBS-020, locator: "Anabasis II.4; PDF p. 41", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus is disturbed and alarmed by the warning.", uncertainty: "Its effect on judgment is unresolved."}
+  - {id: OBS-021, locator: "Anabasis II.4; PDF p. 41", evidence_type: EDITORIAL_OR_TEXTUAL_FRAME_OBSERVATION, observation: "Dakyns says the unnamed young man was possibly Xenophon.", uncertainty: "The identification is conjectural."}
+  - {id: OBS-022, locator: "Anabasis II.4; PDF p. 41", evidence_type: STRUCTURAL_OBSERVATION, observation: "The young man exposes a contradiction between attack and destruction of the attackers' retreat and reinforcement route.", uncertainty: "This tests coherence, not sender identity."}
+  - {id: OBS-023, locator: "Anabasis II.4; PDF p. 41", evidence_type: NARRATORIAL_INFERENCE_OBSERVATION, observation: "The Greeks infer that the warning is designed to prevent seizure of the bridge and island territory.", uncertainty: "Independent proof is absent."}
+  - {id: OBS-024, locator: "Anabasis II.4; PDF p. 41", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "They guard the bridge despite rejecting the warning, and no attack occurs.", uncertainty: "Precaution survives disbelief."}
+  - {id: OBS-025, locator: "Anabasis II.4; PDF p. 41", evidence_type: FALSE_REPORT_OBSERVATION, observation: "A second report predicts attack during the crossing, but it proves false.", uncertainty: "Its source is unstated beyond some Greeks with Tissaphernes."}
+  - {id: OBS-026, locator: "Anabasis II.4; PDF p. 41", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Glus watches the Greeks cross and rides away after confirming it.", uncertainty: "His purpose is undisclosed."}
+  - {id: OBS-027, locator: "Anabasis II.4; PDF p. 41", evidence_type: TACTICAL_DISPLAY_OBSERVATION, observation: "The two-abreast column and repeated halts make the army seem enormous.", uncertainty: "Deliberate deception is possible but unstated."}
+  - {id: OBS-028, locator: "Anabasis II.4; PDF p. 42", evidence_type: NARRATORIAL_JUDGMENT_OBSERVATION, observation: "The narrator says Tissaphernes gave Parysatis's villages for plunder in mockery of Cyrus.", uncertainty: "The basis for the motive attribution is absent."}
+  - {id: OBS-029, locator: "Anabasis II.4; PDF p. 42", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The inhabitants may not be enslaved, but grain, cattle, and property may be taken.", uncertainty: "No compensation is mentioned."}
+  - {id: OBS-030, locator: "Anabasis II.4; PDF p. 42", evidence_type: ECONOMIC_OBSERVATION, observation: "People of Caenae carry bread, cheese, and wine across the Tigris on skin rafts.", uncertainty: "Price and exchange procedure are unstated."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis II.4; PDF p. 39", evidence_type: PROVISIONAL_INFERENCE, finding: "The delay permits Artaxerxes to detach Ariaeus politically from the Greeks without openly violating the compact.", confidence: moderate_pending_later_conduct}
+  - {id: INF-002, locator: "Anabasis II.4; PDF pp. 39-40", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus chooses continued dependence because markets, guides, rivers, and cavalry make unilateral departure materially dangerous.", confidence: high_for_argument_structure}
+  - {id: INF-003, locator: "Anabasis II.4; PDF p. 40", evidence_type: PROVISIONAL_INFERENCE, finding: "The return begins as coordinated movement by mutually suspicious armed camps, not restored friendship.", confidence: high_for_sequence}
+  - {id: INF-004, locator: "Anabasis II.4; PDF pp. 40-41", evidence_type: PROVISIONAL_INFERENCE, finding: "Logical testing of reports becomes a command function because information arrives through compromised intermediaries.", confidence: high_for_warning_episode}
+  - {id: INF-005, locator: "Anabasis II.4; PDF p. 41", evidence_type: PROVISIONAL_INFERENCE, finding: "The Greeks combine skepticism with precaution by rejecting the warning's coherence while still guarding the bridge.", confidence: high_for_deed_sequence}
+  - {id: INF-006, locator: "Anabasis II.4; PDF p. 41", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus can convert apparent weakness into deterrent spectacle through formation and timing.", confidence: moderate_because_intention_unstated}
+  - {id: INF-007, locator: "Anabasis II.4; PDF p. 42", evidence_type: PROVISIONAL_INFERENCE, finding: "Controlled plunder provisions the Greeks while symbolically subordinating Cyrus's memory and family interests.", confidence: moderate_pending_context}
+  - {id: INF-008, locator: "Anabasis II.4; PDF pp. 39-42", evidence_type: PROVISIONAL_INFERENCE, finding: "Oath, market, guidance, surveillance, rumor, infrastructure, and display are intertwined instruments of rule during the retreat.", confidence: high_for_chapter_structure}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis II.4; PDF p. 39", evidence_type: UNRESOLVED_QUESTION, question: "What exact pledges did Artaxerxes give Ariaeus and the former Cyran troops?"}
+  - {id: Q-002, locator: "Anabasis II.4; PDF p. 39", evidence_type: UNRESOLVED_QUESTION, question: "Did Ariaeus deliberately withdraw from the Greek alliance?"}
+  - {id: Q-003, locator: "Anabasis II.4; PDF p. 39", evidence_type: UNRESOLVED_QUESTION, question: "Who spoke for the dissatisfied Greek majority, and was there an assembly?"}
+  - {id: Q-004, locator: "Anabasis II.4; PDF pp. 39-40", evidence_type: UNRESOLVED_QUESTION, question: "Was Clearchus persuaded by the king's oath or using it to restrain the army?"}
+  - {id: Q-005, locator: "Anabasis II.4; PDF p. 40", evidence_type: UNRESOLVED_QUESTION, question: "What was Tissaphernes doing during the delay?"}
+  - {id: Q-006, locator: "Anabasis II.4; PDF p. 40", evidence_type: UNRESOLVED_QUESTION, question: "What political role did Orontas's marriage play?"}
+  - {id: Q-007, locator: "Anabasis II.4; PDF p. 40", evidence_type: UNRESOLVED_QUESTION, question: "Who initiated the forage clashes and how serious were they?"}
+  - {id: Q-008, locator: "Anabasis II.4; PDF pp. 40-41", evidence_type: UNRESOLVED_QUESTION, question: "Who sent the Sittace warning and what did the sender intend?"}
+  - {id: Q-009, locator: "Anabasis II.4; PDF p. 41", evidence_type: UNRESOLVED_QUESTION, question: "Was the unnamed young man Xenophon?"}
+  - {id: Q-010, locator: "Anabasis II.4; PDF p. 41", evidence_type: UNRESOLVED_QUESTION, question: "Did the contradiction disprove the warning or only its combined scenario?"}
+  - {id: Q-011, locator: "Anabasis II.4; PDF p. 41", evidence_type: UNRESOLVED_QUESTION, question: "Why did Glus observe the crossing?"}
+  - {id: Q-012, locator: "Anabasis II.4; PDF p. 41", evidence_type: UNRESOLVED_QUESTION, question: "Did Clearchus intentionally magnify the apparent army at Opis?"}
+  - {id: Q-013, locator: "Anabasis II.4; PDF p. 42", evidence_type: UNRESOLVED_QUESTION, question: "Why did Tissaphernes select Parysatis's villages for plunder?"}
+  - {id: Q-014, locator: "Anabasis II.4; PDF p. 42", evidence_type: UNRESOLVED_QUESTION, question: "How were provisions from Caenae exchanged across the Tigris?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text for oath, pledge, truce, credit, friend, enemy, fear, subtlety, asylum, mockery, and the column description.
+  - Check the textual and editorial basis for identifying the young man as Xenophon.
+  - Track royal pledges to Ariaeus and his followers and their later conduct.
+  - Track Clearchus's arguments from royal self-interest, divine sanction, and public credit.
+  - Map the Wall of Media, canals, bridges, rivers, and island territory.
+  - Track false alarms and the evidentiary tests used to assess them.
+  - Compare Glus's appearances and relation to the Greeks and Persians.
+  - Track Clearchus's use of formation and spectacle.
+  - Track plunder permissions, enslavement limits, and royal-family property.
+  - Defer comparison with Strauss until the relevant primary sequence is complete.
+secondary_comparison_status: DEFERRED

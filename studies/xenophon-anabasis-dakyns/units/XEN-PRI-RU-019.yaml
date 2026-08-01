@@ -1,0 +1,392 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-019
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis III.3
+  pdf_pages_one_based: 59-61
+  opening_anchor: >-
+    The speaking was ended; they got up and retired; then they burnt the wagons and the tents,
+  closing_anchor: >-
+    Lycius, the son of Polystratus, by name, an Athenian.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis III.3 plus one-based PDF page
+  chapter_boundary_control: >-
+    III.3 begins on PDF page 59 with implementation of the decrees adopted in III.2 and ends on
+    PDF page 61 with Lycius's appointment as cavalry commander. III.4 begins immediately afterward
+    with the heading IV and the next day's march toward the ravine.
+  source_boundary: >-
+    Direct speech, reported council resolutions, narratorial inference, attributed motive,
+    disguised agency, desertion report, tactical action, criticism, self-correction, prayerful
+    exclamation, equipment proposal, numerical report, and editorial notes remain distinct.
+    The notes asking whether Nicarchus is the earlier wounded survivor and treating the lead-bullet
+    parenthesis as an authorial aside are witness paratext, not silently assigned to Xenophon.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration presenting Xenophon as a named general and actor, followed by
+    a direct first-person admission and tactical proposal attributed to him.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon is named as the general who decides to charge, joins the rearward pursuit, accepts the
+    other generals' criticism, explains his motive, and proposes slingers and cavalry. First-person
+    forms belong to his attributed speech rather than to an unframed narrator.
+  uncertainty: >-
+    This witness does not settle the Greek force of friend, well-wisher, agent, truce, herald,
+    corruption, open war, despondency, blame, necessity, gratitude to heaven, privilege, command,
+    or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis III.3; PDF p. 60
+    speech_form: diplomatic_self_presentation_and_request
+    speaker: Mithridates
+    audience: Greek generals
+    occasion: arrival with about thirty horsemen while the Greeks breakfast
+    content: >-
+      He claims prior fidelity to Cyrus, present goodwill toward the Greeks, personal fear, and a
+      willingness to join them with his retainers if they disclose a promising plan.
+    uncertainty: His professions are later treated by the narrator as cover for a disguised mission.
+  - id: SAO-002
+    locator: Anabasis III.3; PDF p. 60
+    speech_form: formal_policy_reply
+    speaker: Cheirisophus on behalf of the Greek generals
+    audience: Mithridates
+    occasion: council over how to answer his request
+    content: >-
+      The Greeks intend to pass through while inflicting the least possible damage if allowed free
+      passage home, but will fight with all available force against anyone who obstructs them.
+    uncertainty: The resolution's precise voting procedure and the meaning of least possible damage are unstated.
+  - id: SAO-003
+    locator: Anabasis III.3; PDF p. 60
+    speech_form: persuasion_for_royal_submission
+    speaker: Mithridates
+    audience: Greek generals
+    occasion: response to Cheirisophus's policy statement
+    content: He argues that deliverance is hopeless without the king's goodwill.
+    uncertainty: The chapter summarizes rather than reproduces his complete argument.
+  - id: SAO-004
+    locator: Anabasis III.3; PDF p. 60
+    speech_form: narratorial_inference
+    speaker: narrator
+    audience: reader
+    occasion: after Mithridates argues for dependence on Artaxerxes
+    content: >-
+      The meaning of Mithridates's mission becomes plain: he is an agent in disguise, accompanied by
+      a relative of Tissaphernes who watches his loyalty.
+    uncertainty: The evidence beyond speech, escort, and subsequent conduct is not itemized.
+  - id: SAO-005
+    locator: Anabasis III.3; PDF p. 60
+    speech_form: council_resolution_reported
+    speaker: Greek generals collectively
+    audience: Greek army and future Persian approaches
+    occasion: discovery of Mithridates's disguised agency and concern over corruption
+    content: >-
+      They resolve to proclaim open war and to receive neither truce nor herald while in enemy territory.
+    uncertainty: The proclamation's wording, dissemination, and legal or religious implications are absent.
+  - id: SAO-006
+    locator: Anabasis III.3; PDF pp. 60-61
+    speech_form: tactical_self_criticism_and_explanation
+    speaker: Xenophon
+    audience: Cheirisophus and the eldest generals
+    occasion: renewed despondency after a failed pursuit
+    content: >-
+      He admits their blame is justified by the result, explains that he could not endure seeing Greek
+      losses without retaliation, concedes the charge achieved no damage and endangered retreat, and
+      thanks heaven that the enemy force was small.
+    uncertainty: The expression of compulsion and gratitude does not independently establish necessity or divine protection.
+  - id: SAO-007
+    locator: Anabasis III.3; PDF p. 61
+    speech_form: diagnostic_tactical_argument
+    speaker: Xenophon
+    audience: Greek generals
+    occasion: extracting lessons from the failed charge
+    content: >-
+      Persian archers and slingers outrange Cretans and javelin throwers; infantry cannot pursue far
+      from the main body or catch opponents with a bowshot's start; therefore the army needs slingers
+      and cavalry.
+    uncertainty: The range claims are practical observations mediated by the translation and editorial parenthesis.
+  - id: SAO-008
+    locator: Anabasis III.3; PDF p. 61
+    speech_form: recruitment_and_compensation_proposal
+    speaker: Xenophon
+    audience: Greek generals and army
+    occasion: proposal to create a Rhodian slinger corps
+    content: >-
+      Investigate Rhodians who possess slings, pay owners their value, pay craftsmen to plait more,
+      and create privileges for volunteers willing to enroll.
+    uncertainty: The amount, source, and administration of payment and privilege are not specified.
+  - id: SAO-009
+    locator: Anabasis III.3; PDF p. 61
+    speech_form: cavalry_conversion_proposal
+    speaker: Xenophon
+    audience: Greek generals and army
+    occasion: proposal to answer mounted harassment
+    content: >-
+      Select horses belonging to Xenophon, Clearchus's stud, and captured baggage stock, replace their
+      carrying function with ordinary pack animals, equip the horses for cavalry, and use the new force
+      to trouble fleeing enemies.
+    uncertainty: Ownership, consent, valuation, rider selection, and training procedures are not narrated.
+  - id: SAO-010
+    locator: Anabasis III.3; PDF p. 61
+    speech_form: collective_adoption_report
+    speaker: Greek decision-making body
+    audience: army
+    occasion: conclusion of Xenophon's tactical proposals
+    content: The proposals are carried.
+    uncertainty: The witness gives no separate debate, vote count, or dissenting argument.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis III.3; PDF pp. 59-60
+    actor: Greek army
+    deed: >-
+      The soldiers burn wagons and tents, redistribute needed items from one another's superfluities,
+      destroy the remainder, and begin breakfast.
+    outcome: The resolutions of III.2 become irreversible material simplification and shared provisioning.
+    uncertainty: Individual losses, coercion, exemptions, and the value destroyed are unrecorded.
+  - id: SDO-002
+    locator: Anabasis III.3; PDF p. 60
+    actor: Mithridates, Greek generals, and Tissaphernes's observer
+    deed: >-
+      Mithridates approaches with a small escort under professions of friendship, learns the Greek
+      policy, and argues that only royal goodwill can save them.
+    outcome: The Greeks interpret the approach as disguised agency rather than alliance.
+    uncertainty: Mithridates's subjective intention is inferred rather than confessed.
+  - id: SDO-003
+    locator: Anabasis III.3; PDF p. 60
+    actor: Greek generals and potential Persian envoys
+    deed: The generals resolve on open war without truce or herald in enemy territory.
+    outcome: Diplomatic contact is treated as an instrument of corruption rather than a protected channel.
+    uncertainty: The duration, exceptions, and enforcement of the policy are not stated.
+  - id: SDO-004
+    locator: Anabasis III.3; PDF p. 60
+    actor: Nicarchus the Arcadian and about twenty men
+    deed: They leave the Greek army during the night.
+    outcome: Persian or Asiatic attempts to corrupt soldiers are said to have succeeded with at least one officer.
+    uncertainty: The witness does not establish whether this is the Nicarchus wounded in II.5; the note raises the question.
+  - id: SDO-005
+    locator: Anabasis III.3; PDF p. 60
+    actor: Greek army
+    deed: They cross the Zapatas in regular order with baggage animals and the noncombatant mass inside the formation.
+    outcome: The adopted hollow-square principle is executed during movement.
+    uncertainty: Exact formation dimensions and contingent positions are not given.
+  - id: SDO-006
+    locator: Anabasis III.3; PDF p. 60
+    actor: Mithridates's cavalry, bowmen, and slingers
+    deed: >-
+      Roughly two hundred horsemen and about four hundred missile troops approach as friends, then
+      shoot and sling at close range.
+    outcome: The Greek rearguard suffers while its missile troops cannot answer at equivalent range.
+    uncertainty: Casualty numbers and the precise ratio among bowmen and slingers are absent.
+  - id: SDO-007
+    locator: Anabasis III.3; PDF pp. 60-61
+    actor: Xenophon and Greek heavy and light infantry guarding the rear
+    deed: They charge and pursue the attackers but catch no one.
+    outcome: The army gains no tactical result and encounters difficulty withdrawing under backward missile fire.
+    uncertainty: The number and identity of troops joining the pursuit are not supplied.
+  - id: SDO-008
+    locator: Anabasis III.3; PDF p. 61
+    actor: Cheirisophus, the eldest generals, and Xenophon
+    deed: >-
+      The senior commanders blame Xenophon for leaving the main body and risking himself without
+      damaging the enemy; Xenophon accepts the criticism and turns the failure into a diagnostic review.
+    outcome: Command correction occurs through explicit criticism and public self-correction rather than concealment.
+    uncertainty: The setting, formality, and consequences of the reprimand are not stated.
+  - id: SDO-009
+    locator: Anabasis III.3; PDF p. 61
+    actor: Xenophon and Greek decision-making body
+    deed: >-
+      Xenophon proposes recruiting Rhodian slingers and converting available baggage horses into cavalry.
+    outcome: The proposals are adopted as the answer to Persian range and mobility advantages.
+    uncertainty: No alternative proposal or cost accounting is recorded.
+  - id: SDO-010
+    locator: Anabasis III.3; PDF p. 61
+    actor: Rhodian volunteers, horsemen, equipment providers, and Lycius
+    deed: >-
+      Two hundred slingers enroll that night; by the next day fifty horses and riders qualify, receive
+      buff jackets and cuirasses, and are placed under Lycius son of Polystratus, an Athenian.
+    outcome: A single day's failure produces two new specialist arms and a named cavalry command.
+    uncertainty: Qualification standards, prior experience, command relationships, and equipment sources are unstated.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Implementation of the baggage and mobility decrees from III.2
+    - Mithridates's first approach under professions of friendship
+    - Greek declaration of limited-damage passage backed by force
+    - Mithridates's argument for royal dependence
+    - Narratorial identification of disguised agency
+    - Resolution for open war without truce or herald
+    - Nicarchus's nighttime desertion
+    - Ordered crossing of the Zapatas
+    - Mithridates's second approach and sudden missile attack
+    - Failed Greek charge and difficult withdrawal
+    - Renewed despondency and senior criticism of Xenophon
+    - Xenophon's admission, explanation, and tactical diagnosis
+    - Adoption of slinger and cavalry proposals
+    - Overnight creation of specialist units and appointment of Lycius
+  repetitions:
+    - Friendship language again precedes hostile or deceptive action.
+    - Persian range and cavalry continue to expose Greek structural weakness.
+    - Xenophon moves from speech to implementation and from error to institutional correction.
+    - Collective resolutions are followed by rapid material and organizational consequences.
+    - The army's political independence requires intensified internal organization and specialization.
+  omissions:
+    - No individual account of property destruction during the burning survives.
+    - Mithridates's complete instructions and the identity of Tissaphernes's relative are absent.
+    - The open-war proclamation's exact formula and ritual standing are absent.
+    - Nicarchus's motives and later fate are not reported.
+    - Greek casualties from the missile attack are not numbered.
+    - The names of the senior generals criticizing Xenophon are not individually supplied.
+    - No debate or dissent over creating the new specialist forces is preserved.
+    - Payment sources, equipment sources, and qualification standards remain unstated.
+  tensions:
+    - Mithridates calls himself friend and well-wisher while the narrator identifies him as a disguised agent.
+    - The Greeks promise minimal damage yet simultaneously declare open war without herald or truce.
+    - Xenophon is a newly elected general but is immediately corrected by older commanders.
+    - His charge arises from refusal to watch suffering, yet worsens tactical exposure without helping the wounded rear.
+    - The chapter praises self-correction while leaving the authority and procedure of criticism informal.
+    - Persian cavalry's ability to shoot while fleeing reverses the ordinary relation between pursuit and safety.
+    - Property destruction meant to increase freedom of movement also reduces material security.
+    - The army rejects external dependency by creating internal specialist dependencies on pay, equipment, and command.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis III.3; PDF p. 59", evidence_type: IMPLEMENTATION_OBSERVATION, observation: "After the assembly the Greeks burn wagons and tents, share needed items from superfluities, and throw the remainder into the fire.", uncertainty: "The distribution procedure and degree of consent are unstated."}
+  - {id: OBS-002, locator: "Anabasis III.3; PDF p. 60", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "Mithridates presents himself as faithful to Cyrus, a Greek well-wisher, afraid, and willing to join if shown a salutary course.", uncertainty: "The sincerity of each claim is disputed by later narration."}
+  - {id: OBS-003, locator: "Anabasis III.3; PDF p. 60", evidence_type: COUNCIL_RESOLUTION_OBSERVATION, observation: "The generals decide to seek passage while inflicting the least possible damage and to fight anyone who obstructs them.", uncertainty: "No vote count or full deliberation is supplied."}
+  - {id: OBS-004, locator: "Anabasis III.3; PDF p. 60", evidence_type: PERSUASIVE_CLAIM_OBSERVATION, observation: "Mithridates argues that deliverance without the king's goodwill is hopeless.", uncertainty: "The complete argument is summarized."}
+  - {id: OBS-005, locator: "Anabasis III.3; PDF p. 60", evidence_type: NARRATORIAL_INFERENCE_OBSERVATION, observation: "The narrator states that Mithridates's mission is now plain and identifies him as an agent in disguise.", uncertainty: "The evidence is not separately catalogued."}
+  - {id: OBS-006, locator: "Anabasis III.3; PDF p. 60", evidence_type: SURVEILLANCE_OBSERVATION, observation: "A relative of Tissaphernes accompanies Mithridates to keep watch over his loyalty.", uncertainty: "The relative is unnamed."}
+  - {id: OBS-007, locator: "Anabasis III.3; PDF p. 60", evidence_type: WAR_POLICY_OBSERVATION, observation: "The generals resolve to proclaim open war without truce or herald while in enemy country.", uncertainty: "The legal, religious, and practical scope is unresolved."}
+  - {id: OBS-008, locator: "Anabasis III.3; PDF p. 60", evidence_type: CORRUPTION_CLAIM_OBSERVATION, observation: "Persian or Asiatic visitors are said to come in order to corrupt Greek soldiers.", uncertainty: "Specific methods beyond persuasion are not identified."}
+  - {id: OBS-009, locator: "Anabasis III.3; PDF p. 60", evidence_type: DESERTION_OBSERVATION, observation: "Nicarchus the Arcadian leaves at night with about twenty men.", uncertainty: "His motives, destination, and later fate are absent."}
+  - {id: OBS-010, locator: "Anabasis III.3; PDF p. 60", evidence_type: EDITORIAL_PARATEXT_OBSERVATION, observation: "A witness note asks whether the deserter Nicarchus is the same man whose wounded escape was described earlier.", uncertainty: "The note raises but does not settle identity."}
+  - {id: OBS-011, locator: "Anabasis III.3; PDF p. 60", evidence_type: FORMATION_OBSERVATION, observation: "The Greeks cross the Zapatas in regular order with baggage animals and the army's noncombatant mass in the middle.", uncertainty: "The exact geometry is not stated."}
+  - {id: OBS-012, locator: "Anabasis III.3; PDF p. 60", evidence_type: FORCE_REPORT_OBSERVATION, observation: "Mithridates returns with about two hundred cavalry and roughly twice that number of bowmen and slingers.", uncertainty: "The distribution between bowmen and slingers is not given."}
+  - {id: OBS-013, locator: "Anabasis III.3; PDF p. 60", evidence_type: DECEPTIVE_APPROACH_OBSERVATION, observation: "The force approaches as friendly and begins shooting only after closing the distance.", uncertainty: "No signal or command for the attack is reported."}
+  - {id: OBS-014, locator: "Anabasis III.3; PDF p. 60", evidence_type: CASUALTY_STATUS_OBSERVATION, observation: "The Greek rearguard suffers severely for a time.", uncertainty: "No number of killed or wounded is supplied."}
+  - {id: OBS-015, locator: "Anabasis III.3; PDF p. 60", evidence_type: RANGE_COMPARISON_OBSERVATION, observation: "Cretan archers are said to have shorter range than the Persian missile troops.", uncertainty: "No measured distance is provided."}
+  - {id: OBS-016, locator: "Anabasis III.3; PDF p. 60", evidence_type: FORMATION_CONSTRAINT_OBSERVATION, observation: "Greek light troops remain cooped within the heavy infantry while javelins cannot reach the enemy slingers.", uncertainty: "The tactical alternatives available in the moment are unstated."}
+  - {id: OBS-017, locator: "Anabasis III.3; PDF p. 60", evidence_type: INTERIOR_DECISION_OBSERVATION, observation: "Xenophon judges that there is nothing to do but charge.", uncertainty: "The judgment is immediately tested and later admitted to be mistaken."}
+  - {id: OBS-018, locator: "Anabasis III.3; PDF p. 60", evidence_type: TACTICAL_OUTCOME_OBSERVATION, observation: "Heavy and light troops charge with Xenophon but catch no opponent.", uncertainty: "The pursuit's exact length and formation are not given."}
+  - {id: OBS-019, locator: "Anabasis III.3; PDF p. 60", evidence_type: CAPABILITY_GAP_OBSERVATION, observation: "The absence of Greek cavalry prevents effective pursuit.", uncertainty: "The claim is specific to the narrated terrain and engagement."}
+  - {id: OBS-020, locator: "Anabasis III.3; PDF p. 60", evidence_type: RETROGRADE_FIRE_OBSERVATION, observation: "Asiatic cavalry shoot backward while fleeing and wound Greek pursuers.", uncertainty: "The weapon handling and casualty total are not detailed."}
+  - {id: OBS-021, locator: "Anabasis III.3; PDF p. 60", evidence_type: MOVEMENT_OUTCOME_OBSERVATION, observation: "The Greeks cover little more than three miles and reach villages only in late afternoon.", uncertainty: "The starting and ending points are not mapped here."}
+  - {id: OBS-022, locator: "Anabasis III.3; PDF p. 61", evidence_type: MORALE_OBSERVATION, observation: "The failed engagement produces a return of the old despondency.", uncertainty: "The affected portion of the army is not quantified."}
+  - {id: OBS-023, locator: "Anabasis III.3; PDF p. 61", evidence_type: COMMAND_CRITICISM_OBSERVATION, observation: "Cheirisophus and the eldest generals blame Xenophon for leaving the main body, endangering himself, and gaining nothing.", uncertainty: "The individual elder generals are unnamed."}
+  - {id: OBS-024, locator: "Anabasis III.3; PDF p. 61", evidence_type: SELF_CORRECTION_OBSERVATION, observation: "Xenophon admits the criticism is right and cites the result as proof.", uncertainty: "No formal sanction follows."}
+  - {id: OBS-025, locator: "Anabasis III.3; PDF p. 61", evidence_type: MOTIVE_CLAIM_OBSERVATION, observation: "Xenophon says he was driven to pursue because watching Greek suffering without retaliation was intolerable.", uncertainty: "The claim explains but does not justify the decision."}
+  - {id: OBS-026, locator: "Anabasis III.3; PDF p. 61", evidence_type: PRAYERFUL_EXCLAMATION_OBSERVATION, observation: "Xenophon thanks heaven that the attacking force was small and the injury limited.", uncertainty: "The phrase does not establish divine intervention."}
+  - {id: OBS-027, locator: "Anabasis III.3; PDF p. 61", evidence_type: LESSON_EXTRACTION_OBSERVATION, observation: "The failed pursuit is treated as evidence of what capabilities the army lacks.", uncertainty: "The diagnosis is Xenophon's and is adopted without recorded counterargument."}
+  - {id: OBS-028, locator: "Anabasis III.3; PDF p. 61", evidence_type: RHODIAN_CAPABILITY_REPORT, observation: "Most Rhodians in the army are said to know how to sling and to possess longer range than Persian slingers.", uncertainty: "The source is reported rather than demonstrated before enrollment."}
+  - {id: OBS-029, locator: "Anabasis III.3; PDF p. 61", evidence_type: MISSILE_MATERIAL_OBSERVATION, observation: "Persians are described as using fist-sized stones, while Rhodians are skilled with lead bullets.", uncertainty: "The parenthetical wording is separately questioned by the witness editor."}
+  - {id: OBS-030, locator: "Anabasis III.3; PDF p. 61", evidence_type: EDITORIAL_PARATEXT_OBSERVATION, observation: "A witness note suggests the lead-bullet parenthesis may be an author's aside inadvertently inserted into the text.", uncertainty: "The note does not establish textual history."}
+  - {id: OBS-031, locator: "Anabasis III.3; PDF p. 61", evidence_type: INCENTIVE_DESIGN_OBSERVATION, observation: "Xenophon proposes payment for existing slings, payment for newly plaited slings, and privileges for volunteer slingers.", uncertainty: "The treasury and privileges are unspecified."}
+  - {id: OBS-032, locator: "Anabasis III.3; PDF p. 61", evidence_type: RESOURCE_CONVERSION_OBSERVATION, observation: "Available personal, inherited-command, and captured baggage horses are proposed for cavalry service.", uncertainty: "Property rights and consent are not discussed."}
+  - {id: OBS-033, locator: "Anabasis III.3; PDF p. 61", evidence_type: COLLECTIVE_ADOPTION_OBSERVATION, observation: "The slinger and cavalry proposals are carried.", uncertainty: "No vote count or dissent is recorded."}
+  - {id: OBS-034, locator: "Anabasis III.3; PDF p. 61", evidence_type: FORCE_CREATION_OBSERVATION, observation: "Two hundred slingers are enrolled during the night.", uncertainty: "Their contingent origins and command structure are not given."}
+  - {id: OBS-035, locator: "Anabasis III.3; PDF p. 61", evidence_type: FORCE_CREATION_OBSERVATION, observation: "Fifty horses and riders qualify the next day and receive buff jackets and cuirasses.", uncertainty: "Qualification and equipment standards are unstated."}
+  - {id: OBS-036, locator: "Anabasis III.3; PDF p. 61", evidence_type: COMMAND_APPOINTMENT_OBSERVATION, observation: "Lycius son of Polystratus, an Athenian, is appointed cavalry commander.", uncertainty: "The appointing body and Lycius's prior qualifications are not narrated."}
+provisional_findings:
+  - id: FIND-001
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: III.3 converts the assembly's rhetoric of self-sufficiency into irreversible destruction, redistribution, and military specialization.
+    basis: OBS-001, OBS-031 through OBS-036
+    uncertainty: The long-term costs cannot be assessed within the chapter.
+  - id: FIND-002
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Friendship language has become operationally suspect because Mithridates's self-presentation is followed by disguised agency and attack.
+    basis: OBS-002 through OBS-006, OBS-013
+    uncertainty: Mithridates's complete motive remains inferential.
+  - id: FIND-003
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The decision to reject truce and heralds treats communication itself as a military vulnerability after the command seizure and corruption attempts.
+    basis: OBS-007 through OBS-010
+    uncertainty: The policy's legal and religious meaning requires Greek-language and comparative review.
+  - id: FIND-004
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The hollow-square march protects baggage but constrains Greek light troops, revealing a tradeoff between security and missile flexibility.
+    basis: OBS-011, OBS-014 through OBS-016
+    uncertainty: The chapter does not test alternative formations.
+  - id: FIND-005
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Xenophon's first battlefield error as general is preserved together with senior criticism and explicit self-correction.
+    basis: OBS-017, OBS-018, OBS-023 through OBS-027
+    uncertainty: The public or private setting of the correction is unknown.
+  - id: FIND-006
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Emotional refusal to watch suffering produces an ineffective charge, separating humane motive from sound command judgment.
+    basis: OBS-014, OBS-017, OBS-024, OBS-025
+    uncertainty: The translation's language of compulsion needs Greek review.
+  - id: FIND-007
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Persian missile and cavalry superiority is not answered by exhortation alone but by institutional innovation, incentives, equipment, and specialized command.
+    basis: OBS-015, OBS-019, OBS-020, OBS-027 through OBS-036
+    uncertainty: Effectiveness is tested only in later chapters.
+  - id: FIND-008
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The army's new freedom depends upon converting private assets and diverse ethnic skills into collective military capabilities.
+    basis: OBS-028 through OBS-036
+    uncertainty: Consent, compensation, and authority remain underdocumented.
+  - id: FIND-009
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: The chapter presents failure as a source of knowledge when command is willing to accept blame and redesign the force.
+    basis: OBS-021 through OBS-027, OBS-033 through OBS-036
+    uncertainty: Whether this becomes a stable practice must be checked downstream.
+  - id: FIND-010
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: Rapid creation of slingers and cavalry regularizes Xenophon's practical diagnosis through collective adoption and named command.
+    basis: OBS-031 through OBS-036
+    uncertainty: The constitutional relationship between proposal, vote, enrollment, and appointment is not narrated.
+standing_unresolved_questions:
+  - {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: "How voluntary was the destruction and redistribution of wagons, tents, and personal superfluities?", reason_open: "No implementation procedure or dissent is narrated."}
+  - {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: "What exact instructions did Mithridates receive from Tissaphernes?", reason_open: "The chapter infers agency without reproducing orders."}
+  - {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: "Who was the relative of Tissaphernes assigned to watch Mithridates?", reason_open: "The observer is unnamed."}
+  - {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: "What did the Greeks understand by open war without truce or herald?", reason_open: "The translated formula lacks procedural and religious explanation."}
+  - {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: "Was the deserter Nicarchus identical with the wounded survivor of II.5?", reason_open: "The witness note raises but does not answer the question."}
+  - {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: "What persuaded Nicarchus and his companions to desert?", reason_open: "No speech or motive is supplied."}
+  - {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: "How many Greeks were killed or wounded in Mithridates's attack?", reason_open: "The text says the rear suffered severely but gives no count."}
+  - {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: "Did Mithridates personally order the sudden attack after approaching as a friend?", reason_open: "No command or signal is reported."}
+  - {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: "What formation changes could have released Greek light troops from the heavy infantry?", reason_open: "Only the constraint is described."}
+  - {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: "Was Xenophon's decision to charge made within his rear-command authority?", reason_open: "The command jurisdiction is not detailed."}
+  - {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: "Where and before whom did the senior generals criticize Xenophon?", reason_open: "The scene's institutional form is absent."}
+  - {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: "What Greek word and force lie behind Xenophon's claim that he was driven to pursue?", reason_open: "Only the Dakyns translation is admitted."}
+  - {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: "Does Xenophon's thanks to heaven mark piety, rhetoric, convention, or all three?", reason_open: "The phrase is brief and unelaborated."}
+  - {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: "What was the actual range advantage of Rhodian lead bullets over Persian stones?", reason_open: "The claim is comparative and lacks measurements."}
+  - {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: "Is the lead-bullet parenthesis part of the ancient text, an authorial aside, or later intrusion?", reason_open: "The witness editor explicitly questions its textual status."}
+  - {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: "From what fund were slings, manufacture, and volunteer privileges paid?", reason_open: "No treasury or assessment is named."}
+  - {id: Q-017, evidence_type: UNRESOLVED_QUESTION, question: "Who owned the horses transferred from baggage work, and how was consent secured?", reason_open: "The proposal names categories but no property procedure."}
+  - {id: Q-018, evidence_type: UNRESOLVED_QUESTION, question: "What standards qualified the fifty horses and riders?", reason_open: "The witness reports only that they passed muster."}
+  - {id: Q-019, evidence_type: UNRESOLVED_QUESTION, question: "Why was Lycius selected as cavalry commander?", reason_open: "No prior biography or qualification is provided."}
+  - {id: Q-020, evidence_type: UNRESOLVED_QUESTION, question: "How did the new slingers and cavalry alter command hierarchy and formation?", reason_open: "The chapter records creation but not full integration."}
+downstream_textual_checks:
+  - id: CHECK-001
+    check: Track whether burning transport and tents improves movement or produces later deprivation.
+  - id: CHECK-002
+    check: Track all later appearances, claims, and fate of Mithridates.
+  - id: CHECK-003
+    check: Test whether the no-truce-or-herald policy persists, changes, or admits exceptions.
+  - id: CHECK-004
+    check: Search earlier and later passages for evidence identifying Nicarchus.
+  - id: CHECK-005
+    check: Compare later uses and modifications of the hollow square after the light-troop constraint appears.
+  - id: CHECK-006
+    check: Track whether Xenophon continues to accept criticism and revise failed tactics.
+  - id: CHECK-007
+    check: Register every later performance of Rhodian slingers and assess the reported range advantage.
+  - id: CHECK-008
+    check: Register every later performance of the new cavalry and Lycius's command.
+  - id: CHECK-009
+    check: Compare manuscript and critical-edition treatment of the Nicarchus note and lead-bullet parenthesis.
+  - id: CHECK-010
+    check: Trace how private property, compensation, and privileges are used to construct collective capabilities.
+  - id: CHECK-011
+    check: Compare Xenophon's tactical diagnosis in III.3 with the counterattack described in III.4.
+  - id: CHECK-012
+    check: Preserve the distinction between Xenophon as named actor and unframed first-person narrator in subsequent chapters.
+secondary_comparison_status: DEFERRED

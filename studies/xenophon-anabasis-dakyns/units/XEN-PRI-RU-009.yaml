@@ -1,0 +1,281 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-009
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.9
+  pdf_pages_one_based: 26-29
+  opening_anchor: "So died Cyrus; a man the kingliest and most worthy to rule"
+  closing_anchor: "he betook himself to flight, with the whole body of troops under his lead"
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.9 plus one-based PDF page
+  source_boundary: >-
+    The posthumous encomium combines attributed consensus, reported reputation, narrated examples,
+    attributed prayer, direct translated sayings, explicit first-person evaluation, and retrospective
+    proof from defections and deaths. Praise, report, inference, and cross-chapter tension remain distinct.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person encomiastic narration with explicit first-person evaluative interventions
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: true
+  observation: >-
+    The named character Xenophon does not act in this chapter. The narrator nevertheless intervenes in
+    the first person when judging Cyrus's minute attentions and when concluding, from personal judgment
+    and what he has heard, that no Greek or barbarian was ever so beloved. The narrator does not explicitly
+    identify this first-person voice as Xenophon.
+  uncertainty: >-
+    This witness does not settle the Greek force of the first-person formulas, the boundary between
+    narrator and author, the exact terms for kingliness, rule, virtue, justice, friendship, slavery,
+    or the source and scope of the attributed consensus.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis I.9; PDF p. 27
+    speech_form: attributed_prayer
+    speaker: Cyrus
+    audience: divine addressee, as reported by others
+    occasion: summary of Cyrus's stated principle of reciprocity
+    content: >-
+      Cyrus is said to have prayed for enough life to repay friends and requite enemies strongly.
+    uncertainty: >-
+      The narrator marks the prayer as attributed and immediately preserves uncertainty about whether
+      the wording or event is true.
+  - id: SAO-002
+    locator: Anabasis I.9; PDF p. 28
+    speech_form: direct_saying_in_encomium
+    speaker: Cyrus
+    audience: unspecified companions or gift-bearers
+    occasion: receiving adornments for body or battle
+    content: >-
+      Cyrus says that his own best ornament is the adornment of nobly adorned friends.
+    uncertainty: >-
+      The chapter does not identify the original occasion, recorder, or Greek wording.
+  - id: SAO-003
+    locator: Anabasis I.9; PDF p. 28
+    speech_form: message_through_bearer
+    speaker: Cyrus
+    audience: an individual friend
+    occasion: sending part of an especially good wine
+    content: >-
+      Cyrus sends the remaining wine and asks the friend to drink it that day with chosen companions.
+    uncertainty: >-
+      The example is presented as habitual illustration rather than a dated incident with named recipient.
+  - id: SAO-004
+    locator: Anabasis I.9; PDF p. 28
+    speech_form: message_through_bearer
+    speaker: Cyrus
+    audience: an individual friend
+    occasion: sending portions of favored food
+    content: >-
+      Cyrus sends part of a favored dish and asks the friend to taste it personally.
+    uncertainty: >-
+      Recipient, date, and the exact relation between courtesy and political attachment are not supplied.
+  - id: SAO-005
+    locator: Anabasis I.9; PDF p. 28
+    speech_form: practical_instruction
+    speaker: Cyrus
+    audience: friends in different places
+    occasion: shortage of horse fodder
+    content: >-
+      Cyrus directs friends to feed their horses from his own supply because the horses carrying his friends
+      should not starve.
+    uncertainty: >-
+      The example does not quantify the shortage, the recipients, or the cost to Cyrus's own force.
+  - id: SAO-006
+    locator: Anabasis I.9; PDF p. 28
+    speech_form: serious_conversation_as_public_honor
+    speaker: Cyrus
+    audience: selected friends
+    occasion: marches or expeditions with many observers
+    content: >-
+      Cyrus calls friends near and engages them in serious conversation so that public proximity itself
+      communicates whom he delights to honor.
+    uncertainty: >-
+      The subjects of conversation and the extent to which the gesture was deliberate political display are omitted.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis I.9; PDF p. 26
+    actor: Persian royal education and Cyrus as a boy
+    deed: >-
+      Cyrus is trained at the king's portals among noble youths through sobriety, obedience, military skills,
+      horsemanship, hunting, exposure to honor and dishonor, and learning how to rule and be ruled.
+    outcome: >-
+      He gains a reputation for modesty, obedience, rapid learning, eager practice, courage, and skill.
+    uncertainty: >-
+      Much of the assessment is framed as reputation or general recognition rather than independently witnessed fact.
+  - id: SDO-002
+    locator: Anabasis I.9; PDF p. 26
+    actor: Cyrus and the bear; Cyrus and his rescuer
+    deed: >-
+      Cyrus grapples with and kills a bear after being pulled from his horse and wounded, then rewards the first man
+      who came to his aid.
+    outcome: >-
+      The scars remain visible through life, and the rescuer is made enviable in the eyes of many.
+    uncertainty: >-
+      The event's source, precise danger, and form of reward are not given.
+  - id: SDO-003
+    locator: Anabasis I.9; PDF pp. 26-27
+    actor: Cyrus as satrap and the communities under his authority
+    deed: >-
+      Cyrus is said to fulfill treaties and undertakings, avoid lying, protect reconciled enemies under agreed terms,
+      and refuse to abandon weakened friends or the Milesian exiles.
+    outcome: >-
+      Individuals and communities trust him, and most Ionian cities choose him over Tissaphernes.
+    uncertainty: >-
+      The encomium's universal wording must be tested against the concealments, pretexts, and promises narrated earlier in Book I.
+  - id: SDO-004
+    locator: Anabasis I.9; PDF p. 27
+    actor: Cyrus, friends, enemies, offenders, and travelers
+    deed: >-
+      Cyrus seeks to surpass friends in benefits and enemies in retaliation, draws intense personal loyalty,
+      and punishes malefactors through severe bodily mutilation.
+    outcome: >-
+      Friends offer money, cities, lives, and persons, while innocent Greek and non-Greek travelers are said to move safely.
+    uncertainty: >-
+      The standards for guilt, procedure, proportionality, and innocence are not described.
+  - id: SDO-005
+    locator: Anabasis I.9; PDF p. 27
+    actor: Cyrus and men judged brave, upright, skilled, or cowardly
+    deed: >-
+      Cyrus rewards voluntary risk, makes brave men rulers, enriches fair dealing, rewards willing service,
+      and supports skilled and just stewards rather than confiscating their gains.
+    outcome: >-
+      Dangerous service attracts volunteers, capable assistants gather around him, revenues increase,
+      and openly declared wealth is secure.
+    uncertainty: >-
+      The terms brave, upright, just, natural slaves, and worthy administration require Greek and institutional review.
+  - id: SDO-006
+    locator: Anabasis I.9; PDF p. 28
+    actor: Cyrus and his tested friends
+    deed: >-
+      Cyrus reciprocates assistance according to each friend's desire, redistributes gifts with attention to taste,
+      shares food, wine, and fodder, and publicly honors selected friends with serious conversation.
+    outcome: >-
+      Minute attentions reinforce a network of friends whose usefulness, kindness, and loyalty have been tested.
+    uncertainty: >-
+      The chapter praises the practices but does not separate affection, reciprocity, dependence, political display,
+      and strategic patronage as causes.
+  - id: SDO-007
+    locator: Anabasis I.9; PDF pp. 28-29
+    actor: Cyrus, defectors, Orontas, the bodyguard, table-companions, and Ariaeus
+    deed: >-
+      The narrator tests Cyrus's belovedness through patterns of defection and through the conduct of companions at his death.
+    outcome: >-
+      Orontas alone attempts to leave Cyrus for Artaxerxes and fails; many high-ranking men leave Artaxerxes for Cyrus;
+      all present bodyguard friends die beside Cyrus except Ariaeus, who flees with the left-wing cavalry.
+    uncertainty: >-
+      The proof depends on narrated cases, excludes absent followers, and leaves Ariaeus's tactical and moral responsibility unresolved.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Posthumous superlative judgment attributed to reputed intimates
+    - Royal education in ruling, obedience, restraint, military skill, and honor
+    - Youthful courage, bodily scars, and gratitude to a rescuer
+    - Satrapal fidelity to compacts, confidence, and refusal to abandon friends
+    - Reciprocity toward friends and foes, severe punishment, and public security
+    - Reward of bravery, upright service, stewardship, revenue, and declared wealth
+    - Personalized gifts, provisions, conversation, and minute attentions
+    - First-person conclusion that Cyrus was exceptionally beloved
+    - Proof through asymmetric defections and the deaths of companions
+    - Ariaeus as the closing exception
+  repetitions:
+    - Friendship is repeatedly tested through assistance, reward, non-abandonment, defection, and death.
+    - Honor and dishonor organize education, command, public reputation, and material distribution.
+    - Wealth is treated as an instrument for rewarding virtue, securing service, and adorning friends.
+    - Reports and attributed testimony qualify superlative claims, prayer, assistance, and reputation.
+    - Courage and risk are connected to observation by the ruler and expectation of reward.
+  omissions:
+    - Piety is not named among the enumerated virtues of Cyrus, although an attributed prayer appears.
+    - No institutional succession, law of rule, or public authorization explains why Cyrus is most worthy to govern.
+    - No judicial procedure is supplied for mutilations imposed on offenders.
+    - The encomium does not discuss Cyrus's concealment of the campaign, use of pretexts, or rebellion against Artaxerxes.
+    - The narrator does not name the reputed intimates whose consensus grounds the opening judgment.
+    - No detailed defense of Ariaeus is offered at the chapter's close.
+  tensions:
+    - Cyrus is praised as truthful, while earlier chapters record secrecy, public pretexts, incomplete disclosure, and tactical messaging.
+    - Fidelity to friends coexists with a program of surpassing enemies in harm and with mutilating punishments.
+    - Security for the innocent depends on severe bodily penalties whose standards and procedures remain invisible.
+    - The brave are elevated as rulers and cowards called natural slaves, joining moral evaluation to hierarchy.
+    - Upright administration operates within Cyrus's rebellion against the reigning king, whose vassal and slave he remains.
+    - Personal generosity and individualized attention support genuine affection but also an extensive system of political dependence.
+    - The final proof of loyalty is death beside Cyrus, yet the chapter closes by marking Ariaeus's survival through flight.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis I.9; PDF p. 26", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Cyrus is judged the most kingly and most worthy to rule among Persians since the elder Cyrus.", uncertainty: "The judgment is attributed to the concurrent testimony of persons reputed to know him intimately."}
+  - {id: OBS-002, locator: "Anabasis I.9; PDF p. 26", evidence_type: STRUCTURAL_OBSERVATION, observation: "The encomium begins after Cyrus's death and retrospectively returns to his childhood.", uncertainty: "The effect of this placement on the battle narrative requires Book I synthesis."}
+  - {id: OBS-003, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Noble Persian boys are educated at the king's portals.", uncertainty: "The description may be generalizing and does not identify its source."}
+  - {id: OBS-004, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The education presents sobriety and self-control while excluding base sights and sounds.", uncertainty: "The Greek terms and actual curriculum require review."}
+  - {id: OBS-005, locator: "Anabasis I.9; PDF p. 26", evidence_type: STRUCTURAL_OBSERVATION, observation: "Watching royal honor and dishonor teaches boys how to rule and be ruled.", uncertainty: "The relation between moral education and dependence on royal judgment remains open."}
+  - {id: OBS-006, locator: "Anabasis I.9; PDF p. 26", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Cyrus is reputed exceptionally modest and obedient to elders.", uncertainty: "The comparison group and witnesses are not named."}
+  - {id: OBS-007, locator: "Anabasis I.9; PDF p. 26", evidence_type: REPORT_STATUS_OBSERVATION, observation: "He is reputed superior in horsemanship, love of horses, archery, javelin use, learning, and practice.", uncertainty: "The evaluation is collective reputation rather than measured comparison."}
+  - {id: OBS-008, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus's hunting includes willingness to face dangerous animals.", uncertainty: "The chapter gives one bear episode rather than a complete record."}
+  - {id: OBS-009, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "A bear wounds Cyrus and leaves lifelong scars before he kills it.", uncertainty: "The event's source and exact circumstances are unstated."}
+  - {id: OBS-010, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus rewards the first person who assists him against the bear.", uncertainty: "The reward is not specified."}
+  - {id: OBS-011, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "As satrap, Cyrus is especially associated with faithful fulfillment of treaties, compacts, and undertakings.", uncertainty: "The universal scope of the claim must be tested against the earlier narrative."}
+  - {id: OBS-012, locator: "Anabasis I.9; PDF p. 26", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The encomium states that Cyrus would lie to no one.", uncertainty: "The statement stands in tension with secrecy and pretexts in I.1-I.4."}
+  - {id: OBS-013, locator: "Anabasis I.9; PDF pp. 26-27", evidence_type: STRUCTURAL_OBSERVATION, observation: "Confidence in Cyrus is connected to his fidelity to agreements and refusal to abandon friends.", uncertainty: "The relative weight of fear, interest, gratitude, and trust is not isolated."}
+  - {id: OBS-014, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Most Ionian cities choose Cyrus over Tissaphernes, while Miletus remains opposed through fear linked to the exiles.", uncertainty: "The political processes and degree of voluntariness are not detailed."}
+  - {id: OBS-015, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus is said never to abandon established friends even when weakened in numbers or fortune.", uncertainty: "The claim requires testing across the full narrative."}
+  - {id: OBS-016, locator: "Anabasis I.9; PDF p. 27", evidence_type: STRUCTURAL_OBSERVATION, observation: "Cyrus openly seeks to surpass friends and enemies in reciprocal treatment.", uncertainty: "The moral status of reciprocal harm is not argued."}
+  - {id: OBS-017, locator: "Anabasis I.9; PDF p. 27", evidence_type: REPORT_STATUS_OBSERVATION, observation: "A prayer for power to repay friends and requite enemies is attributed to Cyrus.", uncertainty: "The narrator expressly withholds confirmation."}
+  - {id: OBS-018, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Friends are said to offer Cyrus money, cities, lives, and persons.", uncertainty: "The cases and conditions are not enumerated."}
+  - {id: OBS-019, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus punishes wrongdoers unflinchingly, and mutilated men are commonly visible on highways.", uncertainty: "Charges, evidence, authority, and proportionality are omitted."}
+  - {id: OBS-020, locator: "Anabasis I.9; PDF p. 27", evidence_type: STRUCTURAL_OBSERVATION, observation: "Public security for the innocent is presented as an effect of severe punishment.", uncertainty: "The causal claim is encomiastic and not independently tested."}
+  - {id: OBS-021, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus reserves special honor for bravery in war and voluntary exposure to danger.", uncertainty: "The criteria for bravery and the ruler's observation remain context-dependent."}
+  - {id: OBS-022, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Men who take risks are made rulers of conquered territory and receive further gifts.", uncertainty: "The governed populations and legitimacy of appointment are not discussed."}
+  - {id: OBS-023, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The good and brave are elevated while cowards are characterized as their natural slaves.", uncertainty: "The Greek wording and status of the claim require close review."}
+  - {id: OBS-024, locator: "Anabasis I.9; PDF p. 27", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus rewards upright service more than unfair gain and is said to administer uprightly.", uncertainty: "The standards of uprightness and the evidence for administration are not fully stated."}
+  - {id: OBS-025, locator: "Anabasis I.9; PDF p. 27", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Generals and subordinates are said to prefer profitable loyalty to Cyrus over fixed monthly pay.", uncertainty: "The sample, later outcomes, and possible dependence on reward are unstated."}
+  - {id: OBS-026, locator: "Anabasis I.9; PDF pp. 27-28", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Skilled and just stewards who increase revenue are protected from confiscation and given more.", uncertainty: "The institutional limits on Cyrus's discretion are not provided."}
+  - {id: OBS-027, locator: "Anabasis I.9; PDF p. 28", evidence_type: STRUCTURAL_OBSERVATION, observation: "Openly declared wealth is encouraged, while concealed wealth is made useful to Cyrus.", uncertainty: "The means by which concealed wealth is discovered or used are not explained."}
+  - {id: OBS-028, locator: "Anabasis I.9; PDF p. 28", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cyrus tests friends for kindness and usefulness and helps each according to the friend's desire.", uncertainty: "The tests and limits of reciprocity are omitted."}
+  - {id: OBS-029, locator: "Anabasis I.9; PDF p. 28", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "He redistributes personal gifts according to individual taste rather than retaining all adornments.", uncertainty: "The donors, recipients, and political expectations are not named."}
+  - {id: OBS-030, locator: "Anabasis I.9; PDF p. 28", evidence_type: NARRATOR_EVALUATION, observation: "The first-person narrator judges Cyrus's minute attentions more admirable than large benefits made possible by superior power.", uncertainty: "The narrator does not explicitly identify himself."}
+  - {id: OBS-031, locator: "Anabasis I.9; PDF p. 28", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Wine, food, fodder, and serious conversation are used as individualized acts of friendship and honor.", uncertainty: "The examples are habitual and not attached to named recipients or dates."}
+  - {id: OBS-032, locator: "Anabasis I.9; PDF p. 28", evidence_type: NARRATOR_EVALUATION, observation: "The first-person narrator concludes from personal judgment and reports that no Greek or barbarian was ever so beloved.", uncertainty: "The superlative exceeds what the finite examples can independently demonstrate."}
+  - {id: OBS-033, locator: "Anabasis I.9; PDF p. 28", evidence_type: STRUCTURAL_OBSERVATION, observation: "Defection patterns are offered as evidence of Cyrus's worth and discernment.", uncertainty: "Alternative explanations such as interest, fear, and military calculation remain possible."}
+  - {id: OBS-034, locator: "Anabasis I.9; PDF p. 28", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Orontas is the sole named attempt to leave Cyrus for Artaxerxes and the attempt fails.", uncertainty: "The claim concerns narrated cases and may not exhaust all desertion."}
+  - {id: OBS-035, locator: "Anabasis I.9; PDF p. 28", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "High-ranking men leave Artaxerxes for Cyrus because they expect their virtues to receive better reward.", uncertainty: "The men and rewards are not enumerated here."}
+  - {id: OBS-036, locator: "Anabasis I.9; PDF pp. 28-29", evidence_type: STRUCTURAL_OBSERVATION, observation: "The final proof of Cyrus's discernment and belovedness is the death of his remaining bodyguard friends beside him.", uncertainty: "Death in battle may demonstrate loyalty without settling the justice or wisdom of Cyrus's cause."}
+  - {id: OBS-037, locator: "Anabasis I.9; PDF p. 29", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Ariaeus is the sole stated exception among the commanding companions, fleeing with the left-wing cavalry after Cyrus falls.", uncertainty: "His location, information, and tactical options require reconstruction from I.8-I.10."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis I.9; PDF pp. 26-29", evidence_type: PROVISIONAL_INFERENCE, finding: "The encomium defines worthiness to rule through an integrated capacity to obey, learn, fight, keep faith, reward service, punish wrongdoing, manage wealth, and attach friends.", confidence: high_for_chapter_structure}
+  - {id: INF-002, locator: "Anabasis I.9; PDF p. 26", evidence_type: PROVISIONAL_INFERENCE, finding: "Persian royal education teaches rule through visible distributions of honor and dishonor, joining self-control to dependence on royal judgment.", confidence: moderate_pending_Greek_review}
+  - {id: INF-003, locator: "Anabasis I.9; PDF pp. 26-27", evidence_type: PROVISIONAL_INFERENCE, finding: "The chapter makes credibility a principal source of political power, but its universal praise of truthfulness remains in tension with the prior campaign narrative.", confidence: high_for_cross_chapter_tension}
+  - {id: INF-004, locator: "Anabasis I.9; PDF p. 27", evidence_type: PROVISIONAL_INFERENCE, finding: "Cyrus's justice is presented as asymmetric reciprocity: extraordinary benefit to friends and severe harm to enemies and offenders.", confidence: high_for_encomium_low_for_normative_approval}
+  - {id: INF-005, locator: "Anabasis I.9; PDF p. 27", evidence_type: PROVISIONAL_INFERENCE, finding: "Reward under the ruler's observing eye converts risk-taking into a renewable supply of volunteers and capable subordinates.", confidence: moderate_for_causal_structure}
+  - {id: INF-006, locator: "Anabasis I.9; PDF pp. 27-28", evidence_type: PROVISIONAL_INFERENCE, finding: "Cyrus governs wealth less by equal distribution than by discretionary protection, enrichment, and targeted reciprocity tied to useful character.", confidence: high_for_chapter_description}
+  - {id: INF-007, locator: "Anabasis I.9; PDF p. 28", evidence_type: PROVISIONAL_INFERENCE, finding: "Minute personalized attentions make power appear as friendship and transform material surplus into durable affection and public honor.", confidence: moderate_pending_full_work_comparison}
+  - {id: INF-008, locator: "Anabasis I.9; PDF pp. 28-29", evidence_type: PROVISIONAL_INFERENCE, finding: "The chapter closes its proof of belovedness not with success in ruling but with asymmetric defection and death, while Ariaeus's flight preserves an exception that prevents complete idealization.", confidence: high_for_ending_structure}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis I.9; PDF p. 26", evidence_type: UNRESOLVED_QUESTION, question: "Who are the reputed intimates whose consensus grounds the claim that Cyrus was most worthy to rule?"}
+  - {id: Q-002, locator: "Anabasis I.9; PDF p. 26", evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie kingliest, worthy to rule, sobriety, self-control, modesty, and obedience?"}
+  - {id: Q-003, locator: "Anabasis I.9; PDF p. 26", evidence_type: UNRESOLVED_QUESTION, question: "Does education through royal honor and dishonor teach justice, prudence, obedience, ambition, or some combination?"}
+  - {id: Q-004, locator: "Anabasis I.9; PDF pp. 26-27", evidence_type: UNRESOLVED_QUESTION, question: "How can the claim that Cyrus lied to no one be reconciled, if at all, with the pretexts and incomplete disclosures of I.1-I.4?"}
+  - {id: Q-005, locator: "Anabasis I.9; PDF p. 27", evidence_type: UNRESOLVED_QUESTION, question: "What is the status and Greek wording of the attributed prayer concerning friends and enemies?"}
+  - {id: Q-006, locator: "Anabasis I.9; PDF p. 27", evidence_type: UNRESOLVED_QUESTION, question: "By what law, procedure, and evidentiary standard were offenders mutilated?"}
+  - {id: Q-007, locator: "Anabasis I.9; PDF p. 27", evidence_type: UNRESOLVED_QUESTION, question: "Does security produced by severe punishment establish justice, effectiveness, or only fear?"}
+  - {id: Q-008, locator: "Anabasis I.9; PDF p. 27", evidence_type: UNRESOLVED_QUESTION, question: "What Greek expression is translated as cowards being the natural slaves of the brave, and what claim does it make?"}
+  - {id: Q-009, locator: "Anabasis I.9; PDF pp. 27-28", evidence_type: UNRESOLVED_QUESTION, question: "How does discretionary enrichment of brave men and stewards relate to law, office, and legitimate rule?"}
+  - {id: Q-010, locator: "Anabasis I.9; PDF p. 28", evidence_type: UNRESOLVED_QUESTION, question: "Are Cyrus's minute attentions chiefly affection, gratitude, political technique, or inseparably all three?"}
+  - {id: Q-011, locator: "Anabasis I.9; PDF p. 28", evidence_type: UNRESOLVED_QUESTION, question: "What is the exact force of the narrator's first-person formulas, and do they identify authorial judgment?"}
+  - {id: Q-012, locator: "Anabasis I.9; PDF p. 28", evidence_type: UNRESOLVED_QUESTION, question: "Why is piety absent from the enumerated virtues despite the attributed prayer and sacrificial activity elsewhere?"}
+  - {id: Q-013, locator: "Anabasis I.9; PDF pp. 28-29", evidence_type: UNRESOLVED_QUESTION, question: "Do defections and deaths prove love of Cyrus, expectation of reward, military dependence, or several motives at once?"}
+  - {id: Q-014, locator: "Anabasis I.9; PDF p. 29", evidence_type: UNRESOLVED_QUESTION, question: "How should Ariaeus's flight be judged in light of his command position, Cyrus's death, and the survival of his cavalry?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text of Anabasis I.9 for kingliness, rule, obedience, truth, compact, friend, enemy, justice, bravery, slavery, love, and first-person formulas.
+  - Compare modern English translations for the encomium's opening judgment, the no-lie claim, the attributed prayer, mutilation, natural slavery, and narrator interventions.
+  - Map every claim of report, attribution, consensus, and first-person judgment in I.9.
+  - Test the claim that Cyrus lies to no one against the complete Book I record of pretexts, concealment, disclosure, and promises.
+  - Track every friendship and non-abandonment claim through the later treatment of Cyrus's friends after his death.
+  - Compare the standards for punishment in I.9 with Orontas's proceeding in I.6 without assuming consistency.
+  - Reconstruct the economic model of gifts, revenues, declared wealth, patronage, offices, and military service across Book I.
+  - Track the virtues expressly named and omitted in the encomium, including the absence or presence of piety and wisdom.
+  - Reconstruct Ariaeus's battlefield position and later conduct from I.8-I.10 before assigning responsibility.
+  - Defer comparison with Strauss or the Cyropaedia until the complete Book I primary sequence is drafted.
+secondary_comparison_status: DEFERRED

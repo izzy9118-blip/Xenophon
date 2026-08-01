@@ -1,0 +1,59 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+classification: DIVERGENCE
+status: DRAFTED_PENDING_OWNER_REVIEW
+entry_count: 2
+entries:
+- id: CMP-019
+  topic: Justice as concrete dispute versus a two-virtue hierarchy
+  classification: DIVERGENCE
+  primary_stream:
+    position: Justice appears through concrete disputes over promises, punishment, pay, booty, testimony, distribution,
+      and protection of allied or Greek communities; the cumulative record does not infer a final definition.
+    cumulative_anchors:
+    - PAT-011
+    - WF-010
+    - CP-007
+    source_units:
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-031
+    - XEN-PRI-RU-037
+    - XEN-PRI-RU-043
+    - XEN-PRI-RU-050
+  secondary_stream:
+    position: Strauss frames the deepest problem as an ambiguity between manly justice that benefits friends and
+      harms enemies and Socratic justice that harms no one, placing Xenophon between Cyrus and Socrates.
+    secondary_units:
+    - XEN-RU-004
+    - XEN-RU-006
+    printed_pages: 117-120, 125-128
+  controlled_relation: The primary stream supplies episodes relevant to the contrast but does not establish the
+    proposed hierarchy, mutual dependence, or impossibility of full coexistence.
+  preserved_uncertainty: The Socratic and Cyropaedia sides of the comparison are not independently reconstructed.
+  comparison_effect: Record a divergence in explanatory scope, not a refutation of Strauss.
+- id: CMP-029
+  topic: 'The ending: Thibron transfer versus philosophical closure'
+  classification: DIVERGENCE
+  primary_stream:
+    position: The primary cumulative record treats transfer of the army to Thibron's war as the final institutional
+      act and emphasizes that Xenophon's homecoming, wealth, and ultimate relation to the expedition remain incompletely
+      narrated.
+    cumulative_anchors:
+    - CP-012
+    - WF-012
+    - SDO-CUM-010
+    - WQ-017
+    source_units:
+    - XEN-PRI-RU-050
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss closes by emphasizing reconciliation, Xenophon's demonstrated preference for Greece over barbarians,
+      the unresolved Socratic apprehension, renewed war for booty, and the density of divine references and oaths
+      in Book Seven.
+    secondary_units:
+    - XEN-RU-008
+    printed_pages: 133-136
+  controlled_relation: 'The streams attend to the same final sequence but identify different governing closures:
+    institutional transfer in the primary cumulative record and the fatherland-piety-Socrates problem in Strauss.'
+  preserved_uncertainty: Neither emphasis excludes the other; the work's final purpose remains unresolved.
+  comparison_effect: Record divergence in emphasis and prohibit either closure from absorbing the other.

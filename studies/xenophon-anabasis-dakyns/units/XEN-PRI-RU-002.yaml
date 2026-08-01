@@ -1,0 +1,434 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-002
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.2
+  pdf_pages_one_based: 7-11
+  opening_anchor: >-
+    But when the right moment seemed to him to have come, at which he should begin his march into the interior, the pretext which he put forward was his desire to expel the Pisidians utterly out of the country.
+  closing_anchor: >-
+    After this they met, and Syennesis gave Cyrus large sums in aid of his army; while Cyrus presented him with the customary royal gifts.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation. Translator wording is not unmediated Greek evidence; no isolated observation licenses a deed corpus, speech register, guard, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.2 plus one-based PDF page
+  source_boundary: >-
+    Narrative, translator footnotes, geographical glosses, and reported speech are distinguished where the witness marks them.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration in the English translation
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  first_person_narrative_marker_present: false
+  observation: >-
+    The chapter follows Cyrus and the army from Sardis to Tarsus through itinerary, troop counts, reviews, reports, and negotiated submission; Xenophon remains unnamed as narrator or actor.
+  uncertainty: >-
+    This witness does not by itself settle narrator identity, ancient authorship, or the Greek grammatical force underlying the translated reports and evaluative phrases.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis I.2; PDF p. 7
+    speech_form: indirect_orders
+    speaker: Cyrus
+    audience: Clearchus, Aristippus, Xenias, the forces at Miletus, and the Milesian exiles
+    occasion: concentration of the dispersed armament at Sardis
+    content: >-
+      Ordered each contingent to join him and promised the Milesian exiles that success would be followed by their restoration.
+    uncertainty: >-
+      The exact wording, sequence of delivery, and knowledge of the real destination are not preserved.
+  - id: SAO-002
+    locator: Anabasis I.2; PDF p. 8
+    speech_form: reported_demands_and_put_offs
+    speaker: soldiers and Cyrus
+    audience: Cyrus and the unpaid soldiers
+    occasion: more than three months of arrears at Caystru-pedion
+    content: >-
+      The soldiers repeatedly demanded their pay, while Cyrus answered with assurances and expectations until money became available.
+    uncertainty: >-
+      The witness supplies no direct wording and does not establish whether Cyrus had previously promised a payment date.
+  - id: SAO-003
+    locator: Anabasis I.2; PDF pp. 8-9
+    speech_form: indirect_request_and_orders
+    speaker: Epyaxa, Cyrus, and Pigres
+    audience: Cyrus, the generals, and the Greek troops
+    occasion: review of the armament at Tyriaeum
+    content: >-
+      Epyaxa is reported to have requested the display; Cyrus ordered the Greeks to form in customary battle order, present arms, and advance.
+    uncertainty: >-
+      Both the queen's request and its motive are marked by report; the Greek commands are mediated through Pigres and the generals.
+  - id: SAO-004
+    locator: Anabasis I.2; PDF p. 10
+    speech_form: messenger_report
+    speaker: unnamed messenger
+    audience: Cyrus
+    occasion: the passage into Cilicia
+    content: >-
+      Reported that Syennesis had abandoned the pass, possibly because Menon's force was already in Cilicia and ships were approaching.
+    uncertainty: >-
+      The narrator explicitly leaves the reason open and supplies multiple possible causes.
+  - id: SAO-005
+    locator: Anabasis I.2; PDF pp. 10-11
+    speech_form: indirect_exchange
+    speaker: Cyrus, Syennesis, and Epyaxa
+    audience: one another
+    occasion: negotiation at Tarsus
+    content: >-
+      Cyrus summoned Syennesis; Syennesis initially refused to place himself in the power of a superior; Epyaxa persuaded him to accept pledges and meet Cyrus.
+    uncertainty: >-
+      The terms of the pledges and Epyaxa's argument are omitted.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis I.2; PDF p. 7
+    actor: Cyrus
+    deed: >-
+      Converted the dispersed recruitment network into an assembled expedition at Sardis under the continuing Pisidian pretext.
+    outcome: >-
+      The Greek contingents joined with specified troop strengths, and Tissaphernes departed swiftly to warn the king.
+    uncertainty: >-
+      The chapter does not state how many soldiers understood the expedition's real purpose at this point.
+  - id: SDO-002
+    locator: Anabasis I.2; PDF pp. 7-8
+    actor: Cyrus and the Greek commanders
+    deed: >-
+      Marched through Lydia and Phrygia, incorporated Menon's force, and reviewed the Greek army at Celaenae.
+    outcome: >-
+      The force was counted at eleven thousand hoplites and about two thousand peltasts.
+    uncertainty: >-
+      Dakyns's troop labels and totals require comparison with a Greek text and other translations.
+  - id: SDO-003
+    locator: Anabasis I.2; PDF p. 8
+    actor: Cyrus, the unpaid soldiers, and Epyaxa
+    deed: >-
+      Faced repeated demands for overdue pay and then paid four months after Epyaxa's arrival and a reported large gift.
+    outcome: >-
+      The arrears crisis was temporarily resolved and the march continued.
+    uncertainty: >-
+      The text associates the payment with the queen's arrival but does not certify the source, amount, or conditions of the money.
+  - id: SDO-004
+    locator: Anabasis I.2; PDF pp. 8-10
+    actor: Cyrus and the Greek army
+    deed: >-
+      Staged a formal review in which the Greeks advanced in arms and spontaneously broke into a run toward camp.
+    outcome: >-
+      The display terrified the Asian onlookers, amused the Greeks, impressed Epyaxa, and pleased Cyrus.
+    uncertainty: >-
+      The advance was an exhibition rather than battle; its evidentiary value for combat effectiveness remains limited.
+  - id: SDO-005
+    locator: Anabasis I.2; PDF p. 10
+    actor: Cyrus, Menon, Epyaxa, Syennesis, and the fleet
+    deed: >-
+      Sent Epyaxa home with Menon's force, advanced toward the Cilician pass, and benefited from pressure applied from the far side and by approaching ships.
+    outcome: >-
+      Syennesis abandoned the pass and Cyrus entered Cilicia without fighting there.
+    uncertainty: >-
+      The narrative does not decide whether Menon's presence, the fleet, Epyaxa, intelligence, or another cause was decisive.
+  - id: SDO-006
+    locator: Anabasis I.2; PDF pp. 10-11
+    actor: Menon's soldiers and the Cilicians
+    deed: >-
+      Lost one hundred hoplites during the mountain passage and then pillaged Tarsus and the palace in anger.
+    outcome: >-
+      The city and palace suffered before Cyrus negotiated with Syennesis.
+    uncertainty: >-
+      The witness preserves two incompatible reports about how the soldiers died and does not identify perpetrators with certainty.
+  - id: SDO-007
+    locator: Anabasis I.2; PDF p. 11
+    actor: Cyrus and Syennesis
+    deed: >-
+      Exchanged money, royal gifts, protection from further pillage, and permission to recover seized slaves after a meeting secured by pledges.
+    outcome: >-
+      Cyrus obtained financial support and passage while Syennesis obtained gifts and limited restoration of order and property.
+    uncertainty: >-
+      The political status of Syennesis after the agreement and the voluntariness of the exchange remain unclear.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Concentration of the army at Sardis under the Pisidian pretext
+    - Detection by Tissaphernes and counter-preparation by Artaxerxes
+    - March through Lydia and Phrygia with measured stages and troop additions
+    - Review and counting of the Greeks at Celaenae
+    - Arrears crisis and payment after Epyaxa's arrival
+    - Display of Greek arms at Tyriaeum
+    - Advance through Lycaonia and Cappadocia with pillage and execution
+    - Passage into Cilicia without battle at the guarded pass
+    - Loss of Menon's soldiers and pillage of Tarsus
+    - Negotiated meeting and reciprocal exchange between Cyrus and Syennesis
+  repetitions:
+    - The itinerary repeatedly joins exact distances, halts, populous cities, and provisioning conditions to the movement of the army.
+    - Reports are repeatedly marked as reports when concerning Epyaxa, the lost soldiers, Syennesis' motive, and traditional stories.
+    - Money repeatedly converts political difficulty into continued movement: troop recruitment, overdue pay, Syennesis' support, and royal gifts.
+    - Cyrus repeatedly combines coercive force with negotiated or reciprocal exchange.
+  omissions:
+    - No direct speech is quoted.
+    - The ordinary soldiers' knowledge of the real target remains unstated.
+    - Epyaxa's motives, financial terms, and political agency are not explained.
+    - The reasons for the execution of Megaphernes and the unnamed dignitary are not developed beyond a charge of conspiracy.
+    - The pledges exchanged with Syennesis are not specified.
+  tensions:
+    - The expedition becomes large enough to alert Tissaphernes while Cyrus continues to present it as a Pisidian campaign.
+    - Cyrus is described as habitually reliable in payment, yet the soldiers remain more than three months in arrears.
+    - The review exhibits order but culminates in spontaneous running and panic among onlookers.
+    - The army enters Cilicia without battle but leaves a trail of lost men, pillage, coercion, and negotiated compensation.
+    - Syennesis refuses submission to a superior yet later meets Cyrus, funds him, and accepts royal gifts.
+documentary_observations:
+  - id: OBS-001
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Cyrus begins the inland march when the moment appears suitable and publicly presents the campaign as one against the Pisidians.
+    uncertainty: >-
+      The Greek terms underlying 'right moment,' 'pretext,' and 'avowedly' require original-language checking.
+  - id: OBS-002
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The chapter opens by converting the separate recruitment channels of I.1 into a single concentration at Sardis.
+    uncertainty: >-
+      Whether this chapter boundary marks a deliberate shift from preparation to action requires comparison with the Greek division and manuscript tradition.
+  - id: OBS-003
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Cyrus promises the Milesian exiles that success will be followed by their restoration to their city.
+    uncertainty: >-
+      The object described as his success is not made explicit to the exiles in the translated report.
+  - id: OBS-004
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The first assembled troop list names Xenias, Proxenus, Sophaenetus, Socrates, and Pasion with differentiated heavy and light infantry totals.
+    uncertainty: >-
+      The relation between this list and the complete army requires tracking additions, desertions, and losses through Book I.
+  - id: OBS-005
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Tissaphernes infers from the scale of the equipment that Cyrus intends more than a Pisidian invasion and rides to warn Artaxerxes.
+    uncertainty: >-
+      The narrative gives Tissaphernes' inference but not the evidence available to him beyond the visible scale of preparation.
+  - id: OBS-006
+    locator: Anabasis I.2; PDF pp. 7-10
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      Much of the chapter is organized as a measured itinerary of stages, parasangs, rivers, cities, parks, halts, and supplies.
+    uncertainty: >-
+      The military, geographical, commemorative, and literary functions of this repeated form must be assessed over the whole work.
+  - id: OBS-007
+    locator: Anabasis I.2; PDF p. 8
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      At Celaenae Cyrus reviews and counts the Greeks at eleven thousand hoplites and about two thousand peltasts.
+    uncertainty: >-
+      The total is witness-specific and should be checked against Greek manuscripts and modern editions.
+  - id: OBS-008
+    locator: Anabasis I.2; PDF p. 8
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The narrative inserts stories concerning Apollo and Marsyas and Xerxes at Celaenae into the military itinerary.
+    uncertainty: >-
+      These stories are marked as tradition or report and should not be treated as certified historical fact.
+  - id: OBS-009
+    locator: Anabasis I.2; PDF p. 8
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Cyrus' soldiers demand overdue pay repeatedly, and the narrator says Cyrus was vexed because withholding payment was not his custom when he had the means.
+    uncertainty: >-
+      The statement distinguishes custom from present capacity but does not disclose the finances that caused the arrears.
+  - id: OBS-010
+    locator: Anabasis I.2; PDF p. 8
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Epyaxa's reported gift is followed by Cyrus paying four months' wages.
+    uncertainty: >-
+      Temporal sequence does not by itself prove that the gift funded the payment.
+  - id: OBS-011
+    locator: Anabasis I.2; PDF pp. 8-9
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The witness reports that Cyrus and Epyaxa may have had an intimate relationship but explicitly qualifies the report.
+    uncertainty: >-
+      The narrative does not certify the claim or explain its relevance.
+  - id: OBS-012
+    locator: Anabasis I.2; PDF p. 9
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      At Tyriaeum the Greeks are arranged by generals, with Menon on the right, Clearchus on the left, and the others in the center.
+    uncertainty: >-
+      The tactical or symbolic significance of this arrangement is not stated.
+  - id: OBS-013
+    locator: Anabasis I.2; PDF pp. 9-10
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      The Greek demonstration produces terror among Asian onlookers, laughter among the Greeks, admiration in Epyaxa, and satisfaction in Cyrus.
+    uncertainty: >-
+      A staged display cannot establish how either force would behave in actual battle.
+  - id: OBS-014
+    locator: Anabasis I.2; PDF p. 10
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Cyrus gives hostile Lycaonia to the Greeks to pillage.
+    uncertainty: >-
+      The translated witness does not explain the legal status of the territory, the limits of pillage, or the treatment of inhabitants.
+  - id: OBS-015
+    locator: Anabasis I.2; PDF p. 10
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Cyrus executes Megaphernes and another high-ranking subordinate on a charge of conspiracy.
+    uncertainty: >-
+      No trial, evidence, confession, or deliberation is narrated.
+  - id: OBS-016
+    locator: Anabasis I.2; PDF p. 10
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The Cilician pass is described as nearly impossible to force if defended, yet it is abandoned before Cyrus arrives.
+    uncertainty: >-
+      The narrative offers several possible pressures but refuses to select a single cause.
+  - id: OBS-017
+    locator: Anabasis I.2; PDF pp. 10-11
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      One hundred of Menon's hoplites disappear during the mountain passage, and the witness preserves two competing reports of their fate.
+    uncertainty: >-
+      Neither report is certified, and the responsible parties remain unidentified.
+  - id: OBS-018
+    locator: Anabasis I.2; PDF p. 10
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Menon's surviving troops answer the loss of their comrades by pillaging Tarsus and Syennesis' palace.
+    uncertainty: >-
+      The narrative states their anger but does not judge whether the retaliation was directed at responsible persons.
+  - id: OBS-019
+    locator: Anabasis I.2; PDF pp. 10-11
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: >-
+      Syennesis initially refuses to place himself in the hands of anyone superior and meets Cyrus only after Epyaxa persuades him and pledges are accepted.
+    uncertainty: >-
+      His statement may express dignity, fear, bargaining position, or several of these at once.
+  - id: OBS-020
+    locator: Anabasis I.2; PDF p. 11
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: >-
+      The chapter closes with reciprocal transfers: Syennesis gives money, Cyrus gives royal objects and protection, and seized slaves may be recovered.
+    uncertainty: >-
+      The exchange occurs under military pressure, so reciprocity does not by itself establish equality or free consent.
+provisional_findings:
+  - id: INF-001
+    locator: Anabasis I.2; PDF pp. 7-11
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Cyrus' movement from secrecy to open march does not end concealment; instead, concealment becomes increasingly difficult as the scale, cost, and direction of the army become visible.
+    confidence: high_for_translated_chapter_structure
+  - id: INF-002
+    locator: Anabasis I.2; PDF pp. 7-10
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      The itinerary is not mere geographical background: it continually records the army's dependence on money, food, roads, passes, cities, and political cooperation.
+    confidence: provisional_pending_book_sequence
+  - id: INF-003
+    locator: Anabasis I.2; PDF pp. 8-11
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Epyaxa functions as a consequential political intermediary in money, movement, display, access, and negotiation even though her motives and words remain largely reported or omitted.
+    confidence: provisional
+  - id: INF-004
+    locator: Anabasis I.2; PDF pp. 9-10
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      The review displays the psychological power of Greek order and equipment before proving its battlefield value, making appearance itself an instrument of rule and alliance.
+    confidence: provisional_pending_battle_comparison
+  - id: INF-005
+    locator: Anabasis I.2; PDF pp. 10-11
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Cyrus reaches Tarsus through a combination of advance preparation, divided pressure, intimidation, pledges, gifts, and negotiated settlement rather than through a single decisive battle.
+    confidence: high_for_unit_sequence
+  - id: INF-006
+    locator: Anabasis I.2; PDF pp. 10-11
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      The closing bargain shows that restoration after military disorder can be selective: Cyrus stops further pillage and permits recovery of slaves without undoing every loss already inflicted.
+    confidence: provisional
+standing_unresolved_questions:
+  - id: Q-001
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      At what point did Tissaphernes, Artaxerxes, each commander, and the ordinary soldiers understand that the expedition exceeded the Pisidian pretext?
+  - id: Q-002
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      What is the Greek wording for the 'right moment' and the 'pretext,' and does it distinguish opportune timing from moral justification?
+  - id: Q-003
+    locator: Anabasis I.2; PDF p. 7
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      Why are the first assembled contingents listed in this order, and what changes when Menon joins later?
+  - id: Q-004
+    locator: Anabasis I.2; PDF pp. 7-10
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      What work is done by the repeated labels 'populous,' 'large,' and 'prosperous' within the march narrative?
+  - id: Q-005
+    locator: Anabasis I.2; PDF p. 8
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      How should Cyrus' reputation for reliable payment be reconciled with the arrears crisis?
+  - id: Q-006
+    locator: Anabasis I.2; PDF pp. 8-10
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      What can be known from this witness about Epyaxa's purposes, freedom of action, financial role, and influence over Syennesis?
+  - id: Q-007
+    locator: Anabasis I.2; PDF pp. 9-10
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      Does the Tyriaeum review primarily reveal Greek discipline, Asian fear, Cyrus' political theatre, or an unstable combination of all three?
+  - id: Q-008
+    locator: Anabasis I.2; PDF p. 10
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      Why are Megaphernes and the second dignitary executed, and what procedural standard, if any, governs Cyrus' response to alleged conspiracy?
+  - id: Q-009
+    locator: Anabasis I.2; PDF p. 10
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      Which factor most directly caused Syennesis to leave the pass: Menon's force, the fleet, Epyaxa, intelligence about Cyrus, or another consideration?
+  - id: Q-010
+    locator: Anabasis I.2; PDF pp. 10-11
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      What actually happened to the hundred hoplites, and why does the narrative preserve mutually incompatible reports?
+  - id: Q-011
+    locator: Anabasis I.2; PDF pp. 10-11
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      How should the retaliatory pillage of Tarsus be judged when responsibility for the soldiers' deaths is uncertain?
+  - id: Q-012
+    locator: Anabasis I.2; PDF p. 11
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      Does the exchange between Cyrus and Syennesis constitute alliance, submission, ransom, reciprocal kingship ritual, or a deliberately ambiguous settlement?
+  - id: Q-013
+    locator: Anabasis I.2; PDF pp. 7-11
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      How does the chapter's repeated movement between force and exchange prepare the soldiers' refusal at Tarsus in I.3?
+  - id: Q-014
+    locator: Anabasis I.2; PDF pp. 7-11
+    evidence_type: UNRESOLVED_QUESTION
+    question: >-
+      Why does Xenophon remain absent as a named participant while the army, route, leaders, and political dependencies are established in such detail?
+downstream_textual_checks:
+  - Consult a reviewed Greek text of Anabasis I.2 for the terms translated as right moment, pretext, populous, prosperous, report, intimacy, superior, and pledges.
+  - Compare at least one modern English translation for the troop totals, the arrears passage, Epyaxa reports, and Syennesis' refusal.
+  - Verify the chapter's book-section numbering against a critical edition because the Project Gutenberg witness provides only Roman chapter headings.
+  - Track all troop contingents and commanders from the Sardis concentration through the refusal at Tarsus in I.3.
+  - Track every marked report formula concerning myth, Epyaxa, the lost soldiers, and Syennesis throughout Book I.
+  - Track payments, gifts, arrears, markets, and forced acquisition as a continuous material register.
+  - Track the relation between visible Greek order in reviews and actual conduct in battle and crisis.
+  - Preserve both reports of the lost hoplites until another witness or source permits adjudication.
+  - Defer comparison with Strauss's reconstruction until the relevant Book I primary sequence is complete.
+secondary_comparison_status: DEFERRED

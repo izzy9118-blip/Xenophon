@@ -1,0 +1,454 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-030
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis V.1
+  pdf_pages_one_based: 94-95
+  opening_anchor: After this they met and took counsel concerning the remainder of the march.
+  closing_anchor: On one occasion Cleanetus led his own and another company against a strong position, and was killed himself,
+    with many others of his party.
+jurisdiction: Independent primary reconstruction from the admitted Dakyns English translation. Translator wording is not unmediated
+  Greek evidence; no isolated observation licenses a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis V.1 plus one-based PDF page
+  chapter_boundary_control: The Book V retrospective synopsis ends at the top of PDF page 94 and remains witness paratext. V.1
+    begins beneath heading I on PDF page 94 and ends on page 95 immediately before heading II. V.2 begins on page 96 and ends
+    on page 98 immediately before heading III.
+  source_boundary: Assembly speeches, shouted approval, votes, organized foraging, declared pillaging, outposts, vessel acquisition,
+    general funding, proposed fares, coercive road pressure, Dexippus's desertion and later death, Polycrates's vessel seizures,
+    cargo custody, foray outcomes, and the perioecus note remain distinct. The Odyssean phrase and the note defining perioeci remain
+    witness paratext.
+narrative_person_and_authorial_attribution:
+  narrative_mode: Third-person historical narration presenting Antileon, Cheirisophus, Xenophon, Dexippus, Polycrates, and Cleanetus
+    as named actors, with extended speeches attributed to Antileon, Cheirisophus, and Xenophon.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: Xenophon rises in the assembly, proposes a sequence of measures, observes resistance to a land march, and is named
+    in third person. First-person plurals occur inside attributed speeches, not as unframed narratorial self-identification.
+  uncertainty: The witness does not settle the Greek force of high admiral, men-of-war, capture provisions, pillage, impress vessels,
+    general fund, equitable, infatuation, voluntarily, perioeci, misdeeds, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis V.1; PDF p. 94
+  speech_form: homeward_transport_preference
+  speaker: Antileon of Thurii
+  audience: assembled soldiers
+  occasion: council on the remainder of the march
+  content: He declares himself exhausted by packing, marching, carrying arms, guard duty, and battle, and wishes to sail home while
+    resting like Odysseus.
+  uncertainty: The Homeric allusion and Greek tone require original-language review.
+- id: SAO-002
+  locator: Anabasis V.1; PDF p. 94
+  speech_form: collective_acclamation
+  speaker: assembled soldiers
+  audience: Antileon and one another
+  occasion: response to the sea-voyage proposal
+  content: They loudly approve, and successive speakers express the same preference.
+  uncertainty: No count or dissenting voice is reported.
+- id: SAO-003
+  locator: Anabasis V.1; PDF p. 94
+  speech_form: naval_mission_proposal
+  speaker: Cheirisophus
+  audience: assembled soldiers
+  occasion: same council
+  content: He offers to approach his friend Anaxibius, now high admiral, and seek warships and other vessels sufficient to carry
+    the army.
+  uncertainty: The precise office, friendship, and certainty of return require external or Greek review.
+- id: SAO-004
+  locator: Anabasis V.1; PDF p. 94
+  speech_form: foraging_governance_proposal
+  speaker: Xenophon
+  audience: assembled soldiers
+  occasion: waiting for Cheirisophus
+  content: Because the market and purchasing power are insufficient, he proposes organized parties to capture provisions from
+    hostile territory and forbids random roaming.
+  uncertainty: The translated distinction among capture, requisition, and pillage remains open.
+- id: SAO-005
+  locator: Anabasis V.1; PDF pp. 94-95
+  speech_form: expedition_registration_proposal
+  speaker: Xenophon
+  audience: assembled soldiers
+  occasion: anticipated private pillaging expeditions
+  content: Anyone going out is to report intent and direction so the command knows who is absent, can prepare support, and can advise
+    inexperienced parties.
+  uncertainty: The enforcement mechanism and whether this regularizes or restrains pillage are not stated.
+- id: SAO-006
+  locator: Anabasis V.1; PDF p. 95
+  speech_form: camp_security_proposal
+  speaker: Xenophon
+  audience: assembled soldiers
+  occasion: enemy retaliation expected
+  content: He proposes regular rotating outposts and pickets because the Greeks have appropriated local property and enemies have
+    cause and opportunity to raid them.
+  uncertainty: The phrase appropriated what is theirs is a translated acknowledgment whose Greek force requires review.
+- id: SAO-007
+  locator: Anabasis V.1; PDF p. 95
+  speech_form: local_fleet_acquisition_proposal
+  speaker: Xenophon
+  audience: assembled soldiers
+  occasion: uncertain success of Cheirisophus's mission
+  content: He proposes borrowing Trapezuntine warships, bringing passing vessels into port, removing their rudders, and retaining
+    them until enough transport is assembled.
+  uncertainty: The boundary between loan, impressment, seizure, and detention is unresolved.
+- id: SAO-008
+  locator: Anabasis V.1; PDF p. 95
+  speech_form: compensation_and_fare_proposal
+  speaker: Xenophon
+  audience: assembled soldiers
+  occasion: maintenance of detained ships and crews
+  content: He proposes a general fund to support ship companies and an agreed fare, presenting repayment as kindness returned in
+    kind.
+  uncertainty: Who contributes, who consents, and how fares are fixed are not stated.
+- id: SAO-009
+  locator: Anabasis V.1; PDF p. 95
+  speech_form: contingent_land_route_proposal
+  speaker: Xenophon
+  audience: assembled soldiers
+  occasion: possible insufficiency of vessels
+  content: He proposes requiring coastal cities to repair impassable roads, expecting compliance from fear and desire to be rid
+    of the army.
+  uncertainty: The legal status of the proposed duty and exact coercive force are unstated.
+- id: SAO-010
+  locator: Anabasis V.1; PDF p. 95
+  speech_form: road_construction_inducement
+  speaker: Xenophon
+  audience: coastal cities
+  occasion: after soldiers reject a land march
+  content: He persuades cities to construct roads with the suggestion that better roads will speed the army's departure.
+  uncertainty: The narrator calls the construction voluntary despite the surrounding pressure; the Greek wording requires review.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis V.1; PDF p. 94
+  actor: Antileon, other speakers, and assembled soldiers
+  deed: Antileon proposes ending land hardship through sea transport; repeated speakers agree and soldiers acclaim the proposal.
+  outcome: Return by sea becomes the assembly's dominant preference.
+  uncertainty: No formal vote on the general preference is separately reported.
+- id: SDO-002
+  locator: Anabasis V.1; PDF p. 94
+  actor: Cheirisophus and assembled soldiers
+  deed: Cheirisophus offers to seek ships from Anaxibius, and the soldiers vote that he depart immediately.
+  outcome: Cheirisophus leaves on a naval procurement mission.
+  uncertainty: Departure date, escort, and instructions are absent.
+- id: SDO-003
+  locator: Anabasis V.1; PDF pp. 94-95
+  actor: Xenophon and assembly
+  deed: Xenophon proposes organized foraging, mandatory notice of pillaging expeditions, and command oversight; each proposal is
+    carried.
+  outcome: Food seizure is placed under a declared reporting and support structure rather than left entirely random.
+  uncertainty: Actual compliance and effects are not yet reported.
+- id: SDO-004
+  locator: Anabasis V.1; PDF p. 95
+  actor: Xenophon and assembly
+  deed: He proposes rotating outposts in acknowledgment that enemies may raid because Greeks have appropriated their property.
+  outcome: Camp security becomes a collective recurring duty.
+  uncertainty: The number and placement of outposts are absent.
+- id: SDO-005
+  locator: Anabasis V.1; PDF p. 95
+  actor: Xenophon and assembly
+  deed: He proposes acquiring local vessels, guarding them with rudders removed, supporting crews from a common fund, and agreeing
+    fares; the measures pass.
+  outcome: The army creates a second transport strategy independent of Cheirisophus's mission.
+  uncertainty: Consent of owners and crews is not established.
+- id: SDO-006
+  locator: Anabasis V.1; PDF p. 95
+  actor: Xenophon, soldiers, and coastal cities
+  deed: Soldiers loudly reject any land march; Xenophon withholds the vote but later induces cities to repair roads by linking road
+    work to quicker Greek departure.
+  outcome: A contingency route is prepared despite the army's refusal to adopt land travel.
+  uncertainty: The narrator's term voluntary sits beside explicit terror and pressure.
+- id: SDO-007
+  locator: Anabasis V.1; PDF p. 95
+  actor: Trapezuntines, Greeks, and Dexippus
+  deed: The Greeks receive a fifty-oared galley and appoint Dexippus, but he abandons vessel collection and leaves Pontus with the
+    ship.
+  outcome: The entrusted vessel and commander are lost to the army.
+  uncertainty: His motives and the legality of possession are not reported.
+- id: SDO-008
+  locator: Anabasis V.1; PDF p. 95
+  actor: Dexippus and Nicander
+  deed: The narrator anticipates later events in Thrace and reports that Nicander kills Dexippus after political meddling at Seuthes's
+    court.
+  outcome: Dexippus is said to pay the penalty for his misconduct.
+  uncertainty: Chronology, source, procedure, and relation between the two episodes are not supplied in this chapter.
+- id: SDO-009
+  locator: Anabasis V.1; PDF p. 95
+  actor: Trapezuntines, Greeks, Polycrates, ship owners, and guards
+  deed: A thirty-oared galley is entrusted to Polycrates, who brings vessels into camp; cargoes are removed, guarded, and preserved
+    while ships are used for coastal transport.
+  outcome: The army obtains working local transport while retaining freight under guard.
+  uncertainty: Consent, compensation, ownership, and eventual restitution are not stated.
+- id: SDO-010
+  locator: Anabasis V.1; PDF p. 95
+  actor: Greek foraging parties and Cleanetus
+  deed: Forays have mixed outcomes; Cleanetus leads two companies against a strong position and is killed with many others.
+  outcome: Organized or semi-organized provisioning remains lethal despite administrative measures.
+  uncertainty: The target, casualties, command authorization, and provisions sought are absent.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Council on the remainder of the march
+  - Antileon's sea-return preference and collective approval
+  - Cheirisophus's mission to Anaxibius
+  - Xenophon's organized foraging and expedition reporting measures
+  - Rotating outposts and local ship acquisition
+  - General fund and fares
+  - Rejected land contingency and induced road construction
+  - Dexippus's desertion and proleptic death report
+  - Polycrates's vessel collection and cargo custody
+  - Mixed foray outcomes and Cleanetus's death
+  repetitions:
+  - Assembly votes repeatedly convert Xenophon's proposals into temporary institutions.
+  - Markets, transport, guards, and provisioning remain inseparable from coercion.
+  - The army repeatedly seeks local intermediaries and local assets while claiming an overriding need to depart.
+  - Individual initiative remains necessary but can produce desertion, unauthorized seizure, or fatal exposure.
+  omissions:
+  - No dissent is named during early sea-transport approval.
+  - Anaxibius's response and Cheirisophus's return are not included in the chapter.
+  - Ship owners, crews, coastal cities, and local inhabitants are not heard directly.
+  - No accounting exists for the general fund, fares, cargoes, prizes, or road labor.
+  - Cleanetus's target, tactical plan, and casualty count are omitted.
+  tensions:
+  - The soldiers desire effortless sea passage while the waiting period requires raids, guards, coercion, and new institutions.
+  - Xenophon acknowledges that enemies have cause to retaliate because the Greeks took their property while continuing to organize
+    further seizures.
+  - The army votes compensation for crews while also detaining ships and removing rudders and cargoes.
+  - Road construction is called voluntary although terror and the desire to expel the army are named as motives.
+  - Administrative control reduces randomness but does not prevent Cleanetus's fatal failure.
+documentary_observations:
+- id: OBS-001
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: BOOK_TRANSITION_PARATEXT_OBSERVATION
+  observation: A retrospective Book V synopsis precedes heading I and is excluded from V.1's primary narration.
+  uncertainty: Its editorial provenance is not established in the witness.
+- id: OBS-002
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: MARCH_WEARINESS_OBSERVATION
+  observation: Antileon enumerates packing, marching, carrying arms, guard duty, and battle as accumulated burdens.
+  uncertainty: His speech may be representative but does not establish every soldier's experience.
+- id: OBS-003
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: SEA_RETURN_PREFERENCE_OBSERVATION
+  observation: The assembly loudly favors returning by sea rather than continuing the land march.
+  uncertainty: No dissenting total or formal general vote is recorded.
+- id: OBS-004
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: ODYSSEAN_ALLUSION_PARATEXT_OBSERVATION
+  observation: Antileon's wish to sail while stretched out in sleep invokes Odysseus in the translation.
+  uncertainty: The exact Greek allusion and its force require original-language review.
+- id: OBS-005
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: PERSONAL_CONNECTION_PROCUREMENT_OBSERVATION
+  observation: Cheirisophus bases his ship mission on friendship with Anaxibius, identified as high admiral.
+  uncertainty: Office, friendship, and access are not independently verified.
+- id: OBS-006
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: INSUFFICIENT_MARKET_OBSERVATION
+  observation: Xenophon says the market is insufficient and most soldiers lack means to purchase supplies.
+  uncertainty: Prices, money holdings, and available goods are not quantified.
+- id: OBS-007
+  locator: Anabasis V.1; PDF p. 94
+  evidence_type: ORGANIZED_FORAGING_OBSERVATION
+  observation: The assembly authorizes organized parties to capture provisions from hostile territory.
+  uncertainty: The translated legal and moral status of capture remains open.
+- id: OBS-008
+  locator: Anabasis V.1; PDF pp. 94-95
+  evidence_type: PILLAGE_REGISTRATION_OBSERVATION
+  observation: Prospective pillagers must report their intent and direction before departure.
+  uncertainty: No sanctions or compliance record are given.
+- id: OBS-009
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: EXPERIENCE_OVERSIGHT_OBSERVATION
+  observation: Command claims authority to advise or reinforce inexperienced raiding parties after assessing intended targets.
+  uncertainty: How competence is judged is not stated.
+- id: OBS-010
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: APPROPRIATION_ACKNOWLEDGMENT_OBSERVATION
+  observation: Xenophon says enemy plots are natural because the Greeks have appropriated what belongs to them.
+  uncertainty: The Greek verb and normative force require review.
+- id: OBS-011
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: ROTATING_OUTPOST_OBSERVATION
+  observation: Regular outposts, pickets, and outlook duty are proposed in rotation around the camp.
+  uncertainty: No rotation schedule or force size is given.
+- id: OBS-012
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: DUAL_TRANSPORT_STRATEGY_OBSERVATION
+  observation: The army pursues both Cheirisophus's external mission and local vessel acquisition.
+  uncertainty: Coordination and priority are not specified.
+- id: OBS-013
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: VESSEL_DETENTION_OBSERVATION
+  observation: Passing vessels are to be brought into port and guarded with rudders removed until transport capacity is sufficient.
+  uncertainty: Consent, law, and ownership are unstated.
+- id: OBS-014
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: COMMON_FUND_OBSERVATION
+  observation: A general fund is approved to support ships' companies while they wait for the army's benefit.
+  uncertainty: Revenue source and administration are absent.
+- id: OBS-015
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: FARE_COMPENSATION_OBSERVATION
+  observation: The assembly approves agreeing a fare and frames payment as reciprocal kindness.
+  uncertainty: No consent process or price is reported.
+- id: OBS-016
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: LAND_ROUTE_REJECTION_OBSERVATION
+  observation: Soldiers respond with loud protest when Xenophon proposes a land-route contingency.
+  uncertainty: No reasons beyond the earlier weariness are separately recorded.
+- id: OBS-017
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: WITHHELD_VOTE_OBSERVATION
+  observation: Xenophon does not put the rejected land proposal to a vote after perceiving the assembly's disposition.
+  uncertainty: Dakyns's term infatuation may color the narratorial judgment.
+- id: OBS-018
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: COERCIVE_VOLUNTARINESS_OBSERVATION
+  observation: Coastal cities are said to construct roads voluntarily after pressure that quicker roads will speed Greek departure,
+    while fear is explicitly named.
+  uncertainty: The degree of coercion and Greek terminology remain unresolved.
+- id: OBS-019
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: TRAPEZUNTINE_GALLEY_OBSERVATION
+  observation: The Trapezuntines provide a fifty-oared galley and later a thirty-oared galley.
+  uncertainty: Terms of transfer are not given.
+- id: OBS-020
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: PERIOECUS_PARATEXT_OBSERVATION
+  observation: A witness note defines Dexippus's Laconian perioecus status as a native of the country parts of Laconia.
+  uncertainty: The note is editorial paratext and not a complete constitutional account.
+- id: OBS-021
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: ENTRUSTED_COMMAND_DESERTION_OBSERVATION
+  observation: Dexippus abandons his vessel-collection assignment and leaves Pontus with the entrusted galley.
+  uncertainty: Motive and legality are absent.
+- id: OBS-022
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: PROLEPTIC_PUNISHMENT_REPORT_OBSERVATION
+  observation: The narrator reports Dexippus's later killing by Nicander in Thrace as a penalty for misconduct.
+  uncertainty: The chapter does not provide independent evidence, legal process, or detailed chronology.
+- id: OBS-023
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: CARGO_REMOVAL_AND_CUSTODY_OBSERVATION
+  observation: Polycrates brings vessels to camp; their freight is removed and guarded while the ships are used for transport.
+  uncertainty: Ownership, compensation, and restitution are not stated.
+- id: OBS-024
+  locator: Anabasis V.1; PDF p. 95
+  evidence_type: FORAY_FAILURE_AND_COMMAND_DEATH_OBSERVATION
+  observation: Forays have mixed results, and Cleanetus is killed with many others while leading two companies against a strong
+    position.
+  uncertainty: Target, authorization, and exact casualties are absent.
+provisional_findings:
+- id: FIND-001
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Arrival at the sea does not dissolve the army's political problem; it produces a new regime of waiting, procurement,
+    security, finance, and coercion.
+  basis: Council votes, foraging rules, outposts, fleet acquisition, roads.
+  uncertainty: The inference is limited to V.1 and awaits the rest of Book V.
+- id: FIND-002
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The assembly's strong preference for sea transport narrows but does not eliminate command discretion.
+  basis: Cheirisophus mission, repeated votes, withheld land vote, induced roads.
+  uncertainty: Later resistance or compliance may alter the pattern.
+- id: FIND-003
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Xenophon's program attempts to convert uncontrolled pillage into registered, supervised, and supportable expeditions
+    without renouncing seizure from hostile territory.
+  basis: Foraging and expedition-notice proposals.
+  uncertainty: Actual effectiveness is not demonstrated in V.1.
+- id: FIND-004
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The chapter openly links defensive necessity to prior Greek appropriation, making retaliation intelligible from the
+    enemy's position.
+  basis: Appropriation acknowledgment and outpost proposal.
+  uncertainty: This does not settle normative judgment.
+- id: FIND-005
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Compensation and coercion are institutionally intertwined in naval procurement.
+  basis: Common fund and fares alongside vessel detention and cargo removal.
+  uncertainty: Owner and crew consent remain unknown.
+- id: FIND-006
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The narrator distinguishes prudent contingency planning from the soldiers' refusal to imagine continued land movement.
+  basis: Rejected land proposal, withheld vote, road construction.
+  uncertainty: Dakyns's infatuation may sharpen the judgment.
+- id: FIND-007
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Delegated individual command is both indispensable and vulnerable to defection.
+  basis: Cheirisophus, Dexippus, Polycrates, Cleanetus.
+  uncertainty: The chapter presents unlike cases that should not be collapsed.
+- id: FIND-008
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Administrative ordering does not remove the hazards of provisioning by force.
+  basis: Mixed foray outcomes and Cleanetus's death after governance measures.
+  uncertainty: The failed expedition's compliance with the rules is unknown.
+standing_unresolved_questions:
+- id: Q-001
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek wording underlies Antileon's Odyssean image and the assembly's response?
+- id: Q-002
+  evidence_type: UNRESOLVED_QUESTION
+  question: What office and relationship are expressed by Dakyns's high admiral and friend for Anaxibius?
+- id: Q-003
+  evidence_type: UNRESOLVED_QUESTION
+  question: How should capture provisions, pillage, appropriation, and prey be distinguished in Greek?
+- id: Q-004
+  evidence_type: UNRESOLVED_QUESTION
+  question: Were the approved foraging and reporting rules enforceable, and did Cleanetus comply with them?
+- id: Q-005
+  evidence_type: UNRESOLVED_QUESTION
+  question: What institutional authority administered rotating outposts and the general fund?
+- id: Q-006
+  evidence_type: UNRESOLVED_QUESTION
+  question: Were vessel owners and crews consenting lenders, impressed service providers, or coerced detainees?
+- id: Q-007
+  evidence_type: UNRESOLVED_QUESTION
+  question: How were fares, maintenance, freight custody, and restitution determined?
+- id: Q-008
+  evidence_type: UNRESOLVED_QUESTION
+  question: How should the chapter's claim of voluntary road construction be reconciled with terror and pressure?
+- id: Q-009
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek term and constitutional status underlie the perioecus note?
+- id: Q-010
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why did Dexippus depart with the galley, and what evidence supports the narrator's moralized later-death report?
+- id: Q-011
+  evidence_type: UNRESOLVED_QUESTION
+  question: What precisely did Polycrates seize, and were ship cargoes returned?
+- id: Q-012
+  evidence_type: UNRESOLVED_QUESTION
+  question: Who were the ship guards and what authority did they exercise?
+- id: Q-013
+  evidence_type: UNRESOLVED_QUESTION
+  question: What strong position did Cleanetus attack, and how many soldiers died?
+- id: Q-014
+  evidence_type: UNRESOLVED_QUESTION
+  question: What is the selection principle behind ending V.1 with Cleanetus's death?
+downstream_textual_checks:
+- id: CHECK-001
+  check: Compare the Greek of Antileon's weariness, sea preference, and Odyssean allusion.
+- id: CHECK-002
+  check: Verify Anaxibius's office and the wording of Cheirisophus's friendship claim.
+- id: CHECK-003
+  check: Map Greek vocabulary for foraging, pillage, appropriation, prey, and hostile territory.
+- id: CHECK-004
+  check: Check assembly and vote terminology across all Xenophon proposals.
+- id: CHECK-005
+  check: Examine vessel-loan, detention, rudder removal, fare, and common-fund vocabulary.
+- id: CHECK-006
+  check: Compare the Greek terms for fear, voluntary road work, and Xenophon's judgment of the soldiers.
+- id: CHECK-007
+  check: Verify Dexippus's perioecus status and the proleptic Thracian death report in the Greek witness and later narrative.
+- id: CHECK-008
+  check: Check Polycrates's actions, freight custody, and ship-ownership vocabulary.
+- id: CHECK-009
+  check: Trace Cleanetus and determine whether the fatal foray is referenced elsewhere.
+- id: CHECK-010
+  check: Preserve the Book V synopsis and perioecus note as paratext in downstream extraction.
+secondary_comparison_status: DEFERRED
+comparison_note: Strauss remains confined to the owner-adopted secondary reconstruction.

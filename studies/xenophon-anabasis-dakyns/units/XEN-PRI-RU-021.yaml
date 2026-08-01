@@ -1,0 +1,294 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-021
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis III.5
+  pdf_pages_one_based: 67-69
+  opening_anchor: >-
+    There and then the barbarians turned and fled as best they might, and the Hellenes held the summit,
+    while the troops with Tissaphernes and Ariaeus turned aside and disappeared by another road.
+  closing_anchor: >-
+    and a general order was issued, that after supper every one should get his kit together for starting,
+    and repose, in readiness to follow as soon as the word of command was given.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis III.5 plus one-based PDF page
+  chapter_boundary_control: >-
+    III.5 begins on PDF page 67 beneath heading V after the closing lines of III.4 and ends on PDF page 69
+    before the BOOK IV heading and parenthetical retrospective synopsis. IV.1 begins on PDF page 70.
+  source_boundary: >-
+    Direct speeches, tactical reports, attributed emotions, engineering proposals, council judgments,
+    prisoner testimony, reported historical claims, strategic resolutions, sacrificial acts, orders,
+    geographic notes, and the Book IV synopsis remain distinct. The Karduchian historical-linguistic
+    note and the parenthetical Book IV synopsis are witness paratext and are not silently assigned to
+    Xenophon, the prisoners, or the ancient decision-makers.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration presenting Xenophon and Cheirisophus as named generals and speakers,
+    reporting collective despondency and council decisions, and embedding extended testimony from a Rhodian
+    engineer and unnamed prisoners.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon speaks publicly about possession, treaty reversal, retaliation, and protection of the country.
+    First-person forms occur inside attributed speeches and quoted prisoner formulations, not as unframed
+    narratorial self-identification.
+  uncertainty: >-
+    This witness does not settle the Greek force of country, possession, treaty, protection, retaliation,
+    invention, impracticability, despondency, cross-examination, freedom from the king, truce, sacrifice,
+    right moment, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis III.5; PDF pp. 67-68
+    speech_form: possession_and_countermeasure_speech
+    speaker: Xenophon
+    audience: Greek soldiers and Cheirisophus
+    occasion: Tissaphernes attempts to burn provisioned villages
+    content: >-
+      Xenophon argues that Persian burning admits the country is now Greek because the treaty had forbidden
+      Greek burning of the king's land. He threatens to march wherever the Persians retain provisions and
+      proposes attacking the incendiaries to protect "our country."
+    uncertainty: The speech's legal, political, and strategic implications are not independently adjudicated.
+  - id: SAO-002
+    locator: Anabasis III.5; PDF p. 68
+    speech_form: counterproposal
+    speaker: Cheirisophus
+    audience: Xenophon and the soldiers
+    occasion: response to the proposal to protect the villages
+    content: He prefers that the Greeks burn some villages themselves so the Persians will cease burning sooner.
+    uncertainty: No subsequent debate, vote, or immediate implementation order is supplied in the exchange.
+  - id: SAO-003
+    locator: Anabasis III.5; PDF p. 68
+    speech_form: engineering_offer
+    speaker: an unnamed Rhodian
+    audience: assembled generals and officers
+    occasion: deep despondency between high mountains and the deep Tigris
+    content: >-
+      For one talent he offers to carry four thousand hoplites across at a time using two thousand inflated
+      animal skins coupled by baggage straps, anchored with stones, decked with wood, and coated with earth.
+    uncertainty: The speaker's identity, prior experience, calculations, construction time, and payment source are absent.
+  - id: SAO-004
+    locator: Anabasis III.5; PDF p. 68
+    speech_form: feasibility_judgment_reported
+    speaker: Greek generals
+    audience: the Rhodian and council
+    occasion: assessment of the bridge proposal
+    content: They regard the invention as attractive but its realization as impracticable because enemy cavalry controls the far bank.
+    uncertainty: No engineering trial or alternative crossing operation is attempted.
+  - id: SAO-005
+    locator: Anabasis III.5; PDF pp. 68-69
+    speech_form: geographic_testimony
+    speaker: unnamed prisoners under cross-examination
+    audience: Greek generals and officers
+    occasion: inquiry into all surrounding routes and districts
+    content: >-
+      They assign the southern route to Babylon and Media, the eastern route to Susa and Ecbatana, the western
+      route across the river to Lydia and Ionia, and the northern mountain route toward the Great Bear to the Carduchians.
+    uncertainty: The prisoners' identities, knowledge bases, agreement, coercion, and accuracy are not supplied.
+  - id: SAO-006
+    locator: Anabasis III.5; PDF pp. 68-69
+    speech_form: political_and_military_report
+    speaker: unnamed prisoners
+    audience: Greek generals and officers
+    occasion: description of the Carduchian route
+    content: >-
+      They call the Carduchians hill-dwellers, warlike, and not subject to Artaxerxes; they report that a royal
+      army of one hundred twenty thousand once entered and no man returned because of the terrain.
+    uncertainty: The episode's date, ruler, source, number, and historical accuracy are unstated.
+  - id: SAO-007
+    locator: Anabasis III.5; PDF p. 69
+    speech_form: reciprocal_intercourse_report
+    speaker: unnamed prisoners
+    audience: Greek generals and officers
+    occasion: qualification of Carduchian hostility
+    content: >-
+      They report occasional truce or treaty with the satrap in the plain and reciprocal movement between the two populations while it lasts.
+    uncertainty: The quoted "us" may refer to the prisoners' community or political side; the parties and terms remain unclear.
+  - id: SAO-008
+    locator: Anabasis III.5; PDF p. 69
+    speech_form: strategic_resolution_reported
+    speaker: Greek generals and officers
+    audience: the army
+    occasion: decision after separating knowledgeable prisoners without revealing the intended route
+    content: >-
+      They resolve to force passage through the Carduchian hills into Armenia, relying on reports that Armenia
+      is rich, large, governed by Orontas, and permits movement onward in any direction.
+    uncertainty: The deliberative procedure, dissent, route comparison, and confidence in the reports are absent.
+  - id: SAO-009
+    locator: Anabasis III.5; PDF p. 69
+    speech_form: general_order_reported
+    speaker: Greek command
+    audience: the entire army
+    occasion: after sacrifice and fear that the mountain pass may be preoccupied
+    content: After supper everyone is to assemble his equipment, rest, and be ready to follow immediately upon the word of command.
+    uncertainty: The deity, sacrificial result, exact departure time, and command chain are not supplied.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis III.5; PDF p. 67
+    actor: Greek army, Tissaphernes, and Ariaeus
+    deed: The Greeks hold the summit while the opposing forces flee and disappear by another road.
+    outcome: The height is secured and the Greek main body descends into provisioned villages.
+    uncertainty: Enemy losses and the route of withdrawal are unstated.
+  - id: SDO-002
+    locator: Anabasis III.5; PDF p. 67
+    actor: scattered Greek foragers and enemy troops
+    deed: Greek parties disperse for spoil; the enemy reappears, kills some, and captures cattle being moved across the river.
+    outcome: Possession of the summit does not secure dispersed provisioning activity on the plain.
+    uncertainty: Casualty and livestock totals are absent.
+  - id: SDO-003
+    locator: Anabasis III.5; PDF pp. 67-68
+    actor: Tissaphernes, Xenophon, Cheirisophus, and Greek soldiers
+    deed: Tissaphernes tries to burn the villages; Xenophon proposes protection and retaliation, while Cheirisophus proposes reciprocal burning.
+    outcome: The dispute shifts from battlefield position to control and denial of provisions.
+    uncertainty: The immediate operational consequence of the exchange is not narrated.
+  - id: SDO-004
+    locator: Anabasis III.5; PDF p. 68
+    actor: Greek generals and officers
+    deed: They meet amid high mountains and a river whose bottom cannot be reached with spears.
+    outcome: Geographic blockage produces deep collective despondency and a search for technical alternatives.
+    uncertainty: The depth measurement and exact council composition are not given.
+  - id: SDO-005
+    locator: Anabasis III.5; PDF p. 68
+    actor: the Rhodian and Greek generals
+    deed: A skin-raft bridge is proposed and rejected because enemy cavalry can prevent the first detachment from securing the far bank.
+    outcome: Tactical control, not flotation alone, determines crossing feasibility.
+    uncertainty: No smaller bridgehead, diversion, or protective-fire option is recorded.
+  - id: SDO-006
+    locator: Anabasis III.5; PDF p. 68
+    actor: Greek army and observing enemy
+    deed: The Greeks reverse toward Babylon and unburnt villages, burning the villages they leave.
+    outcome: The enemy watches without closing, uncertain of the Greek route and intention.
+    uncertainty: The property destroyed, inhabitants affected, and authorizing decision are unstated.
+  - id: SDO-007
+    locator: Anabasis III.5; PDF pp. 68-69
+    actor: Greek generals, officers, and prisoners
+    deed: The command gathers prisoners and cross-examines them about surrounding districts and routes.
+    outcome: Four directional possibilities and a profile of the Carduchians enter strategic deliberation.
+    uncertainty: The methods and reliability of interrogation remain unknown.
+  - id: SDO-008
+    locator: Anabasis III.5; PDF p. 69
+    actor: Greek generals and knowledgeable prisoners
+    deed: Prisoners claiming special geographic knowledge are seated separately without being told which route is intended.
+    outcome: The command protects route secrecy while comparing testimony.
+    uncertainty: Whether testimony was independently corroborated is unstated.
+  - id: SDO-009
+    locator: Anabasis III.5; PDF p. 69
+    actor: Greek generals and officers
+    deed: They choose the Carduchian mountain passage toward Armenia rather than the southern, eastern, or western alternatives.
+    outcome: Retreat is redirected from the Tigris plain into territory reported to lie outside royal control.
+    uncertainty: The relative weighting of danger, distance, provisions, and politics is not fully narrated.
+  - id: SDO-010
+    locator: Anabasis III.5; PDF p. 69
+    actor: Greek command and army
+    deed: The command sacrifices, fears advance occupation of the pass, and orders preparation and rest after supper.
+    outcome: Intelligence, secrecy, ritual consultation, and readiness converge in a planned night movement.
+    uncertainty: The sacrifice's recipient and signs are omitted.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Greek occupation of the summit and enemy withdrawal
+    - Provisioned villages, dispersed foraging, and enemy counterattack
+    - Persian burning and opposed Greek responses
+    - Geographic despondency between mountains and the Tigris
+    - Rhodian bridge proposal and tactical rejection
+    - Greek reversal, self-burning, and enemy uncertainty
+    - Cross-examination of prisoners concerning four directional routes
+    - Carduchian autonomy, danger, and intermittent truce reported
+    - Knowledgeable prisoners separated to conceal intention
+    - Carduchian route selected, sacrifice offered, and night readiness ordered
+  repetitions:
+    - Control of provisions repeatedly governs movement and policy.
+    - Apparent success is followed by a new form of vulnerability.
+    - Speech converts enemy conduct into claims about possession and strategy.
+    - Technical invention remains subordinate to military control of terrain.
+    - Decisions combine intelligence, secrecy, ritual, and command.
+  omissions:
+    - The killed foragers and captured cattle are not counted.
+    - No inhabitant of the burned villages is described.
+    - The Rhodian is unnamed and his engineering assumptions are not tested.
+    - Prisoners, interrogation methods, and testimony disagreements are unidentified.
+    - The royal expedition against the Carduchians is not dated or sourced.
+    - The sacrifice's deity, victims, and result are absent.
+  tensions:
+    - Xenophon calls the villages "our country" while Cheirisophus proposes burning them.
+    - Greek fear of Persian burning is followed by deliberate Greek burning.
+    - The most attractive engineering proposal is rejected for political-military rather than technical reasons.
+    - The Carduchians' independence from the king makes their country strategically useful and exceptionally dangerous.
+    - Route secrecy depends on prisoners whose reliability remains uncertain.
+    - Book III ends with a decision for autonomy through entry into uncontrolled terrain.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis III.5; PDF p. 67", evidence_type: TACTICAL_OUTCOME_OBSERVATION, observation: "The opposing forces flee from the summit and the Greeks retain it.", uncertainty: "Enemy losses are not stated."}
+  - {id: OBS-002, locator: "Anabasis III.5; PDF p. 67", evidence_type: PROVISIONING_OBSERVATION, observation: "Cheirisophus's main body enters villages described as abundant in varied goods.", uncertainty: "Quantities and ownership are unstated."}
+  - {id: OBS-003, locator: "Anabasis III.5; PDF p. 67", evidence_type: DISPERSAL_CASUALTY_OBSERVATION, observation: "Enemy troops kill some Greeks scattered across the plain in search of spoil.", uncertainty: "The number and units are absent."}
+  - {id: OBS-004, locator: "Anabasis III.5; PDF p. 67", evidence_type: LIVESTOCK_CAPTURE_OBSERVATION, observation: "Cattle being conveyed across the river are captured.", uncertainty: "The owners, number, and destination are not stated."}
+  - {id: OBS-005, locator: "Anabasis III.5; PDF p. 67", evidence_type: SCORCHED_EARTH_OBSERVATION, observation: "Tissaphernes's troops attempt to burn the villages.", uncertainty: "The scale and success of burning are unclear."}
+  - {id: OBS-006, locator: "Anabasis III.5; PDF pp. 67-68", evidence_type: POSSESSION_CLAIM_OBSERVATION, observation: "Xenophon interprets Persian burning as an admission that the country is now Greek.", uncertainty: "The inference appears in an attributed speech."}
+  - {id: OBS-007, locator: "Anabasis III.5; PDF p. 68", evidence_type: COMMAND_DISAGREEMENT_OBSERVATION, observation: "Xenophon proposes protecting the villages; Cheirisophus proposes Greek burning to stop Persian burning.", uncertainty: "No formal resolution is recorded in the exchange."}
+  - {id: OBS-008, locator: "Anabasis III.5; PDF p. 68", evidence_type: COLLECTIVE_EMOTION_OBSERVATION, observation: "The generals and officers are described as deeply despondent between mountains and the Tigris.", uncertainty: "Individual positions are not distinguished."}
+  - {id: OBS-009, locator: "Anabasis III.5; PDF p. 68", evidence_type: DEPTH_TEST_OBSERVATION, observation: "Spears fail to reach the river bottom.", uncertainty: "Location, spear length, and method are not supplied."}
+  - {id: OBS-010, locator: "Anabasis III.5; PDF p. 68", evidence_type: ENGINEERING_PROPOSAL_OBSERVATION, observation: "An unnamed Rhodian offers to ferry four thousand hoplites at a time on a bridge of two thousand inflated skins for one talent.", uncertainty: "Feasibility and compensation remain untested."}
+  - {id: OBS-011, locator: "Anabasis III.5; PDF p. 68", evidence_type: TECHNICAL_DESIGN_OBSERVATION, observation: "The bridge design uses flayed animal skins, baggage straps, stone anchors, wood decking, and an earth surface.", uncertainty: "Construction dimensions and time are absent."}
+  - {id: OBS-012, locator: "Anabasis III.5; PDF p. 68", evidence_type: FEASIBILITY_JUDGMENT_OBSERVATION, observation: "The generals reject the proposal because cavalry on the far bank can stop the first crossing party.", uncertainty: "No trial or protective operation is attempted."}
+  - {id: OBS-013, locator: "Anabasis III.5; PDF p. 68", evidence_type: REVERSAL_OF_MARCH_OBSERVATION, observation: "The Greeks turn back toward Babylon and the unburnt villages.", uncertainty: "The distance and duration of retracing are unstated."}
+  - {id: OBS-014, locator: "Anabasis III.5; PDF p. 68", evidence_type: GREEK_BURNING_OBSERVATION, observation: "The Greeks burn the villages they leave.", uncertainty: "Authorization, extent, and local consequences are absent."}
+  - {id: OBS-015, locator: "Anabasis III.5; PDF p. 68", evidence_type: ENEMY_UNCERTAINTY_OBSERVATION, observation: "The enemy stands watching, uncertain of Greek direction and intention.", uncertainty: "The enemy's interior state is narratorial attribution."}
+  - {id: OBS-016, locator: "Anabasis III.5; PDF pp. 68-69", evidence_type: COERCED_INTELLIGENCE_OBSERVATION, observation: "Prisoners are collectively cross-examined about surrounding districts and routes.", uncertainty: "The degree and form of coercion are not described."}
+  - {id: OBS-017, locator: "Anabasis III.5; PDF p. 68", evidence_type: ROUTE_REPORT_OBSERVATION, observation: "South is reported to lead toward Babylon and Media, east toward Susa and Ecbatana, and west across the Tigris toward Lydia and Ionia.", uncertainty: "Distances and obstacles are omitted."}
+  - {id: OBS-018, locator: "Anabasis III.5; PDF pp. 68-69", evidence_type: AUTONOMY_REPORT_OBSERVATION, observation: "The Carduchians are reported to be warlike hill-dwellers not subject to the king.", uncertainty: "The political claim rests on prisoner testimony."}
+  - {id: OBS-019, locator: "Anabasis III.5; PDF pp. 68-69", evidence_type: REPORTED_HISTORICAL_CLAIM_OBSERVATION, observation: "A royal army of one hundred twenty thousand is said to have entered Carduchian country without a survivor returning.", uncertainty: "The event and number are unverified within the witness."}
+  - {id: OBS-020, locator: "Anabasis III.5; PDF p. 69", evidence_type: INTERMITTENT_TRUCE_OBSERVATION, observation: "The Carduchians are said occasionally to make truce with the satrap and permit reciprocal intercourse.", uncertainty: "Parties, duration, and terms are unclear."}
+  - {id: OBS-021, locator: "Anabasis III.5; PDF p. 69", evidence_type: PARATEXT_OBSERVATION, observation: "A note identifies the Carduchians with later Kurds and supplies linguistic and imperial history.", uncertainty: "The note is not primary ancient testimony for this unit."}
+  - {id: OBS-022, locator: "Anabasis III.5; PDF p. 69", evidence_type: INTELLIGENCE_COMPARTMENTATION_OBSERVATION, observation: "Prisoners with special knowledge are seated separately without disclosure of the intended route.", uncertainty: "The comparison method is unstated."}
+  - {id: OBS-023, locator: "Anabasis III.5; PDF p. 69", evidence_type: STRATEGIC_DECISION_OBSERVATION, observation: "The generals resolve to force the Carduchian hills toward Armenia.", uncertainty: "No dissent or vote count is recorded."}
+  - {id: OBS-024, locator: "Anabasis III.5; PDF p. 69", evidence_type: DESTINATION_REPORT_OBSERVATION, observation: "Armenia is reported to be rich, large, governed by Orontas, and open to onward movement.", uncertainty: "The claims are not independently verified here."}
+  - {id: OBS-025, locator: "Anabasis III.5; PDF p. 69", evidence_type: SACRIFICIAL_DECISION_OBSERVATION, observation: "The command offers sacrifice before the planned departure.", uncertainty: "Recipient, victim, signs, and officiant are omitted."}
+  - {id: OBS-026, locator: "Anabasis III.5; PDF p. 69", evidence_type: PASS_SECURITY_OBSERVATION, observation: "The chief stated fear is that the high pass will be occupied in advance.", uncertainty: "No reconnaissance result is supplied in III.5."}
+  - {id: OBS-027, locator: "Anabasis III.5; PDF p. 69", evidence_type: READINESS_ORDER_OBSERVATION, observation: "The army is ordered to prepare equipment after supper, rest, and await the command to move.", uncertainty: "The departure signal and time are unstated."}
+  - {id: OBS-028, locator: "Anabasis III.5-IV.1 boundary; PDF pp. 69-70", evidence_type: EDITORIAL_PARATEXT_OBSERVATION, observation: "The BOOK IV parenthesis retrospectively summarizes the route decision, river sources, secrecy, and speed.", uncertainty: "Its editorial or authorial status requires textual review and it is not silently used to expand III.5."}
+provisional_findings:
+  - {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: "The summit victory immediately gives way to a provisioning-security problem because dispersed acquisition exposes soldiers to renewed attack.", basis: "Foraging casualties and cattle capture after occupation of the summit.", uncertainty: "The scale is unknown."}
+  - {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: "Xenophon converts Persian treaty violation into a rhetorical claim of Greek possession.", basis: "The speech that Persian burning admits the country is Greek.", uncertainty: "No stable legal title follows."}
+  - {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: "Xenophon and Cheirisophus articulate competing forms of resource warfare: protection and reciprocal denial.", basis: "Their opposed responses to village burning.", uncertainty: "The command's final rationale is not narrated."}
+  - {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: "The Rhodian proposal distinguishes engineering possibility from operational feasibility.", basis: "Flotation design rejected because the far bank remains militarily controlled.", uncertainty: "The design is not tested."}
+  - {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: "Deliberate Greek burning serves both resource denial and strategic ambiguity.", basis: "Burning during reversal while the enemy watches without understanding the route.", uncertainty: "Intent is not expressly analyzed."}
+  - {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: "The route decision rests on compartmented prisoner intelligence rather than a single guide or Persian agreement.", basis: "Cross-examination and separate seating of knowledgeable prisoners.", uncertainty: "Corroboration is unstated."}
+  - {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: "Carduchian independence is simultaneously the route's attraction and its principal danger.", basis: "Non-subjection to the king, catastrophic royal failure, and occasional limited truce.", uncertainty: "The reports may be exaggerated."}
+  - {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: "The command joins secrecy, intelligence, sacrifice, and rapid readiness in preparing the mountain passage.", basis: "Concealed route comparison, sacrifice, fear of preoccupation, and after-supper order.", uncertainty: "The sacrificial result is omitted."}
+  - {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: "Book III closes by transforming the return from a problem of Persian pursuit into a problem of autonomous passage through uncontrolled terrain.", basis: "Decision to leave the Tigris plain for Carduchian mountains.", uncertainty: "Book IV supplies the test."}
+standing_unresolved_questions:
+  - {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: "How many Greek foragers were killed and how many cattle were captured?"}
+  - {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: "What Greek words support Xenophon's claim that the country is now ours?"}
+  - {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: "Did the command adopt Xenophon's protection policy, Cheirisophus's burning policy, or both?"}
+  - {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: "How deep and broad was the Tigris at the tested point?"}
+  - {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: "Was the Rhodian bridge physically capable of carrying four thousand hoplites at a time?"}
+  - {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: "What was the source and institutional meaning of the requested talent?"}
+  - {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: "Could the Greeks have created or protected a far-bank bridgehead?"}
+  - {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: "Who ordered the burning of the villages during the reversal and what local effects followed?"}
+  - {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: "Who were the prisoners and what methods were used in their cross-examination?"}
+  - {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: "How were conflicting geographic reports compared or corroborated?"}
+  - {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: "What historical event lies behind the report of the lost royal army of one hundred twenty thousand?"}
+  - {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: "What political relationship joined the Carduchians and the satrap during intermittent truces?"}
+  - {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: "What did the quoted reciprocal movement formula mean in its original Greek context?"}
+  - {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: "What decision procedure selected the Carduchian route?"}
+  - {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: "To whom was sacrifice offered and what signs authorized departure?"}
+  - {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: "What is the textual status of the Carduchian note and the Book IV retrospective synopsis?"}
+downstream_textual_checks:
+  - {id: CHECK-001, check: "Collate Greek terms for country, possession, treaty, protection, and burning in the Xenophon-Cheirisophus exchange."}
+  - {id: CHECK-002, check: "Reconstruct the river-crossing proposal from Greek technical vocabulary and comparative engineering evidence."}
+  - {id: CHECK-003, check: "Check manuscript and translation evidence for four thousand hoplites, two thousand skins, and one talent."}
+  - {id: CHECK-004, check: "Map the south, east, west, and north route reports without replacing the witness's own geography."}
+  - {id: CHECK-005, check: "Investigate ancient evidence for Carduchian political autonomy and the reported royal disaster."}
+  - {id: CHECK-006, check: "Clarify the quoted reciprocal-intercourse formula and its speaker-reference."}
+  - {id: CHECK-007, check: "Examine prisoner interrogation and intelligence-compartmentation terminology."}
+  - {id: CHECK-008, check: "Identify sacrificial vocabulary, deity, signs, and timing if preserved in Greek witnesses or scholia."}
+  - {id: CHECK-009, check: "Separate the Karduchian historical note and Book IV synopsis by edition and manuscript status."}
+  - {id: CHECK-010, check: "Test Book III's closing route decision against the execution narrated in IV.1 without importing later outcomes into this unit."}
+secondary_comparison_status: DEFERRED

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sanctum:federation:ministerial-report:1.3.0",
+  "title": "Sanctum Ministerial Report",
+  "description": "Report contract preserving draft, sovereign minister validation, and owner certification as distinct states. Evidence retains the stable witness and source identifiers assigned by the sovereign minister repository; Sanctum does not replace them with a federation-local identity.",
+  "type": "object",
+  "required": ["record_type", "id", "report_id", "report_status", "inquiry_ref", "minister", "repository", "governing_manifest", "evidence", "propositions", "uncertainties", "termination", "provenance", "certification_status"],
+  "properties": {
+    "record_type": {"const": "ministerial_report"},
+    "id": {"type": "string"},
+    "report_id": {"type": "string"},
+    "report_status": {"enum": ["DRAFT_PENDING_MINISTER_REPOSITORY_VALIDATION", "MINISTER_REPOSITORY_VALIDATED_PENDING_OWNER_CERTIFICATION", "OWNER_CERTIFIED_MINISTERIAL_REPORT"]},
+    "inquiry_ref": {"type": "object"},
+    "minister": {"type": "object", "required": ["actor", "manifest_commit"], "properties": {"actor": {"type": "string"}, "manifest_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}}},
+    "mode": {"enum": ["reasoned", "outside_my_ground"]},
+    "repository": {"type": "object", "required": ["full_name", "git_commit"], "properties": {"full_name": {"type": "string"}, "git_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}}},
+    "governing_manifest": {"type": "object", "required": ["path", "version"], "properties": {"path": {"type": "string"}, "version": {"type": "string"}}},
+    "owner_certification": {"type": "object"},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["witness_id", "source_id", "repository_commit", "path"], "properties": {"witness_id": {"type": "string", "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*-WIT-[A-Z0-9]+(?:-[A-Z0-9]+)*$"}, "source_id": {"type": "string", "minLength": 1}, "repository_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}, "path": {"type": "string", "minLength": 1}}}},
+    "propositions": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["kind", "claim"], "properties": {"kind": {"enum": ["documented_finding", "supported_inference", "working_hypothesis", "comparative_question", "unresolved_uncertainty"]}, "claim": {"type": "string"}, "grounds": {"type": "array"}}}},
+    "uncertainties": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "termination": {"type": "object", "required": ["status"], "properties": {"status": {"type": "string"}}},
+    "provenance": {"type": "object"},
+    "certification_status": {"enum": ["PENDING_OWNER_CERTIFICATION", "OWNER_CERTIFIED"]}
+  }
+}

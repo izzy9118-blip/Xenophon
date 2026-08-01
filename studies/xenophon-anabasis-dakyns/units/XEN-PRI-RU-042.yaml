@@ -1,0 +1,146 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-042
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis VI.5
+  pdf_pages_one_based: 129-132
+  opening_anchor: "BOOK VI, V: And so they spent the night, but with day-dawn the generals led the way into the natural fastness..."
+  closing_anchor: "...Returning to the point where the first encounter took place they erected a trophy, and went back to the sea about sunset."
+jurisdiction: "Independent reconstruction from the admitted Dakyns translation. Translator wording is not unmediated Greek evidence. Keep narrator, speaker, report, deed, outcome, paratext, and inference distinct. Secondary comparison, Greek philology, certification, minister derivation, and Sanctum registration remain unauthorized."
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg 1170, searchable 168-page PDF
+  chapter_boundary_control: "Heading V begins VI.5 on PDF page 129; heading VI begins VI.6 on page 132. This unit covers pages 129-132 and stops before heading VI. Next unit covers pages 132-137. Translator and preparer notes remain paratext."
+  source_boundary: "Fortification of Calpe; Heracleot supply arrival; favorable sacrifice and eagle omen; burial of Neon's dead; provisioning under formation; encounter with Spithridates and Rhathines; reserve brigades; gully deliberation; battle speeches, attack, pursuit, trophy, and return."
+narrative_person_and_authorial_attribution:
+  narrative_mode: "Third-person narration with attributed direct speech by Xenophon, attributed commands, reported sacrificial and omen interpretation, named tactical appointments, and narrated battle outcomes."
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  interior_deliberation_report_present: true
+  observation: "First-person forms occur in attributed speeches. The narrator reports Xenophon in the third person, including his wondering at the halt, and does not explicitly identify narrator and character."
+  uncertainty: "Divine causation, exact enemy losses, the relation between omen and decision, the accuracy of Xenophon's predictions, and the long-term strategic effect of victory remain unresolved."
+speakers_audiences_and_occasions:
+  - {id: SAO-001, locator: "VI.5 p.129", speaker: "Arexion the Parrhasian", audience: Xenophon, occasion: "after the favorable first victim and sight of an eagle", content: "Interprets the eagle as favorable and bids Xenophon lead on."}
+  - {id: SAO-002, locator: "VI.5 p.129", speaker: "herald acting for the commanders", audience: "the soldiers", occasion: "after crossing the trench and grounding arms", content: "Orders breakfast and an armed expedition while sutlers and captured slaves remain in camp."}
+  - {id: SAO-003, locator: "VI.5 p.130", speaker: Xenophon, audience: "the other generals", occasion: "after the enemy appears in line", content: "Proposes one or more flying columns as reserves capable of supporting the main attack."}
+  - {id: SAO-004, locator: "VI.5 p.130", speaker: Xenophon, audience: "the generals leading the vanguard", occasion: "division of tactical labor", content: "Urges them to advance directly while he detaches the hindmost companies and follows."}
+  - {id: SAO-005, locator: "VI.5 p.130", speaker: Sophaenetus, audience: "assembled generals and officers", occasion: "halt before the wooded gully", content: "Says the question whether such a gully should be crossed is not worth discussing."}
+  - {id: SAO-006, locator: "VI.5 pp.130-131", speaker: Xenophon, audience: "the generals and officers", occasion: "debate over crossing the gully", content: "Argues that retreat cannot avoid battle, attack encourages courage, and difficult ground behind the army can compel victory."}
+  - {id: SAO-007, locator: "VI.5 p.131", speaker: "officers collectively", audience: Xenophon, occasion: "after his gully speech", content: "Bid him lead; no one opposes the decision."}
+  - {id: SAO-008, locator: "VI.5 p.131", speaker: Xenophon, audience: "the army", occasion: "after crossing the gully", content: "Recalls victories with divine help, the fate of fugitives, nearness to Hellas, Heracles as guide, and the desire to leave a noble memory."}
+  - {id: SAO-009, locator: "VI.5 p.131", speaker: "commanders through the line", audience: "the soldiers", occasion: "final battle preparation", content: "Order spears carried at rest until the bugle, then lowered for a slow even charge without running."}
+  - {id: SAO-010, locator: "VI.5 p.131", speaker: "army command", audience: "the Greek force", occasion: "immediately before engagement", content: "Passes the watchword Zeus the Saviour and Heracles our Guide."}
+speeches_deeds_and_outcomes:
+  - {id: SDO-001, actor: "the generals and army", deed: "Move into the natural fastness, ditch and palisade the only accessible side, and leave three gates.", outcome: "Calpe becomes a defended camp before breakfast."}
+  - {id: SDO-002, actor: "a Heracleot ship", deed: "Arrives with barleymeal, sacrificial animals, and wine.", outcome: "The army receives provisions and the means for renewed sacrifice."}
+  - {id: SDO-003, actor: "Xenophon and Arexion", deed: "Obtain a favorable first victim and interpret an eagle as auspicious.", outcome: "Xenophon leads an armed expedition."}
+  - {id: SDO-004, actor: "Neon and his soldiers", deed: "Initially remain to guard camp, then follow from shame, leaving only men above forty-five.", outcome: "The expedition gains manpower while camp defense is reduced to older men."}
+  - {id: SDO-005, actor: "the Greek column", deed: "Advances in line, digs graves, and buries the dead encountered along the route and near the villages.", outcome: "Neon's scattered casualties receive systematic burial and a common grave."}
+  - {id: SDO-006, actor: "the Greek army", deed: "Seizes provisions under cover of formation without entering the villages.", outcome: "The army provisions itself while preserving collective military order."}
+  - {id: SDO-007, actor: "Xenophon and the generals", deed: "Create three reserve brigades of about two hundred men under Samolas, Pyrrhias, and Phrasias.", outcome: "Uncommitted support is distributed behind right, center, and left."}
+  - {id: SDO-008, actor: "Xenophon and the officers", deed: "Resolve the gully dispute in favor of advance and cross broadly where each man stands.", outcome: "The force masses rapidly on the far side instead of defiling across the bridge."}
+  - {id: SDO-009, actor: "Greek light troops, phalanx, and cavalry", deed: "Attack under watchword, bugle, hymn, cheer, and leveled spears; pursue both enemy wings.", outcome: "The enemy line breaks and Pharnabazus's cavalry withdraws down the steep."}
+  - {id: SDO-010, actor: "the Greek army", deed: "Ends the pursuit, erects a trophy, and returns to the sea.", outcome: "The chapter closes with a claimed battlefield victory and sunset return rather than permanent pacification."}
+sequence_repetition_omission_and_contradiction:
+  sequence: ["night watch completed", "occupation and fortification of the natural fastness", "Heracleot ship brings food wine and victims", "favorable sacrifice and eagle omen", "armed expedition proclaimed", "Neon's men abandon guard duty from shame", "systematic burial of the dead", "provisions seized under formation", "Spithridates and Rhathines appear", "second favorable sacrifice", "reserve brigades formed", "vanguard halts at wooded gully", "Sophaenetus and Xenophon debate", "advance chosen and gully crossed", "Xenophon addresses the line", "watchword and charge order", "light troops attack early", "phalanx breaks enemy resistance", "wings and cavalry pursued", "trophy erected", "return to sea at sunset"]
+  repetitions:
+    - "Fortification and order repair the vulnerability created by dispersed foraging."
+    - "Burial accompanies renewed military action."
+    - "Sacrifice and human planning occur together without transparent causal allocation."
+    - "Xenophon converts terrain feared as an obstacle into an element of tactical argument."
+    - "Cavalry and light troops again determine the tempo around heavy infantry."
+  omissions:
+    - "No exact dimensions of ditch or palisade are given."
+    - "The eagle's species, direction, and full technical interpretation are unstated."
+    - "Enemy force totals and battle casualties are not stated."
+    - "No enemy account explains the withdrawals."
+    - "No formal assessment of Neon's conduct occurs in VI.5."
+  tensions:
+    - "A site previously avoided as city-like is fortified as a necessary refuge."
+    - "Neon is assigned camp defense but shame draws most of his force away."
+    - "Religious authorization accompanies logistics, formation, speech, and enemy decisions."
+    - "The army seeks provisions but encounters a pitched battle."
+    - "The gully appears dangerous in advance yet useful once behind the attacking force."
+    - "Light troops attack before the formal order, but heavy infantry restores momentum."
+    - "A trophy marks victory without establishing lasting control."
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis VI.5; PDF pp.129-132", evidence_type: BOOK_SIX_VI5_BOUNDARY_OBSERVATION, observation: "VI.5 begins beneath heading V on PDF page 129 and ends immediately before heading VI on page 132; VI.6 begins on page 132."}
+  - {id: OBS-002, locator: "VI.5 p.129", evidence_type: DAYBREAK_FASTNESS_OCCUPATION_OBSERVATION, observation: "At daybreak the generals lead into the natural fastness and the army follows with arms and baggage."}
+  - {id: OBS-003, locator: "VI.5 p.129", evidence_type: DITCH_PALISADE_THREE_GATES_OBSERVATION, observation: "Before breakfast the army ditches and palisades the only accessible side, leaving three gates."}
+  - {id: OBS-004, locator: "VI.5 p.129", evidence_type: HERACLEOT_SUPPLY_SHIP_OBSERVATION, observation: "A ship from Heraclea arrives with barleymeal, sacrificial animals, and wine."}
+  - {id: OBS-005, locator: "VI.5 p.129", evidence_type: FIRST_VICTIM_FAVOURABLE_OBSERVATION, observation: "Xenophon rises early and the first victim offered before the expedition is favorable."}
+  - {id: OBS-006, locator: "VI.5 p.129", evidence_type: AREXION_EAGLE_OMEN_OBSERVATION, observation: "Arexion sees an eagle, judges it favorable, and bids Xenophon lead."}
+  - {id: OBS-007, locator: "VI.5 p.129", evidence_type: ARMED_EXPEDITION_PROCLAMATION_OBSERVATION, observation: "The herald orders the soldiers to breakfast and march under arms while sutlers and captured slaves remain in camp."}
+  - {id: OBS-008, locator: "VI.5 p.129", evidence_type: NEON_CAMP_GUARD_ASSIGNMENT_OBSERVATION, observation: "Neon alone is initially left with his men to guard the contents of the camp."}
+  - {id: OBS-009, locator: "VI.5 p.129", evidence_type: SHAME_ABANDONED_GUARD_OBSERVATION, observation: "Neon's officers and soldiers are ashamed to remain while the others march and follow the expedition."}
+  - {id: OBS-010, locator: "VI.5 p.129", evidence_type: OVER_FORTY_FIVE_CAMP_GUARD_OBSERVATION, observation: "Only those above forty-five years of age are left behind to guard the camp."}
+  - {id: OBS-011, locator: "VI.5 pp.129-130", evidence_type: COLUMN_BURIAL_METHOD_OBSERVATION, observation: "The army aligns the rear with the first bodies found, digs graves, and buries all dead enclosed by the column from end to end."}
+  - {id: OBS-012, locator: "VI.5 p.130", evidence_type: COMMON_GRAVE_VILLAGE_ROAD_OBSERVATION, observation: "Where bodies lie thick near the village road, the Greeks collect them into a common grave."}
+  - {id: OBS-013, locator: "VI.5 p.130", evidence_type: FORMED_PROVISION_SEIZURE_OBSERVATION, observation: "Near midday the troops seize provisions under cover of their lines without entering the villages."}
+  - {id: OBS-014, locator: "VI.5 p.130", evidence_type: SPITHRIDATES_RHATHINES_APPEAR_OBSERVATION, observation: "Spithridates and Rhathines, sent by Pharnabazus, appear on hillocks with a large body of cavalry and infantry."}
+  - {id: OBS-015, locator: "VI.5 p.130", evidence_type: TWO_MILE_STANDOFF_OBSERVATION, observation: "The enemy halts about two miles from the Greeks after the forces see one another."}
+  - {id: OBS-016, locator: "VI.5 p.130", evidence_type: SECOND_FIRST_ESSAY_FAVOURABLE_OBSERVATION, observation: "Arexion sacrifices before battle and the victims are favorable at the first essay."}
+  - {id: OBS-017, locator: "VI.5 p.130", evidence_type: FLYING_COLUMN_RESERVE_PROPOSAL_OBSERVATION, observation: "Xenophon proposes flying columns held unbroken in reserve to assist the main body where needed."}
+  - {id: OBS-018, locator: "VI.5 p.130", evidence_type: THREE_TWO_HUNDRED_RESERVE_BRIGADES_OBSERVATION, observation: "Three reserve brigades of about two hundred men each are placed behind the right, center, and left."}
+  - {id: OBS-019, locator: "VI.5 p.130", evidence_type: SAMOLAS_PYRRHIAS_PHRASIAS_COMMAND_OBSERVATION, observation: "Samolas the Achaean, Pyrrhias the Arcadian, and Phrasias the Athenian command the reserve brigades."}
+  - {id: OBS-020, locator: "VI.5 p.130", evidence_type: WOODED_GULLY_HALT_OBSERVATION, observation: "The vanguard halts before a large difficult wooded gully and summons the generals and officers forward."}
+  - {id: OBS-021, locator: "VI.5 pp.130-131", evidence_type: SOPHAENETUS_GULLY_DISMISSAL_OBSERVATION, observation: "Sophaenetus, as eldest general, says the question whether such a gully should be crossed is not worth discussing."}
+  - {id: OBS-022, locator: "VI.5 p.131", evidence_type: ATTACK_OVER_RETREAT_ARGUMENT_OBSERVATION, observation: "Xenophon argues that retreat cannot avoid battle, attack creates courage, and he would rather attack with half than retreat with twice the men."}
+  - {id: OBS-023, locator: "VI.5 p.131", evidence_type: DIFFICULT_GROUND_BEHIND_ADVANTAGE_OBSERVATION, observation: "Xenophon presents the difficult gully behind the army as an advantage because it teaches that deliverance depends on victory."}
+  - {id: OBS-024, locator: "VI.5 p.131", evidence_type: BREAKFAST_TODAY_EMPTY_TOMORROW_OBSERVATION, observation: "Xenophon contrasts fighting today after a good breakfast with fighting tomorrow on an empty stomach."}
+  - {id: OBS-025, locator: "VI.5 p.131", evidence_type: FAVOURABLE_OFFERINGS_OMENS_VICTIMS_SPEECH_OBSERVATION, observation: "Xenophon states that the offerings are favorable, the omens propitious, and the victims more than promising."}
+  - {id: OBS-026, locator: "VI.5 p.131", evidence_type: BROAD_GULLY_CROSSING_OBSERVATION, observation: "The army crosses the gully where each man stands so it can mass faster than by defiling over the bridge."}
+  - {id: OBS-027, locator: "VI.5 p.131", evidence_type: HERACLES_GUIDE_NOBLE_MEMORY_SPEECH_OBSERVATION, observation: "Xenophon recalls divine help and past victories, calls the army to follow Heracles the Guide, and urges a noble word or deed worthy of memory."}
+  - {id: OBS-028, locator: "VI.5 p.131", evidence_type: WATCHWORD_CHARGE_DISCIPLINE_OBSERVATION, observation: "The watchword is Zeus the Saviour and Heracles our Guide; spears remain at rest until the bugle and the charge proceeds slowly and evenly without running."}
+  - {id: OBS-029, locator: "VI.5 pp.131-132", evidence_type: PHALANX_CAVALRY_ENEMY_FLIGHT_OBSERVATION, observation: "After the light troops attack early and are turned, the advancing phalanx, bugle, hymn, cheer, and leveled spears break the enemy; Timasion's cavalry and the peltasts pursue."}
+  - {id: OBS-030, locator: "VI.5 p.132", evidence_type: TROPHY_SUNSET_RETURN_OBSERVATION, observation: "After Pharnabazus's cavalry withdraws into a gully, the Greeks end the chase, erect a trophy at the first encounter, and return to the sea about sunset."}
+provisional_findings:
+  - {id: PF-001, finding: "Occupation of the stronghold under military necessity remains distinct from consent to found a city."}
+  - {id: PF-002, finding: "Supply arrival changes the practical setting for action without proving the cause of favorable signs."}
+  - {id: PF-003, finding: "Shame reinforces participation while weakening Neon's assigned guard function."}
+  - {id: PF-004, finding: "Methodical burial reintegrates casualties from failed dispersal into the ordered common army."}
+  - {id: PF-005, finding: "Provisioning succeeds under collective formation, reversing the dispersed method of VI.4."}
+  - {id: PF-006, finding: "Uncommitted reserves are treated as a tactical resource rather than inactivity."}
+  - {id: PF-007, finding: "The gully speech compares more and less dangerous action rather than claiming safety."}
+  - {id: PF-008, finding: "Terrain becomes psychologically operative through interpretation: the same gully can invite hesitation or constrain retreat."}
+  - {id: PF-009, finding: "Ritual authorization, logistics, speech, formation, premature action, recovery, and enemy choice jointly shape the battle."}
+  - {id: PF-010, finding: "The trophy records a public victory claim without proving permanent regional control or final deliverance."}
+standing_unresolved_questions:
+  - {id: UQ-001, question: "What sacrificial features made the first victims favorable?"}
+  - {id: UQ-002, question: "What technical features of the eagle led Arexion to his interpretation?"}
+  - {id: UQ-003, question: "How are favorable sacrifice, eagle omen, and prior supply arrival related?"}
+  - {id: UQ-004, question: "Did leaving only men above forty-five materially endanger the camp?"}
+  - {id: UQ-005, question: "Was Neon's decision to follow approved, tolerated, or driven entirely by shame?"}
+  - {id: UQ-006, question: "How many of Neon's dead were recovered and buried?"}
+  - {id: UQ-007, question: "How much provision was obtained before the enemy appeared?"}
+  - {id: UQ-008, question: "What were the numbers and composition of the enemy force?"}
+  - {id: UQ-009, question: "Did Pharnabazus order decisive battle or obstruction?"}
+  - {id: UQ-010, question: "Why did Sophaenetus dismiss deliberation over the gully?"}
+  - {id: UQ-011, question: "Was Xenophon's confidence tactical knowledge or rhetorical encouragement?"}
+  - {id: UQ-012, question: "Did the premature light-troop charge violate the command?"}
+  - {id: UQ-013, question: "What were the Greek and enemy casualties?"}
+  - {id: UQ-014, question: "Why was the enemy's sheltering gully unknown to the Greeks?"}
+  - {id: UQ-015, question: "What political and religious force did the trophy carry?"}
+  - {id: UQ-016, question: "Does victory clarify the relation among human skill, sacred signs, chance, and divine favor?"}
+downstream_textual_checks:
+  - {id: TC-001, check: "Compare defended occupation of Calpe with later founding rumors."}
+  - {id: TC-002, check: "Track whether the camp fortifications matter later."}
+  - {id: TC-003, check: "Track Arexion, eagles, and favorable first victims."}
+  - {id: TC-004, check: "Compare Neon's shame-driven participation with later accountability."}
+  - {id: TC-005, check: "Compare this burial method with earlier recovery of Greek dead."}
+  - {id: TC-006, check: "Track whether collective provisioning under formation becomes a rule."}
+  - {id: TC-007, check: "Compare the reserve brigades with other reserve formations."}
+  - {id: TC-008, check: "Track use of unavoidable terrain to strengthen decision."}
+  - {id: TC-009, check: "Compare predicted enemy flight with actual resistance and withdrawal."}
+  - {id: TC-010, check: "Track Zeus the Saviour and Heracles the Guide."}
+  - {id: TC-011, check: "Compare the early light-troop charge with the slow-charge order."}
+  - {id: TC-012, check: "Test in VI.6 whether victory produces durable security, commerce, diplomacy, or renewed conflict."}
+secondary_comparison_status: DEFERRED
+owner_review_required: true
+certification_status: NOT_CERTIFIED
+minister_derivation_status: NOT_DERIVED
+sanctum_registration_status: NOT_REGISTERED

@@ -1,40 +1,137 @@
 schema_version: 1.0
 repository: izzy9118-blip/Xenophon
 repository_role: sanctum_minister_repository
+version: 1.70.0
+state: OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH
 minister:
   name: Xenophon
-  status: FOUNDING_IN_PROGRESS
-  registration_status: NOT_YET_REGISTERED_IN_SANCTUM
-version: 1.0.0
-state: SECONDARY_FOUNDING_OWNER_ADOPTED
-owner_review: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+  minister_id: xenophon
+  status: OWNER_AUTHORIZED_OPERATIONAL_MINISTER
+  registration_status: READY_FOR_SANCTUM_REGISTRATION
+predecessor_state:
+  version: 1.69.0
+  state: MINISTER_ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+  exact_head: af3e057fca8b8b78ad20f6b8359dd12f519128a8
+  frozen_predecessor:
+    version: 1.68.0
+    exact_head: fe7171b4caca347ebd1fdcb7f2d221efa3bf3324
+    validator: scripts/validate_repository_v1_68.py
+  preservation: All adverse review, targeted R1, and owner-adoption records remain immutable predecessor history.
+owner_reviews:
+  active_adapter_adoption: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
+  adapter_predecessor_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-in-depth-review.yaml
+  synthesis_adoption: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
+owner_directives:
+  greek_deferral: governance/owner-directives/2026-08-01-defer-greek-language-certification.yaml
+repository_authorization:
+  id: XENOPHON-AUTH-001
+  path: governance/repository-authorization.yaml
+  status: ACTIVE_OWNER_AUTHORIZATION
+  exact_interface_commit: 00292dce72870a79e21630b1014eedbcd7ddf327
+  authorization_record_commit: 73702c912c607e51cb45adbee7a230c2f118c03b
 governing_hub:
   repository: izzy9118-blip/Sanctum
-  briefing_standard: standards/briefing-standard.md
-  report_standard: standards/report-format.md
+  accepted_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
+  witness_identity_decision: docs/decisions/0004-sovereign-minister-witness-identifiers.md
+  ministerial_report_schema:
+    path: federation/contracts/ministerial-report.schema.v1.3.0.json
+    schema_id: urn:sanctum:federation:ministerial-report:1.3.0
+    sanctum_blob_sha: a935c9ce7ea3b12ffa38a9ba8fc7ecd38068fd1d
 source_policy:
-  primary_authority: Xenophon's surviving works in reviewed witnesses
-  secondary_authority: Later interpretation may guide questions but may not replace primary reconstruction
+  active_primary_source: XEN-SRC-PRI-001
+  admitted_primary_witness: XEN-WIT-PRI-001
   active_secondary_source: XEN-SRC-SEC-001
+  admitted_secondary_witness: XEN-WIT-SEC-001
+  current_textual_jurisdiction: Admitted H. G. Dakyns English Anabasis witness and owner-adopted English-witness reconstruction, read under the reviewed Strauss witness and controlled comparison.
+  greek_language_review:
+    status: DEFERRED_BY_OWNER
+    required_for_current_production: false
+    future_mode: OWNER_OPENED_FUTURE_PHASE
+    greek_dependent_claims: PROHIBITED
+active_records:
+  primary_cumulative_reconstruction:
+    id: XEN-PRIMARY-CUMULATIVE-001
+    status: OWNER_ADOPTED
+    path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+    source_unit_count: 51
+  secondary_reconstruction:
+    id: XEN-STUDY-SEC-001
+    status: OWNER_ADOPTED
+    unit_count: 8
+  controlled_comparison:
+    id: XEN-CONTROLLED-COMPARISON-001-R3
+    status: OWNER_ADOPTED
+    path: studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R3.yaml
+    unresolved_question_count: 19
+  controlled_synthesis:
+    id: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+    status: OWNER_ADOPTED_WITH_ENGLISH_WITNESS_JURISDICTION
+    path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+    unresolved_question_count: 19
 current_phase:
-  id: XEN-PHASE-001
-  name: Founding framework and Strauss witness registration
-  completion_status: SECONDARY_FOUNDING_OWNER_ADOPTED
-secondary_study:
-  id: XEN-STUDY-SEC-001
-  status: OWNER_ADOPTED_SECONDARY_RECONSTRUCTION
-  immutable_unit_records: true
-  adoption_record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
-  drafted_units:
-    - XEN-RU-001
-    - XEN-RU-002
-    - XEN-RU-003
-    - XEN-RU-004
-    - XEN-RU-005
-    - XEN-RU-006
-    - XEN-RU-007
-    - XEN-RU-008
+  id: XEN-PHASE-013
+  name: Owner-authorized operational Xenophon minister interface
+  completion_status: OPERATIONAL_AUTHORIZATION_ACTIVE_READY_FOR_SANCTUM_REGISTRATION
+minister_adapter:
+  id: XEN-MINISTER-ADAPTER-001-R1
+  predecessor_id: XEN-MINISTER-ADAPTER-001
+  status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
+  adapter_path: adapter.py
+  speech_mechanism_path: speech/speech-mechanism.yaml
+  request_fixture: tests/fixtures/xenophon-speech-request.yaml
+  inquiry_fixture: tests/fixtures/xenophon-adapter-inquiry-envelope.yaml
+  briefing_fixture: tests/fixtures/xenophon-adapter-common-briefing.yaml
+  behavioral_tests: tests/test_minister_adapter.py
+  federation_schema: federation/contracts/ministerial-report.schema.v1.3.0.json
+  governing_synthesis: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-R1-IN-DEPTH-REVIEW-001.yaml
+  owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
+  federation_dependency:
+    id: SANCTUM-XENOPHON-WITNESS-ID-COMPATIBILITY-001
+    status: RESOLVED_BY_SANCTUM_CONTRACT_1_3_0
+    sanctum_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
+  preserved_architecture:
+    registers:
+      - XEN-REGISTER-001
+      - XEN-REGISTER-002
+      - XEN-REGISTER-003
+      - XEN-REGISTER-004
+    guards:
+      - XEN-GUARD-001
+      - XEN-GUARD-002
+      - XEN-GUARD-003
+    evidence_layers:
+      - primary_showing
+      - strauss_explicit_argument
+      - controlled_synthetic_inference
+      - unresolved_question
+    all_19_unresolved_questions_preserved: true
+    committed_judgment_preserved: true
+  corrected_defects:
+    - LIVE_SCHEMA_NONCONFORMANCE
+    - WITNESS_IDENTIFIER_INCOMPATIBILITY
+    - FALSE_REPOSITORY_PIN
+    - PLACEHOLDER_UNVERIFIED_HASHES
+    - DERIVATION_AND_OPERATIONAL_AUTHORITY_COLLAPSE
+  derivation_authority:
+    ref: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
+    status: OWNER_ADOPTED_SYNTHESIS
+  adapter_operational_authority:
+    ref: governance/repository-authorization.yaml
+    owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
+    status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
+  owner_reviewed: true
+  owner_adopted: true
+  operational_authorization: true
+  sanctum_registration_authorized: true
+  assembly_dispatch_authorized: false
 next_required_action:
-  id: XEN-ACTION-002
-  description: Admit and review a primary Xenophontic witness before primary reconstruction, deed extraction, speech-register derivation, or adapter construction
-artificial_intelligence_self_certification_prohibited: true
+  id: XENOPHON-SANCTUM-REGISTRATION-001
+  description: Register an exact validated Xenophon commit in Sanctum, then run an end-to-end universal-dispatch proving inquiry.
+governance_gates:
+  semantic_completion: INCOMPLETE
+  final_teaching_authorized: false
+  greek_certification_completed: false
+  artificial_intelligence_self_certification_prohibited: true
+  sanctum_registration_present: false
+  assembly_dispatch_authorized: false

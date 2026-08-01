@@ -1,0 +1,122 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-039
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis VI.2
+  pdf_pages_one_based: 122-124
+  opening_anchor: "BOOK VI, II: The next day they weighed anchor and set sail from Harmene..."
+  closing_anchor: "...disembarking on the confines of Thrace and the Heracleotid, pushed forward through the heart of the country."
+jurisdiction: "Independent primary reconstruction from the admitted Dakyns English translation. Translator wording is not unmediated Greek evidence; no deed corpus, speech register, guard, adapter, ministerial capacity, Sanctum registration, final certification, or AI certification is authorized."
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: "Project Gutenberg 1170, searchable 168-page PDF"
+  chapter_boundary_control: "VI.2 begins beneath heading II on PDF page 122 and ends immediately before heading III on page 124. VI.3 begins beneath heading III on page 124 and continues until heading IV on page 127; the next unit therefore covers pages 124-127. Notes on Jason's beach, the Argo, Heraclea, Cerberus, Calpe Haven, force totals, and the manuscript summary remain paratext."
+  source_boundary: "Separate voyage, geographical and mythic report, editorial paratext, gifts, council speeches, embassy, defensive response, factional claims, narrator qualification, secession, motives, sacrifice, force counts, and routes."
+narrative_person_and_authorial_attribution:
+  narrative_mode: "Third-person narration with attributed speeches, marked reports, narrator qualification, and reported interior motives."
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  interior_deliberation_report_present: true
+  observation: "First-person forms belong to attributed speeches. The narrator separately reports Xenophon's preference and wish, Neon's motive, Cheirisophus's discouragement, and the sacrificial indication."
+  uncertainty: "The bases for reported motives, the status of the route interpolation, narrator-author identity, and the objective force of the sacrificial sign remain unresolved."
+speakers_audiences_and_occasions:
+  - {id: SAO-001, locator: "VI.2 p.122", speaker: "Lycon the Achaean", audience: "assembled soldiers", occasion: "provisioning council", content: "Proposes demanding at least three thousand cyzicenes."}
+  - {id: SAO-002, locator: "VI.2 p.122", speaker: "unnamed soldier", audience: "assembled soldiers", occasion: "same council", content: "Raises the demand to not less than ten thousand."}
+  - {id: SAO-003, locator: "VI.2 p.122", speaker: "Cheirisophus and Xenophon", audience: "assembled soldiers", occasion: "ambassador nomination", content: "Refuse to compel a friendly Hellenic city to give involuntarily."}
+  - {id: SAO-004, locator: "VI.2 pp.122-123", speaker: "Lycon, Callimachus, and Agasias", audience: Heracleots, occasion: embassy, content: "Announce the demand; Lycon is reported to threaten consequences."}
+  - {id: SAO-005, locator: "VI.2 p.123", speaker: Heracleots, audience: ambassadors, occasion: response, content: "Say they will deliberate, then secure the city."}
+  - {id: SAO-006, locator: "VI.2 p.123", speaker: "Arcadian and Achaean faction leaders", audience: "Arcadian and Achaean soldiers", occasion: secession, content: "Claim toil, numerical strength, and entitlement to independent command."}
+  - {id: SAO-007, locator: "VI.2 p.123", speaker: Neon, audience: "Cheirisophus's contingent", occasion: "route decision", content: "Urges separate action in expectation of Spartan warships at Calpe Haven."}
+speeches_deeds_and_outcomes:
+  - {id: SDO-001, actor: army, deed: "Sails from Harmene and arrives at Heraclea.", outcome: "Receives substantial hospitality gifts."}
+  - {id: SDO-002, actor: soldiers, deed: "Debate sea or land and demand money.", outcome: "A voluntary gift becomes a coercive proposal."}
+  - {id: SDO-003, actor: "Cheirisophus and Xenophon", deed: "Refuse the coercive embassy.", outcome: "Three other envoys are sent."}
+  - {id: SDO-004, actor: Heracleots, deed: "Secure goods, market, gates, and walls.", outcome: "Hospitality gives way to defensive separation."}
+  - {id: SDO-005, actor: "Callimachus, Lycon, Arcadians, and Achaeans", deed: "Organize an independent command.", outcome: "Ten generals rule their majority faction."}
+  - {id: SDO-006, actor: army, deed: "Allows sole command to dissolve.", outcome: "Cheirisophus's authority ends within less than a week."}
+  - {id: SDO-007, actor: Xenophon, deed: "Considers common travel and then sailing home.", outcome: "His exit remains open until sacrifice."}
+  - {id: SDO-008, actor: Xenophon, deed: "Sacrifices to Heracles the Leader.", outcome: "He remains with the soldiers faithful to him."}
+  - {id: SDO-009, actor: "three army divisions", deed: "Separate by faction, Spartan command, and attachment to Xenophon.", outcome: "Their unequal forces become explicit."}
+  - {id: SDO-010, actor: "the three divisions", deed: "Depart by different routes toward Calpe.", outcome: "VI.3 will test their independent courses."}
+sequence_repetition_omission_and_contradiction:
+  sequence: ["departure from Harmene", "coastal itinerary", "Heraclea gifts", "council", "demand", "refusal", "embassy", "defensive closure", "faction", "secession", "collapse of sole command", "sacrifice", "three divisions", "divergent routes"]
+  repetitions: ["Provisioning again tests relations with a Greek city.", "Assembly desire and general restraint diverge.", "Sacrifice governs Xenophon's personal command decision.", "Constitutional form changes under material pressure."]
+  omissions: ["No Heracleot explanation of the defensive measures is supplied.", "No legal basis for the demand is stated.", "No complete accounting of toil and spoils is supplied.", "No sacrificial details beyond the result are supplied.", "No outcome adjudicates the three routes within VI.2."]
+  tensions: ["Hospitality is answered by demand.", "Numerical majority coexists with prior common command.", "Independent rule is paired with desire for booty.", "Xenophon wishes to leave yet accepts responsibility.", "The army recently sought one commander but now divides into three."]
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis VI.2; PDF pp.122-124", evidence_type: BOOK_SIX_VI2_BOUNDARY_OBSERVATION, observation: "VI.2 begins beneath heading II on page 122 and ends before heading III on page 124."}
+  - {id: OBS-002, locator: "Anabasis VI.2", evidence_type: HARMENE_DEPARTURE_TWO_DAY_VOYAGE_OBSERVATION, observation: "A fair wind permits a two-day coastal voyage from Harmene."}
+  - {id: OBS-003, locator: "Anabasis VI.2", evidence_type: JASON_ARGO_RIVER_ROUTE_OBSERVATION, observation: "The route names Jason's beach, the Argo, and four rivers before Heraclea."}
+  - {id: OBS-004, locator: "Anabasis VI.2", evidence_type: TOPOGRAPHICAL_PARATEXT_OBSERVATION, observation: "Dakyns notes a topographical problem and possible recapitulatory insertion."}
+  - {id: OBS-005, locator: "Anabasis VI.2", evidence_type: HERACLEA_MEGARIAN_COLONY_OBSERVATION, observation: "Heraclea is a Hellenic Megarian colony in Mariandynian territory."}
+  - {id: OBS-006, locator: "Anabasis VI.2", evidence_type: ACHERUSIAN_CHERSONESE_CERBERUS_OBSERVATION, observation: "Heracles is said to have descended at the Acherusian Chersonese for Cerberus."}
+  - {id: OBS-007, locator: "Anabasis VI.2", evidence_type: HERACLEOT_HOSPITALITY_GIFTS_OBSERVATION, observation: "The Heracleots give three thousand measures of barley, two thousand jars of wine, twenty oxen, and one hundred sheep."}
+  - {id: OBS-008, locator: "Anabasis VI.2", evidence_type: LYCUS_RIVER_OBSERVATION, observation: "The Lycus is reported about two hundred feet broad."}
+  - {id: OBS-009, locator: "Anabasis VI.2", evidence_type: SEA_OR_LAND_COUNCIL_OBSERVATION, observation: "The soldiers debate leaving the Pontus by sea or land."}
+  - {id: OBS-010, locator: "Anabasis VI.2", evidence_type: LYCON_PROVISION_SHORTFALL_OBSERVATION, observation: "Lycon says the gifts will not supply three days."}
+  - {id: OBS-011, locator: "Anabasis VI.2", evidence_type: THREE_THOUSAND_CYZICENE_DEMAND_OBSERVATION, observation: "Lycon proposes at least three thousand cyzicenes."}
+  - {id: OBS-012, locator: "Anabasis VI.2", evidence_type: TEN_THOUSAND_COUNTERDEMAND_OBSERVATION, observation: "Another speaker proposes not less than ten thousand."}
+  - {id: OBS-013, locator: "Anabasis VI.2", evidence_type: FRIENDLY_CITY_NONCOMPULSION_OBSERVATION, observation: "Cheirisophus and Xenophon will not compel a friendly Hellenic city to give involuntarily."}
+  - {id: OBS-014, locator: "Anabasis VI.2", evidence_type: LYCON_CALLIMACHUS_AGASIAS_EMBASSY_OBSERVATION, observation: "Lycon, Callimachus, and Agasias carry the demand."}
+  - {id: OBS-015, locator: "Anabasis VI.2", evidence_type: LYCON_THREAT_REPORT_OBSERVATION, observation: "It is reported that Lycon threatened consequences."}
+  - {id: OBS-016, locator: "Anabasis VI.2", evidence_type: HERACLEOT_DEFENSIVE_CLOSURE_OBSERVATION, observation: "The Heracleots move goods, dismantle the external market, close the gates, and arm the walls."}
+  - {id: OBS-017, locator: "Anabasis VI.2", evidence_type: GENERALS_BLAMED_FOR_FAILURE_OBSERVATION, observation: "The demand's authors blame the generals after the closure."}
+  - {id: OBS-018, locator: "Anabasis VI.2", evidence_type: ARCADIAN_ACHAEAN_FACTION_OBSERVATION, observation: "Arcadians and Achaeans form a faction under Callimachus and Lycon."}
+  - {id: OBS-019, locator: "Anabasis VI.2", evidence_type: CONTRIBUTION_AND_SPOILS_COMPLAINT_OBSERVATION, observation: "The faction contrasts Peloponnesian toil with others' rule and spoils."}
+  - {id: OBS-020, locator: "Anabasis VI.2", evidence_type: NARRATOR_PARTIAL_NUMERICAL_CONFIRMATION_OBSERVATION, observation: "The narrator confirms Arcadians and Achaeans are more than half the army, not their whole merit claim."}
+  - {id: OBS-021, locator: "Anabasis VI.2", evidence_type: TEN_GENERAL_MAJORITY_REGIME_OBSERVATION, observation: "The seceders choose ten generals governed by majority decisions."}
+  - {id: OBS-022, locator: "Anabasis VI.2", evidence_type: CHEIRISOPHUS_MONARCHY_COLLAPSE_OBSERVATION, observation: "Cheirisophus's absolute authority ends within less than a week."}
+  - {id: OBS-023, locator: "Anabasis VI.2", evidence_type: XENOPHON_SAFETY_UNITY_PREFERENCE_OBSERVATION, observation: "Xenophon initially thinks common travel safer."}
+  - {id: OBS-024, locator: "Anabasis VI.2", evidence_type: NEON_EXCLUSIVE_PASSAGE_MOTIVE_OBSERVATION, observation: "Neon urges separation; the narrator gives him an exclusive passage-home motive."}
+  - {id: OBS-025, locator: "Anabasis VI.2", evidence_type: CHEIRISOPHUS_DISHEARTENED_DELEGATION_OBSERVATION, observation: "Cheirisophus is disheartened and leaves Neon free to act."}
+  - {id: OBS-026, locator: "Anabasis VI.2", evidence_type: HERACLES_LEADER_SACRIFICE_OBSERVATION, observation: "Xenophon sacrifices to Heracles the Leader and remains."}
+  - {id: OBS-027, locator: "Anabasis VI.2", evidence_type: THREE_DIVISION_FORCE_COUNT_OBSERVATION, observation: "The army separates into three divisions; the largest has over four thousand five hundred hoplites."}
+  - {id: OBS-028, locator: "Anabasis VI.2", evidence_type: ARCADIAN_BOOTY_VOYAGE_OBSERVATION, observation: "The Arcadian division sails first to Calpe Haven seeking the largest possible haul."}
+  - {id: OBS-029, locator: "Anabasis VI.2", evidence_type: DIVERGENT_ROUTES_OBSERVATION, observation: "Cheirisophus follows the coast; Xenophon advances through the interior."}
+  - {id: OBS-030, locator: "Anabasis VI.2", evidence_type: COMMENTATOR_SUMMARY_VARIANT_OBSERVATION, observation: "Dakyns judges a manuscript recapitulatory passage probably a commentator's note."}
+provisional_findings:
+  - {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: "Hospitality and compelled exaction remain distinct."}
+  - {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: "Scarcity supplies a grievance but not obvious jurisdiction over Heraclea."}
+  - {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: "Heraclea answers the demand chiefly through defensive action."}
+  - {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: "Secession joins a numerical grievance to appetite for gain."}
+  - {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: "The narrator confirms the faction's numbers but not its full merit claim."}
+  - {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: "Sole command collapses when it restrains immediate appetite; the result does not alone refute unity."}
+  - {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: "Neon's strategic advice is joined to a reported exclusive motive."}
+  - {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: "Sacrifice restrains Xenophon's wish to leave without disclosing the sign's mechanics."}
+  - {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: "The divisions embody majority, Spartan authority, and personal attachment."}
+  - {id: FIND-010, evidence_type: PROVISIONAL_INFERENCE, finding: "VI.2 ends before outcomes adjudicate the three commands."}
+standing_unresolved_questions:
+  - {id: Q-001, question: "Is the Jason-and-rivers passage later material?"}
+  - {id: Q-002, question: "Were the Heracleot gifts adequate hospitality?"}
+  - {id: Q-003, question: "Did the army possess a lawful claim beyond voluntary gifts?"}
+  - {id: Q-004, question: "What exactly did Lycon threaten?"}
+  - {id: Q-005, question: "Why did Cheirisophus and Xenophon refuse?"}
+  - {id: Q-006, question: "Did defensive closure prevent or postpone violence?"}
+  - {id: Q-007, question: "Was the faction's toil-and-spoils complaint accurate?"}
+  - {id: Q-008, question: "Can numerical majority authorize secession?"}
+  - {id: Q-009, question: "Do ten generals remedy plural-command defects?"}
+  - {id: Q-010, question: "Why did Cheirisophus lose authority?"}
+  - {id: Q-011, question: "What grounds the narrator's report of Neon's motive?"}
+  - {id: Q-012, question: "Did Xenophon genuinely intend to sail home?"}
+  - {id: Q-013, question: "How was Heracles' direction read?"}
+  - {id: Q-014, question: "Whom did the divine direction bind?"}
+  - {id: Q-015, question: "How important was Xenophon's cavalry?"}
+  - {id: Q-016, question: "How should VI.3 alter judgment of the division?"}
+downstream_textual_checks:
+  - {id: CHK-001, check: "Verify opening and closing anchors against page images."}
+  - {id: CHK-002, check: "Check Greek terms behind friendly, compel, and voluntary gift."}
+  - {id: CHK-003, check: "Check the cyzicene amounts and manuscript support."}
+  - {id: CHK-004, check: "Check report markers concerning Lycon."}
+  - {id: CHK-005, check: "Check Archaeans/Achaeans witness spelling."}
+  - {id: CHK-006, check: "Check the narrator's numerical qualification."}
+  - {id: CHK-007, check: "Check vocabulary behind absolute authority and majority."}
+  - {id: CHK-008, check: "Check the phrase less than a week."}
+  - {id: CHK-009, check: "Check the title Heracles the Leader."}
+  - {id: CHK-010, check: "Check force totals and the arithmetic note."}
+  - {id: CHK-011, check: "Check the manuscript-summary variant."}
+  - {id: CHK-012, check: "Compare with VI.3 only after its independent unit."}
+secondary_comparison_status: DEFERRED

@@ -1,0 +1,34 @@
+schema_version: 1.0
+authorization_id: XENOPHON-AUTH-001
+status: ACTIVE_OWNER_AUTHORIZATION
+repository: izzy9118-blip/Xenophon
+minister_id: xenophon
+title: Xenophon Minister
+owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
+owner_review_id: XEN-OWNER-REVIEW-012
+authorized_interface:
+  adapter: adapter.py
+  adapter_id: XEN-MINISTER-ADAPTER-001-R1
+  speech_mechanism: speech/speech-mechanism.yaml
+  manifest: manifest.yaml
+  manifest_version: 1.70.0
+  exact_interface_commit: 00292dce72870a79e21630b1014eedbcd7ddf327
+scope:
+  runtime_readiness: OWNER_AUTHORIZED_OPERATIONAL_USE_WITH_EVIDENTIARY_LIMITS
+  semantic_completion: INCOMPLETE
+  current_textual_jurisdiction: CONTROLLED_ENGLISH_WITNESS_PRIMARY_SECONDARY_SYNTHESIS
+  greek_language_review: DEFERRED_BY_OWNER
+  greek_dependent_claims: PROHIBITED
+  unresolved_question_count: 19
+  final_teaching_authorized: false
+federation:
+  sanctum_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
+  report_schema: federation/contracts/ministerial-report.schema.v1.3.0.json
+  registration_status: READY_FOR_EXACT_COMMIT_PIN
+  assembly_dispatch_status: BLOCKED_UNTIL_SANCTUM_REGISTRATION
+safeguards:
+  sovereign_witness_identifiers_preserved: true
+  derivation_and_operational_authority_distinct: true
+  report_owner_certification_remains_separate: true
+  presidential_synthesis_remains_separate: true
+  artificial_intelligence_self_certification_prohibited: true

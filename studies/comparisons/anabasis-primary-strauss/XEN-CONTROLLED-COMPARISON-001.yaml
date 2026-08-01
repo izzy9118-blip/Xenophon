@@ -1,0 +1,310 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+title: Controlled comparison of the owner-adopted primary Anabasis reconstruction with Strauss's Xenophon's Anabasis
+jurisdiction: 'Compares two separately owner-adopted reconstructions without merging their evidence streams: the
+  primary-only cumulative reconstruction derived from the admitted H. G. Dakyns English translation witness, and
+  the secondary reconstruction of Leo Strauss''s essay. Agreement is not certification; divergence is not error;
+  silence is preserved; unresolved questions remain open. No statement by Strauss is attributed to Xenophon without
+  primary support, and no primary pattern is retroactively governed by Strauss.'
+inputs:
+  primary_stream:
+    record_id: XEN-PRIMARY-CUMULATIVE-001
+    record: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+    adoption_record: governance/owner-reviews/2026-07-31-primary-cumulative-reconstruction-review.yaml
+    source_id: XEN-SRC-PRI-001
+    witness_id: XEN-WIT-PRI-001
+    chapter_coverage: Anabasis I.1 through VII.8
+    source_unit_count: 51
+    comparison_prompt_ids:
+    - CP-001
+    - CP-002
+    - CP-003
+    - CP-004
+    - CP-005
+    - CP-006
+    - CP-007
+    - CP-008
+    - CP-009
+    - CP-010
+    - CP-011
+    - CP-012
+  secondary_stream:
+    study_id: XEN-STUDY-SEC-001
+    source_id: XEN-SRC-SEC-001
+    witness_id: XEN-WIT-SEC-001
+    adoption_record: governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
+    essay_title: Xenophon's Anabasis
+    author: Leo Strauss
+    printed_pages: 105-136
+    pdf_pages_one_based: 109-140
+    secondary_units:
+    - XEN-RU-001
+    - XEN-RU-002
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+classification_vocabulary:
+  AGREEMENT: The independently reconstructed streams identify substantially the same textual or structural pattern
+    within their distinct jurisdictions.
+  QUALIFIED_AGREEMENT: The primary evidence supports a substantial part of Strauss's claim but not its full scope,
+    hierarchy, terminology, or explanatory conclusion.
+  DIVERGENCE: The streams select materially different governing explanations or emphases; neither is silently subordinated.
+  PRIMARY_SILENCE: Strauss advances a claim that the admitted primary reconstruction cannot presently confirm or
+    deny.
+  SECONDARY_SILENCE: The primary cumulative reconstruction identifies a pattern that Strauss's adopted essay reconstruction
+    does not make governing or explicit.
+  UNRESOLVED_RELATION: The streams address the same evidentiary field but available evidence does not establish
+    agreement, contradiction, or hierarchy.
+methodological_controls:
+- Primary and secondary claims are stored in separate fields.
+- Every comparison entry identifies both primary and secondary anchors.
+- Agreement does not convert a secondary interpretation into primary evidence.
+- Divergence is preserved rather than reconciled by fiat.
+- Primary silence and secondary silence are not treated as refutation.
+- No Greek lexical, philological, manuscript, or authorship claim is certified from the Dakyns translation.
+- No external historical source is used to certify narrated events or speeches.
+- No final teaching, deed corpus, speech register, operational capacity, minister adapter, Sanctum registration,
+  or Assembly authority is derived.
+entry_sets:
+- classification: AGREEMENT
+  record: studies/comparisons/anabasis-primary-strauss/entries/agreement.yaml
+  entry_count: 11
+- classification: QUALIFIED_AGREEMENT
+  record: studies/comparisons/anabasis-primary-strauss/entries/qualified-agreement.yaml
+  entry_count: 9
+- classification: DIVERGENCE
+  record: studies/comparisons/anabasis-primary-strauss/entries/divergence.yaml
+  entry_count: 2
+- classification: PRIMARY_SILENCE
+  record: studies/comparisons/anabasis-primary-strauss/entries/primary-silence.yaml
+  entry_count: 4
+- classification: SECONDARY_SILENCE
+  record: studies/comparisons/anabasis-primary-strauss/entries/secondary-silence.yaml
+  entry_count: 2
+- classification: UNRESOLVED_RELATION
+  record: studies/comparisons/anabasis-primary-strauss/entries/unresolved-relation.yaml
+  entry_count: 3
+cross_cutting_findings:
+- id: CCF-001
+  finding: 'The strongest agreement concerns structure rather than doctrine: the work exceeds Cyrus''s expedition,
+    Xenophon rises into practical authority, and the return force becomes a political problem after Cyrus''s death.'
+  entry_ids:
+  - CMP-001
+  - CMP-005
+  - CMP-008
+  - CMP-015
+  status: PROVISIONAL_COMPARATIVE_FINDING
+- id: CCF-002
+  finding: Strauss's account is most strongly supported where it reads speech with audience, deed, failure, correction,
+    and institutional consequence.
+  entry_ids:
+  - CMP-009
+  - CMP-010
+  - CMP-025
+  status: PROVISIONAL_COMPARATIVE_FINDING
+- id: CCF-003
+  finding: Both streams preserve practical success and justice as distinct questions, especially in coercion, punishment,
+    acquisition, and self-defense.
+  entry_ids:
+  - CMP-014
+  - CMP-019
+  - CMP-025
+  status: PROVISIONAL_COMPARATIVE_FINDING
+- id: CCF-004
+  finding: Both streams treat piety as intertwined with practical judgment and deny that dreams, sacrifices, or
+    signs interpret themselves.
+  entry_ids:
+  - CMP-007
+  - CMP-011
+  - CMP-012
+  status: PROVISIONAL_COMPARATIVE_FINDING
+- id: CCF-005
+  finding: Strauss contributes a Socratic and cross-work question architecture that the primary Anabasis reconstruction
+    cannot independently test.
+  entry_ids:
+  - CMP-006
+  - CMP-019
+  - CMP-031
+  status: SOURCE_JURISDICTION_FINDING
+- id: CCF-006
+  finding: The primary cumulative reconstruction contributes a work-wide account of material governance and institutional
+    transfer that Strauss does not make independently governing.
+  entry_ids:
+  - CMP-023
+  - CMP-030
+  status: SOURCE_JURISDICTION_FINDING
+- id: CCF-007
+  finding: The primary evidence supports Strauss's attention to founding, monarchy, and fatherland as genuine problems
+    but not the full hierarchy by which he orders them.
+  entry_ids:
+  - CMP-016
+  - CMP-018
+  - CMP-028
+  status: PROVISIONAL_COMPARATIVE_FINDING
+- id: CCF-008
+  finding: The army is best preserved in the comparison as both military force and intermittent political community;
+    neither city nor monarchy alone exhausts its changing form.
+  entry_ids:
+  - CMP-015
+  - CMP-016
+  - CMP-017
+  status: PROVISIONAL_COMPARATIVE_FINDING
+- id: CCF-009
+  finding: The comparison strengthens the problem of narrator and self-presentation but leaves the Themistogenes
+    hypothesis, pseudonym, and Greek narrative devices outside present certification.
+  entry_ids:
+  - CMP-002
+  - CMP-003
+  - CMP-013
+  status: DOCUMENTED_UNCERTAINTY
+- id: CCF-010
+  finding: 'The comparison does not yield one uncontested account of justice: concrete disputes are primary evidence,
+    while the manly-Socratic hierarchy remains a secondary explanatory proposal.'
+  entry_ids:
+  - CMP-014
+  - CMP-019
+  status: DOCUMENTED_DIVERGENCE
+- id: CCF-011
+  finding: 'The comparison does not yield one uncontested ending: institutional transfer and incomplete homecoming
+    stand beside Strauss''s fatherland, piety, and Socratic closure.'
+  entry_ids:
+  - CMP-029
+  - CMP-030
+  status: DOCUMENTED_DIVERGENCE
+- id: CCF-012
+  finding: Agreement between the streams sharpens questions and raises confidence in recurring patterns but does
+    not certify authorial intention, Greek wording, divine causation, or a final teaching.
+  entry_ids:
+  - CMP-001
+  - CMP-004
+  - CMP-005
+  - CMP-007
+  - CMP-008
+  - CMP-009
+  - CMP-010
+  - CMP-011
+  - CMP-012
+  - CMP-014
+  - CMP-015
+  - CMP-016
+  - CMP-017
+  - CMP-018
+  - CMP-020
+  - CMP-021
+  - CMP-022
+  - CMP-024
+  - CMP-025
+  - CMP-027
+  status: GOVERNING_LIMIT
+unresolved_comparison_questions:
+- id: UCQ-001
+  question: Does the title tradition support Strauss's account of a deliberate displacement from Cyrus's ascent
+    to Xenophon's ascent?
+  entry_ids:
+  - CMP-001
+- id: UCQ-002
+  question: What is the evidentiary status of Themistogenes and the narrating first person?
+  entry_ids:
+  - CMP-002
+- id: UCQ-003
+  question: Do Greek occurrences of legetai and virtue-list omissions sustain Strauss's proposed devices?
+  entry_ids:
+  - CMP-003
+  - CMP-004
+- id: UCQ-004
+  question: How should shame, loyalty, ambition, necessity, and pay be weighted after Cyrus's purpose becomes clear?
+  entry_ids:
+  - CMP-005
+- id: UCQ-005
+  question: Can the Socrates-Xenophon contrast be tested without independent reconstruction of the cited Socratic
+    and cross-work passages?
+  entry_ids:
+  - CMP-006
+  - CMP-019
+- id: UCQ-006
+  question: Is the primary-decision versus secondary-divination distinction consistent across the Anabasis and Xenophon's
+    other works?
+  entry_ids:
+  - CMP-007
+- id: UCQ-007
+  question: Does Xenophon's ascent describe authorial purpose, character development, practical office, or a combination?
+  entry_ids:
+  - CMP-001
+  - CMP-008
+- id: UCQ-008
+  question: What do numerical and centrality patterns establish once independently counted in Greek?
+  entry_ids:
+  - CMP-013
+- id: UCQ-009
+  question: What standard distinguishes necessary coercion from injustice in the episodes both streams preserve?
+  entry_ids:
+  - CMP-014
+  - CMP-019
+- id: UCQ-010
+  question: Is the army's city-like character merely functional or a deliberate regime problem?
+  entry_ids:
+  - CMP-015
+  - CMP-016
+- id: UCQ-011
+  question: How should Greek freedom be related to obedience under Spartan hegemony and internal military command?
+  entry_ids:
+  - CMP-017
+  - CMP-028
+- id: UCQ-012
+  question: Was the founding proposal a genuine intended foundation, a prudent alternative, a test, or an accusation
+    amplified by faction?
+  entry_ids:
+  - CMP-018
+  - CMP-026
+- id: UCQ-013
+  question: Can Strauss's two forms of justice be demonstrated from the Anabasis without importing Socratic and
+    Cyropaedia standards?
+  entry_ids:
+  - CMP-019
+- id: UCQ-014
+  question: What is the complete relation among ambition, honor, wealth, poverty, exile, and public benefit?
+  entry_ids:
+  - CMP-026
+  - CMP-028
+- id: UCQ-015
+  question: 'Which ending should govern interpretation: Thibron''s institutional incorporation, Greece over barbarians,
+    unresolved fatherland, piety, or the Socratic question?'
+  entry_ids:
+  - CMP-029
+  - CMP-030
+- id: UCQ-016
+  question: What account of law and nature can be sustained after Greek lexical and cross-work review?
+  entry_ids:
+  - CMP-031
+comparison_limits:
+- The primary stream is an English translation reconstruction and not unmediated Greek evidence.
+- The secondary stream is Strauss's interpretation and not a substitute for Xenophon's text.
+- The comparison does not independently certify historical events, speeches, numbers, institutions, omens, or divine
+  action.
+- Themistogenes, title history, Greek lexical devices, numerical patterns, and cross-work analogies remain unverified.
+- Agreement raises comparative confidence only within the declared source jurisdictions.
+- Divergence and silence remain preserved for owner review.
+- No controlled interpretive synthesis beyond this comparison is owner-adopted by this record.
+- No minister adapter, operational capacity, Sanctum registration, or Assembly dispatch is authorized.
+- Artificial-intelligence self-certification remains prohibited.
+next_stage_gate:
+  status: OWNER_REVIEW_REQUIRED
+  next_action_id: XEN-CONTROLLED-COMPARISON-OWNER-REVIEW-001
+  rule: Owner review of this comparison must precede any adopted interpretive synthesis, minister derivation, or
+    Sanctum registration.
+counts:
+  comparison_entries: 31
+  agreement: 11
+  qualified_agreement: 9
+  divergence: 2
+  primary_silence: 4
+  secondary_silence: 2
+  unresolved_relation: 3
+  cross_cutting_findings: 12
+  unresolved_comparison_questions: 16
+  primary_comparison_prompts_covered: 12
+  secondary_units_covered: 8

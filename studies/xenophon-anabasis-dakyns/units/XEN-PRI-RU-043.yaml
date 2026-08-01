@@ -1,0 +1,316 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-043
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis VI.6
+  pdf_pages_one_based: 132-137
+  opening_anchor: 'BOOK VI, VI: After this the enemy confined themselves to their own concerns, and removed their households and property as far away as possible.'
+  closing_anchor: Here they halted seven days while they disposed of their booty by sale.
+jurisdiction: Independent reconstruction from the admitted Dakyns translation. Translator wording is not unmediated Greek evidence. Narrator, speaker, report, deed, outcome, paratext, and inference remain distinct. Secondary comparison, Greek philology, certification, minister derivation, and Sanctum registration remain unauthorized.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg 1170 searchable 168-page PDF
+  chapter_boundary_control: Heading VI begins VI.6 on PDF page 132; BOOK VII begins on page 137. This unit covers pages 132-137 and stops before BOOK VII. Next unit covers pages 137-143.
+  source_boundary: Enemy withdrawal and provisioning; founding rumor; Cleander; public booty dispute; Dexippus and Agasias; Spartan interdict threat; submission, hearing, reconciliation, adverse sacrifices, Bithynian march, Chrysopolis.
+narrative_person_and_authorial_attribution:
+  narrative_mode: Third-person narration with attributed speeches, reported rumor and motive, institutional decisions, and narrated outcomes.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  interior_deliberation_report_present: true
+  observation: First-person forms occur in attributed speeches; Xenophon remains a third-person character.
+  uncertainty: Rumor source, motives, justice of penalties, Spartan legitimacy, sacrificial meaning, and long-term consequences remain unresolved.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  speaker: pillagers
+  audience: Dexippus
+  occasion: private sheep dispute
+  content: Offer a share if he preserves the rest for them.
+- id: SAO-002
+  speaker: Dexippus
+  audience: Cleander
+  occasion: after seizing a protester
+  content: Calls the dispute attempted robbery.
+- id: SAO-003
+  speaker: Cleander
+  audience: army
+  occasion: after the stoning
+  content: Threatens Hellenic interdict unless rescuer and instigator are surrendered.
+- id: SAO-004
+  speaker: Xenophon
+  audience: assembly
+  occasion: Cleander's demand
+  content: Cites Spartan power, offers himself, and counsels surrender.
+- id: SAO-005
+  speaker: Agasias
+  audience: assembly
+  occasion: after Xenophon
+  content: Denies Xenophon's order, accepts responsibility, and volunteers to surrender.
+- id: SAO-006
+  speaker: generals
+  audience: Cleander
+  occasion: formal delegation
+  content: Submit themselves and any named offender to judgment.
+- id: SAO-007
+  speaker: Agasias
+  audience: Cleander
+  occasion: defense
+  content: Admits the rescue and recalls Dexippus's earlier galley flight.
+- id: SAO-008
+  speaker: Cleander
+  audience: delegation
+  occasion: judicial response
+  content: Even a scamp deserves a fair trial.
+- id: SAO-009
+  speaker: rescued soldier
+  audience: Cleander
+  occasion: defense
+  content: Invokes the ordinance making expedition booty public.
+- id: SAO-010
+  speaker: Xenophon and Cleander
+  audience: delegation
+  occasion: intercession
+  content: Xenophon seeks release and offers command; Cleander releases the men and proposes to lead if the gods permit.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  deed: Enemy households withdraw; Greeks provision daily.
+  outcome: Regular acquisition becomes possible at Calpe.
+- id: SDO-002
+  deed: Markets and envoys respond to a city rumor; Xenophon presents envoys to the army.
+  outcome: Rumor has effects without constitutional founding.
+- id: SDO-003
+  deed: Cleander arrives with two warships but no transports.
+  outcome: Spartan authority appears without expected transport capacity.
+- id: SDO-004
+  deed: Dexippus seizes a protester; Agasias rescues him; soldiers throw stones.
+  outcome: A booty dispute becomes a jurisdictional crisis.
+- id: SDO-005
+  deed: Cleander threatens interdict and demands surrender.
+  outcome: Local disorder endangers access to the Greek world.
+- id: SDO-006
+  deed: Xenophon counsels submission; Agasias surrenders; the army sends a delegation.
+  outcome: External judgment replaces collective defiance.
+- id: SDO-007
+  deed: The accused explain the public-booty rule and Dexippus's conduct.
+  outcome: Character and procedural entitlement are distinguished.
+- id: SDO-008
+  deed: Xenophon intercedes and offers Cleander command.
+  outcome: Cleander releases the men and reconciles with Xenophon.
+- id: SDO-009
+  deed: Three days of adverse sacrifices block Cleander's command; he returns the cattle gift.
+  outcome: Acknowledged authority does not become operational leadership.
+- id: SDO-010
+  deed: The army divides property, raids in Bithynia, reaches Chrysopolis, and sells booty.
+  outcome: Book VI ends in acquisition and incomplete return.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - enemy withdrawal
+  - daily provisioning
+  - public/private booty rule
+  - city rumor and markets
+  - Cleander arrives
+  - Dexippus dispute
+  - Agasias rescue and stoning
+  - interdict threat
+  - submission counsel
+  - Agasias surrender
+  - hearing
+  - release and command offer
+  - three adverse days
+  - Cleander departs
+  - Bithynian raid
+  - Chrysopolis sale
+  repetitions:
+  - Founding rumor acts without founding.
+  - Booty tests collective authority.
+  - Xenophon submits interest to political necessity.
+  - Sacrifice restrains command.
+  - Return remains joined to acquisition.
+  omissions:
+  - Rumor source unstated.
+  - Envoy terms unstated.
+  - Stone thrower unnamed.
+  - No completed trial or sentence.
+  - No enemy account of withdrawal.
+  tensions:
+  - Rumored city versus no city.
+  - Bad character versus fair trial.
+  - Spartan power versus legitimacy.
+  - Submission versus freedom.
+  - Homeward march versus slave-and-cattle raid.
+documentary_observations:
+- id: OBS-001
+  evidence_type: BOOK_SIX_VI6_BOUNDARY_OBSERVATION
+  observation: VI.6 runs from heading VI on PDF page 132 to BOOK VII on page 137.
+- id: OBS-002
+  evidence_type: ENEMY_HOUSEHOLD_WITHDRAWAL_OBSERVATION
+  observation: The enemy removes households and property as far away as possible.
+- id: OBS-003
+  evidence_type: DAILY_FEARLESS_PROVISIONING_OBSERVATION
+  observation: The Greeks provision themselves daily without fear.
+- id: OBS-004
+  evidence_type: OLIVE_ONLY_ABSENCE_OBSERVATION
+  observation: The country abounds in good things except olives.
+- id: OBS-005
+  evidence_type: PUBLIC_PRIVATE_BOOTY_RULE_OBSERVATION
+  observation: Property taken on a general expedition is public; private captures remain private.
+- id: OBS-006
+  evidence_type: MARKET_CITY_RUMOR_OBSERVATION
+  observation: Greek cities bring markets and mariners respond to a rumor that a city and harbor are being founded.
+- id: OBS-007
+  evidence_type: HOSTILE_ENVOYS_XENOPHON_OBSERVATION
+  observation: Formerly hostile neighbors send envoys to Xenophon, who presents them to the soldiers.
+- id: OBS-008
+  evidence_type: CLEANDER_TWO_WARSHIPS_NO_TRANSPORTS_OBSERVATION
+  observation: Cleander arrives with two warships and no transports.
+- id: OBS-009
+  evidence_type: DEXIPPUS_PRIVATE_SHARE_OFFER_OBSERVATION
+  observation: Sheep takers offer Dexippus a private share for protecting the rest.
+- id: OBS-010
+  evidence_type: ROBBERY_ALLEGATION_SEIZURE_OBSERVATION
+  observation: Dexippus alleges robbery and seizes a soldier who invokes the public rule.
+- id: OBS-011
+  evidence_type: AGASIAS_RESCUE_STONING_OBSERVATION
+  observation: Agasias rescues the man and nearby soldiers stone Dexippus as a traitor.
+- id: OBS-012
+  evidence_type: CLEANDER_INTERDICT_THREAT_OBSERVATION
+  observation: Cleander threatens to exclude the army from every Hellenic city.
+- id: OBS-013
+  evidence_type: SPARTAN_LAND_SEA_HEGEMONY_OBSERVATION
+  observation: Xenophon says the Lacedaemonians are lords of Hellas on land and sea.
+- id: OBS-014
+  evidence_type: TWO_PERSON_SURRENDER_DEMAND_OBSERVATION
+  observation: Cleander demands the rescuer and the stoning instigator.
+- id: OBS-015
+  evidence_type: XENOPHON_OBEDIENCE_COUNSEL_OBSERVATION
+  observation: Xenophon counsels obedience because the soldiers' home cities obey Sparta.
+- id: OBS-016
+  evidence_type: XENOPHON_SELF_SUBMISSION_EXTREME_PENALTY_OBSERVATION
+  observation: Xenophon offers himself and the extreme penalty if responsible.
+- id: OBS-017
+  evidence_type: AGASIAS_DENIAL_VOLUNTARY_SURRENDER_OBSERVATION
+  observation: Agasias denies Xenophon's order and voluntarily surrenders.
+- id: OBS-018
+  evidence_type: ARMY_DELEGATION_GENERAL_SUBMISSION_OBSERVATION
+  observation: The generals submit themselves and any named offender to Cleander's judgment.
+- id: OBS-019
+  evidence_type: DEXIPPUS_GALLEY_BETRAYAL_DEFENSE_OBSERVATION
+  observation: Agasias recalls Dexippus's flight with the fifty-oared galley.
+- id: OBS-020
+  evidence_type: SCAMP_FAIR_TRIAL_OBSERVATION
+  observation: Cleander says even a great scamp is entitled to a fair trial.
+- id: OBS-021
+  evidence_type: RESCUED_MAN_PUBLIC_SHEEP_CLAIM_OBSERVATION
+  observation: The rescued man says the sheep were public property under the ordinance.
+- id: OBS-022
+  evidence_type: XENOPHON_RELEASE_INTERCESSION_OBSERVATION
+  observation: Xenophon asks Cleander to release the two men and inspect the army's discipline.
+- id: OBS-023
+  evidence_type: CLEANDER_RELEASE_COMMAND_OFFER_OBSERVATION
+  observation: Cleander releases them and will lead if the gods permit.
+- id: OBS-024
+  evidence_type: CLEANDER_XENOPHON_ALLIANCE_DISCIPLINE_OBSERVATION
+  observation: Cleander forms an alliance with Xenophon after observing discipline.
+- id: OBS-025
+  evidence_type: THREE_DAY_ADVERSE_SACRIFICE_OBSERVATION
+  observation: Sacrifices remain unfavorable on three successive days and prevent Cleander's command.
+- id: OBS-026
+  evidence_type: CLEANDER_HOMEWARD_WELCOME_SPEECH_OBSERVATION
+  observation: Cleander says it is given to the generals to bring the men home and promises a warm welcome.
+- id: OBS-027
+  evidence_type: PUBLIC_CATTLE_GIFT_RETURN_OBSERVATION
+  observation: Cleander accepts and returns the voted gift of public cattle.
+- id: OBS-028
+  evidence_type: PROPERTY_DIVISION_BITHYNIAN_MARCH_OBSERVATION
+  observation: The soldiers divide corn and captured property and begin the homeward march through Bithynia.
+- id: OBS-029
+  evidence_type: REVERSE_RAID_OBSERVATION
+  observation: Before friendly territory the army reverses for one day and night to capture slaves and small cattle.
+- id: OBS-030
+  evidence_type: CHRYSOPOLIS_SIXTH_DAY_SEVEN_DAY_SALE_OBSERVATION
+  observation: The army reaches Chrysopolis on the sixth day and spends seven days selling booty.
+provisional_findings:
+- id: PF-001
+  finding: Book VI ends in jurisdictional crisis and booty-seeking return.
+- id: PF-002
+  finding: Rumor produces commerce and diplomacy before constitutional founding.
+- id: PF-003
+  finding: Xenophon redirects envoys to the army rather than absorbing rule.
+- id: PF-004
+  finding: The booty rule disciplines appetite but needs procedure.
+- id: PF-005
+  finding: Cleander separates bad character from fair-trial entitlement.
+- id: PF-006
+  finding: Submission protects practical freedom without proving Spartan justice.
+- id: PF-007
+  finding: Agasias localizes responsibility by surrendering.
+- id: PF-008
+  finding: Release follows submission, persuasion, and observed discipline.
+- id: PF-009
+  finding: Adverse sacrifices restrain Cleander without settling causation.
+- id: PF-010
+  finding: Acquisition continues to govern the homeward march.
+standing_unresolved_questions:
+- id: UQ-001
+  question: Who originated the city rumor?
+- id: UQ-002
+  question: What did the envoys seek?
+- id: UQ-003
+  question: Did Xenophon fully return diplomatic jurisdiction to the army?
+- id: UQ-004
+  question: Was the booty rule just and consistent?
+- id: UQ-005
+  question: What motivated Dexippus?
+- id: UQ-006
+  question: Who first threw stones?
+- id: UQ-007
+  question: Was Cleander's threat proportionate?
+- id: UQ-008
+  question: Does Spartan hegemony imply legitimacy or power only?
+- id: UQ-009
+  question: Would Xenophon have accepted the extreme penalty?
+- id: UQ-010
+  question: Was Agasias's rescue just?
+- id: UQ-011
+  question: Why is no completed trial narrated?
+- id: UQ-012
+  question: Why did Cleander release the men?
+- id: UQ-013
+  question: What was the Xenophon-Cleander alliance?
+- id: UQ-014
+  question: Why did sacrifice block Cleander?
+- id: UQ-015
+  question: Why did Cleander return the cattle?
+- id: UQ-016
+  question: How does the reverse raid qualify homeward return?
+downstream_textual_checks:
+- id: DC-001
+  check: Track the founding rumor in Book VII.
+- id: DC-002
+  check: Compare later booty disputes.
+- id: DC-003
+  check: Track Dexippus.
+- id: DC-004
+  check: Track Agasias.
+- id: DC-005
+  check: Compare later Spartan procedure.
+- id: DC-006
+  check: Track whether Greek cities close their gates.
+- id: DC-007
+  check: Compare Xenophon's later responses to Spartan commands.
+- id: DC-008
+  check: Test Cleander's promised welcome.
+- id: DC-009
+  check: Compare adverse sacrifices across leaders.
+- id: DC-010
+  check: Track army discipline in Book VII.
+- id: DC-011
+  check: Compare the Bithynian raid with later justice claims.
+- id: DC-012
+  check: Preserve Chrysopolis as incomplete homecoming.
+secondary_comparison_status: DEFERRED
+owner_review_required: true
+certification_status: NOT_CERTIFIED

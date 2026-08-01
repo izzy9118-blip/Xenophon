@@ -1,0 +1,482 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-029
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis IV.8
+  pdf_pages_one_based: 90-93
+  opening_anchor: From this point the Hellenes marched through the country of the Macrones three stages—ten parasangs,
+  closing_anchor: Loud were the shouts, the laughter, and the cheers.
+jurisdiction: Independent primary reconstruction from the admitted Dakyns English translation. Translator wording is not unmediated Greek evidence; no isolated observation licenses a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis IV.8 plus one-based PDF page
+  chapter_boundary_control: IV.8 begins beneath heading VIII on PDF page 90 and ends on PDF page 93 immediately before the Book V retrospective synopsis. The synopsis is witness paratext; V.1 begins beneath heading I on PDF page 94 and ends on page 95 before heading II.
+  source_boundary: Macrone speech recognition, interpreter-mediated diplomacy, mutual pledges, road assistance, market and escort, council speech, formation, prayer, battle hymn, combat, honey illness, Trapezus hospitality, ravaging, vowed sacrifices, and games remain distinct. Notes on military formation, Homeric allusion, estimated troop totals, poisonous honey, Trebizond, Heracles, and pankration remain witness paratext.
+narrative_person_and_authorial_attribution:
+  narrative_mode: Third-person historical narration presenting Xenophon as commander, speaker, formation designer, and participant in the Colchian battle, with direct speeches attributed to the formerly enslaved light infantryman, Macrones, generals, and Dracontius.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: Xenophon authorizes the language contact, proposes the company-column formation, addresses the army, and advances on an outer flank. No unframed first-person narration identifies the narrator with Xenophon.
+  uncertainty: The witness does not settle the Greek force of slave, native country, pledges, fraternising, fairest fight, swallow whole without cooking, madness, gifts of hospitality, safe guidance, captive lads, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis IV.8; PDF p. 90
+  speech_form: language_recognition_report
+  speaker: unnamed light infantryman formerly enslaved at Athens
+  audience: Xenophon
+  occasion: Macrones block the river crossing
+  content: He says he recognizes their speech, thinks this may be his native country, and asks permission to speak with them.
+  uncertainty: His name, original status, route to Athens, and exact relation to the Macrones are absent.
+- id: SAO-002
+  locator: Anabasis IV.8; PDF p. 90
+  speech_form: identity_and_hostility_inquiry
+  speaker: Xenophon through the light infantryman
+  audience: Macrones
+  occasion: opening parley
+  content: He asks who they are and why they are drawn up for battle.
+  uncertainty: The interpreter's exact rendering is not recoverable from the English witness.
+- id: SAO-003
+  locator: Anabasis IV.8; PDF p. 90
+  speech_form: territorial_defense_claim
+  speaker: Macrones through interpreter
+  audience: Greek command
+  occasion: response to inquiry
+  content: They identify themselves as Macrones and say they want to fight because the Greeks are invading their country.
+  uncertainty: No political subdivision or collective decision procedure is given.
+- id: SAO-004
+  locator: Anabasis IV.8; PDF p. 90
+  speech_form: nonaggression_and_passage_claim
+  speaker: Greek generals through interpreter
+  audience: Macrones
+  occasion: parley at the crossing
+  content: They deny intent to harm, say they have been at war with the king and are returning to Hellas, and ask only to reach the sea.
+  uncertainty: The text's phrase 'with not intention' appears to be a witness error and is not silently corrected as Greek evidence.
+- id: SAO-005
+  locator: Anabasis IV.8; PDF pp. 90-91
+  speech_form: mutual_pledge_exchange
+  speaker: Macrones and Greek leaders
+  audience: each other
+  occasion: agreement on peaceful passage
+  content: Both sides agree to give and receive pledges, exchange a Macrone and a Greek lance, and call upon the gods as witnesses.
+  uncertainty: The gods, oath formula, and legal force of the exchanged lances are not specified.
+- id: SAO-006
+  locator: Anabasis IV.8; PDF p. 91
+  speech_form: council_formation_proposal
+  speaker: Xenophon
+  audience: generals
+  occasion: Colchians hold an accessible mountain
+  content: He rejects a continuous line on broken ground and proposes company columns with intervals, mutually supporting units, and leading men at each column head.
+  uncertainty: Technical Greek terminology and exact intervals require original-language review.
+- id: SAO-007
+  locator: Anabasis IV.8; PDF p. 91
+  speech_form: prebattle_exhortation
+  speaker: Xenophon
+  audience: Greek soldiers
+  occasion: after the company-column proposal is carried
+  content: He calls the Colchians the sole remaining obstacle to the long-deferred haven and says the Greeks will swallow them whole without cooking if they can.
+  uncertainty: The Homeric allusion and translation alternatives are supplied in witness paratext.
+- id: SAO-008
+  locator: Anabasis IV.8; PDF p. 93
+  speech_form: racecourse_indication
+  speaker: Dracontius
+  audience: Greek organizers and contestants
+  occasion: after sacrifices at Trapezus
+  content: He points to the ridge as a course suitable for running anywhere and everywhere.
+  uncertainty: No measured or prepared course is described.
+- id: SAO-009
+  locator: Anabasis IV.8; PDF p. 93
+  speech_form: wrestling_ground_question
+  speaker: unnamed questioner
+  audience: Dracontius
+  occasion: inspection of the hard scrubby ground
+  content: He asks how competitors will wrestle on such ground.
+  uncertainty: The questioner's office and role are absent.
+- id: SAO-010
+  locator: Anabasis IV.8; PDF p. 93
+  speech_form: comic_presidential_reply
+  speaker: Dracontius
+  audience: questioner and assembled Greeks
+  occasion: same inspection
+  content: He replies that those thrown will receive worse knocks.
+  uncertainty: The tone is comic in translation but requires Greek review.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis IV.8; PDF pp. 90-91
+  actor: unnamed light infantryman, Xenophon, Macrones, and Greek generals
+  deed: A former slave at Athens recognizes Macrone speech, receives permission to negotiate, and mediates claims about identity, invasion, harmless passage, and return to Hellas.
+  outcome: Hostility is redirected into negotiation.
+  uncertainty: His identity, freedom status at the time, and accuracy as interpreter are unstated.
+- id: SDO-002
+  locator: Anabasis IV.8; PDF p. 91
+  actor: Macrones and Greeks
+  deed: They exchange lances as pledges and invoke the gods.
+  outcome: A reciprocal nonaggression arrangement is established.
+  uncertainty: The agreement's duration, sanctions, and scope beyond passage are not given.
+- id: SDO-003
+  locator: Anabasis IV.8; PDF p. 91
+  actor: Macrones and Greeks
+  deed: Macrones help fell trees and construct the crossing road, mingle with the army, provide the best market they can, and escort the Greeks for three days.
+  outcome: Former opponents become guides, suppliers, and collaborators until the Colchian frontier.
+  uncertainty: Compensation and the distribution of burdens are unrecorded.
+- id: SDO-004
+  locator: Anabasis IV.8; PDF pp. 91-92
+  actor: Greek generals and Xenophon
+  deed: The command abandons a continuous battle line and adopts company columns with intervals and flank extension for uneven mountain terrain.
+  outcome: About eighty hoplite companies and three light-infantry divisions are arranged for attack.
+  uncertainty: The totals and average company size are approximate and partly editorially inferred.
+- id: SDO-005
+  locator: Anabasis IV.8; PDF p. 92
+  actor: Greek army, Cheirisophus, Xenophon, Aeschines, Cleanor, and Colchians
+  deed: After prayer and battle hymn, outer Greek forces stretch the enemy line; Arcadian light infantry mistakes the movement for flight and rushes the summit, followed by Arcadian hoplites.
+  outcome: The Colchians break and flee; the Greeks occupy the height and provisioned villages.
+  uncertainty: Casualties, exact command authorization, and whether the misreading accelerated or endangered the plan are absent.
+- id: SDO-006
+  locator: Anabasis IV.8; PDF p. 92
+  actor: Greek soldiers and local honey
+  deed: Soldiers eat honeycomb and develop vomiting, diarrhea, inability to stand, drunkenness-like states, madness-like fits, and apparent near-death collapse.
+  outcome: Hundreds lie disabled as after a defeat, but none are reported dead; senses return the next day and mobility by the third or fourth.
+  uncertainty: Dose, botanical source, individual variation, and medical mechanism are not established by the primary narrative.
+- id: SDO-007
+  locator: Anabasis IV.8; PDF pp. 92-93
+  actor: Greek army and Trapezuntines
+  deed: The army reaches Trapezus, a Greek city on the Euxine, and halts about thirty days in nearby Colchian villages.
+  outcome: The coast becomes a base for provisioning, hospitality, negotiation, sacrifice, games, and raids into Colchis.
+  uncertainty: Modern identification as Trebizond is witness paratext.
+- id: SDO-008
+  locator: Anabasis IV.8; PDF p. 93
+  actor: Greek army, Trapezuntines, and plain-dwelling Colchians
+  deed: The Greeks ravage Colchian territory while Trapezuntines provide market, entertainment, oxen, wheat, and wine and mediate further cattle gifts from neighboring Colchians.
+  outcome: Hospitality and commerce coexist with continued coercive operations against the surrounding territory.
+  uncertainty: The identities of ravaged and gift-giving Colchians may overlap but are not resolved.
+- id: SDO-009
+  locator: Anabasis IV.8; PDF p. 93
+  actor: Greek army
+  deed: The Greeks fulfill vows through thank-offerings to Zeus the Saviour, Heracles, and other gods.
+  outcome: Safe arrival at the coast is marked by public sacrificial completion.
+  uncertainty: The alternative syntax concerning Heracles and safe guidance remains editorial paratext.
+- id: SDO-010
+  locator: Anabasis IV.8; PDF p. 93
+  actor: Greek army and Dracontius
+  deed: The army appoints the exiled Spartan Dracontius to supervise a gymnastic festival on the mountain ridge.
+  outcome: Races, wrestling, boxing, pankration, and horse racing are organized after sacrifice.
+  uncertainty: The political authority for appointment and the full rules are absent.
+- id: SDO-011
+  locator: Anabasis IV.8; PDF p. 93
+  actor: captive boys, Cretans, other competitors, and spectators
+  deed: Captive boys run the short race, more than sixty Cretans run the long race, and competitors enter wrestling, boxing, and pankration before male and female companions.
+  outcome: A large festival produces intense emulation and spectacle.
+  uncertainty: The captives' consent, prizes, and exact distances beyond the translated mile are not stated.
+- id: SDO-012
+  locator: Anabasis IV.8; PDF p. 93
+  actor: horse racers and spectators
+  deed: Riders descend a steep slope to the sea, turn, and climb back to the altar; more than half tumble during descent and return slowly uphill.
+  outcome: The contest ends amid shouting, laughter, and cheers.
+  uncertainty: Injuries, mounts, and awards are unreported.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Macrone river confrontation
+  - Language recognition and interpreter-mediated parley
+  - Reciprocal lance pledges and divine witness
+  - Macrone road assistance, market, and escort
+  - Colchian mountain council and company-column formation
+  - Prayer, battle hymn, flank extension, Arcadian rush, and victory
+  - Honey poisoning and recovery
+  - Arrival and thirty-day halt at Trapezus
+  - Ravaging, hospitality, market, and mediated gifts
+  - Vowed sacrifices and games
+  repetitions:
+  - Language, guides, markets, and local intermediaries repeatedly convert territorial danger into passage.
+  - Military success again depends on broken terrain, flexible units, flank pressure, and initiative not fully controlled by command.
+  - Ritual action frames both combat and arrival.
+  - The coast is simultaneously a haven, a base of operations, and a site of continued coercion.
+  omissions:
+  - The former slave's name, status, biography, and later fate are absent.
+  - The Macrone pledge formula, compensation, and political authority are not stated.
+  - Colchian casualties and Greek casualties in the battle are absent.
+  - The honey's source and medical explanation are not given in the ancient narration.
+  - The identities of captives, game winners, prizes, and injuries are omitted.
+  tensions:
+  - The Greeks deny intent to harm the Macrones yet continue ravaging Colchian territory after reaching the sea.
+  - A planned formation succeeds partly through a mistaken interpretation and premature rush.
+  - A substance found in abundant villages disables the army more completely than the preceding battle.
+  - Thanksgiving and games coexist with enslavement, captive child competitors, and territorial devastation.
+  - The sea is the haven of hope but not yet the end of military necessity.
+documentary_observations:
+- id: OBS-001
+  locator: Anabasis IV.8; PDF p. 90
+  evidence_type: BORDER_RIVER_OBSERVATION
+  observation: A river marks the boundary between Macrone and Scythenian territory, and another wooded river must be crossed.
+  uncertainty: Modern identifications are not supplied by the primary narration.
+- id: OBS-002
+  locator: Anabasis IV.8; PDF p. 90
+  evidence_type: MACRONE_ARMAMENT_OBSERVATION
+  observation: Macrones are described with wicker shields, lances, and hair tunics and throw stones toward the crossing.
+  uncertainty: The ethnographic vocabulary and material descriptions require Greek review.
+- id: OBS-003
+  locator: Anabasis IV.8; PDF p. 90
+  evidence_type: FORMER_ENSLAVEMENT_OBSERVATION
+  observation: An unnamed light infantryman says he had been a slave at Athens.
+  uncertainty: Whether he is free at this point and how he entered the army are not stated.
+- id: OBS-004
+  locator: Anabasis IV.8; PDF p. 90
+  evidence_type: LANGUAGE_RECOGNITION_OBSERVATION
+  observation: The light infantryman recognizes Macrone speech and thinks the region may be his native country.
+  uncertainty: Recognition does not independently establish ethnic identity or birthplace.
+- id: OBS-005
+  locator: Anabasis IV.8; PDF pp. 90-91
+  evidence_type: INTERPRETER_MEDIATED_DIPLOMACY_OBSERVATION
+  observation: All substantive claims in the Macrone parley pass through the unnamed soldier as interpreter.
+  uncertainty: Translation accuracy and omitted nuances cannot be checked in this witness.
+- id: OBS-006
+  locator: Anabasis IV.8; PDF p. 91
+  evidence_type: RECIPROCAL_PLEDGE_OBSERVATION
+  observation: Macrones and Greeks exchange different lances as mutual pledges and invoke the gods.
+  uncertainty: The ritual and legal meaning of the objects is not explained.
+- id: OBS-007
+  locator: Anabasis IV.8; PDF p. 91
+  evidence_type: FORMER_ENEMY_ASSISTANCE_OBSERVATION
+  observation: After the pledge, Macrones cut trees, build the road, mingle with the Greeks, provide a market, and escort them.
+  uncertainty: The degree of voluntariness and compensation are not recorded.
+- id: OBS-008
+  locator: Anabasis IV.8; PDF p. 91
+  evidence_type: FORMATION_COUNCIL_OBSERVATION
+  observation: The generals suspend the initial line formation and hold a council before attacking the Colchian mountain.
+  uncertainty: The individual who called the council and voting procedure are absent.
+- id: OBS-009
+  locator: Anabasis IV.8; PDF p. 91
+  evidence_type: COMPANY_COLUMN_ARGUMENT_OBSERVATION
+  observation: Xenophon argues that columns with intervals preserve order, permit easy routes, support pressed units, and create flanking potential.
+  uncertainty: His predictions are partly tested but not all separately verified.
+- id: OBS-010
+  locator: Anabasis IV.8; PDF p. 91
+  evidence_type: HOMERIC_ALLUSION_PARATEXT_OBSERVATION
+  observation: A note connects Xenophon's uncooked-devouring image to an Iliadic line and offers a translation alternative.
+  uncertainty: The note is witness paratext, not silently primary narration.
+- id: OBS-011
+  locator: Anabasis IV.8; PDF p. 92
+  evidence_type: APPROXIMATE_FORCE_STRUCTURE_OBSERVATION
+  observation: The army is said to form about eighty hoplite companies averaging one hundred men and three light divisions of about six hundred each.
+  uncertainty: The note's arithmetic reconstruction is editorial and the narrative totals are approximate.
+- id: OBS-012
+  locator: Anabasis IV.8; PDF p. 92
+  evidence_type: PRAYER_AND_BATTLE_HYMN_OBSERVATION
+  observation: The generals order prayer, and the army advances with prayer and battle hymn.
+  uncertainty: The gods, words, and officiants are not identified.
+- id: OBS-013
+  locator: Anabasis IV.8; PDF p. 92
+  evidence_type: ENEMY_EXTENSION_OBSERVATION
+  observation: Greek movement outside both flanks causes the Colchian line to extend and open a central hollow.
+  uncertainty: The enemy's command decisions are inferred from visible movement.
+- id: OBS-014
+  locator: Anabasis IV.8; PDF p. 92
+  evidence_type: MISINTERPRETED_MOVEMENT_OBSERVATION
+  observation: Aeschines's Arcadian light infantry mistakes enemy redeployment for flight and rushes the summit.
+  uncertainty: No prior order authorizing the rush is quoted.
+- id: OBS-015
+  locator: Anabasis IV.8; PDF p. 92
+  evidence_type: HONEY_TOXICITY_OBSERVATION
+  observation: Honeycomb causes vomiting, diarrhea, loss of balance, drunkenness-like states, madness-like fits, and apparent near death.
+  uncertainty: The botanical and pharmacological explanation is editorial, not primary evidence.
+- id: OBS-016
+  locator: Anabasis IV.8; PDF p. 92
+  evidence_type: MASS_NONFATAL_DISABLEMENT_OBSERVATION
+  observation: Hundreds collapse as if after a great defeat, but no death is reported and recovery follows over several days.
+  uncertainty: The exact number, dose, and completeness of recovery are not quantified.
+- id: OBS-017
+  locator: Anabasis IV.8; PDF pp. 92-93
+  evidence_type: HELLENIC_COASTAL_CITY_OBSERVATION
+  observation: Trapezus is presented as a populous Greek city on the Euxine and a colony of Sinope in Colchian territory.
+  uncertainty: Modern Trebizond identification is witness paratext.
+- id: OBS-018
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: RAVAGING_BASE_OBSERVATION
+  observation: The Greeks use nearby Colchian villages as a thirty-day base for ravaging Colchis.
+  uncertainty: Targets, losses, and legal claims are not detailed.
+- id: OBS-019
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: HOSPITALITY_AND_MARKET_OBSERVATION
+  observation: Trapezuntines provide market access, entertainment, oxen, wheat, and wine as gifts of hospitality.
+  uncertainty: The institutions and reciprocal obligations are not stated.
+- id: OBS-020
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: MEDIATED_COLCHIAN_GIFT_OBSERVATION
+  observation: Trapezuntines negotiate with plain-dwelling Colchians, from whom cattle also arrive as hospitality gifts.
+  uncertainty: The relation of these Colchians to the ravaged population is unresolved.
+- id: OBS-021
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: VOW_FULFILLMENT_SACRIFICE_OBSERVATION
+  observation: The army offers thank-offerings to Zeus the Saviour, Heracles, and other gods according to earlier vows.
+  uncertainty: The Heracles syntax and epithet are textually mediated by an editorial note.
+- id: OBS-022
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: EXILED_GAME_PRESIDENT_OBSERVATION
+  observation: Dracontius, a Spartan exiled after unintentionally killing a boy with a dagger blow, is chosen to supervise the games.
+  uncertainty: The legal circumstances and source of the biographical report are not supplied.
+- id: OBS-023
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: CAPTIVE_CHILD_COMPETITOR_OBSERVATION
+  observation: The majority of competitors in the boys' short race are captive lads.
+  uncertainty: Their consent, status, age, and prizes are absent.
+- id: OBS-024
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: CRETAN_LONG_RACE_OBSERVATION
+  observation: More than sixty Cretans compete in the long race.
+  uncertainty: The course length and selection procedure are not given.
+- id: OBS-025
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: MIXED_SPECTATOR_OBSERVATION
+  observation: Male and female companions stand as spectators during the games.
+  uncertainty: Their identities, freedom status, and relation to competitors are unreported.
+- id: OBS-026
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: STEEP_HORSE_RACE_OBSERVATION
+  observation: Horse racers descend to the sea and climb back to the altar, with more than half tumbling on the descent.
+  uncertainty: Injury and finish results are absent.
+- id: OBS-027
+  locator: Anabasis IV.8; PDF p. 93
+  evidence_type: BOOK_TRANSITION_PARATEXT_OBSERVATION
+  observation: A retrospective Book V synopsis begins after IV.8 and summarizes earlier action and vowed sacrifice.
+  uncertainty: It is witness paratext and not silently assigned to the chapter's primary narration.
+- id: OBS-028
+  locator: Anabasis IV.8; PDF pp. 90-93
+  evidence_type: COAST_NOT_TERMINUS_OBSERVATION
+  observation: The sight and attainment of the sea do not end danger, provisioning, military action, or command problems.
+  uncertainty: This is a chapter-level documentary synthesis rather than a quoted proposition.
+provisional_findings:
+- id: FIND-001
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Shared language through a formerly enslaved intermediary converts an armed border confrontation into a reciprocal passage agreement.
+  basis: Language recognition, parley, lance pledges, road assistance.
+  uncertainty: The intermediary's accuracy and the pact's political form remain unknown.
+- id: FIND-002
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Reciprocity is materially enacted through exchanged weapons, shared labor, market provision, and escort rather than speech alone.
+  basis: Lances, road construction, mingling, market, three-day guidance.
+  uncertainty: Compensation and asymmetry are unrecorded.
+- id: FIND-003
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Xenophon's formation argument treats order as adaptable structure rather than preservation of a geometrically continuous line.
+  basis: Broken terrain, company columns, intervals, mutual support.
+  uncertainty: Technical Greek terms and later generality remain open.
+- id: FIND-004
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The Colchian victory combines deliberate formation with misinterpretation and competitive initiative, complicating any single-cause account.
+  basis: Flank extension, center gap, mistaken flight, Arcadian rush.
+  uncertainty: The narrator does not rank causal contributions.
+- id: FIND-005
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Natural abundance becomes a military threat when honey disables hundreds without battle deaths.
+  basis: Provisioned villages, honey ingestion, mass collapse, recovery.
+  uncertainty: Medical mechanism is not established in the primary text.
+- id: FIND-006
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Arrival at a Greek city shifts the army from pure survival to a mixed regime of market, alliance, ravaging, ritual, and recreation.
+  basis: Trapezus halt, hospitality, raids, sacrifice, games.
+  uncertainty: Institutional authority during the halt is not fully described.
+- id: FIND-007
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Hospitality and violence coexist at the coast rather than forming a simple transition from barbarian hostility to Greek peace.
+  basis: Trapezuntine gifts and mediation alongside ravaging Colchis.
+  uncertainty: The relationship among different Colchian communities remains unclear.
+- id: FIND-008
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Vow fulfillment and athletic competition publicly reconstitute the army after mountain warfare and toxic collapse.
+  basis: Thank-offerings, appointment of Dracontius, games and spectators.
+  uncertainty: No explicit statement of political or therapeutic purpose is given.
+- id: FIND-009
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The games reproduce inequalities within the army's social world because captive boys compete while free soldiers and companions watch.
+  basis: Captive lads in race, mixed spectators, officer-appointed president.
+  uncertainty: The captives' experience and consent are absent.
+- id: FIND-010
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Book IV closes with the sea attained but the homecoming problem unresolved, preparing a new phase of collective deliberation in Book V.
+  basis: Trapezus halt, transport not yet arranged, Book V transition.
+  uncertainty: The retrospective synopsis is paratext and must not be treated as independent primary narration.
+standing_unresolved_questions:
+- id: Q-001
+  evidence_type: UNRESOLVED_QUESTION
+  question: Who was the unnamed light infantryman, and what was his legal status after enslavement at Athens?
+- id: Q-002
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek terms govern his recognition of speech and claim of native country?
+- id: Q-003
+  evidence_type: UNRESOLVED_QUESTION
+  question: What ritual and legal meaning attached to exchanging Macrone and Greek lances as pledges?
+- id: Q-004
+  evidence_type: UNRESOLVED_QUESTION
+  question: Which gods were invoked, and was the pact an oath, truce, guest-friendship arrangement, or another form?
+- id: Q-005
+  evidence_type: UNRESOLVED_QUESTION
+  question: How were the Macrones compensated for road work, market supply, and escort?
+- id: Q-006
+  evidence_type: UNRESOLVED_QUESTION
+  question: What exact tactical vocabulary underlies company columns, intervals, depth, overlap, and rescue?
+- id: Q-007
+  evidence_type: UNRESOLVED_QUESTION
+  question: Was the Arcadian rush unauthorized, and how does the Greek text evaluate the mistaken inference of flight?
+- id: Q-008
+  evidence_type: UNRESOLVED_QUESTION
+  question: What were Greek and Colchian casualties in the mountain battle?
+- id: Q-009
+  evidence_type: UNRESOLVED_QUESTION
+  question: What botanical source and dose produced the honey illness, apart from later editorial explanation?
+- id: Q-010
+  evidence_type: UNRESOLVED_QUESTION
+  question: How exact are the reports that none died and that recovery followed at the same hour?
+- id: Q-011
+  evidence_type: UNRESOLVED_QUESTION
+  question: Which Colchian communities were ravaged and which provided hospitality gifts through Trapezus?
+- id: Q-012
+  evidence_type: UNRESOLVED_QUESTION
+  question: What authority governed the thirty-day base operations and distribution of provisions and gifts?
+- id: Q-013
+  evidence_type: UNRESOLVED_QUESTION
+  question: What vows were fulfilled, and how should the Heracles safe-guidance construction be translated?
+- id: Q-014
+  evidence_type: UNRESOLVED_QUESTION
+  question: What is the source and legal context of Dracontius's exile for accidental killing?
+- id: Q-015
+  evidence_type: UNRESOLVED_QUESTION
+  question: What were the status, consent, and treatment of the captive boys in the race?
+- id: Q-016
+  evidence_type: UNRESOLVED_QUESTION
+  question: Who were the male and female companions watching the games?
+- id: Q-017
+  evidence_type: UNRESOLVED_QUESTION
+  question: What prizes, judges, rules, and injuries accompanied the athletic and equestrian contests?
+- id: Q-018
+  evidence_type: UNRESOLVED_QUESTION
+  question: What textual status and authorship should be assigned to the Book V retrospective synopsis?
+downstream_textual_checks:
+- id: CHECK-001
+  check: Check the Greek terms for former slavery, native country, speech recognition, and interpreter mediation.
+- id: CHECK-002
+  check: Compare Greek wording and ritual parallels for the exchange of lances and invocation of gods.
+- id: CHECK-003
+  check: Verify the Macrone, Scythenian, Colchian, and river geography without importing modern identifications into the primary unit.
+- id: CHECK-004
+  check: Check company-column, interval, depth, flank, and mutual-support vocabulary in a critical Greek edition.
+- id: CHECK-005
+  check: Compare the uncooked-devouring phrase and Homeric allusion across translations and notes.
+- id: CHECK-006
+  check: Check the narrative wording for Aeschines's mistaken inference and the Arcadian rush.
+- id: CHECK-007
+  check: Compare honey symptoms, recovery timing, and botanical notes across witnesses without treating later science as primary evidence.
+- id: CHECK-008
+  check: Check Trapezus, Sinope-colony, hospitality, market, ravaging, and Colchian mediation terminology.
+- id: CHECK-009
+  check: Compare Zeus Saviour, Heracles, safe-guidance, vow, and thank-offering constructions in Greek.
+- id: CHECK-010
+  check: Check Dracontius's biography, appointment, racecourse dialogue, and game vocabulary.
+- id: CHECK-011
+  check: Verify captive-lad, companion, male-and-female spectator, and horse-race terms in the Greek.
+- id: CHECK-012
+  check: Separate the Book V retrospective synopsis from IV.8 and establish V.1's exact opening boundary.
+secondary_comparison_status: DEFERRED
+comparison_note: Strauss remains confined to the owner-adopted secondary reconstruction.

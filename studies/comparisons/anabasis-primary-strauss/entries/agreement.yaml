@@ -1,0 +1,328 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+classification: AGREEMENT
+status: DRAFTED_PENDING_OWNER_REVIEW
+entry_count: 11
+entries:
+- id: CMP-005
+  topic: Concealment, disclosure, shame, and repaired consent
+  classification: AGREEMENT
+  primary_stream:
+    position: Major undertakings repeatedly begin with unequal knowledge or incomplete disclosure, producing later
+      crises in which consent must be renewed, repaired, or defended.
+    cumulative_anchors:
+    - PAT-001
+    - SDO-CUM-001
+    - TR-001
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-002
+    - XEN-PRI-RU-003
+    - XEN-PRI-RU-007
+  secondary_stream:
+    position: Strauss emphasizes Cyrus's concealment, the Greeks' continued participation after disclosure, and
+      shame before Cyrus or one another as a reason for remaining.
+    secondary_units:
+    - XEN-RU-003
+    printed_pages: 113-116
+  controlled_relation: The streams agree that the expedition's initial political problem is not simple voluntary
+    knowledge but consent under staged disclosure and social pressure.
+  preserved_uncertainty: The relative weight of shame, necessity, loyalty, ambition, and pay remains unresolved.
+  comparison_effect: Use concealment and repaired consent as a shared comparison finding.
+- id: CMP-008
+  topic: Xenophon's ascent from private participant to practical leader
+  classification: AGREEMENT
+  primary_stream:
+    position: Xenophon moves from absence and subordinate status to initiative, election, tactical command, accusation,
+      defense, negotiation, denial of formal command, and final collective reward.
+    cumulative_anchors:
+    - TR-003
+    - WF-005
+    - CP-004
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-018
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-049
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss traces Xenophon's ascent from nobody and private Athenian to general, spiritus rector, de
+      facto commander, contested founder, practical monarch, defendant, and reconciled leader.
+    secondary_units:
+    - XEN-RU-002
+    - XEN-RU-003
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 109-136
+  controlled_relation: Both streams identify a sustained rise in practical authority that cannot be reduced to one
+    formal office.
+  preserved_uncertainty: The political and moral meaning of the ascent, including ambition and self-presentation,
+    remains contested.
+  comparison_effect: Admit ascent as a shared structural pattern while withholding a final judgment of its justice
+    or purpose.
+- id: CMP-009
+  topic: Audience-differentiated speech
+  classification: AGREEMENT
+  primary_stream:
+    position: Speeches must be read with audience, occasion, institutional responsibility, deed, and outcome; public
+      deliberation reconstitutes command after catastrophe.
+    cumulative_anchors:
+    - PAT-006
+    - CP-010
+    - SDO-CUM-002
+    - SDO-CUM-003
+    source_units:
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-018
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-044
+  secondary_stream:
+    position: Strauss distinguishes Xenophon's speeches to captains, generals, and the whole army and argues that
+      each receives considerations fitted to its role and capacity.
+    secondary_units:
+    - XEN-RU-003
+    printed_pages: 113-116
+  controlled_relation: The primary reconstruction confirms differentiated audiences, sequencing, and institutional
+    effects.
+  preserved_uncertainty: Reported speeches remain literary and translated evidence rather than verbatim transcripts.
+  comparison_effect: Admit audience adaptation as a supported comparative finding.
+- id: CMP-010
+  topic: Speech tested by deed, failure, and correction
+  classification: AGREEMENT
+  primary_stream:
+    position: Speech gains standing when connected to feasible routes, supply, discipline, and action; tactical
+      success, failure, accusation, and material performance test prior claims.
+    cumulative_anchors:
+    - PAT-006
+    - SDO-CUM-002
+    - SDO-CUM-005
+    - SDO-CUM-006
+    source_units:
+    - XEN-PRI-RU-018
+    - XEN-PRI-RU-020
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-049
+    - XEN-PRI-RU-050
+  secondary_stream:
+    position: Strauss emphasizes Xenophon's failed first tactical device, acceptance of criticism, correction, visible
+      sharing of burdens, and the transformation of speech into practical guidance.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-008
+    printed_pages: 113-120, 133-136
+  controlled_relation: The streams agree that leadership is not represented as infallibility and that deed and outcome
+    qualify speech.
+  preserved_uncertainty: Successful correction does not independently establish justice or wisdom in every larger
+    aim.
+  comparison_effect: Admit corrigibility and deed-tested speech as a shared finding.
+- id: CMP-011
+  topic: Piety and prudence as intertwined practices
+  classification: AGREEMENT
+  primary_stream:
+    position: Piety and prudence repeatedly co-occur in deliberation, morale, timing, route choice, battle, settlement,
+      and private fortune.
+    cumulative_anchors:
+    - PAT-008
+    - WF-008
+    - SDO-CUM-009
+    - CP-006
+    source_units:
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-029
+    - XEN-PRI-RU-041
+    - XEN-PRI-RU-049
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss repeatedly interprets Xenophon's piety together with toughness, wit, wiliness, calculation,
+      accessibility to information, and tactical judgment.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 113-136
+  controlled_relation: Both streams reject a separation of religious acts from practical action.
+  preserved_uncertainty: The relation does not establish divine causation or a complete definition of piety.
+  comparison_effect: Admit intertwined piety and prudence as a major agreement.
+- id: CMP-014
+  topic: Effectiveness, coercion, and justice
+  classification: AGREEMENT
+  primary_stream:
+    position: Practical success is not equated with justice; questions of taking property, punishment, captives,
+      deception, and force remain separately open.
+    cumulative_anchors:
+    - PAT-011
+    - WQ-009
+    - WQ-010
+    - WF-010
+    - CP-007
+    source_units:
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-022
+    - XEN-PRI-RU-024
+    - XEN-PRI-RU-031
+    - XEN-PRI-RU-037
+  secondary_stream:
+    position: Strauss repeatedly places effective coercion beside unresolved justice, including prisoner killing,
+      punitive powers, beatings, threats, plunder, and the burning of settlements.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-005
+    - XEN-RU-006
+    printed_pages: 113-128
+  controlled_relation: Both streams insist that necessity or success does not morally certify a deed.
+  preserved_uncertainty: Neither stream supplies a complete legal or ethical adjudication of every episode.
+  comparison_effect: Admit this methodological boundary as a strong agreement.
+- id: CMP-015
+  topic: The army as mobile political community
+  classification: AGREEMENT
+  primary_stream:
+    position: The force intermittently functions as a mobile political community through assemblies, elections,
+      punishment, distribution, worship, negotiation, faction, and rescue.
+    cumulative_anchors:
+    - TR-002
+    - PAT-005
+    - PAT-009
+    - WF-006
+    - CP-009
+    source_units:
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-018
+    - XEN-PRI-RU-037
+    - XEN-PRI-RU-039
+    - XEN-PRI-RU-040
+    - XEN-PRI-RU-045
+  secondary_stream:
+    position: Strauss reconstructs the army through assemblies, strengthened command, trials, monarchy proposals,
+      secession, reunification, and repeated near-foundings.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 113-136
+  controlled_relation: The streams agree that the army cannot be understood as a merely tactical body.
+  preserved_uncertainty: The city analogy remains incomplete, and no stable constitutional form governs every phase.
+  comparison_effect: Admit mobile political community as a shared work-level finding.
+- id: CMP-021
+  topic: External powers using the army while limiting obligations
+  classification: AGREEMENT
+  primary_stream:
+    position: Rulers and cities repeatedly value the army as an instrument while responsibility for pay, supply,
+      discipline, and safe transfer remains contested.
+    cumulative_anchors:
+    - PAT-013
+    - WF-011
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-011
+    - XEN-PRI-RU-043
+    - XEN-PRI-RU-046
+    - XEN-PRI-RU-049
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss tracks Cyrus, Greek coastal cities, Spartan officers, Anaxibios, Seuthes, and Pharnabazus
+      as they seek to employ, move, restrain, or dismiss the force without consistently carrying its burdens.
+    secondary_units:
+    - XEN-RU-005
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 121-136
+  controlled_relation: The streams converge on the army's recurrent instrumentalization by external powers.
+  preserved_uncertainty: The legal and political obligations differ by episode and cannot be collapsed into one
+    contract form.
+  comparison_effect: Admit this as a shared pattern.
+- id: CMP-022
+  topic: Pay, provisions, markets, and the material basis of authority
+  classification: AGREEMENT
+  primary_stream:
+    position: Command repeatedly depends on food, wages, transport, markets, booty, and compensation; promises lose
+      force when material performance fails.
+    cumulative_anchors:
+    - PAT-002
+    - TR-007
+    - SDO-CUM-004
+    source_units:
+    - XEN-PRI-RU-003
+    - XEN-PRI-RU-013
+    - XEN-PRI-RU-030
+    - XEN-PRI-RU-046
+    - XEN-PRI-RU-049
+    - XEN-PRI-RU-050
+  secondary_stream:
+    position: Strauss repeatedly connects command, return, founding, employment, nonpayment, booty, wealth, and
+      Xenophon's poverty or expected gain.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-008
+    printed_pages: 113-136
+  controlled_relation: Both streams show that political speech and command are materially conditioned.
+  preserved_uncertainty: Neither supplies a complete audited economic record.
+  comparison_effect: Admit material performance as a shared condition of authority.
+- id: CMP-025
+  topic: Accusation, defense, and public judgment
+  classification: AGREEMENT
+  primary_stream:
+    position: Private suspicions repeatedly become public tests through accusation, testimony, defense, acquittal,
+      restored confidence, or continuing doubt.
+    cumulative_anchors:
+    - PAT-014
+    - SDO-CUM-005
+    - CP-011
+    source_units:
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-037
+    - XEN-PRI-RU-043
+    - XEN-PRI-RU-049
+  secondary_stream:
+    position: Strauss treats the city-founding controversy, beating charges, Spartan adjudication, and Seuthes-pay
+      accusation as major tests of Xenophon's ascent and descent.
+    secondary_units:
+    - XEN-RU-006
+    - XEN-RU-008
+    printed_pages: 125-136
+  controlled_relation: Both streams identify defense as constitutive of Xenophon's political presentation rather
+    than a marginal interruption.
+  preserved_uncertainty: Narrated acquittal or audience approval does not independently resolve every motive or
+    larger charge.
+  comparison_effect: Admit accusation-defense as a shared structural pattern.
+- id: CMP-027
+  topic: Homecoming and the approach to Greek cities
+  classification: AGREEMENT
+  primary_stream:
+    position: The sea and Greek cities do not dissolve the army; they produce new disputes over transport, provisioning,
+      colony, employment, Spartan authority, and separation.
+    cumulative_anchors:
+    - WF-007
+    - CP-008
+    - WQ-012
+    source_units:
+    - XEN-PRI-RU-029
+    - XEN-PRI-RU-030
+    - XEN-PRI-RU-035
+    - XEN-PRI-RU-039
+    - XEN-PRI-RU-044
+  secondary_stream:
+    position: Strauss devotes the later essay to failed sea plans, Greek-city conflicts, founding proposals, monarchy,
+      faction, Byzantion, and Thracian service.
+    secondary_units:
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 121-136
+  controlled_relation: Both streams reject a simple narrative in which sight of the sea completes the return.
+  preserved_uncertainty: The political meaning of home and the distinct claims of Greece, Athens, and Sparta remain
+    unresolved.
+  comparison_effect: Admit the post-sea complication as a strong agreement.

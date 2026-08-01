@@ -1,0 +1,59 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+classification: SECONDARY_SILENCE
+status: DRAFTED_PENDING_OWNER_REVIEW
+entry_count: 2
+entries:
+- id: CMP-023
+  topic: Material governance as a work-wide cumulative pattern
+  classification: SECONDARY_SILENCE
+  primary_stream:
+    position: The primary cumulative reconstruction treats provisioning, pay, markets, booty, transport, and compensation
+      as one recurrent work-level pattern across all seven books.
+    cumulative_anchors:
+    - PAT-002
+    - TR-007
+    - WF-003
+    source_units:
+    - XEN-PRI-RU-003
+    - XEN-PRI-RU-013
+    - XEN-PRI-RU-030
+    - XEN-PRI-RU-034
+    - XEN-PRI-RU-046
+    - XEN-PRI-RU-050
+  secondary_stream:
+    position: Strauss discusses many individual material episodes but does not formulate their full seven-book distribution
+      as a separate cumulative structure.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-008
+    printed_pages: 113-136
+  controlled_relation: This is a difference of cumulative emphasis rather than contradiction.
+  preserved_uncertainty: Strauss may subsume material questions under ascent, economic art, justice, and fatherland
+    rather than treat them independently.
+  comparison_effect: Retain the primary economic pattern as an addition disclosed by sequential reconstruction.
+- id: CMP-030
+  topic: Thibron's incorporation as the end of the army's independent polity
+  classification: SECONDARY_SILENCE
+  primary_stream:
+    position: The primary record gives special weight to the dissolution of the army's independent institutional
+      existence through incorporation into another Greek war.
+    cumulative_anchors:
+    - WF-012
+    - SDO-CUM-010
+    - CP-012
+    source_units:
+    - XEN-PRI-RU-050
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss notes the renewed Persian war but does not formulate Thibron's incorporation as the work's
+      governing institutional endpoint.
+    secondary_units:
+    - XEN-RU-008
+    printed_pages: '136'
+  controlled_relation: The difference is an omission of emphasis rather than a contradiction.
+  preserved_uncertainty: The essay may be oriented toward Xenophon's ascent and Socratic contrast rather than the
+    institutional biography of the army.
+  comparison_effect: Retain institutional transfer as a primary contribution of the sequential cumulative reconstruction.

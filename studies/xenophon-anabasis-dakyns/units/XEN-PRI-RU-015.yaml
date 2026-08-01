@@ -1,0 +1,312 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-015
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis II.5
+  pdf_pages_one_based: 42-46
+  opening_anchor: >-
+    After this they reached the river Zapatas, which is four hundred feet broad, and here they halted three days.
+  closing_anchor: >-
+    At this, the Asiatics stood discussing with one another for a long while, and then they went away without vouchsafing a word.
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis II.5 plus one-based PDF page
+  source_boundary: >-
+    Direct translated speeches, narratorial statements, suspicions, inferred motives,
+    reported accusations, promises to identify informers, ritual language, warnings,
+    violent outcomes, messenger testimony, interpreter identification, and claims made
+    after the seizure remain distinct. Tissaphernes's and Ariaeus's assertions are not
+    silently converted into established facts.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration with Xenophon named as a character near the chapter's end
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  observation: >-
+    The narrator reports that no treachery had yet displayed itself, that Tissaphernes
+    seemed truthful to Clearchus, that Clearchus suspected Menon, and that Xenophon
+    accompanied Cleanor and Sophaenetus in order to learn news of Proxenus. Xenophon
+    then speaks directly to Ariaeus by provisionally granting the accusation against
+    Clearchus and demanding the return of Proxenus and Menon.
+  uncertainty: >-
+    This witness does not settle the Greek force of oath, right hand, friendship,
+    calumny, suspicion, conscience, heaven, piety, faithlessness, tiara, heart,
+    public, treachery, slave, benefactor, advice, or the narrator-author relation.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis II.5; PDF p. 42
+    speech_form: interview_request_reported
+    speaker: Clearchus through a messenger
+    audience: Tissaphernes
+    occasion: three-day halt at the Zapatas amid mutual suspicion
+    content: Clearchus requests a personal interview to end mistrust before it produces war.
+    uncertainty: The exact wording of the messenger's request is not supplied.
+  - id: SAO-002
+    locator: Anabasis II.5; PDF pp. 42-43
+    speech_form: extended_direct_speech
+    speaker: Clearchus
+    audience: Tissaphernes
+    occasion: private meeting intended to dispel reciprocal suspicion
+    content: >-
+      Clearchus invokes the exchanged oaths and right hands, denies Greek hostile intent,
+      warns that calumny and anticipatory fear can produce irreparable wrong, and argues
+      that no perjurer can escape the gods. He calls Tissaphernes the Greeks' present
+      benefactor and proposes future service against troublesome peoples and enemies.
+    uncertainty: Clearchus's knowledge of all Greek intentions and the sincerity of each offer are not independently established.
+  - id: SAO-003
+    locator: Anabasis II.5; PDF pp. 43-44
+    speech_form: extended_direct_reply
+    speaker: Tissaphernes
+    audience: Clearchus
+    occasion: response to the appeal for trust
+    content: >-
+      Tissaphernes argues that Persia already possesses cavalry, infantry, terrain,
+      rivers, and famine as sufficient means to destroy the Greeks and therefore has no
+      reason to select the uniquely impious method of perjury. He claims a desire to
+      prove faithful to the Greeks and gain their future support through service.
+    uncertainty: The speech is a self-interested diplomatic claim and not independent proof of intention.
+  - id: SAO-004
+    locator: Anabasis II.5; PDF p. 44
+    speech_form: metaphorical_political_claim
+    speaker: Tissaphernes
+    audience: Clearchus
+    occasion: culmination of his case for Greek usefulness
+    content: >-
+      The great king alone may wear the tiara upright on his head, but another mortal may,
+      in the Greeks' presence, wear it upright upon his heart.
+    uncertainty: The political force of the tiara-and-heart image and its intended beneficiary are unresolved.
+  - id: SAO-005
+    locator: Anabasis II.5; PDF p. 44
+    speech_form: reciprocal_proposal
+    speaker: Clearchus and Tissaphernes
+    audience: one another
+    occasion: after Clearchus judges the Persian to be speaking truthfully
+    content: >-
+      Clearchus asks whether those who create enmity through slander deserve the worst
+      penalties. Tissaphernes agrees and offers publicly to name his informers if the
+      generals and captains come; Clearchus promises to bring them and disclose his own sources.
+    uncertainty: The proposed procedure, evidentiary rules, and guarantees are absent.
+  - id: SAO-006
+    locator: Anabasis II.5; PDF p. 44
+    speech_form: reported_advocacy
+    speaker: Clearchus
+    audience: Greek camp and commanders
+    occasion: return from dinner with Tissaphernes
+    content: >-
+      Clearchus reports confidence in Tissaphernes, insists that those invited should go,
+      and argues that convicted calumniators should be punished as traitors and enemies of their compatriots.
+    uncertainty: His report rests on his own judgment of the interview.
+  - id: SAO-007
+    locator: Anabasis II.5; PDF p. 45
+    speech_form: collective_warning_reported
+    speaker: some Greek soldiers
+    audience: Clearchus and the commanders
+    occasion: proposal that all invited leaders enter Tissaphernes's quarters
+    content: They warn that the generals and captains should not all go and that Tissaphernes should not be trusted too far.
+    uncertainty: The speakers, reasons, and scale of support are not named.
+  - id: SAO-008
+    locator: Anabasis II.5; PDF pp. 45-46
+    speech_form: royal_message_and_accusation
+    speaker: Ariaeus
+    audience: Cleanor, Sophaenetus, Xenophon, and the Greek camp
+    occasion: after the seizure and killing of Greek leaders
+    content: >-
+      Ariaeus says Clearchus was proved a perjurer and is dead, claims Proxenus and Menon
+      informed against him and are honored, and repeats the king's demand for the Greek arms as property once belonging to Cyrus, the king's slave.
+    uncertainty: The evidence against Clearchus and the condition of Proxenus and Menon are not shown.
+  - id: SAO-009
+    locator: Anabasis II.5; PDF pp. 45-46
+    speech_form: denunciation_reply_and_counterquestion
+    speaker: Cleanor, Ariaeus, and Xenophon
+    audience: the Persian and Asiatic delegation
+    occasion: response to the post-seizure message
+    content: >-
+      Cleanor denounces Ariaeus and Tissaphernes for betraying sworn allies. Ariaeus claims
+      Clearchus had long plotted against Tissaphernes, Orontas, and their associates.
+      Xenophon provisionally grants that a perjurer deserves death but asks that Proxenus
+      and Menon, acknowledged friends of both sides, be returned as advisers.
+    uncertainty: The delegation withdraws after discussion without answering Xenophon's request.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis II.5; PDF p. 42
+    actor: Clearchus and Tissaphernes
+    deed: They agree to meet personally after three days of suspicion without an overt act of treachery.
+    outcome: Mutual distrust is transferred from military watching to diplomatic speech.
+    uncertainty: The security arrangements for the first meeting are not stated.
+  - id: SDO-002
+    locator: Anabasis II.5; PDF pp. 42-44
+    actor: Clearchus
+    deed: >-
+      He bases trust on divine oaths, reciprocal advantage, Tissaphernes's indispensability,
+      and the future services the Greeks can render.
+    outcome: He seeks both to remove suspicion and establish a post-Cyrus alliance.
+    uncertainty: His offers may be sincere, strategic, or both.
+  - id: SDO-003
+    locator: Anabasis II.5; PDF pp. 43-44
+    actor: Tissaphernes
+    deed: >-
+      He demonstrates numerous open means of destroying the Greeks and contrasts them
+      with perjury, which he labels impious, abominable, and characteristic of helpless villains.
+    outcome: Clearchus comes to believe that Tissaphernes is speaking truthfully.
+    uncertainty: The argument from available force does not logically exclude deception.
+  - id: SDO-004
+    locator: Anabasis II.5; PDF p. 44
+    actor: Clearchus and Tissaphernes
+    deed: They agree to expose and punish alleged slanderers by convening the Greek generals and captains.
+    outcome: A proposed inquiry into suspicion becomes the mechanism by which the command is assembled.
+    uncertainty: No neutral procedure or safe-conduct is recorded.
+  - id: SDO-005
+    locator: Anabasis II.5; PDF pp. 44-45
+    actor: Clearchus, objecting soldiers, five generals, twenty captains, and about two hundred soldiers
+    deed: >-
+      Clearchus overrides warnings, brings the invited command group, and is accompanied by soldiers who also intend to market.
+    outcome: A large part of the Greek leadership and nearby personnel enter the reach of Tissaphernes's forces.
+    uncertainty: No formal vote or complete attendance list for the captains is supplied.
+  - id: SDO-006
+    locator: Anabasis II.5; PDF p. 45
+    actor: Tissaphernes's forces
+    deed: >-
+      At one signal the five generals inside are seized, the captains outside are cut down,
+      and cavalry kill Greeks encountered on the plain, bond and free.
+    outcome: The truce and leadership structure are violently ruptured.
+    uncertainty: Tissaphernes's personal location at the signal and the complete casualty count are unstated.
+  - id: SDO-007
+    locator: Anabasis II.5; PDF p. 45
+    actor: Nicarchus and the Greek camp
+    deed: >-
+      Nicarchus reaches the camp grievously wounded and reports what occurred; the Greeks arm in consternation and expect immediate attack.
+    outcome: Knowledge reaches the army through a wounded survivor rather than through its leaders.
+    uncertainty: Nicarchus's exact position during the seizure is not given.
+  - id: SDO-008
+    locator: Anabasis II.5; PDF pp. 45-46
+    actor: Ariaeus, Artaozus, Mithridates, Persian troops, Cleanor, Sophaenetus, and Xenophon
+    deed: >-
+      The delegation approaches under guard, announces Clearchus's guilt and death,
+      claims Proxenus and Menon are honored informers, and renews the demand for arms.
+    outcome: The Persians attempt to define the seizure as lawful punishment rather than betrayal.
+    uncertainty: The claims are neither demonstrated nor accepted by the Greeks.
+  - id: SDO-009
+    locator: Anabasis II.5; PDF pp. 45-46
+    actor: Cleanor, Ariaeus, Xenophon, and the Asiatic delegation
+    deed: >-
+      Cleanor charges betrayal; Ariaeus asserts Clearchus's prior conspiracy; Xenophon
+      uses a conditional concession to demand Proxenus and Menon as mutually trusted advisers.
+    outcome: The delegation confers privately and leaves without answering.
+    uncertainty: The silence does not establish the fate of Proxenus or Menon within this chapter.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Three-day halt at the Zapatas amid suspicion but no displayed treachery
+    - Clearchus requests personal intercourse before mistrust becomes war
+    - Clearchus invokes oaths, gods, utility, gratitude, and future alliance
+    - Tissaphernes invokes Persian superiority, piety, and future Greek usefulness
+    - Clearchus judges him truthful
+    - Both agree to expose alleged slanderers before the command body
+    - Clearchus dines with Tissaphernes and returns persuaded of favor
+    - Greek warnings against excessive trust are overridden
+    - Five generals, twenty captains, and market-goers approach the Persian quarters
+    - Generals are seized, captains cut down, and cavalry kill dispersed Greeks
+    - Nicarchus reports the event and the camp arms
+    - Ariaeus's delegation presents a royal account and renews the arms demand
+    - Cleanor denounces betrayal; Ariaeus accuses Clearchus
+    - Xenophon requests Proxenus and Menon; the delegation leaves in silence
+  repetitions:
+    - Oaths, right hands, gods, friendship, and betrayal recur as competing interpretations of the same relationship.
+    - Suspicion repeatedly seeks confirmation through speech, report, and inference.
+    - Markets and guides remain linked to political dependence.
+    - Persian strength is asserted through cavalry, terrain, rivers, famine, and royal authority.
+    - Greek arms are again demanded as the visible condition of subordination.
+  omissions:
+    - No evidence supporting the alleged Greek plot is presented before the leaders attend.
+    - No safe-conduct, hostage exchange, neutral place, or enforcement mechanism protects the second meeting.
+    - The named informers promised by Tissaphernes are never publicly identified in the chapter.
+    - The chapter does not record the final fate of the seized generals.
+    - The identities and casualties of the twenty captains are not listed.
+    - The source of Ariaeus's claims concerning Proxenus and Menon is absent.
+    - The Asiatic delegation gives no answer to Xenophon's request.
+  tensions:
+    - The chapter opens by saying no treachery had displayed itself and culminates in coordinated seizure and killing.
+    - Clearchus's strongest proof of Persian good faith becomes part of the persuasion that exposes the Greek command.
+    - Tissaphernes condemns perjury as the weapon of helpless villains while possessing overwhelming open means of force.
+    - Clearchus seeks to eliminate faction and calumny but concentrates the army's mind on himself and suspects Menon.
+    - Greek warnings prove prudent, yet Clearchus's practical authority overrides them.
+    - Ariaeus presents the seizure as punishment for perjury while Cleanor presents it as perjury and betrayal.
+    - Proxenus and Menon are called honored informers, but their appearance and testimony are withheld.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis II.5; PDF p. 42", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The army halts three days at the Zapatas, a river reported as four hundred feet broad.", uncertainty: "The measurement and river identification are witness reports."}
+  - {id: OBS-002, locator: "Anabasis II.5; PDF p. 42", evidence_type: NARRATORIAL_STATUS_OBSERVATION, observation: "Suspicion is widespread although no act of treachery has yet displayed itself.", uncertainty: "The narrator does not identify every source of suspicion."}
+  - {id: OBS-003, locator: "Anabasis II.5; PDF p. 42", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus initiates personal negotiation to prevent mistrust from producing war.", uncertainty: "His assessment of timing is not independently tested."}
+  - {id: OBS-004, locator: "Anabasis II.5; PDF p. 42", evidence_type: SPEAKER_CLAIM_OBSERVATION, observation: "Clearchus says oaths and joined right hands bind both parties against mutual injury.", uncertainty: "The exact oath wording remains absent."}
+  - {id: OBS-005, locator: "Anabasis II.5; PDF p. 42", evidence_type: SPEAKER_CLAIM_OBSERVATION, observation: "Clearchus says his investigation found no Persian mischief and asserts that no Greek hostility has entered their minds.", uncertainty: "He cannot directly know every soldier's intention."}
+  - {id: OBS-006, locator: "Anabasis II.5; PDF p. 42", evidence_type: STRUCTURAL_OBSERVATION, observation: "Calumny and anticipatory fear are presented as causes of first strikes and irreparable wrong.", uncertainty: "The immediate calumniator is not yet named."}
+  - {id: OBS-007, locator: "Anabasis II.5; PDF pp. 42-43", evidence_type: DIVINE_OATH_ARGUMENT_OBSERVATION, observation: "Clearchus argues that a perjurer cannot escape divine rule by speed, darkness, refuge, or fortification.", uncertainty: "The Greek religious vocabulary requires original-language review."}
+  - {id: OBS-008, locator: "Anabasis II.5; PDF p. 43", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus calls Tissaphernes the Greeks' greatest present blessing because he controls routes, crossings, and provisions.", uncertainty: "The statement also reveals Greek dependence."}
+  - {id: OBS-009, locator: "Anabasis II.5; PDF p. 43", evidence_type: SPEAKER_CLAIM_OBSERVATION, observation: "Clearchus offers Greek service against Mysians, Pisidians, Egyptians, troublesome neighbors, and enemies.", uncertainty: "No mandate from the whole army is recorded."}
+  - {id: OBS-010, locator: "Anabasis II.5; PDF p. 43", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus distinguishes service from mere hire by grounding it in gratitude for survival.", uncertainty: "Whether future service would remain voluntary is unresolved."}
+  - {id: OBS-011, locator: "Anabasis II.5; PDF p. 43", evidence_type: SPEAKER_CLAIM_OBSERVATION, observation: "Tissaphernes claims Persia could destroy the Greeks openly through troops, terrain, rivers, and famine.", uncertainty: "The claim is rhetorical and not tested here."}
+  - {id: OBS-012, locator: "Anabasis II.5; PDF pp. 43-44", evidence_type: SPEAKER_CLAIM_OBSERVATION, observation: "Tissaphernes calls perjury uniquely impious and abominable and associates it with helpless villains.", uncertainty: "His conduct must be compared with the chapter's outcome without collapsing claim into fact."}
+  - {id: OBS-013, locator: "Anabasis II.5; PDF p. 44", evidence_type: MOTIVE_CLAIM_OBSERVATION, observation: "Tissaphernes says he spared the Greeks from a desire to prove faithful and gain their strength through service rendered.", uncertainty: "The motive is self-reported."}
+  - {id: OBS-014, locator: "Anabasis II.5; PDF p. 44", evidence_type: METAPHOR_OBSERVATION, observation: "The upright tiara is reserved for the king's head, while another may wear it upright on the heart in the Greeks' presence.", uncertainty: "The image's constitutional and psychological force is unresolved."}
+  - {id: OBS-015, locator: "Anabasis II.5; PDF p. 44", evidence_type: NARRATORIAL_PERCEPTION_OBSERVATION, observation: "Throughout Tissaphernes's speech he seems to Clearchus to be speaking truthfully.", uncertainty: "This records Clearchus's perception rather than narrator-certified truth."}
+  - {id: OBS-016, locator: "Anabasis II.5; PDF p. 44", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Tissaphernes offers to name the accusers if the generals and captains attend openly and publicly.", uncertainty: "The protection attached to the invitation is unstated."}
+  - {id: OBS-017, locator: "Anabasis II.5; PDF p. 44", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Tissaphernes entertains Clearchus at dinner with an appearance of great kindness.", uncertainty: "Hospitality does not disclose intent."}
+  - {id: OBS-018, locator: "Anabasis II.5; PDF p. 44", evidence_type: MOTIVE_ATTRIBUTION_OBSERVATION, observation: "Clearchus suspects Menon because of meetings with Tissaphernes, factional opposition, and a supposed attempt to win the army.", uncertainty: "The narrator marks this as Clearchus's suspicion."}
+  - {id: OBS-019, locator: "Anabasis II.5; PDF pp. 44-45", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus wants the whole army to attend to no one else and refractory persons removed.", uncertainty: "The relation between unity, command, and faction is unresolved."}
+  - {id: OBS-020, locator: "Anabasis II.5; PDF p. 45", evidence_type: WARNING_OBSERVATION, observation: "Some soldiers warn that all generals and captains should not go and that Tissaphernes should not be trusted excessively.", uncertainty: "The warning is overridden without a recorded vote."}
+  - {id: OBS-021, locator: "Anabasis II.5; PDF p. 45", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Five generals and twenty captains attend, accompanied by about two hundred soldiers seeking to market.", uncertainty: "The exact total exposed to the attack is not supplied."}
+  - {id: OBS-022, locator: "Anabasis II.5; PDF p. 45", evidence_type: VIOLENT_OUTCOME_OBSERVATION, observation: "At one signal the generals inside are seized and the captains outside are cut down.", uncertainty: "The planners and signal mechanism are not narrated."}
+  - {id: OBS-023, locator: "Anabasis II.5; PDF p. 45", evidence_type: VIOLENT_OUTCOME_OBSERVATION, observation: "Persian cavalry kill every Greek they encounter on the plain, whether bond or free.", uncertainty: "The phrase does not yield a complete casualty count."}
+  - {id: OBS-024, locator: "Anabasis II.5; PDF p. 45", evidence_type: TESTIMONY_OBSERVATION, observation: "Nicarchus reaches camp wounded in the belly and reports the seizure and killing.", uncertainty: "His testimony is the camp's first clear account."}
+  - {id: OBS-025, locator: "Anabasis II.5; PDF p. 45", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The Greeks arm in consternation and expect an immediate attack on camp.", uncertainty: "The expected attack does not occur in this chapter."}
+  - {id: OBS-026, locator: "Anabasis II.5; PDF p. 45", evidence_type: INTERPRETER_REPORT_OBSERVATION, observation: "The Greek interpreter says he recognizes Tissaphernes's brother among the approaching force.", uncertainty: "The identification is mediated through the interpreter."}
+  - {id: OBS-027, locator: "Anabasis II.5; PDF p. 45", evidence_type: CHARACTER_APPEARANCE_OBSERVATION, observation: "Xenophon accompanies Cleanor and Sophaenetus because he wishes to learn news of Proxenus.", uncertainty: "No formal command role is assigned to him here."}
+  - {id: OBS-028, locator: "Anabasis II.5; PDF pp. 45-46", evidence_type: REPORTED_ACCUSATION_OBSERVATION, observation: "Ariaeus says Clearchus was proved a perjurer and had long plotted against Tissaphernes, Orontas, and their allies.", uncertainty: "No proof is produced to the Greeks."}
+  - {id: OBS-029, locator: "Anabasis II.5; PDF p. 45", evidence_type: CONFLICTING_REPORT_OBSERVATION, observation: "Ariaeus claims Proxenus and Menon informed against Clearchus and are held in honor.", uncertainty: "They do not appear, and the claim remains unverified within II.5."}
+  - {id: OBS-030, locator: "Anabasis II.5; PDF p. 45", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The king again demands the Greek arms, now claiming them as property formerly belonging to Cyrus, his slave.", uncertainty: "The legal theory of ownership is not developed."}
+  - {id: OBS-031, locator: "Anabasis II.5; PDF p. 45", evidence_type: OATH_BETRAYAL_OBSERVATION, observation: "Cleanor accuses Ariaeus and his associates of betraying the same-friends-and-enemies oath and joining Tissaphernes.", uncertainty: "Ariaeus rejects the interpretation by accusing Clearchus."}
+  - {id: OBS-032, locator: "Anabasis II.5; PDF pp. 45-46", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "Xenophon conditionally accepts punishment for proven perjury but demands Proxenus and Menon as friends and advisers of both sides.", uncertainty: "The delegation departs without answering."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis II.5; PDF pp. 42-46", evidence_type: PROVISIONAL_INFERENCE, finding: "The chapter converts reciprocal suspicion into a trust-producing dialogue and then into the destruction of the command group assembled by that dialogue.", confidence: high_for_sequence}
+  - {id: INF-002, locator: "Anabasis II.5; PDF pp. 42-44", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus treats divine oath, reciprocal utility, and face-to-face speech as mutually reinforcing safeguards, but none supplies an institutional guarantee.", confidence: high_for_structure}
+  - {id: INF-003, locator: "Anabasis II.5; PDF pp. 43-44", evidence_type: PROVISIONAL_INFERENCE, finding: "Tissaphernes's proof from overwhelming open force persuades Clearchus precisely because treachery appears unnecessary, not impossible.", confidence: high_for_argument_structure}
+  - {id: INF-004, locator: "Anabasis II.5; PDF p. 44", evidence_type: PROVISIONAL_INFERENCE, finding: "The tiara-and-heart image suggests that Greek military presence can confer an inward or aspirational form of elevation short of formal kingship.", confidence: low_pending_Greek_and_context}
+  - {id: INF-005, locator: "Anabasis II.5; PDF pp. 44-45", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus's effort to eliminate calumny and faction is inseparable from his wish to monopolize the army's attention and remove rivals.", confidence: moderate_for_motive_structure}
+  - {id: INF-006, locator: "Anabasis II.5; PDF p. 45", evidence_type: PROVISIONAL_INFERENCE, finding: "The unprotected concentration of leadership converts personal confidence into institutional vulnerability.", confidence: high_for_outcome}
+  - {id: INF-007, locator: "Anabasis II.5; PDF pp. 45-46", evidence_type: PROVISIONAL_INFERENCE, finding: "After the seizure, both sides try to control the event's meaning through opposed charges of perjury rather than through shared evidence.", confidence: high_for_speech_sequence}
+  - {id: INF-008, locator: "Anabasis II.5; PDF pp. 45-46", evidence_type: PROVISIONAL_INFERENCE, finding: "Xenophon's conditional reply avoids defending Clearchus absolutely and instead tests the Persian account by demanding the supposedly honored intermediaries.", confidence: high_for_rhetorical_form}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis II.5; PDF p. 42", evidence_type: UNRESOLVED_QUESTION, question: "What specific events or reports generated the three days of suspicion before any displayed treachery?"}
+  - {id: Q-002, locator: "Anabasis II.5; PDF pp. 42-43", evidence_type: UNRESOLVED_QUESTION, question: "How far could Clearchus truthfully speak for the intentions of all Greek contingents?"}
+  - {id: Q-003, locator: "Anabasis II.5; PDF pp. 42-44", evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie oath, right hand, conscience, heaven, piety, perjury, friendship, and faithlessness?"}
+  - {id: Q-004, locator: "Anabasis II.5; PDF p. 43", evidence_type: UNRESOLVED_QUESTION, question: "Did Clearchus possess authority to promise long-term Greek campaigns for Tissaphernes?"}
+  - {id: Q-005, locator: "Anabasis II.5; PDF p. 44", evidence_type: UNRESOLVED_QUESTION, question: "What does it mean to wear the royal tiara upright upon the heart in the presence of the Greeks?"}
+  - {id: Q-006, locator: "Anabasis II.5; PDF p. 44", evidence_type: UNRESOLVED_QUESTION, question: "Why does Tissaphernes choose the invitation-and-informer procedure rather than publicly name the accusers immediately?"}
+  - {id: Q-007, locator: "Anabasis II.5; PDF p. 44", evidence_type: UNRESOLVED_QUESTION, question: "What exactly persuaded Clearchus that Tissaphernes was speaking truthfully?"}
+  - {id: Q-008, locator: "Anabasis II.5; PDF pp. 44-45", evidence_type: UNRESOLVED_QUESTION, question: "What evidence, if any, supported Clearchus's suspicion of Menon?"}
+  - {id: Q-009, locator: "Anabasis II.5; PDF p. 45", evidence_type: UNRESOLVED_QUESTION, question: "Who warned against sending all the leaders, and why did their warning fail to constrain Clearchus?"}
+  - {id: Q-010, locator: "Anabasis II.5; PDF p. 45", evidence_type: UNRESOLVED_QUESTION, question: "Were any explicit safe-conduct, hospitality, market, or oath protections understood to cover the second meeting?"}
+  - {id: Q-011, locator: "Anabasis II.5; PDF p. 45", evidence_type: UNRESOLVED_QUESTION, question: "Who planned the simultaneous seizure, killings, and cavalry sweep, and what was Tissaphernes's precise role?"}
+  - {id: Q-012, locator: "Anabasis II.5; PDF p. 45", evidence_type: UNRESOLVED_QUESTION, question: "What were the identities and fates of the twenty captains and the approximately two hundred market-goers?"}
+  - {id: Q-013, locator: "Anabasis II.5; PDF pp. 45-46", evidence_type: UNRESOLVED_QUESTION, question: "What evidence lies behind Ariaeus's assertion that Clearchus plotted against Tissaphernes, Orontas, and their associates?"}
+  - {id: Q-014, locator: "Anabasis II.5; PDF p. 45", evidence_type: UNRESOLVED_QUESTION, question: "Why are Proxenus and Menon described as honored informers but not produced before the Greeks?"}
+  - {id: Q-015, locator: "Anabasis II.5; PDF p. 45", evidence_type: UNRESOLVED_QUESTION, question: "What legal or political basis supports the claim that the Greek arms belong to Artaxerxes because Cyrus was his slave?"}
+  - {id: Q-016, locator: "Anabasis II.5; PDF pp. 45-46", evidence_type: UNRESOLVED_QUESTION, question: "Why does the Asiatic delegation leave without answering Xenophon's request for Proxenus and Menon?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text for oath, right hand, conscience, heaven, piety, perjury, friendship, calumny, treachery, tiara, heart, slave, benefactor, and advice.
+  - Compare modern translations and commentaries on the tiara-upon-the-heart image.
+  - Track every oath and pledge from II.2-II.5 against the seizure and each side's later accusation.
+  - Track Clearchus's treatment of suspicion, faction, Menon, and command monopoly across Books I-II.
+  - Compare Tissaphernes's stated reasons for good faith with the narrated sequence and later accounts.
+  - Establish the names and fates of the five generals, twenty captains, and accompanying soldiers from subsequent chapters and external witnesses.
+  - Track Nicarchus's testimony and any later account of the simultaneous signal.
+  - Track the repeated demand for Greek arms and the changing grounds offered for ownership or surrender.
+  - Compare Ariaeus's post-seizure claims with II.6 and any independent account of Proxenus and Menon.
+  - Track Xenophon's transition from attendant seeking news of Proxenus to direct public speaker.
+  - Defer comparison with Strauss until the relevant primary sequence is complete.
+secondary_comparison_status: DEFERRED

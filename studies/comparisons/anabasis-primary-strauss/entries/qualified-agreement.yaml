@@ -1,0 +1,264 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+classification: QUALIFIED_AGREEMENT
+status: DRAFTED_PENDING_OWNER_REVIEW
+entry_count: 9
+entries:
+- id: CMP-001
+  topic: Title, opening, and the work's governing movement
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: The opening centers the Persian royal household and Cyrus's concealed kingship project, but the governing
+      action shifts after Cyrus's death to the Greeks' survival, return, and political self-organization.
+    cumulative_anchors:
+    - CP-001
+    - CP-003
+    - WF-001
+    - TR-001
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-008
+    - XEN-PRI-RU-010
+    - XEN-PRI-RU-017
+  secondary_stream:
+    position: Strauss calls the authentic title 'Cyrus' Ascent' misleading because Cyrus's expedition occupies at
+      most Book One and proposes that the book may be understood as Xenophon's ascent.
+    secondary_units:
+    - XEN-RU-001
+    - XEN-RU-003
+    printed_pages: 105-108, 113-116
+  controlled_relation: Both streams identify a disproportion between the dynastic opening and the six books after
+    Cyrus. The primary stream supports the structural displacement but does not by itself establish Strauss's formula
+    'Xenophon's ascent' as the work's final purpose.
+  preserved_uncertainty: The title tradition, narrator identity, and authorial intention require Greek and manuscript
+    review.
+  comparison_effect: Admit structural displacement as shared evidence; preserve Strauss's account of the title's
+    function as a secondary interpretation.
+- id: CMP-004
+  topic: Cyrus's concealment, virtues, and posthumous portrait
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: Cyrus assembles the force through friendship, money, local pretexts, and unequal knowledge; his death
+      separates tactical victory from the political end, and his portrait must be read against secrecy, generosity,
+      ambition, and rule.
+    cumulative_anchors:
+    - CP-002
+    - WQ-003
+    - WQ-006
+    - PAT-001
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-008
+    - XEN-PRI-RU-009
+  secondary_stream:
+    position: Strauss reads the omission of piety from Cyrus's eulogy as significant and contrasts Cyrus's virtues,
+      secrecy, and royal ambition with later standards of piety and justice.
+    secondary_units:
+    - XEN-RU-001
+    - XEN-RU-006
+    printed_pages: 105-108, 125-128
+  controlled_relation: Both streams require the portrait to be interpreted with the opening and campaign, but the
+    primary cumulative record does not independently establish that omitted piety functions as definite blame.
+  preserved_uncertainty: Greek virtue vocabulary and the completeness of the eulogy remain unreviewed.
+  comparison_effect: Admit the broader contextual test; preserve omission-as-judgment as qualified.
+- id: CMP-007
+  topic: Delphic consultation and the jurisdiction of human decision
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: Dreams, sacrifice, signs, and vows occur within decisions that also require private deliberation,
+      public speech, office, route selection, and tactical planning.
+    cumulative_anchors:
+    - PAT-008
+    - WQ-008
+    - WF-008
+    source_units:
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-029
+    - XEN-PRI-RU-041
+  secondary_stream:
+    position: Strauss argues that Xenophon reserves the primary question whether to act for human judgment and asks
+      Delphi or sacrifice about the gods, conditions, or execution of an already contemplated act.
+    secondary_units:
+    - XEN-RU-002
+    - XEN-RU-006
+    - XEN-RU-007
+    printed_pages: 109-112, 125-132
+  controlled_relation: The primary sequence supports repeated distinctions between deliberation and ritual consultation,
+    but it does not yet establish a universal rule that Xenophon always confines divination to secondary execution.
+  preserved_uncertainty: The Greek wording of questions and signs, as well as exceptions across Xenophon's works,
+    remains open.
+  comparison_effect: Adopt the jurisdictional distinction as a strong comparison hypothesis, not a final doctrine.
+- id: CMP-012
+  topic: Signs, chance, and non-self-interpreting divine causation
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: Narrated dreams, sacrifices, omens, delays, and fulfillments are preserved without independent certification
+      that divine agency caused the outcome.
+    cumulative_anchors:
+    - WQ-008
+    - PAT-008
+    - SDO-CUM-009
+    source_units:
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-029
+    - XEN-PRI-RU-041
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss repeatedly preserves rival readings of signs and formulates favorable contingency as 'deus
+      sive casus,' requiring human recognition and extension.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-005
+    - XEN-RU-007
+    printed_pages: 113-132
+  controlled_relation: The streams agree that signs are not self-interpreting and that human judgment remains necessary.
+    Strauss goes further by framing theological questions about law, omniscience, and what a god is.
+  preserved_uncertainty: The deeper theology exceeds both the admitted translation and this single-work comparison.
+  comparison_effect: Admit the causal restraint; preserve the theological extension as secondary and unresolved.
+- id: CMP-016
+  topic: Monarchy, sole command, and practical supremacy
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: The army experiments with unified command, suffers fragmentation, and repeatedly separates formal
+      office from practical authority.
+    cumulative_anchors:
+    - PAT-005
+    - WF-003
+    - WF-005
+    - CP-004
+    source_units:
+    - XEN-PRI-RU-038
+    - XEN-PRI-RU-039
+    - XEN-PRI-RU-043
+    - XEN-PRI-RU-045
+  secondary_stream:
+    position: Strauss presents monarchy as a genuine temptation and crisis-specific advantage, interprets Xenophon's
+      refusal through political and sacrificial grounds, and later calls his supremacy practical monarchy.
+    secondary_units:
+    - XEN-RU-007
+    printed_pages: 129-132
+  controlled_relation: The primary stream supports the command experiment and practical supremacy but does not establish
+    monarchy as a general regime teaching or identify a single peak of ascent.
+  preserved_uncertainty: The constitutional force of election, office, and informal command requires Greek and institutional
+    review.
+  comparison_effect: Admit the military-command problem; qualify the regime-level conclusion.
+- id: CMP-017
+  topic: Greek freedom, obedience, and rule
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: Greek freedom appears as a recurring achievement of organized obedience under contestable leaders,
+      not as the absence of command.
+    cumulative_anchors:
+    - WF-004
+    - CP-005
+    - PAT-005
+    source_units:
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-018
+    - XEN-PRI-RU-020
+    - XEN-PRI-RU-039
+    - XEN-PRI-RU-045
+  secondary_stream:
+    position: Strauss emphasizes strengthened punitive power, obedience during war, resistance to faction, and the
+      political necessity of yielding to Spartan authority in some crises.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 113-116, 129-136
+  controlled_relation: Both streams connect freedom with discipline and order, but Strauss's Greece-Sparta-Athens
+    framework introduces historical and cross-political claims beyond the translation-only cumulative record.
+  preserved_uncertainty: The Greek vocabulary of freedom, rule, and obedience remains unadjudicated.
+  comparison_effect: Admit the paradox of freedom through command while preserving the hegemonic interpretation
+    as qualified.
+- id: CMP-018
+  topic: Founding, settlement, and fatherland
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: Homecoming is repeatedly challenged by colony, settlement, employment, and new-ruler alternatives;
+      the colonial proposal remains serious enough to provoke faction and defense but unresolved in motive and feasibility.
+    cumulative_anchors:
+    - PAT-012
+    - WQ-011
+    - WF-007
+    - CP-008
+    source_units:
+    - XEN-PRI-RU-029
+    - XEN-PRI-RU-035
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-041
+    - XEN-PRI-RU-046
+  secondary_stream:
+    position: Strauss treats city founding as a possible peak or overreaching peak of Xenophon's ascent and places
+      it within the question whether Cyrus, Greece, or one's fatherland deserves priority.
+    secondary_units:
+    - XEN-RU-003
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 113-136
+  controlled_relation: The streams agree that founding and return are governing alternatives. The primary record
+    does not establish Strauss's hierarchy of founder, monarch, Greece, and fatherland.
+  preserved_uncertainty: Xenophon's motives and the relation between Athens, Sparta, Greece, and transpolitical
+    excellence remain unresolved.
+  comparison_effect: Admit founding as central; preserve the fatherland hierarchy as a secondary interpretation.
+- id: CMP-020
+  topic: Greeks, Persians, and other non-Greek communities
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: The Greeks remain distinct while depending on Persian patrons, local guides, interpreters, markets,
+      treaties, and alliances; the primary record rejects a simple self-sufficient Greek-barbarian opposition.
+    cumulative_anchors:
+    - PAT-010
+    - WF-011
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-013
+    - XEN-PRI-RU-024
+    - XEN-PRI-RU-033
+    - XEN-PRI-RU-046
+  secondary_stream:
+    position: Strauss complicates the Persian-Greek opposition through Karduchian independence, Armenian hospitality
+      and analogy to Athens, Mossynoikian law, Spartan-Persian cooperation, and Xenophon's final preference for
+      Greece.
+    secondary_units:
+    - XEN-RU-004
+    - XEN-RU-005
+    - XEN-RU-008
+    printed_pages: 117-124, 133-136
+  controlled_relation: The streams agree that the opposition is politically and morally complex. Strauss's Armenian-Socratic
+    and cross-work analogies exceed the primary Anabasis reconstruction.
+  preserved_uncertainty: Ethnographic judgments and cross-work parallels remain translator-mediated and unverified.
+  comparison_effect: Admit reciprocal dependence and complexity; qualify the analogical superstructure.
+- id: CMP-024
+  topic: Friendship as infrastructure and vulnerability
+  classification: QUALIFIED_AGREEMENT
+  primary_stream:
+    position: Friendship and guest-friendship recruit, finance, guide, accuse, rescue, negotiate, and expose the
+      army and Xenophon to dependence.
+    cumulative_anchors:
+    - PAT-003
+    - WF-009
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-006
+    - XEN-PRI-RU-009
+    - XEN-PRI-RU-015
+    - XEN-PRI-RU-049
+  secondary_stream:
+    position: Strauss places Proxenos, Cyrus, Ariaeus, Agasias, Seuthes, and Xenophon's relations with comrades
+      and rulers at decisive points of ascent, betrayal, accusation, and defense.
+    secondary_units:
+    - XEN-RU-002
+    - XEN-RU-003
+    - XEN-RU-006
+    - XEN-RU-008
+    printed_pages: 109-136
+  controlled_relation: The streams agree on political importance but the primary record cannot verify Strauss's
+    distinctions among friendship terms or the full Socratic contrast.
+  preserved_uncertainty: The Greek vocabulary of friendship remains an explicit gap.
+  comparison_effect: Admit friendship's political role while preserving lexical uncertainty.

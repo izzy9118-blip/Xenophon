@@ -1,0 +1,268 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-011
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis II.1
+  pdf_pages_one_based: 31-34
+  opening_anchor: "With the break of day the generals met, and were surprised that Cyrus should not have appeared himself"
+  closing_anchor: "But what he was minded really to do, that he refused to make further manifest."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis II.1 plus one-based PDF page
+  source_boundary: >-
+    The parenthetical Book II retrospect, narrative statements, direct translated speeches,
+    reported anonymous speeches, the Theopompus/Xenophon textual variant, translator notes,
+    sacrificial activity, and narrator-reported intention remain distinct.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration preceded by a parenthetical Book II retrospect
+  xenophon_as_character_present: TEXTUALLY_DISPUTED
+  direct_authorial_self_identification_present: false
+  observation: >-
+    A speech defending retention of the arms is assigned by the best manuscripts, according
+    to Dakyns's note, to Theopompus the Athenian; other witnesses read Xenophon. The unit
+    therefore does not silently identify the speaker with Xenophon.
+  uncertainty: >-
+    This witness does not settle the Greek wording of victory, empire, master, friend, arms,
+    courage, good things, truce, war, advice, nobility, sacrifice, or the disputed speaker.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis II.1; PDF p. 31
+    speech_form: message_reported
+    speaker: Procles and Glus
+    audience: Greek generals
+    occasion: dawn arrival as the Greeks prepare to seek Cyrus
+    content: >-
+      They report that Cyrus is dead, Ariaeus has withdrawn to the previous day's starting
+      place, and Ariaeus will wait one day for the Greeks before returning toward Ionia.
+    uncertainty: Their sources and Ariaeus's exact authority are not supplied.
+  - id: SAO-002
+    locator: Anabasis II.1; PDF p. 31
+    speech_form: direct_reply
+    speaker: Clearchus
+    audience: Procles and Glus for transmission to Ariaeus
+    occasion: response to Cyrus's death
+    content: >-
+      Clearchus says the Greeks have conquered the king and offers to place Ariaeus on the
+      throne if he joins them, because empire belongs to conquerors.
+    uncertainty: The Persian, constitutional, and practical basis of the offer is unstated.
+  - id: SAO-003
+    locator: Anabasis II.1; PDF p. 32
+    speech_form: royal_ultimatum_reported
+    speaker: heralds from Artaxerxes and Tissaphernes
+    audience: Greek generals
+    occasion: royal recovery after Cyrus's death
+    content: >-
+      They say the great king has won, slain Cyrus, and orders the Greeks to surrender their
+      arms and seek whatever terms they can obtain at the palace gates.
+    uncertainty: Detailed terms and guarantees are absent.
+  - id: SAO-004
+    locator: Anabasis II.1; PDF p. 32
+    speech_form: successive_direct_replies
+    speaker: Clearchus, Cleanor, Proxenus, and Theopompus or Xenophon
+    audience: Phalinus and the royal heralds
+    occasion: debate over surrendering arms
+    content: >-
+      Clearchus says conquerors do not surrender arms; Cleanor prefers death; Proxenus asks
+      whether the king seeks arms as master or friend; the disputed Athenian speaker says
+      arms and courage are the Greeks' only remaining goods.
+    uncertainty: The Athenian speaker's identity is textually disputed.
+  - id: SAO-005
+    locator: Anabasis II.1; PDF pp. 32-33
+    speech_form: direct_reply_and_reported_counterproposal
+    speaker: Phalinus and unnamed Greek speakers
+    audience: Greek generals and royal heralds
+    occasion: response to the refusal
+    content: >-
+      Phalinus claims Cyrus's death proves royal victory and that rivers and numbers place the
+      Greeks in the king's power. Unnamed Greeks propose serving the king, possibly in Egypt.
+    uncertainty: The unnamed speakers, their tone, and the seriousness of the proposal are unresolved.
+  - id: SAO-006
+    locator: Anabasis II.1; PDF p. 33
+    speech_form: strategic_appeal_for_advice
+    speaker: Clearchus
+    audience: Phalinus
+    occasion: Clearchus returns to the council
+    content: >-
+      Clearchus invokes common Greek identity, heaven, honor, and future reputation in Hellas
+      while asking Phalinus for the best and worthiest advice.
+    uncertainty: The narrator says Clearchus hoped to induce advice against disarmament.
+  - id: SAO-007
+    locator: Anabasis II.1; PDF p. 33
+    speech_form: conditional_advice
+    speaker: Phalinus
+    audience: Clearchus and the Greek generals
+    occasion: answering the request for counsel
+    content: >-
+      He advises retaining the arms if there is even one chance in ten thousand of successful
+      resistance, but surrendering if escape is impossible without royal consent.
+    uncertainty: The numerical expression may be rhetorical rather than mathematical.
+  - id: SAO-008
+    locator: Anabasis II.1; PDF pp. 33-34
+    speech_form: diplomatic_reply
+    speaker: Clearchus
+    audience: Phalinus for transmission to Artaxerxes
+    occasion: final answer concerning arms and truce
+    content: >-
+      Armed Greeks are more valuable as friends and stronger as enemies. Clearchus repeats
+      the king's formula: truce if they remain, war if they move forward or backward.
+    uncertainty: Clearchus deliberately refuses to disclose his real intention.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis II.1; PDF p. 31
+    actor: Greek generals
+    deed: They arm and prepare to move forward to join Cyrus before learning he is dead.
+    outcome: Their first Book II plan is governed by Book I ignorance.
+    uncertainty: The initiator and intended route are not identified.
+  - id: SDO-002
+    locator: Anabasis II.1; PDF p. 31
+    actor: Procles, Glus, Clearchus, Cheirisophus, and Menon
+    deed: >-
+      The messengers disclose Cyrus's death; Clearchus proposes Ariaeus as king and sends
+      Cheirisophus and Menon to him.
+    outcome: The Greeks try to preserve the expedition by transferring its royal object.
+    uncertainty: Ariaeus did not request the throne in the recorded message.
+  - id: SDO-003
+    locator: Anabasis II.1; PDF p. 32
+    actor: Greek soldiers
+    deed: >-
+      They slaughter baggage oxen and asses and burn abandoned arrows, shields, targets,
+      and wagons to cook food.
+    outcome: Transport and battlefield material become immediate subsistence resources.
+    uncertainty: The cost to later mobility is unquantified.
+  - id: SDO-004
+    locator: Anabasis II.1; PDF pp. 32-33
+    actor: Artaxerxes, Tissaphernes, Phalinus, and the heralds
+    deed: They demand disarmament and present Cyrus's death, geography, and royal numbers as proof of mastery.
+    outcome: The battle result becomes a diplomatic contest over who may define victory.
+    uncertainty: The capacity to enforce immediate surrender is asserted but not tested.
+  - id: SDO-005
+    locator: Anabasis II.1; PDF p. 32
+    actor: Clearchus and the Greek generals
+    deed: >-
+      Clearchus rejects surrender, delegates the detailed reply while inspecting sacrificial
+      entrails, and returns after several divergent answers.
+    outcome: A plurality of positions appears before Clearchus resumes control.
+    uncertainty: Ritual necessity and strategic calculation cannot be separated.
+  - id: SDO-006
+    locator: Anabasis II.1; PDF pp. 32-33
+    actor: Greek speakers and Phalinus
+    deed: They test death, mastery, friendship, exchange, courage, service, and survival as grounds for policy.
+    outcome: No answer binds the Greeks before Clearchus returns.
+    uncertainty: The army's reaction and each speaker's authority are not narrated.
+  - id: SDO-007
+    locator: Anabasis II.1; PDF p. 33
+    actor: Clearchus and Phalinus
+    deed: >-
+      Clearchus tries to convert the royal envoy into a Greek counselor; Phalinus instead gives
+      conditional advice based on the chance of survival.
+    outcome: Phalinus admits that even a minimal chance can justify keeping the arms.
+    uncertainty: Whether Clearchus obtains this concession deliberately remains provisional.
+  - id: SDO-008
+    locator: Anabasis II.1; PDF pp. 33-34
+    actor: Clearchus
+    deed: >-
+      He frames arms as useful under friendship or war, repeats the king's truce formula,
+      and conceals his intended movement.
+    outcome: The Greeks retain arms and a temporary pause without publicly committing to a course.
+    uncertainty: The actual plan is deferred to II.2.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Book II retrospect preserves the Greeks' belief that Cyrus lived
+    - Dawn council prepares to seek Cyrus
+    - Procles and Glus disclose Cyrus's death and Ariaeus's withdrawal
+    - Clearchus proposes enthroning Ariaeus
+    - Soldiers improvise food and fuel from animals and battlefield debris
+    - Royal heralds demand disarmament
+    - Greek generals offer divergent replies
+    - Clearchus seeks to enlist Phalinus as an adviser
+    - Phalinus offers conditional survival advice
+    - Clearchus refuses disarmament and preserves ambiguity
+  repetitions:
+    - Victory is claimed by both sides on different grounds.
+    - Arms are joined to life, courage, bargaining power, and political status.
+    - Friendship appears as an alternative to mastery and as a form of service.
+    - Clearchus uses speech to preserve freedom of action while withholding intention.
+    - Reports, messengers, envoys, and textual notes mediate decisive knowledge.
+  omissions:
+    - No underlying witness to Cyrus's death is named.
+    - Ariaeus's words are not quoted directly.
+    - No mechanism for enthroning Ariaeus is supplied.
+    - The king offers no detailed terms for surrendered Greeks.
+    - The weak speakers are unnamed.
+    - The Theopompus/Xenophon attribution remains unresolved.
+    - The sacrificial signs are not described.
+    - Clearchus's true plan is explicitly withheld.
+  tensions:
+    - The Greeks prevail tactically while Artaxerxes prevails dynastically.
+    - Clearchus proposes another king immediately after Cyrus's project collapses.
+    - Arms preserve life while food is obtained by consuming transport and discarded weapons.
+    - Greek identity is invoked between a Greek commander and a Greek serving the Persian court.
+    - Phalinus is enemy envoy, tactical expert, compatriot, counselor, and object of future judgment.
+    - The truce requires immobility from a force that cannot remain indefinitely.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis II preface; PDF p. 31", evidence_type: EDITORIAL_OR_TEXTUAL_FRAME_OBSERVATION, observation: "A parenthetical retrospect says the Greeks rested believing themselves victorious and Cyrus alive.", uncertainty: "Its textual and editorial status requires review."}
+  - {id: OBS-002, locator: "Anabasis II.1; PDF p. 31", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "At dawn the generals expect Cyrus or instructions from him.", uncertainty: "Their expectation rests on ignorance from Book I."}
+  - {id: OBS-003, locator: "Anabasis II.1; PDF p. 31", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Procles and Glus report Cyrus dead and Ariaeus withdrawn.", uncertainty: "Their sources are not named."}
+  - {id: OBS-004, locator: "Anabasis II.1; PDF p. 31", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Ariaeus will wait one day and then return toward Ionia.", uncertainty: "The reason for the deadline is unstated."}
+  - {id: OBS-005, locator: "Anabasis II.1; PDF p. 31", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus defines Greek victory by the absence of enemies remaining in the field.", uncertainty: "This is local rather than general victory."}
+  - {id: OBS-006, locator: "Anabasis II.1; PDF p. 31", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus offers Ariaeus the throne and says empire belongs to conquerors.", uncertainty: "No succession mechanism is supplied."}
+  - {id: OBS-007, locator: "Anabasis II.1; PDF pp. 31-32", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Menon desires the mission to Ariaeus because of friendship and hospitality ties.", uncertainty: "Private and public motives are not separated."}
+  - {id: OBS-008, locator: "Anabasis II.1; PDF p. 32", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The soldiers kill baggage animals for food.", uncertainty: "The logistical cost is not quantified."}
+  - {id: OBS-009, locator: "Anabasis II.1; PDF p. 32", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Discarded weapons and wagons are burned to cook meat.", uncertainty: "The value of the destroyed material is unstated."}
+  - {id: OBS-010, locator: "Anabasis II.1; PDF p. 32", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Phalinus is represented as an esteemed tactical expert at Tissaphernes's court.", uncertainty: "His expertise is not independently tested here."}
+  - {id: OBS-011, locator: "Anabasis II.1; PDF p. 32", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The royal message links victory to Cyrus's death and demands the arms.", uncertainty: "Detailed surrender terms are absent."}
+  - {id: OBS-012, locator: "Anabasis II.1; PDF p. 32", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus says conquerors do not ordinarily surrender arms.", uncertainty: "The maxim contests the king's victory claim."}
+  - {id: OBS-013, locator: "Anabasis II.1; PDF p. 32", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Cleanor prefers death to disarmament.", uncertainty: "No vote follows his answer."}
+  - {id: OBS-014, locator: "Anabasis II.1; PDF p. 32", evidence_type: STRUCTURAL_OBSERVATION, observation: "Proxenus distinguishes surrender to a master from reciprocal exchange with a friend.", uncertainty: "The king's political status over the Greeks remains contested."}
+  - {id: OBS-015, locator: "Anabasis II.1; PDF pp. 32-33", evidence_type: TEXTUAL_VARIANT_OBSERVATION, observation: "The arms-and-courage speech is assigned to Theopompus by the best manuscripts in Dakyns's note; others read Xenophon.", uncertainty: "Attribution remains unresolved."}
+  - {id: OBS-016, locator: "Anabasis II.1; PDF p. 33", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Phalinus laughs and says courage cannot defeat royal power.", uncertainty: "The Greek force of philosopher and power requires review."}
+  - {id: OBS-017, locator: "Anabasis II.1; PDF p. 33", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Unnamed Greeks weakly offer service against Egypt.", uncertainty: "Names and exact wording are withheld."}
+  - {id: OBS-018, locator: "Anabasis II.1; PDF p. 33", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus uses future reputation in Hellas to pressure Phalinus's advice.", uncertainty: "The appeal's effectiveness is uncertain."}
+  - {id: OBS-019, locator: "Anabasis II.1; PDF p. 33", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Phalinus advises keeping arms if even one chance in ten thousand exists.", uncertainty: "The number may be rhetorical."}
+  - {id: OBS-020, locator: "Anabasis II.1; PDF p. 33", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus says armed Greeks are more useful as friends and stronger as enemies.", uncertainty: "The future relationship remains undecided."}
+  - {id: OBS-021, locator: "Anabasis II.1; PDF pp. 33-34", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The king grants truce only while the Greeks remain in place.", uncertainty: "Duration and supply conditions are absent."}
+  - {id: OBS-022, locator: "Anabasis II.1; PDF p. 34", evidence_type: STRUCTURAL_OBSERVATION, observation: "Clearchus repeats the king's distinction rather than selecting peace or war.", uncertainty: "The repetition preserves ambiguity."}
+  - {id: OBS-023, locator: "Anabasis II.1; PDF p. 34", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The narrator says Clearchus conceals his real intention.", uncertainty: "The intended course is deferred."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis II.1; PDF pp. 31-32", evidence_type: PROVISIONAL_INFERENCE, finding: "Book II opens by converting ignorance of Cyrus's death into a crisis of political object, command, and survival.", confidence: high_for_sequence}
+  - {id: INF-002, locator: "Anabasis II.1; PDF p. 31", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus first tries to preserve the expedition by substituting Ariaeus for Cyrus.", confidence: moderate_pending_ariaeus_response}
+  - {id: INF-003, locator: "Anabasis II.1; PDF pp. 31-34", evidence_type: PROVISIONAL_INFERENCE, finding: "The king and Greeks claim victory by incompatible measures: dynastic survival and local battlefield possession.", confidence: high_for_chapter_structure}
+  - {id: INF-004, locator: "Anabasis II.1; PDF pp. 32-34", evidence_type: PROVISIONAL_INFERENCE, finding: "Arms function as protection, freedom, bargaining power, and the condition of either friendship or war.", confidence: high_for_speech_sequence}
+  - {id: INF-005, locator: "Anabasis II.1; PDF p. 33", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus uses Greek identity, sacred witness, honor, and reputation instrumentally in negotiation.", confidence: moderate_for_narrated_intention}
+  - {id: INF-006, locator: "Anabasis II.1; PDF pp. 33-34", evidence_type: PROVISIONAL_INFERENCE, finding: "The stationary truce is unstable because remaining indefinitely is incompatible with subsistence.", confidence: high_with_chapter_context}
+  - {id: INF-007, locator: "Anabasis II.1; PDF p. 34", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus begins Book II leadership through controlled ambiguity rather than declared policy.", confidence: high_for_chapter_closure}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis II preface; PDF p. 31", evidence_type: UNRESOLVED_QUESTION, question: "What is the textual and editorial status of the Book II retrospect?"}
+  - {id: Q-002, locator: "Anabasis II.1; PDF p. 31", evidence_type: UNRESOLVED_QUESTION, question: "How were Procles and Glus informed of Cyrus's death?"}
+  - {id: Q-003, locator: "Anabasis II.1; PDF p. 31", evidence_type: UNRESOLVED_QUESTION, question: "Was Clearchus's proposed march against Artaxerxes real or rhetorical?"}
+  - {id: Q-004, locator: "Anabasis II.1; PDF p. 31", evidence_type: UNRESOLVED_QUESTION, question: "On what basis could Ariaeus be placed on the throne?"}
+  - {id: Q-005, locator: "Anabasis II.1; PDF pp. 31-32", evidence_type: UNRESOLVED_QUESTION, question: "How do Menon's hospitality ties with Ariaeus affect his conduct?"}
+  - {id: Q-006, locator: "Anabasis II.1; PDF p. 32", evidence_type: UNRESOLVED_QUESTION, question: "What logistical cost follows from consuming baggage animals and equipment?"}
+  - {id: Q-007, locator: "Anabasis II.1; PDF p. 32", evidence_type: UNRESOLVED_QUESTION, question: "What did Clearchus's sacrificial entrails show?"}
+  - {id: Q-008, locator: "Anabasis II.1; PDF pp. 32-33", evidence_type: UNRESOLVED_QUESTION, question: "Does the arms-and-courage speech belong to Theopompus or Xenophon?"}
+  - {id: Q-009, locator: "Anabasis II.1; PDF p. 33", evidence_type: UNRESOLVED_QUESTION, question: "Who proposed service against Egypt and why are the replies called weak?"}
+  - {id: Q-010, locator: "Anabasis II.1; PDF p. 33", evidence_type: UNRESOLVED_QUESTION, question: "How reliable are Phalinus's geographic and numerical claims?"}
+  - {id: Q-011, locator: "Anabasis II.1; PDF p. 33", evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie philosopher, courage, power, goods, and noblest advice?"}
+  - {id: Q-012, locator: "Anabasis II.1; PDF p. 33", evidence_type: UNRESOLVED_QUESTION, question: "Is one chance in ten thousand literal, proverbial, or rhetorical?"}
+  - {id: Q-013, locator: "Anabasis II.1; PDF pp. 33-34", evidence_type: UNRESOLVED_QUESTION, question: "What force does a truce conditioned solely on immobility possess?"}
+  - {id: Q-014, locator: "Anabasis II.1; PDF p. 34", evidence_type: UNRESOLVED_QUESTION, question: "What did Clearchus intend while withholding his course?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text for victory, empire, master, friend, arms, courage, goods, truce, war, advice, and nobility.
+  - Resolve the Theopompus/Xenophon speaker variant through a critical apparatus.
+  - Compare modern translations of the Book II retrospect and its textual status.
+  - Track Clearchus's Greek victory claim against the unfolding strategic condition.
+  - Track Ariaeus's eligibility, response, and political standing.
+  - Track Menon's ties with Ariaeus and later conduct.
+  - Track all demands for surrender of arms and Greek responses.
+  - Track sacrifice and divine signs in Clearchus's decisions.
+  - Compare Phalinus's claimed tactical expertise with his counsel.
+  - Defer comparison with Strauss until the relevant primary sequence is complete.
+secondary_comparison_status: DEFERRED

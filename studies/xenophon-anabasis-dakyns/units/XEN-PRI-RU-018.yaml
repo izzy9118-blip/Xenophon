@@ -1,0 +1,357 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-018
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis III.2
+  pdf_pages_one_based: 54-59
+  opening_anchor: >-
+    By the time the new generals had been chosen, the first faint glimmer of dawn had hardly commenced
+  closing_anchor: >-
+    have not conquerors the double gain of keeping what is their own, whilst they seize the possessions of the vanquished?
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis III.2 plus one-based PDF page
+  chapter_boundary_control: >-
+    III.2 begins on PDF page 54 after the election list closing III.1 and ends on PDF page 59
+    immediately before the heading III and the burning of wagons and tents that opens III.3.
+  source_boundary: >-
+    Direct speeches, interior self-address, collective worship, omen interpretation, vows, votes,
+    historical examples, tactical claims, proposals, paratextual notes, and adopted resolutions
+    remain distinct. Notes concerning Skobelef, Homer, Herodotus, Grote, Salamis, Plataea, Mycale,
+    the Lotus-eaters, and a later colonisation scheme are witness paratext and are not silently
+    attributed to Xenophon or to the speakers in the ancient narrative.
+narrative_person_and_authorial_attribution:
+  narrative_mode: >-
+    Third-person historical narration presenting Xenophon as a named general, reporting his interior
+    rationale for ceremonial dress, and recording extended direct speeches by Cheirisophus, Cleanor,
+    and Xenophon.
+  xenophon_as_character_present: true
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: >-
+    Xenophon appears as actor and speaker. First-person forms occur inside attributed speeches and
+    interior self-address, not as an unframed narratorial self-identification. The chapter does not
+    identify the narrator by name.
+  uncertainty: >-
+    This witness does not settle the Greek force of freedom, master, lord, omen, vow, Zeus the Saviour,
+    salvation, glorious death, bravery, shame, conquest, right of conquest, colonisation, obedience,
+    anarchy, common safety, election, vote, or the relation between narrator and historical author.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis III.2; PDF p. 54
+    speech_form: assembly_exhortation
+    speaker: Cheirisophus
+    audience: assembled Greek soldiers
+    occasion: dawn assembly after replacement of the lost generals
+    content: >-
+      He acknowledges the loss of generals, captains, soldiers, and former allies, and urges glorious
+      victory or glorious death rather than capture.
+    uncertainty: The feared treatment in captivity is not described here.
+  - id: SAO-002
+    locator: Anabasis III.2; PDF pp. 54-55
+    speech_form: denunciation_and_resolve
+    speaker: Cleanor
+    audience: assembled Greek soldiers
+    occasion: after Cheirisophus
+    content: >-
+      He denounces Artaxerxes, Tissaphernes, and Ariaeus for perjury, impiety, violated hospitality,
+      and betrayal, then resolves to fight and accept whatever the gods send.
+    uncertainty: The speech supplies accusation and moral interpretation, not independent proof of every motive.
+  - id: SAO-003
+    locator: Anabasis III.2; PDF p. 55
+    speech_form: interior_self_address
+    speaker: Xenophon
+    audience: himself
+    occasion: appearing before the army in his finest military apparel
+    content: >-
+      If the gods grant victory, fine attire suits it; if he must die while aspiring to the noblest,
+      outward appearance should correspond to expectation and end.
+    uncertainty: The narrative does not state when or how this thought was preserved.
+  - id: SAO-004
+    locator: Anabasis III.2; PDF p. 55
+    speech_form: war_policy_and_omen_response
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: opening of his principal speech and the sneeze that follows
+    content: >-
+      He contrasts renewed friendship with outright war, treats the sneeze as an omen from Zeus the
+      Saviour, and proposes vows of thanksgiving for safe deliverance and offerings to the other gods.
+    uncertainty: The sneezer is unnamed and the omen's divine source is an interpretation within the scene.
+  - id: SAO-005
+    locator: Anabasis III.2; PDF pp. 55-56
+    speech_form: theological_and_historical_exhortation
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: after the vows and battle hymn
+    content: >-
+      He presents Greek oath-keeping and Persian perjury as grounds for divine alliance, then invokes
+      Marathon, the Artemis goat-vow, Xerxes' invasion, Salamis, Plataea, Mycale, trophies, and civic freedom.
+    uncertainty: Historical and theological claims are exhortative and mediated by translation and notes.
+  - id: SAO-006
+    locator: Anabasis III.2; PDF p. 56
+    speech_form: comparative_military_argument
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: answering fear of deserters and Persian cavalry
+    content: >-
+      Cyrus's former troops are called worse cowards than the defeated enemy; cavalry are reduced to
+      men on horses, with flight identified as their one admitted advantage.
+    uncertainty: The tactical generalization is rhetorical and not a measured assessment of all cavalry conditions.
+  - id: SAO-007
+    locator: Anabasis III.2; PDF pp. 56-57
+    speech_form: logistical_reversal_argument
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: answering fears about guides, markets, and rivers
+    content: >-
+      Captured locals may be compelled to guide; conquest may replace expensive markets; rivers may be
+      crossed nearer their sources; Mysians, Pisidians, and Lycaonians show that settlement inside royal territory is possible.
+    uncertainty: The feasibility, justice, and local consequences of compulsion and seizure are not examined.
+  - id: SAO-008
+    locator: Anabasis III.2; PDF p. 57
+    speech_form: settlement_and_return_argument
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: considering the leverage created by appearing willing to remain
+    content: >-
+      He argues that preparation to settle would make the king eager to provide guides, hostages, and roads,
+      warns that luxury could make the Greeks forget home like Lotus-eaters, and links return with proving that poor Greeks could become prosperous settlers.
+    uncertainty: The later editorial colonisation note is paratext and the ancient proposal remains conditional and rhetorical.
+  - id: SAO-009
+    locator: Anabasis III.2; PDF pp. 57-58
+    speech_form: operational_reorganisation_proposal
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: turning from morale to movement and combat
+    content: >-
+      He proposes burning wagons and tents, discarding superfluous baggage, maximizing armed personnel,
+      strengthening vigilance and obedience, and authorizing bystanders to assist officers against insubordination.
+    uncertainty: The scope and safeguards of collective disciplinary enforcement are unstated.
+  - id: SAO-010
+    locator: Anabasis III.2; PDF p. 58
+    speech_form: open_deliberation_invitation
+    speaker: Xenophon
+    audience: assembled Greek soldiers, including private soldiers
+    occasion: conclusion of his principal speech
+    content: >-
+      He urges immediate confirmation but invites any person, even a private soldier, to propose a better course because common safety is a common need.
+    uncertainty: No procedure beyond the subsequent show of hands is specified.
+  - id: SAO-011
+    locator: Anabasis III.2; PDF p. 59
+    speech_form: motion_for_vote
+    speaker: Cheirisophus
+    audience: assembled Greek soldiers
+    occasion: after Xenophon's proposals
+    content: He recommends immediate voting on Xenophon's proposals; all hands are raised.
+    uncertainty: The witness records unanimity without count, abstention, or contingent breakdown.
+  - id: SAO-012
+    locator: Anabasis III.2; PDF p. 59
+    speech_form: formation_and_command_proposal
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: supplementary proposal after the first vote
+    content: >-
+      He proposes a hollow square, assigns Cheirisophus to the lead because he is Spartan, the two eldest
+      generals to the wings, and Timasion and himself to the rear, while making the arrangement experimental and revisable.
+    uncertainty: The two eldest generals are not named in this passage and no dissenting speech is preserved.
+  - id: SAO-013
+    locator: Anabasis III.2; PDF p. 59
+    speech_form: final_motivational_exhortation
+    speaker: Xenophon
+    audience: assembled Greek soldiers
+    occasion: after the second resolution is carried
+    content: >-
+      Seeing friends again, preserving life, killing rather than being killed, and acquiring wealth are all made dependent on victory.
+    uncertainty: The speech compresses distinct motives into a single demand for mastery.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis III.2; PDF p. 54
+    actor: newly elected generals and Greek army
+    deed: At first light the generals meet, establish an advance guard, and summon the soldiers.
+    outcome: The nighttime replacement of command becomes a public assembly and operational plan.
+    uncertainty: The composition and exact authority of the meeting are not detailed.
+  - id: SDO-002
+    locator: Anabasis III.2; PDF pp. 54-55
+    actor: Cheirisophus, Cleanor, and the assembled army
+    deed: The first speakers redefine the crisis through glorious resistance and denunciation of betrayal.
+    outcome: Capture and renewed trust are displaced by a declared readiness to fight.
+    uncertainty: The soldiers' immediate verbal response is not recorded.
+  - id: SDO-003
+    locator: Anabasis III.2; PDF p. 55
+    actor: Xenophon, an unnamed sneezer, and the soldiers
+    deed: A sneeze interrupts Xenophon's speech; the soldiers bow in worship, approve vows by show of hands, vow, and sing the battle hymn.
+    outcome: An accidental bodily event becomes a collective religious and political act.
+    uncertainty: The sneezer, ritual wording, and sacrifices later performed are not supplied here.
+  - id: SDO-004
+    locator: Anabasis III.2; PDF pp. 55-57
+    actor: Xenophon and the assembled army
+    deed: Xenophon uses ancestral wars, recent battle, civic freedom, deserter cowardice, and criticism of cavalry to rebuild confidence.
+    outcome: Numerical, cavalry, and alliance disadvantages are rhetorically converted into grounds for courage.
+    uncertainty: The chapter does not separately test each claim.
+  - id: SDO-005
+    locator: Anabasis III.2; PDF pp. 56-57
+    actor: Xenophon and the assembled army
+    deed: He converts loss of guides, markets, and easy river crossings into arguments for coercion, conquest, upstream movement, or settlement.
+    outcome: Dependence on Persian cooperation is recast as a strategic weakness that can be overcome.
+    uncertainty: Moral, legal, and practical costs remain unaddressed.
+  - id: SDO-006
+    locator: Anabasis III.2; PDF p. 57
+    actor: Xenophon and the assembled army
+    deed: He presents threatened settlement as leverage, warns against luxury and forgetfulness, and depicts Asia as a route from Greek poverty to prosperity.
+    outcome: Homecoming and colonisation appear as rival but connected possibilities.
+    uncertainty: The actual policy choice remains return to Hellas in the first instance.
+  - id: SDO-007
+    locator: Anabasis III.2; PDF pp. 57-58
+    actor: Xenophon and the assembled army
+    deed: He proposes destruction of wagons and tents, reduction of baggage, and a new disciplinary compact.
+    outcome: Mobility, combat readiness, and obedience are placed above private property and comfort.
+    uncertainty: Implementation occurs in III.3, outside this unit.
+  - id: SDO-008
+    locator: Anabasis III.2; PDF p. 59
+    actor: Cheirisophus and the assembled soldiers
+    deed: Cheirisophus calls an immediate vote on Xenophon's proposals; every hand is raised.
+    outcome: The program receives collective authorization.
+    uncertainty: The legal force and voting unit of the show of hands are unstated.
+  - id: SDO-009
+    locator: Anabasis III.2; PDF p. 59
+    actor: Xenophon and the assembled soldiers
+    deed: Xenophon proposes the hollow square and distributes command by Spartan standing and age while reserving revision through experience.
+    outcome: A provisional marching constitution is adopted without recorded dissent.
+    uncertainty: The arrangement's later performance and correction lie beyond the chapter.
+  - id: SDO-010
+    locator: Anabasis III.2-III.3 boundary; PDF p. 59
+    actor: Greek assembly
+    deed: The speaking and voting conclude; III.3 begins with execution of the decrees by burning wagons and tents.
+    outcome: Deliberation passes into collective action at the chapter boundary.
+    uncertainty: This unit records authorization, not the completed implementation.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Dawn meeting of the new generals and call for a public assembly
+    - Cheirisophus frames victory or glorious death against capture
+    - Cleanor denounces Persian and Asiatic betrayal
+    - Xenophon appears in finest war attire and explains it to himself
+    - Sneezing omen, worship, vote, vows, and battle hymn
+    - Ancestral and recent victories used to establish confidence
+    - Deserters, cavalry, guides, markets, rivers, and settlement each reinterpreted
+    - Return, wealth, luxury, and colonisation placed in tension
+    - Wagons, tents, baggage, vigilance, obedience, and discipline proposed for reform
+    - Private soldiers invited to propose alternatives
+    - Cheirisophus calls the first vote and unanimity is reported
+    - Xenophon proposes a hollow square and command allocation
+    - Second resolution is carried and the assembly disperses
+  repetitions:
+    - Gods, oaths, vows, betrayal, victory, safety, and glorious death bind religion to policy.
+    - Speech repeatedly transforms a disadvantage into an asserted advantage.
+    - Leadership combines persuasion, voting, rank, age, and willingness to revise.
+    - Freedom from Persian masters coexists with intensified obedience to Greek officers.
+    - Return home, settlement abroad, and acquisition of wealth remain simultaneously present.
+  omissions:
+    - The sneezer is unnamed.
+    - The exact wording and ritual details of the vows are absent.
+    - No soldier answers Xenophon's invitation with an alternative proposal.
+    - The two eldest generals assigned to the wings are not named in this passage.
+    - No vote count, abstention, or contingent division is supplied.
+    - The precise disciplinary procedure for aiding officers against insubordination is absent.
+    - The chapter does not narrate implementation of the burning or square formation.
+  tensions:
+    - Greeks who call no human master are urged to become more obedient than before.
+    - The former lack of markets becomes a claimed right to seize provisions by conquest.
+    - The desire to return home is paired with the strategic value of appearing ready to settle.
+    - Luxury is both a danger to homecoming and evidence of the attractiveness of the land.
+    - Open invitation to private soldiers occurs beside a proposal for stricter punishment of disobedience.
+    - The hollow square is adopted as a practical experiment rather than an immutable arrangement.
+    - Divine signs and ancestral examples support decisions that are also justified by logistics and force.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis III.2; PDF p. 54", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The new generals meet at first light, resolve to post an advance guard, and summon a general assembly.", uncertainty: "The command body's exact procedure is unstated."}
+  - {id: OBS-002, locator: "Anabasis III.2; PDF p. 54", evidence_type: DIRECT_SPEECH_OBSERVATION, observation: "Cheirisophus defines the alternatives as glorious victory, glorious death, or feared capture.", uncertainty: "The feared captive sufferings are not specified."}
+  - {id: OBS-003, locator: "Anabasis III.2; PDF pp. 54-55", evidence_type: ACCUSATION_OBSERVATION, observation: "Cleanor accuses Artaxerxes, Tissaphernes, and Ariaeus of perjury, impiety, violated hospitality, and betrayal.", uncertainty: "The speech does not independently prove each accusation."}
+  - {id: OBS-004, locator: "Anabasis III.2; PDF p. 55", evidence_type: INTERIOR_MONOLOGUE_OBSERVATION, observation: "Xenophon explains to himself why the finest war attire suits either victory or a noble death.", uncertainty: "The transmission of the private thought is not explained."}
+  - {id: OBS-005, locator: "Anabasis III.2; PDF p. 55", evidence_type: PARATEXT_OBSERVATION, observation: "A note compares Xenophon's dress with the later Russian General Skobelef.", uncertainty: "The comparison is witness paratext, not ancient narrative evidence."}
+  - {id: OBS-006, locator: "Anabasis III.2; PDF p. 55", evidence_type: OMEN_INTERPRETATION_OBSERVATION, observation: "An unnamed sneeze is interpreted by Xenophon as an omen from Zeus the Saviour.", uncertainty: "The divine attribution is not independently adjudicated."}
+  - {id: OBS-007, locator: "Anabasis III.2; PDF p. 55", evidence_type: COLLECTIVE_RITUAL_OBSERVATION, observation: "The soldiers bow, vote by raised hands, vow thank-offerings, and chant the battle hymn.", uncertainty: "The precise ritual text is absent."}
+  - {id: OBS-008, locator: "Anabasis III.2; PDF p. 55", evidence_type: PARATEXT_OBSERVATION, observation: "A note links the sneeze to Telemachus's sneeze in the Odyssey.", uncertainty: "The Homeric comparison is editorial paratext."}
+  - {id: OBS-009, locator: "Anabasis III.2; PDF p. 55", evidence_type: THEOLOGICAL_CLAIM_OBSERVATION, observation: "Xenophon infers divine opposition to Persian oath-breakers and alliance with Greek oath-keepers.", uncertainty: "This is a theological argument within a speech."}
+  - {id: OBS-010, locator: "Anabasis III.2; PDF pp. 55-56", evidence_type: HISTORICAL_EXAMPLE_OBSERVATION, observation: "Marathon and the annual Artemis goat sacrifice are invoked as ancestral precedents.", uncertainty: "The note's Herodotean and Grotean details are paratext."}
+  - {id: OBS-011, locator: "Anabasis III.2; PDF pp. 55-56", evidence_type: HISTORICAL_EXAMPLE_OBSERVATION, observation: "Xerxes, Salamis, Plataea, and Mycale are invoked as victories over the forefathers of the present enemy.", uncertainty: "The chronological identifications are supplied partly in notes."}
+  - {id: OBS-012, locator: "Anabasis III.2; PDF p. 56", evidence_type: POLITICAL_CLAIM_OBSERVATION, observation: "The freedom of Greek cities is called the greatest witness: Greeks acknowledge no human master or lord and bow only to gods.", uncertainty: "The generalization's scope is not qualified."}
+  - {id: OBS-013, locator: "Anabasis III.2; PDF p. 56", evidence_type: RECENT_BATTLE_OBSERVATION, observation: "The Greeks' recent victory over a numerically superior force is presented as proof against fear.", uncertainty: "The speech compresses the divided outcome of Cunaxa."}
+  - {id: OBS-014, locator: "Anabasis III.2; PDF p. 56", evidence_type: CHARACTERISATION_OBSERVATION, observation: "Cyrus's former Asian troops are called worse cowards than the enemy because they deserted.", uncertainty: "This is hostile rhetorical characterization."}
+  - {id: OBS-015, locator: "Anabasis III.2; PDF p. 56", evidence_type: TACTICAL_CLAIM_OBSERVATION, observation: "Ten thousand cavalry are reduced rhetorically to ten thousand men on horses.", uncertainty: "The claim abstracts from mobility, missile range, and formation."}
+  - {id: OBS-016, locator: "Anabasis III.2; PDF p. 56", evidence_type: CONCESSION_OBSERVATION, observation: "Xenophon concedes that cavalry have one advantage: safer flight.", uncertainty: "The concession remains rhetorical rather than systematic."}
+  - {id: OBS-017, locator: "Anabasis III.2; PDF p. 56", evidence_type: COERCIVE_LOGISTICS_OBSERVATION, observation: "Captured people are proposed as compelled guides whose errors would threaten their lives.", uncertainty: "Justice, reliability, and treatment are not discussed."}
+  - {id: OBS-018, locator: "Anabasis III.2; PDF p. 56", evidence_type: CONQUEST_CLAIM_OBSERVATION, observation: "High-priced Persian markets are contrasted with taking provisions by right of conquest.", uncertainty: "No legal or ethical limitation is articulated."}
+  - {id: OBS-019, locator: "Anabasis III.2; PDF pp. 56-57", evidence_type: GEOGRAPHIC_CLAIM_OBSERVATION, observation: "Rivers are said to become passable near their sources.", uncertainty: "No route survey or distance is supplied."}
+  - {id: OBS-020, locator: "Anabasis III.2; PDF pp. 56-57", evidence_type: COMPARATIVE_PEOPLE_OBSERVATION, observation: "Mysians, Pisidians, and Lycaonians are cited as peoples occupying or exploiting royal territory without permission.", uncertainty: "Their circumstances are not independently described."}
+  - {id: OBS-021, locator: "Anabasis III.2; PDF p. 57", evidence_type: STRATEGIC_COUNTERFACTUAL_OBSERVATION, observation: "Xenophon says the Greeks should have appeared ready to settle rather than reveal an immediate desire to return.", uncertainty: "The counterfactual effect on Artaxerxes is asserted."}
+  - {id: OBS-022, locator: "Anabasis III.2; PDF p. 57", evidence_type: LITERARY_COMPARISON_OBSERVATION, observation: "Persian and Median luxury is compared with the Lotus-eaters' power to erase desire for homecoming.", uncertainty: "The Odyssey citation is supplied in a note."}
+  - {id: OBS-023, locator: "Anabasis III.2; PDF p. 57", evidence_type: COLONISATION_ARGUMENT_OBSERVATION, observation: "Return is linked to demonstrating that poor Greeks could become prosperous settlers in Asia.", uncertainty: "The later colonisation interpretation is editorial paratext."}
+  - {id: OBS-024, locator: "Anabasis III.2; PDF p. 57", evidence_type: POWER_CLAIM_OBSERVATION, observation: "The goods of the country are said to belong to whoever has strength to hold them.", uncertainty: "The speech offers no independent normative defense."}
+  - {id: OBS-025, locator: "Anabasis III.2; PDF pp. 57-58", evidence_type: OPERATIONAL_PROPOSAL_OBSERVATION, observation: "Wagons and tents are to be burned so the baggage train does not become the army's general.", uncertainty: "Implementation begins only in III.3."}
+  - {id: OBS-026, locator: "Anabasis III.2; PDF p. 58", evidence_type: PROPERTY_REORGANISATION_OBSERVATION, observation: "Superfluous baggage is subordinated to arms, food, drink, and mobility.", uncertainty: "Distributional effects among soldiers are not described here."}
+  - {id: OBS-027, locator: "Anabasis III.2; PDF p. 58", evidence_type: COMMAND_ANALYSIS_OBSERVATION, observation: "The enemy's seizure of the generals is interpreted as an attempt to produce confusion and anarchy.", uncertainty: "Enemy expectation is inferred rather than directly reported."}
+  - {id: OBS-028, locator: "Anabasis III.2; PDF p. 58", evidence_type: DISCIPLINE_PROPOSAL_OBSERVATION, observation: "Any bystander is asked to help an officer chastise an insubordinate soldier.", uncertainty: "Limits and procedure are absent."}
+  - {id: OBS-029, locator: "Anabasis III.2; PDF p. 58", evidence_type: METAPHORICAL_COMMAND_OBSERVATION, observation: "The reformed army is described as ten thousand Clearchuses instead of one.", uncertainty: "The metaphor transfers Clearchus's severity without resolving his Book II defects."}
+  - {id: OBS-030, locator: "Anabasis III.2; PDF p. 58", evidence_type: DELIBERATIVE_OPENNESS_OBSERVATION, observation: "Even a private soldier is invited to propose a better course because common safety is a common need.", uncertainty: "No alternative is recorded."}
+  - {id: OBS-031, locator: "Anabasis III.2; PDF p. 59", evidence_type: VOTE_OBSERVATION, observation: "Cheirisophus calls for a vote and all soldiers raise their hands for Xenophon's first proposals.", uncertainty: "The unanimity is unquantified."}
+  - {id: OBS-032, locator: "Anabasis III.2; PDF p. 59", evidence_type: FORMATION_PROPOSAL_OBSERVATION, observation: "Xenophon proposes a hollow square to protect baggage animals and sutlers.", uncertainty: "Its later defect is outside this unit."}
+  - {id: OBS-033, locator: "Anabasis III.2; PDF p. 59", evidence_type: COMMAND_ALLOCATION_OBSERVATION, observation: "Cheirisophus is proposed for the lead because he is Spartan; the eldest generals take the wings; Timasion and Xenophon take the rear.", uncertainty: "The wing commanders are not named here."}
+  - {id: OBS-034, locator: "Anabasis III.2; PDF p. 59", evidence_type: EXPERIMENTAL_GOVERNANCE_OBSERVATION, observation: "The adopted formation is expressly provisional and open to alteration through experience and deliberation.", uncertainty: "No criteria for revision are fixed."}
+  - {id: OBS-035, locator: "Anabasis III.2; PDF p. 59", evidence_type: SECOND_VOTE_OBSERVATION, observation: "No dissenting voice is heard and the hollow-square resolution is carried by raised hands.", uncertainty: "Silence and unanimity are not independently explained."}
+  - {id: OBS-036, locator: "Anabasis III.2; PDF p. 59", evidence_type: MOTIVATIONAL_SYNTHESIS_OBSERVATION, observation: "Homecoming, survival, killing the enemy, and acquiring wealth are all made dependent on victory.", uncertainty: "Distinct motives are rhetorically fused."}
+provisional_findings:
+  - {id: FIND-001, evidence_type: PROVISIONAL_INFERENCE, finding: "III.2 converts the private and midnight initiative of III.1 into public assembly, collective ritual, voting, and marching organization.", basis: "Dawn meeting, speeches, vows, and resolutions.", uncertainty: "The constitutional status of each act remains unstated."}
+  - {id: FIND-002, evidence_type: PROVISIONAL_INFERENCE, finding: "Xenophon's leadership joins religious interpretation, historical memory, tactical argument, material incentive, and institutional procedure.", basis: "Sneeze omen through formation votes.", uncertainty: "The relative weight of these elements cannot be measured."}
+  - {id: FIND-003, evidence_type: PROVISIONAL_INFERENCE, finding: "The speech repeatedly restores agency by redefining losses of allies, cavalry, guides, markets, and routes as manageable or advantageous.", basis: "Comparative and logistical reversals.", uncertainty: "Subsequent chapters test rather than immediately confirm these claims."}
+  - {id: FIND-004, evidence_type: PROVISIONAL_INFERENCE, finding: "Freedom from Persian mastery is paired with stronger internal discipline, so political liberty and military obedience are not treated as opposites.", basis: "No human master except gods; ten thousand Clearchuses and chastisement rule.", uncertainty: "The legitimate limits of command are not supplied."}
+  - {id: FIND-005, evidence_type: PROVISIONAL_INFERENCE, finding: "The omen becomes authoritative through collective reception and a vote, not through a separately identified priest or official interpreter.", basis: "Sneezing, worship, Xenophon's proposal, raised hands, vow, and paean.", uncertainty: "Ritual offices may be omitted from the narrative."}
+  - {id: FIND-006, evidence_type: PROVISIONAL_INFERENCE, finding: "Return and settlement function together: the declared aim is homecoming, while readiness to remain is proposed as leverage and Asia as a field of prosperity.", basis: "Mysian examples, Lotus-eater warning, and poor-Greek argument.", uncertainty: "No colonisation program is formally adopted here."}
+  - {id: FIND-007, evidence_type: PROVISIONAL_INFERENCE, finding: "Private property and comfort are subordinated to common mobility and fighting capacity before the army resumes movement.", basis: "Proposals to burn wagons and tents and discard baggage.", uncertainty: "Implementation and compensation are outside the chapter."}
+  - {id: FIND-008, evidence_type: PROVISIONAL_INFERENCE, finding: "Cheirisophus supplies procedural authority while Xenophon supplies most substantive proposals, producing a divided but cooperative leadership.", basis: "Cheirisophus calls votes; Xenophon formulates program and formation.", uncertainty: "Formal jurisdiction between generals is not defined."}
+  - {id: FIND-009, evidence_type: PROVISIONAL_INFERENCE, finding: "The hollow square is adopted as an experiment subject to correction, indicating a capacity to institutionalize revision rather than merely command fixed obedience.", basis: "Explicit invitation to alter the arrangement through experience and deliberation.", uncertainty: "The later correction is not part of this unit."}
+  - {id: FIND-010, evidence_type: PROVISIONAL_INFERENCE, finding: "The chapter's two votes transform exhortation into collective authorization without eliminating evidentiary and procedural gaps.", basis: "Raised hands after first program and hollow-square resolution.", uncertainty: "The electorate, count, and binding rule remain unknown."}
+standing_unresolved_questions:
+  - {id: Q-001, evidence_type: UNRESOLVED_QUESTION, question: "What Greek terms underlie glorious victory, glorious death, salvation, and capture?", why_unresolved: "English translation only."}
+  - {id: Q-002, evidence_type: UNRESOLVED_QUESTION, question: "How does the Greek text frame Cleanor's accusations of perjury, impiety, hospitality, and betrayal?", why_unresolved: "No Greek witness admitted."}
+  - {id: Q-003, evidence_type: UNRESOLVED_QUESTION, question: "What is the textual and narrative status of Xenophon's interior explanation of his finest apparel?", why_unresolved: "Private thought is narrator-reported and the Skobelef comparison is paratext."}
+  - {id: Q-004, evidence_type: UNRESOLVED_QUESTION, question: "Who sneezed, and what ritual conventions governed the soldiers' collective worship?", why_unresolved: "The actor and ritual detail are omitted."}
+  - {id: Q-005, evidence_type: UNRESOLVED_QUESTION, question: "What exact vows were made to Zeus the Saviour and the other gods, and were they later fulfilled?", why_unresolved: "Only a translated summary appears here."}
+  - {id: Q-006, evidence_type: UNRESOLVED_QUESTION, question: "How much of the Marathon, Artemis, Xerxes, Salamis, Plataea, and Mycale framing belongs to the ancient text rather than editorial explanation?", why_unresolved: "Narrative and notes must be checked against a critical Greek edition."}
+  - {id: Q-007, evidence_type: UNRESOLVED_QUESTION, question: "Does the claim that Greeks call no man master refer to all Greeks, the assembled mercenaries, or an idealized political identity?", why_unresolved: "The translation does not settle scope or Greek terminology."}
+  - {id: Q-008, evidence_type: UNRESOLVED_QUESTION, question: "How should the recent battle victory claim be reconciled with Cyrus's death and the expedition's political defeat?", why_unresolved: "The speech selects one dimension of Cunaxa."}
+  - {id: Q-009, evidence_type: UNRESOLVED_QUESTION, question: "What is the exact tactical force of the cavalry argument, and how ironic is its concession about flight?", why_unresolved: "Rhetorical tone and Greek wording require review."}
+  - {id: Q-010, evidence_type: UNRESOLVED_QUESTION, question: "What legal or moral framework, if any, limits compelled guides and taking provisions by conquest?", why_unresolved: "The speech does not state one."}
+  - {id: Q-011, evidence_type: UNRESOLVED_QUESTION, question: "How feasible is the proposal to cross rivers near their sources within the actual geography and season?", why_unresolved: "No route analysis is provided in this unit."}
+  - {id: Q-012, evidence_type: UNRESOLVED_QUESTION, question: "What historical realities underlie the examples of Mysians, Pisidians, and Lycaonians?", why_unresolved: "The chapter gives compressed exempla."}
+  - {id: Q-013, evidence_type: UNRESOLVED_QUESTION, question: "Is the settlement argument a sincere alternative, a bargaining posture, or a rhetorical device for morale?", why_unresolved: "The speech supports more than one function."}
+  - {id: Q-014, evidence_type: UNRESOLVED_QUESTION, question: "What part of the colonisation interpretation is Dakyns or later editorial paratext?", why_unresolved: "The note refers forward and to On Revenues."}
+  - {id: Q-015, evidence_type: UNRESOLVED_QUESTION, question: "How were private losses from burning wagons, tents, and baggage allocated or compensated?", why_unresolved: "Implementation details are outside III.2."}
+  - {id: Q-016, evidence_type: UNRESOLVED_QUESTION, question: "What limits governed the order that bystanders assist officers in punishing insubordination?", why_unresolved: "No procedure or appeal is described."}
+  - {id: Q-017, evidence_type: UNRESOLVED_QUESTION, question: "How should ten thousand Clearchuses be read in light of II.6's criticism of Clearchus's fear-based rule?", why_unresolved: "The metaphor preserves but does not resolve the tension."}
+  - {id: Q-018, evidence_type: UNRESOLVED_QUESTION, question: "Who could speak, vote, abstain, or bind a contingent in the assembly?", why_unresolved: "The voting constitution is not narrated."}
+  - {id: Q-019, evidence_type: UNRESOLVED_QUESTION, question: "Why is Cheirisophus assigned the lead specifically because he is Spartan, and which two eldest generals command the wings?", why_unresolved: "The rationale is brief and the names are omitted."}
+  - {id: Q-020, evidence_type: UNRESOLVED_QUESTION, question: "What criteria authorized later alteration of the hollow square?", why_unresolved: "Revision is permitted but no rule is fixed."}
+downstream_textual_checks:
+  - {id: CHECK-001, target: Greek critical text, check: "Verify III.2 opening and closing boundaries and the chapter heading placement."}
+  - {id: CHECK-002, target: Greek critical text and apparatus, check: "Verify the finest-apparel interior monologue and whether any variant affects attribution."}
+  - {id: CHECK-003, target: Greek text and ritual scholarship, check: "Verify terminology and sequence for sneeze, worship, vow, Zeus the Saviour, and paean."}
+  - {id: CHECK-004, target: Greek text plus Herodotus and cult evidence, check: "Separate ancient Marathon and Artemis claims from Dakyns/Grote paratext."}
+  - {id: CHECK-005, target: Greek critical text, check: "Verify master, lord, freedom, and bowing-to-gods wording and scope."}
+  - {id: CHECK-006, target: military-historical comparison, check: "Test the cavalry, guides, markets, and river arguments against later narrated outcomes."}
+  - {id: CHECK-007, target: Greek text and historical geography, check: "Review Mysian, Pisidian, and Lycaonian exempla and settlement leverage."}
+  - {id: CHECK-008, target: witness paratext audit, check: "Keep Skobelef, Odyssey, Herodotus/Grote, battle dating, Lotus-eaters, and colonisation notes distinct from the ancient narrative."}
+  - {id: CHECK-009, target: III.3 and later baggage episodes, check: "Track implementation and consequences of burning wagons, tents, and superfluities."}
+  - {id: CHECK-010, target: II.6 and later discipline episodes, check: "Compare ten thousand Clearchuses and collective chastisement with prior and later assessments of command."}
+  - {id: CHECK-011, target: III.3-III.4, check: "Track performance and revision of the hollow-square formation and assigned commands."}
+  - {id: CHECK-012, target: later return and settlement debates, check: "Track the relation among homecoming, colonisation, wealth, and the power to hold territory."}
+secondary_comparison_status: DEFERRED
+secondary_comparison_rule: >-
+  Do not import Strauss's reconstruction into this primary unit. Compare only after the relevant
+  primary sequence has been reconstructed and the owner authorizes comparison.

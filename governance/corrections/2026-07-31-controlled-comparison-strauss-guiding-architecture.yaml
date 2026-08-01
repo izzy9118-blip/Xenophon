@@ -1,0 +1,58 @@
+schema_version: 1.0
+correction_id: XEN-COR-001
+status: OWNER_DIRECTED_CORRECTION_APPLIED_PENDING_OWNER_REVIEW
+corrected_on: 2026-07-31
+repository: izzy9118-blip/Xenophon
+branch: primary/anabasis-dakyns-gutenberg
+owner_directive: >-
+  Material governance across all seven books and Thibron's incorporation of the army belong on the Cyrus side of the Socrates-versus-Cyrus supposition. Justice is not a divergence but the heart of the examination. The ending must not be framed as two equal closures; Strauss is the guiding light.
+corrected_record:
+  predecessor: studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001.yaml
+  active_revision: studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R1.yaml
+  comparison_id: XEN-CONTROLLED-COMPARISON-001
+  revision_id: XEN-CONTROLLED-COMPARISON-001-R1
+errors_identified:
+  - id: ERR-001
+    prior_entries: [CMP-023, CMP-030]
+    prior_classification: SECONDARY_SILENCE
+    finding: >-
+      The primary work-wide patterns of material governance and Thibron's incorporation were wrongly treated as additions external to Strauss's architecture. They are concrete evidence belonging to the active, acquisitive, economic, commanding, and institutional Cyrus side of the Socrates-Cyrus opposition.
+  - id: ERR-002
+    prior_entries: [CMP-019]
+    prior_classification: DIVERGENCE
+    finding: >-
+      The relation between concrete disputes and Strauss's distinction between manly and Socratic justice was wrongly classified as divergence. Those disputes are the phenomena through which the governing justice problem must be examined.
+  - id: ERR-003
+    prior_entries: [CMP-029]
+    prior_classification: DIVERGENCE
+    finding: >-
+      The ending was wrongly framed as two equal closures. Thibron, renewed Persian war, booty, incomplete homecoming, fatherland, piety, and Socrates belong to one Strauss-guided final examination of Xenophon between Cyrus and Socrates.
+remedy:
+  governing_architecture: SOCRATES_VS_CYRUS
+  interpretive_guide: LEO_STRAUSS_XENOPHONS_ANABASIS
+  evidence_rule: >-
+    Strauss supplies the governing question and architecture; the primary reconstruction supplies the deeds, speeches, institutions, and outcomes that must be examined within that architecture. Strauss does not replace the primary evidence, but the comparison may not manufacture symmetry by treating his argument as merely one optional closure.
+  active_reclassifications:
+    CMP-019: GOVERNING_EXAMINATION
+    CMP-023: CYRUS_SIDE_ELABORATION
+    CMP-029: GOVERNING_EXAMINATION
+    CMP-030: CYRUS_SIDE_ELABORATION
+  inactive_for_active_review:
+    - DIVERGENCE
+    - SECONDARY_SILENCE
+preservation:
+  original_comparison_record_preserved: true
+  original_entry_shards_preserved: true
+  primary_cumulative_record_rewritten: false
+  secondary_unit_records_rewritten: false
+  chapter_unit_records_rewritten: false
+  unresolved_questions_preserved: true
+limits:
+  - Strauss's guiding authority does not convert his formulations into direct quotations from Xenophon.
+  - The Dakyns witness remains an English translation and does not certify Greek wording.
+  - The correction does not resolve the Socrates-Cyrus examination; it restores the proper architecture of that examination.
+  - No final teaching, operational capacity, minister adapter, Sanctum registration, or Assembly dispatch is authorized.
+  - Artificial-intelligence self-certification remains prohibited.
+next_required_action:
+  id: XEN-CONTROLLED-COMPARISON-R1-OWNER-REVIEW-001
+  description: Conduct owner review of the corrected Strauss-guided controlled comparison before interpretive adoption or minister derivation.

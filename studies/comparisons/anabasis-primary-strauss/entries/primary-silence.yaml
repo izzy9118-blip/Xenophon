@@ -1,0 +1,112 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+classification: PRIMARY_SILENCE
+status: DRAFTED_PENDING_OWNER_REVIEW
+entry_count: 4
+entries:
+- id: CMP-002
+  topic: Themistogenes, authorship, and third-person self-presentation
+  classification: PRIMARY_SILENCE
+  primary_stream:
+    position: The admitted translation presents Xenophon as a third-person character who is absent from the opening
+      and enters decisively in Book Three; the cumulative record leaves narrator identity and historical authorship
+      unresolved.
+    cumulative_anchors:
+    - WQ-020
+    - TR-003
+    source_units:
+    - XEN-PRI-RU-001
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-049
+  secondary_stream:
+    position: Strauss assumes that Themistogenes of Syracuse is a pseudonym for Xenophon, distinguishes the narrating
+      'I' from Xenophon as character, and links third-person presentation to becoming anonymity.
+    secondary_units:
+    - XEN-RU-001
+    - XEN-RU-002
+    printed_pages: 105-112
+  controlled_relation: The primary stream confirms the narrative-person problem but supplies no independent evidence
+    establishing the pseudonym hypothesis or the identity of the first-person narrator.
+  preserved_uncertainty: The relevant Hellenica passage, attribution history, and Greek narrative forms are outside
+    the admitted primary witness.
+  comparison_effect: Carry the Themistogenes hypothesis forward only as a secondary claim for later source expansion.
+- id: CMP-003
+  topic: Praise by omission and reported-speech markers
+  classification: PRIMARY_SILENCE
+  primary_stream:
+    position: The cumulative record treats narrative praise, blame, silence, and translated report as evidence,
+      while warning that Dakyns's lexical choices may materially shape any pattern.
+    cumulative_anchors:
+    - PAT-014
+    - WQ-019
+    source_units:
+    - XEN-PRI-RU-009
+    - XEN-PRI-RU-016
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss identifies praise-by-omission and legetai as recurrent Xenophontic devices that disclose defects
+      or epistemic distance without constant explicit blame.
+    secondary_units:
+    - XEN-RU-001
+    - XEN-RU-002
+    - XEN-RU-004
+    printed_pages: 105-120
+  controlled_relation: The primary stream supports attention to silence and reported claims but cannot verify the
+    Greek lexical mechanism or Strauss's distributional generalization.
+  preserved_uncertainty: No original-language witness or independent occurrence register is admitted.
+  comparison_effect: Preserve the devices as high-priority Greek-text checks, not as adopted Xenophontic mechanisms.
+- id: CMP-006
+  topic: Xenophon and Socrates as the governing contrast
+  classification: PRIMARY_SILENCE
+  primary_stream:
+    position: The primary reconstruction follows Xenophon within the Anabasis and does not contain an independently
+      reconstructed Socratic corpus or cross-work standard.
+    cumulative_anchors:
+    - CP-004
+    - WQ-020
+    source_units:
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-049
+  secondary_stream:
+    position: Strauss says Xenophon is individualized principally through contrast with Socrates and repeatedly
+      interprets action, piety, justice, wealth, fatherland, and defense through that contrast.
+    secondary_units:
+    - XEN-RU-002
+    - XEN-RU-003
+    - XEN-RU-004
+    - XEN-RU-006
+    - XEN-RU-008
+    printed_pages: 109-136
+  controlled_relation: The primary stream can test the Anabasis side of Strauss's comparisons but cannot confirm
+    the Socratic standard or its priority.
+  preserved_uncertainty: Memorabilia, Oeconomicus, Cyropaedia, Hellenica, and Platonic passages cited by Strauss
+    have not been independently reconstructed for this comparison.
+  comparison_effect: Keep the Socratic contrast external to the adopted primary findings and mark it for later cross-work
+    inquiry.
+- id: CMP-013
+  topic: Book Four centrality, numerical patterns, and compositional arithmetic
+  classification: PRIMARY_SILENCE
+  primary_stream:
+    position: The primary reconstruction identifies Book Four's movement and tensions but does not infer doctrinal
+      priority from its position or count numerical correspondences.
+    cumulative_anchors:
+    - CP-006
+    - WF-008
+    source_units:
+    - XEN-PRI-RU-022
+    - XEN-PRI-RU-023
+    - XEN-PRI-RU-024
+    - XEN-PRI-RU-029
+  secondary_stream:
+    position: Strauss treats Book Four as doubly central and draws attention to lengths of introductions, seventeen
+      horses, nine-day marriage, seventeen divine references, and the absence of formal oaths.
+    secondary_units:
+    - XEN-RU-004
+    printed_pages: 117-120
+  controlled_relation: The primary record neither confirms nor refutes the counts; it has not been constructed as
+    a Greek occurrence or numerical register.
+  preserved_uncertainty: Translation, editorial formatting, and counting rules may materially affect the patterns.
+  comparison_effect: Preserve the patterns as secondary observations requiring independent counting.

@@ -1,0 +1,135 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-010
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.10
+  pdf_pages_one_based: 29-30
+  opening_anchor: Then the head of Cyrus and his right hand were severed from the body.
+  closing_anchor: Accordingly, in no better plight than this they passed the night.
+jurisdiction: Independent primary reconstruction from the admitted Dakyns English translation. Translator wording
+  is not unmediated Greek evidence; no isolated observation licenses a deed corpus, speech register, guard, adapter,
+  or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.10 plus one-based PDF page
+  source_boundary: Narrative, estimates, fame reports, participant reports, deliberation, and reconnaissance remain
+    distinct. Victory, casualties, motives, and quantities retain their stated evidentiary status.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration in the English translation
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: false
+  observation: The narrator follows separated fields of action—Cyrus's body, the camp, the Greek pursuit, Tissaphernes,
+    the second encounter, reconnaissance, return, and deprivation. Xenophon is not named as an actor.
+  uncertainty: The witness does not settle the Greek report formulas or identify narrator with author.
+speakers_audiences_and_occasions:
+  - {id: SAO-001, locator: Anabasis I.10; PDF p. 29, speech_form: intelligence_reported, speaker: Tissaphernes, audience: Artaxerxes, occasion: the king is pillaging Cyrus's camp while the Greeks pursue elsewhere, content: Tissaphernes informs the king that the Greeks have prevailed in their sector and advanced in pursuit., uncertainty: 'The wording, route, timing, and completeness of the report are not preserved.'}
+  - {id: SAO-002, locator: Anabasis I.10; PDF p. 29, speech_form: command_deliberation_reported, speaker: Clearchus and Proxenus, audience: one another and their subordinate command structure, occasion: news that the king is in the Greek baggage camp, content: They debate whether to send a detachment or return with the whole Greek force to save the camp., uncertainty: No final verbal resolution is recorded before the king's renewed movement changes the situation.}
+  - {id: SAO-003, locator: Anabasis I.10; PDF p. 30, speech_form: participant_report, speaker: unnamed Greek observers, audience: the narrative audience, occasion: the royal cavalry reforms on the mound above the village, content: 'They report seeing the royal standard, described as a golden eagle displayed on a lance.', uncertainty: 'The observers are unnamed, and the standard''s identification depends on their report.'}
+  - {id: SAO-004, locator: Anabasis I.10; PDF p. 30, speech_form: reconnaissance_report, speaker: Lycius of Syracuse, audience: Clearchus and the Greek army, occasion: inspection of the far side of the mound, content: Lycius reports that the royal cavalry is fleeing at full speed., uncertainty: 'The second scout is unnamed, and the report concerns only what could be seen from the summit.'}
+  - {id: SAO-005, locator: Anabasis I.10; PDF p. 30, speech_form: collective_deliberation_reported, speaker: the Greek army under its commanders, audience: the assembled Greek force, occasion: 'sunset, Cyrus absent, and no message received', content: 'They deliberate whether to remain and summon the baggage or return to their camp, and choose to return.', uncertainty: 'The speakers, voting procedure, and reasons assigned to each option are not preserved.'}
+speeches_deeds_and_outcomes:
+  - {id: SDO-001, locator: Anabasis I.10; PDF p. 29, actor: Artaxerxes's party, deed: 'Severed Cyrus''s head and right hand, pursued into the Cyreian camp, and began pillaging.', outcome: Cyrus's physical defeat became publicly displayable while the king gained the expedition's baggage camp., uncertainty: 'The responsible individuals, ritual or political meaning, and later use of the severed parts are not given here.'}
+  - {id: SDO-002, locator: Anabasis I.10; PDF p. 29, actor: Ariaeus and his troops, deed: Abandoned their camp and fled approximately four parasangs to the previous night's halt., outcome: 'The Asian wing ceased to hold the expedition''s camp, leaving it exposed to the king.', uncertainty: 'The distance is reported, and the chapter does not distinguish orderly withdrawal from panic flight.'}
+  - {id: SDO-003, locator: Anabasis I.10; PDF p. 29, actor: 'royal troops, Cyrus''s two women, and Greek camp guards', deed: 'Royal troops captured the Phocaean woman and seized the younger Milesian; the Milesian escaped, and the Greek guards formed line and fought the pillagers.', outcome: 'The guards saved the escaping woman and the persons and property within their reach, while suffering some losses.', uncertainty: 'The women''s names, exact status, casualty totals, and full scale of what was saved are not stated.'}
+  - {id: SDO-004, locator: Anabasis I.10; PDF pp. 29-30, actor: 'Tissaphernes, Episthenes, and the Greek peltasts', deed: Tissaphernes charged through the peltasts toward the Euphrates; the Greeks opened a passage and struck at his troops as they passed., outcome: 'Tissaphernes failed to destroy a Greek soldier, reached the baggage camp with losses, and reunited with Artaxerxes.', uncertainty: The claim of no Greek deaths and the judgment that Episthenes acted sensibly are source-marked and require corroboration.}
+  - {id: SDO-005, locator: Anabasis I.10; PDF p. 30, actor: Artaxerxes's reformed line and the Greek army, deed: 'The Greeks adjusted against feared encirclement, raised the paean, and attacked a second time.', outcome: 'The royal force again fled before contact, and the Greeks pursued farther than in the first engagement.', uncertainty: 'The chapter does not quantify pursuit distances, enemy losses, or the tactical effect of the contemplated line extension.'}
+  - {id: SDO-006, locator: Anabasis I.10; PDF p. 30, actor: 'Artaxerxes''s cavalry, Clearchus, Lycius, and the Greek army', deed: 'Royal cavalry rallied on a mound, dispersed when the Greeks advanced, and were inspected by scouts sent by Clearchus.', outcome: 'Lycius reported general flight, while the Greeks halted at sunset rather than continue blindly over the crest.', uncertainty: 'The king''s exact presence, the condition beyond the mound, and the reason Clearchus did not ascend remain uncertain.'}
+  - {id: SDO-007, locator: Anabasis I.10; PDF p. 30, actor: the Greek army, deed: 'Waited without news of Cyrus, conjectured that he was pursuing or occupying ground, deliberated, and returned to camp.', outcome: They ended the day believing Cyrus might still be active and reached the tents around supper time., uncertainty: 'No messenger explains the communication failure, and the internal distribution of beliefs is not given.'}
+  - {id: SDO-008, locator: Anabasis I.10; PDF p. 30, actor: Artaxerxes's troops and the returning Greeks, deed: 'The royal force ransacked most Greek property, food, drink, and the emergency wagons of grain and wine.', outcome: 'Most Greeks passed the night without supper after also missing breakfast, despite having won both immediate field encounters.', uncertainty: 'The four-hundred-wagon figure is reported, and the exact remaining provisions and losses are not inventoried.'}
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Cyrus mutilated; Artaxerxes enters the Cyreian camp
+  - Ariaeus flees; royal troops pillage; Greek guards resist
+  - Reciprocal intelligence produces renewed formation
+  - Tissaphernes reunites with Artaxerxes
+  - The Greeks fear encirclement and attack again
+  - Royal cavalry disperses; Clearchus sends scouts
+  - At sunset the Greeks still assume Cyrus may live
+  - They return to a pillaged camp and pass the night hungry
+  repetitions:
+  - Each side treats a local victory as universal.
+  - Greek formation, paean, advance, and enemy flight recur.
+  - Reports and estimates qualify persons, distances, casualties, and standards.
+  - Cyrus's provisions recur only as inaccessible plunder.
+  omissions:
+  - No Greek announces Cyrus's death.
+  - No use of Cyrus's head and hand is explained here.
+  - The women, camp guards, casualties, and surviving supplies remain incompletely identified.
+  - No message reaches the Greeks from Cyrus's side.
+  - Clearchus's reason for not ascending the mound is unstated.
+  - Xenophon is absent as a named participant.
+  tensions:
+  - The king controls Cyrus's body and camp while fleeing before the Greek line.
+  - The Greeks twice prevail locally but return without leader, food, or strategic knowledge.
+  - Tissaphernes reconnects with the king despite failing in the narrated charge.
+  - Emergency provisions exist but are unavailable when the emergency arrives.
+  - Book I ends before the Greeks know that Cyrus's ascent has ended.
+documentary_observations:
+  - {id: OBS-001, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Cyrus's head and right hand are severed after his death., uncertainty: The agents and intended use are not identified.}
+  - {id: OBS-002, locator: Anabasis I.10; PDF p. 29, evidence_type: REPORT_STATUS_OBSERVATION, observation: Ariaeus's flight to the previous halt is estimated at four parasangs., uncertainty: The distance is explicitly reported rather than measured in the narrative.}
+  - {id: OBS-003, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Royal troops plunder Cyrus's camp after Ariaeus withdraws., uncertainty: The scope and command structure of the pillage are not described.}
+  - {id: OBS-004, locator: Anabasis I.10; PDF p. 29, evidence_type: REPORT_STATUS_OBSERVATION, observation: The captured Phocaean companion of Cyrus is described as witty and beautiful if report is correct., uncertainty: Her name and the source of the description are omitted.}
+  - {id: OBS-005, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The younger Milesian companion escapes by abandoning her outer garment., uncertainty: 'The route, pursuers, and later identity are not given.'}
+  - {id: OBS-006, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Greeks left with the camp followers form line against the pillagers., uncertainty: Their number and commander are not named.}
+  - {id: OBS-007, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The camp guards kill many pillagers and lose some of their own men., uncertainty: Neither side's casualties are counted.}
+  - {id: OBS-008, locator: Anabasis I.10; PDF p. 29, evidence_type: STRUCTURAL_OBSERVATION, observation: Each side acts as though victory in its own sector were universal., uncertainty: 'The formulation is narratorial comparison, not a recorded statement by either army.'}
+  - {id: OBS-009, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The Greeks learn that Artaxerxes is in their baggage camp., uncertainty: The informant and transmission route are not given.}
+  - {id: OBS-010, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Tissaphernes informs Artaxerxes that the Greeks have won and pursued., uncertainty: The wording and completeness of his information are omitted.}
+  - {id: OBS-011, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Artaxerxes immediately masses his troops and forms line., uncertainty: The time required and units assembled are not quantified.}
+  - {id: OBS-012, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Clearchus consults Proxenus about saving the baggage camp., uncertainty: No direct words or completed decision are preserved.}
+  - {id: OBS-013, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Artaxerxes passes outside the original Greek left rather than attack immediately., uncertainty: 'His objective is reconstructed from movement, not direct speech.'}
+  - {id: OBS-014, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The king recovers men who had deserted to the Greeks during battle., uncertainty: 'Their number, identity, and subsequent treatment are unknown.'}
+  - {id: OBS-015, locator: Anabasis I.10; PDF pp. 29-30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Tissaphernes had charged through the Greek peltasts parallel to the Euphrates., uncertainty: The exact route and tactical purpose require mapping.}
+  - {id: OBS-016, locator: Anabasis I.10; PDF p. 29, evidence_type: REPORT_STATUS_OBSERVATION, observation: The narrative says Tissaphernes killed no Greek in the charge., uncertainty: The negative casualty claim lacks an independent count.}
+  - {id: OBS-017, locator: Anabasis I.10; PDF p. 29, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The peltasts open a gap and strike the passing cavalry with swords and javelins., uncertainty: Persian losses are not counted.}
+  - {id: OBS-018, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Tissaphernes reunites with Artaxerxes in the Greek camp and advances beside him., uncertainty: The condition of his unit after passage is not detailed.}
+  - {id: OBS-019, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The Greeks fear flanking and double envelopment., uncertainty: The perceived geometry and actual feasibility are not adjudicated.}
+  - {id: OBS-020, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: They consider extending the line with the Euphrates at their rear., uncertainty: The maneuver's completion is not clearly narrated before Artaxerxes redeploys.}
+  - {id: OBS-021, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The Greeks raise the paean and attack more eagerly than before., uncertainty: The comparative intensity is narratorial evaluation.}
+  - {id: OBS-022, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: The royal troops flee before receiving the second Greek attack., uncertainty: The reasons and distance of flight are not explained.}
+  - {id: OBS-023, locator: Anabasis I.10; PDF p. 30, evidence_type: REPORT_STATUS_OBSERVATION, observation: Greek observers report seeing a golden-eagle royal standard on the mound., uncertainty: The standard's identity depends on unnamed observers.}
+  - {id: OBS-024, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Clearchus stops at the mound's base and sends Lycius and another scout to the summit., uncertainty: The second scout is unnamed and Clearchus's reason for staying below is omitted.}
+  - {id: OBS-025, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: At sunset the Greeks still do not know Cyrus is dead., uncertainty: The failure of communication across the army is unexplained.}
+  - {id: OBS-026, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: 'Most property, food, drink, and emergency wagons have been pillaged.', uncertainty: No complete inventory survives.}
+  - {id: OBS-027, locator: Anabasis I.10; PDF p. 30, evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: Most Greeks go without supper after already missing breakfast., uncertainty: The distribution of remaining food and condition of camp followers are not described.}
+  - {id: OBS-028, locator: Anabasis I.10; PDF p. 30, evidence_type: STRUCTURAL_OBSERVATION, observation: Book I ends with the Greeks tactically undefeated but materially deprived and ignorant of Cyrus's death., uncertainty: The full political meaning requires continuation into Book II.}
+provisional_findings:
+  - {id: INF-001, locator: Anabasis I.10; PDF pp. 29-30, evidence_type: PROVISIONAL_INFERENCE, finding: Book I distinguishes local battlefield victory from strategic victory by allowing both armies to act as universal conquerors on partial information., confidence: high_for_chapter_structure}
+  - {id: INF-002, locator: Anabasis I.10; PDF p. 29, evidence_type: PROVISIONAL_INFERENCE, finding: Control of the leader's body and baggage camp gives Artaxerxes political and material advantages not measured by immediate success against the Greek line., confidence: moderate_pending_book_two}
+  - {id: INF-003, locator: Anabasis I.10; PDF pp. 29-30, evidence_type: PROVISIONAL_INFERENCE, finding: The Greek formation can repeatedly defeat nearby troops while remaining unable to integrate intelligence across the whole field., confidence: high_for_narrated_sequence}
+  - {id: INF-004, locator: Anabasis I.10; PDF pp. 29-30, evidence_type: PROVISIONAL_INFERENCE, finding: Tissaphernes's importance lies less in winning his passage than in reconnecting separated royal forces and information., confidence: moderate_for_operational_role}
+  - {id: INF-005, locator: Anabasis I.10; PDF p. 30, evidence_type: PROVISIONAL_INFERENCE, finding: Clearchus combines aggressiveness with bounded reconnaissance by halting below terrain he cannot see beyond and sending scouts., confidence: moderate_for_command_judgment}
+  - {id: INF-006, locator: Anabasis I.10; PDF p. 30, evidence_type: PROVISIONAL_INFERENCE, finding: Cyrus's absence is initially interpreted through expected action because the Greeks remain cognitively organized by his command after his death., confidence: high_for_ending_sequence}
+  - {id: INF-007, locator: Anabasis I.10; PDF p. 30, evidence_type: PROVISIONAL_INFERENCE, finding: 'The lost emergency wagons invert Cyrus''s foresight: provisions prepared for crisis exist, but political and spatial defeat makes them unavailable.', confidence: high_for_narrative_irony_low_for_authorial_intent}
+  - {id: INF-008, locator: Anabasis I.10; PDF p. 30, evidence_type: PROVISIONAL_INFERENCE, finding: 'The book closes by stripping tactical victory of food, leader, secure camp, and reliable knowledge, preparing the change from Cyrus''s ascent to the Greeks'' independent problem.', confidence: high_for_book_transition}
+standing_unresolved_questions:
+  - {id: Q-001, locator: Anabasis I.10; PDF p. 29, evidence_type: UNRESOLVED_QUESTION, question: 'What political meaning attaches to severing Cyrus''s head and right hand?'}
+  - {id: Q-002, locator: Anabasis I.10; PDF p. 29, evidence_type: UNRESOLVED_QUESTION, question: 'Did Ariaeus''s four-parasang movement constitute panic, prudent retreat, or a prearranged fallback?'}
+  - {id: Q-003, locator: Anabasis I.10; PDF p. 29, evidence_type: UNRESOLVED_QUESTION, question: 'Who were the Phocaean and Milesian women, and why are they narrated through beauty, wit, youth, seizure, and escape?'}
+  - {id: Q-004, locator: Anabasis I.10; PDF p. 29, evidence_type: UNRESOLVED_QUESTION, question: 'Who commanded the Greeks left with the camp followers, and how large was their force?'}
+  - {id: Q-005, locator: Anabasis I.10; PDF p. 29, evidence_type: UNRESOLVED_QUESTION, question: 'How did the Greeks learn the king was in their camp, and how did Tissaphernes reach the king with his report?'}
+  - {id: Q-006, locator: Anabasis I.10; PDF p. 29, evidence_type: UNRESOLVED_QUESTION, question: 'Why did Clearchus not immediately return in force to the baggage camp?'}
+  - {id: Q-007, locator: Anabasis I.10; PDF pp. 29-30, evidence_type: UNRESOLVED_QUESTION, question: 'How reliable is the claim that Tissaphernes killed no Greek while passing through the peltasts?'}
+  - {id: Q-008, locator: Anabasis I.10; PDF p. 30, evidence_type: UNRESOLVED_QUESTION, question: 'Did the Greeks actually extend their line to place the Euphrates behind them?'}
+  - {id: Q-009, locator: Anabasis I.10; PDF p. 30, evidence_type: UNRESOLVED_QUESTION, question: 'Why did the royal infantry repeatedly refuse close combat with the Greek line?'}
+  - {id: Q-010, locator: Anabasis I.10; PDF p. 30, evidence_type: UNRESOLVED_QUESTION, question: 'Was Artaxerxes personally present on the mound marked by the golden-eagle standard?'}
+  - {id: Q-011, locator: Anabasis I.10; PDF p. 30, evidence_type: UNRESOLVED_QUESTION, question: 'Why did Clearchus remain below the mound rather than occupy the crest?'}
+  - {id: Q-012, locator: Anabasis I.10; PDF p. 30, evidence_type: UNRESOLVED_QUESTION, question: 'Why did no messenger inform the Greeks of Cyrus''s death before nightfall?'}
+  - {id: Q-013, locator: Anabasis I.10; PDF p. 30, evidence_type: UNRESOLVED_QUESTION, question: 'How many of the reported four hundred emergency wagons existed, and what remained after pillage?'}
+  - {id: Q-014, locator: Anabasis I.10; PDF pp. 29-30, evidence_type: UNRESOLVED_QUESTION, question: 'How does Book II revise the Greek belief that their tactical success amounts to victory?'}
+downstream_textual_checks:
+  - Consult a reviewed Greek text of I.10 for victory, prudence, fear, deliberation, standard, and report formulas.
+  - Compare a modern translation for Cyrus's mutilation, the women, Tissaphernes's passage, and the ending.
+  - Map the battlefield, Euphrates, camp, pursuit, mound, and prior halt without forcing uncertain distances.
+  - Check the golden-eagle royal standard against manuscript and historical evidence.
+  - Reconcile movements of Artaxerxes, Tissaphernes, Ariaeus, Clearchus, and the Greeks across I.8-I.10.
+  - Track the Phocaean and Milesian women while preserving the witness boundary.
+  - Audit casualty claims and the reported four hundred emergency wagons.
+  - Read I.10 with II.1 to reconstruct the transition from assumed victory to knowledge of Cyrus's death.
+  - Defer Strauss comparison until the primary comparison gate is opened.
+secondary_comparison_status: DEFERRED

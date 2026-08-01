@@ -1,0 +1,298 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-001
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.1
+  pdf_pages_one_based: 5-7
+  opening_anchor: 'Darius and Parysatis had two sons: the elder was named Artaxerxes, and the younger Cyrus.'
+  closing_anchor: These orders were duly carried out by the officers in question.
+jurisdiction: Independent primary reconstruction from the admitted Dakyns English translation. Translator wording is not unmediated
+  Greek evidence; no isolated observation licenses a deed corpus, speech register, guard, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.1 plus one-based PDF page
+  source_boundary: The narrative and Dakyns/preparer notes are distinguished where the witness marks notes typographically
+    or parenthetically.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration in the English translation
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  observation: The work opens with Darius, Parysatis, Artaxerxes, Cyrus, and Tissaphernes; Xenophon does not introduce himself
+    as narrator or actor in this chapter.
+  uncertainty: This witness does not by itself settle ancient authorship questions, narrator identity, or the Greek wording
+    underlying the English narrative voice.
+speakers_audiences_and_occasions:
+- id: SAO-001
+  locator: Anabasis I.1; PDF p. 6
+  speech_form: indirect_report
+  speaker: Cyrus
+  audience: commandants of garrisons in the Ionian cities
+  occasion: secret preparation of troops
+  content: Raise as many picked Peloponnesian troops as possible under the plea that Tissaphernes threatened their cities.
+  uncertainty: The Greek terms for command, selection, and pretext require original-language verification.
+- id: SAO-002
+  locator: Anabasis I.1; PDF p. 6
+  speech_form: indirect_report
+  speaker: Cyrus
+  audience: Artaxerxes
+  occasion: dispute over the Ionian cities
+  content: Claimed that the cities should belong to him rather than remain under Tissaphernes.
+  uncertainty: The chapter reports the claim but does not reproduce its wording or the king's answer.
+- id: SAO-003
+  locator: Anabasis I.1; PDF p. 6
+  speech_form: indirect_report
+  speaker: Cyrus
+  audience: Aristippus
+  occasion: financing a Thessalian factional conflict
+  content: Granted six months' pay for four thousand mercenaries and required consultation before any settlement with Aristippus'
+    opponents.
+  uncertainty: The arrangement's precise legal and personal terms are mediated by the translator.
+- id: SAO-004
+  locator: Anabasis I.1; PDF pp. 6-7
+  speech_form: indirect_orders
+  speaker: Cyrus
+  audience: Proxenus, Sophaenetus, and Socrates
+  occasion: distributed recruitment through friends
+  content: Ordered each to gather men under different announced campaigns against Pisidians or Tissaphernes.
+  uncertainty: The narrative does not state what each recruit was told beyond the reported pretexts.
+speeches_deeds_and_outcomes:
+- id: SDO-001
+  locator: Anabasis I.1; PDF p. 5
+  actor: Tissaphernes
+  deed: Accompanied Cyrus to Darius as a friend, later accused him before Artaxerxes.
+  outcome: Cyrus was seized and threatened with death, then released through Parysatis' intervention.
+  uncertainty: Dakyns calls the accusations slanderous; the basis and Greek force of that characterization require checking.
+- id: SDO-002
+  locator: Anabasis I.1; PDF pp. 5-6
+  actor: Cyrus
+  deed: Converted release from danger into a secret project to escape dependence and seek the kingship.
+  outcome: He cultivated court visitors, trained his barbarian forces, and began assembling Greek troops.
+  uncertainty: The chapter states the project but does not yet evaluate its justice or feasibility.
+- id: SDO-003
+  locator: Anabasis I.1; PDF p. 6
+  actor: Cyrus
+  deed: Supported Milesian exiles and besieged Miletus while presenting the conflict as a dispute with Tissaphernes.
+  outcome: The siege supplied another public ground for military preparation.
+  uncertainty: The degree to which defense of exiles was sincere, strategic, or both remains unresolved.
+- id: SDO-004
+  locator: Anabasis I.1; PDF pp. 6-7
+  actor: Cyrus and his associates
+  deed: Used money, friendship, exile, local conflict, and separate pretexts to maintain several bodies of Greek mercenaries.
+  outcome: A distributed armament existed before the march was publicly declared.
+  uncertainty: The chapter does not yet provide a total force count or the recruits' knowledge of the real aim.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+  - Dynastic succession and Cyrus' provincial command
+  - Tissaphernes' accusation and Parysatis' rescue
+  - Cyrus' decision to seek independence and kingship
+  - Cultivation and training of adherents
+  - Secret accumulation of Greek forces through several local conflicts
+  repetitions:
+  - Friendship repeatedly serves as the channel through which troops, money, and loyalty are mobilized.
+  - Distinct public causes repeatedly conceal or coexist with Cyrus' undisclosed campaign against the king.
+  - Exile or political vulnerability recurs among Clearchus, the Milesians, and Aristippus' factional setting.
+  omissions:
+  - No direct speech is quoted.
+  - The recruits' knowledge of Cyrus' true aim is not stated.
+  - No moral judgment is supplied on Cyrus' intended seizure of the kingship.
+  - Xenophon is absent as both character and named narrator.
+  tensions:
+  - Cyrus remits tribute and petitions the king while secretly preparing to overthrow him.
+  - The chapter presents real local conflicts that also function as pretexts.
+  - Cyrus' ability to create friendship and devotion is joined from the outset to secrecy and manipulation.
+documentary_observations:
+- id: OBS-001
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: The Anabasis opens inside the Persian royal household rather than with the Greek army or Xenophon.
+  uncertainty: The significance of this opening must be tested against later book openings and the work's ending.
+- id: OBS-002
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus is introduced as satrap and general of the forces mustering in the Castolus plain.
+  uncertainty: The administrative and military titles are translator-mediated.
+- id: OBS-003
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus' first ascent to his dying father already includes three hundred Greek heavy-armed men under Xenias.
+  uncertainty: The chapter does not explain why this Greek force accompanied him or what role it performed.
+- id: OBS-004
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Tissaphernes moves from named friend and companion to accuser before Artaxerxes.
+  uncertainty: The narrator's grounds for calling the accusations slanderous are not supplied here.
+- id: OBS-005
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Parysatis' intervention prevents Cyrus' execution and returns him to his province.
+  uncertainty: The political cost or formal terms of his release are omitted.
+- id: OBS-006
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus responds to peril and dishonor by seeking both freedom from his brother's power and, if possible, the
+    kingship itself.
+  uncertainty: The text does not yet distinguish self-preservation, revenge, ambition, and a claim to superior rule.
+- id: OBS-007
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Parysatis favors Cyrus over the reigning Artaxerxes and becomes his first political resource.
+  uncertainty: Maternal preference is stated, but its reasons and limits are not.
+- id: OBS-008
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Visitors from the king's court leave Cyrus as better friends to Cyrus than to the king.
+  uncertainty: The means by which Cyrus wins them are not specified in this chapter.
+- id: OBS-009
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Training of barbarian troops and secret collection of Greek troops appear as coordinated but distinct preparations.
+  uncertainty: The division between the two forces and their knowledge of the project remain unstated.
+- id: OBS-010
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The Ionian cities' conflict with Tissaphernes gives Cyrus a plausible basis for recruiting Peloponnesians.
+  uncertainty: The chapter contains both genuine conflict and strategic concealment; it does not reduce the cause to pure
+    fabrication.
+- id: OBS-011
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus supports the Milesian exiles and besieges Miletus by land and sea to restore them.
+  uncertainty: The narrative does not yet settle whether restoration of the exiles is an end, a means, or both.
+- id: OBS-012
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Cyrus' payment of tribute allows preparations hostile to the king to remain legible as a subordinate dispute
+    within royal administration.
+  uncertainty: The king's actual information and reasoning are narrated but not independently corroborated.
+- id: OBS-013
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: A gift of ten thousand darics enables the Spartan exile Clearchus to raise and maintain an army in the Chersonese.
+  uncertainty: The relation between Cyrus' admiration, Clearchus' Hellenic campaign, and the later secret project requires
+    later sequence.
+- id: OBS-014
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: Cyrus gives Aristippus twice the requested troops' pay and twice the requested duration, while retaining influence
+    over any settlement.
+  uncertainty: The exchange may show generosity, control, foresight, or a combination.
+- id: OBS-015
+  locator: Anabasis I.1; PDF pp. 6-7
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: Recruitment is decentralized through several friends operating under different announced campaigns.
+  uncertainty: The independence and knowledge of each recruiter are not yet clear.
+- id: OBS-016
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: The chapter moves from royal family conflict to an expanding network of courtiers, barbarians, exiles, cities,
+    friends, and mercenaries.
+  uncertainty: Whether this widening sequence is the chapter's governing design requires comparison with the rest of Book
+    I.
+- id: OBS-017
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: STRUCTURAL_OBSERVATION
+  observation: The preparation of the expedition is narrated almost entirely through deeds, arrangements, and indirect orders
+    rather than quoted deliberative speech.
+  uncertainty: Later chapters may alter the relation between narrative summary and direct speech.
+- id: OBS-018
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: DIRECT_TEXTUAL_OBSERVATION
+  observation: The chapter closes by stating that the recruitment orders were carried out.
+  uncertainty: Execution is confirmed, but the assembled men's understanding and consent remain unresolved.
+provisional_findings:
+- id: INF-001
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The expedition begins as a problem of rule through personal attachment, money, training, concealment, and distributed
+    agency before it becomes a problem of open command.
+  confidence: provisional_pending_book_one_sequence
+- id: INF-002
+  locator: Anabasis I.1; PDF pp. 5-6
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Cyrus' project exploits lawful or ordinary political forms—tribute, petitions, local defense, restoration of exiles—while
+    directing them toward an undisclosed revolutionary end.
+  confidence: high_for_translated_chapter_structure
+- id: INF-003
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Friendship is introduced simultaneously as a source of loyalty and as an infrastructure of political-military action.
+  confidence: provisional
+- id: INF-004
+  locator: Anabasis I.1; PDF pp. 6-7
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: Exiles and politically exposed men are especially available to a patron capable of financing and redirecting their
+    local struggles.
+  confidence: provisional_pending_character_sequences
+- id: INF-005
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: PROVISIONAL_INFERENCE
+  finding: The absence of Xenophon from the opening allows Cyrus' ascent and coalition to be established before Xenophon's
+    own entry becomes narratively relevant.
+  confidence: low_to_moderate_pending_later_authorial_entry
+standing_unresolved_questions:
+- id: Q-001
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: UNRESOLVED_QUESTION
+  question: What Greek terms underlie Dakyns' 'friend,' 'better friends,' and later 'guest-friend,' and how do their distinctions
+    govern the recruitment network?
+- id: Q-002
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: UNRESOLVED_QUESTION
+  question: On what evidence does the narration characterize Tissaphernes' accusations as slanderous?
+- id: Q-003
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: UNRESOLVED_QUESTION
+  question: How are self-preservation, revenge for dishonor, ambition, and a possible claim to superior kingship related in
+    Cyrus' decision?
+- id: Q-004
+  locator: Anabasis I.1; PDF p. 5
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why does Cyrus already have three hundred Greek heavy infantry when summoned to Darius?
+- id: Q-005
+  locator: Anabasis I.1; PDF pp. 5-6
+  evidence_type: UNRESOLVED_QUESTION
+  question: Are Cyrus' public causes false pretexts, genuine causes subordinated to a larger aim, or different combinations
+    in different cases?
+- id: Q-006
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: UNRESOLVED_QUESTION
+  question: Does Cyrus' support for the Milesian exiles disclose justice toward friends, political calculation, or both?
+- id: Q-007
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: UNRESOLVED_QUESTION
+  question: How does continued tribute payment shape Artaxerxes' failure to detect the project?
+- id: Q-008
+  locator: Anabasis I.1; PDF p. 6
+  evidence_type: UNRESOLVED_QUESTION
+  question: Why does Cyrus give Aristippus substantially more support than requested, and what control does the consultation
+    condition secure?
+- id: Q-009
+  locator: Anabasis I.1; PDF pp. 6-7
+  evidence_type: UNRESOLVED_QUESTION
+  question: What did the separate recruiters and their soldiers know about the true destination and purpose?
+- id: Q-010
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: UNRESOLVED_QUESTION
+  question: What is achieved by withholding Xenophon as narrator-character from the opening chapter?
+- id: Q-011
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: UNRESOLVED_QUESTION
+  question: Does the Greek opening use language that connects Cyrus' first trip 'up' to the work's title and later ascent?
+- id: Q-012
+  locator: Anabasis I.1; PDF pp. 5-7
+  evidence_type: UNRESOLVED_QUESTION
+  question: How will the later encomium of Cyrus qualify or conflict with this opening portrait of secrecy, deception, patronage,
+    and control?
+downstream_textual_checks:
+- Consult a reviewed Greek text of Anabasis I.1 for the terms translated as friend, guest-friend, slanderous, pretext, and
+  went up.
+- Compare at least one modern English translation for the characterization of Tissaphernes' accusations and Cyrus' motives.
+- Distinguish Xenophon's narrative from Dakyns' notes and the Project Gutenberg preparer's interventions.
+- Track each recruiter and contingent through Anabasis I.2-I.4 to determine what they knew and when.
+- Track Cyrus' fulfillment or violation of obligations to friends through Book I.
+- Defer comparison with Strauss's reconstruction until the relevant Book I primary sequence is complete.
+secondary_comparison_status: DEFERRED

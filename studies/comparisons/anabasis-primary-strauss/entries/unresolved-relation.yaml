@@ -1,0 +1,87 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+classification: UNRESOLVED_RELATION
+status: DRAFTED_PENDING_OWNER_REVIEW
+entry_count: 3
+entries:
+- id: CMP-026
+  topic: Xenophon's ambition, honor, poverty, and reward
+  classification: UNRESOLVED_RELATION
+  primary_stream:
+    position: The primary record preserves colony proposals, accusations of private gain, promised gifts, poverty,
+      horse sale and restoration, and final collective reward without a complete economic or motivational verdict.
+    cumulative_anchors:
+    - CP-011
+    - WQ-014
+    - PAT-014
+    source_units:
+    - XEN-PRI-RU-035
+    - XEN-PRI-RU-036
+    - XEN-PRI-RU-046
+    - XEN-PRI-RU-049
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss interprets ascent through name, power, honor, founding, monarchy, envy, descent, and final
+      reconciliation, while also noting Xenophon's moderate wealth and poverty.
+    secondary_units:
+    - XEN-RU-002
+    - XEN-RU-005
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 109-136
+  controlled_relation: The streams identify the same evidentiary field but do not settle whether ambition is noble,
+    self-serving, politically beneficial, or mixed.
+  preserved_uncertainty: No complete financial account or independent access to intention exists.
+  comparison_effect: Preserve motive as unresolved rather than harmonizing the records.
+- id: CMP-028
+  topic: Greece, Athens, Sparta, Cyrus, and fatherland
+  classification: UNRESOLVED_RELATION
+  primary_stream:
+    position: The primary reconstruction records Xenophon's Athenian identity, Spartan authority, service to Cyrus
+      and Seuthes, desire to return, exile note, and later transfer without ranking all loyalties.
+    cumulative_anchors:
+    - WQ-013
+    - WQ-017
+    - CP-008
+    source_units:
+    - XEN-PRI-RU-017
+    - XEN-PRI-RU-043
+    - XEN-PRI-RU-044
+    - XEN-PRI-RU-050
+    - XEN-PRI-RU-051
+  secondary_stream:
+    position: Strauss concludes that Xenophon proves Greece superior to Cyrus and other barbarians but cannot show
+      that Athens is superior to Cyrus or Sparta, leaving Socrates' original apprehension open.
+    secondary_units:
+    - XEN-RU-006
+    - XEN-RU-007
+    - XEN-RU-008
+    printed_pages: 125-136
+  controlled_relation: The primary evidence makes the loyalty problem visible but does not independently license
+    Strauss's hierarchy or final formulation.
+  preserved_uncertainty: The reason for exile, Xenophon's later political position, and cross-work evidence remain
+    unavailable.
+  comparison_effect: Preserve the hierarchy as an unresolved secondary interpretation.
+- id: CMP-031
+  topic: Law, nature, and the most remote barbarians
+  classification: UNRESOLVED_RELATION
+  primary_stream:
+    position: The primary record notes local customs, reciprocal dependence, and translator-mediated evaluations
+      but does not derive a general account of nature and law.
+    cumulative_anchors:
+    - PAT-010
+    - WQ-019
+    source_units:
+    - XEN-PRI-RU-033
+    - XEN-PRI-RU-034
+  secondary_stream:
+    position: Strauss uses the Mossynoikians to argue that even the people most remote from Greek laws live under
+      laws, while preserving the distinction between nature and law and complicating the Greek-barbarian opposition.
+    secondary_units:
+    - XEN-RU-005
+    printed_pages: '123'
+  controlled_relation: The Anabasis episodes provide material for the question, but the primary cumulative record
+    does not establish Strauss's general anthropological proposition.
+  preserved_uncertainty: Greek terms, comparative customs, and cross-work Socratic analogies remain unreviewed.
+  comparison_effect: Preserve the nature-law claim as an unresolved secondary extension.

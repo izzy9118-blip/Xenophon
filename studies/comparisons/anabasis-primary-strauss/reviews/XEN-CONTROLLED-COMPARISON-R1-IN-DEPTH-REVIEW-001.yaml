@@ -1,0 +1,299 @@
+schema_version: 1.0
+review_id: XEN-CMP-R1-REVIEW-001
+status: IN_DEPTH_REVIEW_COMPLETE_RETURN_FOR_SUBSTANTIVE_REVISION
+reviewed_on: '2026-07-31'
+repository: izzy9118-blip/Xenophon
+branch: primary/anabasis-dakyns-gutenberg
+reviewed_record:
+  comparison_id: XEN-CONTROLLED-COMPARISON-001
+  revision_id: XEN-CONTROLLED-COMPARISON-001-R1
+  record: studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R1.yaml
+  status_before_review: CORRECTED_DRAFT_PENDING_OWNER_REVIEW
+review_jurisdiction: Substantive review of the corrected controlled comparison. The review tests documentary fidelity
+  to the fifty-one owner-adopted primary chapter reconstructions, fidelity to the eight-unit reconstruction and
+  complete printed-page sequence of Strauss's essay, and fidelity to Strauss's Socrates-Cyrus architecture. It is
+  not a mechanical schema check and does not certify Greek wording or a final teaching.
+evidence_basis:
+  primary_cumulative_record: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+  primary_source_units: 51
+  primary_coverage: Anabasis I.1 through VII.8
+  secondary_study: XEN-STUDY-SEC-001
+  secondary_units:
+  - XEN-RU-001
+  - XEN-RU-002
+  - XEN-RU-003
+  - XEN-RU-004
+  - XEN-RU-005
+  - XEN-RU-006
+  - XEN-RU-007
+  - XEN-RU-008
+  strauss_source_scope: Leo Strauss, Xenophon's Anabasis, printed pages 105-136
+  active_comparison_entries: 31
+review_method:
+- Read the Strauss essay as a sequential argument rather than a topic inventory.
+- Test each comparison entry against its cited primary and secondary anchors.
+- Distinguish Strauss's governing architecture from the primary evidence examined under it.
+- Test whether each classification expresses the entry's role in the argument, not merely whether both streams mention
+  the same subject.
+- Preserve unresolved Greek, manuscript, authorship, numerical, theological, and cross-work questions.
+- Preserve R1 and all predecessor records as immutable historical production records.
+global_findings:
+- id: GF-001
+  severity: BLOCKING
+  finding: The thirty-one-entry topology remains stronger as a topic map than as a reconstruction of Strauss's sequential
+    argument.
+  required_remedy: R2 must add a sequential argument spine from title and authorship through Proxenos, Socrates,
+    ascent, Book Four, justice, founding, monarchy, fatherland, and the ending.
+- id: GF-002
+  severity: BLOCKING
+  finding: The Socrates-Xenophon contrast is named as the governing architecture but CMP-006 remains classified
+    as PRIMARY_SILENCE.
+  required_remedy: Create an active GOVERNING_ARCHITECTURE classification and place CMP-006 within it while preserving
+    the primary witness's inability to certify the Socratic corpus.
+- id: GF-003
+  severity: BLOCKING
+  finding: Proxenos is underrepresented although Strauss uses him as the indispensable mediator from Cyrus, wealth,
+    power, and uprootedness to Xenophon and Socrates.
+  required_remedy: R2 must restore Proxenos to the sequential argument and connect him to CMP-004, CMP-005, CMP-006,
+    CMP-024, CMP-026, and CMP-028.
+- id: GF-004
+  severity: BLOCKING
+  finding: Material governance is correctly placed on the Cyrus side, but the economic art is not yet reconstructed
+    as Strauss's explicit distinction between Xenophon and Socrates.
+  required_remedy: Relate pay, property, wealth, poverty, booty, and command to the economic art, moderate wealth,
+    Ischomachus, and Xenophon's difference from Socrates.
+- id: GF-005
+  severity: MAJOR
+  finding: Book Four's double centrality, Karduchia-Armenia opposition, and movement toward the two forms of justice
+    remain too isolated in CMP-013.
+  required_remedy: R2 must show how the compositional center prepares the justice problem even while the numerical
+    claims remain pending Greek verification.
+- id: GF-006
+  severity: BLOCKING
+  finding: Piety is still treated too generically as co-occurrence with prudence.
+  required_remedy: 'R2 must include Strauss''s harder formulation: Xenophon''s piety is inseparable from toughness,
+    wit, and wiliness; deus sive casus, divine omniscience, law concerning the gods, and the question whether one
+    may be wilier than the gods remain active problems.'
+- id: GF-007
+  severity: BLOCKING
+  finding: CMP-019 identifies justice as governing but does not yet reconstruct the complete chain from concrete
+    coercion through acquittal, fatherland, legitimacy, degrees of cruelty, mutual dependence of the two virtues,
+    and Xenophon as the closest approximation to their coexistence.
+  required_remedy: Expand the justice examination across Books III-VII and the cited Socratic and Cyropaedia standards
+    without claiming those cross-work standards are independently certified.
+- id: GF-008
+  severity: BLOCKING
+  finding: Founding, monarchy, ambition, and fatherland remain scattered across qualified or unresolved classifications
+    even though Strauss treats them as successive peaks and tests of Xenophon's ascent.
+  required_remedy: Reclassify CMP-016, CMP-018, CMP-026, and CMP-028 as governing examinations and connect them
+    in sequence.
+- id: GF-009
+  severity: MAJOR
+  finding: The contrast between Xenophon's acquittal and Socrates' death, and between Xenophon's easy effective
+    apologies and Socrates' apology, is underweighted.
+  required_remedy: Reclassify CMP-025 and integrate both trials and both apologies into the justice and self-presentation
+    examination.
+- id: GF-010
+  severity: BLOCKING
+  finding: The ending correction is directionally right but remains compressed.
+  required_remedy: 'R2 must preserve the full final sequence: Seuthes, unpaid wages, accusation, easier apology,
+    Zeus the King, reconciliation, Greece over barbarians, unresolved Athens, booty, Thibron, and the density of
+    gods and oaths, all under Socrates'' final question.'
+- id: GF-011
+  severity: BLOCKING
+  finding: CMP-023 and CMP-030 overcorrect by saying that the primary reconstruction does not add an independent
+    theme outside Strauss.
+  required_remedy: Strauss governs the interpretive architecture, but the sequential primary reconstruction may
+    independently disclose distributed evidence and institutional patterns. R2 must preserve that contribution while
+    locating it within the Cyrus side.
+entry_dispositions:
+- entry_id: CMP-001
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: The title and displacement from Cyrus's ascent to Xenophon's ascent initiate the governing inquiry;
+    this is more than qualified topical agreement.
+- entry_id: CMP-002
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: PRIMARY_SILENCE
+  rationale: The narrative-person problem is primary evidence, while Themistogenes and the pseudonym hypothesis
+    remain outside the admitted primary witness.
+- entry_id: CMP-003
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: PRIMARY_SILENCE
+  rationale: Retain the classification but distinguish praise-by-omission from legetai as two separate devices with
+    separate Greek checks.
+- entry_id: CMP-004
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: QUALIFIED_AGREEMENT
+  rationale: Retain qualification, but define the Cyrus pole through generosity, friendship, secrecy, royal ambition,
+    possible impiety, and degrees of cruelty rather than through economic action alone.
+- entry_id: CMP-005
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: AGREEMENT
+  rationale: The concealment-disclosure-shame sequence is strongly supported and belongs within Cyrus's mode of
+    political action.
+- entry_id: CMP-006
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_ARCHITECTURE
+  rationale: The Socrates-Xenophon contrast is the standard that organizes the essay and cannot remain merely a
+    primary silence.
+- entry_id: CMP-007
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: The Delphic episode establishes the difference between Xenophon's self-directed political decision
+    and Socratic counsel.
+- entry_id: CMP-008
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Xenophon's ascent is the governing movement whose justice and relation to Cyrus and Socrates must be
+    examined.
+- entry_id: CMP-009
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: AGREEMENT
+  rationale: Audience differentiation is directly supported and accurately limited.
+- entry_id: CMP-010
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: AGREEMENT
+  rationale: Failure, correction, and deed-tested speech are faithfully reconstructed.
+- entry_id: CMP-011
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: AGREEMENT
+  rationale: Retain the agreement but replace generic co-occurrence with Strauss's problem of piety joined to toughness,
+    wit, wiliness, and practical judgment.
+- entry_id: CMP-012
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: QUALIFIED_AGREEMENT
+  rationale: The causal restraint and deus sive casus problem are correctly distinguished from theological certification.
+- entry_id: CMP-013
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: PRIMARY_SILENCE
+  rationale: The compositional and numerical claims properly remain pending independent counting and Greek review.
+- entry_id: CMP-014
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: AGREEMENT
+  rationale: Retain the methodological agreement but make it explicitly subordinate to CMP-019's governing justice
+    examination.
+- entry_id: CMP-015
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: AGREEMENT
+  rationale: Retain the finding while identifying the army as the political field in which Xenophon's mediation
+    between Cyrus and Socrates is enacted.
+- entry_id: CMP-016
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Monarchy is a proposed peak of ascent and a test of honor, prudence, divine restraint, Spartan hegemony,
+    and legitimacy.
+- entry_id: CMP-017
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: QUALIFIED_AGREEMENT
+  rationale: Retain the classification but integrate Greek freedom, wartime obedience, Spartan rule, and fatherland
+    into the governing political problem.
+- entry_id: CMP-018
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Founding is a peak or overreaching peak of ascent and a direct test of justice, ambition, Greece, and
+    fatherland.
+- entry_id: CMP-019
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Retain the classification but expand the evidence and the full Straussian chain of manly and Socratic
+    justice.
+- entry_id: CMP-020
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: QUALIFIED_AGREEMENT
+  rationale: The complexity of Greek and non-Greek relations is accurately supported and properly limited.
+- entry_id: CMP-021
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: AGREEMENT
+  rationale: The instrumentalization of the army by external powers is well supported.
+- entry_id: CMP-022
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: AGREEMENT
+  rationale: Retain as the descriptive material condition of authority, but distinguish it from CMP-023's interpretive
+    placement on the Cyrus side.
+- entry_id: CMP-023
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: CYRUS_SIDE_ELABORATION
+  rationale: Retain the Cyrus-side placement while restoring the primary reconstruction's independent discovery
+    of the seven-book pattern.
+- entry_id: CMP-024
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: QUALIFIED_AGREEMENT
+  rationale: Friendship's political importance is supported while Greek lexical distinctions remain open.
+- entry_id: CMP-025
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Xenophon's trials and apologies must be examined against Socrates' trial and apology, not retained
+    as a merely shared structural pattern.
+- entry_id: CMP-026
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Name, power, wealth, poverty, honor, envy, reward, and public benefit are explicit tests of Xenophon's
+    difference from Socrates and proximity to Cyrus.
+- entry_id: CMP-027
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: AGREEMENT
+  rationale: The sea does not complete return; the post-sea political complications are strongly supported.
+- entry_id: CMP-028
+  disposition: RECLASSIFY
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Greece, Athens, Sparta, Cyrus, exile, and fatherland form Strauss's explicit culminating loyalty and
+    justice problem.
+- entry_id: CMP-029
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: GOVERNING_EXAMINATION
+  rationale: Retain the classification but expand the ending to the complete final sequence and Socrates' question.
+- entry_id: CMP-030
+  disposition: PASS_WITH_REQUIRED_REVISION
+  current_or_target_classification: CYRUS_SIDE_ELABORATION
+  rationale: Retain the Cyrus-side placement while preserving Thibron's incorporation as an independently disclosed
+    institutional pattern.
+- entry_id: CMP-031
+  disposition: PASS_AS_CLASSIFIED
+  current_or_target_classification: UNRESOLVED_RELATION
+  rationale: The nature-law claim properly remains a Strauss-guided cross-work and Greek-text question.
+disposition_counts:
+  entries_reviewed: 31
+  pass_as_classified: 11
+  pass_with_required_revision: 11
+  reclassify: 9
+required_reclassifications:
+  CMP-001: GOVERNING_EXAMINATION
+  CMP-006: GOVERNING_ARCHITECTURE
+  CMP-007: GOVERNING_EXAMINATION
+  CMP-008: GOVERNING_EXAMINATION
+  CMP-016: GOVERNING_EXAMINATION
+  CMP-018: GOVERNING_EXAMINATION
+  CMP-025: GOVERNING_EXAMINATION
+  CMP-026: GOVERNING_EXAMINATION
+  CMP-028: GOVERNING_EXAMINATION
+required_r2_architecture:
+  revision_id: XEN-CONTROLLED-COMPARISON-001-R2
+  sequential_argument_spine_required: true
+  new_active_classification: GOVERNING_ARCHITECTURE
+  preserve_all_entry_ids: true
+  preserve_r1_as_historical_record: true
+  required_movements:
+  - Title, opening, authorship, praise, omission, and legetai
+  - Menon and Proxenos as preparation for the Socrates-Xenophon contrast
+  - Delphi, political self-direction, economic art, and the difference from Socrates
+  - Xenophon's ascent through speech, office, correction, and command
+  - Book Four as compositional center and preparation for the justice problem
+  - Founding, trial, acquittal, fatherland, and the two forms of justice
+  - Monarchy, Spartan hegemony, faction, and practical supremacy
+  - Seuthes, apology, reconciliation, booty, Thibron, piety, and Socrates' final question
+ruling:
+  adopted: false
+  decision: RETURN_FOR_SUBSTANTIVE_REVISION
+  reason: R1 repairs the owner's three identified errors but does not yet reconstruct Strauss's argument with sufficient
+    depth or sequence. Its remaining inherited classifications still flatten governing moments into parallel topical
+    relations.
+  next_action_id: XEN-CONTROLLED-COMPARISON-001-R2
+limits:
+- No Greek witness or critical edition has been admitted.
+- The review does not independently certify Themistogenes, legetai, numerical patterns, divine causation, or cross-work
+  claims.
+- Strauss guides the inquiry but does not replace Xenophon's documentary evidence.
+- No comparison, synthesis, minister adapter, Sanctum registration, or Assembly dispatch is owner-adopted by this
+  review.
+- Artificial-intelligence self-certification remains prohibited.

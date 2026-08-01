@@ -1,0 +1,41 @@
+schema_version: 1.0
+review_id: XEN-OWNER-REVIEW-005
+status: OWNER_DIRECTED_IN_DEPTH_REVIEW_RETURNED_FOR_SUBSTANTIVE_REVISION
+reviewed_on: '2026-07-31'
+owner_directive: Good. But this is a IN-DEPTH review
+repository: izzy9118-blip/Xenophon
+branch: primary/anabasis-dakyns-gutenberg
+scope:
+  comparison_id: XEN-CONTROLLED-COMPARISON-001
+  revision_id: XEN-CONTROLLED-COMPARISON-001-R1
+  comparison_record: studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R1.yaml
+  detailed_review: studies/comparisons/anabasis-primary-strauss/reviews/XEN-CONTROLLED-COMPARISON-R1-IN-DEPTH-REVIEW-001.yaml
+  entries_reviewed: 31
+  primary_units_considered: 51
+  secondary_units_considered: 8
+  strauss_printed_pages: 105-136
+owner_review_ruling:
+  comparison_status: RETURNED_FOR_SUBSTANTIVE_REVISION
+  adoption_status: NOT_ADOPTED
+  effect: The corrected R1 comparison remains an immutable reviewed draft. It may not serve as the adopted comparative
+    reconstruction. A new R2 revision must reconstruct Strauss's sequential argument and apply the nine required
+    reclassifications before another owner review.
+  immutable_record_rule: R1, its correction record, all thirty-one entry records, the fifty-one primary chapter
+    records, and the eight Strauss unit records remain unchanged. Revision must be additive.
+review_results:
+  pass_as_classified: 11
+  pass_with_required_revision: 11
+  reclassify: 9
+  blocking_global_findings: 9
+  major_global_findings: 2
+required_next_action:
+  id: XEN-CONTROLLED-COMPARISON-001-R2
+  description: Produce an additive R2 comparison with a sequential Strauss argument spine, a GOVERNING_ARCHITECTURE
+    class, the nine required reclassifications, expanded justice and ending examinations, restored Proxenos and
+    economic-art links, and preservation of the independent primary contribution.
+limits:
+- The review is not adoption.
+- No Greek philological conclusion is certified.
+- No final teaching is declared.
+- No minister adapter, Sanctum registration, or Assembly dispatch is authorized.
+- Artificial-intelligence self-certification remains prohibited.

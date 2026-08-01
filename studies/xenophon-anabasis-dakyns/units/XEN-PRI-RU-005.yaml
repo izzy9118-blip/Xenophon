@@ -1,0 +1,404 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-005
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis I.5
+  pdf_pages_one_based: 16-18
+  opening_anchor: "Thence he marched on through Arabia, keeping the Euphrates on the right"
+  closing_anchor: "Both parties paused from battle, and retired to their quarters: order reigned."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis I.5 plus one-based PDF page
+  source_boundary: >-
+    Narrative text is distinguished from Dakyns or preparer notes. Measurements, prices,
+    explanations of strategy, descriptions of discipline, and judgments concerning order
+    remain evidence of this translation witness pending Greek-text and comparative review.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration with an explicit strategic generalization in the English translation
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  observation: >-
+    The narrator moves from natural history and logistics to an explanation of Cyrus's rapid-march
+    strategy, then to a detailed factional crisis among the Greeks; Xenophon remains absent as a character.
+  uncertainty: >-
+    The Greek syntax and voice underlying the phrases translated as "the attentive observer could see"
+    and "order reigned" require original-language review before assigning them a stronger authorial status.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis I.5; PDF p. 17
+    speech_form: indirect_order
+    speaker: Cyrus
+    audience: Glus and Pigres
+    occasion: wagons immobilized in deep clay
+    content: >-
+      Cyrus orders them to take a body of barbarians and assist in extricating the wagons.
+    uncertainty: >-
+      The size and composition of the assigned force, and the exact terms for assistance and command, are not given.
+  - id: SAO-002
+    locator: Anabasis I.5; PDF p. 17
+    speech_form: indirect_order
+    speaker: Cyrus
+    audience: Persian nobles surrounding him
+    occasion: perceived delay in freeing the wagons
+    content: >-
+      Cyrus angrily commands the nobles themselves to lend a hand and force the wagons out.
+    uncertainty: >-
+      The narrative describes Cyrus's anger but does not reproduce his words or explain whether fear, honor, habit, or loyalty moved the nobles.
+  - id: SAO-003
+    locator: Anabasis I.5; PDF p. 18
+    speech_form: supplication_reported
+    speaker: Proxenus
+    audience: Clearchus
+    occasion: armed confrontation between the forces of Clearchus and Menon
+    content: >-
+      Proxenus places his hoplites between the parties, grounds arms, and begs Clearchus to desist.
+    uncertainty: >-
+      His precise words are not preserved, and the tactical meaning of grounding arms requires comparison with the Greek.
+  - id: SAO-004
+    locator: Anabasis I.5; PDF p. 18
+    speech_form: direct_speech
+    speaker: Cyrus
+    audience: Clearchus, Proxenus, and the assembled Greeks
+    occasion: imminent fighting between Greek contingents
+    content: >-
+      Cyrus warns that if the Greeks fight one another, he and they will be destroyed that day, after which the surrounding barbarians will become worse enemies than the king's forces.
+    uncertainty: >-
+      The speech states a catastrophic consequence to stop immediate violence; whether it is a literal prediction, prudent exaggeration, or both remains open.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis I.5; PDF pp. 16-17
+    actor: Cyrus's army
+    deed: >-
+      Crossed long desert stages through Arabia while hunting some wild animals and halting at Corsote for provisions.
+    outcome: >-
+      The march continued along the Euphrates, but the landscape increasingly imposed limits through distance, barren ground, and scarce supplies.
+    uncertainty: >-
+      The relation between hunting, subsistence, recreation, reconnaissance, and narrative natural history is not stated.
+  - id: SDO-002
+    locator: Anabasis I.5; PDF p. 17
+    actor: the army and local inhabitants
+    deed: >-
+      Endured grain scarcity, purchased limited grain at a high price from the Lydian market, and relied on meat while local inhabitants exchanged quarried millstones for Babylonian corn.
+    outcome: >-
+      Baggage animals died and the army's pace was shaped by the need to reach water and fodder.
+    uncertainty: >-
+      The witness does not provide comparative prices, total losses, or a complete account of distribution among contingents.
+  - id: SDO-003
+    locator: Anabasis I.5; PDF p. 17
+    actor: Cyrus and the Persian nobles
+    deed: >-
+      Cyrus personally supervised the extraction of wagons from deep clay and ordered the nobles to enter the mud and work.
+    outcome: >-
+      The nobles discarded signs of rank, labored eagerly, and freed the wagons with exceptional speed.
+    uncertainty: >-
+      The narrator calls the scene a branch of good discipline, but the underlying Greek evaluation and the motives of the nobles require review.
+  - id: SDO-004
+    locator: Anabasis I.5; PDF p. 17
+    actor: Cyrus
+    deed: >-
+      Pressed the march rapidly and avoided halts except for provisioning or necessity.
+    outcome: >-
+      The narrator presents speed as a means of reaching the king before his dispersed imperial forces could assemble.
+    uncertainty: >-
+      The chapter also records severe logistical costs, so the overall prudence of the pace cannot be settled from this explanation alone.
+  - id: SDO-005
+    locator: Anabasis I.5; PDF pp. 17-18
+    actor: Greek soldiers
+    deed: >-
+      Crossed the Euphrates to Charmande on improvised skin-and-grass rafts to purchase wine and grain.
+    outcome: >-
+      Technical improvisation temporarily relieved scarcity and established a market connection across the river.
+    uncertainty: >-
+      The text does not identify who devised the rafts or whether the technique was already customary.
+  - id: SDO-006
+    locator: Anabasis I.5; PDF p. 18
+    actor: Clearchus and soldiers of Menon
+    deed: >-
+      Clearchus flogged a man from Menon's contingent; Menon's soldiers later attacked Clearchus with an axe, stones, shouts, and hisses; Clearchus armed his troops and advanced in retaliation.
+    outcome: >-
+      A disciplinary dispute escalated into an imminent battle between Greek contingents.
+    uncertainty: >-
+      The original offense, Clearchus's jurisdiction, Menon's role, and the formal procedures available for appeal are omitted.
+  - id: SDO-007
+    locator: Anabasis I.5; PDF p. 18
+    actor: Proxenus and Cyrus
+    deed: >-
+      Proxenus interposed his hoplites without attacking, and Cyrus entered the danger personally and warned both parties of common destruction.
+    outcome: >-
+      Clearchus abandoned the attack, both sides returned to quarters, and order was restored.
+    uncertainty: >-
+      The relative causal force of Proxenus's mediation, Cyrus's arrival, Cyrus's argument, and the surrounding military situation remains unresolved.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - Desert march through Arabia and description of wild animals
+    - Halt and provisioning at deserted Corsote
+    - Extended barren march, animal losses, grain scarcity, and costly market supply
+    - Wagons trapped in clay and Persian nobles ordered into manual labor
+    - Strategic explanation of Cyrus's forced-march policy and imperial dispersion
+    - Improvised crossing to the Charmande market
+    - Clearchus's punishment of a soldier from Menon's contingent
+    - Attack on Clearchus and retaliatory mobilization
+    - Proxenus's interposition and Cyrus's personal intervention
+    - Withdrawal of both parties and restoration of order
+  repetitions:
+    - Provisioning repeatedly governs halts, routes, prices, labor, and tactical tempo.
+    - Command is tested through action rather than title alone: nobles labor, soldiers improvise, generals mobilize, and mediators expose themselves between armed parties.
+    - The army's external strength is repeatedly endangered by internal division and unequal jurisdiction.
+  omissions:
+    - The original quarrel between the soldiers is not described.
+    - No legal basis is supplied for Clearchus's punishment of a man from Menon's contingent.
+    - Menon's conduct during the escalation is not narrated beyond the panic of his contingent.
+    - Proxenus's exact words are omitted.
+    - The chapter does not explain who invented or organized the rafts.
+    - Xenophon remains absent as a named participant.
+  tensions:
+    - Cyrus's speed seeks strategic surprise while producing severe losses and hunger.
+    - Persian nobles display immediate disciplined cooperation, whereas Greek contingents nearly destroy one another.
+    - Clearchus acts as judge and disciplinarian but responds to resistance with near civil war.
+    - Proxenus's nonviolent interposition is prudent yet initially rejected as too mild by Clearchus.
+    - Cyrus relies on Greek military power while warning that Greek disunity will expose all of them to hostile barbarians already within the camp.
+documentary_observations:
+  - id: OBS-001
+    locator: Anabasis I.5; PDF p. 16
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The army begins the chapter with five desert stages through Arabia while keeping the Euphrates on its right.
+    uncertainty: The geographic label and route require historical and cartographic verification.
+  - id: OBS-002
+    locator: Anabasis I.5; PDF p. 16
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The landscape is described as a level plain like the sea, without trees and with aromatic vegetation.
+    uncertainty: The descriptive purpose may be logistical, ethnographic, aesthetic, or several at once.
+  - id: OBS-003
+    locator: Anabasis I.5; PDF pp. 16-17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Wild asses, ostriches, bustards, and antelopes are described through their behavior under pursuit and their usefulness as food.
+    uncertainty: Species identification and translation of animal names require verification.
+  - id: OBS-004
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The wild asses can be taken only through riders posted at intervals and hunting in relays.
+    uncertainty: The narrative does not state whether the method was discovered during this march or already known.
+  - id: OBS-005
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The army halts three days at Corsote, a deserted city encircled by the river Mascas, and provisions itself.
+    uncertainty: The reason for the city's desertion is not supplied.
+  - id: OBS-006
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The subsequent thirteen desert stages cover ninety parasangs with the Euphrates still on the right.
+    uncertainty: The exact value of the parasang and the reliability of the itinerary require review.
+  - id: OBS-007
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Baggage animals perish because the country lacks grass, green plants, and trees.
+    uncertainty: The number of losses and their distribution are not stated.
+  - id: OBS-008
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Local inhabitants quarry millstones, sell them at Babylon, and purchase grain in exchange.
+    uncertainty: The narrative source for this economic account is not identified.
+  - id: OBS-009
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Grain is unavailable for ordinary purchase except in the Lydian market attached to Cyrus's Asiatic army.
+    uncertainty: Control of the market and access among contingents are not explained.
+  - id: OBS-010
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The witness gives a price of four shekels for a kapithe of wheat or barley and supplies translated unit equivalents.
+    uncertainty: The equivalences partly reflect Dakyns's or the preparer's explanatory apparatus and require source separation.
+  - id: OBS-011
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The soldiers subsist on meat alone during the period of grain shortage.
+    uncertainty: The statement may summarize the army generally and does not describe ration differences.
+  - id: OBS-012
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Several stages are lengthened specifically to reach water or fodder.
+    uncertainty: The chapter does not quantify the longest stage or its casualties.
+  - id: OBS-013
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Deep clay in a narrow passage prevents the wagons from advancing.
+    uncertainty: The exact terrain and duration of the obstruction are omitted.
+  - id: OBS-014
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus halts with the nobles and personally supervises the effort to free the wagons.
+    uncertainty: The limits of his direct supervision across the rest of the baggage train are unknown.
+  - id: OBS-015
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Persian nobles cast off purple cloaks and enter the mud wearing costly clothing and jewelry.
+    uncertainty: The scene may display discipline, competition for royal approval, fear, loyalty, or a combination.
+  - id: OBS-016
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The narrator explicitly characterizes the nobles' response as an instance of good discipline.
+    uncertainty: The exact Greek evaluative phrase and its scope require original-language verification.
+  - id: OBS-017
+    locator: Anabasis I.5; PDF pp. 17-18
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Cyrus avoids delay except for provisions or necessity because he believes speed will prevent the king from assembling a larger army.
+    uncertainty: The judgment is presented as Cyrus's conviction and must be tested against later events.
+  - id: OBS-018
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: PROVISIONAL_INFERENCE
+    observation: The narrative generalizes that imperial territorial extent and population are offset by long roads and dispersed defensive forces.
+    uncertainty: Whether this is a direct authorial judgment, a narrator's inference, or translator-shaped formulation requires Greek-text review.
+  - id: OBS-019
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: The soldiers reach the Charmande market by constructing rafts from tent skins packed with light grass.
+    uncertainty: The origin and command structure of the technique are not given.
+  - id: OBS-020
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Clearchus has a soldier from Menon's contingent flogged after judging him responsible for an unspecified dispute.
+    uncertainty: The offense, hearing, evidence, and jurisdiction are all omitted.
+  - id: OBS-021
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Menon's soldiers attack Clearchus first with an axe and then with stones, shouts, and hisses.
+    uncertainty: The narrative does not identify individual responsibility beyond the first attacker.
+  - id: OBS-022
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Clearchus retreats, arms his forces, and advances with Thracians and horsemen against Menon's contingent.
+    uncertainty: Whether he intended punishment, intimidation, or battle is not explicitly stated.
+  - id: OBS-023
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: Proxenus moves his hoplites into the open space between the factions and grounds arms before appealing to Clearchus.
+    uncertainty: The gesture's conventional military meaning and the risk accepted by Proxenus require further study.
+  - id: OBS-024
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: DIRECT_TEXTUAL_OBSERVATION
+    observation: Cyrus enters the middle of the crisis armed and argues from the shared danger of Greek civil conflict.
+    uncertainty: The narrative does not state whether Cyrus threatened force or relied entirely on persuasion and presence.
+  - id: OBS-025
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: STRUCTURAL_OBSERVATION
+    observation: The chapter closes with Clearchus recovering judgment, both factions withdrawing, and order being restored.
+    uncertainty: The durability of reconciliation and any later adjudication of the original dispute are not reported here.
+provisional_findings:
+  - id: INF-001
+    locator: Anabasis I.5; PDF pp. 16-18
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Logistics is not background to command in this chapter; food, fodder, water, wagons, markets, and distance determine the feasible pace and repeatedly compel political action.
+    confidence: high_for_translated_chapter_structure
+  - id: INF-002
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Cyrus's authority over Persian nobles is displayed through their immediate willingness to cross rank boundaries and perform necessary manual labor under his angry command.
+    confidence: provisional_pending_character_sequence
+  - id: INF-003
+    locator: Anabasis I.5; PDF pp. 17-18
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      The spatial magnitude of an empire may become a military weakness when authority and forces are dispersed and an attacker can maintain speed.
+    confidence: high_for_narrative_generalization_pending_greek_review
+  - id: INF-004
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      The Charmande crossing shows practical intelligence distributed among ordinary soldiers or subunits rather than concentrated solely in commanders.
+    confidence: moderate
+  - id: INF-005
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Clearchus's effectiveness as disciplinarian is joined to a dangerous tendency to escalate contested authority into armed coercion.
+    confidence: provisional_pending_later_clearchus_sequence
+  - id: INF-006
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      Proxenus attempts to restore concord through exposed, non-attacking interposition, but Cyrus's appeal to common survival supplies the decisive shared premise that halts the factions.
+    confidence: moderate
+  - id: INF-007
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: PROVISIONAL_INFERENCE
+    finding: >-
+      The Greek army's superiority over external enemies depends upon a fragile political unity that cannot be assumed from common language, armament, or contract alone.
+    confidence: high_for_chapter_structure_pending_later_sequence
+standing_unresolved_questions:
+  - id: Q-001
+    locator: Anabasis I.5; PDF pp. 16-17
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why does the chapter devote such detail to animals, pursuit methods, flavor, and landscape at the beginning of an increasingly urgent march?
+  - id: Q-002
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: UNRESOLVED_QUESTION
+    question: How accurate are the parasang totals, market prices, and translated measures in this Project Gutenberg-Dakyns witness?
+  - id: Q-003
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: UNRESOLVED_QUESTION
+    question: Was Cyrus's rapid pace prudent when it also caused animal losses, grain shortage, and dependence on scarce markets?
+  - id: Q-004
+    locator: Anabasis I.5; PDF p. 17
+    evidence_type: UNRESOLVED_QUESTION
+    question: What moved the Persian nobles to enter the mud so eagerly—fear, honor, habituated discipline, loyalty to Cyrus, competition, or some combination?
+  - id: Q-005
+    locator: Anabasis I.5; PDF pp. 17-18
+    evidence_type: UNRESOLVED_QUESTION
+    question: What Greek expression underlies the narrator's claim that an attentive observer could see the weakness produced by imperial dispersion?
+  - id: Q-006
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: Who devised and organized the improvised rafts used to reach Charmande, and what does the omission of attribution signify?
+  - id: Q-007
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: What was the original dispute between the soldiers of Menon and Clearchus?
+  - id: Q-008
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: By what authority did Clearchus judge and flog a soldier belonging to another general's contingent?
+  - id: Q-009
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why is Menon's own conduct during the crisis almost entirely omitted although his troops and command are central to it?
+  - id: Q-010
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: What does Proxenus's decision to ground arms between the factions reveal about his conception of command, courage, and mediation?
+  - id: Q-011
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: Why does Clearchus reject Proxenus's mild description of the crisis and demand the intervening space be opened?
+  - id: Q-012
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: Is Cyrus's prediction of immediate destruction a literal military assessment, a deliberately intensified warning, or both?
+  - id: Q-013
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: How does the contrast between Persian elite discipline and Greek factional disorder develop across the rest of Book I?
+  - id: Q-014
+    locator: Anabasis I.5; PDF p. 18
+    evidence_type: UNRESOLVED_QUESTION
+    question: Does the closing formula that order reigned mark genuine reconciliation, temporary suppression, or merely the cessation of immediate violence?
+downstream_textual_checks:
+  - Consult a reviewed Greek text of Anabasis I.5 for the terms translated as Arabia, good discipline, attentive observer, came to his senses, and order reigned.
+  - Compare at least one modern English translation for the natural-history passage, market prices, and Cyrus's strategic generalization.
+  - Separate Xenophon's narrative measurements from Dakyns's or the Project Gutenberg preparer's unit explanations.
+  - Map the route from the Araxes through Corsote, the desert stages, the Gates, and Charmande against a reviewed historical atlas.
+  - Track Glus and Pigres to determine whether their apparent slowness and subsequent roles form a continuing pattern.
+  - Track Clearchus's exercise of punishment across contingent boundaries and compare it with later command disputes.
+  - Track Proxenus's mediating conduct against his later character portrait and outcomes.
+  - Track Menon's relation with his troops and Clearchus without importing the later character judgment backward as proof.
+  - Defer comparison with Strauss's reconstruction until the relevant Book I primary sequence is complete.
+secondary_comparison_status: DEFERRED

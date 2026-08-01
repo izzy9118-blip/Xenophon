@@ -1,0 +1,254 @@
+schema_version: 1.0
+unit_id: XEN-PRI-RU-013
+study_id: XEN-STUDY-PRI-001
+source_id: XEN-SRC-PRI-001
+witness_id: XEN-WIT-PRI-001
+status: DRAFTED_PENDING_OWNER_REVIEW
+scope:
+  work_locator: Anabasis II.3
+  pdf_pages_one_based: 36-39
+  opening_anchor: "And now comes the proof of what I stated above-that the king was utterly taken aback by the sudden apparition of the army"
+  closing_anchor: "I will come back, ready equipped, to lead you away to Hellas, and to return myself to my own dominion."
+jurisdiction: >-
+  Independent primary reconstruction from the admitted Dakyns English translation.
+  Translator wording is not unmediated Greek evidence; no isolated observation licenses
+  a deed corpus, speech register, guard, adapter, or ministerial capacity.
+bibliographic_and_witness_control:
+  translation: H. G. Dakyns
+  digital_witness: Project Gutenberg ebook 1170 captured as a 168-page searchable PDF
+  locator_rule: Anabasis II.3 plus one-based PDF page
+  source_boundary: >-
+    Explicit first-person narratorial proof, direct translated speech, interpreter-mediated
+    Persian speech, reported royal decisions, inferred motives, practical commands,
+    descriptions of provisions, translator notes, oaths, and pledges remain distinct.
+    Diplomatic claims and narratorial suspicions are not silently upgraded into fact.
+narrative_person_and_authorial_attribution:
+  narrative_mode: third-person historical narration with an explicit first-person backward reference
+  xenophon_as_character_present: false
+  direct_authorial_self_identification_present: false
+  first_person_narrator_present: true
+  observation: >-
+    The chapter opens with the narrator promising proof of a prior first-person statement
+    that Artaxerxes was taken aback. Xenophon does not act as a named character. The
+    narrator also interprets the heralds' quick return, Clearchus's motives, his suspicion
+    about the flooded trenches, and the effect of his labor on the older soldiers.
+  uncertainty: >-
+    This witness does not settle the Greek force of proof, truce, friendship, shame,
+    godsend, boon, retaliation, kindness, oath, treachery, market, or the relation
+    between narrator and author.
+speakers_audiences_and_occasions:
+  - id: SAO-001
+    locator: Anabasis II.3; PDF p. 36
+    speech_form: reported_request
+    speaker: royal heralds
+    audience: Greek advanced guard and generals
+    occasion: sunrise after restoration of the battle formation
+    content: They request the generals and say they can carry proposals between Artaxerxes and the Greeks for a truce.
+    uncertainty: Their authority and the king's immediate location are not stated.
+  - id: SAO-002
+    locator: Anabasis II.3; PDF p. 36
+    speech_form: direct_diplomatic_challenge
+    speaker: Clearchus
+    audience: royal heralds for transmission to Artaxerxes
+    occasion: first response to the truce proposal
+    content: He says the Greeks require a battle first because they have had no breakfast and no one should mention truce without providing food.
+    uncertainty: The threat's literalness is not stated.
+  - id: SAO-003
+    locator: Anabasis II.3; PDF p. 36
+    speech_form: reported_offer_and_direct_clarification
+    speaker: royal heralds and Clearchus
+    audience: Clearchus, the council, and the heralds
+    occasion: rapid return of the heralds
+    content: The heralds say the king accepts the message and offers guides to provisions if a truce is made; Clearchus secures protection for all Greeks pending the final answer.
+    uncertainty: The temporary truce's enforcement mechanism is absent.
+  - id: SAO-004
+    locator: Anabasis II.3; PDF p. 36
+    speech_form: strategic_council_statement
+    speaker: Clearchus
+    audience: Greek generals in council
+    occasion: after removal of the ambassadors
+    content: He agrees to the truce but delays announcing it until the heralds fear refusal, while admitting that the same fear may affect the soldiers.
+    uncertainty: The exact intended bargaining advantage is unstated.
+  - id: SAO-005
+    locator: Anabasis II.3; PDF p. 38
+    speech_form: interpreter_mediated_diplomatic_speech
+    speaker: Tissaphernes through an interpreter
+    audience: Greek generals
+    occasion: royal deputation after three days in the provisioned villages
+    content: He presents himself as the Greeks' neighbor, treats their rescue as a godsend and royal boon, lists his services to Artaxerxes, and asks for a moderate answer.
+    uncertainty: His motives, accuracy, and authorization are not independently established.
+  - id: SAO-006
+    locator: Anabasis II.3; PDF p. 38
+    speech_form: formal_diplomatic_reply
+    speaker: Clearchus as Greek spokesman
+    audience: Tissaphernes and the Persian deputation
+    occasion: after separate Greek deliberation
+    content: He denies an original anti-royal purpose, attributes the expedition to Cyrus's pretexts, explains loyalty to Cyrus through shame before god and man, renounces claims against the kingdom, asks to return home, and promises retaliation for harm and reciprocal benefit for help.
+    uncertainty: The speech compresses differing levels of knowledge and motive among the contingents.
+  - id: SAO-007
+    locator: Anabasis II.3; PDF pp. 38-39
+    speech_form: interim_and_final_royal_response
+    speaker: Tissaphernes
+    audience: Greek generals and officers
+    occasion: before and after consultation with Artaxerxes
+    content: He continues the truce and market, then reports permission to save the Greeks despite opposition and offers guidance, friendly passage, markets, and lawful provisioning in exchange for non-damage and payment where markets exist.
+    uncertainty: The opponents, royal deliberation, and independent confirmation are absent.
+  - id: SAO-008
+    locator: Anabasis II.3; PDF p. 39
+    speech_form: departure_statement
+    speaker: Tissaphernes
+    audience: Greek generals and officers
+    occasion: after reciprocal oaths and pledges
+    content: He will return to Artaxerxes, transact his business, then come equipped to lead the Greeks to Hellas and return to his dominion.
+    uncertainty: His business, timetable, escort, and route are not specified.
+speeches_deeds_and_outcomes:
+  - id: SDO-001
+    locator: Anabasis II.3; PDF p. 36
+    actor: Clearchus, Greek troops, and royal heralds
+    deed: Clearchus makes the heralds wait while he arranges a compact fully armed line, then meets them with selected soldiers of conspicuous equipment and appearance.
+    outcome: Negotiation begins under a staged display of readiness rather than vulnerability.
+    uncertainty: The ambassadors' reaction is not narrated.
+  - id: SDO-002
+    locator: Anabasis II.3; PDF p. 36
+    actor: Clearchus, the heralds, and the Greek council
+    deed: Clearchus answers the truce proposal with a demand for food, secures protection for all, obtains guides, and delays acceptance to induce fear.
+    outcome: Subsistence becomes diplomatic leverage while Greek freedom of action is preserved.
+    uncertainty: Whether the king personally approved the concessions is inferred.
+  - id: SDO-003
+    locator: Anabasis II.3; PDF pp. 36-37
+    actor: Clearchus and the Greek army
+    deed: The army marches under truce in battle line with Clearchus in the rear and bridges flooded trenches with palm trunks.
+    outcome: Peaceful movement retains full tactical precaution.
+    uncertainty: The number and deliberate military purpose of the trenches are not established.
+  - id: SDO-004
+    locator: Anabasis II.3; PDF p. 37
+    actor: Clearchus and assigned work parties
+    deed: Clearchus strikes dawdlers, enters the mud, and works beside the men; older soldiers join the assigned thirty-year-olds through shame and emulation.
+    outcome: Coercion, example, and shame accelerate collective labor.
+    uncertainty: Injury, consent, and comparative efficiency are not reported.
+  - id: SDO-005
+    locator: Anabasis II.3; PDF pp. 37-38
+    actor: Greek army and local resources
+    deed: The guides lead the army to villages with grain, date wine, boiled date drink, selected dates, dried sweets, and palm crown; the army stays three days.
+    outcome: Immediate hunger is relieved and the narrative pauses over rank, pleasure, bodily effects, and the palm's death.
+    uncertainty: Ownership, purchase terms, quantities, and inhabitants are omitted.
+  - id: SDO-006
+    locator: Anabasis II.3; PDF p. 38
+    actor: Tissaphernes, Persian deputation, and Greek generals
+    deed: Tissaphernes argues his merit and usefulness as mediator; the Greeks deliberate; Clearchus answers for them.
+    outcome: The relation is reframed from surrender after rebellion to negotiated return under reciprocal conduct.
+    uncertainty: Greek dissent and the internal debate are not recorded.
+  - id: SDO-007
+    locator: Anabasis II.3; PDF pp. 38-39
+    actor: Tissaphernes, Artaxerxes, unnamed opponents, and Greeks
+    deed: Tissaphernes carries the answer, delays, and returns reporting royal permission to save the Greeks despite objections.
+    outcome: A passage compact replaces the earlier demand for disarmament.
+    uncertainty: Tissaphernes's report is not independently confirmed by Artaxerxes.
+  - id: SDO-008
+    locator: Anabasis II.3; PDF p. 39
+    actor: Tissaphernes, the king's brother-in-law, Greek generals, and officers
+    deed: The parties exchange oaths and pledges governing guidance, markets, provisioning, payment, and non-damage; Tissaphernes leaves to prepare the escort.
+    outcome: The homeward march is placed under a formally reciprocal compact whose execution remains future.
+    uncertainty: The ritual, sanctions, witnesses, and exact oath wording are not supplied.
+sequence_repetition_omission_and_contradiction:
+  sequence:
+    - First-person proof that Artaxerxes was alarmed
+    - Royal heralds seek truce after the demand for disarmament
+    - Clearchus stages an armed display and makes hunger a condition
+    - Temporary truce and guides are secured after deliberate delay
+    - The army marches in full order and bridges flooded trenches
+    - Clearchus governs labor through force, participation, and shame
+    - Provisioned villages relieve hunger
+    - Tissaphernes presents himself as mediator and loyal victor
+    - Clearchus explains past loyalty and present non-aggression
+    - Tissaphernes reports royal permission and proposes reciprocal terms
+    - Oaths and pledges establish a future guided return
+  repetitions:
+    - Arms and formation remain the basis of negotiation even under truce.
+    - Hunger and markets define what political freedom of movement is possible.
+    - Clearchus combines concealment, delay, display, discipline, and direct labor.
+    - Friendship and benefit are expressed through reciprocal advantage rather than unconditional trust.
+    - Messages, interpreters, heralds, guides, and reported decisions mediate decisive knowledge.
+    - God, shame, oaths, and pledges appear beside calculation and coercion.
+  omissions:
+    - Artaxerxes never speaks directly.
+    - The heralds, guides, interpreter, and three Persians remain unnamed.
+    - The Greeks' internal council over Tissaphernes's proposal is not narrated.
+    - Tissaphernes's royal permission is not independently confirmed.
+    - The local owners and inhabitants of the villages are absent.
+    - The route, timetable, escort, oath ritual, sanctions, and enforcement mechanism remain unspecified.
+  tensions:
+    - Artaxerxes moves from demanding the arms to negotiating safe departure without a narrated Greek defeat.
+    - Clearchus accepts truce while retaining battle formation and suspecting hostile engineering.
+    - He disciplines labor with blows while sharing its physical burden.
+    - The Greeks deny an original anti-royal intention after marching through Cyrus's concealments.
+    - Shame before god and man defends loyalty to a rebel but now supports peace with the king.
+    - Tissaphernes presents rescue as benevolence while grounding his influence in service against the Greeks.
+    - Friendly passage permits taking provisions where markets fail.
+    - Formal trust is created inside a chapter structured by display, fear, suspicion, mediation, and delay.
+documentary_observations:
+  - {id: OBS-001, locator: "Anabasis II.3; PDF p. 36", evidence_type: NARRATORIAL_INTERVENTION_OBSERVATION, observation: "The chapter opens as proof of the narrator's earlier first-person claim that Artaxerxes was taken aback.", uncertainty: "Narrator, author, source, and access to the king's state are not identified."}
+  - {id: OBS-002, locator: "Anabasis II.3; PDF p. 36", evidence_type: STRUCTURAL_OBSERVATION, observation: "The demand for disarmament is followed the next morning by royal heralds seeking truce.", uncertainty: "The cause of the change is narratorial inference."}
+  - {id: OBS-003, locator: "Anabasis II.3; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus makes the heralds wait until the line is compact and fully armed.", uncertainty: "The delay's duration is not given."}
+  - {id: OBS-004, locator: "Anabasis II.3; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "He selects conspicuously equipped and noble-looking soldiers for the meeting.", uncertainty: "The visual standards and effect require review."}
+  - {id: OBS-005, locator: "Anabasis II.3; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus says the Greeks need battle before truce because they have had no breakfast.", uncertainty: "The threat may be strategic speech."}
+  - {id: OBS-006, locator: "Anabasis II.3; PDF p. 36", evidence_type: INFERRED_MOTIVE_OBSERVATION, observation: "The heralds' quick return is treated as proof that Artaxerxes or an empowered official is nearby.", uncertainty: "This is inference, not direct location evidence."}
+  - {id: OBS-007, locator: "Anabasis II.3; PDF p. 36", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The interim truce covers all Greeks until the king receives their final answer.", uncertainty: "Duration and sanctions are absent."}
+  - {id: OBS-008, locator: "Anabasis II.3; PDF p. 36", evidence_type: NARRATED_INTENTION_OBSERVATION, observation: "Clearchus delays acceptance to make the heralds fear refusal and expects similar fear among his soldiers.", uncertainty: "The precise strategic gain is unexplained."}
+  - {id: OBS-009, locator: "Anabasis II.3; PDF pp. 36-37", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The army marches under truce in battle order with Clearchus commanding the rear.", uncertainty: "Distance and relation to the guides are not measured."}
+  - {id: OBS-010, locator: "Anabasis II.3; PDF p. 37", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Flooded trenches require bridges made from fallen or cut palm trunks.", uncertainty: "Whether all flooding is artificial is not established."}
+  - {id: OBS-011, locator: "Anabasis II.3; PDF p. 37", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus supervises with spear and stick, striking selected dawdlers.", uncertainty: "The degree and consequences of force are not described."}
+  - {id: OBS-012, locator: "Anabasis II.3; PDF p. 37", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus enters the mud and helps the work parties himself.", uncertainty: "His practical contribution is not quantified."}
+  - {id: OBS-013, locator: "Anabasis II.3; PDF p. 37", evidence_type: NARRATED_CAUSAL_OBSERVATION, observation: "The narrator says Clearchus's example forces others through shame to equal speed.", uncertainty: "Individual motives are generalized."}
+  - {id: OBS-014, locator: "Anabasis II.3; PDF p. 37", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Thirty-year-old men are assigned to bridge work, but older men join.", uncertainty: "The basis of the age assignment is omitted."}
+  - {id: OBS-015, locator: "Anabasis II.3; PDF p. 37", evidence_type: NARRATED_SUSPICION_OBSERVATION, observation: "Clearchus suspects the king flooded the channels out of season to display danger.", uncertainty: "The suspicion is not confirmed."}
+  - {id: OBS-016, locator: "Anabasis II.3; PDF pp. 37-38", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The villages contain grain, date wine, boiled date drink, selected dates, dried sweets, and palm crown.", uncertainty: "Quantities, owners, and transaction terms are unstated."}
+  - {id: OBS-017, locator: "Anabasis II.3; PDF p. 37", evidence_type: SOCIAL_DISTINCTION_OBSERVATION, observation: "Dates familiar in Hellas are assigned to servants, while masters receive selected larger dates.", uncertainty: "The scope and source of the practice are not given."}
+  - {id: OBS-018, locator: "Anabasis II.3; PDF pp. 37-38", evidence_type: BODILY_EFFECT_OBSERVATION, observation: "Dried dates and palm crown are delicious but headache-producing.", uncertainty: "The physiological claim is unquantified."}
+  - {id: OBS-019, locator: "Anabasis II.3; PDF p. 38", evidence_type: EDITORIAL_NOTE_OBSERVATION, observation: "Dakyns glosses palm brain as the cabbage-like crown.", uncertainty: "The Greek term and botanical accuracy require review."}
+  - {id: OBS-020, locator: "Anabasis II.3; PDF p. 38", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Removing the palm crown causes the whole tree to wither.", uncertainty: "The narrative does not discuss environmental cost."}
+  - {id: OBS-021, locator: "Anabasis II.3; PDF p. 38", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Tissaphernes speaks through an interpreter with the king's brother-in-law, three Persians, and many slaves.", uncertainty: "The interpreter and Persians are unnamed."}
+  - {id: OBS-022, locator: "Anabasis II.3; PDF p. 38", evidence_type: SPEAKER_CLAIM_OBSERVATION, observation: "Tissaphernes claims he alone among opposing officers did not flee and lists his services to Artaxerxes.", uncertainty: "The speech is self-attestation requiring comparison with the battle narrative."}
+  - {id: OBS-023, locator: "Anabasis II.3; PDF p. 38", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus says Cyrus used many pretexts and shame before god and man prevented betrayal once Cyrus was endangered.", uncertainty: "The speech compresses differing levels of knowledge."}
+  - {id: OBS-024, locator: "Anabasis II.3; PDF p. 38", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus renounces claims against Artaxerxes and says the Greeks would not kill him even if able.", uncertainty: "The claim is diplomatic and counterfactual."}
+  - {id: OBS-025, locator: "Anabasis II.3; PDF p. 38", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Clearchus states reciprocal retaliation for harm and reciprocal kindness for benefit.", uncertainty: "Its relation to Cyrus's Book I principles requires later primary comparison."}
+  - {id: OBS-026, locator: "Anabasis II.3; PDF pp. 38-39", evidence_type: REPORT_STATUS_OBSERVATION, observation: "Tissaphernes reports royal permission to save the Greeks despite unnamed opposition.", uncertainty: "The decision is known only through him."}
+  - {id: OBS-027, locator: "Anabasis II.3; PDF p. 39", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "The terms join friendly passage and markets to permitted local provisioning when no market is supplied, while requiring non-damage and payment where markets exist.", uncertainty: "The boundary between permitted taking and damage is undefined."}
+  - {id: OBS-028, locator: "Anabasis II.3; PDF p. 39", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Tissaphernes and the king's brother-in-law exchange oaths and pledges with Greek generals and officers.", uncertainty: "Wording, ritual, witnesses, and sanctions are omitted."}
+  - {id: OBS-029, locator: "Anabasis II.3; PDF p. 39", evidence_type: DIRECT_TEXTUAL_OBSERVATION, observation: "Tissaphernes promises to return equipped to guide the Greeks to Hellas and then return to his dominion.", uncertainty: "Preparation, route, timetable, and force are unspecified."}
+provisional_findings:
+  - {id: INF-001, locator: "Anabasis II.3; PDF p. 36", evidence_type: PROVISIONAL_INFERENCE, finding: "Visible military order becomes diplomatic leverage, making truce follow rather than replace armed readiness.", confidence: high_for_sequence}
+  - {id: INF-002, locator: "Anabasis II.3; PDF p. 36", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus converts hunger from weakness into a negotiable claim backed by battle.", confidence: high_for_speech_structure}
+  - {id: INF-003, locator: "Anabasis II.3; PDF pp. 36-37", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus's command combines display, delay, corporal discipline, personal labor, and shame.", confidence: high_for_chapter_pattern}
+  - {id: INF-004, locator: "Anabasis II.3; PDF pp. 36-39", evidence_type: PROVISIONAL_INFERENCE, finding: "Truce requires continuing precaution and does not yet constitute trust.", confidence: high_for_repeated_conduct}
+  - {id: INF-005, locator: "Anabasis II.3; PDF pp. 37-38", evidence_type: PROVISIONAL_INFERENCE, finding: "The provision narrative connects bargaining to bodily need, rank, pleasure, sickness, and environmental cost.", confidence: moderate_pending_broader_sequence}
+  - {id: INF-006, locator: "Anabasis II.3; PDF p. 38", evidence_type: PROVISIONAL_INFERENCE, finding: "Tissaphernes presents mediation as benevolence toward the Greeks and reward for loyalty against them.", confidence: high_for_speech_structure}
+  - {id: INF-007, locator: "Anabasis II.3; PDF p. 38", evidence_type: PROVISIONAL_INFERENCE, finding: "Clearchus reframes failed rebellion as reciprocal non-aggression by distinguishing past loyalty to Cyrus from present aims.", confidence: high_for_diplomatic_reply}
+  - {id: INF-008, locator: "Anabasis II.3; PDF pp. 38-39", evidence_type: PROVISIONAL_INFERENCE, finding: "The compact institutionalizes provisional cooperation while preserving dependence on Persian guidance, markets, and reported royal permission.", confidence: high_for_chapter_closure}
+standing_unresolved_questions:
+  - {id: Q-001, locator: "Anabasis II.3; PDF p. 36", evidence_type: UNRESOLVED_QUESTION, question: "What evidence underlies the narrator's first-person claim that Artaxerxes was taken aback?"}
+  - {id: Q-002, locator: "Anabasis II.3; PDF p. 36", evidence_type: UNRESOLVED_QUESTION, question: "Was Clearchus prepared to fight for breakfast, or was the statement diplomatic theater?"}
+  - {id: Q-003, locator: "Anabasis II.3; PDF p. 36", evidence_type: UNRESOLVED_QUESTION, question: "How did the staged armed display affect the Persian envoys?"}
+  - {id: Q-004, locator: "Anabasis II.3; PDF p. 36", evidence_type: UNRESOLVED_QUESTION, question: "Why did Clearchus believe fear among both heralds and soldiers improved his position?"}
+  - {id: Q-005, locator: "Anabasis II.3; PDF pp. 36-37", evidence_type: UNRESOLVED_QUESTION, question: "Were the flooded trenches irrigation, ordinary infrastructure, or deliberate obstruction?"}
+  - {id: Q-006, locator: "Anabasis II.3; PDF p. 37", evidence_type: UNRESOLVED_QUESTION, question: "How do punishment, personal example, shame, and willing obedience interact in Clearchus's labor command?"}
+  - {id: Q-007, locator: "Anabasis II.3; PDF pp. 37-38", evidence_type: UNRESOLVED_QUESTION, question: "Were the village provisions purchased, granted, or taken from absent inhabitants?"}
+  - {id: Q-008, locator: "Anabasis II.3; PDF pp. 37-38", evidence_type: UNRESOLVED_QUESTION, question: "Why distinguish servants' food from masters' food, pleasure from headache, and nourishment from the palm's death?"}
+  - {id: Q-009, locator: "Anabasis II.3; PDF p. 38", evidence_type: UNRESOLVED_QUESTION, question: "How accurate is Tissaphernes's account of his own conduct?"}
+  - {id: Q-010, locator: "Anabasis II.3; PDF p. 38", evidence_type: UNRESOLVED_QUESTION, question: "How did the Greeks deliberate before Clearchus's reply, and was there dissent?"}
+  - {id: Q-011, locator: "Anabasis II.3; PDF p. 38", evidence_type: UNRESOLVED_QUESTION, question: "How does Clearchus's denial of original anti-royal purpose relate to changing knowledge in Book I?"}
+  - {id: Q-012, locator: "Anabasis II.3; PDF pp. 38-39", evidence_type: UNRESOLVED_QUESTION, question: "Did Tissaphernes obtain the reported royal permission, and who opposed it?"}
+  - {id: Q-013, locator: "Anabasis II.3; PDF p. 39", evidence_type: UNRESOLVED_QUESTION, question: "How are permitted provisioning, non-damage, and payment distinguished in practice?"}
+  - {id: Q-014, locator: "Anabasis II.3; PDF p. 39", evidence_type: UNRESOLVED_QUESTION, question: "What sanctions, divine witnesses, or political mechanisms bind the oaths and pledges?"}
+downstream_textual_checks:
+  - Consult a reviewed Greek text for proof, truce, breakfast, fear, shame, godsend, boon, friendship, retaliation, kindness, oath, pledge, market, and treachery.
+  - Compare translations of the opening first-person proof and narratorial statements of motive and suspicion.
+  - Track the shift from disarmament demand to truce, markets, escort, and safe passage.
+  - Compare Tissaphernes's battle account with Anabasis I.8-I.10 and later revelations.
+  - Track Clearchus's display, delay, concealment, corporal punishment, personal labor, and use of shame.
+  - Track provisions, markets, permitted taking, local damage, and bodily consequences.
+  - Track the reciprocal benefit-and-retaliation formula across the primary sequence.
+  - Identify oath rituals, sanctions, violations, and accusations of treachery in the remainder of Book II.
+  - Track the interpreter's role and all mediated Persian-Greek diplomacy.
+  - Defer comparison with Strauss until the relevant primary sequence is complete.
+secondary_comparison_status: DEFERRED

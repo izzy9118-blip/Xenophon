@@ -1,0 +1,51 @@
+schema_version: 1.0
+comparison_id: XEN-CONTROLLED-COMPARISON-001
+revision_id: XEN-CONTROLLED-COMPARISON-001-R1
+classification: CYRUS_SIDE_ELABORATION
+status: CORRECTED_DRAFT_PENDING_OWNER_REVIEW
+entry_count: 2
+entries:
+  - id: CMP-023
+    topic: Material governance as the economic and commanding substance of the Cyrus side
+    classification: CYRUS_SIDE_ELABORATION
+    primary_stream:
+      position: >-
+        Provisioning, pay, markets, booty, transport, compensation, gifts, wealth, and poverty form a recurrent work-level pattern across all seven books. They disclose the material conditions under which command can be acquired, maintained, lost, defended, and transferred.
+      cumulative_anchors: [PAT-002, TR-007, WF-003]
+      source_units:
+        - XEN-PRI-RU-003
+        - XEN-PRI-RU-013
+        - XEN-PRI-RU-030
+        - XEN-PRI-RU-034
+        - XEN-PRI-RU-046
+        - XEN-PRI-RU-050
+    secondary_stream:
+      position: >-
+        Strauss places Xenophon on the side of political action, economic art, acquisition, command, honor, moderate wealth, and the manly virtues in contrast with Socratic poverty and withdrawal from political rule. His discussion of wealth, booty, founding, command, and the economic art supplies the architecture within which the seven-book material sequence belongs.
+      secondary_units: [XEN-RU-002, XEN-RU-003, XEN-RU-005, XEN-RU-006, XEN-RU-008]
+      printed_pages: 109-136
+    controlled_relation: >-
+      The primary reconstruction does not add an independent theme outside Strauss's interpretation. It supplies the distributed evidence that fills out the Cyrus or manly-political pole of Strauss's Socrates-Cyrus examination.
+    preserved_uncertainty: >-
+      Cyrus and Xenophon are not thereby identified without remainder, and material governance does not exhaust either the Cyrus side or Xenophon's practical character.
+    comparison_effect: >-
+      Remove SECONDARY_SILENCE. Read material governance as a primary elaboration of the Cyrus-side problem under Strauss's guiding architecture.
+  - id: CMP-030
+    topic: Thibron's incorporation as the terminal institutional expression of the Cyrus side
+    classification: CYRUS_SIDE_ELABORATION
+    primary_stream:
+      position: >-
+        The army's independent political existence ends when its troops are incorporated into Thibron's renewed Greek war against Persian rulers. The narrative closes with transfer into command, war, acquisition, and service rather than with a narrated private homecoming.
+      cumulative_anchors: [WF-012, SDO-CUM-010, CP-012]
+      source_units: [XEN-PRI-RU-050, XEN-PRI-RU-051]
+    secondary_stream:
+      position: >-
+        Strauss closes with Xenophon's reconciliation with the Greeks and Spartans, his demonstrated preference for Greece over barbarians, renewed Persian war undertaken for booty, and the unresolved question posed by Socrates. The return to war is therefore not external to his ending but the final active and political term to be judged through the Socrates-Cyrus opposition.
+      secondary_units: [XEN-RU-008]
+      printed_pages: 133-136
+    controlled_relation: >-
+      Thibron's incorporation is the institutional form taken by the Cyrus side at the end: the army ceases to rule itself by becoming an instrument of another Greek war. This deed belongs inside Strauss's final examination rather than beside it as an alternative closure.
+    preserved_uncertainty: >-
+      The transfer does not by itself resolve whether Xenophon's return to Greek command vindicates Socrates' apprehension, corrects his earlier attachment to Cyrus, or reveals an enduring tension between political action and Socratic judgment.
+    comparison_effect: >-
+      Remove SECONDARY_SILENCE. Place Thibron's incorporation on the Cyrus side and submit it to the final Strauss-guided examination.
