@@ -26,7 +26,9 @@ owner_directives:
 repository_authorization:
   id: XENOPHON-AUTH-001
   path: governance/repository-authorization.yaml
-  status: OWNER_AUTHORIZED_PENDING_EXACT_COMMIT_SEAL
+  status: ACTIVE_OWNER_AUTHORIZATION
+  exact_interface_commit: 00292dce72870a79e21630b1014eedbcd7ddf327
+  authorization_record_commit: 73702c912c607e51cb45adbee7a230c2f118c03b
 governing_hub:
   repository: izzy9118-blip/Sanctum
   accepted_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
@@ -69,7 +71,7 @@ active_records:
 current_phase:
   id: XEN-PHASE-013
   name: Owner-authorized operational Xenophon minister interface
-  completion_status: OPERATIONAL_AUTHORIZATION_GRANTED_PENDING_EXACT_COMMIT_SEAL_AND_SANCTUM_REGISTRATION
+  completion_status: OPERATIONAL_AUTHORIZATION_ACTIVE_READY_FOR_SANCTUM_REGISTRATION
 minister_adapter:
   id: XEN-MINISTER-ADAPTER-001-R1
   predecessor_id: XEN-MINISTER-ADAPTER-001
@@ -117,15 +119,15 @@ minister_adapter:
   adapter_operational_authority:
     ref: governance/repository-authorization.yaml
     owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
-    status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE_PENDING_EXACT_COMMIT_SEAL
+    status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
   owner_reviewed: true
   owner_adopted: true
   operational_authorization: true
   sanctum_registration_authorized: true
   assembly_dispatch_authorized: false
 next_required_action:
-  id: XENOPHON-EXACT-OPERATIONAL-COMMIT-SEAL-001
-  description: Seal the exact operational commit in the repository authorization and proving request, validate it, then register that exact commit in Sanctum.
+  id: XENOPHON-SANCTUM-REGISTRATION-001
+  description: Register an exact validated Xenophon commit in Sanctum, then run an end-to-end universal-dispatch proving inquiry.
 governance_gates:
   semantic_completion: INCOMPLETE
   final_teaching_authorized: false
