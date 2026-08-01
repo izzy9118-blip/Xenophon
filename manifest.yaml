@@ -1,23 +1,32 @@
 schema_version: 1.0
 repository: izzy9118-blip/Xenophon
 repository_role: sanctum_minister_repository
-version: 1.69.0
-state: MINISTER_ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+version: 1.70.0
+state: OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH
 minister:
   name: Xenophon
-  status: FOUNDING_IN_PROGRESS
-  registration_status: NOT_YET_REGISTERED_IN_SANCTUM
+  minister_id: xenophon
+  status: OWNER_AUTHORIZED_OPERATIONAL_MINISTER
+  registration_status: READY_FOR_SANCTUM_REGISTRATION
 predecessor_state:
-  version: 1.68.0
-  state: MINISTER_ADAPTER_IN_DEPTH_REVIEWED_RETURNED_FOR_TARGETED_R1
-  exact_head: fe7171b4caca347ebd1fdcb7f2d221efa3bf3324
-  frozen_validator: scripts/validate_repository_v1_68.py
-  preservation: The adverse adapter review and all prior records remain immutable predecessor history.
+  version: 1.69.0
+  state: MINISTER_ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+  exact_head: af3e057fca8b8b78ad20f6b8359dd12f519128a8
+  frozen_predecessor:
+    version: 1.68.0
+    exact_head: fe7171b4caca347ebd1fdcb7f2d221efa3bf3324
+    validator: scripts/validate_repository_v1_68.py
+  preservation: All adverse review, targeted R1, and owner-adoption records remain immutable predecessor history.
 owner_reviews:
+  active_adapter_adoption: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
   adapter_predecessor_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-in-depth-review.yaml
   synthesis_adoption: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
 owner_directives:
   greek_deferral: governance/owner-directives/2026-08-01-defer-greek-language-certification.yaml
+repository_authorization:
+  id: XENOPHON-AUTH-001
+  path: governance/repository-authorization.yaml
+  status: OWNER_AUTHORIZED_PENDING_EXACT_COMMIT_SEAL
 governing_hub:
   repository: izzy9118-blip/Sanctum
   accepted_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
@@ -58,13 +67,13 @@ active_records:
     path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     unresolved_question_count: 19
 current_phase:
-  id: XEN-PHASE-012
-  name: Targeted federation and provenance correction of the Xenophon minister adapter
-  completion_status: ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+  id: XEN-PHASE-013
+  name: Owner-authorized operational Xenophon minister interface
+  completion_status: OPERATIONAL_AUTHORIZATION_GRANTED_PENDING_EXACT_COMMIT_SEAL_AND_SANCTUM_REGISTRATION
 minister_adapter:
   id: XEN-MINISTER-ADAPTER-001-R1
   predecessor_id: XEN-MINISTER-ADAPTER-001
-  status: DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+  status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
   adapter_path: adapter.py
   speech_mechanism_path: speech/speech-mechanism.yaml
   request_fixture: tests/fixtures/xenophon-speech-request.yaml
@@ -73,6 +82,8 @@ minister_adapter:
   behavioral_tests: tests/test_minister_adapter.py
   federation_schema: federation/contracts/ministerial-report.schema.v1.3.0.json
   governing_synthesis: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-R1-IN-DEPTH-REVIEW-001.yaml
+  owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
   federation_dependency:
     id: SANCTUM-XENOPHON-WITNESS-ID-COMPATIBILITY-001
     status: RESOLVED_BY_SANCTUM_CONTRACT_1_3_0
@@ -104,16 +115,19 @@ minister_adapter:
     ref: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
     status: OWNER_ADOPTED_SYNTHESIS
   adapter_operational_authority:
-    status: PENDING_OWNER_ADOPTION
-  owner_reviewed: false
-  owner_adopted: false
-  operational_authorization: false
-  sanctum_registration_authorized: false
+    ref: governance/repository-authorization.yaml
+    owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
+    status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE_PENDING_EXACT_COMMIT_SEAL
+  owner_reviewed: true
+  owner_adopted: true
+  operational_authorization: true
+  sanctum_registration_authorized: true
   assembly_dispatch_authorized: false
 next_required_action:
-  id: XEN-MINISTER-ADAPTER-R1-IN-DEPTH-OWNER-REVIEW-001
-  description: Conduct an in-depth owner review of adapter R1 against the five returned defects, the four registers, three guards, live Sanctum schema, exact provenance, and preserved jurisdiction before any operational authorization.
+  id: XENOPHON-EXACT-OPERATIONAL-COMMIT-SEAL-001
+  description: Seal the exact operational commit in the repository authorization and proving request, validate it, then register that exact commit in Sanctum.
 governance_gates:
+  semantic_completion: INCOMPLETE
   final_teaching_authorized: false
   greek_certification_completed: false
   artificial_intelligence_self_certification_prohibited: true
