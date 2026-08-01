@@ -1,0 +1,91 @@
+record_type: xenophon_speech_request
+request_id: XEN-ADAPTER-PROVING-REQUEST-001
+report_id: MREP-XENOPHON-ADAPTER-PROVING-001
+fixture_status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
+inquiry_ref:
+  ref: INQ-XENOPHON-ADAPTER-PROVING-001
+  commit: b71a6a171fd2467cb712e9f9203d05791268bab4
+  envelope_sha256: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+question: What does Xenophon's presentation of command reveal about justice and legitimate rule?
+briefing:
+  briefing_id: BRIEF-XENOPHON-ADAPTER-PROVING-001
+  path: tests/fixtures/xenophon-adapter-common-briefing.yaml
+  sha256: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  identical_for_all_ministers: true
+  tailored_feed: false
+repository_pin:
+  repository: izzy9118-blip/Xenophon
+  commit: b71a6a171fd2467cb712e9f9203d05791268bab4
+  manifest_path: manifest.yaml
+  manifest_version: 1.67.0
+requested_output: typed ministerial report
+mode: reasoned
+direct_answer: Political knowledge can preserve and restrain a collective body without hereditary title, but competence does not establish its own justice or legitimacy. Xenophon's ordered self-presentation makes that insufficiency the central political problem rather than supplying a completed model of rightful rule.
+self_reference_as_authority: false
+claims_greek_textual_authority: false
+artificial_intelligence_self_certification: false
+findings:
+  - evidence_layer: primary_showing
+    statement: The narrated Xenophon acquires authority through speech, election, provision, discipline, punishment, negotiation, public defense, and restraint while authority remains distributed among soldiers, officers, assemblies, cities, and Spartans.
+    grounds:
+      - ref: XEN-PRIMARY-CUMULATIVE-001
+        path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+    source_location: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+    confidence: HIGH_WITHIN_ADMITTED_ENGLISH_WITNESS
+    alternatives_considered:
+      - Xenophon's command is simply personal domination
+      - material governance is incidental to political rule
+  - evidence_layer: strauss_explicit_argument
+    statement: Strauss asks whether knowledge of rule needs an iron alloy to become legitimate or politically viable and whether prescription is indispensable to non-tyrannical government.
+    grounds:
+      - ref: XEN-RU-007
+        path: studies/strauss-xenophons-anabasis/reading-plan.yaml
+      - ref: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+        path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+    source_location: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+    confidence: HIGH_WITHIN_REVIEWED_STRAUSS_WITNESS
+    alternatives_considered:
+      - inheritance and prescription are asserted as a finished doctrine
+      - political knowledge alone automatically creates legitimate right
+  - evidence_layer: controlled_synthetic_inference
+    statement: Xenophon's presentation suggests that demonstrated competence, public defense, consent, and restraint may make rule politically viable, yet none of them by itself resolves whether the rule is just or legitimately entitled.
+    grounds:
+      - ref: XEN-PRIMARY-CUMULATIVE-001
+        path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+      - ref: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+        path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+    source_location: controlled comparison of the owner-adopted primary reconstruction and R1 synthesis
+    confidence: MODERATE_CONTROLLED_INFERENCE
+    alternatives_considered:
+      - successful command proves justice
+      - absence of hereditary title proves tyranny
+  - evidence_layer: unresolved_question
+    statement: It remains unresolved whether Xenophon's narrated position between the older Cyrus and Socrates is an achievement, an aspiration, a closest approximation, or a deliberately unclosed claim.
+    grounds:
+      - ref: R3-UQ-018
+        path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+    source_location: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1 unresolved question R3-UQ-018
+    confidence: HIGH_AS_UNRESOLVED
+    alternatives_considered:
+      - Xenophon certifies his own achieved reconciliation
+      - the intermediate position is mere indecision
+pedagogical_path:
+  - register: XEN-REGISTER-001
+    move: Begin from the narrated deeds and material conditions through which authority becomes effective.
+  - register: XEN-REGISTER-003
+    move: Ask whether competence, command, punishment, and restraint can become legitimate rule without inherited title or prescription.
+  - register: XEN-REGISTER-002
+    move: Test political and manly justice against Socratic non-harm without turning non-harm into an easy program of command.
+  - register: XEN-REGISTER-004
+    move: Return to Xenophon's ordered self-presentation and distinguish the revealing author from the narrated actor whose claim remains under examination.
+standing_unresolved_questions:
+  - id: R3-UQ-006
+    question: How does the ambiguity of justice organize the relation among legitimacy, knowledge of rule, cruelty, benefit, harm, and non-harm?
+  - id: R3-UQ-018
+    question: Is the closest approximation of manly and Socratic virtue presented as Xenophon's achievement, self-presentation, aspiration, or unresolved claim?
+  - id: R3-UQ-019
+    question: What Greek, cross-work, and compositional checks are still required before the controlled ambiguity can be judged more decisively?
+contradictions_and_dissent:
+  - type: controlled_tension
+    statement: The primary record shows effective command and voluntary restraint, while the Strauss-guided comparison denies that either competence or restraint settles the legitimacy and justice questions.
+termination_status: XENOPHON_ADAPTER_PROVING_REPORT_COMPLETE_WITH_PRESERVED_UNCERTAINTY
