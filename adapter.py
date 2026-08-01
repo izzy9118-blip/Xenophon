@@ -1,19 +1,24 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
 
 import yaml
+from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parent
 MANIFEST_PATH = ROOT / "manifest.yaml"
-SYNTHESIS_PATH = ROOT / "studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml"
 MECHANISM_PATH = ROOT / "speech/speech-mechanism.yaml"
+SCHEMA_PATH = ROOT / "federation/contracts/ministerial-report.schema.v1.3.0.json"
+CORPUS_INDEX_PATH = ROOT / "corpus/index.yaml"
 REPOSITORY = "izzy9118-blip/Xenophon"
+MANIFEST_VERSION = "1.69.0"
 MINISTER_ACTOR = "xenophon"
 ALLOWED_MODES = {"reasoned", "outside_my_ground"}
 ALLOWED_LAYERS = {
@@ -43,84 +48,124 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def load_manifest() -> dict[str, Any]:
-    return load_yaml(MANIFEST_PATH)
+def load_json(path: Path) -> dict[str, Any]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise AdapterError(f"Expected object in {path}")
+    return data
 
 
-def load_synthesis() -> dict[str, Any]:
-    return load_yaml(SYNTHESIS_PATH)
+def resolve_repository_path(relative: str) -> Path:
+    if not isinstance(relative, str) or not relative:
+        raise AdapterError("repository path must be a non-empty string")
+    path = (ROOT / relative).resolve()
+    try:
+        path.relative_to(ROOT)
+    except ValueError as exc:
+        raise AdapterError(f"path escapes repository root: {relative}") from exc
+    if not path.is_file():
+        raise AdapterError(f"repository file does not exist: {relative}")
+    return path
 
 
-def load_mechanism() -> dict[str, Any]:
-    return load_yaml(MECHANISM_PATH)
+def sha256_file(relative: str) -> str:
+    return hashlib.sha256(resolve_repository_path(relative).read_bytes()).hexdigest()
+
+
+def git_show_text(commit: str, relative: str) -> str:
+    if not SHA40.fullmatch(commit):
+        raise AdapterError("repository commit must be a lowercase 40-character SHA")
+    if relative.startswith("/") or ".." in Path(relative).parts:
+        raise AdapterError("invalid git object path")
+    process = subprocess.run(
+        ["git", "show", f"{commit}:{relative}"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        raise AdapterError(f"pinned commit does not contain {relative}")
+    return process.stdout
+
+
+def validate_repository_pin(pin: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    if pin.get("repository") != REPOSITORY:
+        errors.append("repository_pin.repository mismatch")
+    commit = str(pin.get("commit", ""))
+    if not SHA40.fullmatch(commit):
+        errors.append("repository_pin.commit must be a lowercase 40-character SHA")
+        return errors
+    if pin.get("manifest_path") != "manifest.yaml":
+        errors.append("repository_pin.manifest_path must be manifest.yaml")
+        return errors
+    try:
+        manifest = yaml.safe_load(git_show_text(commit, "manifest.yaml"))
+        git_show_text(commit, "adapter.py")
+    except AdapterError as exc:
+        errors.append(str(exc))
+        return errors
+    if not isinstance(manifest, dict):
+        errors.append("pinned manifest is not a mapping")
+    elif manifest.get("version") != pin.get("manifest_version"):
+        errors.append("repository_pin manifest version does not match pinned commit")
+    return errors
+
+
+def admitted_witnesses() -> dict[str, str]:
+    index = load_yaml(CORPUS_INDEX_PATH)
+    result: dict[str, str] = {}
+    for source in index.get("sources", []):
+        if not isinstance(source, dict):
+            continue
+        source_id = source.get("id")
+        for witness_id in source.get("witness_ids", []):
+            if isinstance(source_id, str) and isinstance(witness_id, str):
+                result[witness_id] = source_id
+    return result
 
 
 def validate_manifest(manifest: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     if manifest.get("repository") != REPOSITORY:
         errors.append("manifest repository mismatch")
-    if manifest.get("version") != "1.67.0":
-        errors.append("manifest version must be 1.67.0")
-    if manifest.get("state") != "MINISTER_ADAPTER_DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
-        errors.append("manifest adapter state mismatch")
-    synthesis = manifest.get("controlled_synthesis", {})
-    if synthesis.get("active_revision") != "XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1":
-        errors.append("owner-adopted R1 synthesis is not active")
-    if synthesis.get("r1_owner_adopted") is not True:
-        errors.append("R1 synthesis must be owner adopted")
+    if manifest.get("version") != MANIFEST_VERSION:
+        errors.append(f"manifest version must be {MANIFEST_VERSION}")
+    if manifest.get("state") != "MINISTER_ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
+        errors.append("manifest R1 state mismatch")
     adapter = manifest.get("minister_adapter", {})
-    if adapter.get("id") != "XEN-MINISTER-ADAPTER-001":
-        errors.append("minister adapter identity mismatch")
-    if adapter.get("status") != "DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
-        errors.append("minister adapter status mismatch")
+    if adapter.get("id") != "XEN-MINISTER-ADAPTER-001-R1":
+        errors.append("minister adapter R1 identity mismatch")
+    if adapter.get("owner_adopted") is not False or adapter.get("operational_authorization") is not False:
+        errors.append("adapter R1 must remain unadopted and non-operational")
     if adapter.get("sanctum_registration_authorized") is not False:
         errors.append("Sanctum registration must remain unauthorized")
     greek = manifest.get("source_policy", {}).get("greek_language_review", {})
-    if greek.get("status") != "DEFERRED_BY_OWNER":
-        errors.append("Greek-language deferral missing")
-    if greek.get("required_for_current_production") is not False:
-        errors.append("Greek review may not be a current production prerequisite")
-    if manifest.get("artificial_intelligence_self_certification_prohibited") is not True:
-        errors.append("AI self-certification prohibition missing")
+    if greek.get("status") != "DEFERRED_BY_OWNER" or greek.get("greek_dependent_claims") != "PROHIBITED":
+        errors.append("Greek-language jurisdiction mismatch")
     return errors
 
 
 def validate_mechanism(mechanism: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    identity = mechanism.get("identity", {})
-    if identity.get("id") != "XEN-SPEECH-MECHANISM-001":
-        errors.append("speech mechanism identity mismatch")
-    if mechanism.get("status") != "DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
-        errors.append("speech mechanism status mismatch")
-    registers = mechanism.get("registers", [])
-    guards = mechanism.get("guards", [])
-    if [r.get("id") for r in registers] != [
-        "XEN-REGISTER-001",
-        "XEN-REGISTER-002",
-        "XEN-REGISTER-003",
-        "XEN-REGISTER-004",
-    ]:
+    if [item.get("id") for item in mechanism.get("registers", [])] != [f"XEN-REGISTER-{i:03d}" for i in range(1, 5)]:
         errors.append("four-register order mismatch")
-    if [g.get("id") for g in guards] != [
-        "XEN-GUARD-001",
-        "XEN-GUARD-002",
-        "XEN-GUARD-003",
-    ]:
+    if [item.get("id") for item in mechanism.get("guards", [])] != [f"XEN-GUARD-{i:03d}" for i in range(1, 4)]:
         errors.append("three-guard order mismatch")
-    if mechanism.get("constitutional_contract", {}).get("self_reference_prohibited") is not True:
-        errors.append("self-reference prohibition missing")
-    if mechanism.get("constitutional_contract", {}).get("committed_judgment_required") is not True:
-        errors.append("committed judgment requirement missing")
-    if mechanism.get("constitutional_contract", {}).get("standing_unresolved_questions_required") is not True:
-        errors.append("standing unresolved questions requirement missing")
+    contract = mechanism.get("constitutional_contract", {})
+    for field in (
+        "identical_briefing_required",
+        "tailored_briefing_prohibited",
+        "committed_judgment_required",
+        "standing_unresolved_questions_required",
+        "self_reference_prohibited",
+        "evidence_typing_required",
+        "artificial_intelligence_self_certification_prohibited",
+    ):
+        if contract.get(field) is not True:
+            errors.append(f"mechanism safeguard missing: {field}")
     return errors
-
-
-def _require_mapping(value: Any, label: str, errors: list[str]) -> dict[str, Any]:
-    if not isinstance(value, dict):
-        errors.append(f"{label} must be a mapping")
-        return {}
-    return value
 
 
 def _require_nonempty_string(value: Any, label: str, errors: list[str]) -> None:
@@ -132,37 +177,50 @@ def validate_speech_request(request: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     if request.get("record_type") != "xenophon_speech_request":
         errors.append("record_type must be xenophon_speech_request")
-    for field in ["request_id", "report_id", "question", "requested_output", "direct_answer", "termination_status"]:
+    for field in ("request_id", "report_id", "question", "requested_output", "direct_answer", "termination_status"):
         _require_nonempty_string(request.get(field), field, errors)
     if request.get("mode") not in ALLOWED_MODES:
         errors.append("mode must be reasoned or outside_my_ground")
 
-    inquiry = _require_mapping(request.get("inquiry_ref"), "inquiry_ref", errors)
-    _require_nonempty_string(inquiry.get("ref"), "inquiry_ref.ref", errors)
-    if not SHA40.fullmatch(str(inquiry.get("commit", ""))):
-        errors.append("inquiry_ref.commit must be a 40-character lowercase SHA")
-    if not SHA256.fullmatch(str(inquiry.get("envelope_sha256", ""))):
-        errors.append("inquiry_ref.envelope_sha256 must be a 64-character lowercase SHA-256")
+    inquiry = request.get("inquiry_ref")
+    if not isinstance(inquiry, dict):
+        errors.append("inquiry_ref must be a mapping")
+    else:
+        for field in ("ref", "path", "envelope_sha256"):
+            _require_nonempty_string(inquiry.get(field), f"inquiry_ref.{field}", errors)
+        if SHA256.fullmatch(str(inquiry.get("envelope_sha256", ""))):
+            try:
+                if sha256_file(str(inquiry["path"])) != inquiry["envelope_sha256"]:
+                    errors.append("inquiry envelope hash does not match referenced bytes")
+            except AdapterError as exc:
+                errors.append(str(exc))
+        else:
+            errors.append("inquiry_ref.envelope_sha256 must be a lowercase SHA-256")
 
-    briefing = _require_mapping(request.get("briefing"), "briefing", errors)
-    for field in ["briefing_id", "path", "sha256"]:
-        _require_nonempty_string(briefing.get(field), f"briefing.{field}", errors)
-    if not SHA256.fullmatch(str(briefing.get("sha256", ""))):
-        errors.append("briefing.sha256 must be a 64-character lowercase SHA-256")
-    if briefing.get("identical_for_all_ministers") is not True:
-        errors.append("briefing must be identical for all ministers")
-    if briefing.get("tailored_feed") is not False:
-        errors.append("tailored briefing feeds are prohibited")
+    briefing = request.get("briefing")
+    if not isinstance(briefing, dict):
+        errors.append("briefing must be a mapping")
+    else:
+        for field in ("briefing_id", "path", "sha256"):
+            _require_nonempty_string(briefing.get(field), f"briefing.{field}", errors)
+        if briefing.get("identical_for_all_ministers") is not True:
+            errors.append("briefing must be identical for all ministers")
+        if briefing.get("tailored_feed") is not False:
+            errors.append("tailored briefing feeds are prohibited")
+        if SHA256.fullmatch(str(briefing.get("sha256", ""))):
+            try:
+                if sha256_file(str(briefing["path"])) != briefing["sha256"]:
+                    errors.append("briefing hash does not match referenced bytes")
+            except AdapterError as exc:
+                errors.append(str(exc))
+        else:
+            errors.append("briefing.sha256 must be a lowercase SHA-256")
 
-    pin = _require_mapping(request.get("repository_pin"), "repository_pin", errors)
-    if pin.get("repository") != REPOSITORY:
-        errors.append("repository_pin.repository mismatch")
-    if not SHA40.fullmatch(str(pin.get("commit", ""))):
-        errors.append("repository_pin.commit must be a 40-character lowercase SHA")
-    if pin.get("manifest_path") != "manifest.yaml":
-        errors.append("repository_pin.manifest_path must be manifest.yaml")
-    if pin.get("manifest_version") != "1.67.0":
-        errors.append("repository_pin.manifest_version must be 1.67.0")
+    pin = request.get("repository_pin")
+    if not isinstance(pin, dict):
+        errors.append("repository_pin must be a mapping")
+    else:
+        errors.extend(validate_repository_pin(pin))
 
     if request.get("self_reference_as_authority") is not False:
         errors.append("self-reference as authority is prohibited")
@@ -171,6 +229,7 @@ def validate_speech_request(request: dict[str, Any]) -> list[str]:
     if request.get("artificial_intelligence_self_certification") is not False:
         errors.append("artificial-intelligence self-certification is prohibited")
 
+    admitted = admitted_witnesses()
     findings = request.get("findings")
     if not isinstance(findings, list) or not findings:
         errors.append("findings must be a non-empty list")
@@ -185,16 +244,28 @@ def validate_speech_request(request: dict[str, Any]) -> list[str]:
             errors.append(f"findings[{index}].evidence_layer is invalid")
         else:
             seen_layers.add(layer)
-        for field in ["statement", "source_location", "confidence"]:
+        for field in ("statement", "source_location", "confidence"):
             _require_nonempty_string(finding.get(field), f"findings[{index}].{field}", errors)
         grounds = finding.get("grounds")
         if not isinstance(grounds, list) or not grounds:
             errors.append(f"findings[{index}].grounds must be a non-empty list")
-        alternatives = finding.get("alternatives_considered")
-        if not isinstance(alternatives, list):
+            continue
+        for ground_index, ground in enumerate(grounds):
+            if not isinstance(ground, dict):
+                errors.append(f"findings[{index}].grounds[{ground_index}] must be a mapping")
+                continue
+            witness_id = ground.get("witness_id")
+            source_id = ground.get("source_id")
+            if admitted.get(str(witness_id)) != source_id:
+                errors.append(f"findings[{index}].grounds[{ground_index}] witness/source pair is not admitted")
+            try:
+                resolve_repository_path(str(ground.get("path", "")))
+            except AdapterError as exc:
+                errors.append(str(exc))
+        if not isinstance(finding.get("alternatives_considered"), list):
             errors.append(f"findings[{index}].alternatives_considered must be a list")
     if request.get("mode") == "reasoned" and "controlled_synthetic_inference" not in seen_layers:
-        errors.append("reasoned requests require at least one controlled synthetic inference")
+        errors.append("reasoned requests require controlled synthetic inference")
     if "unresolved_question" not in seen_layers:
         errors.append("at least one unresolved question must remain standing")
 
@@ -203,18 +274,11 @@ def validate_speech_request(request: dict[str, Any]) -> list[str]:
         errors.append("pedagogical_path must contain at least three ordered steps")
     else:
         for index, step in enumerate(path):
-            if not isinstance(step, dict):
-                errors.append(f"pedagogical_path[{index}] must be a mapping")
-                continue
-            _require_nonempty_string(step.get("move"), f"pedagogical_path[{index}].move", errors)
-            if step.get("register") not in {f"XEN-REGISTER-{i:03d}" for i in range(1, 5)}:
-                errors.append(f"pedagogical_path[{index}].register is invalid")
-
-    unresolved = request.get("standing_unresolved_questions")
-    if not isinstance(unresolved, list) or not unresolved:
+            if not isinstance(step, dict) or step.get("register") not in {f"XEN-REGISTER-{i:03d}" for i in range(1, 5)}:
+                errors.append(f"pedagogical_path[{index}] is invalid")
+    if not isinstance(request.get("standing_unresolved_questions"), list) or not request["standing_unresolved_questions"]:
         errors.append("standing_unresolved_questions must be a non-empty list")
-    dissent = request.get("contradictions_and_dissent")
-    if not isinstance(dissent, list):
+    if not isinstance(request.get("contradictions_and_dissent"), list):
         errors.append("contradictions_and_dissent must be a list")
     return errors
 
@@ -223,63 +287,60 @@ def build_candidate_report(request: dict[str, Any]) -> dict[str, Any]:
     errors = validate_speech_request(request)
     if errors:
         raise AdapterError("; ".join(errors))
-
     pin = request["repository_pin"]
     evidence: list[dict[str, Any]] = []
-    evidence_keys: set[tuple[str, str]] = set()
+    evidence_keys: set[tuple[str, str, str]] = set()
     propositions: list[dict[str, Any]] = []
     for finding in request["findings"]:
-        grounds = finding["grounds"]
-        for ground in grounds:
-            ref = str(ground.get("ref", ""))
-            path = str(ground.get("path", finding["source_location"]))
-            key = (ref, path)
+        for ground in finding["grounds"]:
+            key = (ground["witness_id"], ground["source_id"], ground["path"])
             if key not in evidence_keys:
                 evidence_keys.add(key)
-                evidence.append(
-                    {
-                        "ref": ref,
-                        "path": path,
-                        "repository_commit": pin["commit"],
-                        "evidence_layer": finding["evidence_layer"],
-                    }
-                )
-        propositions.append(
-            {
-                "kind": REPORT_KIND[finding["evidence_layer"]],
-                "evidence_layer": finding["evidence_layer"],
-                "claim": finding["statement"],
-                "grounds": grounds,
-                "source_location": finding["source_location"],
-                "confidence": finding["confidence"],
-                "alternatives_considered": finding["alternatives_considered"],
-            }
-        )
-
-    return {
+                evidence.append({
+                    "witness_id": ground["witness_id"],
+                    "source_id": ground["source_id"],
+                    "repository_commit": pin["commit"],
+                    "path": ground["path"],
+                    "evidence_layer": finding["evidence_layer"],
+                    "ref": ground.get("ref"),
+                })
+        propositions.append({
+            "kind": REPORT_KIND[finding["evidence_layer"]],
+            "claim": finding["statement"],
+            "grounds": finding["grounds"],
+            "evidence_layer": finding["evidence_layer"],
+            "source_location": finding["source_location"],
+            "confidence": finding["confidence"],
+            "alternatives_considered": finding["alternatives_considered"],
+        })
+    uncertainties = [
+        item["question"] if isinstance(item, dict) and isinstance(item.get("question"), str) else str(item)
+        for item in request["standing_unresolved_questions"]
+    ]
+    report = {
         "record_type": "ministerial_report",
         "id": request["report_id"],
         "report_id": request["report_id"],
         "report_status": "DRAFT_PENDING_MINISTER_REPOSITORY_VALIDATION",
         "inquiry_ref": request["inquiry_ref"],
-        "minister": {
-            "actor": MINISTER_ACTOR,
-            "manifest_commit": pin["commit"],
-            "title": "Xenophon Minister",
-        },
+        "minister": {"actor": MINISTER_ACTOR, "manifest_commit": pin["commit"], "title": "Xenophon Minister"},
         "mode": request["mode"],
         "repository": {"full_name": REPOSITORY, "git_commit": pin["commit"]},
         "governing_manifest": {
             "path": pin["manifest_path"],
             "version": pin["manifest_version"],
-            "authorization_ref": "governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml",
-            "authorization_id": "XEN-OWNER-REVIEW-010",
+            "derivation_authority": {
+                "ref": "governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml",
+                "id": "XEN-OWNER-REVIEW-010",
+                "status": "OWNER_ADOPTED_SYNTHESIS",
+            },
+            "adapter_operational_authority": {"status": "PENDING_OWNER_ADOPTION"},
         },
         "direct_answer": request["direct_answer"],
         "pedagogical_path": request["pedagogical_path"],
         "evidence": evidence,
         "propositions": propositions,
-        "uncertainties": request["standing_unresolved_questions"],
+        "uncertainties": uncertainties,
         "dissent": request["contradictions_and_dissent"],
         "jurisdiction": {
             "current": "CONTROLLED_ENGLISH_WITNESS_PRIMARY_SECONDARY_SYNTHESIS",
@@ -288,33 +349,24 @@ def build_candidate_report(request: dict[str, Any]) -> dict[str, Any]:
         },
         "termination": {
             "status": request["termination_status"],
-            "authoritative_effect": "NONE_UNTIL_XENOPHON_REPOSITORY_OWNER_REVIEW_AND_SANCTUM_CERTIFICATION",
+            "authoritative_effect": "NONE_UNTIL_OWNER_ADOPTION_AND_SANCTUM_CERTIFICATION",
             "presidential_synthesis": "NOT_PERFORMED",
         },
         "provenance": {
-            "produced_by": {
-                "actor": "xenophon-adapter-draft",
-                "repo": REPOSITORY,
-                "commit": pin["commit"],
-            },
+            "produced_by": {"actor": "xenophon-adapter-r1-draft", "repo": REPOSITORY, "commit": pin["commit"]},
             "consumed_records": [
                 {"ref": "manifest.yaml", "commit": pin["commit"]},
-                {"ref": "XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1", "commit": pin["commit"]},
+                {"ref": request["inquiry_ref"]["ref"], "sha256": request["inquiry_ref"]["envelope_sha256"]},
                 {"ref": request["briefing"]["briefing_id"], "sha256": request["briefing"]["sha256"]},
             ],
         },
-        "certification_status": "PENDING_OWNER_REVIEW",
+        "certification_status": "PENDING_OWNER_CERTIFICATION",
         "artificial_intelligence_self_certification": "PROHIBITED",
     }
-
-
-def _print_errors(errors: list[str]) -> int:
-    if errors:
-        for error in errors:
-            print(error, file=sys.stderr)
-        return 1
-    print("Xenophon adapter validation passed")
-    return 0
+    schema_errors = sorted(Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(report), key=lambda item: list(item.path))
+    if schema_errors:
+        raise AdapterError("schema validation failed: " + "; ".join(error.message for error in schema_errors))
+    return report
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -327,12 +379,21 @@ def main(argv: list[str] | None = None) -> int:
     build.add_argument("path", type=Path)
     build.add_argument("--output", type=Path)
     args = parser.parse_args(argv)
-
     if args.command == "validate-interface":
-        return _print_errors(validate_manifest(load_manifest()) + validate_mechanism(load_mechanism()))
+        errors = validate_manifest(load_yaml(MANIFEST_PATH)) + validate_mechanism(load_yaml(MECHANISM_PATH))
+        if errors:
+            print("; ".join(errors), file=sys.stderr)
+            return 1
+        print("Xenophon adapter R1 interface validation passed")
+        return 0
     request = load_yaml(args.path)
     if args.command == "validate-request":
-        return _print_errors(validate_speech_request(request))
+        errors = validate_speech_request(request)
+        if errors:
+            print("; ".join(errors), file=sys.stderr)
+            return 1
+        print("Xenophon adapter R1 request validation passed")
+        return 0
     report = build_candidate_report(request)
     rendered = yaml.safe_dump(report, sort_keys=False, allow_unicode=True)
     if args.output:
