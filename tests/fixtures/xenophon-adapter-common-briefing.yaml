@@ -1,5 +1,5 @@
 record_type: sanctum_common_briefing_fixture
-briefing_id: BRIEF-XENOPHON-ADAPTER-PROVING-001
+briefing_id: BRIEF-XENOPHON-ADAPTER-R1-PROVING-001
 status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
 identical_for_all_ministers: true
 tailored_feed: false
@@ -23,5 +23,5 @@ assembler:
   actor: repository-production-test-fixture
   check: No external current facts are asserted; every item points to a committed repository record.
 provenance:
-  version: 1.0.0
-  hash_status: FIXTURE_HASH_DECLARED_IN_SPEECH_REQUEST_NOT_BYTE_CERTIFIED
+  version: 1.1.0
+  hash_rule: SHA-256 of committed UTF-8 file bytes without reserialization.
