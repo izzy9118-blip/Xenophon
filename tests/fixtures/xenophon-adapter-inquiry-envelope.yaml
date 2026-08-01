@@ -1,0 +1,18 @@
+record_type: sanctum_inquiry_envelope_fixture
+id: INQ-XENOPHON-ADAPTER-R1-PROVING-001
+status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
+question: What does Xenophon's presentation of command reveal about justice and legitimate rule?
+participation:
+  mode: universal
+  identical_briefing_required: true
+briefing_ref:
+  id: BRIEF-XENOPHON-ADAPTER-R1-PROVING-001
+  path: tests/fixtures/xenophon-adapter-common-briefing.yaml
+requesting_authority:
+  actor: repository_owner
+  purpose: adapter_r1_proving_only
+creation:
+  date: 2026-08-01
+  immutable_after_hashing: true
+termination:
+  assembly_effect: NONE
