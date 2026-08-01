@@ -1,31 +1,26 @@
 from pathlib import Path
-import json, py_compile, re, sys, yaml
+import hashlib
+import json
+import subprocess
+import sys
 
-R=Path(__file__).resolve().parents[1]
-M=R/'manifest.yaml'
-A=R/'audits/founding-state.yaml'
-AD=R/'adapter.py'
-MECH=R/'speech/speech-mechanism.yaml'
-REQ=R/'tests/fixtures/xenophon-speech-request.yaml'
-BRIEF=R/'tests/fixtures/xenophon-adapter-common-briefing.yaml'
-R1=R/'studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml'
-REV=R/'speech/reviews/XEN-MINISTER-ADAPTER-IN-DEPTH-REVIEW-001.yaml'
-REVMD=R/'speech/reviews/XEN-MINISTER-ADAPTER-IN-DEPTH-REVIEW-001.md'
-OWN=R/'governance/owner-reviews/2026-08-01-xenophon-minister-adapter-in-depth-review.yaml'
-H=R/'history/2026-08-01-xenophon-minister-adapter-in-depth-review.md'
-PIN=R/'federation/contracts/SANCTUM-CONTRACT-PIN-001.yaml'
-SCHEMA=R/'federation/contracts/ministerial-report.schema.1.2.0.json'
-FROZEN=R/'scripts/validate_repository_v1_67.py'
+import yaml
+from jsonschema import Draft202012Validator
+
+ROOT = Path(__file__).resolve().parents[1]
+MANIFEST = ROOT / "manifest.yaml"
+ADAPTER = ROOT / "adapter.py"
+MECHANISM = ROOT / "speech/speech-mechanism.yaml"
+REQUEST = ROOT / "tests/fixtures/xenophon-speech-request.yaml"
+ENVELOPE = ROOT / "tests/fixtures/xenophon-adapter-inquiry-envelope.yaml"
+BRIEFING = ROOT / "tests/fixtures/xenophon-adapter-common-briefing.yaml"
+SCHEMA = ROOT / "federation/contracts/ministerial-report.schema.v1.3.0.json"
+R1_SYNTHESIS = ROOT / "studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml"
+FROZEN = ROOT / "scripts/validate_repository_v1_68.py"
 
 
 def load_yaml(path):
-    with path.open(encoding='utf-8') as f:
-        return yaml.safe_load(f)
-
-
-def load_json(path):
-    with path.open(encoding='utf-8') as f:
-        return json.load(f)
+    return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
 def fail(message):
@@ -33,151 +28,110 @@ def fail(message):
     return 1
 
 
+def run(command):
+    process = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, check=False)
+    if process.returncode:
+        print(process.stdout)
+        print(process.stderr)
+        return False
+    return True
+
+
 def main():
-    required=[M,A,AD,MECH,REQ,BRIEF,R1,REV,REVMD,OWN,H,PIN,SCHEMA,FROZEN]
-    for path in required:
-        if not path.exists():
-            return fail('Review-state file missing: '+str(path))
+    for path in [MANIFEST, ADAPTER, MECHANISM, REQUEST, ENVELOPE, BRIEFING, SCHEMA, R1_SYNTHESIS, FROZEN]:
+        if not path.is_file():
+            return fail(f"required R1 file missing: {path}")
 
-    py_compile.compile(str(AD),doraise=True)
-    py_compile.compile(str(FROZEN),doraise=True)
+    if not run([sys.executable, str(FROZEN)]):
+        return fail("v1.68 predecessor verification failed")
 
-    m=load_yaml(M); a=load_yaml(A); mech=load_yaml(MECH); req=load_yaml(REQ)
-    brief=load_yaml(BRIEF); r1=load_yaml(R1); rev=load_yaml(REV); own=load_yaml(OWN)
-    pin=load_yaml(PIN); schema=load_json(SCHEMA)
-    adapter_text=AD.read_text(encoding='utf-8')
+    manifest = load_yaml(MANIFEST)
+    request = load_yaml(REQUEST)
+    synthesis = load_yaml(R1_SYNTHESIS)
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
 
-    if m.get('version')!='1.68.0' or m.get('state')!='MINISTER_ADAPTER_IN_DEPTH_REVIEWED_RETURNED_FOR_TARGETED_R1':
-        return fail('v1.68 manifest state mismatch')
-    pred=m.get('predecessor_state',{})
-    if pred.get('version')!='1.67.0' or pred.get('exact_head')!='689e222ddf0debe24119769a6d9b15552f20c685':
-        return fail('Reviewed predecessor pin mismatch')
-    if pred.get('frozen_validator')!='scripts/validate_repository_v1_67.py':
-        return fail('Frozen predecessor validator not declared')
-    phase=m.get('current_phase',{})
-    if phase.get('id')!='XEN-PHASE-011' or phase.get('completion_status')!='REVIEW_COMPLETE_TARGETED_R1_REQUIRED':
-        return fail('Adapter review phase mismatch')
-    if m.get('next_required_action',{}).get('id')!='XEN-MINISTER-ADAPTER-001-R1':
-        return fail('Targeted R1 next action mismatch')
+    if manifest.get("version") != "1.69.0":
+        return fail("manifest version mismatch")
+    if manifest.get("state") != "MINISTER_ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW":
+        return fail("manifest R1 state mismatch")
+    predecessor = manifest.get("predecessor_state", {})
+    if predecessor.get("exact_head") != "fe7171b4caca347ebd1fdcb7f2d221efa3bf3324":
+        return fail("v1.68 predecessor pin mismatch")
+    adapter_state = manifest.get("minister_adapter", {})
+    if adapter_state.get("id") != "XEN-MINISTER-ADAPTER-001-R1":
+        return fail("adapter R1 id mismatch")
+    if adapter_state.get("federation_dependency", {}).get("status") != "RESOLVED_BY_SANCTUM_CONTRACT_1_3_0":
+        return fail("Sanctum witness identity dependency unresolved")
+    if adapter_state.get("corrected_defects") != [
+        "LIVE_SCHEMA_NONCONFORMANCE",
+        "WITNESS_IDENTIFIER_INCOMPATIBILITY",
+        "FALSE_REPOSITORY_PIN",
+        "PLACEHOLDER_UNVERIFIED_HASHES",
+        "DERIVATION_AND_OPERATIONAL_AUTHORITY_COLLAPSE",
+    ]:
+        return fail("R1 correction inventory mismatch")
+    if any(adapter_state.get(key) is not False for key in ["owner_adopted", "operational_authorization", "sanctum_registration_authorized", "assembly_dispatch_authorized"]):
+        return fail("R1 gained premature authority")
+    preserved = adapter_state.get("preserved_architecture", {})
+    if preserved.get("registers") != [f"XEN-REGISTER-{i:03d}" for i in range(1, 5)]:
+        return fail("four-register architecture changed")
+    if preserved.get("guards") != [f"XEN-GUARD-{i:03d}" for i in range(1, 4)]:
+        return fail("three-guard architecture changed")
+    if preserved.get("all_19_unresolved_questions_preserved") is not True:
+        return fail("nineteen unresolved questions not preserved")
+    if len(synthesis.get("unresolved_questions", [])) != 19:
+        return fail("R1 synthesis unresolved-question inventory changed")
 
-    ma=m.get('minister_adapter',{})
-    if ma.get('id')!='XEN-MINISTER-ADAPTER-001' or ma.get('status')!='IN_DEPTH_REVIEW_COMPLETE_RETURNED_FOR_TARGETED_R1':
-        return fail('Reviewed adapter state mismatch')
-    if ma.get('review_disposition')!='RETURN_FOR_TARGETED_R1_REVISION':
-        return fail('Adapter review disposition mismatch')
-    if ma.get('review_counts')!={'PASS':9,'PASS_WITH_LIMIT':1,'BLOCKING_REVISION':5}:
-        return fail('Adapter review counts mismatch')
-    if ma.get('blocking_defects')!=[
-        'LIVE_SCHEMA_NONCONFORMANCE','WITNESS_IDENTIFIER_INCOMPATIBILITY','FALSE_REPOSITORY_PIN',
-        'PLACEHOLDER_UNVERIFIED_HASHES','DERIVATION_AND_OPERATIONAL_AUTHORITY_COLLAPSE']:
-        return fail('Manifest blocking-defect inventory mismatch')
-    preserved=ma.get('preserved_architecture',{})
-    if preserved.get('register_count')!=4 or preserved.get('guard_count')!=3:
-        return fail('Preserved adapter architecture count mismatch')
-    if preserved.get('all_19_unresolved_questions_preserved') is not True:
-        return fail('Nineteen-question preservation missing')
-    if any(ma.get(k) is not False for k in ['owner_adopted','operational_authorization','sanctum_registration_authorized','assembly_dispatch_authorized']):
-        return fail('Adapter authority granted despite adverse review')
+    if schema.get("$id") != "urn:sanctum:federation:ministerial-report:1.3.0":
+        return fail("vendored Sanctum schema id mismatch")
+    if manifest.get("governing_hub", {}).get("accepted_contract_commit") != "4ad09dc75897dda2a4f68d32148a72a342c2917c":
+        return fail("Sanctum contract commit mismatch")
 
-    if rev.get('review_id')!='XEN-MINISTER-ADAPTER-IN-DEPTH-REVIEW-001' or rev.get('status')!='IN_DEPTH_REVIEW_COMPLETE_RETURN_FOR_TARGETED_R1':
-        return fail('Detailed review identity/status mismatch')
-    if rev.get('overall_ruling',{}).get('adoption_status')!='NOT_ADOPTED':
-        return fail('Detailed review improperly adopts adapter')
-    if rev.get('disposition_counts')!={'PASS':9,'PASS_WITH_LIMIT':1,'BLOCKING_REVISION':5}:
-        return fail('Detailed review counts mismatch')
-    findings=rev.get('findings',[])
-    if [x.get('id') for x in findings] != [f'XEN-ADAPTER-RF-{i:03d}' for i in range(1,16)]:
-        return fail('Detailed review finding sequence mismatch')
-    severity=[x.get('severity') for x in findings]
-    if severity.count('PASS')!=9 or severity.count('PASS_WITH_LIMIT')!=1 or severity.count('BLOCKING_REVISION')!=5:
-        return fail('Detailed review severity count mismatch')
-    if rev.get('required_successor',{}).get('id')!='XEN-MINISTER-ADAPTER-001-R1':
-        return fail('Detailed review successor mismatch')
-    if rev.get('required_successor',{}).get('dependency',{}).get('id')!='SANCTUM-XENOPHON-WITNESS-ID-COMPATIBILITY-001':
-        return fail('Federation witness dependency missing')
+    if hashlib.sha256(ENVELOPE.read_bytes()).hexdigest() != request["inquiry_ref"]["envelope_sha256"]:
+        return fail("inquiry envelope hash mismatch")
+    if hashlib.sha256(BRIEFING.read_bytes()).hexdigest() != request["briefing"]["sha256"]:
+        return fail("briefing hash mismatch")
+    if request.get("repository_pin", {}).get("commit") != "312d5fddf2f6e63ba383e3cfb8a45ba0641a480b":
+        return fail("code-bearing repository pin mismatch")
+    if request.get("repository_pin", {}).get("manifest_version") != "1.69.0":
+        return fail("request manifest version mismatch")
 
-    if own.get('review_id')!='XEN-OWNER-REVIEW-011' or own.get('status')!='OWNER_REVIEWED_ADAPTER_RETURNED_FOR_TARGETED_R1':
-        return fail('Owner review identity/status mismatch')
-    ruling=own.get('owner_ruling',{})
-    if ruling.get('adoption_status')!='NOT_ADOPTED' or ruling.get('operational_authorization')!='NOT_GRANTED':
-        return fail('Owner review improperly authorizes adapter')
-    if own.get('external_dependency',{}).get('status')!='REQUIRED_BEFORE_ADAPTER_ADOPTION':
-        return fail('Owner review federation dependency mismatch')
+    if not run([sys.executable, "adapter.py", "validate-interface"]):
+        return fail("adapter interface validation failed")
+    if not run([sys.executable, "adapter.py", "validate-request", str(REQUEST.relative_to(ROOT))]):
+        return fail("adapter request validation failed")
 
-    if [x.get('id') for x in mech.get('registers',[])] != [f'XEN-REGISTER-{i:03d}' for i in range(1,5)]:
-        return fail('Four reviewed registers changed')
-    if [x.get('id') for x in mech.get('guards',[])] != [f'XEN-GUARD-{i:03d}' for i in range(1,4)]:
-        return fail('Three reviewed guards changed')
-    if len(r1.get('unresolved_questions',[]))!=19:
-        return fail('R1 unresolved-question inventory changed')
-    if m.get('source_policy',{}).get('greek_language_review',{}).get('required_for_current_production') is not False:
-        return fail('Deferred Greek phase became current blocker')
-    if m.get('source_policy',{}).get('greek_language_review',{}).get('greek_dependent_claims')!='PROHIBITED':
-        return fail('Greek-dependent claim prohibition missing')
+    import adapter
+    report = adapter.build_candidate_report(request)
+    errors = list(Draft202012Validator(schema).iter_errors(report))
+    if errors:
+        return fail("candidate report fails vendored Sanctum schema: " + "; ".join(error.message for error in errors))
+    if report.get("certification_status") != "PENDING_OWNER_CERTIFICATION":
+        return fail("candidate report certification status mismatch")
+    if report.get("governing_manifest", {}).get("adapter_operational_authority", {}).get("status") != "PENDING_OWNER_ADOPTION":
+        return fail("derivation and operational authority remain collapsed")
+    if {item.get("witness_id") for item in report.get("evidence", [])} != {"XEN-WIT-PRI-001", "XEN-WIT-SEC-001"}:
+        return fail("sovereign witness identities not preserved")
+    if not all(isinstance(item, str) for item in report.get("uncertainties", [])):
+        return fail("uncertainties are not schema strings")
+    if report.get("termination", {}).get("presidential_synthesis") != "NOT_PERFORMED":
+        return fail("candidate report performs presidential synthesis")
 
-    if pin.get('record_id')!='SANCTUM-CONTRACT-PIN-001':
-        return fail('Sanctum contract pin missing')
-    contracts=pin.get('contracts',{})
-    if contracts.get('ministerial_report_schema',{}).get('blob_sha')!='4353735e7cdcdb8896b88f11da3c5d0cc44fd470':
-        return fail('Pinned report schema blob mismatch')
-    if schema.get('$id')!='urn:sanctum:federation:ministerial-report:1.2.0':
-        return fail('Vendored report schema identity mismatch')
-    evidence_schema=schema['properties']['evidence']['items']
-    if evidence_schema.get('required')!=['witness_id','source_id','repository_commit','path']:
-        return fail('Pinned schema evidence contract changed')
-    if evidence_schema['properties']['witness_id'].get('pattern')!='^CORPUS-WIT-[0-9]{3}$':
-        return fail('Pinned schema witness pattern changed')
-    if schema['properties']['uncertainties']['items'].get('type')!='string':
-        return fail('Pinned schema uncertainty type changed')
-    if schema['properties']['certification_status'].get('enum')!=['PENDING_OWNER_CERTIFICATION','OWNER_CERTIFIED']:
-        return fail('Pinned schema certification enum changed')
+    if not run([sys.executable, "-m", "pytest", "-q", "tests/test_minister_adapter.py"]):
+        return fail("adapter R1 behavioral tests failed")
 
-    # Verify that the adverse findings remain materially true of the reviewed draft.
-    if '"ref": ref' not in adapter_text or '"evidence_layer": finding["evidence_layer"]' not in adapter_text:
-        return fail('Reviewed evidence-rendering defect no longer identifiable')
-    report_builder=adapter_text.split('def build_candidate_report',1)[1]
-    if '"witness_id"' in report_builder or '"source_id"' in report_builder:
-        return fail('Reviewed adapter changed without targeted R1 record')
-    if '"certification_status": "PENDING_OWNER_REVIEW"' not in adapter_text:
-        return fail('Reviewed certification-enum defect no longer identifiable')
-    if req.get('repository_pin',{}).get('commit')!='b71a6a171fd2467cb712e9f9203d05791268bab4' or req.get('repository_pin',{}).get('manifest_version')!='1.67.0':
-        return fail('Reviewed false repository pin changed without R1')
-    if req.get('inquiry_ref',{}).get('envelope_sha256')!='a'*64 or req.get('briefing',{}).get('sha256')!='b'*64:
-        return fail('Reviewed placeholder hashes changed without R1')
-    if brief.get('provenance',{}).get('hash_status')!='FIXTURE_HASH_DECLARED_IN_SPEECH_REQUEST_NOT_BYTE_CERTIFIED':
-        return fail('Reviewed briefing hash defect changed without R1')
-    if 'import hashlib' in adapter_text or 'hashlib.' in adapter_text:
-        return fail('Hash verification added without targeted R1 record')
-    if 'authorization_ref": "governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml"' not in adapter_text:
-        return fail('Reviewed authority-collapse defect changed without R1')
+    greek = manifest.get("source_policy", {}).get("greek_language_review", {})
+    if greek.get("required_for_current_production") is not False or greek.get("greek_dependent_claims") != "PROHIBITED":
+        return fail("Greek deferral changed")
+    gates = manifest.get("governance_gates", {})
+    if gates.get("artificial_intelligence_self_certification_prohibited") is not True:
+        return fail("AI self-certification prohibition missing")
+    if gates.get("sanctum_registration_present") is not False or gates.get("assembly_dispatch_authorized") is not False:
+        return fail("federation authority granted prematurely")
 
-    audit_review=a.get('minister_adapter_review',{})
-    if audit_review.get('disposition')!='RETURN_FOR_TARGETED_R1_REVISION' or audit_review.get('review_counts')!={'PASS':9,'PASS_WITH_LIMIT':1,'BLOCKING_REVISION':5}:
-        return fail('Audit review disposition mismatch')
-    if audit_review.get('owner_adopted') is not False or audit_review.get('operational') is not False:
-        return fail('Audit grants rejected adapter authority')
-    if [x.get('id') for x in a.get('resolved_items',[])]!=['RES-026','RES-027']:
-        return fail('Audit resolution sequence mismatch')
-    if [x.get('id') for x in a.get('documented_gaps',[])]!=['GAP-004','GAP-020','GAP-021']:
-        return fail('Audit gap sequence mismatch')
-    if a.get('next_required_action','').startswith('Produce XEN-MINISTER-ADAPTER-001-R1') is not True:
-        return fail('Audit next action mismatch')
-
-    combined=(REVMD.read_text(encoding='utf-8')+'\n'+H.read_text(encoding='utf-8')).casefold()
-    for phrase in ['report-schema failure','witness-identity incompatibility','false repository pin','placeholder hashes','authorization collapse','xen-minister-adapter-001-r1']:
-        if phrase not in combined:
-            return fail('Readable review/history safeguard missing: '+phrase)
-
-    if (R/'adapter-r1.py').exists() or (R/'speech/speech-mechanism-r1.yaml').exists():
-        return fail('Unauthorized R1 artifact present')
-    if m.get('governance_gates',{}).get('artificial_intelligence_self_certification_prohibited') is not True:
-        return fail('AI self-certification prohibition missing')
-    if m.get('governance_gates',{}).get('sanctum_registration_present') is not False:
-        return fail('Sanctum registration occurred prematurely')
-
-    print('Xenophon repository validation passed')
+    print("Xenophon repository validation passed")
     return 0
 
 
-if __name__=='__main__':
+if __name__ == "__main__":
     sys.exit(main())
