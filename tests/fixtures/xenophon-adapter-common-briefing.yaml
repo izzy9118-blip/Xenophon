@@ -1,0 +1,27 @@
+record_type: sanctum_common_briefing_fixture
+briefing_id: BRIEF-XENOPHON-ADAPTER-PROVING-001
+status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
+identical_for_all_ministers: true
+tailored_feed: false
+question: What does Xenophon's presentation of command reveal about justice and legitimate rule?
+facts:
+  - id: BF-001
+    statement: The admitted primary reconstruction follows all fifty-one numbered chapters of the H. G. Dakyns English translation of the Anabasis.
+    source: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+  - id: BF-002
+    statement: The owner-adopted R1 synthesis distinguishes the Anabasis from Xenophon's presentation of the older Cyrus in the Education of Cyrus.
+    source: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+  - id: BF-003
+    statement: Greek-language review is deferred by owner and Greek-dependent claims remain prohibited.
+    source: governance/owner-directives/2026-08-01-defer-greek-language-certification.yaml
+history:
+  general:
+    - The expedition begins under the younger Cyrus and continues after his death through a changing Greek command structure.
+  immediate:
+    - R1 received owner adoption within English-witness jurisdiction before adapter construction was authorized.
+assembler:
+  actor: repository-production-test-fixture
+  check: No external current facts are asserted; every item points to a committed repository record.
+provenance:
+  version: 1.0.0
+  hash_status: FIXTURE_HASH_DECLARED_IN_SPEECH_REQUEST_NOT_BYTE_CERTIFIED
