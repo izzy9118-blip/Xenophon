@@ -32,8 +32,23 @@ def predecessor():
         cs['required_next_revision']='XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1'
         dump(t/'manifest.yaml',m)
         a=load(t/'audits/founding-state.yaml');rs=a['repository_state']
-        for k in list(rs):
-            if k.startswith('controlled_synthesis_r1_'):rs.pop(k,None)
+        for k in [
+            'controlled_synthesis_r1_started',
+            'controlled_synthesis_r1_draft_complete',
+            'controlled_synthesis_r1_structured_record',
+            'controlled_synthesis_r1_readable_record',
+            'controlled_synthesis_r1_status',
+            'controlled_synthesis_r1_predecessor_preserved',
+            'controlled_synthesis_r1_anabasis_primary_center',
+            'controlled_synthesis_r1_cross_work_scope_corrected',
+            'controlled_synthesis_r1_interrogative_legitimacy_preserved',
+            'controlled_synthesis_r1_xenophon_presents_problem_of_justice',
+            'controlled_synthesis_r1_eight_movements_preserved',
+            'controlled_synthesis_r1_all_19_unresolved_questions_preserved',
+            'controlled_synthesis_r1_owner_reviewed',
+            'controlled_synthesis_r1_owner_adopted',
+        ]:
+            rs.pop(k,None)
         rs['controlled_comparison_required_next_action']='XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1'
         a['resolved_items']=[x for x in a.get('resolved_items',[]) if x.get('id')!='RES-023']
         a['documented_gaps'][1]={'id':'GAP-017','description':"The synthesis completed exact-source owner review but was not adopted; additive R1 must distinguish the Anabasis from Xenophon's cross-work presentation of the older Cyrus, preserve Strauss's questions about legitimacy and prescription, and restore Xenophon as presenter of the problem of justice.",'blocks':['owner-adopted synthesis','minister derivation']}
