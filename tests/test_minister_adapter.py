@@ -1,5 +1,4 @@
 from pathlib import Path
-import copy
 import hashlib
 import json
 
@@ -31,7 +30,9 @@ def test_adapter_builds_live_schema_valid_report():
     assert report["report_status"] == "DRAFT_PENDING_MINISTER_REPOSITORY_VALIDATION"
     assert report["certification_status"] == "PENDING_OWNER_CERTIFICATION"
     assert report["governing_manifest"]["derivation_authority"]["status"] == "OWNER_ADOPTED_SYNTHESIS"
-    assert report["governing_manifest"]["adapter_operational_authority"]["status"] == "PENDING_OWNER_ADOPTION"
+    authority = report["governing_manifest"]["adapter_operational_authority"]
+    assert authority["id"] == "XENOPHON-AUTH-001"
+    assert authority["status"] == "OWNER_AUTHORIZED_OPERATIONAL_INTERFACE"
     assert {item["witness_id"] for item in report["evidence"]} == {"XEN-WIT-PRI-001", "XEN-WIT-SEC-001"}
     assert all(item["source_id"].startswith("XEN-SRC-") for item in report["evidence"])
     assert all(isinstance(item, str) for item in report["uncertainties"])
