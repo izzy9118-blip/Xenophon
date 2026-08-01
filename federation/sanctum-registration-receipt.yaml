@@ -1,0 +1,60 @@
+schema_version: 1.0
+record_type: sanctum_registration_receipt
+id: XEN-SANCTUM-REGISTRATION-001
+status: ACTIVE_REGISTRATION
+registered_on: 2026-08-01
+minister_id: xenophon
+sovereign_repository:
+  repository: izzy9118-blip/Xenophon
+  registered_commit: 77ae6a2fedc133bbc6ef63b58ab1751ba8ffe1c5
+  manifest_path: manifest.yaml
+  manifest_version: 1.70.0
+  manifest_state: OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH
+  authorization_ref: governance/repository-authorization.yaml
+  authorization_id: XENOPHON-AUTH-001
+  adapter_ref: adapter.py
+  adapter_id: XEN-MINISTER-ADAPTER-001-R1
+sanctum_registration:
+  repository: izzy9118-blip/Sanctum
+  registry_path: registry/ministers.yaml
+  registry_version: 3.0.0
+  registration_decision: docs/decisions/0005-register-xenophon-operational-minister.md
+  registration_merge_commit: ffdfda65c87e52b50ad8835db466b5ef458d3dcb
+  membership_status: established
+  participation: universal
+operational_effect:
+  same_common_briefing_required: true
+  tailored_feed_prohibited: true
+  ministerial_response_required: true
+  outside_my_ground_counts_as_complete_response: true
+  sovereign_report_validation_required: true
+  owner_report_certification_remains_separate: true
+  presidential_synthesis_remains_separate: true
+preserved_limits:
+  semantic_completion: INCOMPLETE
+  greek_language_review: DEFERRED_BY_OWNER
+  greek_dependent_claims: PROHIBITED
+  unresolved_question_count: 19
+  final_teaching_authorized: false
+  artificial_intelligence_self_certification_prohibited: true
+pinning_rule:
+  statement: >-
+    Sanctum pins the immutable owner-authorized interface commit. This downstream receipt
+    records the completed registration without mutating or replacing the registered interface
+    and therefore does not require a circular registry repin.
+provenance:
+  produced_by:
+    actor: xenophon-repository-secretary
+    repo: izzy9118-blip/Xenophon
+    commit: PENDING_RECEIPT_COMMIT
+  consumed_records:
+    - ref: manifest.yaml
+      commit: 77ae6a2fedc133bbc6ef63b58ab1751ba8ffe1c5
+    - ref: governance/repository-authorization.yaml
+      commit: 77ae6a2fedc133bbc6ef63b58ab1751ba8ffe1c5
+    - ref: registry/ministers.yaml
+      repo: izzy9118-blip/Sanctum
+      commit: ffdfda65c87e52b50ad8835db466b5ef458d3dcb
+termination:
+  registration_complete: true
+  next_action: SANCTUM_TWO_MINISTER_END_TO_END_PROVING_INQUIRY
