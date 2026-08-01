@@ -15,9 +15,9 @@ briefing:
   tailored_feed: false
 repository_pin:
   repository: izzy9118-blip/Xenophon
-  commit: 312d5fddf2f6e63ba383e3cfb8a45ba0641a480b
+  commit: 3db18a1ce85c89054a6805311cc68970abda54cc
   manifest_path: manifest.yaml
-  manifest_version: 1.69.0
+  manifest_version: 1.70.0
 requested_output: typed ministerial report
 mode: reasoned
 direct_answer: Political knowledge can preserve and restrain a collective body without hereditary title, but competence does not establish its own justice or legitimacy. Xenophon's ordered self-presentation makes that insufficiency the central political problem rather than supplying a completed model of rightful rule.
