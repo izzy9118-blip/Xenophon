@@ -1,23 +1,23 @@
 record_type: xenophon_speech_request
-request_id: XEN-ADAPTER-PROVING-REQUEST-001
-report_id: MREP-XENOPHON-ADAPTER-PROVING-001
+request_id: XEN-ADAPTER-R1-PROVING-REQUEST-001
+report_id: MREP-XENOPHON-ADAPTER-R1-PROVING-001
 fixture_status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
 inquiry_ref:
-  ref: INQ-XENOPHON-ADAPTER-PROVING-001
-  commit: b71a6a171fd2467cb712e9f9203d05791268bab4
-  envelope_sha256: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  ref: INQ-XENOPHON-ADAPTER-R1-PROVING-001
+  path: tests/fixtures/xenophon-adapter-inquiry-envelope.yaml
+  envelope_sha256: 4d01928b86239067e5ed0176351f031451d0f3ac9e936e92dc58393fb1197b62
 question: What does Xenophon's presentation of command reveal about justice and legitimate rule?
 briefing:
-  briefing_id: BRIEF-XENOPHON-ADAPTER-PROVING-001
+  briefing_id: BRIEF-XENOPHON-ADAPTER-R1-PROVING-001
   path: tests/fixtures/xenophon-adapter-common-briefing.yaml
-  sha256: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  sha256: 987eef9eb76f0012610aa50f124dc50fec6cd58c648b3a7a2b610665e8b36d49
   identical_for_all_ministers: true
   tailored_feed: false
 repository_pin:
   repository: izzy9118-blip/Xenophon
-  commit: b71a6a171fd2467cb712e9f9203d05791268bab4
+  commit: 312d5fddf2f6e63ba383e3cfb8a45ba0641a480b
   manifest_path: manifest.yaml
-  manifest_version: 1.67.0
+  manifest_version: 1.69.0
 requested_output: typed ministerial report
 mode: reasoned
 direct_answer: Political knowledge can preserve and restrain a collective body without hereditary title, but competence does not establish its own justice or legitimacy. Xenophon's ordered self-presentation makes that insufficiency the central political problem rather than supplying a completed model of rightful rule.
@@ -29,6 +29,8 @@ findings:
     statement: The narrated Xenophon acquires authority through speech, election, provision, discipline, punishment, negotiation, public defense, and restraint while authority remains distributed among soldiers, officers, assemblies, cities, and Spartans.
     grounds:
       - ref: XEN-PRIMARY-CUMULATIVE-001
+        witness_id: XEN-WIT-PRI-001
+        source_id: XEN-SRC-PRI-001
         path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
     source_location: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
     confidence: HIGH_WITHIN_ADMITTED_ENGLISH_WITNESS
@@ -39,8 +41,12 @@ findings:
     statement: Strauss asks whether knowledge of rule needs an iron alloy to become legitimate or politically viable and whether prescription is indispensable to non-tyrannical government.
     grounds:
       - ref: XEN-RU-007
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
         path: studies/strauss-xenophons-anabasis/reading-plan.yaml
       - ref: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
         path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     source_location: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     confidence: HIGH_WITHIN_REVIEWED_STRAUSS_WITNESS
@@ -51,8 +57,12 @@ findings:
     statement: Xenophon's presentation suggests that demonstrated competence, public defense, consent, and restraint may make rule politically viable, yet none of them by itself resolves whether the rule is just or legitimately entitled.
     grounds:
       - ref: XEN-PRIMARY-CUMULATIVE-001
+        witness_id: XEN-WIT-PRI-001
+        source_id: XEN-SRC-PRI-001
         path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
       - ref: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
         path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     source_location: controlled comparison of the owner-adopted primary reconstruction and R1 synthesis
     confidence: MODERATE_CONTROLLED_INFERENCE
@@ -63,6 +73,8 @@ findings:
     statement: It remains unresolved whether Xenophon's narrated position between the older Cyrus and Socrates is an achievement, an aspiration, a closest approximation, or a deliberately unclosed claim.
     grounds:
       - ref: R3-UQ-018
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
         path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     source_location: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1 unresolved question R3-UQ-018
     confidence: HIGH_AS_UNRESOLVED
@@ -88,4 +100,4 @@ standing_unresolved_questions:
 contradictions_and_dissent:
   - type: controlled_tension
     statement: The primary record shows effective command and voluntary restraint, while the Strauss-guided comparison denies that either competence or restraint settles the legitimacy and justice questions.
-termination_status: XENOPHON_ADAPTER_PROVING_REPORT_COMPLETE_WITH_PRESERVED_UNCERTAINTY
+termination_status: XENOPHON_ADAPTER_R1_PROVING_REPORT_COMPLETE_WITH_PRESERVED_UNCERTAINTY
