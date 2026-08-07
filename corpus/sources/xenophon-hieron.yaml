@@ -1,0 +1,29 @@
+schema_version: 1.0
+id: XEN-SRC-PRI-002
+status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+work:
+  author: Xenophon
+  title: Hiero or Tyrannicus
+  alternate_title: Hieron
+  source_type: ancient_dialogue_in_translation
+  original_language: Ancient Greek
+repository_jurisdiction:
+  role: primary Xenophontic work under investigation
+  authority: >-
+    Primary for the dialogue's translated sequence, speakers, speeches, silences,
+    and dramatic action; not unmediated evidence for the Greek text.
+  completed_pre_repository_work:
+    status: CLOSE_READING_COMPLETE
+    artifact_index: studies/hieron-on-tyranny/artifacts/completed-close-reading-index.yaml
+  permitted_uses:
+    - preserve the completed sequential reconstruction of Xenophon's dialogue
+    - distinguish Hiero, Simonides, dramatic action, and authorial presentation
+    - compare the completed reconstruction with Strauss only under source separation
+    - carry unresolved questions into later owner review
+  prohibited_uses:
+    - treat the English translation as direct Greek philological evidence
+    - replace Xenophon's dialogue with Strauss, Kojeve, or the correspondence
+    - infer Xenophon's teaching from an interlocutor's speech without dramatic control
+    - treat completed close reading as owner-adopted repository doctrine
+witness_ids:
+  - XEN-WIT-COMP-001

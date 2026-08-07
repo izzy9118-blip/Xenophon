@@ -1,0 +1,29 @@
+schema_version: 1.0
+directive_id: XEN-OWNER-DIRECTIVE-002
+status: ACTIVE_OWNER_DIRECTIVE
+issued_on: 2026-08-07
+owner_statement: >-
+  Integrate the already completed On Tyranny witness audit and close-reading work into
+  the Xenophon repository; do not restart or falsely describe the work as unaudited.
+authorized_scope:
+  - register Xenophon's Hiero and each distinct later source role
+  - register the externally held 2013 composite witness with preserved limitations
+  - preserve the completed forty-four-unit correspondence sequence and documentary correction
+  - preserve Integrated Synthesis Unit 48 as completed predecessor work
+  - normalize findings and unresolved questions under existing Xenophon safeguards
+  - add validation for the integration package
+not_authorized:
+  - silent revision of existing Anabasis records
+  - false deposition or invented hash of the owner-supplied source file
+  - Greek philological certification
+  - owner adoption without an in-depth review record
+  - alteration of the authorized minister adapter or its four registers and three guards
+  - Sanctum registration or Assembly dispatch
+governing_distinction:
+  completed_close_reading: true
+  repository_registration: authorized
+  repository_owner_adoption: pending_in_depth_review
+  semantic_finality: prohibited
+next_required_action: >-
+  Conduct a bounded in-depth owner review of the normalized package after recovering
+  the owner-supplied witness hash; do not repeat the completed reading from zero.

@@ -1,0 +1,61 @@
+schema_version: 1.0
+id: XEN-WIT-COMP-001
+status: REGISTERED_EXTERNAL_COMPOSITE_WITNESS_PENDING_OWNER_ADMISSION
+source_ids:
+  - XEN-SRC-PRI-002
+  - XEN-SRC-SEC-002
+  - XEN-SRC-SEC-003
+  - XEN-SRC-SEC-004
+  - XEN-SRC-SEC-005
+  - XEN-SRC-SEC-006
+witness:
+  title: On Tyranny
+  subtitle: Corrected and Expanded Edition, Including the Strauss-Kojeve Correspondence
+  principal_author: Leo Strauss
+  editors:
+    - Victor Gourevitch
+    - Michael S. Roth
+  publisher: The University of Chicago Press
+  publication_year: 2013
+  language: English
+  format: owner-supplied searchable digital edition used in the completed close reading
+  isbn_13_print: '9780226030135'
+  isbn_13_electronic: '9780226033525'
+  official_catalog_url: https://press.uchicago.edu/ucp/books/book/chicago/O/bo15288917.html
+file_control:
+  repository_deposition: not_deposited
+  prior_project_availability: confirmed searchable 2013 edition
+  local_filename: not_preserved_in_current_repository_handoff
+  sha256: not_preserved_in_current_repository_handoff
+  effect: >-
+    The completed reading is registered, but byte-level witness admission requires
+    recovery of the owner-supplied file and its hash; no source text is fabricated or
+    copied into the repository.
+locator_map:
+  print_pagination: xxii, 336 pages
+  part_one_on_tyranny_begins: printed page 1
+  hiero_or_tyrannicus_begins: printed page 3
+  part_two_strauss_kojeve_debate_begins: printed page 133
+  tyranny_and_wisdom_begins: printed page 135
+  restatement_begins: printed page 177
+  part_three_correspondence_begins: printed page 215
+  final_surviving_letter_ends: printed page 314
+  name_index_begins: printed page 327
+inspection:
+  complete_volume_close_read: true
+  correspondence_close_read_through_final_surviving_letter: true
+  editorial_notes_examined: true
+  multilingual_originals_distinguished_from_English_editorial_translation: true
+documentary_corrections:
+  - id: XEN-HIERON-DOC-COR-001
+    finding: >-
+      The editorial notes attest a Kojeve-to-Strauss letter dated 5 November 1957,
+      written in German, although the printed correspondence sequence used for the
+      close reading does not supply its body as a normal letter unit.
+    treatment: ATTESTED_UNAVAILABLE_DOCUMENT_NOT_SILENTLY_RECONSTRUCTED
+limitations:
+  - The deposited repository does not contain the owner-supplied digital witness.
+  - The witness hash and prior local filename were not preserved in the current handoff.
+  - The English correspondence frequently translates German or French originals.
+  - Individual letters have unequal documentary status, including originals, photocopies, transcriptions, mixed witnesses, damage, and missing sheets.
+  - No reviewed original-language Greek witness of Xenophon's Hiero is registered.

@@ -1,0 +1,36 @@
+schema_version: 1.0
+audit_id: XEN-AUDIT-HIERON-OT-001
+status: OPEN_INTEGRATION_AUDIT_PENDING_BOUNDED_OWNER_REVIEW
+as_of: 2026-08-07
+subject:
+  primary_work: Xenophon's Hiero or Tyrannicus
+  composite_inquiry: On Tyranny, corrected and expanded edition
+  study_id: XEN-STUDY-HIERON-OT-001
+completed_pre_repository_work:
+  witness_audit: COMPLETE
+  primary_and_interpretive_close_readings: COMPLETE
+  correspondence_units: 44
+  correspondence_terminal_document: Strauss to Kojeve, 3 June 1965
+  documentary_correction: XEN-HIERON-DOC-COR-001
+  integrated_synthesis: Integrated Synthesis Unit 48
+repository_integration:
+  owner_directed: true
+  source_records_registered: 6
+  composite_witness_registered: true
+  reading_plan_registered: true
+  artifact_index_registered: true
+  cumulative_reconstruction_registered: true
+  validation_installed: true
+  source_text_deposited: false
+  owner_adopted: false
+preserved_limits:
+  - The 2013 owner-supplied witness hash is not present in the current handoff.
+  - No reviewed Greek Hieron witness is registered.
+  - The full predecessor artifact text remains externally held and is not invented.
+  - The existing Anabasis adapter jurisdiction and architecture are unchanged.
+  - Semantic finality, AI self-certification, Sanctum registration, and Assembly dispatch remain unauthorized.
+next_required_action:
+  id: XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001
+  description: >-
+    Recover the owner-supplied witness hash and conduct a bounded review of the
+    normalization and admission package without repeating the completed close reading.

@@ -1,0 +1,64 @@
+schema_version: 1.0
+study_id: XEN-STUDY-HIERON-OT-001
+status: COMPLETED_PRE_REPOSITORY_CLOSE_READING_REGISTERED_PENDING_OWNER_REVIEW
+title: Xenophon's Hiero through On Tyranny and the Strauss-Kojeve inquiry
+governing_subject:
+  primary_author: Xenophon
+  primary_work: Hiero or Tyrannicus
+  interpretive_guide: Leo Strauss
+  testing_interlocutor: Alexandre Kojeve
+  inquiry_chain:
+    - Xenophon's Hiero
+    - Strauss's On Tyranny
+    - Kojeve's Tyranny and Wisdom
+    - Strauss's Restatement on Xenophon's Hiero
+    - Strauss-Kojeve correspondence
+    - editorial apparatus and documentary corrections
+governing_question: >-
+  What does Xenophon's presentation of Hiero and Simonides disclose about tyranny,
+  happiness, honor, friendship, wisdom, counsel, and political power, and how does
+  Strauss's interpretation withstand Kojeve's challenge and their later inquiry?
+production_provenance:
+  source_thread_id: 6a73b931-0dd4-83ea-961a-99970d4af040
+  prior_project_title: Project Handoff and Continuation
+  predecessor_handoff: completed correspondence reading through Unit 17
+  continued_close_reading: Correspondence Units 18 through 44
+  integrated_synthesis: Integrated Synthesis Unit 48, The Whole of On Tyranny
+  source_witness: XEN-WIT-COMP-001
+completed_stages:
+  - primary_Hieron_reconstruction
+  - Strauss_On_Tyranny_reconstruction
+  - Kojeve_Tyranny_and_Wisdom_reconstruction
+  - Strauss_Restatement_reconstruction
+  - correspondence_close_reading_through_final_surviving_letter
+  - editorial_and_material_witness_audit
+  - documentary_correction
+  - integrated_reconstruction
+repository_normalization_order:
+  - register the composite witness and each distinct source role
+  - preserve the completed artifact sequence as predecessor work
+  - retain observation, inference, alternative, and uncertainty distinctions
+  - keep Xenophon primary and all later witnesses subordinate for Xenophon reconstruction
+  - submit the normalized package to in-depth owner review before adoption
+evidence_layers:
+  - primary_Hieron_showing
+  - Strauss_explicit_argument
+  - Kojeve_explicit_argument
+  - Strauss_Restatement_explicit_argument
+  - correspondence_documentary_showing
+  - editorial_apparatus_finding
+  - controlled_synthetic_inference
+  - unresolved_question
+non_absorption_rules:
+  - Strauss is the interpreter and guide; Xenophon remains the author under investigation.
+  - Kojeve is reconstructed independently before his objections are compared with Strauss.
+  - The Restatement remains distinct from Strauss's original study.
+  - Correspondence records inquiry history and cannot replace the dialogue.
+  - Editorial notes establish documentary conditions and cannot be attributed to correspondents.
+  - Completed predecessor work is not silently redescribed as owner-adopted repository production.
+next_required_action:
+  id: XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001
+  description: >-
+    Recover and hash the owner-supplied 2013 witness, verify the normalized artifact
+    index against the preserved predecessor materials, and conduct in-depth owner
+    review without reopening the completed reading from zero.

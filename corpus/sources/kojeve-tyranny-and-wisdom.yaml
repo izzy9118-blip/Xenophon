@@ -1,0 +1,22 @@
+schema_version: 1.0
+id: XEN-SRC-SEC-003
+status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+work:
+  author: Alexandre Kojeve
+  title: Tyranny and Wisdom
+  source_type: interlocutorial_critical_essay
+repository_jurisdiction:
+  source_class: MODERN_SECONDARY_SCHOLARSHIP
+  role: >-
+    Interlocutorial challenge to Strauss's reading and an independent modern
+    reconstruction of wisdom, political action, recognition, and history.
+  permitted_uses:
+    - preserve Kojeve's argument independently before comparison with Strauss
+    - record objections that force clarification or restatement
+    - identify disagreements over nature, history, wisdom, and political efficacy
+  prohibited_uses:
+    - treat Kojeve as a primary witness to Xenophon's authorial teaching
+    - manufacture Kojeve as a position that exists only for Strauss to defeat
+    - treat historical effectiveness as self-interpreting proof of justice or wisdom
+witness_ids:
+  - XEN-WIT-COMP-001

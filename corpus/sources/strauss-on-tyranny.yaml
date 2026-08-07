@@ -1,0 +1,20 @@
+schema_version: 1.0
+id: XEN-SRC-SEC-002
+status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+work:
+  author: Leo Strauss
+  title: On Tyranny
+  source_type: interpretive_study
+repository_jurisdiction:
+  role: Straussian interpretive witness to Xenophon's Hiero
+  permitted_uses:
+    - preserve Strauss's explicit argument and textual observations
+    - identify questions and compositional features for the Hieron reconstruction
+    - compare with the independently reconstructed dialogue
+  prohibited_uses:
+    - substitute for Xenophon's Hiero
+    - convert Strauss's interpretation into an explicit claim by Xenophon
+    - collapse Strauss's original study into his later Restatement
+    - erase Kojeve's objections or the correspondence's later development
+witness_ids:
+  - XEN-WIT-COMP-001

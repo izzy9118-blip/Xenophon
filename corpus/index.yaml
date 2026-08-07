@@ -1,9 +1,9 @@
 schema_version: 1.0
 status: PRIMARY_TRANSLATION_WITNESS_ADMITTED
 counts:
-  primary_sources: 1
-  secondary_sources: 1
-  registered_witnesses: 2
+  primary_sources: 2
+  secondary_sources: 6
+  registered_witnesses: 3
 sources:
 - id: XEN-SRC-PRI-001
   title: Anabasis
@@ -22,6 +22,59 @@ sources:
   record: corpus/sources/strauss-xenophons-anabasis.yaml
   witness_ids:
   - XEN-WIT-SEC-001
+- id: XEN-SRC-PRI-002
+  title: Hiero or Tyrannicus
+  author: Xenophon
+  source_class: PRIMARY_XENOPHONTIC_WITNESS
+  witness_medium: ENGLISH_TRANSLATION_IN_COMPOSITE_EDITION
+  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  record: corpus/sources/xenophon-hieron.yaml
+  witness_ids:
+  - XEN-WIT-COMP-001
+- id: XEN-SRC-SEC-002
+  title: On Tyranny
+  author: Leo Strauss
+  source_class: STRAUSSIAN_INTERPRETIVE_WITNESS
+  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  record: corpus/sources/strauss-on-tyranny.yaml
+  witness_ids:
+  - XEN-WIT-COMP-001
+- id: XEN-SRC-SEC-003
+  title: Tyranny and Wisdom
+  author: Alexandre Kojeve
+  source_class: MODERN_SECONDARY_SCHOLARSHIP
+  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  record: corpus/sources/kojeve-tyranny-and-wisdom.yaml
+  witness_ids:
+  - XEN-WIT-COMP-001
+- id: XEN-SRC-SEC-004
+  title: Restatement on Xenophon's Hiero
+  author: Leo Strauss
+  source_class: STRAUSSIAN_INTERPRETIVE_WITNESS
+  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  record: corpus/sources/strauss-restatement-on-xenophons-hiero.yaml
+  witness_ids:
+  - XEN-WIT-COMP-001
+- id: XEN-SRC-SEC-005
+  title: The Strauss-Kojeve Correspondence
+  authors:
+  - Leo Strauss
+  - Alexandre Kojeve
+  source_class: MODERN_SECONDARY_SCHOLARSHIP
+  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  record: corpus/sources/strauss-kojeve-correspondence.yaml
+  witness_ids:
+  - XEN-WIT-COMP-001
+- id: XEN-SRC-SEC-006
+  title: Editorial apparatus to On Tyranny
+  authors:
+  - Victor Gourevitch
+  - Michael S. Roth
+  source_class: MODERN_SECONDARY_SCHOLARSHIP
+  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  record: corpus/sources/gourevitch-roth-on-tyranny-editorial-apparatus.yaml
+  witness_ids:
+  - XEN-WIT-COMP-001
 owner_reviews:
 - governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
 - governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
@@ -29,3 +82,10 @@ primary_original_language_gap:
   status: DOCUMENTED_GAP
   description: No reviewed original-language Greek witness or critical edition has yet been admitted.
   effect: Primary reconstruction may proceed from the admitted English translation, but Greek philological claims remain blocked.
+hieron_on_tyranny_integration:
+  status: COMPLETED_PRE_REPOSITORY_WORK_REGISTERED_PENDING_OWNER_REVIEW
+  owner_directive: governance/owner-directives/2026-08-07-integrate-completed-on-tyranny-close-reading.yaml
+  reading_plan: studies/hieron-on-tyranny/reading-plan.yaml
+  artifact_index: studies/hieron-on-tyranny/artifacts/completed-close-reading-index.yaml
+  cumulative_record: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+  active_adapter_effect: none

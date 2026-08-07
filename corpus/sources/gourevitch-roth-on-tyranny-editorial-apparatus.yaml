@@ -1,0 +1,24 @@
+schema_version: 1.0
+id: XEN-SRC-SEC-006
+status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+work:
+  authors:
+    - Victor Gourevitch
+    - Michael S. Roth
+  title: Editorial apparatus to On Tyranny, Corrected and Expanded Edition
+  source_type: modern_editorial_apparatus
+repository_jurisdiction:
+  source_class: MODERN_SECONDARY_SCHOLARSHIP
+  role: >-
+    Documentary control for textual identity, language, dating, missing material,
+    witness condition, editorial translation, and later contextual annotation.
+  permitted_uses:
+    - establish the documentary floor beneath interpretation
+    - preserve the editors' degrees of confidence and probable identifications
+    - distinguish original, photocopy, transcription, composite witness, and translation
+  prohibited_uses:
+    - treat editorial context as words written by Strauss, Kojeve, or Xenophon
+    - retroject later biography into an earlier letter
+    - infer pristine documentary condition from uniform modern typography
+witness_ids:
+  - XEN-WIT-COMP-001

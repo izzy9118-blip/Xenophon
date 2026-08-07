@@ -1,0 +1,31 @@
+schema_version: 1.0
+id: XEN-SRC-SEC-005
+status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+work:
+  authors:
+    - Leo Strauss
+    - Alexandre Kojeve
+  title: The Strauss-Kojeve Correspondence
+  source_type: edited_multilingual_correspondence
+repository_jurisdiction:
+  source_class: MODERN_SECONDARY_SCHOLARSHIP
+  role: >-
+    Documentary inquiry history showing the continuation, correction, transmission,
+    and non-resolution of the Hieron dispute.
+  authority: >-
+    Primary evidence for what the correspondents wrote in the surviving exchange,
+    subject to translation, editorial reconstruction, witness loss, and material damage;
+    secondary evidence for reconstructing Xenophon.
+  completed_sequence:
+    status: CLOSE_READING_COMPLETE
+    numbered_units: 44
+    first_segment_provenance: predecessor handoff completed through Correspondence Unit 17
+    continued_segment: Correspondence Units 18 through 44
+    final_surviving_letter: Strauss to Kojeve, 3 June 1965
+  prohibited_uses:
+    - infer philosophical rupture or agreement from an archival gap alone
+    - treat editorial translation as the correspondent's original language
+    - complete missing sheets or letters through philosophical expectation
+    - merge report, quotation, editorial annotation, and direct authorial statement
+witness_ids:
+  - XEN-WIT-COMP-001
