@@ -1,0 +1,74 @@
+schema_version: 1.0
+record_id: XEN-HIERON-OT-ARTIFACT-INDEX-001
+status: COMPLETED_PRE_REPOSITORY_ARTIFACT_SET_REGISTERED_PENDING_OWNER_REVIEW
+study_id: XEN-STUDY-HIERON-OT-001
+source_thread:
+  id: 6a73b931-0dd4-83ea-961a-99970d4af040
+  title: Project Handoff and Continuation
+  role: bounded provenance pointer to completed predecessor work
+  repository_deposition: not_deposited
+artifact_groups:
+  primary_and_interpretive_readings:
+    status: COMPLETE
+    components:
+      - source_id: XEN-SRC-PRI-002
+        object: Xenophon's Hiero or Tyrannicus
+        role: primary_author_under_investigation
+      - source_id: XEN-SRC-SEC-002
+        object: Strauss's On Tyranny
+        role: interpretive_witness
+      - source_id: XEN-SRC-SEC-003
+        object: Kojeve's Tyranny and Wisdom
+        role: testing_interlocutor
+      - source_id: XEN-SRC-SEC-004
+        object: Strauss's Restatement on Xenophon's Hiero
+        role: later_response_and_reopening
+  correspondence:
+    status: COMPLETE_THROUGH_FINAL_SURVIVING_PRINTED_LETTER
+    unit_count: 44
+    predecessor_segment:
+      units: 1-17
+      status: COMPLETE_IN_HANDOFF
+    repository_continuation_segment:
+      units: 18-44
+      status: COMPLETE
+    final_unit:
+      id: Correspondence Unit 44
+      document: Strauss to Kojeve, 3 June 1965
+      printed_pages: 313-314
+    sequence_correction:
+      id: XEN-HIERON-DOC-COR-001
+      document: Kojeve to Strauss, 5 November 1957
+      status: EDITORIALLY_ATTESTED_BODY_UNAVAILABLE_IN_PRINTED_SEQUENCE
+      effect: >-
+        The completed reconstruction records the documentary absence and does not
+        equate a missing printed unit with a missing historical communication.
+  documentary_audit:
+    status: COMPLETE
+    inspected_conditions:
+      - original manuscripts
+      - photocopies
+      - defective photocopies
+      - prior transcriptions
+      - composite reconstructions from heterogeneous witnesses
+      - lost originals
+      - damaged edges and filing holes
+      - missing sheets
+      - uncertain dates
+      - editorial translations from German and French
+      - probable bibliographic identifications
+  integrated_synthesis:
+    status: COMPLETE
+    artifact: Integrated Synthesis Unit 48
+    title: The Whole of On Tyranny
+    sequence: Xenophon to Strauss to Kojeve to Strauss to correspondence
+    governing_problem: How should wisdom relate to political power?
+preservation_status:
+  full_text_copied_into_repository: false
+  reason: >-
+    The completed artifacts and copyrighted witness are externally held predecessor
+    materials. This integration registers provenance, structure, findings, and limits
+    without inventing missing bytes or copying source text into GitHub.
+  completion_claim: PRESERVED
+  owner_adoption_claim: NOT_YET_MADE
+  artificial_intelligence_self_certification_prohibited: true

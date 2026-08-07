@@ -1,0 +1,22 @@
+schema_version: 1.0
+id: XEN-SRC-SEC-004
+status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+work:
+  author: Leo Strauss
+  title: Restatement on Xenophon's Hiero
+  source_type: interpretive_restatement
+repository_jurisdiction:
+  role: Strauss's distinct later response to Kojeve and renewed statement of the problem
+  title_control: >-
+    Restatement is preserved as a reopening of an acknowledged open problem, not
+    silently renamed Afterword and not treated as the final word of the inquiry.
+  permitted_uses:
+    - record Strauss's replies to Kojeve point by point
+    - distinguish restatement, correction, clarification, and unchanged disagreement
+    - compare the Restatement with both the original study and Kojeve's essay
+  prohibited_uses:
+    - absorb the Restatement into the original On Tyranny study
+    - describe the exchange as finally resolved
+    - retroactively revise the earlier texts through the later response
+witness_ids:
+  - XEN-WIT-COMP-001

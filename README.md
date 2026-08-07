@@ -32,6 +32,20 @@ The repository begins with one registered secondary witness: Leo Strauss's essay
 5. Compare the independent primary reconstruction with Strauss's interpretation only after the primary reading is complete.
 6. Expand to Xenophon's other works without forcing them into a prior synthesis.
 
+## Registered work lines
+
+- **Anabasis** is the active owner-adopted English-witness reconstruction and the sole
+  source line governing the currently authorized minister adapter.
+- **Hiero or Tyrannicus / On Tyranny** is registered as completed pre-repository
+  close-reading work pending bounded in-depth owner review. Its package preserves
+  Xenophon as the primary author; Strauss as interpretive guide; Kojeve as testing
+  interlocutor; the Restatement, correspondence, and editorial apparatus as distinct
+  documentary layers; and the completed inquiry without expanding the active adapter.
+
+Registration of completed predecessor work records its actual production state. It
+does not silently confer witness admission, Greek certification, owner adoption,
+minister derivation, Sanctum registration, or finality.
+
 ## Initial structure
 
 - `manifest.yaml` - machine-readable repository entry point
