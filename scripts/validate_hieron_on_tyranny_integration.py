@@ -141,6 +141,8 @@ def main() -> int:
         return fail("reviewed Hieron normalization correction is not preserved")
     if corrected_layers.get("Strauss_explicit_argument") != "PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED":
         return fail("reviewed Strauss normalization corrections are not preserved")
+    if corrected_layers.get("Kojeve_explicit_argument") != "PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED":
+        return fail("reviewed Kojeve normalization corrections are not preserved")
 
     findings = cumulative.get("source_specific_findings", {})
     hieron_findings = findings.get("primary_Hieron_showing", [])
@@ -162,6 +164,24 @@ def main() -> int:
         if marker.lower() not in strauss_text:
             return fail(f"reviewed Strauss finding missing required concept: {marker}")
 
+    kojeve_findings = findings.get("Kojeve_explicit_argument", [])
+    if len(kojeve_findings) < 11:
+        return fail("Kojeve layer has again been compressed below the reviewed normalization")
+    required_kojeve_markers = [
+        "recognition",
+        "authority",
+        "universal and homogeneous state",
+        "historical verification",
+        "intellectual mediators",
+        "revolutionary political action",
+    ]
+    kojeve_text = "\n".join(kojeve_findings).lower()
+    for marker in required_kojeve_markers:
+        if marker.lower() not in kojeve_text:
+            return fail(f"reviewed Kojeve finding missing required concept: {marker}")
+    if "strauss contests" in kojeve_text or "strauss's criticism" in kojeve_text:
+        return fail("Strauss-side criticism has leaked back into Kojeve's explicit-argument layer")
+
     review = load_yaml(REVIEW_PROGRESS)
     if review.get("review_id") != "XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001":
         return fail("bounded owner-review progress record identity mismatch")
@@ -173,6 +193,11 @@ def main() -> int:
         return fail("review progress record improperly changes the minister adapter")
     if review.get("artificial_intelligence_self_certification_prohibited") is not True:
         return fail("review progress record omits AI self-certification prohibition")
+    reviewed_layers = review.get("reviewed_layers", {})
+    if reviewed_layers.get("Kojeve_explicit_argument", {}).get("status") != "PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED":
+        return fail("review progress record does not preserve the reviewed Kojeve correction")
+    if "Kojeve_explicit_argument" in review.get("not_yet_reviewed", []):
+        return fail("review progress still marks Kojeve as not reviewed")
 
     directive = load_yaml(DIRECTIVE)
     if directive.get("directive_id") != "XEN-OWNER-DIRECTIVE-002":
