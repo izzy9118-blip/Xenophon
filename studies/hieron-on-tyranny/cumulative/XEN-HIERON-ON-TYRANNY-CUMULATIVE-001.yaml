@@ -14,6 +14,7 @@ normalization_review:
   corrected_layers:
     primary_Hieron_showing: PASS_WITH_NORMALIZATION_CORRECTION_APPLIED
     Strauss_explicit_argument: PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED
+    Kojeve_explicit_argument: PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED
   owner_adoption_effect: none
 governing_judgment: >-
   The completed inquiry does not yield a detachable Strauss-Kojeve doctrine. Xenophon
@@ -83,11 +84,57 @@ source_specific_findings:
       philosophy remains a problem rather than a closed doctrine.
   Kojeve_explicit_argument:
     - >-
-      Kojeve redirects the problem from wisdom's protection against tyranny toward
-      wisdom's historical efficacy, recognition, and the philosopher's relation to action.
+      Kojeve distinguishes political satisfaction through recognition from happiness,
+      love, and affection. Political action aims specifically at recognition by persons
+      whom the actor in turn recognizes as humanly significant.
     - >-
-      His challenge depends on historical completion and the universal and homogeneous
-      state in a manner Strauss contests rather than accepts as established.
+      Kojeve distinguishes authority from force: authority exists insofar as obedience is
+      freely recognized rather than merely compelled. Tyranny arises when a political
+      fraction, whether majority or minority, imposes an authority rejected by other
+      citizens without accommodation and therefore ultimately through force or terror.
+    - >-
+      The logic of reciprocal recognition tends toward universal recognition and thereby
+      toward a political order encompassing humanity while overcoming relations grounded
+      merely in servile or coerced obedience.
+    - >-
+      Effective political counsel must connect the ruler's acknowledged end to the concrete
+      present rather than merely present an abstract or utopian ideal; philosophy must show
+      how the political end can be approached through determinate circumstances and action.
+    - >-
+      Kojeve distinguishes the philosopher from the completed wise man. The philosopher is
+      a finite seeker moving toward Wisdom, while philosophy and governing each demand time;
+      this creates a structural conflict between sustained inquiry and direct political rule.
+    - >-
+      Direct philosopher-guided radical reform can intensify tyranny and entangle the
+      philosopher in violence, incomplete knowledge, practical hesitation, and loss of the
+      leisure or activity required for philosophy; the conflict between intellectual life
+      and action is therefore genuinely tragic within Kojeve's argument.
+    - >-
+      Philosophic pedagogy and the reception of teaching provide Kojeve with an
+      intersubjective check against merely private certainty and with evidence concerning a
+      doctrine's relative adequacy to its historical reality.
+    - >-
+      Kojeve appeals from interminable verbal dialectic to historical verification. Work
+      against nature and struggle among human beings enact contradictions historically, and
+      sustained historical and social validity therefore carries philosophical evidentiary
+      force within his Hegelian account rather than functioning as illustration alone.
+    - >-
+      Kojeve's genealogy assigns distinct contributions to political universality and
+      homogeneity: Alexander supplies a principle of universality, Christian universalism
+      and especially St. Paul supply a principle through which opposed human beings can
+      become one, and modern secularization transforms this inheritance into the political
+      project of the universal and homogeneous state.
+    - >-
+      A historical division of labor links philosophers, intellectual mediators, and
+      political actors. Philosophers articulate principles, intellectuals mediate them into
+      concrete circumstances, statesmen or tyrants act, and the consequences of action feed
+      back into the historical development of philosophy.
+    - >-
+      Within Kojeve's historical scheme, reforming tyranny presupposes prior philosophical
+      work, while the emergence of completed Wisdom ultimately presupposes revolutionary
+      political action culminating in the universal and homogeneous state; this claim is
+      preserved here as Kojeve's argument without importing Strauss's later criticism into
+      Kojeve's evidentiary layer.
   Strauss_Restatement_explicit_argument:
     - >-
       Strauss calls his response a Restatement because the problem remains open; the
