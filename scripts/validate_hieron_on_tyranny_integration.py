@@ -18,6 +18,7 @@ READING_PLAN = ROOT / "studies/hieron-on-tyranny/reading-plan.yaml"
 ARTIFACT_INDEX = ROOT / "studies/hieron-on-tyranny/artifacts/completed-close-reading-index.yaml"
 CUMULATIVE = ROOT / "studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml"
 DIRECTIVE = ROOT / "governance/owner-directives/2026-08-07-integrate-completed-on-tyranny-close-reading.yaml"
+REVIEW_PROGRESS = ROOT / "governance/owner-reviews/2026-08-09-hieron-on-tyranny-bounded-review-progress.yaml"
 HISTORY = ROOT / "history/2026-08-07-hieron-on-tyranny-completed-work-integration.md"
 AUDIT = ROOT / "audits/hieron-on-tyranny-integration-state.yaml"
 
@@ -40,6 +41,7 @@ def main() -> int:
         ARTIFACT_INDEX,
         CUMULATIVE,
         DIRECTIVE,
+        REVIEW_PROGRESS,
         HISTORY,
         AUDIT,
         *SOURCE_RECORDS.values(),
@@ -128,6 +130,49 @@ def main() -> int:
         return fail("integration improperly expands the operational adapter")
     if cumulative.get("governance_limits", {}).get("artificial_intelligence_self_certification_prohibited") is not True:
         return fail("AI self-certification prohibition is missing")
+
+    normalization = cumulative.get("normalization_review", {})
+    if normalization.get("review_id") != "XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001":
+        return fail("bounded owner-review identity is not linked from the cumulative record")
+    if normalization.get("status") != "IN_PROGRESS" or normalization.get("owner_adoption_effect") != "none":
+        return fail("bounded review progress is collapsed into owner adoption")
+    corrected_layers = normalization.get("corrected_layers", {})
+    if corrected_layers.get("primary_Hieron_showing") != "PASS_WITH_NORMALIZATION_CORRECTION_APPLIED":
+        return fail("reviewed Hieron normalization correction is not preserved")
+    if corrected_layers.get("Strauss_explicit_argument") != "PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED":
+        return fail("reviewed Strauss normalization corrections are not preserved")
+
+    findings = cumulative.get("source_specific_findings", {})
+    hieron_findings = findings.get("primary_Hieron_showing", [])
+    if not hieron_findings or not hieron_findings[0].startswith("Hiero presents the tyrant's possession"):
+        return fail("Hieron finding again collapses Hiero's account into unmediated Xenophon")
+
+    strauss_findings = findings.get("Strauss_explicit_argument", [])
+    if len(strauss_findings) < 9:
+        return fail("Strauss layer has again been compressed below the reviewed normalization")
+    required_strauss_markers = [
+        "modern political science",
+        "legitimate rule",
+        "theoretically conceivable",
+        "wisdom outranks political office",
+        "piety and law",
+    ]
+    strauss_text = "\n".join(strauss_findings).lower()
+    for marker in required_strauss_markers:
+        if marker.lower() not in strauss_text:
+            return fail(f"reviewed Strauss finding missing required concept: {marker}")
+
+    review = load_yaml(REVIEW_PROGRESS)
+    if review.get("review_id") != "XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001":
+        return fail("bounded owner-review progress record identity mismatch")
+    if review.get("status") != "OWNER_REVIEW_IN_PROGRESS_CORRECTIONS_APPLIED":
+        return fail("bounded owner-review progress status mismatch")
+    if review.get("owner_adoption_effect") != "none":
+        return fail("review progress record falsely claims owner adoption")
+    if review.get("minister_adapter_effect") != "none":
+        return fail("review progress record improperly changes the minister adapter")
+    if review.get("artificial_intelligence_self_certification_prohibited") is not True:
+        return fail("review progress record omits AI self-certification prohibition")
 
     directive = load_yaml(DIRECTIVE)
     if directive.get("directive_id") != "XEN-OWNER-DIRECTIVE-002":
