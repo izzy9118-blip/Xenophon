@@ -7,6 +7,14 @@ jurisdiction: >-
   Completed close reading from the externally held 2013 English composite witness.
   The record preserves source separation and documentary uncertainty. It is not Greek
   philology, owner adoption, a final teaching, or an expansion of the operational adapter.
+normalization_review:
+  review_id: XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001
+  review_record: governance/owner-reviews/2026-08-09-hieron-on-tyranny-bounded-review-progress.yaml
+  status: IN_PROGRESS
+  corrected_layers:
+    primary_Hieron_showing: PASS_WITH_NORMALIZATION_CORRECTION_APPLIED
+    Strauss_explicit_argument: PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED
+  owner_adoption_effect: none
 governing_judgment: >-
   The completed inquiry does not yield a detachable Strauss-Kojeve doctrine. Xenophon
   stages the problem of whether wisdom can counsel tyrannical power toward happiness
@@ -17,8 +25,10 @@ governing_judgment: >-
 source_specific_findings:
   primary_Hieron_showing:
     - >-
-      Hiero's possession of power, wealth, and luxury does not secure trust, friendship,
-      ordinary pleasure, safety, honor, or happiness.
+      Hiero presents the tyrant's possession of power, wealth, and luxury as failing to
+      secure trust, friendship, ordinary pleasure, safety, honor, or happiness; the
+      dialogue thereby places the presumed happiness of tyranny under examination without
+      simply identifying Hiero's account with Xenophon's teaching.
     - >-
       Simonides moves from eliciting the tyrant's account to counsel concerning benefit,
       honor, expenditure, and rule; the dramatic outcome does not certify that the counsel
@@ -28,11 +38,49 @@ source_specific_findings:
       as an unmediated statement of Xenophon's teaching.
   Strauss_explicit_argument:
     - >-
-      Strauss treats Xenophon's dialogue as a deliberately ordered presentation of the
-      permanent problem of tyranny and of the dangerous relation between wisdom and power.
+      Strauss begins from the failure of modern political science to recognize tyranny
+      adequately and returns to Xenophon in order to recover the classical analysis of a
+      political problem that is coeval with political life rather than merely antiquarian.
     - >-
-      Strauss's interpretation depends on literary form, speaker, sequence, omission,
-      irony, and comparison rather than on isolated doctrinal quotation.
+      Strauss treats the Hiero's speakers, sequence, silences, pedagogical moves, literary
+      form, and dramatic action as evidence. In particular, the ruler's yielding to the wise
+      man discloses a relation in which political office can require wisdom without wisdom
+      naturally culminating in political office.
+    - >-
+      Strauss reconstructs tyranny through deficient authority, distrust, coercive burden,
+      dependence on guidance, and the ruler's inability to convert possession of power into
+      the unquestioned authority characteristic of kingship.
+    - >-
+      Strauss does not treat constitutionality or lawful title as the final measure of
+      legitimate rule. Rule that heeds reasonable or wise counsel can be essentially more
+      legitimate than formally constitutional rule that refuses such counsel, while the
+      tyrant's defective title, dependence on another's wisdom, coercive requirements, and
+      practical instability remain genuine political defects.
+    - >-
+      Excellent or beneficent tyranny is therefore theoretically conceivable within the
+      argument yet extraordinarily difficult or improbable in practice. The argument exposes
+      both the limits of general law, which cannot possess perfect knowledge of particulars,
+      and the limits of absolute rule, whose ruler cannot simply be assumed to possess the
+      requisite wisdom.
+    - >-
+      Strauss's reconstruction shifts the final problem beyond the obvious practical aim of
+      improving tyranny: wisdom outranks political office, political power can need counsel,
+      and the life ordered toward wisdom is not exhausted by the ends of political rule.
+    - >-
+      Strauss distinguishes honor, love, friendship, political recognition, and happiness.
+      Honor can orient a striving for excellence, but the wise man's relation to competent
+      friends and judges cannot be reduced to the ruler's desire for recognition by the
+      multitude.
+    - >-
+      Strauss's analysis distinguishes political virtue from the highest human virtue and
+      treats the city as necessary without treating political life as the highest human end;
+      philosophic friendship and the activity ordered toward wisdom point beyond political
+      recognition without abolishing the philosopher's political dependencies.
+    - >-
+      Strauss ends by reopening the problem of piety and law. The Hiero's unusual silence
+      concerning piety cannot simply be explained by tyranny's lawlessness; the relation
+      among legal piety, possible translegal piety, nature, conversational situation, and
+      philosophy remains a problem rather than a closed doctrine.
   Kojeve_explicit_argument:
     - >-
       Kojeve redirects the problem from wisdom's protection against tyranny toward
