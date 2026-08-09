@@ -57,8 +57,25 @@ reviewed_layers:
       Strauss's reconstruction of Xenophon is trusted and preserved as Strauss's
       reconstruction. Direct authorial attribution to Xenophon remains governed by the
       repository's speaker-and-author and compositional-evidence rules.
+  Kojeve_explicit_argument:
+    status: PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED
+    correction_summary:
+      - Restore Kojeve's argument as an independent source layer before Strauss's Restatement is allowed to answer it.
+      - Distinguish recognition and political satisfaction from happiness, love, and affection.
+      - Restore the distinction between freely recognized authority and coercive force and Kojeve's corresponding definition of tyranny.
+      - Preserve the expansive logic from reciprocal recognition toward universal recognition and the universal and homogeneous state.
+      - Restore the requirement that political counsel mediate from a ruler's acknowledged end through concrete present circumstances rather than remain abstract or utopian.
+      - Preserve the distinction between the finite philosopher and the completed wise man and the structural conflict between philosophic inquiry and direct governing.
+      - Restore Kojeve's account of the tragedy of action, philosophic pedagogy, historical verification, Work and Struggle, and the evidentiary role he assigns to sustained historical and social validity.
+      - Restore the historical genealogy of universality and homogeneity through Alexander, Christian universalism, St. Paul, and modern secularization.
+      - Restore the division of labor among philosophers, intellectual mediators, and political actors and Kojeve's claim that revolutionary political action is required for the historical completion in which Wisdom becomes possible.
+      - Remove Strauss-side objections and repository safeguards from Kojeve's own explicit-argument layer; they remain available for the Restatement and controlled synthesis rather than being placed in Kojeve's mouth.
+    attribution_rule: >-
+      Kojeve's strongest explicit case is preserved within his own evidentiary layer,
+      including the philosophical force he assigns to historical verification. The
+      repository does not convert that preservation into agreement, final truth, or owner
+      adoption; Strauss's criticism is reviewed in the separate Restatement layer.
 not_yet_reviewed:
-  - Kojeve_explicit_argument
   - Strauss_Restatement_explicit_argument
   - correspondence_documentary_showing
   - editorial_apparatus_findings
@@ -76,4 +93,4 @@ minister_adapter_effect: none
 sanctum_registration_effect: none
 final_teaching_effect: none
 artificial_intelligence_self_certification_prohibited: true
-next_required_action: Continue the bounded owner review with Kojeve's explicit argument under the corrected Strauss baseline.
+next_required_action: Continue the bounded owner review with Strauss's Restatement on Xenophon's Hiero under the corrected Strauss and Kojeve layers.
