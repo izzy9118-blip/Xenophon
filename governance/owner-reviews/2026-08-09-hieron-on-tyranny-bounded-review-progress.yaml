@@ -1,0 +1,79 @@
+schema_version: 1.0
+review_id: XEN-HIERON-OT-IN-DEPTH-OWNER-REVIEW-001
+status: OWNER_REVIEW_IN_PROGRESS_CORRECTIONS_APPLIED
+reviewed_on: '2026-08-09'
+repository: izzy9118-blip/Xenophon
+scope:
+  study_id: XEN-STUDY-HIERON-OT-001
+  cumulative_record: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+  review_type: BOUNDED_NORMALIZATION_AND_ADMISSION_REVIEW
+owner_direction:
+  - Use the normalized cumulative synthesis as the substantive object of review rather than repeating the completed close reading from zero.
+  - Read and trust Strauss according to the active rules of the Strauss repository and the Custos Strauss Reader.
+  - Preserve the distinction between trusting Strauss's inquiry and collapsing Strauss's reconstruction directly into Xenophon's authorial voice.
+  - Treat predecessor artifact recovery as provenance support rather than a requirement to redo the completed reading.
+governing_standards:
+  strauss_repository:
+    repository: izzy9118-blip/Strauss
+    commit: fb417d1d4ab7b5d349e801544c0c703d8998a93f
+    manifest_version: 1.20.0
+    operative_rules:
+      - encounter Strauss before comparative reduction
+      - reconstruct cited authors independently before returning to Strauss
+      - preserve textual and dramatic order
+      - preserve speaker and author distinctions
+      - preserve whole-and-part relations, alternatives, and unresolved problems
+  custos_repository:
+    repository: izzy9118-blip/custos
+    commit: 9f461280c001b7866a4bcc3f6acef446b069d384
+    operative_rules:
+      - fixed documentary evidence governs
+      - recover the documentary chain
+      - return comparatively to Strauss after independent source reconstruction
+      - classify findings, inferences, hypotheses, questions, and uncertainties
+      - do not silently revise or erase prior work
+reviewed_layers:
+  primary_Hieron_showing:
+    status: PASS_WITH_NORMALIZATION_CORRECTION_APPLIED
+    correction: >-
+      The first cumulative finding is revised so that Hiero's account of tyrannical
+      unhappiness is not grammatically presented as an unmediated authorial declaration
+      by Xenophon. The dialogue's dramatic presentation remains the evidentiary frame.
+    preserved_limits:
+      - no Greek philological authority claimed
+      - Hiero, Simonides, and Xenophon remain distinct
+      - the ending remains evidentiary and unresolved
+      - unresolved questions XEN-HIERON-OT-UQ-001 through XEN-HIERON-OT-UQ-003 remain open
+  Strauss_explicit_argument:
+    status: PASS_WITH_NORMALIZATION_CORRECTIONS_APPLIED
+    correction_summary:
+      - Restore the major findings of the completed Strauss close reading rather than compressing the original study into two generic propositions.
+      - Preserve Strauss's use of dramatic action, sequence, speaker, silence, and literary form as evidence.
+      - Correct the prior overstatement that knowledge or beneficence cannot affect legitimacy; Strauss explicitly distinguishes formal constitutional title from rule that heeds reasonable or wise counsel while preserving the tyrant's defective title, dependence, coercive burden, and practical instability.
+      - Preserve the theoretical possibility and practical improbability of excellent or beneficent tyranny without converting the argument into either an endorsement of tyranny or a simple vindication of legality.
+      - Restore the hierarchy among wisdom, political office, honor, love, friendship, political recognition, and the city.
+      - Restore the piety-and-law endpoint as an unresolved Strauss problem.
+    attribution_rule: >-
+      Strauss's reconstruction of Xenophon is trusted and preserved as Strauss's
+      reconstruction. Direct authorial attribution to Xenophon remains governed by the
+      repository's speaker-and-author and compositional-evidence rules.
+not_yet_reviewed:
+  - Kojeve_explicit_argument
+  - Strauss_Restatement_explicit_argument
+  - correspondence_documentary_showing
+  - editorial_apparatus_findings
+  - controlled_synthetic_findings
+  - standing_unresolved_questions_as_a_whole
+witness_hash_control:
+  status: UNRESOLVED_DOCUMENTARY_CONTROL
+  effect: >-
+    Recovery of the exact owner-supplied 2013 witness hash remains required for
+    byte-level witness admission and final documentary closure, but the owner has
+    directed the substantive bounded review to proceed using the recovered project
+    witness and normalized cumulative synthesis.
+owner_adoption_effect: none
+minister_adapter_effect: none
+sanctum_registration_effect: none
+final_teaching_effect: none
+artificial_intelligence_self_certification_prohibited: true
+next_required_action: Continue the bounded owner review with Kojeve's explicit argument under the corrected Strauss baseline.
