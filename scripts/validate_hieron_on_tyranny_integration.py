@@ -34,6 +34,7 @@ OPERATIONAL_AUDIT = ROOT / "audits/hieron-on-tyranny-operational-incorporation-s
 OPERATIONAL_HISTORY = ROOT / "history/2026-08-10-hieron-on-tyranny-operational-incorporation.md"
 
 EXPECTED_SHA256 = "f6a397d8e59ac1214cb339b4705a365ff5a9d45e3997205e8f968aad8b870bc6"
+AUTHORIZATION_COMMIT = "8f51fd7d56dd5d34e46335e38b32750490800eea"
 
 
 def load_yaml(path: Path):
@@ -98,6 +99,8 @@ def main() -> int:
         return fail("manifest does not record completed Hieron operational incorporation")
     if incorporated.get("source_role_count") != 6 or incorporated.get("unresolved_question_count") != 18:
         return fail("manifest Hieron inventory mismatch")
+    if manifest.get("repository_authorization", {}).get("authorization_record_commit") != AUTHORIZATION_COMMIT:
+        return fail("manifest does not pin the R2 authorization-bearing commit")
     if manifest.get("owner_reviews", {}).get("hieron_on_tyranny_adoption") != str(OWNER_REVIEW.relative_to(ROOT)):
         return fail("manifest does not point to the Hieron owner-adoption review")
 

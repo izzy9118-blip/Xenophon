@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 INTERFACE_COMMIT = "07997f8f8631d2dbac526ac4f368d467c7c62ae7"
+AUTHORIZATION_COMMIT = "8f51fd7d56dd5d34e46335e38b32750490800eea"
 MANIFEST = ROOT / "manifest.yaml"
 REQUEST = ROOT / "tests/fixtures/xenophon-adapter-r2-speech-request.yaml"
 ENVELOPE = ROOT / "tests/fixtures/xenophon-adapter-r2-inquiry-envelope.yaml"
@@ -101,6 +102,10 @@ def main():
         return fail("R2 repository authorization not active")
     if repository_authorization.get("exact_interface_commit") != INTERFACE_COMMIT:
         return fail("R2 exact interface commit mismatch")
+    if repository_authorization.get("authorization_record_commit") != AUTHORIZATION_COMMIT:
+        return fail("R2 authorization record commit mismatch")
+    if not run(["git", "show", f"{AUTHORIZATION_COMMIT}:governance/repository-authorization-r2.yaml"]):
+        return fail("R2 authorization record is not preserved at its pinned commit")
 
     adapter_state = manifest.get("minister_adapter", {})
     if adapter_state.get("id") != "XEN-MINISTER-ADAPTER-001-R2":

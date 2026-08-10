@@ -37,6 +37,7 @@ repository_authorization:
   path: governance/repository-authorization-r2.yaml
   status: ACTIVE_OWNER_AUTHORIZATION
   exact_interface_commit: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
+  authorization_record_commit: 8f51fd7d56dd5d34e46335e38b32750490800eea
 governing_hub:
   repository: izzy9118-blip/Sanctum
   accepted_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
