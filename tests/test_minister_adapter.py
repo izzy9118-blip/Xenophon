@@ -9,7 +9,7 @@ from jsonschema import Draft202012Validator
 import adapter
 
 ROOT = Path(__file__).resolve().parents[1]
-FIXTURE = ROOT / "tests/fixtures/xenophon-speech-request.yaml"
+FIXTURE = ROOT / "tests/fixtures/xenophon-adapter-r2-speech-request.yaml"
 SCHEMA = ROOT / "federation/contracts/ministerial-report.schema.v1.3.0.json"
 
 
@@ -29,14 +29,30 @@ def test_adapter_builds_live_schema_valid_report():
     Draft202012Validator(schema).validate(report)
     assert report["report_status"] == "DRAFT_PENDING_MINISTER_REPOSITORY_VALIDATION"
     assert report["certification_status"] == "PENDING_OWNER_CERTIFICATION"
-    assert report["governing_manifest"]["derivation_authority"]["status"] == "OWNER_ADOPTED_SYNTHESIS"
+    derivation = report["governing_manifest"]["derivation_authority"]
+    assert derivation["status"] == "OWNER_ADOPTED_MULTI_WORK_DERIVATION"
+    assert derivation["source_lines"] == ["anabasis", "hieron_on_tyranny"]
     authority = report["governing_manifest"]["adapter_operational_authority"]
-    assert authority["id"] == "XENOPHON-AUTH-001"
+    assert authority["id"] == "XENOPHON-AUTH-002"
     assert authority["status"] == "OWNER_AUTHORIZED_OPERATIONAL_INTERFACE"
-    assert {item["witness_id"] for item in report["evidence"]} == {"XEN-WIT-PRI-001", "XEN-WIT-SEC-001"}
-    assert all(item["source_id"].startswith("XEN-SRC-") for item in report["evidence"])
+    assert {item["witness_id"] for item in report["evidence"]} == {
+        "XEN-WIT-PRI-001",
+        "XEN-WIT-SEC-001",
+        "XEN-WIT-COMP-001",
+    }
+    assert {item["source_id"] for item in report["evidence"]} == {
+        "XEN-SRC-PRI-001",
+        "XEN-SRC-PRI-002",
+        "XEN-SRC-SEC-001",
+        "XEN-SRC-SEC-002",
+        "XEN-SRC-SEC-003",
+        "XEN-SRC-SEC-004",
+        "XEN-SRC-SEC-005",
+        "XEN-SRC-SEC-006",
+    }
     assert all(isinstance(item, str) for item in report["uncertainties"])
-    assert len(report["pedagogical_path"]) == 4
+    assert len(report["pedagogical_path"]) == 5
+    assert report["jurisdiction"]["source_lines"] == ["anabasis", "hieron_on_tyranny"]
     assert report["dissent"]
 
 
@@ -77,7 +93,29 @@ def test_adapter_rejects_unadmitted_witness_pair():
     request = load_fixture()
     request["findings"][0]["grounds"][0]["witness_id"] = "XEN-WIT-FAKE-001"
     errors = adapter.validate_speech_request(request)
-    assert any("witness/source pair is not admitted" in item for item in errors)
+    assert any("witness/source pair is not registered" in item for item in errors)
+
+
+def test_adapter_rejects_pair_outside_selected_source_line():
+    request = load_fixture()
+    request["source_lines"] = ["anabasis"]
+    errors = adapter.validate_speech_request(request)
+    assert any("witness/source pair is not operationally authorized" in item for item in errors)
+
+
+def test_composite_witness_preserves_all_six_hieron_source_roles():
+    pairs = adapter.registered_witness_pairs()
+    composite_sources = {
+        source_id for witness_id, source_id in pairs if witness_id == "XEN-WIT-COMP-001"
+    }
+    assert composite_sources == {
+        "XEN-SRC-PRI-002",
+        "XEN-SRC-SEC-002",
+        "XEN-SRC-SEC-003",
+        "XEN-SRC-SEC-004",
+        "XEN-SRC-SEC-005",
+        "XEN-SRC-SEC-006",
+    }
 
 
 def test_adapter_rejects_erasure_of_unresolved_questions():

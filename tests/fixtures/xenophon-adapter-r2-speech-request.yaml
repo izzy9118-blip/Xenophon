@@ -18,7 +18,7 @@ briefing:
   tailored_feed: false
 repository_pin:
   repository: izzy9118-blip/Xenophon
-  commit: '0000000000000000000000000000000000000000'
+  commit: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
   manifest_path: manifest.yaml
   manifest_version: 1.71.0
 requested_output: typed ministerial report

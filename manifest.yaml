@@ -2,17 +2,19 @@ schema_version: 1.0
 repository: izzy9118-blip/Xenophon
 repository_role: sanctum_minister_repository
 version: 1.71.0
-state: MINISTER_ADAPTER_R2_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+state: OPERATIONAL_OWNER_AUTHORIZED_MULTI_WORK_RESEARCH
 minister:
   name: Xenophon
   minister_id: xenophon
-  status: R2_MULTI_WORK_ADAPTER_PENDING_OWNER_REVIEW
-  registration_status: PREDECESSOR_R1_AUTHORIZATION_REMAINS_ACTIVE
+  status: OWNER_AUTHORIZED_OPERATIONAL_MULTI_WORK_MINISTER
+  registration_status: READY_FOR_SANCTUM_REGISTRATION
 predecessor_state:
   version: 1.70.0
   state: OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH
   exact_head: 358fad19ea3361c027ba584fa41307f29c1338dd
   frozen_predecessor:
+    version: 1.70.0
+    exact_head: 358fad19ea3361c027ba584fa41307f29c1338dd
     validator: scripts/validate_repository_v1_70.py
   prior_predecessor:
     version: 1.69.0
@@ -22,7 +24,7 @@ predecessor_state:
     R1 operational authorization, the Hieron research-adoption state, all adverse
     reviews, and every production-stage record remain immutable predecessor history.
 owner_reviews:
-  active_adapter_adoption: PENDING_R2_IN_DEPTH_REVIEW
+  active_adapter_adoption: governance/owner-reviews/2026-08-10-xenophon-minister-adapter-r2-in-depth-review.yaml
   adapter_r1_adoption: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
   adapter_predecessor_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-in-depth-review.yaml
   anabasis_synthesis_adoption: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
@@ -33,7 +35,8 @@ owner_directives:
 repository_authorization:
   id: XENOPHON-AUTH-002
   path: governance/repository-authorization-r2.yaml
-  status: PENDING_R2_OWNER_REVIEW_AND_EXACT_INTERFACE_SEAL
+  status: ACTIVE_OWNER_AUTHORIZATION
+  exact_interface_commit: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
 governing_hub:
   repository: izzy9118-blip/Sanctum
   accepted_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
@@ -54,7 +57,7 @@ source_policy:
           witness_id: XEN-WIT-SEC-001
           role: strauss_explicit_argument
     hieron_on_tyranny:
-      status: OWNER_DIRECTED_R2_OPERATIONAL_INCORPORATION_PENDING_REVIEW
+      status: OWNER_ADOPTED_OPERATIONAL_SOURCE_LINE
       derivation_boundary: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
       sources:
         - source_id: XEN-SRC-PRI-002
@@ -111,11 +114,11 @@ active_records:
     unresolved_question_count: 18
   hieron_on_tyranny_derivation_boundary:
     id: XEN-HIERON-OT-DERIVATION-BOUNDARY-001
-    status: OWNER_DIRECTED_PENDING_R2_REVIEW
+    status: OWNER_AUTHORIZED_OPERATIONAL_DERIVATION
     path: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
 operationally_incorporated_research:
   hieron_on_tyranny:
-    status: R2_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+    status: OPERATIONALLY_INCORPORATED_OWNER_AUTHORIZED
     source_role_count: 6
     composite_witness: XEN-WIT-COMP-001
     unresolved_question_count: 18
@@ -123,11 +126,11 @@ operationally_incorporated_research:
 current_phase:
   id: XEN-PHASE-014
   name: Operational incorporation of the owner-adopted Hieron and On Tyranny source line
-  completion_status: R2_DRAFT_COMPLETE_PENDING_IN_DEPTH_OWNER_REVIEW
+  completion_status: R2_OWNER_AUTHORIZED_OPERATIONAL_INCORPORATION_COMPLETE
 minister_adapter:
   id: XEN-MINISTER-ADAPTER-001-R2
   predecessor_id: XEN-MINISTER-ADAPTER-001-R1
-  status: DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+  status: OWNER_AUTHORIZED_OPERATIONAL_MULTI_WORK_INTERFACE
   adapter_path: adapter.py
   speech_mechanism_path: speech/speech-mechanism-r2.yaml
   request_fixture: tests/fixtures/xenophon-adapter-r2-speech-request.yaml
@@ -171,18 +174,17 @@ minister_adapter:
     hieron_on_tyranny: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
   adapter_operational_authority:
     ref: governance/repository-authorization-r2.yaml
-    status: PENDING_R2_OWNER_REVIEW
-  owner_reviewed: false
-  owner_adopted: false
-  operational_authorization: false
-  sanctum_registration_authorized: false
+    status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
+  owner_reviewed: true
+  owner_adopted: true
+  operational_authorization: true
+  sanctum_registration_authorized: true
   assembly_dispatch_authorized: false
 next_required_action:
-  id: XEN-MINISTER-ADAPTER-R2-IN-DEPTH-OWNER-REVIEW-001
+  id: XENOPHON-SANCTUM-REGISTRATION-002
   description: >-
-    Validate the multi-work proving request, explicit source-pair authorization,
-    Hieron source-role separation, six registers, four guards, and all thirty-seven
-    unresolved questions before owner adoption or repository authorization.
+    Register an exact validated R2 commit in Sanctum, then run an end-to-end
+    universal-dispatch proving inquiry before Assembly dispatch.
 governance_gates:
   semantic_completion: INCOMPLETE
   final_teaching_authorized: false

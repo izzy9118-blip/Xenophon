@@ -1,0 +1,50 @@
+schema_version: 1.0
+review_id: XEN-OWNER-REVIEW-014
+status: OWNER_ADOPTED_XENOPHON_MINISTER_ADAPTER_R2
+reviewed_on: 2026-08-10
+repository: izzy9118-blip/Xenophon
+owner_direction:
+  instruction: no the proper step it to finish incorporating hieron
+  directive: governance/owner-directives/2026-08-10-finish-hieron-incorporation.yaml
+scope:
+  adapter_id: XEN-MINISTER-ADAPTER-001-R2
+  reviewed_head: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
+  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-R2-IN-DEPTH-REVIEW-001.yaml
+  source_lines:
+    - anabasis
+    - hieron_on_tyranny
+  source_witness_pairs: 8
+  registers: 6
+  guards: 4
+  evidence_layers: 8
+  unresolved_questions: 37
+owner_ruling:
+  adoption_status: ADOPTED
+  operational_authorization: GRANTED_WITH_RECORDED_LIMITS
+  disposition: PASS_ADOPTED_FOR_MULTI_WORK_OPERATIONAL_MINISTER_USE
+  semantic_completion: INCOMPLETE
+  sanctum_registration: AUTHORIZED_AFTER_EXACT_COMMIT_PIN
+  assembly_dispatch: AUTHORIZED_ONLY_AFTER_SANCTUM_REGISTRATION
+  effect: >-
+    R2 becomes the active Xenophon minister adapter. Hieron and the On Tyranny inquiry
+    are no longer parked outside operational derivation; they join Anabasis as a
+    separately governed source line with all six source roles preserved.
+adopted_controls:
+  - Preserve explicit manifest-governed source-line selection.
+  - Preserve all eight source/witness pairs and all eight evidence layers.
+  - Preserve the six-register architecture and four guards.
+  - Preserve Xenophon as primary in both source lines.
+  - Preserve Strauss, Kojeve, the Restatement, correspondence, and editorial apparatus as distinct roles.
+  - Preserve all nineteen Anabasis and eighteen Hieron unresolved questions.
+  - Preserve exact provenance, English-witness jurisdiction, and deferred Greek review.
+  - Separate derivation authority, operational authorization, report certification, and presidential synthesis.
+limits:
+  - No final teaching is certified.
+  - No Greek philological or textual authority is claimed.
+  - The full copyrighted Hieron witness and predecessor artifact prose remain externally held.
+  - Operational incorporation does not complete other Xenophontic works.
+  - Artificial-intelligence self-certification remains prohibited.
+  - Every future report remains subject to repository validation and owner certification under the Sanctum contract.
+next_required_action:
+  id: XENOPHON-REPOSITORY-AUTHORIZATION-002
+  description: Issue the R2 authorization record and prepare exact-commit Sanctum registration of the multi-work interface.
