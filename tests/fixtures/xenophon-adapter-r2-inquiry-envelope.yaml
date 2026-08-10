@@ -1,0 +1,19 @@
+record_type: sanctum_inquiry_envelope_fixture
+id: INQ-XENOPHON-ADAPTER-R2-PROVING-001
+status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
+question: What do Xenophon's presentations reveal about whether political competence and wise counsel can make power just and beneficial?
+participation:
+  mode: universal
+  identical_briefing_required: true
+briefing_ref:
+  id: BRIEF-XENOPHON-ADAPTER-R2-PROVING-001
+  path: tests/fixtures/xenophon-adapter-r2-common-briefing.yaml
+requesting_authority:
+  actor: repository_owner
+  purpose: adapter_r2_multi_work_proving_only
+governing_directive: governance/owner-directives/2026-08-10-finish-hieron-incorporation.yaml
+creation:
+  date: 2026-08-10
+  immutable_after_hashing: true
+termination:
+  assembly_effect: NONE

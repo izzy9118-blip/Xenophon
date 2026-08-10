@@ -14,24 +14,43 @@ from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parent
 MANIFEST_PATH = ROOT / "manifest.yaml"
-MECHANISM_PATH = ROOT / "speech/speech-mechanism.yaml"
+MECHANISM_PATH = ROOT / "speech/speech-mechanism-r2.yaml"
 SCHEMA_PATH = ROOT / "federation/contracts/ministerial-report.schema.v1.3.0.json"
 CORPUS_INDEX_PATH = ROOT / "corpus/index.yaml"
 REPOSITORY = "izzy9118-blip/Xenophon"
 MINISTER_ACTOR = "xenophon"
-MANIFEST_VERSION = "1.70.0"
+MANIFEST_VERSION = "1.71.0"
+ADAPTER_ID = "XEN-MINISTER-ADAPTER-001-R2"
 ALLOWED_MODES = {"reasoned", "outside_my_ground"}
 ALLOWED_LAYERS = {
     "primary_showing",
     "strauss_explicit_argument",
+    "kojeve_explicit_argument",
+    "strauss_restatement_explicit_argument",
+    "correspondence_documentary_showing",
+    "editorial_apparatus_finding",
     "controlled_synthetic_inference",
     "unresolved_question",
 }
 REPORT_KIND = {
     "primary_showing": "documented_finding",
     "strauss_explicit_argument": "documented_finding",
+    "kojeve_explicit_argument": "documented_finding",
+    "strauss_restatement_explicit_argument": "documented_finding",
+    "correspondence_documentary_showing": "documented_finding",
+    "editorial_apparatus_finding": "documented_finding",
     "controlled_synthetic_inference": "supported_inference",
     "unresolved_question": "unresolved_uncertainty",
+}
+EXPECTED_OPERATIONAL_PAIRS = {
+    ("XEN-WIT-PRI-001", "XEN-SRC-PRI-001"),
+    ("XEN-WIT-SEC-001", "XEN-SRC-SEC-001"),
+    ("XEN-WIT-COMP-001", "XEN-SRC-PRI-002"),
+    ("XEN-WIT-COMP-001", "XEN-SRC-SEC-002"),
+    ("XEN-WIT-COMP-001", "XEN-SRC-SEC-003"),
+    ("XEN-WIT-COMP-001", "XEN-SRC-SEC-004"),
+    ("XEN-WIT-COMP-001", "XEN-SRC-SEC-005"),
+    ("XEN-WIT-COMP-001", "XEN-SRC-SEC-006"),
 }
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
@@ -103,24 +122,51 @@ def validate_repository_pin(pin: dict[str, Any]) -> list[str]:
     try:
         manifest = yaml.safe_load(git_show_text(commit, "manifest.yaml"))
         git_show_text(commit, "adapter.py")
-        git_show_text(commit, "governance/repository-authorization.yaml")
     except AdapterError as exc:
         errors.append(str(exc))
         return errors
     if not isinstance(manifest, dict) or manifest.get("version") != pin.get("manifest_version"):
         errors.append("repository_pin manifest version does not match pinned commit")
+    elif manifest.get("minister_adapter", {}).get("id") != ADAPTER_ID:
+        errors.append("repository_pin does not contain the R2 adapter manifest")
+    else:
+        mechanism_path = manifest.get("minister_adapter", {}).get("speech_mechanism_path")
+        try:
+            git_show_text(commit, str(mechanism_path))
+        except AdapterError as exc:
+            errors.append(str(exc))
     return errors
 
 
-def admitted_witnesses() -> dict[str, str]:
-    result: dict[str, str] = {}
+def registered_witness_pairs() -> set[tuple[str, str]]:
+    result: set[tuple[str, str]] = set()
     for source in load_yaml(CORPUS_INDEX_PATH).get("sources", []):
         if not isinstance(source, dict):
             continue
         source_id = source.get("id")
         for witness_id in source.get("witness_ids", []):
             if isinstance(source_id, str) and isinstance(witness_id, str):
-                result[witness_id] = source_id
+                result.add((witness_id, source_id))
+    return result
+
+
+def operational_source_lines(manifest: dict[str, Any]) -> dict[str, set[tuple[str, str]]]:
+    result: dict[str, set[tuple[str, str]]] = {}
+    lines = manifest.get("source_policy", {}).get("operational_source_lines", {})
+    if not isinstance(lines, dict):
+        return result
+    for line_id, line in lines.items():
+        if not isinstance(line_id, str) or not isinstance(line, dict):
+            continue
+        pairs: set[tuple[str, str]] = set()
+        for source in line.get("sources", []):
+            if not isinstance(source, dict):
+                continue
+            witness_id = source.get("witness_id")
+            source_id = source.get("source_id")
+            if isinstance(witness_id, str) and isinstance(source_id, str):
+                pairs.add((witness_id, source_id))
+        result[line_id] = pairs
     return result
 
 
@@ -130,13 +176,13 @@ def validate_manifest(manifest: dict[str, Any]) -> list[str]:
         errors.append("manifest repository mismatch")
     if manifest.get("version") != MANIFEST_VERSION:
         errors.append(f"manifest version must be {MANIFEST_VERSION}")
-    if manifest.get("state") != "OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH":
+    if manifest.get("state") != "OPERATIONAL_OWNER_AUTHORIZED_MULTI_WORK_RESEARCH":
         errors.append("manifest operational state mismatch")
     adapter = manifest.get("minister_adapter", {})
-    if adapter.get("id") != "XEN-MINISTER-ADAPTER-001-R1":
-        errors.append("minister adapter R1 identity mismatch")
+    if adapter.get("id") != ADAPTER_ID:
+        errors.append("minister adapter R2 identity mismatch")
     if adapter.get("owner_adopted") is not True or adapter.get("operational_authorization") is not True:
-        errors.append("adapter R1 lacks owner operational authorization")
+        errors.append("adapter R2 lacks owner operational authorization")
     if adapter.get("sanctum_registration_authorized") is not True:
         errors.append("adapter is not authorized for exact-commit Sanctum registration")
     if adapter.get("assembly_dispatch_authorized") is not False:
@@ -146,15 +192,25 @@ def validate_manifest(manifest: dict[str, Any]) -> list[str]:
         errors.append("Greek-language jurisdiction mismatch")
     if manifest.get("governance_gates", {}).get("artificial_intelligence_self_certification_prohibited") is not True:
         errors.append("AI self-certification prohibition missing")
+    source_lines = operational_source_lines(manifest)
+    if set(source_lines) != {"anabasis", "hieron_on_tyranny"}:
+        errors.append("operational source-line identities mismatch")
+    elif set().union(*source_lines.values()) != EXPECTED_OPERATIONAL_PAIRS:
+        errors.append("operational source and witness pairs mismatch")
+    if not EXPECTED_OPERATIONAL_PAIRS.issubset(registered_witness_pairs()):
+        errors.append("operational source policy contains an unregistered witness pair")
+    boundary = adapter.get("hieron_derivation_boundary")
+    if boundary != "governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml":
+        errors.append("Hieron operational derivation boundary missing")
     return errors
 
 
 def validate_mechanism(mechanism: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if [item.get("id") for item in mechanism.get("registers", [])] != [f"XEN-REGISTER-{i:03d}" for i in range(1, 5)]:
-        errors.append("four-register order mismatch")
-    if [item.get("id") for item in mechanism.get("guards", [])] != [f"XEN-GUARD-{i:03d}" for i in range(1, 4)]:
-        errors.append("three-guard order mismatch")
+    if [item.get("id") for item in mechanism.get("registers", [])] != [f"XEN-REGISTER-{i:03d}" for i in range(1, 7)]:
+        errors.append("six-register order mismatch")
+    if [item.get("id") for item in mechanism.get("guards", [])] != [f"XEN-GUARD-{i:03d}" for i in range(1, 5)]:
+        errors.append("four-guard order mismatch")
     contract = mechanism.get("constitutional_contract", {})
     for field in (
         "identical_briefing_required",
@@ -164,6 +220,8 @@ def validate_mechanism(mechanism: dict[str, Any]) -> list[str]:
         "self_reference_prohibited",
         "evidence_typing_required",
         "artificial_intelligence_self_certification_prohibited",
+        "source_role_non_absorption_required",
+        "explicit_source_line_selection_required",
     ):
         if contract.get(field) is not True:
             errors.append(f"mechanism safeguard missing: {field}")
@@ -226,7 +284,20 @@ def validate_speech_request(request: dict[str, Any]) -> list[str]:
     if request.get("artificial_intelligence_self_certification") is not False:
         errors.append("artificial-intelligence self-certification is prohibited")
 
-    admitted = admitted_witnesses()
+    manifest = load_yaml(MANIFEST_PATH)
+    available_lines = operational_source_lines(manifest)
+    selected_lines = request.get("source_lines")
+    if not isinstance(selected_lines, list) or not selected_lines:
+        errors.append("source_lines must be a non-empty list")
+        selected_lines = []
+    elif any(line not in available_lines for line in selected_lines):
+        errors.append("source_lines contains an unauthorized source line")
+    authorized_pairs: set[tuple[str, str]] = set()
+    for line in selected_lines:
+        authorized_pairs.update(available_lines.get(line, set()))
+    registered_pairs = registered_witness_pairs()
+    used_lines: set[str] = set()
+    used_pairs: set[tuple[str, str]] = set()
     findings = request.get("findings")
     if not isinstance(findings, list) or not findings:
         errors.append("findings must be a non-empty list")
@@ -249,16 +320,34 @@ def validate_speech_request(request: dict[str, Any]) -> list[str]:
             if not isinstance(ground, dict):
                 errors.append(f"findings[{index}].grounds[{ground_index}] must be a mapping")
                 continue
-            if admitted.get(str(ground.get("witness_id"))) != ground.get("source_id"):
-                errors.append(f"findings[{index}].grounds[{ground_index}] witness/source pair is not admitted")
+            pair = (str(ground.get("witness_id")), str(ground.get("source_id")))
+            used_pairs.add(pair)
+            if pair not in registered_pairs:
+                errors.append(f"findings[{index}].grounds[{ground_index}] witness/source pair is not registered")
+            elif pair not in authorized_pairs:
+                errors.append(f"findings[{index}].grounds[{ground_index}] witness/source pair is not operationally authorized")
+            for line_id in selected_lines:
+                if pair in available_lines.get(line_id, set()):
+                    used_lines.add(line_id)
             try:
                 resolve_repository_path(str(ground.get("path", "")))
             except AdapterError as exc:
                 errors.append(str(exc))
-    if request.get("mode") == "reasoned" and "controlled_synthetic_inference" not in seen_layers:
-        errors.append("reasoned requests require controlled synthetic inference")
+    if request.get("mode") == "reasoned":
+        for required_layer in ("primary_showing", "controlled_synthetic_inference"):
+            if required_layer not in seen_layers:
+                errors.append(f"reasoned requests require {required_layer}")
     if "unresolved_question" not in seen_layers:
         errors.append("at least one unresolved question must remain standing")
+    for line_id in selected_lines:
+        if line_id not in used_lines:
+            errors.append(f"selected source line has no evidence: {line_id}")
+    if "hieron_on_tyranny" in selected_lines:
+        if ("XEN-WIT-COMP-001", "XEN-SRC-PRI-002") not in used_pairs:
+            errors.append("Hieron source line requires primary Hieron evidence")
+        later_hieron_ids = {f"XEN-SRC-SEC-{number:03d}" for number in range(2, 7)}
+        if not any(source_id in later_hieron_ids for _, source_id in used_pairs):
+            errors.append("Hieron source line requires at least one distinct later source role")
     if not isinstance(request.get("standing_unresolved_questions"), list) or not request["standing_unresolved_questions"]:
         errors.append("standing_unresolved_questions must be a non-empty list")
     if not isinstance(request.get("contradictions_and_dissent"), list):
@@ -310,13 +399,26 @@ def build_candidate_report(request: dict[str, Any]) -> dict[str, Any]:
             "path": pin["manifest_path"],
             "version": pin["manifest_version"],
             "derivation_authority": {
-                "ref": "governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml",
-                "id": "XEN-OWNER-REVIEW-010",
-                "status": "OWNER_ADOPTED_SYNTHESIS",
+                "status": "OWNER_ADOPTED_MULTI_WORK_DERIVATION",
+                "source_lines": request["source_lines"],
             },
+            "derivation_authorities": [
+                {
+                    "source_line": "anabasis",
+                    "ref": "governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml",
+                    "id": "XEN-OWNER-REVIEW-010",
+                    "status": "OWNER_ADOPTED_SYNTHESIS",
+                },
+                {
+                    "source_line": "hieron_on_tyranny",
+                    "ref": "governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml",
+                    "id": "XEN-HIERON-OT-DERIVATION-BOUNDARY-001",
+                    "status": "OWNER_AUTHORIZED_OPERATIONAL_DERIVATION",
+                },
+            ],
             "adapter_operational_authority": {
-                "ref": "governance/repository-authorization.yaml",
-                "id": "XENOPHON-AUTH-001",
+                "ref": "governance/repository-authorization-r2.yaml",
+                "id": "XENOPHON-AUTH-002",
                 "status": "OWNER_AUTHORIZED_OPERATIONAL_INTERFACE",
             },
         },
@@ -327,7 +429,8 @@ def build_candidate_report(request: dict[str, Any]) -> dict[str, Any]:
         "uncertainties": uncertainties,
         "dissent": request["contradictions_and_dissent"],
         "jurisdiction": {
-            "current": "CONTROLLED_ENGLISH_WITNESS_PRIMARY_SECONDARY_SYNTHESIS",
+            "current": "CONTROLLED_MULTI_WORK_ENGLISH_WITNESS_PRIMARY_SECONDARY_SYNTHESIS",
+            "source_lines": request["source_lines"],
             "greek_language_review": "DEFERRED_BY_OWNER_NOT_CURRENT_BLOCKER",
             "greek_dependent_claims": "PROHIBITED",
         },
@@ -337,9 +440,10 @@ def build_candidate_report(request: dict[str, Any]) -> dict[str, Any]:
             "presidential_synthesis": "NOT_PERFORMED",
         },
         "provenance": {
-            "produced_by": {"actor": "xenophon-adapter-r1-owner-authorized", "repo": REPOSITORY, "commit": pin["commit"]},
+            "produced_by": {"actor": "xenophon-adapter-r2-owner-authorized", "repo": REPOSITORY, "commit": pin["commit"]},
             "consumed_records": [
                 {"ref": "manifest.yaml", "commit": pin["commit"]},
+                {"ref": "XEN-HIERON-OT-DERIVATION-BOUNDARY-001", "path": "governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml"},
                 {"ref": request["inquiry_ref"]["ref"], "sha256": request["inquiry_ref"]["envelope_sha256"]},
                 {"ref": request["briefing"]["briefing_id"], "sha256": request["briefing"]["sha256"]},
             ],

@@ -1,0 +1,80 @@
+schema_version: 1.0
+boundary_id: XEN-HIERON-OT-DERIVATION-BOUNDARY-001
+status: OWNER_DIRECTED_OPERATIONAL_DERIVATION_BOUNDARY
+established_on: 2026-08-10
+repository: izzy9118-blip/Xenophon
+owner_directive: governance/owner-directives/2026-08-10-finish-hieron-incorporation.yaml
+research_adoption: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
+governing_record: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+operational_scope:
+  source_line_id: hieron_on_tyranny
+  primary_work:
+    source_id: XEN-SRC-PRI-002
+    witness_id: XEN-WIT-COMP-001
+    role: primary_Hieron_showing
+  later_source_roles:
+    - source_id: XEN-SRC-SEC-002
+      witness_id: XEN-WIT-COMP-001
+      role: strauss_explicit_argument
+    - source_id: XEN-SRC-SEC-003
+      witness_id: XEN-WIT-COMP-001
+      role: kojeve_explicit_argument
+    - source_id: XEN-SRC-SEC-004
+      witness_id: XEN-WIT-COMP-001
+      role: strauss_restatement_explicit_argument
+    - source_id: XEN-SRC-SEC-005
+      witness_id: XEN-WIT-COMP-001
+      role: correspondence_documentary_showing
+    - source_id: XEN-SRC-SEC-006
+      witness_id: XEN-WIT-COMP-001
+      role: editorial_apparatus_finding
+permitted_derivations:
+  - Use Hiero's speeches, Simonides's speeches, dramatic action, sequence, and ending as primary translated evidence.
+  - Use Strauss to guide questions and reconstruction without replacing Xenophon.
+  - Use Kojeve as an independently reconstructed testing interlocutor.
+  - Use the Restatement as a distinct later response rather than a silent revision of On Tyranny.
+  - Use correspondence as inquiry history subject to language, witness, translation, and archival limits.
+  - Use editorial apparatus to control document identity and confidence without attributing notes to correspondents.
+  - Use controlled synthesis only when every contributing source role remains recoverable.
+prohibited_derivations:
+  - Treat any later source as Xenophon's explicit statement.
+  - Treat the English Hiero translation as unmediated Greek evidence.
+  - Collapse Strauss, Kojeve, the Restatement, correspondence, or editorial apparatus into one secondary voice.
+  - Infer agreement, rupture, or philosophical meaning from archival silence before documentary alternatives are considered.
+  - Invent the body of the editorially attested 5 November 1957 communication.
+  - Declare the tyranny and wisdom dispute finally resolved.
+adapter_architecture:
+  preserved_registers:
+    - XEN-REGISTER-001
+    - XEN-REGISTER-002
+    - XEN-REGISTER-003
+    - XEN-REGISTER-004
+  added_registers:
+    - XEN-REGISTER-005
+    - XEN-REGISTER-006
+  preserved_guards:
+    - XEN-GUARD-001
+    - XEN-GUARD-002
+    - XEN-GUARD-003
+  added_guard: XEN-GUARD-004
+  allowed_evidence_layers:
+    - primary_showing
+    - strauss_explicit_argument
+    - kojeve_explicit_argument
+    - strauss_restatement_explicit_argument
+    - correspondence_documentary_showing
+    - editorial_apparatus_finding
+    - controlled_synthetic_inference
+    - unresolved_question
+unresolved_question_control:
+  anabasis_inventory: 19
+  hieron_on_tyranny_inventory: 18
+  combined_inventory_without_absorption: 37
+  every_report_must_retain_a_relevant_unresolved_question: true
+governance_limits:
+  greek_language_certification: false
+  final_teaching_authorized: false
+  artificial_intelligence_self_certification_prohibited: true
+  report_owner_certification_separate: true
+  sanctum_registration_separate: true
+  assembly_dispatch_separate: true

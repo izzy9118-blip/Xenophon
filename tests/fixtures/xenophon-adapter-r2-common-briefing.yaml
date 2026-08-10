@@ -1,0 +1,31 @@
+record_type: sanctum_common_briefing_fixture
+briefing_id: BRIEF-XENOPHON-ADAPTER-R2-PROVING-001
+status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
+identical_for_all_ministers: true
+tailored_feed: false
+question: What do Xenophon's presentations reveal about whether political competence and wise counsel can make power just and beneficial?
+facts:
+  - id: BF-R2-001
+    statement: The admitted Anabasis reconstruction follows all fifty-one numbered chapters of the H. G. Dakyns English translation.
+    source: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+  - id: BF-R2-002
+    statement: The verified 2013 composite witness contains Xenophon's Hiero, Strauss's On Tyranny, Kojeve's Tyranny and Wisdom, Strauss's Restatement, correspondence, and editorial notes.
+    source: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+  - id: BF-R2-003
+    statement: The owner-adopted Hieron package preserves forty-four correspondence units, Integrated Synthesis Unit 48, and eighteen unresolved questions.
+    source: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
+  - id: BF-R2-004
+    statement: Greek-language review remains deferred by owner and Greek-dependent claims remain prohibited across both source lines.
+    source: governance/owner-directives/2026-08-01-defer-greek-language-certification.yaml
+history:
+  general:
+    - The Anabasis presents command under expeditionary necessity, distributed authority, and institutional constraint.
+    - The Hiero presents a tyrant and a wise poet examining pleasure, fear, friendship, honor, happiness, and counsel.
+  immediate:
+    - The Hieron package received witness verification and owner adoption before R2 operational incorporation.
+assembler:
+  actor: repository-production-test-fixture
+  check: No external current facts are asserted; every item points to a committed repository record.
+provenance:
+  version: 2.0.0
+  hash_rule: SHA-256 of committed UTF-8 file bytes without reserialization.

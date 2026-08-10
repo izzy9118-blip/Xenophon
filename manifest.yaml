@@ -1,35 +1,39 @@
 schema_version: 1.0
 repository: izzy9118-blip/Xenophon
 repository_role: sanctum_minister_repository
-version: 1.70.0
-state: OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH
+version: 1.71.0
+state: MINISTER_ADAPTER_R2_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
 minister:
   name: Xenophon
   minister_id: xenophon
-  status: OWNER_AUTHORIZED_OPERATIONAL_MINISTER
-  registration_status: READY_FOR_SANCTUM_REGISTRATION
+  status: R2_MULTI_WORK_ADAPTER_PENDING_OWNER_REVIEW
+  registration_status: PREDECESSOR_R1_AUTHORIZATION_REMAINS_ACTIVE
 predecessor_state:
-  version: 1.69.0
-  state: MINISTER_ADAPTER_R1_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
-  exact_head: af3e057fca8b8b78ad20f6b8359dd12f519128a8
+  version: 1.70.0
+  state: OPERATIONAL_OWNER_AUTHORIZED_OPEN_RESEARCH
+  exact_head: 358fad19ea3361c027ba584fa41307f29c1338dd
   frozen_predecessor:
-    version: 1.68.0
-    exact_head: fe7171b4caca347ebd1fdcb7f2d221efa3bf3324
-    validator: scripts/validate_repository_v1_68.py
-  preservation: All adverse review, targeted R1, and owner-adoption records remain immutable predecessor history.
+    validator: scripts/validate_repository_v1_70.py
+  prior_predecessor:
+    version: 1.69.0
+    exact_head: af3e057fca8b8b78ad20f6b8359dd12f519128a8
+    frozen_v1_68_validator: scripts/validate_repository_v1_68.py
+  preservation: >-
+    R1 operational authorization, the Hieron research-adoption state, all adverse
+    reviews, and every production-stage record remain immutable predecessor history.
 owner_reviews:
-  active_adapter_adoption: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
+  active_adapter_adoption: PENDING_R2_IN_DEPTH_REVIEW
+  adapter_r1_adoption: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
   adapter_predecessor_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-in-depth-review.yaml
-  synthesis_adoption: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
+  anabasis_synthesis_adoption: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
   hieron_on_tyranny_adoption: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
 owner_directives:
   greek_deferral: governance/owner-directives/2026-08-01-defer-greek-language-certification.yaml
+  finish_hieron_incorporation: governance/owner-directives/2026-08-10-finish-hieron-incorporation.yaml
 repository_authorization:
-  id: XENOPHON-AUTH-001
-  path: governance/repository-authorization.yaml
-  status: ACTIVE_OWNER_AUTHORIZATION
-  exact_interface_commit: 00292dce72870a79e21630b1014eedbcd7ddf327
-  authorization_record_commit: 73702c912c607e51cb45adbee7a230c2f118c03b
+  id: XENOPHON-AUTH-002
+  path: governance/repository-authorization-r2.yaml
+  status: PENDING_R2_OWNER_REVIEW_AND_EXACT_INTERFACE_SEAL
 governing_hub:
   repository: izzy9118-blip/Sanctum
   accepted_contract_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
@@ -39,108 +43,146 @@ governing_hub:
     schema_id: urn:sanctum:federation:ministerial-report:1.3.0
     sanctum_blob_sha: a935c9ce7ea3b12ffa38a9ba8fc7ecd38068fd1d
 source_policy:
-  active_primary_source: XEN-SRC-PRI-001
-  admitted_primary_witness: XEN-WIT-PRI-001
-  active_secondary_source: XEN-SRC-SEC-001
-  admitted_secondary_witness: XEN-WIT-SEC-001
-  current_textual_jurisdiction: Admitted H. G. Dakyns English Anabasis witness and owner-adopted English-witness reconstruction, read under the reviewed Strauss witness and controlled comparison.
+  operational_source_lines:
+    anabasis:
+      status: OWNER_ADOPTED_OPERATIONAL_SOURCE_LINE
+      sources:
+        - source_id: XEN-SRC-PRI-001
+          witness_id: XEN-WIT-PRI-001
+          role: primary_showing
+        - source_id: XEN-SRC-SEC-001
+          witness_id: XEN-WIT-SEC-001
+          role: strauss_explicit_argument
+    hieron_on_tyranny:
+      status: OWNER_DIRECTED_R2_OPERATIONAL_INCORPORATION_PENDING_REVIEW
+      derivation_boundary: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
+      sources:
+        - source_id: XEN-SRC-PRI-002
+          witness_id: XEN-WIT-COMP-001
+          role: primary_showing
+        - source_id: XEN-SRC-SEC-002
+          witness_id: XEN-WIT-COMP-001
+          role: strauss_explicit_argument
+        - source_id: XEN-SRC-SEC-003
+          witness_id: XEN-WIT-COMP-001
+          role: kojeve_explicit_argument
+        - source_id: XEN-SRC-SEC-004
+          witness_id: XEN-WIT-COMP-001
+          role: strauss_restatement_explicit_argument
+        - source_id: XEN-SRC-SEC-005
+          witness_id: XEN-WIT-COMP-001
+          role: correspondence_documentary_showing
+        - source_id: XEN-SRC-SEC-006
+          witness_id: XEN-WIT-COMP-001
+          role: editorial_apparatus_finding
+  current_textual_jurisdiction: >-
+    Owner-adopted English-witness reconstruction of the Anabasis and verified English
+    composite-witness reconstruction of the Hiero and On Tyranny inquiry, with source
+    roles and unresolved-question inventories preserved separately.
   greek_language_review:
     status: DEFERRED_BY_OWNER
     required_for_current_production: false
     future_mode: OWNER_OPENED_FUTURE_PHASE
     greek_dependent_claims: PROHIBITED
 active_records:
-  primary_cumulative_reconstruction:
+  anabasis_primary_cumulative_reconstruction:
     id: XEN-PRIMARY-CUMULATIVE-001
     status: OWNER_ADOPTED
     path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
     source_unit_count: 51
-  secondary_reconstruction:
+  anabasis_secondary_reconstruction:
     id: XEN-STUDY-SEC-001
     status: OWNER_ADOPTED
     unit_count: 8
-  controlled_comparison:
+  anabasis_controlled_comparison:
     id: XEN-CONTROLLED-COMPARISON-001-R3
     status: OWNER_ADOPTED
     path: studies/comparisons/anabasis-primary-strauss/XEN-CONTROLLED-COMPARISON-001-R3.yaml
     unresolved_question_count: 19
-  controlled_synthesis:
+  anabasis_controlled_synthesis:
     id: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
     status: OWNER_ADOPTED_WITH_ENGLISH_WITNESS_JURISDICTION
     path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     unresolved_question_count: 19
-owner_adopted_open_research:
-  hieron_on_tyranny:
+  hieron_on_tyranny_cumulative_reconstruction:
     id: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001
     status: OWNER_ADOPTED_WITH_ENGLISH_COMPOSITE_WITNESS_JURISDICTION
     path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
-    primary_work_source: XEN-SRC-PRI-002
-    composite_witness: XEN-WIT-COMP-001
-    witness_verification: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
-    detailed_review: studies/hieron-on-tyranny/reviews/XEN-HIERON-OT-IN-DEPTH-REVIEW-001.yaml
-    owner_review: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
     unresolved_question_count: 18
-    operational_adapter_effect: none
+  hieron_on_tyranny_derivation_boundary:
+    id: XEN-HIERON-OT-DERIVATION-BOUNDARY-001
+    status: OWNER_DIRECTED_PENDING_R2_REVIEW
+    path: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
+operationally_incorporated_research:
+  hieron_on_tyranny:
+    status: R2_DRAFT_COMPLETE_PENDING_OWNER_REVIEW
+    source_role_count: 6
+    composite_witness: XEN-WIT-COMP-001
+    unresolved_question_count: 18
+    adapter_revision: XEN-MINISTER-ADAPTER-001-R2
 current_phase:
-  id: XEN-PHASE-013
-  name: Owner-authorized operational Xenophon minister interface
-  completion_status: OPERATIONAL_AUTHORIZATION_ACTIVE_READY_FOR_SANCTUM_REGISTRATION
+  id: XEN-PHASE-014
+  name: Operational incorporation of the owner-adopted Hieron and On Tyranny source line
+  completion_status: R2_DRAFT_COMPLETE_PENDING_IN_DEPTH_OWNER_REVIEW
 minister_adapter:
-  id: XEN-MINISTER-ADAPTER-001-R1
-  predecessor_id: XEN-MINISTER-ADAPTER-001
-  status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
+  id: XEN-MINISTER-ADAPTER-001-R2
+  predecessor_id: XEN-MINISTER-ADAPTER-001-R1
+  status: DRAFT_COMPLETE_PENDING_OWNER_REVIEW
   adapter_path: adapter.py
-  speech_mechanism_path: speech/speech-mechanism.yaml
-  request_fixture: tests/fixtures/xenophon-speech-request.yaml
-  inquiry_fixture: tests/fixtures/xenophon-adapter-inquiry-envelope.yaml
-  briefing_fixture: tests/fixtures/xenophon-adapter-common-briefing.yaml
+  speech_mechanism_path: speech/speech-mechanism-r2.yaml
+  request_fixture: tests/fixtures/xenophon-adapter-r2-speech-request.yaml
+  inquiry_fixture: tests/fixtures/xenophon-adapter-r2-inquiry-envelope.yaml
+  briefing_fixture: tests/fixtures/xenophon-adapter-r2-common-briefing.yaml
   behavioral_tests: tests/test_minister_adapter.py
   federation_schema: federation/contracts/ministerial-report.schema.v1.3.0.json
-  governing_synthesis: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
-  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-R1-IN-DEPTH-REVIEW-001.yaml
-  owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
-  federation_dependency:
-    id: SANCTUM-XENOPHON-WITNESS-ID-COMPATIBILITY-001
-    status: RESOLVED_BY_SANCTUM_CONTRACT_1_3_0
-    sanctum_commit: 4ad09dc75897dda2a4f68d32148a72a342c2917c
-  preserved_architecture:
+  governing_syntheses:
+    - XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+    - XEN-HIERON-ON-TYRANNY-CUMULATIVE-001
+  hieron_derivation_boundary: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
+  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-R2-IN-DEPTH-REVIEW-001.yaml
+  owner_review: governance/owner-reviews/2026-08-10-xenophon-minister-adapter-r2-in-depth-review.yaml
+  preserved_and_extended_architecture:
     registers:
       - XEN-REGISTER-001
       - XEN-REGISTER-002
       - XEN-REGISTER-003
       - XEN-REGISTER-004
+      - XEN-REGISTER-005
+      - XEN-REGISTER-006
     guards:
       - XEN-GUARD-001
       - XEN-GUARD-002
       - XEN-GUARD-003
+      - XEN-GUARD-004
     evidence_layers:
       - primary_showing
       - strauss_explicit_argument
+      - kojeve_explicit_argument
+      - strauss_restatement_explicit_argument
+      - correspondence_documentary_showing
+      - editorial_apparatus_finding
       - controlled_synthetic_inference
       - unresolved_question
-    all_19_unresolved_questions_preserved: true
-    committed_judgment_preserved: true
-  corrected_defects:
-    - LIVE_SCHEMA_NONCONFORMANCE
-    - WITNESS_IDENTIFIER_INCOMPATIBILITY
-    - FALSE_REPOSITORY_PIN
-    - PLACEHOLDER_UNVERIFIED_HASHES
-    - DERIVATION_AND_OPERATIONAL_AUTHORITY_COLLAPSE
-  derivation_authority:
-    ref: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
-    status: OWNER_ADOPTED_SYNTHESIS
+    anabasis_unresolved_questions_preserved: 19
+    hieron_unresolved_questions_preserved: 18
+    combined_unresolved_question_inventory: 37
+  derivation_authorities:
+    anabasis: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
+    hieron_on_tyranny: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
   adapter_operational_authority:
-    ref: governance/repository-authorization.yaml
-    owner_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
-    status: OWNER_AUTHORIZED_OPERATIONAL_INTERFACE
-  owner_reviewed: true
-  owner_adopted: true
-  operational_authorization: true
-  sanctum_registration_authorized: true
+    ref: governance/repository-authorization-r2.yaml
+    status: PENDING_R2_OWNER_REVIEW
+  owner_reviewed: false
+  owner_adopted: false
+  operational_authorization: false
+  sanctum_registration_authorized: false
   assembly_dispatch_authorized: false
 next_required_action:
-  id: XENOPHON-SANCTUM-REGISTRATION-001
-  description: Register an exact validated Xenophon commit in Sanctum, then run an end-to-end universal-dispatch proving inquiry.
+  id: XEN-MINISTER-ADAPTER-R2-IN-DEPTH-OWNER-REVIEW-001
+  description: >-
+    Validate the multi-work proving request, explicit source-pair authorization,
+    Hieron source-role separation, six registers, four guards, and all thirty-seven
+    unresolved questions before owner adoption or repository authorization.
 governance_gates:
   semantic_completion: INCOMPLETE
   final_teaching_authorized: false

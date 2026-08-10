@@ -1,0 +1,29 @@
+schema_version: 1.0
+directive_id: XEN-OWNER-DIRECTIVE-003
+status: ACTIVE_OWNER_DIRECTION_FOR_OPERATIONAL_INCORPORATION
+issued_on: 2026-08-10
+repository: izzy9118-blip/Xenophon
+owner_instruction: no the proper step it to finish incorporating hieron
+context:
+  predecessor_adoption: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
+  predecessor_state: >-
+    The Hieron and On Tyranny package is verified and owner-adopted but remains outside
+    the R1 minister adapter's declared Anabasis derivation.
+directive_effect: >-
+  Construct an additive R2 minister interface that operationally incorporates the
+  owner-adopted Hieron package rather than leaving it parked as open research.
+required_controls:
+  - Preserve Xenophon's Hiero as the primary work under investigation.
+  - Preserve Strauss, Kojeve, the Restatement, correspondence, and editorial apparatus as distinct source roles.
+  - Preserve all eighteen Hieron unresolved questions alongside the nineteen Anabasis unresolved questions.
+  - Replace corpus-wide implicit witness admission with explicit manifest-governed source and witness pairs.
+  - Preserve the R1 registers and guards as predecessor architecture while adding the Hieron controls required by the evidence.
+  - Preserve English-witness jurisdiction and the deferred Greek-language phase.
+  - Keep report certification, Sanctum registration, Assembly dispatch, and final teaching as separate gates.
+limits:
+  - This directive does not certify Greek philology.
+  - This directive does not authorize artificial-intelligence self-certification.
+  - This directive does not itself certify a report or perform Assembly dispatch.
+next_required_action:
+  id: XEN-MINISTER-ADAPTER-001-R2
+  description: Build, test, review, and owner-authorize the additive multi-work adapter successor.
