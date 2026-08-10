@@ -36,15 +36,17 @@ The repository begins with one registered secondary witness: Leo Strauss's essay
 
 - **Anabasis** is the active owner-adopted English-witness reconstruction and the sole
   source line governing the currently authorized minister adapter.
-- **Hiero or Tyrannicus / On Tyranny** is registered as completed pre-repository
-  close-reading work pending bounded in-depth owner review. Its package preserves
-  Xenophon as the primary author; Strauss as interpretive guide; Kojeve as testing
-  interlocutor; the Restatement, correspondence, and editorial apparatus as distinct
-  documentary layers; and the completed inquiry without expanding the active adapter.
+- **Hiero or Tyrannicus / On Tyranny** is an owner-adopted completed research
+  reconstruction within the verified 2013 English composite witness. Its package
+  preserves Xenophon as the primary author; Strauss as interpretive guide; Kojeve as
+  testing interlocutor; the Restatement, 44 correspondence units, editorial apparatus,
+  documentary correction, Integrated Synthesis Unit 48, and 18 unresolved questions as
+  distinct layers. It does not expand the active adapter.
 
-Registration of completed predecessor work records its actual production state. It
-does not silently confer witness admission, Greek certification, owner adoption,
-minister derivation, Sanctum registration, or finality.
+The handoff-stage records remain immutable production history. The additive witness
+verification, detailed review, and owner-review records supply the current adoption
+decision. Adoption does not confer Greek certification, minister derivation, Sanctum
+registration, Assembly dispatch, or finality.
 
 ## Initial structure
 

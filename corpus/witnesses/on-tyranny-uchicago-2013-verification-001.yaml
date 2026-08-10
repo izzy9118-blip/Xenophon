@@ -1,0 +1,90 @@
+schema_version: 1.0
+record_type: witness_verification
+verification_id: XEN-WIT-COMP-001-VERIFICATION-001
+applies_to_witness_id: XEN-WIT-COMP-001
+status: VERIFIED_FOR_OWNER_ADMISSION
+verified_on: 2026-08-10
+repository: izzy9118-blip/Xenophon
+predecessor_registration: corpus/witnesses/on-tyranny-uchicago-2013.yaml
+verification_scope: >-
+  Additive byte-identity, bibliographic, pagination, and section-boundary verification
+  for the externally held 2013 composite witness. The predecessor registration remains
+  immutable; this record supplies the file control that was unavailable in the handoff.
+recovered_file:
+  filename: "''On Tyranny'' - Leo Strauss.pdf"
+  sha256: f6a397d8e59ac1214cb339b4705a365ff5a9d45e3997205e8f968aad8b870bc6
+  byte_size: 24279699
+  repository_deposition: not_deposited
+  searchable_text: true
+  encrypted: false
+  pdf_version: '1.4'
+  physical_pdf_pages: 354
+  page_size_points: 480x720
+pdf_metadata:
+  title: On Tyranny
+  authors: Strauss, Leo, Roth, Michael S., Gourevitch, Victor
+  creator: Adobe Acrobat 9.5.5
+  producer: Adobe Acrobat 9.55 Paper Capture Plug-in
+  creation_date: '2013-08-07 18:02:08 CDT'
+  modification_date: '2022-09-24 16:38:23 CDT'
+bibliographic_verification:
+  edition_statement: Corrected and Expanded Edition, Including the Strauss-Kojeve Correspondence
+  editors:
+    - Victor Gourevitch
+    - Michael S. Roth
+  publisher: The University of Chicago Press
+  publication_year: 2013
+  isbn_13_print: '9780226030135'
+  isbn_13_electronic: '9780226033525'
+  library_of_congress_call_number: PA4494.H6S82013
+  result: PASS_EXACT_2013_EDITION_CONFIRMED
+visual_and_textual_boundary_checks:
+  - physical_pdf_page: 2
+    finding: Title page confirms the corrected and expanded edition and named editors.
+  - physical_pdf_page: 4
+    finding: Copyright and catalog page confirms publication year, ISBNs, and Library of Congress control.
+  - physical_pdf_page: 5
+    finding: Contents page confirms the volume architecture and printed starting pages.
+  - physical_pdf_page: 8
+    finding: Corrected-edition preface confirms the second restored Restatement paragraph on printed page 193.
+  - physical_pdf_page: 24
+    printed_page: 3
+    finding: Xenophon's Hiero or Tyrannicus begins; the translation credit is visible.
+  - physical_pdf_page: 43
+    printed_page: 22
+    finding: Leo Strauss's On Tyranny begins.
+  - physical_pdf_page: 155
+    printed_page: 135
+    finding: Alexandre Kojeve's Tyranny and Wisdom begins.
+  - physical_pdf_page: 197
+    printed_page: 177
+    finding: Leo Strauss's Restatement on Xenophon's Hiero begins.
+  - physical_pdf_page: 235
+    printed_page: 215
+    finding: The Strauss-Kojeve Correspondence division begins.
+  - physical_pdf_page: 237
+    printed_page: 217
+    finding: Letters and the prefatory note begin.
+  - physical_pdf_pages: 333-334
+    printed_pages: 313-314
+    finding: The final surviving printed letter is Strauss to Kojeve, 3 June 1965.
+  - physical_pdf_page: 335
+    printed_page: 315
+    finding: Editorial Notes begin immediately after the final letter.
+  - physical_pdf_page: 343
+    printed_page: 323
+    finding: The editorial notes attest Kojeve to Strauss, 5 November 1957, written in German.
+verification_ruling:
+  byte_identity: PASS
+  bibliographic_identity: PASS
+  section_boundaries: PASS
+  terminal_correspondence_boundary: PASS
+  documentary_correction: PASS
+  effect: >-
+    XEN-WIT-COMP-001 may be considered for owner admission within English composite-
+    witness jurisdiction. No source PDF is deposited, no Greek witness is certified,
+    and no operational adapter authority is created.
+immutable_record_rule: >-
+  The predecessor witness registration retains its handoff-stage missing-hash statement.
+  This verification is the additive controlling file-control record; later correction
+  must be additive and versioned.

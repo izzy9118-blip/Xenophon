@@ -27,7 +27,7 @@ sources:
   author: Xenophon
   source_class: PRIMARY_XENOPHONTIC_WITNESS
   witness_medium: ENGLISH_TRANSLATION_IN_COMPOSITE_EDITION
-  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  status: OWNER_ADMITTED_PRIMARY_TRANSLATION_SOURCE
   record: corpus/sources/xenophon-hieron.yaml
   witness_ids:
   - XEN-WIT-COMP-001
@@ -35,7 +35,7 @@ sources:
   title: On Tyranny
   author: Leo Strauss
   source_class: STRAUSSIAN_INTERPRETIVE_WITNESS
-  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  status: OWNER_ADOPTED_SECONDARY_SOURCE
   record: corpus/sources/strauss-on-tyranny.yaml
   witness_ids:
   - XEN-WIT-COMP-001
@@ -43,7 +43,7 @@ sources:
   title: Tyranny and Wisdom
   author: Alexandre Kojeve
   source_class: MODERN_SECONDARY_SCHOLARSHIP
-  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  status: OWNER_ADOPTED_SECONDARY_SOURCE
   record: corpus/sources/kojeve-tyranny-and-wisdom.yaml
   witness_ids:
   - XEN-WIT-COMP-001
@@ -51,7 +51,7 @@ sources:
   title: Restatement on Xenophon's Hiero
   author: Leo Strauss
   source_class: STRAUSSIAN_INTERPRETIVE_WITNESS
-  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  status: OWNER_ADOPTED_SECONDARY_SOURCE
   record: corpus/sources/strauss-restatement-on-xenophons-hiero.yaml
   witness_ids:
   - XEN-WIT-COMP-001
@@ -61,7 +61,7 @@ sources:
   - Leo Strauss
   - Alexandre Kojeve
   source_class: MODERN_SECONDARY_SCHOLARSHIP
-  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  status: OWNER_ADOPTED_SECONDARY_SOURCE
   record: corpus/sources/strauss-kojeve-correspondence.yaml
   witness_ids:
   - XEN-WIT-COMP-001
@@ -71,21 +71,27 @@ sources:
   - Victor Gourevitch
   - Michael S. Roth
   source_class: MODERN_SECONDARY_SCHOLARSHIP
-  status: REGISTERED_FROM_COMPLETED_CLOSE_READING_PENDING_OWNER_ADMISSION
+  status: OWNER_ADOPTED_SECONDARY_SOURCE
   record: corpus/sources/gourevitch-roth-on-tyranny-editorial-apparatus.yaml
   witness_ids:
   - XEN-WIT-COMP-001
 owner_reviews:
 - governance/owner-reviews/2026-07-30-strauss-witness-review.yaml
 - governance/owner-reviews/2026-07-30-primary-anabasis-witness-admission.yaml
+- governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
 primary_original_language_gap:
   status: DOCUMENTED_GAP
   description: No reviewed original-language Greek witness or critical edition has yet been admitted.
   effect: Primary reconstruction may proceed from the admitted English translation, but Greek philological claims remain blocked.
 hieron_on_tyranny_integration:
-  status: COMPLETED_PRE_REPOSITORY_WORK_REGISTERED_PENDING_OWNER_REVIEW
+  status: OWNER_ADOPTED_WITH_ENGLISH_COMPOSITE_WITNESS_JURISDICTION
   owner_directive: governance/owner-directives/2026-08-07-integrate-completed-on-tyranny-close-reading.yaml
   reading_plan: studies/hieron-on-tyranny/reading-plan.yaml
   artifact_index: studies/hieron-on-tyranny/artifacts/completed-close-reading-index.yaml
   cumulative_record: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+  witness_verification: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+  detailed_review: studies/hieron-on-tyranny/reviews/XEN-HIERON-OT-IN-DEPTH-REVIEW-001.yaml
+  owner_review: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
+  current_audit: audits/hieron-on-tyranny-owner-adoption-state.yaml
+  unresolved_question_count: 18
   active_adapter_effect: none
