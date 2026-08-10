@@ -1,0 +1,44 @@
+schema_version: 1.0
+audit_id: XEN-AUDIT-HIERON-OT-003
+status: OPERATIONAL_INCORPORATION_COMPLETE_OWNER_AUTHORIZED
+as_of: 2026-08-10
+predecessor_audit: audits/hieron-on-tyranny-owner-adoption-state.yaml
+subject:
+  primary_work: Xenophon's Hiero or Tyrannicus
+  research_record: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001
+  adapter_revision: XEN-MINISTER-ADAPTER-001-R2
+incorporation:
+  owner_directive: governance/owner-directives/2026-08-10-finish-hieron-incorporation.yaml
+  derivation_boundary: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
+  detailed_review: speech/reviews/XEN-MINISTER-ADAPTER-R2-IN-DEPTH-REVIEW-001.yaml
+  owner_review: governance/owner-reviews/2026-08-10-xenophon-minister-adapter-r2-in-depth-review.yaml
+  repository_authorization: governance/repository-authorization-r2.yaml
+  exact_interface_commit: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
+  source_line_status: OPERATIONALLY_INCORPORATED
+operational_inventory:
+  source_lines: 2
+  source_witness_pairs: 8
+  hieron_source_roles: 6
+  registers: 6
+  guards: 4
+  evidence_layers: 8
+  anabasis_unresolved_questions: 19
+  hieron_unresolved_questions: 18
+  combined_unresolved_questions: 37
+resolved_gap:
+  id: XEN-HIERON-OPERATIONAL-INCORPORATION-GAP-001
+  resolution: >-
+    Hieron is no longer limited to owner-adopted open research. R2 admits its primary
+    and five later source roles through exact manifest-governed witness/source pairs.
+  code_control: >-
+    The R1 corpus-wide single-value witness lookup is replaced by registered pair sets
+    and explicit per-request source-line authorization.
+preserved_limits:
+  - No Greek Hieron witness or critical edition is certified.
+  - The source PDF and full predecessor artifact prose remain externally held.
+  - No final teaching or complete reconciliation is declared.
+  - Report certification, Sanctum registration, and Assembly dispatch remain separate.
+  - Artificial-intelligence self-certification remains prohibited.
+next_required_action:
+  id: XENOPHON-SANCTUM-REGISTRATION-002
+  description: Register an exact validated R2 commit in Sanctum before Assembly dispatch.

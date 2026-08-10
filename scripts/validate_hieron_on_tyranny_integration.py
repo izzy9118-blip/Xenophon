@@ -25,8 +25,16 @@ INTEGRATION_HISTORY = ROOT / "history/2026-08-07-hieron-on-tyranny-completed-wor
 ADOPTION_HISTORY = ROOT / "history/2026-08-10-hieron-on-tyranny-owner-adoption.md"
 PREDECESSOR_AUDIT = ROOT / "audits/hieron-on-tyranny-integration-state.yaml"
 CURRENT_AUDIT = ROOT / "audits/hieron-on-tyranny-owner-adoption-state.yaml"
+OPERATIONAL_DIRECTIVE = ROOT / "governance/owner-directives/2026-08-10-finish-hieron-incorporation.yaml"
+DERIVATION_BOUNDARY = ROOT / "governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml"
+ADAPTER_REVIEW = ROOT / "speech/reviews/XEN-MINISTER-ADAPTER-R2-IN-DEPTH-REVIEW-001.yaml"
+ADAPTER_OWNER_REVIEW = ROOT / "governance/owner-reviews/2026-08-10-xenophon-minister-adapter-r2-in-depth-review.yaml"
+AUTHORIZATION = ROOT / "governance/repository-authorization-r2.yaml"
+OPERATIONAL_AUDIT = ROOT / "audits/hieron-on-tyranny-operational-incorporation-state.yaml"
+OPERATIONAL_HISTORY = ROOT / "history/2026-08-10-hieron-on-tyranny-operational-incorporation.md"
 
 EXPECTED_SHA256 = "f6a397d8e59ac1214cb339b4705a365ff5a9d45e3997205e8f968aad8b870bc6"
+AUTHORIZATION_COMMIT = "8f51fd7d56dd5d34e46335e38b32750490800eea"
 
 
 def load_yaml(path: Path):
@@ -54,6 +62,13 @@ def main() -> int:
         ADOPTION_HISTORY,
         PREDECESSOR_AUDIT,
         CURRENT_AUDIT,
+        OPERATIONAL_DIRECTIVE,
+        DERIVATION_BOUNDARY,
+        ADAPTER_REVIEW,
+        ADAPTER_OWNER_REVIEW,
+        AUTHORIZATION,
+        OPERATIONAL_AUDIT,
+        OPERATIONAL_HISTORY,
         *SOURCE_RECORDS.values(),
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
@@ -61,28 +76,31 @@ def main() -> int:
         return fail("missing Hieron / On Tyranny files: " + ", ".join(missing))
 
     manifest = load_yaml(ROOT / "manifest.yaml")
-    if manifest.get("version") != "1.70.0":
-        return fail("research adoption changed the authorized operational manifest version")
-    if manifest.get("source_policy", {}).get("active_primary_source") != "XEN-SRC-PRI-001":
-        return fail("research adoption changed the active Anabasis primary source")
-    if manifest.get("source_policy", {}).get("active_secondary_source") != "XEN-SRC-SEC-001":
-        return fail("research adoption changed the active Anabasis secondary source")
+    if manifest.get("version") != "1.71.0":
+        return fail("Hieron operational incorporation manifest version mismatch")
+    if manifest.get("state") != "OPERATIONAL_OWNER_AUTHORIZED_MULTI_WORK_RESEARCH":
+        return fail("Hieron is not incorporated into the active multi-work state")
+    source_lines = manifest.get("source_policy", {}).get("operational_source_lines", {})
+    if set(source_lines) != {"anabasis", "hieron_on_tyranny"}:
+        return fail("Anabasis and Hieron are not preserved as distinct operational source lines")
     adapter = manifest.get("minister_adapter", {})
-    if adapter.get("id") != "XEN-MINISTER-ADAPTER-001-R1":
-        return fail("research adoption changed the authorized adapter identity")
-    if adapter.get("preserved_architecture", {}).get("registers") != [
-        f"XEN-REGISTER-{number:03d}" for number in range(1, 5)
+    if adapter.get("id") != "XEN-MINISTER-ADAPTER-001-R2":
+        return fail("Hieron operational incorporation did not activate R2")
+    if adapter.get("preserved_and_extended_architecture", {}).get("registers") != [
+        f"XEN-REGISTER-{number:03d}" for number in range(1, 7)
     ]:
-        return fail("research adoption changed the four authorized registers")
-    if adapter.get("preserved_architecture", {}).get("guards") != [
-        f"XEN-GUARD-{number:03d}" for number in range(1, 4)
+        return fail("R2 does not preserve four registers and add two Hieron registers")
+    if adapter.get("preserved_and_extended_architecture", {}).get("guards") != [
+        f"XEN-GUARD-{number:03d}" for number in range(1, 5)
     ]:
-        return fail("research adoption changed the three authorized guards")
-    open_research = manifest.get("owner_adopted_open_research", {}).get("hieron_on_tyranny", {})
-    if open_research.get("id") != "XEN-HIERON-ON-TYRANNY-CUMULATIVE-001":
-        return fail("manifest does not register the owner-adopted Hieron research record")
-    if open_research.get("operational_adapter_effect") != "none":
-        return fail("Hieron research registration improperly expands the operational adapter")
+        return fail("R2 does not preserve three guards and add the Hieron source-role guard")
+    incorporated = manifest.get("operationally_incorporated_research", {}).get("hieron_on_tyranny", {})
+    if incorporated.get("status") != "OPERATIONALLY_INCORPORATED_OWNER_AUTHORIZED":
+        return fail("manifest does not record completed Hieron operational incorporation")
+    if incorporated.get("source_role_count") != 6 or incorporated.get("unresolved_question_count") != 18:
+        return fail("manifest Hieron inventory mismatch")
+    if manifest.get("repository_authorization", {}).get("authorization_record_commit") != AUTHORIZATION_COMMIT:
+        return fail("manifest does not pin the R2 authorization-bearing commit")
     if manifest.get("owner_reviews", {}).get("hieron_on_tyranny_adoption") != str(OWNER_REVIEW.relative_to(ROOT)):
         return fail("manifest does not point to the Hieron owner-adoption review")
 
@@ -231,12 +249,12 @@ def main() -> int:
 
     current_audit = load_yaml(CURRENT_AUDIT)
     if current_audit.get("audit_id") != "XEN-AUDIT-HIERON-OT-002":
-        return fail("current adoption audit identity mismatch")
+        return fail("owner-adoption predecessor audit identity mismatch")
     if current_audit.get("review_completion", {}).get("owner_adopted") is not True:
-        return fail("current audit does not record owner adoption")
+        return fail("owner-adoption predecessor audit does not record adoption")
     current_state = current_audit.get("current_repository_state", {})
     if current_state.get("active_adapter_source_line") != "Anabasis only" or current_state.get("active_adapter_effect") != "none":
-        return fail("current audit improperly changes operational adapter jurisdiction")
+        return fail("owner-adoption predecessor audit was silently rewritten")
 
     integration = index.get("hieron_on_tyranny_integration", {})
     if integration.get("status") != "OWNER_ADOPTED_WITH_ENGLISH_COMPOSITE_WITNESS_JURISDICTION":
@@ -248,7 +266,72 @@ def main() -> int:
     if str(OWNER_REVIEW.relative_to(ROOT)) not in index.get("owner_reviews", []):
         return fail("corpus index does not register the owner review")
 
-    print("Hieron / On Tyranny owner-adoption validation passed")
+    operational_directive = load_yaml(OPERATIONAL_DIRECTIVE)
+    if operational_directive.get("directive_id") != "XEN-OWNER-DIRECTIVE-003":
+        return fail("Hieron operational-incorporation directive identity mismatch")
+    if operational_directive.get("owner_instruction") != "no the proper step it to finish incorporating hieron":
+        return fail("Hieron operational-incorporation directive does not preserve the owner instruction")
+
+    boundary = load_yaml(DERIVATION_BOUNDARY)
+    if boundary.get("boundary_id") != "XEN-HIERON-OT-DERIVATION-BOUNDARY-001":
+        return fail("Hieron derivation boundary identity mismatch")
+    operational_scope = boundary.get("operational_scope", {})
+    primary = operational_scope.get("primary_work", {})
+    later = operational_scope.get("later_source_roles", [])
+    boundary_pairs = {(primary.get("witness_id"), primary.get("source_id"))}
+    boundary_pairs.update((item.get("witness_id"), item.get("source_id")) for item in later)
+    expected_hieron_pairs = {
+        ("XEN-WIT-COMP-001", "XEN-SRC-PRI-002"),
+        *{
+            ("XEN-WIT-COMP-001", f"XEN-SRC-SEC-{number:03d}")
+            for number in range(2, 7)
+        },
+    }
+    if boundary_pairs != expected_hieron_pairs:
+        return fail("Hieron derivation boundary does not preserve all six source roles")
+    boundary_architecture = boundary.get("adapter_architecture", {})
+    if boundary_architecture.get("preserved_registers") != [f"XEN-REGISTER-{number:03d}" for number in range(1, 5)]:
+        return fail("Hieron boundary does not preserve the R1 registers")
+    if boundary_architecture.get("added_registers") != ["XEN-REGISTER-005", "XEN-REGISTER-006"]:
+        return fail("Hieron boundary does not add both Hieron registers")
+    if boundary.get("unresolved_question_control", {}).get("combined_inventory_without_absorption") != 37:
+        return fail("Hieron boundary does not preserve the separate unresolved inventories")
+
+    adapter_review = load_yaml(ADAPTER_REVIEW)
+    if adapter_review.get("review_id") != "XEN-MINISTER-ADAPTER-R2-IN-DEPTH-REVIEW-001":
+        return fail("R2 Hieron adapter review identity mismatch")
+    if adapter_review.get("disposition_counts") != {"PASS": 16, "PASS_WITH_LIMIT": 2, "BLOCKING_REVISION": 0}:
+        return fail("R2 Hieron adapter review disposition mismatch")
+    if adapter_review.get("overall_ruling", {}).get("disposition") != "PASS_RECOMMEND_OWNER_ADOPTION":
+        return fail("R2 Hieron adapter review does not recommend adoption")
+
+    adapter_owner_review = load_yaml(ADAPTER_OWNER_REVIEW)
+    if adapter_owner_review.get("review_id") != "XEN-OWNER-REVIEW-014":
+        return fail("R2 owner-review sequence identity mismatch")
+    adapter_ruling = adapter_owner_review.get("owner_ruling", {})
+    if adapter_ruling.get("adoption_status") != "ADOPTED" or adapter_ruling.get("operational_authorization") != "GRANTED_WITH_RECORDED_LIMITS":
+        return fail("R2 owner review does not authorize operational Hieron incorporation")
+
+    authorization = load_yaml(AUTHORIZATION)
+    if authorization.get("authorization_id") != "XENOPHON-AUTH-002":
+        return fail("R2 repository authorization identity mismatch")
+    if authorization.get("status") != "ACTIVE_OWNER_AUTHORIZATION":
+        return fail("R2 repository authorization is not active")
+    auth_scope = authorization.get("scope", {})
+    if auth_scope.get("source_lines") != ["anabasis", "hieron_on_tyranny"]:
+        return fail("R2 authorization does not include both source lines")
+    if (auth_scope.get("authorized_source_witness_pairs"), auth_scope.get("registers"), auth_scope.get("guards"), auth_scope.get("evidence_layers"), auth_scope.get("unresolved_question_count")) != (8, 6, 4, 8, 37):
+        return fail("R2 authorization inventory mismatch")
+
+    operational_audit = load_yaml(OPERATIONAL_AUDIT)
+    if operational_audit.get("audit_id") != "XEN-AUDIT-HIERON-OT-003":
+        return fail("Hieron operational-incorporation audit identity mismatch")
+    if operational_audit.get("status") != "OPERATIONAL_INCORPORATION_COMPLETE_OWNER_AUTHORIZED":
+        return fail("Hieron operational incorporation is not complete")
+    if operational_audit.get("incorporation", {}).get("source_line_status") != "OPERATIONALLY_INCORPORATED":
+        return fail("Hieron source line is not operationally incorporated")
+
+    print("Hieron / On Tyranny operational-incorporation validation passed")
     return 0
 
 

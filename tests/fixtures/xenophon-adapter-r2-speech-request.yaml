@@ -1,0 +1,198 @@
+record_type: xenophon_speech_request
+request_id: XEN-ADAPTER-R2-PROVING-REQUEST-001
+report_id: MREP-XENOPHON-ADAPTER-R2-PROVING-001
+fixture_status: TEST_FIXTURE_NO_ASSEMBLY_EFFECT
+source_lines:
+  - anabasis
+  - hieron_on_tyranny
+inquiry_ref:
+  ref: INQ-XENOPHON-ADAPTER-R2-PROVING-001
+  path: tests/fixtures/xenophon-adapter-r2-inquiry-envelope.yaml
+  envelope_sha256: d654143e758f43bcc24a090de51b4fc871322fb70e97e3af98e1a69aa1063c85
+question: What do Xenophon's presentations reveal about whether political competence and wise counsel can make power just and beneficial?
+briefing:
+  briefing_id: BRIEF-XENOPHON-ADAPTER-R2-PROVING-001
+  path: tests/fixtures/xenophon-adapter-r2-common-briefing.yaml
+  sha256: f045d141342be7b7adf6ef75db1ab2f07d041fd8e966379f0dd6efb5a9f6cc98
+  identical_for_all_ministers: true
+  tailored_feed: false
+repository_pin:
+  repository: izzy9118-blip/Xenophon
+  commit: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
+  manifest_path: manifest.yaml
+  manifest_version: 1.71.0
+requested_output: typed ministerial report
+mode: reasoned
+direct_answer: >-
+  Xenophon's presentations show that competence and counsel can preserve, restrain,
+  and benefit political communities, but neither success nor beneficence certifies its
+  own justice. The Anabasis tests knowledgeable command in deeds and institutions; the
+  Hiero tests wise counsel against the tyrant's fear, isolation, pleasure, and desire for
+  honor. Their conjunction sharpens rather than closes the question of rightful rule.
+self_reference_as_authority: false
+claims_greek_textual_authority: false
+artificial_intelligence_self_certification: false
+findings:
+  - evidence_layer: primary_showing
+    statement: >-
+      The Anabasis presents authority acquired through speech, election, provision,
+      discipline, negotiation, and restraint, while the Hiero presents power and luxury
+      failing to secure trust, friendship, safety, ordinary pleasure, or happiness.
+    grounds:
+      - ref: XEN-PRIMARY-CUMULATIVE-001
+        witness_id: XEN-WIT-PRI-001
+        source_id: XEN-SRC-PRI-001
+        path: studies/xenophon-anabasis-dakyns/cumulative/XEN-PRIMARY-CUMULATIVE-001.yaml
+      - ref: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001-primary_Hieron_showing
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-PRI-002
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: owner-adopted Anabasis and Hieron cumulative reconstructions
+    confidence: HIGH_WITHIN_ADMITTED_ENGLISH_WITNESSES
+    alternatives_considered:
+      - effective command proves legitimate right
+      - tyranny's defects are merely private discomforts without political meaning
+  - evidence_layer: strauss_explicit_argument
+    statement: >-
+      Strauss's Anabasis inquiry keeps knowledge, legitimacy, prescription, and
+      non-tyrannical rule interrogative, while On Tyranny treats literary form and the
+      permanent relation of wisdom and tyrannical power as indispensable evidence.
+    grounds:
+      - ref: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
+        path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+      - ref: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001-Strauss_explicit_argument
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-SEC-002
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: separately owner-adopted Strauss-guided reconstructions
+    confidence: HIGH_WITHIN_REVIEWED_STRAUSS_WITNESSES
+    alternatives_considered:
+      - Strauss converts his questions into a finished political model
+      - Strauss's interpretation replaces Xenophon's dramatic presentation
+  - evidence_layer: kojeve_explicit_argument
+    statement: >-
+      Kojeve redirects the tyranny problem toward wisdom's historical efficacy,
+      recognition, and the philosopher's relation to action rather than merely accepting
+      Strauss's account.
+    grounds:
+      - ref: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001-Kojeve_explicit_argument
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-SEC-003
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: Kojeve-specific findings in the Hieron cumulative reconstruction
+    confidence: HIGH_WITHIN_REVIEWED_ENGLISH_TRANSLATION
+    alternatives_considered:
+      - Kojeve exists only as a position for Strauss to defeat
+      - historical effectiveness is self-interpreting proof of wisdom
+  - evidence_layer: strauss_restatement_explicit_argument
+    statement: >-
+      Strauss's Restatement tests whether Kojeve established wisdom, justice, and
+      historical finality and preserves the problem as open rather than silently
+      revising the original On Tyranny.
+    grounds:
+      - ref: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001-Restatement_explicit_argument
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-SEC-004
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: Restatement-specific findings in the Hieron cumulative reconstruction
+    confidence: HIGH_WITHIN_VERIFIED_COMPOSITE_WITNESS
+    alternatives_considered:
+      - the Restatement finally resolves the exchange
+      - the later response may be merged into the original study
+  - evidence_layer: correspondence_documentary_showing
+    statement: >-
+      The correspondence preserves continued inquiry through friendship, publication,
+      administration, translation, illness, missed encounters, and material loss rather
+      than a documented convergence or rupture.
+    grounds:
+      - ref: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001-correspondence_documentary_showing
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-SEC-005
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: forty-four-unit correspondence reconstruction
+    confidence: HIGH_WITH_RECORDED_DOCUMENTARY_LIMITS
+    alternatives_considered:
+      - archival silence proves philosophical rupture
+      - surviving letters exhaust the historical exchange
+  - evidence_layer: editorial_apparatus_finding
+    statement: >-
+      Uniform printed typography conceals originals, photocopies, defective copies,
+      transcriptions, composite reconstructions, translations, missing sheets, uncertain
+      dates, and an attested 5 November 1957 communication whose body is not invented.
+    grounds:
+      - ref: XEN-HIERON-DOC-COR-001
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-SEC-006
+        path: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+    source_location: verified editorial-notes boundary and documentary correction
+    confidence: HIGH_FOR_EXPLICIT_EDITORIAL_FINDINGS
+    alternatives_considered:
+      - every printed letter has equal documentary status
+      - unavailable text may be reconstructed from philosophical expectation
+  - evidence_layer: controlled_synthetic_inference
+    statement: >-
+      Across the two independent source lines, competence and beneficent counsel appear
+      politically consequential but insufficient to prove justice, because the title to
+      rule, the ruler's transformation, philosophy's independence, and the reception of
+      wisdom remain under examination.
+    grounds:
+      - ref: XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
+        path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+      - ref: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-PRI-002
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: controlled cross-work inference under the Hieron derivation boundary
+    confidence: MODERATE_CONTROLLED_MULTI_WORK_INFERENCE
+    alternatives_considered:
+      - success and benefit jointly settle legitimacy
+      - the two works must be kept unrelated despite their distinct reconstructions
+  - evidence_layer: unresolved_question
+    statement: >-
+      It remains unresolved whether Xenophon presents wise and competent political rule
+      as an achieved reconciliation, a closest approximation, a transformation of power,
+      or a deliberately unclosed problem.
+    grounds:
+      - ref: R3-UQ-018
+        witness_id: XEN-WIT-SEC-001
+        source_id: XEN-SRC-SEC-001
+        path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
+      - ref: XEN-HIERON-OT-UQ-001
+        witness_id: XEN-WIT-COMP-001
+        source_id: XEN-SRC-SEC-005
+        path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    source_location: preserved Anabasis and Hieron unresolved-question inventories
+    confidence: HIGH_AS_UNRESOLVED
+    alternatives_considered:
+      - Xenophon certifies a completed union of wisdom and rule
+      - neither work permits any controlled relation to the other
+pedagogical_path:
+  - register: XEN-REGISTER-001
+    move: Begin from command, material governance, pleasure, fear, friendship, security, and the consequences of rule.
+  - register: XEN-REGISTER-005
+    move: Test whether Simonides's beneficent counsel can make Hiero happy without assuming that tyranny remains unchanged or that the counsel is enacted.
+  - register: XEN-REGISTER-006
+    move: Preserve the disagreement over wisdom's political and historical efficacy together with the correspondence's documentary conditions.
+  - register: XEN-REGISTER-002
+    move: Test competence and beneficence against the demands of philosophy, non-harm, and justice without turning them into an easy program.
+  - register: XEN-REGISTER-004
+    move: Return to Xenophon's ordered presentations and keep author, speaker, interpreter, interlocutor, and editor distinct.
+standing_unresolved_questions:
+  - id: R3-UQ-006
+    question: How does the ambiguity of justice organize legitimacy, knowledge of rule, cruelty, benefit, harm, and non-harm?
+  - id: R3-UQ-018
+    question: Is Xenophon's narrated intermediate position an achievement, aspiration, closest approximation, or unresolved claim?
+  - id: XEN-HIERON-OT-UQ-001
+    question: Can Simonides's counsel make Hiero happy while leaving tyranny intact?
+  - id: XEN-HIERON-OT-UQ-008
+    question: How can the disagreement between nature and history be adjudicated without assuming either side's conclusion?
+contradictions_and_dissent:
+  - type: controlled_tension
+    statement: The Anabasis shows effective command and restraint without settled legitimacy, while the Hiero shows beneficent counsel without a narrated transformation or response.
+  - type: interlocutorial_dissent
+    statement: Kojeve's demand for historical efficacy remains opposed to Strauss's concern that philosophy not be reduced to policy, legitimation, or completed history.
+termination_status: XENOPHON_ADAPTER_R2_MULTI_WORK_PROVING_REPORT_COMPLETE_WITH_PRESERVED_UNCERTAINTY

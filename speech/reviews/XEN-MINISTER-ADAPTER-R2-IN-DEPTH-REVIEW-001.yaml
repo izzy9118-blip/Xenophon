@@ -1,0 +1,105 @@
+schema_version: 1.0
+review_id: XEN-MINISTER-ADAPTER-R2-IN-DEPTH-REVIEW-001
+status: IN_DEPTH_REVIEW_COMPLETE_RECOMMEND_OWNER_ADOPTION
+reviewed_on: 2026-08-10
+repository: izzy9118-blip/Xenophon
+reviewed_head: 07997f8f8631d2dbac526ac4f368d467c7c62ae7
+reviewed_adapter:
+  id: XEN-MINISTER-ADAPTER-001-R2
+  predecessor: XEN-MINISTER-ADAPTER-001-R1
+  path: adapter.py
+  mechanism: speech/speech-mechanism-r2.yaml
+  manifest_version: 1.71.0
+  derivation_boundary: governance/derivation-boundaries/2026-08-10-hieron-on-tyranny-operational-boundary.yaml
+review_scope:
+  operational_source_lines: 2
+  source_witness_pairs: 8
+  registers_reviewed: 6
+  guards_reviewed: 4
+  evidence_layers_reviewed: 8
+  anabasis_unresolved_questions: 19
+  hieron_unresolved_questions: 18
+  combined_unresolved_inventory: 37
+  live_schema_validation: true
+  exact_hash_validation: true
+  exact_commit_validation: true
+  source_role_non_absorption_reviewed: true
+disposition_counts:
+  PASS: 16
+  PASS_WITH_LIMIT: 2
+  BLOCKING_REVISION: 0
+findings:
+  - id: XEN-ADAPTER-R2-RF-001
+    severity: PASS
+    finding: R2 preserves the four R1 registers and adds two Hieron-specific registers for tyranny, happiness, beneficent counsel, wisdom, power, history, and documentary inquiry.
+  - id: XEN-ADAPTER-R2-RF-002
+    severity: PASS
+    finding: R2 preserves the three R1 guards and adds a fourth guard for source-role and documentary-status control.
+  - id: XEN-ADAPTER-R2-RF-003
+    severity: PASS
+    finding: The manifest explicitly authorizes two source lines and exactly eight registered source/witness pairs.
+  - id: XEN-ADAPTER-R2-RF-004
+    severity: PASS
+    finding: The composite witness XEN-WIT-COMP-001 may support six distinct source roles without being collapsed to the final source encountered in the corpus index.
+  - id: XEN-ADAPTER-R2-RF-005
+    severity: PASS
+    finding: Every request must select its source lines explicitly and may cite only pairs authorized for those lines.
+  - id: XEN-ADAPTER-R2-RF-006
+    severity: PASS
+    finding: Hieron selection requires primary Hieron evidence and at least one distinct later source role.
+  - id: XEN-ADAPTER-R2-RF-007
+    severity: PASS
+    finding: The proving fixture exercises Xenophon, both Strauss lines, Kojeve, the Restatement, correspondence, editorial apparatus, controlled synthesis, and unresolved questions.
+  - id: XEN-ADAPTER-R2-RF-008
+    severity: PASS
+    finding: The eight evidence layers preserve primary showing and every later Hieron source role without absorption.
+  - id: XEN-ADAPTER-R2-RF-009
+    severity: PASS
+    finding: All nineteen Anabasis and eighteen Hieron unresolved questions remain separately counted and available to the adapter.
+  - id: XEN-ADAPTER-R2-RF-010
+    severity: PASS
+    finding: The multi-work proving request retains a direct judgment, a five-step pedagogical path, dissent, and representative unresolved questions from both source lines.
+  - id: XEN-ADAPTER-R2-RF-011
+    severity: PASS
+    finding: The candidate report validates against the pinned Sanctum ministerial-report schema 1.3.0.
+  - id: XEN-ADAPTER-R2-RF-012
+    severity: PASS
+    finding: The common briefing and inquiry envelope carry exact SHA-256 values and prohibit tailored feeds.
+  - id: XEN-ADAPTER-R2-RF-013
+    severity: PASS
+    finding: The request pins the exact R2 code-bearing commit and manifest 1.71.0.
+  - id: XEN-ADAPTER-R2-RF-014
+    severity: PASS
+    finding: Anabasis and Hieron derivation authorities remain distinct from adapter operational authority and later report certification.
+  - id: XEN-ADAPTER-R2-RF-015
+    severity: PASS
+    finding: The R1 mechanism, fixtures, review, authorization, and v1.70 repository state remain immutable predecessors.
+  - id: XEN-ADAPTER-R2-RF-016
+    severity: PASS
+    finding: The 5 November 1957 documentary correction, correspondence terminal boundary, and unequal witness conditions remain protected from invention or silent normalization.
+  - id: XEN-ADAPTER-R2-RF-017
+    severity: PASS_WITH_LIMIT
+    finding: R2 operates within admitted English witnesses and does not certify Greek wording, variants, grammar, or translation equivalence.
+  - id: XEN-ADAPTER-R2-RF-018
+    severity: PASS_WITH_LIMIT
+    finding: Operational incorporation does not certify a final teaching, complete the wider Xenophontic corpus, register the interface in Sanctum, or authorize Assembly dispatch by itself.
+overall_ruling:
+  disposition: PASS_RECOMMEND_OWNER_ADOPTION
+  blocking_revision_count: 0
+  recommended_scope: OPERATIONAL_MULTI_WORK_MINISTER_INTERFACE_WITH_ENGLISH_WITNESS_AND_DOCUMENTARY_LIMITS
+  effect: >-
+    R2 may replace R1 as the active adapter because it fully incorporates the
+    owner-adopted Hieron source line while preserving the Anabasis source line,
+    explicit source roles, all thirty-seven unresolved questions, and federation gates.
+adoption_requirements:
+  retain_exact_eight_source_witness_pairs: true
+  retain_six_registers: true
+  retain_four_guards: true
+  retain_eight_evidence_layers: true
+  retain_all_37_unresolved_questions: true
+  retain_no_greek_certification: true
+  retain_no_final_teaching: true
+  retain_ai_self_certification_prohibited: true
+next_action:
+  id: XEN-MINISTER-ADAPTER-R2-OWNER-ADOPTION-001
+  description: Record owner adoption and issue the R2 repository authorization against reviewed head 07997f8f8631d2dbac526ac4f368d467c7c62ae7.
