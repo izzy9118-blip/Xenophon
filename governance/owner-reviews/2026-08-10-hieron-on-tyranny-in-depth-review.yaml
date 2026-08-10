@@ -1,0 +1,63 @@
+schema_version: 1.0
+review_id: XEN-OWNER-REVIEW-013
+status: OWNER_ADOPTED_HIERON_ON_TYRANNY_RECONSTRUCTION
+reviewed_on: 2026-08-10
+owner_directive: yes lets do it
+repository: izzy9118-blip/Xenophon
+scope:
+  study_id: XEN-STUDY-HIERON-OT-001
+  primary_source_id: XEN-SRC-PRI-002
+  secondary_source_ids:
+    - XEN-SRC-SEC-002
+    - XEN-SRC-SEC-003
+    - XEN-SRC-SEC-004
+    - XEN-SRC-SEC-005
+    - XEN-SRC-SEC-006
+  witness_id: XEN-WIT-COMP-001
+  witness_verification: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+  artifact_index: studies/hieron-on-tyranny/artifacts/completed-close-reading-index.yaml
+  cumulative_record: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+  detailed_review: studies/hieron-on-tyranny/reviews/XEN-HIERON-OT-IN-DEPTH-REVIEW-001.yaml
+  correspondence_units_reviewed: 44
+  integrated_synthesis_reviewed: Integrated Synthesis Unit 48
+  unresolved_questions_preserved: 18
+owner_ruling:
+  adoption_status: ADOPTED_WITH_ENGLISH_COMPOSITE_WITNESS_JURISDICTION
+  witness_status: OWNER_ADMITTED_EXTERNAL_COMPOSITE_ENGLISH_WITNESS
+  primary_source_status: OWNER_ADMITTED_PRIMARY_TRANSLATION_SOURCE
+  secondary_source_status: OWNER_ADOPTED_SECONDARY_SOURCES
+  study_status: OWNER_ADOPTED_COMPLETED_HIERON_ON_TYRANNY_RECONSTRUCTION
+  effect: >-
+    The completed Hieron and On Tyranny package becomes the repository's active
+    owner-adopted research reconstruction within the verified 2013 English composite
+    witness. Xenophon remains the primary author; Strauss remains the interpretive
+    guide; Kojeve remains the testing interlocutor; the Restatement, correspondence,
+    and editorial apparatus remain distinct evidence layers.
+  immutable_record_rule: >-
+    The handoff-stage witness registration, source records, reading plan, artifact
+    index, cumulative registration, directive, and first audit remain immutable
+    predecessor records. This review and the additive witness verification supply the
+    controlling current adoption decision. Later correction must be additive and versioned.
+adopted_controls:
+  - Xenophon's Hiero remains the primary work under investigation.
+  - Strauss's On Tyranny is adopted as an interpretive witness, not a substitute for Xenophon.
+  - Kojeve's Tyranny and Wisdom is preserved independently before comparison.
+  - Strauss's Restatement remains distinct from the original study and does not close the inquiry.
+  - The 44-unit correspondence reconstruction ends with Strauss to Kojeve, 3 June 1965.
+  - The 5 November 1957 attested communication remains a documentary correction with no invented body.
+  - Integrated Synthesis Unit 48 is preserved as a controlled synthesis, not a final doctrine.
+  - All eighteen unresolved questions remain active.
+limits:
+  - The source PDF and full predecessor artifact prose are not deposited in the repository.
+  - No original-language Greek Hieron witness or critical edition is certified.
+  - No Greek wording, textual variant, grammar, or translation equivalence is adjudicated.
+  - No final teaching, complete authorial intention, or resolution of the Strauss-Kojeve disagreement is declared.
+  - The active minister adapter remains governed solely by the owner-adopted Anabasis line.
+  - No Hieron-derived adapter expansion, Sanctum registration, or Assembly dispatch is authorized.
+  - Artificial-intelligence self-certification remains prohibited.
+next_authorized_action:
+  id: XEN-HIERON-OT-DERIVATION-BOUNDARY-001
+  description: >-
+    Define the controlled derivation boundary before any future cross-work synthesis
+    or ministerial use of the Hieron package, preserving all source distinctions,
+    documentary limits, and eighteen unresolved questions.

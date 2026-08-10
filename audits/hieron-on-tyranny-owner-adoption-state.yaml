@@ -1,0 +1,46 @@
+schema_version: 1.0
+audit_id: XEN-AUDIT-HIERON-OT-002
+status: OWNER_ADOPTION_COMPLETE_WITH_RECORDED_LIMITS
+as_of: 2026-08-10
+predecessor_audit: audits/hieron-on-tyranny-integration-state.yaml
+subject:
+  primary_work: Xenophon's Hiero or Tyrannicus
+  composite_inquiry: On Tyranny, corrected and expanded edition
+  study_id: XEN-STUDY-HIERON-OT-001
+witness_recovery:
+  witness_id: XEN-WIT-COMP-001
+  verification_record: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+  sha256: f6a397d8e59ac1214cb339b4705a365ff5a9d45e3997205e8f968aad8b870bc6
+  byte_size: 24279699
+  physical_pdf_pages: 354
+  exact_2013_edition_confirmed: true
+  source_text_deposited: false
+review_completion:
+  detailed_review: studies/hieron-on-tyranny/reviews/XEN-HIERON-OT-IN-DEPTH-REVIEW-001.yaml
+  detailed_review_disposition: PASS_RECOMMEND_OWNER_ADOPTION
+  owner_review: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
+  owner_review_id: XEN-OWNER-REVIEW-013
+  owner_adopted: true
+current_repository_state:
+  source_records: 6
+  correspondence_units: 44
+  integrated_synthesis: Integrated Synthesis Unit 48
+  unresolved_questions: 18
+  current_status: OWNER_ADOPTED_WITH_ENGLISH_COMPOSITE_WITNESS_JURISDICTION
+  active_adapter_source_line: Anabasis only
+  active_adapter_effect: none
+preserved_predecessor_history:
+  - The original witness record retains the handoff-stage missing-hash statement.
+  - The six source records retain their registration-stage statuses.
+  - The reading plan, artifact index, and cumulative record retain their pre-adoption production statuses.
+  - The original integration audit remains open as an accurate snapshot dated 2026-08-07.
+preserved_limits:
+  - No reviewed Greek Hieron witness is registered.
+  - The full predecessor artifact prose remains externally held and is not invented.
+  - The existing Anabasis adapter jurisdiction, four registers, and three guards are unchanged.
+  - Semantic finality, AI self-certification, Hieron-derived Sanctum registration, and Assembly dispatch remain unauthorized.
+next_authorized_action:
+  id: XEN-HIERON-OT-DERIVATION-BOUNDARY-001
+  description: >-
+    Define a controlled derivation boundary before any future cross-work or ministerial
+    use. Owner adoption itself does not expand the operational adapter.

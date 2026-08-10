@@ -21,6 +21,7 @@ owner_reviews:
   active_adapter_adoption: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-r1-in-depth-review.yaml
   adapter_predecessor_review: governance/owner-reviews/2026-08-01-xenophon-minister-adapter-in-depth-review.yaml
   synthesis_adoption: governance/owner-reviews/2026-08-01-strauss-guided-controlled-synthesis-r1-in-depth-review.yaml
+  hieron_on_tyranny_adoption: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
 owner_directives:
   greek_deferral: governance/owner-directives/2026-08-01-defer-greek-language-certification.yaml
 repository_authorization:
@@ -68,6 +69,18 @@ active_records:
     status: OWNER_ADOPTED_WITH_ENGLISH_WITNESS_JURISDICTION
     path: studies/comparisons/anabasis-primary-strauss/syntheses/XEN-STRAUSS-GUIDED-CONTROLLED-SYNTHESIS-001-R1.yaml
     unresolved_question_count: 19
+owner_adopted_open_research:
+  hieron_on_tyranny:
+    id: XEN-HIERON-ON-TYRANNY-CUMULATIVE-001
+    status: OWNER_ADOPTED_WITH_ENGLISH_COMPOSITE_WITNESS_JURISDICTION
+    path: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+    primary_work_source: XEN-SRC-PRI-002
+    composite_witness: XEN-WIT-COMP-001
+    witness_verification: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+    detailed_review: studies/hieron-on-tyranny/reviews/XEN-HIERON-OT-IN-DEPTH-REVIEW-001.yaml
+    owner_review: governance/owner-reviews/2026-08-10-hieron-on-tyranny-in-depth-review.yaml
+    unresolved_question_count: 18
+    operational_adapter_effect: none
 current_phase:
   id: XEN-PHASE-013
   name: Owner-authorized operational Xenophon minister interface

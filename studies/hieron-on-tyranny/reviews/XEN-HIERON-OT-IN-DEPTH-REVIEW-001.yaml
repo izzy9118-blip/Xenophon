@@ -1,0 +1,111 @@
+schema_version: 1.0
+review_id: XEN-HIERON-OT-IN-DEPTH-REVIEW-001
+status: IN_DEPTH_REVIEW_COMPLETE_RECOMMEND_OWNER_ADOPTION
+reviewed_on: 2026-08-10
+repository: izzy9118-blip/Xenophon
+reviewed_package:
+  study_id: XEN-STUDY-HIERON-OT-001
+  reading_plan: studies/hieron-on-tyranny/reading-plan.yaml
+  artifact_index: studies/hieron-on-tyranny/artifacts/completed-close-reading-index.yaml
+  cumulative_record: studies/hieron-on-tyranny/cumulative/XEN-HIERON-ON-TYRANNY-CUMULATIVE-001.yaml
+  predecessor_audit: audits/hieron-on-tyranny-integration-state.yaml
+  witness_registration: corpus/witnesses/on-tyranny-uchicago-2013.yaml
+  witness_verification: corpus/witnesses/on-tyranny-uchicago-2013-verification-001.yaml
+  source_records: 6
+  correspondence_units: 44
+  integrated_synthesis: Integrated Synthesis Unit 48
+review_basis:
+  - The full repository architecture and production history were audited before integration in pull request 3.
+  - The completed predecessor artifact sequence was audited in source thread 6a73b931-0dd4-83ea-961a-99970d4af040 before normalization.
+  - The bounded review checked the registered package against the recovered exact 2013 witness rather than restarting the close reading.
+  - Bibliographic, section-boundary, terminal-letter, editorial-transition, and documentary-correction pages were textually and visually inspected.
+  - Source roles, evidence layers, unresolved questions, and governance limits were tested against repository safeguards.
+review_method:
+  - Verify exact file identity by SHA-256, byte size, PDF metadata, and title/copyright pages.
+  - Verify the volume architecture from the contents and each source-section opening.
+  - Verify the final printed correspondence document and the transition to editorial notes.
+  - Verify the 5 November 1957 documentary correction in the editorial apparatus.
+  - Test that Xenophon remains the primary author and later witnesses retain separate jurisdictions.
+  - Test that the cumulative record distinguishes documentary findings, source-specific arguments, controlled inference, and unresolved questions.
+  - Test that predecessor statuses and missing-file statements are not silently rewritten.
+  - Test that adoption does not alter Greek-language, finality, adapter, Sanctum, Assembly, or self-certification gates.
+disposition_counts:
+  PASS: 10
+  PASS_WITH_LIMIT: 3
+  BLOCKING_REVISION: 0
+findings:
+  - id: HIERON-OT-RF-001
+    severity: PASS
+    finding: The recovered PDF is the exact 2013 corrected and expanded University of Chicago Press edition registered by the package.
+  - id: HIERON-OT-RF-002
+    severity: PASS
+    finding: The SHA-256 digest, byte size, 354-page physical extent, PDF metadata, ISBNs, and catalog identity are recorded without depositing the copyrighted file.
+  - id: HIERON-OT-RF-003
+    severity: PASS
+    finding: Visual inspection confirms the distinct openings of the Hiero, On Tyranny, Tyranny and Wisdom, Restatement, correspondence, letters, and editorial notes.
+  - id: HIERON-OT-RF-004
+    severity: PASS
+    finding: The final surviving printed letter is Strauss to Kojeve, 3 June 1965, on printed pages 313-314, immediately before the editorial notes.
+  - id: HIERON-OT-RF-005
+    severity: PASS
+    finding: The editorial apparatus explicitly attests Kojeve to Strauss, 5 November 1957, written in German; the package correctly refuses to invent an unavailable normal letter body.
+  - id: HIERON-OT-RF-006
+    severity: PASS
+    finding: The artifact index preserves 44 correspondence units, the 1-17 predecessor segment, the 18-44 continuation, and Integrated Synthesis Unit 48.
+  - id: HIERON-OT-RF-007
+    severity: PASS
+    finding: The six source records keep Xenophon primary and preserve Strauss, Kojeve, the Restatement, correspondence, and editorial apparatus as distinct later evidence roles.
+  - id: HIERON-OT-RF-008
+    severity: PASS
+    finding: The cumulative reconstruction does not collapse the inquiry into a detachable Strauss-Kojeve doctrine or declare the disagreement resolved.
+  - id: HIERON-OT-RF-009
+    severity: PASS
+    finding: All eighteen standing unresolved questions remain explicit, including Greek checks, missing communications, translation, archival completeness, and normalization.
+  - id: HIERON-OT-RF-010
+    severity: PASS
+    finding: The integration preserves repository terminology, source hierarchy, non-absorption rules, documentary uncertainty, and additive production history.
+  - id: HIERON-OT-RF-011
+    severity: PASS_WITH_LIMIT
+    finding: The completed artifact prose remains externally held in the predecessor thread; adoption governs the normalized repository package and provenance record, not a fictitious in-repository transcription of every artifact.
+  - id: HIERON-OT-RF-012
+    severity: PASS_WITH_LIMIT
+    finding: The admitted witness is an English composite edition; no Greek wording, textual variant, grammar, or translation equivalence is certified.
+  - id: HIERON-OT-RF-013
+    severity: PASS_WITH_LIMIT
+    finding: Research adoption does not place this package in the active Anabasis-derived minister adapter, change the four registers or three guards, or authorize Sanctum registration or Assembly dispatch from Hieron evidence.
+component_dispositions:
+  exact_witness_identity: PASS
+  bibliographic_and_pagination_control: PASS
+  source_role_separation: PASS
+  completed_artifact_provenance: PASS_WITH_EXTERNAL_HOLDING_LIMIT
+  correspondence_terminal_control: PASS
+  documentary_correction: PASS
+  cumulative_reconstruction: PASS
+  unresolved_questions: PASS_ALL_18
+  predecessor_immutability: PASS
+  greek_jurisdiction: PASS_WITH_LIMITS_PRESERVED
+  operational_adapter_non_expansion: PASS
+overall_ruling:
+  disposition: PASS_RECOMMEND_OWNER_ADOPTION
+  adoption_jurisdiction: COMPLETED_ENGLISH_COMPOSITE_WITNESS_RECONSTRUCTION
+  effect: >-
+    The package is adequate for owner adoption as the current controlled reconstruction
+    of Xenophon's Hiero through the On Tyranny inquiry. Adoption preserves the completed
+    close reading and its production history while leaving Greek certification, semantic
+    finality, and operational derivation unauthorized.
+adoption_requirements:
+  retain_xenophon_as_primary_author: true
+  retain_all_six_source_roles: true
+  retain_44_correspondence_units: true
+  retain_integrated_synthesis_unit_48: true
+  retain_documentary_correction_XEN_HIERON_DOC_COR_001: true
+  retain_all_18_unresolved_questions: true
+  retain_no_greek_certification: true
+  retain_no_final_teaching: true
+  retain_no_operational_adapter_expansion: true
+  retain_ai_self_certification_prohibited: true
+next_authorized_stage_after_adoption:
+  id: XEN-HIERON-OT-DERIVATION-BOUNDARY-001
+  description: >-
+    Define a controlled boundary for any future cross-work or ministerial use of the
+    owner-adopted Hieron package. No adapter expansion is authorized by this review.
